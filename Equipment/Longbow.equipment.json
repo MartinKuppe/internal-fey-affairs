@@ -1,0 +1,16 @@
+{
+  "$craft": {
+    "referenceId": "019fde04-4578-74b8-9c0b-548b2ddcff23",
+    "settings": {
+      "agentEditable": true
+    }
+  },
+  "name": "Longbow",
+  "image": {
+    "url": "https://dev-media.craftrpgs.com/seed/images/2026-05-16/gpt-image-1.5/landscape-77c37683-5126-4430-883d-f6360098b5f8.png"
+  },
+  "value": 50,
+  "weight": 2,
+  "category": "Weapon",
+  "description": "A reliable ranged weapon for hunting and skirmishes."
+}

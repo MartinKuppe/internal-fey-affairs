@@ -1,0 +1,27 @@
+{
+  "name": "Example Character",
+  "image": {
+    "url": "https://dev-media.craftrpgs.com/seed/images/starter-project/2026-05-09/gpt-image-1.5/landscape-179ed28a-d411-4532-8584-719fc5872532.png"
+  },
+  "level": 1,
+  "notes": "Use notes for proficiencies, backstory, secrets, relationships, or table-specific rules.",
+  "stats": {
+    "wisdom": 13,
+    "charisma": 11,
+    "strength": 10,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 10
+  },
+  "ancestry": "Human",
+  "inventory": [
+    "longbow",
+    "leather-armor",
+    "explorers-pack",
+    "quiver-of-arrows"
+  ],
+  "background": "A reliable trail guide who knows the nearby roads, ruins, and rumors.",
+  "description": "A starter character you can replace with someone from your world.",
+  "personality": "Curious, practical, and quick to point the party toward a useful lead.",
+  "characterClass": "Ranger"
+}

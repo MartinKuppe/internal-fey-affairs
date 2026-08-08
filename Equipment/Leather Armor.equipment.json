@@ -1,0 +1,16 @@
+{
+  "$craft": {
+    "referenceId": "019fde04-4583-7a94-ba86-633d80ed0b6b",
+    "settings": {
+      "agentEditable": true
+    }
+  },
+  "name": "Leather Armor",
+  "image": {
+    "url": "https://dev-media.craftrpgs.com/seed/images/2026-05-16/gpt-image-1.5/landscape-05391dab-1255-48c0-a868-92f2f41706b0.png"
+  },
+  "value": 10,
+  "weight": 10,
+  "category": "Armor",
+  "description": "Light armor stitched from tanned hide."
+}

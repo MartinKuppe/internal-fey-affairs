@@ -1,0 +1,14 @@
+{
+  "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
+  "slug": "game-start",
+  "name": "Game Start",
+  "contentType": "json",
+  "designation": "game_start",
+  "category": "game_master",
+  "schemaHash": "9c088ea8-5a77-2c1e-8551-f6148844bb32",
+  "schema": null,
+  "layout": null,
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

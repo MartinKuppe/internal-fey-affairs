@@ -1,0 +1,158 @@
+{
+  "syncedAt": "2026-08-07T23:37:48.824Z",
+  "folders": [
+    {
+      "path": "/Characters",
+      "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
+    },
+    {
+      "path": "/Locations",
+      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
+    },
+    {
+      "path": "/Equipment",
+      "folderId": "019fde04-4552-7f08-b433-598ccbe74a08"
+    },
+    {
+      "path": "/Game Starts",
+      "folderId": "019fde04-4557-7328-9fe8-610994cc13cd"
+    },
+    {
+      "path": "/GM Instructions",
+      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
+    }
+  ],
+  "files": [
+    {
+      "path": "/Characters/Example Character.character.json",
+      "fileId": "019fde04-455f-7424-bd65-1fa02461dc31",
+      "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
+      "fileType": "character",
+      "baseVersionId": "019fde04-455c-72dc-a657-3eb6ce3a82c5",
+      "baseHash": "4f3363e5-9210-fb2c-aefb-3d5a472f0425",
+      "source": "project",
+      "settings": {
+        "agentEditable": true
+      },
+      "metadataHash": "f0d6f306-a9da-7bf1-a3f8-981373980223"
+    },
+    {
+      "path": "/Locations/Example Location.location.json",
+      "fileId": "019fde04-456b-7004-a752-f198d5ce70c5",
+      "referenceId": "019fde04-456b-7080-8779-cdfa7ef7381d",
+      "fileType": "location",
+      "baseVersionId": "019fde04-4569-7c90-85d4-8cf94ba0e3f8",
+      "baseHash": "da9b24c8-c0d8-f23d-cf08-4469bb417dbb",
+      "source": "project",
+      "settings": {
+        "agentEditable": true
+      }
+    },
+    {
+      "path": "/Equipment/Longbow.equipment.json",
+      "fileId": "019fde04-4578-7430-8a71-6a3c06ac9b3e",
+      "referenceId": "019fde04-4578-74b8-9c0b-548b2ddcff23",
+      "fileType": "equipment",
+      "baseVersionId": "019fde04-4574-79b8-94da-6171fd527149",
+      "baseHash": "ca7b9025-1267-8ac0-27fd-b8c75cfdd3e1",
+      "source": "project",
+      "settings": {
+        "agentEditable": true
+      }
+    },
+    {
+      "path": "/Equipment/Leather Armor.equipment.json",
+      "fileId": "019fde04-4583-79fc-ba75-3e17ebc167fc",
+      "referenceId": "019fde04-4583-7a94-ba86-633d80ed0b6b",
+      "fileType": "equipment",
+      "baseVersionId": "019fde04-457d-76d4-9e27-b64b3b9c2001",
+      "baseHash": "259c5969-4005-5cba-387a-1673f9b59c60",
+      "source": "project",
+      "settings": {
+        "agentEditable": true
+      }
+    },
+    {
+      "path": "/Equipment/Explorer's Pack.equipment.json",
+      "fileId": "019fde04-458a-78fc-9811-fb4c8a7fc5db",
+      "referenceId": "019fde04-458a-7974-913d-3b63462165b6",
+      "fileType": "equipment",
+      "baseVersionId": "019fde04-4588-7884-a19b-8a0b9a42fc66",
+      "baseHash": "30fa635a-d217-4c8a-5b5d-9ae9ea7a3eb3",
+      "source": "project",
+      "settings": {
+        "agentEditable": true
+      }
+    },
+    {
+      "path": "/Equipment/Quiver of Arrows.equipment.json",
+      "fileId": "019fde04-4593-78bc-be6f-7627e5f5326e",
+      "referenceId": "019fde04-4593-792c-b9d8-4b749877577f",
+      "fileType": "equipment",
+      "baseVersionId": "019fde04-458e-72d8-bfd0-d6925155a51e",
+      "baseHash": "9000b0fc-e59a-44fd-8ef6-a37f35e3c157",
+      "source": "project",
+      "settings": {
+        "agentEditable": true
+      }
+    },
+    {
+      "path": "/Game Starts/Tavern Start.game-start.json",
+      "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
+      "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
+      "fileType": "game-start",
+      "baseVersionId": "019fde04-4597-75b8-add3-04baea5e7b79",
+      "baseHash": "123b2d00-ad31-c677-67a7-412ac43a8e7a",
+      "source": "project",
+      "settings": {
+        "agentEditable": true
+      },
+      "metadataHash": "5b40243c-3249-283f-311e-87be49dc74c5"
+    },
+    {
+      "path": "/GM Instructions/Example GM Instructions.gm-instructions.md",
+      "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
+      "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
+      "fileType": "gm-instructions",
+      "baseVersionId": "019fde04-459e-72d8-83c8-cbc6a3ae5436",
+      "baseHash": "ea515c3d-7161-4153-b441-af63a177a2e5",
+      "source": "project",
+      "settings": {
+        "agentEditable": true
+      }
+    }
+  ],
+  "fileTypes": [
+    {
+      "slug": "character",
+      "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
+      "schemaHash": "d66cc242-7d05-bd3e-2f38-e1e89bb7c576",
+      "contentHash": "d33ef3ee-6b42-487b-4df8-936b85bc8d84"
+    },
+    {
+      "slug": "location",
+      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
+      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
+      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
+    },
+    {
+      "slug": "equipment",
+      "fileTypeId": "019fde04-4527-7374-bebf-db3bdbfd02b6",
+      "schemaHash": "7672a778-59e3-a42c-5c8a-44dddfb20762",
+      "contentHash": "f9ec4849-b410-c9fb-e14a-9b209205d34f"
+    },
+    {
+      "slug": "game-start",
+      "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
+      "schemaHash": "9c088ea8-5a77-2c1e-8551-f6148844bb32",
+      "contentHash": "c6584cfa-dc0a-9e4b-a2f8-901752ee3430"
+    },
+    {
+      "slug": "gm-instructions",
+      "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
+      "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
+      "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
+    }
+  ],
+  "projectSettingsHash": "4480c48e-51a3-4a0c-df8b-d011d7e83de2"
+}

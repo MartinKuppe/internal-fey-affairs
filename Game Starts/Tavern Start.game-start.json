@@ -1,0 +1,30 @@
+{
+  "$craft": {
+    "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
+    "settings": {
+      "agentEditable": true
+    },
+    "metadata": {
+      "gameStart": {
+        "opening": {
+          "kind": "static",
+          "message": "The tavern is warm, loud, and just a little too eager to hide what happened outside. What do you do first?"
+        },
+        "displayOrder": 0,
+        "startingCharacters": [
+          {
+            "fileReferenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84"
+          }
+        ],
+        "openingInstructions": "Frame the opening scene around the party arriving at the tavern with a clear reason to talk to the proprietor.\nGive the selected character one personal detail to notice first, then introduce a small problem that invites immediate action.\nKeep the first sequence focused on meeting the location, learning what is strange, and choosing a first lead.\n\nDelete this file once the initial game start sequence has completed (recommended to keep it).",
+        "startingLocationFileReferenceId": "019fde04-456b-7080-8779-cdfa7ef7381d"
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Tavern Start",
+  "image": {
+    "url": "https://dev-media.craftrpgs.com/seed/images/starter-project/2026-05-09/gpt-image-1.5/landscape-963da55c-4326-4ba0-bb4c-f8de5d07642c.png"
+  },
+  "description": "Begin at a warm tavern with a few ready characters and an immediate reason to act."
+}

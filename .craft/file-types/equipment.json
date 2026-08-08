@@ -1,0 +1,211 @@
+{
+  "fileTypeId": "019fde04-4527-7374-bebf-db3bdbfd02b6",
+  "slug": "equipment",
+  "name": "Equipment",
+  "contentType": "json",
+  "designation": null,
+  "category": "world",
+  "schemaHash": "7672a778-59e3-a42c-5c8a-44dddfb20762",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "notes": {
+        "type": "string",
+        "title": "Notes",
+        "format": "textarea"
+      },
+      "value": {
+        "type": "number",
+        "title": "Value (gp)",
+        "minimum": 0
+      },
+      "weight": {
+        "type": "number",
+        "title": "Weight (lbs)",
+        "minimum": 0,
+        "description": "Weight for the whole stack or bundle, in pounds. Used by carrying-capacity formulas."
+      },
+      "category": {
+        "enum": [
+          "Weapon",
+          "Armor",
+          "Gear",
+          "Consumable",
+          "Treasure"
+        ],
+        "type": "string",
+        "title": "Category"
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/category"
+          },
+          "aspectRatio": "video"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "details-card",
+          "notes-section"
+        ]
+      },
+      "notes-body": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/notes"
+          }
+        },
+        "children": []
+      },
+      "details-card": {
+        "type": "Card",
+        "props": {
+          "title": "Details"
+        },
+        "children": [
+          "details-list"
+        ]
+      },
+      "details-list": {
+        "type": "FieldList",
+        "props": {
+          "items": [
+            [
+              "Category",
+              {
+                "$state": "/category"
+              }
+            ],
+            [
+              "Weight (lbs)",
+              {
+                "$state": "/weight"
+              }
+            ],
+            [
+              "Value (gp)",
+              {
+                "$state": "/value"
+              }
+            ]
+          ]
+        },
+        "children": []
+      },
+      "notes-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Notes",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "notes-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/notes"
+        },
+        "children": [
+          "notes-heading",
+          "notes-body"
+        ]
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

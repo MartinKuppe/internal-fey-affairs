@@ -1,0 +1,10 @@
+{
+  "name": "Quiver of Arrows",
+  "image": {
+    "url": "https://dev-media.craftrpgs.com/seed/images/2026-05-16/gpt-image-1.5/landscape-d8a38159-3a29-4c33-a932-bec904ca146a.png"
+  },
+  "value": 1,
+  "weight": 1,
+  "category": "Gear",
+  "description": "Twenty fletched arrows in a hip quiver."
+}

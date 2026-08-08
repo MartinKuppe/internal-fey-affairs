@@ -1,0 +1,179 @@
+{
+  "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
+  "slug": "location",
+  "name": "Location",
+  "contentType": "json",
+  "designation": "location",
+  "category": "world",
+  "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "type": {
+        "type": "string",
+        "title": "Type",
+        "description": "Settlement, wilderness, dungeon, landmark, or another label."
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "notes": {
+        "type": "string",
+        "title": "Notes",
+        "format": "textarea"
+      },
+      "atmosphere": {
+        "type": "string",
+        "title": "Atmosphere",
+        "format": "textarea"
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/type"
+          },
+          "aspectRatio": "video"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "overview-grid"
+        ]
+      },
+      "notes-card": {
+        "type": "Card",
+        "props": {
+          "title": "Notes"
+        },
+        "children": [
+          "notes-text"
+        ]
+      },
+      "notes-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/notes"
+          }
+        },
+        "children": []
+      },
+      "overview-grid": {
+        "type": "Grid",
+        "props": {
+          "gap": "md",
+          "columns": 2
+        },
+        "children": [
+          "atmosphere-card",
+          "notes-card"
+        ]
+      },
+      "atmosphere-card": {
+        "type": "Card",
+        "props": {
+          "title": "Atmosphere"
+        },
+        "children": [
+          "atmosphere-text"
+        ]
+      },
+      "atmosphere-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/atmosphere"
+          }
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}
