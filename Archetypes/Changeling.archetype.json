@@ -1,0 +1,18 @@
+{
+  "$craft": {
+    "referenceId": "019fedb8-9e72-7c1c-a0b4-04fae5441a36"
+  },
+  "name": "Changeling",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/72ade44f-1db1-477f-98d6-9441e55206f6",
+    "generation": {
+      "prompt": "A poignant, cinematic portrait of a youth sitting on the edge of a rustic wooden cradle in a dim, candle-lit cottage. The youth has a symmetrical, uncanny beauty and an expression of quiet longing and displacement. They are dressed in simple, weathered linen clothes. Soft, golden light catches the dust motes in the air, while deep, moody shadows swallow the corners of the room. The composition is an intimate medium shot, emphasizing a feeling of isolation and hidden identity. Muted earth tones, rich textures of old wood and woven fabric, ethereal atmosphere, hyper-realistic detail, soft focus background.",
+      "status": "success",
+      "startedAt": "2026-08-10T22:09:27.270Z",
+      "finishedAt": "2026-08-10T22:09:32.274Z"
+    }
+  },
+  "gmNotes": "A Changeling is a particular clone pattern or role, not a separate Species: a clone replacement grown and imprinted to replace an abducted human baby. Changelings are biologically Human and are real people. This archetype records how the person was made and imprinted, not their biology. Do not casually expose an individual's changeling status in player-facing narration.",
+  "category": "pattern",
+  "description": "The child left in the cradle when the real one was taken — or so the old stories say. Changelings are people who look and act like someone the village lost, often uncannily well. They are real people, with their own wants, fears, and loyalties, even when the village cannot quite bring itself to trust them."
+}

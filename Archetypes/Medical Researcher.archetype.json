@@ -1,0 +1,18 @@
+{
+  "$craft": {
+    "referenceId": "019fedb8-9eda-7824-8cc7-db5ec500fabe"
+  },
+  "name": "Medical Researcher",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e04be20b-43f9-4a56-b965-7e1bbfe10c17",
+    "generation": {
+      "prompt": "A cinematic, moody portrait of a Banshee medical researcher in a dimly lit, gothic clinic. The figure has an ethereal, haunting appearance with pale skin and flowing, translucent garments. She is leaning over a heavy mahogany desk cluttered with anatomical sketches of humans and fey, vintage brass microscopes, and handwritten journals. Soft, cool moonlight filters through a tall arched window, clashing with the warm, flickering glow of a single oil lamp. The atmosphere is clinical yet mysterious, with floating dust motes and jars of iridescent preserved specimens in the background. High contrast, deep shadows, dark academia aesthetic, muted jewel tones with sharp highlights on glass and parchment.",
+      "status": "success",
+      "startedAt": "2026-08-10T22:09:27.296Z",
+      "finishedAt": "2026-08-10T22:09:35.219Z"
+    }
+  },
+  "gmNotes": "Medical Researcher is a profession archetype. Banshees work as medical researchers/scanners — a typical Banshee carries both the Banshee (fey-role) and Medical Researcher (profession) archetypes. Research covers anatomy, psychology, imprinting, and attachment. The archetype grants no automatic mechanics.",
+  "category": "profession",
+  "description": "A healer of the hidden sort — one who studies bodies, minds, and what makes people what they are. Medical researchers ask the questions the village would rather not hear answered, and their findings rarely stay in the clinic."
+}

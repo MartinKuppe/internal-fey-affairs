@@ -1,0 +1,18 @@
+{
+  "$craft": {
+    "referenceId": "019fedb8-9ec6-75c4-bea3-7f76732023ca"
+  },
+  "name": "Bard",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/da5c4cd6-4c28-485a-b357-a15a7cfbffdc",
+    "generation": {
+      "prompt": "A charismatic wandering bard leaning against a weathered stone pillar in a bustling medieval village square. He wears a layered tunic of deep emerald and gold brocade, a worn leather travel cloak draped over one shoulder, and a polished lute held loosely in his hand. His expression is one of knowing amusement, eyes twinkling with secrets. Around him, a diverse crowd of villagers gathers in a semi-circle, captivated. Warm, golden hour sunlight filters through autumn leaves, casting long shadows and highlighting the dust motes in the air. Rich, vibrant color palette with a painterly texture, emphasizing the contrast between the bard's ornate attire and the rustic, earthen tones of the village. Cinematic lighting, shallow depth of field.",
+      "status": "success",
+      "startedAt": "2026-08-10T22:09:27.290Z",
+      "finishedAt": "2026-08-10T22:09:33.751Z"
+    }
+  },
+  "gmNotes": "Bard is a profession archetype. It is distinct from the Bard Origin — a player-character mechanical package (an attribute and three trained abilities). An NPC who makes music for a living may carry the Bard archetype without the Origin. Origins are expected for playable protagonists only. The archetype grants no mechanics.",
+  "category": "profession",
+  "description": "A poet, musician, and keeper of stories who travels between villages, trading in songs, news, and reputations. Bards are welcome in every hall and trusted in none entirely, and they remember everything they hear."
+}

@@ -5,18 +5,23 @@
   "contentType": "json",
   "designation": "character",
   "category": "world",
-  "schemaHash": "6c547085-bedd-8ec2-d0ec-e7118fa51071",
+  "schemaHash": "136bcf66-c48d-b977-0079-e124ee643ec0",
   "schema": {
     "type": "object",
     "required": [
-      "name",
-      "origin"
+      "name"
     ],
     "properties": {
       "name": {
         "type": "string",
         "title": "Name",
         "minLength": 1
+      },
+      "goals": {
+        "type": "string",
+        "title": "Goals",
+        "format": "textarea",
+        "description": "Current motivations and priorities."
       },
       "image": {
         "type": "object",
@@ -122,6 +127,18 @@
         "title": "Reputation Markers",
         "description": "Markers are visible to everyone — simply present or absent, each with the reason it was acquired."
       },
+      "secrets": {
+        "type": "string",
+        "title": "Secrets",
+        "format": "textarea",
+        "description": "GM-facing hidden truth. Never reveal in player-facing narration."
+      },
+      "species": {
+        "type": "string",
+        "title": "Species",
+        "description": "This character's species — Human or Fey in ordinary project metadata.",
+        "referencedFileTypeSlug": "species"
+      },
       "abilities": {
         "type": "array",
         "items": {
@@ -139,6 +156,15 @@
         },
         "title": "Inventory",
         "description": "Equipment files this character is carrying."
+      },
+      "archetypes": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "archetype"
+        },
+        "title": "Archetypes",
+        "description": "Every applicable archetype — provenance, pattern, fey-role, profession, title, or social identity. Stored explicitly and flat; never inferred from indirect chains."
       },
       "attributes": {
         "type": "object",
@@ -188,6 +214,12 @@
           }
         },
         "description": "Each attribute is a dice pool of 1-5 d6s; every 4+ is a success. Your origin's attribute starts at 3, the rest at 2."
+      },
+      "background": {
+        "type": "string",
+        "title": "Background",
+        "format": "textarea",
+        "description": "Relevant history."
       },
       "description": {
         "type": "string",
@@ -276,7 +308,11 @@
           "grace-stat",
           "gracehistory-section",
           "markers-section",
-          "graceledger-references"
+          "graceledger-references",
+          "species-select",
+          "archetypes-references",
+          "goals-section",
+          "secrets-section"
         ]
       },
       "stats": {
@@ -321,6 +357,16 @@
               }
             ]
           ]
+        },
+        "children": []
+      },
+      "goals-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/goals"
+          }
         },
         "children": []
       },
@@ -396,6 +442,38 @@
           ]
         },
         "children": []
+      },
+      "secrets-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/secrets"
+          }
+        },
+        "children": []
+      },
+      "goals-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Goals",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "goals-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/goals"
+        },
+        "children": [
+          "goals-heading",
+          "goals-text"
+        ]
       },
       "notes-heading": {
         "type": "Heading",
@@ -481,6 +559,22 @@
         },
         "children": []
       },
+      "species-select": {
+        "type": "Select",
+        "props": {
+          "label": "Species",
+          "value": {
+            "$state": "/species"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "species"
+        },
+        "visible": {
+          "$state": "/species"
+        },
+        "children": []
+      },
       "background-body": {
         "type": "Markdown",
         "props": {
@@ -510,6 +604,28 @@
         "children": [
           "markers-heading",
           "markers-badges"
+        ]
+      },
+      "secrets-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Secrets",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "secrets-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/secrets"
+        },
+        "children": [
+          "secrets-heading",
+          "secrets-text"
         ]
       },
       "attributes-stats": {
@@ -690,6 +806,23 @@
           "gracehistory-heading",
           "gracehistory-badges"
         ]
+      },
+      "archetypes-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/archetypes"
+          },
+          "label": "Archetypes",
+          "columns": 4,
+          "fileTypeSlug": "archetype",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/archetypes"
+        },
+        "children": []
       },
       "graceledger-references": {
         "type": "FileReferenceGrid",

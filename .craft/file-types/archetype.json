@@ -1,0 +1,223 @@
+{
+  "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
+  "slug": "archetype",
+  "name": "Archetype",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name",
+      "category"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "gmNotes": {
+        "type": "string",
+        "title": "GM / Canon Notes",
+        "format": "textarea",
+        "description": "GM-facing taxonomy and canon. Never shown to players as-is. Archetypes are descriptive and grant no automatic mechanics."
+      },
+      "category": {
+        "enum": [
+          "provenance",
+          "pattern",
+          "fey-role",
+          "profession",
+          "title",
+          "social-identity"
+        ],
+        "type": "string",
+        "title": "Category",
+        "description": "What kind of identity this archetype records."
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {
+          "centered": false,
+          "maxWidth": "full"
+        },
+        "children": [
+          "body-stack"
+        ]
+      },
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$state": "/image"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "body"
+        ]
+      },
+      "details": {
+        "type": "FieldList",
+        "props": {
+          "items": [
+            [
+              "Category",
+              {
+                "$state": "/category"
+              }
+            ]
+          ],
+          "labelColor": null,
+          "valueColor": null
+        },
+        "children": []
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "description-text",
+          "details",
+          "gmnotes-section"
+        ]
+      },
+      "gmnotes-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/gmNotes"
+          }
+        },
+        "children": []
+      },
+      "gmnotes-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "GM / Canon Notes",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "gmnotes-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/gmNotes"
+        },
+        "children": [
+          "gmnotes-heading",
+          "gmnotes-text"
+        ]
+      },
+      "description-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/description"
+          }
+        },
+        "visible": {
+          "$state": "/description"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

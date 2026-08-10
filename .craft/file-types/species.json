@@ -1,0 +1,192 @@
+{
+  "fileTypeId": "019fedb8-3e72-79c0-93b6-bcddbccbb5e4",
+  "slug": "species",
+  "name": "Species",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "gmNotes": {
+        "type": "string",
+        "title": "GM / Canon Notes",
+        "format": "textarea",
+        "description": "GM-facing taxonomy and canon. Never shown to players as-is."
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {
+          "centered": false,
+          "maxWidth": "full"
+        },
+        "children": [
+          "body-stack"
+        ]
+      },
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$state": "/image"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "body"
+        ]
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "description-text",
+          "gmnotes-section"
+        ]
+      },
+      "gmnotes-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/gmNotes"
+          }
+        },
+        "children": []
+      },
+      "gmnotes-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "GM / Canon Notes",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "gmnotes-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/gmNotes"
+        },
+        "children": [
+          "gmnotes-heading",
+          "gmnotes-text"
+        ]
+      },
+      "description-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/description"
+          }
+        },
+        "visible": {
+          "$state": "/description"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}
