@@ -1,14 +1,5 @@
 {
   "name": "Lepracaun",
-  "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/08360bf1-cbfe-4297-8782-632240e16f02",
-    "generation": {
-      "prompt": "A dignified fey administrator, a Lepracaun, seated at an ornate mahogany desk within a shimmering, ethereal archive of the Otherworld. He wears a sharp, emerald-green velvet frock coat with gold embroidery and a small, sophisticated top hat. Instead of gold coins, he meticulously records debts and favors in a massive, glowing leather-bound ledger with a quill made from a phoenix feather. The atmosphere is scholarly and bureaucratic, filled with floating parchment scrolls and inkwells of starlight. Soft, ambient magical lighting, deep forest greens and shimmering golds, cinematic composition, highly detailed textures of velvet and old paper.",
-      "status": "success",
-      "startedAt": "2026-08-10T22:09:27.278Z",
-      "finishedAt": "2026-08-10T22:09:35.997Z"
-    }
-  },
   "gmNotes": "A Lepracaun is a Grace broker or related administrative role — not a biological species. When a Lepracaun exchange moves value between two currencies, record two Grace ledger entries: a negative amount in the currency given and a positive amount in the currency received, on the same day, with the same reason naming the rate. The archetype grants no automatic abilities.",
   "category": "fey-role",
   "description": "A fairy who trades in favors and keeps the books of the Otherworld — who owes what, which debt is paid, and which promise was never kept. Lepracauns are brokers and administrators of the fairy economy, not the mischief-makers of the stories."

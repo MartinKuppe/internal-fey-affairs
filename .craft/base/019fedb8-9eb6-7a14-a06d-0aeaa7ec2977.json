@@ -1,14 +1,5 @@
 {
   "name": "IA Agent",
-  "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1bdf9ac6-59ce-4b53-8aa9-369d7a147f4c",
-    "generation": {
-      "prompt": "A cinematic portrait of a Fey Internal Affairs agent. A slender, ethereal figure with subtle iridescent skin and sharp, observant eyes, dressed in a meticulously tailored, charcoal-grey Victorian-style frock coat with subtle silver filigree. They hold a small, leather-bound ledger and a shimmering quill. The setting is a dimly lit, atmospheric Fey village alleyway with glowing fungi and twisted bioluminescent vines. Muted, cool color palette with pops of neon amethyst. Soft, moody volumetric lighting casting long shadows, emphasizing a sense of quiet scrutiny and inescapable curiosity. High detail, photorealistic texture, mysterious and formal mood.",
-      "status": "success",
-      "startedAt": "2026-08-10T22:09:27.287Z",
-      "finishedAt": "2026-08-10T22:09:36.251Z"
-    }
-  },
   "gmNotes": "IA Agent is a profession archetype within Internal Affairs, the agency that investigates the Fey themselves. Record it explicitly on any character who serves in that role; never infer it from indirect chains. Do not reveal an individual's IA service in player-facing narration when the fiction keeps it hidden. The archetype grants no automatic mechanics.",
   "category": "profession",
   "description": "An agent of the Fey's Internal Affairs — a quiet investigator who looks into what their own people have done. IA agents are polite, thorough, and very hard to lie to, and their questions always lead somewhere the village did not expect."

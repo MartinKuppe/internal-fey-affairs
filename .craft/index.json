@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-10T22:10:53.944Z",
+  "syncedAt": "2026-08-10T22:43:06.139Z",
   "folders": [
     {
       "path": "/Bargains",
@@ -576,8 +576,8 @@
       "fileId": "019fedb8-9e29-7444-89d8-184f5d752c79",
       "referenceId": "019fedb8-9e29-74f4-af85-1c488a8a9b1d",
       "fileType": "species",
-      "baseVersionId": "019fedb9-537a-710c-844c-a6f4d1c3fb40",
-      "baseHash": "3626f3a3-988a-66a2-539d-a2ef96788cc5",
+      "baseVersionId": "019fedd1-08cc-78a4-97ae-bc7807a87849",
+      "baseHash": "09c5b7e4-095b-d0f8-4389-7a5edb17576c",
       "source": "project"
     },
     {
@@ -585,8 +585,8 @@
       "fileId": "019fedb8-9e2a-7b14-9075-d57053388f6b",
       "referenceId": "019fedb8-9e2a-7ba8-b08f-b5afa714bb05",
       "fileType": "species",
-      "baseVersionId": "019fedb9-58d5-70b4-ad46-7dfeb9aca23d",
-      "baseHash": "db388650-55a8-aec3-e5fa-c70ff38efc6e",
+      "baseVersionId": "019fedd1-08eb-7bc4-ad9e-71904511e400",
+      "baseHash": "74248d1d-875a-da47-0cab-cb02c80b5b6e",
       "source": "project"
     },
     {
@@ -594,8 +594,8 @@
       "fileId": "019fedb8-9e4f-7390-a6c9-a7bbaad0ba1b",
       "referenceId": "019fedb8-9e4f-7430-b44c-0b52ce6d38b1",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-4ec4-7e70-b269-3cb9077c1ce9",
-      "baseHash": "f9be2db6-8ea7-43f2-1737-f5de8dbc7554",
+      "baseVersionId": "019fedd1-08e9-7e80-8923-6c2609b94ee0",
+      "baseHash": "971e9e4b-7887-a42e-c786-dd2306ce3d6a",
       "source": "project"
     },
     {
@@ -603,8 +603,8 @@
       "fileId": "019fedb8-9e5d-74d8-bc5f-3e669d16b032",
       "referenceId": "019fedb8-9e5d-7550-a12f-22d8ebf8923f",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5661-7dbc-82b6-333081a78bca",
-      "baseHash": "316ba37c-6c79-53ca-86a7-54cd501265f6",
+      "baseVersionId": "019fedd1-08fb-75fc-bb3d-bc233ccfcdb6",
+      "baseHash": "fb444d3c-3a54-f4ce-208a-92374cc8b481",
       "source": "project"
     },
     {
@@ -612,8 +612,8 @@
       "fileId": "019fedb8-9e72-7b78-9531-469bf062eea7",
       "referenceId": "019fedb8-9e72-7c1c-a0b4-04fae5441a36",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-4e83-78c0-aa5c-da87f3171c94",
-      "baseHash": "48b4b449-23d4-10ae-7943-204f0a7e3465",
+      "baseVersionId": "019fedcb-0134-78a4-b91a-30c3c7d88b92",
+      "baseHash": "8ac3660f-2c0d-8b6b-8344-daed6d7703ff",
       "source": "project"
     },
     {
@@ -621,8 +621,8 @@
       "fileId": "019fedb8-9e80-7864-a84c-7c7243c46bf3",
       "referenceId": "019fedb8-9e80-7904-83f3-d6026c958c4b",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5d91-7ccc-8812-5cd2ed67955f",
-      "baseHash": "e658040a-22e8-ad43-1359-31b584b4cc03",
+      "baseVersionId": "019fedcb-0129-76c8-9bcd-c3247594201b",
+      "baseHash": "4612b0b4-3a04-131a-dd88-b6d4f5e80abf",
       "source": "project"
     },
     {
@@ -630,8 +630,8 @@
       "fileId": "019fedb8-9e94-704c-869a-608c4f99dc16",
       "referenceId": "019fedb8-9e94-70e8-9b78-76e8d1091646",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5d12-72a4-8eea-665a901ba73f",
-      "baseHash": "088fb125-b07c-4459-a700-f595eda68151",
+      "baseVersionId": "019fedcb-01b6-7980-b1dc-fccf9711fd94",
+      "baseHash": "0642994f-6c91-6a47-3c48-559153c96ea6",
       "source": "project"
     },
     {
@@ -639,8 +639,8 @@
       "fileId": "019fedb8-9ea3-74ac-b34f-58289e7f41b7",
       "referenceId": "019fedb8-9ea3-7530-bc68-2b1db9541538",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5258-7084-97e6-bb697ef04358",
-      "baseHash": "2d45f9f6-e453-5ffe-05b7-ebcf8cf7e364",
+      "baseVersionId": "019fedcb-047e-7d10-a773-412d5a0f1727",
+      "baseHash": "fb39dab7-ccd5-67b1-7f5d-25e0c3e8b74f",
       "source": "project"
     },
     {
@@ -648,8 +648,8 @@
       "fileId": "019fedb8-9eb6-7a14-a06d-0aeaa7ec2977",
       "referenceId": "019fedb8-9eb6-7aac-bc1f-f58d902ebc3b",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5e0e-7bb4-b8f2-140121edb653",
-      "baseHash": "1e8f1c2f-5542-7522-ef7d-7e5ad3dca11b",
+      "baseVersionId": "019fedcb-013c-75ac-8b87-706af1f14830",
+      "baseHash": "75b17e35-fed8-60e2-0c98-b6889267f031",
       "source": "project"
     },
     {
@@ -657,8 +657,8 @@
       "fileId": "019fedb8-9ec6-7528-a817-ae6add6ff6c1",
       "referenceId": "019fedb8-9ec6-75c4-bea3-7f76732023ca",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5837-7660-9785-d5638f375885",
-      "baseHash": "1068db0e-4ff8-9082-6602-d9d8e70173ba",
+      "baseVersionId": "019fedcb-047c-746c-84d4-a3637f53bc3b",
+      "baseHash": "a6a51ac7-bd87-6174-19e3-0cde759e1311",
       "source": "project"
     },
     {
@@ -666,8 +666,8 @@
       "fileId": "019fedb8-9ed9-777c-8425-42101c2ff4c0",
       "referenceId": "019fedb8-9eda-7824-8cc7-db5ec500fabe",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5a00-7d70-b477-e229accb7205",
-      "baseHash": "746c9c55-4356-279f-4216-4df2809a993f",
+      "baseVersionId": "019fedcb-01bb-7244-9f0a-54bf4deda8e9",
+      "baseHash": "2a2758ab-3438-c8d8-d703-1eaa2c9eb3d8",
       "source": "project"
     },
     {
@@ -675,8 +675,8 @@
       "fileId": "019fedb8-9ee9-7f74-9871-8e2a1dda49ba",
       "referenceId": "019fedb8-9ee9-705c-98ff-4662e8e5a5e7",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5441-7ca4-9d69-2b93ce36149b",
-      "baseHash": "56f3065c-3a1b-1e9a-6709-b41d116e6584",
+      "baseVersionId": "019fedd1-08fe-7134-b99b-dc026e6076d4",
+      "baseHash": "7432301d-3d04-c8c4-74b1-bad2ecd81057",
       "source": "project"
     },
     {
@@ -684,8 +684,8 @@
       "fileId": "019fedb8-9f01-7f0c-b15e-4d79d79fc06d",
       "referenceId": "019fedb8-9f01-7008-8f9a-95d92f369e44",
       "fileType": "archetype",
-      "baseVersionId": "019fedb9-5863-749c-9298-2f016b53619d",
-      "baseHash": "472ff019-044e-22bf-b55a-fd2012a19207",
+      "baseVersionId": "019fedd1-08c9-7888-a4ef-d4926a7afdf3",
+      "baseHash": "a07fcbb7-8cac-9011-54c7-4cf149cff0e8",
       "source": "project"
     },
     {
@@ -693,8 +693,8 @@
       "fileId": "019fedb8-e335-7614-b62d-cfbca357d93c",
       "referenceId": "019fedb8-e335-76ac-8463-2251b92cb894",
       "fileType": "change-request",
-      "baseVersionId": "019fedb9-782d-760c-ae1d-db7044557ca6",
-      "baseHash": "698d8635-6f05-e34f-447a-5f9e78258709",
+      "baseVersionId": "019fedd7-6d67-7f64-ac09-d1ab3332fd25",
+      "baseHash": "d7cc74b3-9bdc-8c13-3093-ba0b013ac8eb",
       "source": "project"
     }
   ],
@@ -727,7 +727,7 @@
       "slug": "character",
       "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
       "schemaHash": "136bcf66-c48d-b977-0079-e124ee643ec0",
-      "contentHash": "65194a72-117b-5c0f-1040-01699993c003"
+      "contentHash": "e70e5d9f-04c0-8c1e-ded0-1af5b9e9a660"
     },
     {
       "slug": "grace",
@@ -751,13 +751,13 @@
       "slug": "species",
       "fileTypeId": "019fedb8-3e72-79c0-93b6-bcddbccbb5e4",
       "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
-      "contentHash": "49f3107c-1d14-b042-ab61-b97d3afc92db"
+      "contentHash": "dbf78436-aa99-0afa-cb3e-87312435f504"
     },
     {
       "slug": "archetype",
       "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
       "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
-      "contentHash": "723522b4-4119-3755-b360-e362bfa390d4"
+      "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
     },
     {
       "slug": "ability",
@@ -778,5 +778,5 @@
       "contentHash": "bd90104d-f386-0099-7900-9bb89c3f4797"
     }
   ],
-  "projectSettingsHash": "4480c48e-51a3-4a0c-df8b-d011d7e83de2"
+  "projectSettingsHash": "3f1a0e06-1efc-ac9c-68b8-3fb55ec8e6de"
 }

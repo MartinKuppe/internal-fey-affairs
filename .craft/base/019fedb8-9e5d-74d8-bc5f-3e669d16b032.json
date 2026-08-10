@@ -1,15 +1,6 @@
 {
   "name": "Takeling",
-  "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/f4272efd-bda5-44bf-979d-e3b94c78888e",
-    "generation": {
-      "prompt": "A cinematic portrait of a Takeling, a human youth with an otherworldly grace, standing at the threshold between a rustic human village and a shimmering, ethereal Fey realm. They wear a blend of simple linen homespun clothes adorned with intricate, glowing iridescent silk ribbons and delicate silver filigree jewelry. Their expression is one of profound melancholy and displacement, eyes reflecting a hint of magical stardust. \n\nThe setting is a misty twilight forest where the air is thick with floating spores and bioluminescent flora. To one side, the warm, amber glow of a thatched cottage; to the other, the cool, emerald luminescence of a hollow hill entrance entwined with ancient, silver-barked roots. Soft, diffused lighting, dreamy atmospheric perspective, rich jewel tones of deep forest green and amethyst, contrasting with earthy ochres. High detail on the texture of woven fabric and the translucent quality of Fey magic.",
-      "status": "success",
-      "startedAt": "2026-08-10T22:09:27.269Z",
-      "finishedAt": "2026-08-10T22:09:34.293Z"
-    }
-  },
   "gmNotes": "A Takeling is biologically Human — a Human taken in infancy and raised by the Fey. Takeling is a provenance archetype, not a Species, and a Takeling is not Fey. Takelings often fill Fey-trained roles (such as Leannán Sidhe), but this archetype records only where the person was raised. Archetypes are descriptive and grant no automatic mechanics.",
   "category": "provenance",
-  "description": "A human taken in infancy and raised among the Fey. Takelings grow up in the hollow hills, learning the Fair Folk's speech, courtesy, and secrets, and they are rarely fully at home in either world afterward. The village sees them as strange; the Fey see them as useful."
+  "description": "A human taken in infancy and raised among the Fey. Takelings grow up in the hollow hills, learning the Fair Folk's speech, courtesy, and ways, and they are rarely fully at home in either world afterward. The village sees them as strange; the Fey see them as useful."
 }

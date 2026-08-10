@@ -3,16 +3,7 @@
     "referenceId": "019fedb8-9f01-7008-8f9a-95d92f369e44"
   },
   "name": "Phantom Queen",
-  "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c8c9dc99-0fbd-4d0b-a101-0bd0688e69fe",
-    "generation": {
-      "prompt": "A cinematic, wide shot of the Phantom Queen seated on a throne of twisted, iridescent obsidian and frozen moonlight. She is a silhouette of ethereal elegance, her face veiled in shimmering, translucent gossamer that obscures her features. She wears a sweeping gown of midnight velvet that dissolves into a swirling mist of indigo and silver smoke at the hem. \n\nThe setting is a surreal Otherworld court: a cathedral of weeping willow branches and floating amethyst shards under a perpetual twilight sky. Soft, haunting luminescence emanates from floating lanterns. The atmosphere is heavy with mystery and dread, characterized by deep purples, cold silvers, and void-black shadows. Ethereal particles of light drift like dust in the air, emphasizing a mood of silent, oppressive royalty.",
-      "status": "success",
-      "startedAt": "2026-08-10T22:09:27.312Z",
-      "finishedAt": "2026-08-10T22:09:33.807Z"
-    }
-  },
-  "gmNotes": "Phantom Queen is a title archetype held by the ruler of a Fey court. A title does not imply the holder's Species — record the holder's Species and archetypes on their character file rather than assuming from the title. Do not disclose the current holder's identity or origin in player-facing material. The title grants no automatic mechanics.",
+  "gmNotes": "Phantom Queen is a title archetype held by the ruler of a Fey court. Morrigan is the current Phantom Queen. A title does not imply the holder's Species — record the holder's Species and archetypes on their character file rather than assuming from the title. The protected secret is that Morrigan is the human Rioghnach: never expose her human origin in player-facing material. The title grants no automatic mechanics.",
   "category": "title",
-  "description": "A queen of the Otherworld known as the Phantom — a figure of rumor and dread whose court deals in debts, secrets, and the cost of promises. Few have seen her face; everyone has heard her name."
+  "description": "A queen of the Otherworld known as the Phantom — a figure of rumor and dread whose court deals in debts, secrets, and the cost of promises."
 }
