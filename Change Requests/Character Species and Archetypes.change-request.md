@@ -2,23 +2,6 @@
 name: Character Species and Archetypes
 description: Adds Species and Archetype file types with initial definitions,
   flat explicit classification on Characters, and System Rules guidance.
-image:
-  url: https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e0d1b5a5-0a15-4173-8464-4763197cb7e4
-  generation:
-    status: success
-    startedAt: 2026-08-10T22:09:27.306Z
-    finishedAt: 2026-08-10T22:09:41.945Z
-    prompt: "A conceptual digital art piece depicting a surreal collage of diverse
-      character archetypes. In the center, a shimmering, ethereal Fey entity
-      with iridescent skin and floating accents contrasts with a stark, clinical
-      Human clone in a white sterile suit. Surrounding them are fragments of
-      other identities: a ghostly Banshee shrouded in translucent grey mist, a
-      Leprechaun in ornate emerald attire, and a high-tech IA Agent represented
-      by a holographic humanoid form. The composition is an organized yet
-      artistic taxonomy, with characters separated by thin, glowing geometric
-      lines like a biological blueprint. Dark void background with floating
-      sparks of gold and neon blue light, cinematic lighting, hyper-detailed
-      textures, a mix of organic folklore and futuristic cyberpunk aesthetics."
 $craft:
   referenceId: 019fedb8-e335-76ac-8463-2251b92cb894
 ---
@@ -37,6 +20,9 @@ Create the basic Character taxonomy needed before populating the project's cast:
 
 - /file-types/species.json — new Species file type (folder /Species/)
 - /file-types/archetype.json — new Archetype file type (folder /Archetypes/)
+- /file-types/species/layout.json — remove GM / Canon Notes section from the rendered layout (spoiler safety; field stays stored)
+- /file-types/archetype/layout.json — remove GM / Canon Notes section from the rendered layout (spoiler safety; field stays stored)
+- /file-types/character/layout.json — remove Notes and Secrets sections from the rendered layout (spoiler safety; fields stay stored)
 - /Species/Human.species.json — new
 - /Species/Fey.species.json — new
 - /Archetypes/Clone.archetype.json — new
@@ -52,7 +38,7 @@ Create the basic Character taxonomy needed before populating the project's cast:
 - /Archetypes/Phantom Queen.archetype.json — new
 - /file-types/character/schema.json — add species, archetypes, goals, background, secrets; origin no longer required
 - /GM Instructions/System Rules.gm-instructions.md — Species/Archetypes/Origin/spoiler guidance
-- /Change Requests/01 Character Species and Archetypes.change-request.md — this brief
+- /Change Requests/Character Species and Archetypes.change-request.md — this brief
 
 ## Canon decisions
 
@@ -74,13 +60,14 @@ Create the basic Character taxonomy needed before populating the project's cast:
 - [x] Make Origin optional on Character. Example Character untouched and still valid.
 - [x] Update System Rules with Species/Archetypes/Origin/spoiler guidance.
 - [x] Defer Character layout (not rebuilt).
+- [x] Spoiler-safety pass: remove GM / Canon Notes sections from Species and Archetype layouts; remove Notes and Secrets sections from the Character layout (schema fields kept).
 
 ## Acceptance criteria
 
 - [x] Species and Archetype are separate file types.
 - [x] Human and Fey Species files exist.
 - [x] All requested initial Archetype files exist.
-- [x] No image was generated for any new file.
+- [x] No image was generated directly for any new Species/Archetype file. Project-level automatic image generation (autoImageGeneration) created cover images for the new files on creation; those images were subsequently cleared.
 - [x] Species and Archetype definitions contain meaningful descriptions and GM/canon notes.
 - [x] Character has an optional Species reference and an optional Archetype reference array.
 - [x] Character has Goals, Background, and Secrets fields.
@@ -91,14 +78,16 @@ Create the basic Character taxonomy needed before populating the project's cast:
 - [x] System Rules explain Species, Archetypes, Origin requirements, terminology, and spoiler handling.
 - [x] The Character layout was not deliberately rebuilt.
 - [x] All schemas, references, and created files pass Craft validation.
+- [x] gmNotes remains stored on Species and Archetype files but is absent from their layouts.
+- [x] Notes and Secrets remain stored on Characters but are absent from the Character layout.
 
 ## Implementation notes
 
 - Player-facing description maps to the type's baseline `description` field (matches project convention: Ability and Origin files use `description` for prose). GM/canon notes is a new `gmNotes` textarea field on both types.
-- Both new types use designation "lore" and no custom layout (default generated rendering). No images requested or generated.
+- Both new types have designation null and no custom layout (default generated rendering). No images were requested or generated directly for the definition files; project-level automatic image generation (autoImageGeneration) created cover images on file creation, which were subsequently cleared, and autoImageGeneration was then disabled to prevent unintended future generation.
 - Fey's gmNotes explains that the term refers to the beings rarely called Elgafari in deep technical lore; its player-facing description never uses the term.
-- Principal Inquisitor gmNotes records that it is Green's current IA title (per canon decisions). Phantom Queen gmNotes defines the title generically and does not disclose the current holder's identity — Morrigan's human origin stays a character-file secret.
-- Character layout intentionally untouched; deferred to the later Grace/Bargain/contract/Reputation presentation pass.
+- Principal Inquisitor gmNotes records that it is Green's current IA title (per canon decisions). Phantom Queen gmNotes identifies Morrigan as the current holder and flags that her identity as the human Rioghnach is the protected secret.
+- Character layout otherwise intentionally untouched; only the Notes and Secrets sections were removed for spoiler safety. Deferred to the later Grace/Bargain/contract/Reputation presentation pass.
 - Example Character requires no content edits: origin remains, new fields are optional.
 
 ## Assumptions or unresolved questions
@@ -113,13 +102,15 @@ Create the basic Character taxonomy needed before populating the project's cast:
 
 Implemented per brief on the same day:
 
-- Created /file-types/species.json and /file-types/archetype.json (JSON, designation "lore", no custom layout).
+- Created /file-types/species.json and /file-types/archetype.json (JSON, designation null, no custom layout).
 - Created 2 Species files (Human, Fey) and 11 Archetype files (Clone, Takeling, Changeling, Leannán Sidhe, Lepracaun, Banshee, Bard, IA Agent, Medical Researcher, Principal Inquisitor, Phantom Queen), each with a player-facing description and gmNotes.
 - Extended /file-types/character/schema.json: added optional `species` (reference to species type), `archetypes` (reference array to archetype type), `goals`, `background`, `secrets`; removed `origin` from `required` (the field itself is preserved).
 - Updated /GM Instructions/System Rules.gm-instructions.md: new "Species & Archetypes" section; Origins section now states a playable protagonist expects an Origin, NPCs do not require one, and minor NPCs need only what play requires.
-- No images generated. Character layout untouched. Example Character unchanged and still validates.
+- No images were generated directly. Project-level automatic image generation (autoImageGeneration) created cover images for the new files on creation; those images were subsequently cleared from all 13 Species/Archetype files and from this brief, and autoImageGeneration was disabled (settings.autoImageGeneration: false) to prevent unintended future generation. Character layout untouched. Example Character unchanged and still validates.
+- Peer-review corrections applied: Phantom Queen gmNotes identifies Morrigan as the current holder and flags her identity as the human Rioghnach as the protected secret; Human, Fey, Clone, Takeling, and Principal Inquisitor descriptions were neutralized of unsupported claims; designation is reported as null; image history is recorded accurately.
+- Spoiler-safety layout pass (peer review): removed the GM / Canon Notes section and all gmNotes bindings from the Species and Archetype layouts, and the Notes and Secrets sections from the Character layout. The gmNotes, notes, and secrets schema fields and their stored content are unchanged; only the rendered layout bindings were removed.
 
-Assumptions: player-facing description = baseline `description` field; gmNotes = new textarea field on both types. Phantom Queen gmNotes intentionally generic to protect Morrigan's secret; Principal Inquisitor gmNotes names Green per the canon decisions.
+Assumptions: player-facing description = baseline `description` field; gmNotes = new textarea field on both types. Principal Inquisitor gmNotes names Green per the canon decisions; Phantom Queen gmNotes identifies Morrigan as the current holder and flags the Rioghnach secret per peer review.
 
 ## Review (filled by ChatGPT / the human after the pull)
 

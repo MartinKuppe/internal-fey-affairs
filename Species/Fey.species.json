@@ -3,15 +3,6 @@
     "referenceId": "019fedb8-9e2a-7ba8-b08f-b5afa714bb05"
   },
   "name": "Fey",
-  "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/70adcbd6-a02d-4439-91e3-63803827be19",
-    "generation": {
-      "prompt": "An ethereal, otherworldly Fey entity standing at the edge of a glowing fairy ring within a misty, twilight forest. The creature possesses a surreal, otherworldly beauty with iridescent skin, elongated features, and eyes that shimmer like nebulas. They are dressed in flowing, organic garments made of living petals and woven moonlight. In the background, the entrance to a hollow hill glows with a soft, inviting amber light. The atmosphere is mysterious and whimsical, with floating spores and shimmering dust motes. Soft, volumetric lighting, deep emerald and violet color palette, cinematic composition, hyper-detailed textures of moss and dew.",
-      "status": "success",
-      "startedAt": "2026-08-10T22:09:27.257Z",
-      "finishedAt": "2026-08-10T22:09:33.920Z"
-    }
-  },
   "gmNotes": "Fey means an actual Fey/alien individual — the beings deep technical lore rarely calls Elgafari (that term is reserved for rare technical canon, not ordinary metadata). Fey kinds such as Lepracaun, Banshee, Pooka, Brownie, and Leannán Sidhe are roles, functions, training, patterns, or social identities — Archetypes, not biological Species. Clones, Takelings, and Changelings are not Fey: Clones are grown Humans, Takelings are Humans raised by the Fey, and a Changeling is a clone pattern or role. A Fey character may carry many archetypes; record them explicitly.",
-  "description": "The Fair Folk of old stories — beautiful, strange, and bound by their own courtesy. They come out of the hollow hills and fairy rings, and they do not age as humans do. The village calls them the Aos Sí, and no one agrees on what they want."
+  "description": "The Fair Folk of old stories — beautiful, strange, and bound by their own courtesy. They come out of the hollow hills and fairy rings. The village calls them the Aos Sí, and no one agrees on what they want."
 }

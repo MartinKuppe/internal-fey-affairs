@@ -166,40 +166,7 @@
         },
         "children": [
           "description-text",
-          "details",
-          "gmnotes-section"
-        ]
-      },
-      "gmnotes-text": {
-        "type": "Markdown",
-        "props": {
-          "color": null,
-          "content": {
-            "$state": "/gmNotes"
-          }
-        },
-        "children": []
-      },
-      "gmnotes-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "GM / Canon Notes",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "gmnotes-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/gmNotes"
-        },
-        "children": [
-          "gmnotes-heading",
-          "gmnotes-text"
+          "details"
         ]
       },
       "description-text": {

@@ -3,16 +3,7 @@
     "referenceId": "019fedb8-9ee9-705c-98ff-4662e8e5a5e7"
   },
   "name": "Principal Inquisitor",
-  "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c07575b5-1f6b-47b1-b0e7-11586869d57a",
-    "generation": {
-      "prompt": "A cinematic, low-angle portrait of a Principal Inquisitor standing in a dimly lit, brutalist interrogation chamber. The figure wears a sharp, oppressive high-collar charcoal uniform with silver insignia denoting senior rank. Their expression is one of cold, calculating precision, eyes piercing through the shadows. A single, harsh overhead spotlight creates deep chiaroscuro contrast, casting long shadows and illuminating dust motes in the air. In the background, a heavy steel door and a single metal table. The mood is oppressive, authoritarian, and tense, with a muted color palette of slate grey, deep blacks, and cold sterile white. High detail, photorealistic, sharp focus.",
-      "status": "success",
-      "startedAt": "2026-08-10T22:09:27.297Z",
-      "finishedAt": "2026-08-10T22:09:32.747Z"
-    }
-  },
   "gmNotes": "Principal Inquisitor is Green's current IA title — a senior rank within Internal Affairs, above ordinary IA Agent. It records the office, not biology; the holder's Species is recorded separately on their character. Titles change: when a character's title changes, update the archetypes on their file. The title grants no automatic mechanics.",
   "category": "title",
-  "description": "A senior investigator of the Internal Affairs — the one who asks the final questions when an inquiry will not close. The title carries weight in every court, and its holder is rarely turned away."
+  "description": "A senior investigator of the Internal Affairs — the one who asks the final questions when an inquiry will not close. The title carries weight, and its holder is rarely turned away."
 }

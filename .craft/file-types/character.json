@@ -301,7 +301,6 @@
           "inventory-card",
           "background-section",
           "personality-section",
-          "notes-section",
           "origin-select",
           "attributes-section",
           "abilities-references",
@@ -311,8 +310,7 @@
           "graceledger-references",
           "species-select",
           "archetypes-references",
-          "goals-section",
-          "secrets-section"
+          "goals-section"
         ]
       },
       "stats": {
@@ -390,15 +388,6 @@
         },
         "children": []
       },
-      "notes-body": {
-        "type": "Markdown",
-        "props": {
-          "content": {
-            "$state": "/notes"
-          }
-        },
-        "children": []
-      },
       "stats-card": {
         "type": "Card",
         "props": {
@@ -443,16 +432,6 @@
         },
         "children": []
       },
-      "secrets-text": {
-        "type": "Markdown",
-        "props": {
-          "color": null,
-          "content": {
-            "$state": "/secrets"
-          }
-        },
-        "children": []
-      },
       "goals-heading": {
         "type": "Heading",
         "props": {
@@ -473,28 +452,6 @@
         "children": [
           "goals-heading",
           "goals-text"
-        ]
-      },
-      "notes-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Notes",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "notes-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/notes"
-        },
-        "children": [
-          "notes-heading",
-          "notes-body"
         ]
       },
       "origin-select": {
@@ -604,28 +561,6 @@
         "children": [
           "markers-heading",
           "markers-badges"
-        ]
-      },
-      "secrets-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Secrets",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "secrets-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/secrets"
-        },
-        "children": [
-          "secrets-heading",
-          "secrets-text"
         ]
       },
       "attributes-stats": {
