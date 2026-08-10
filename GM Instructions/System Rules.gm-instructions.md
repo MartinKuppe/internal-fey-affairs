@@ -1,7 +1,8 @@
 ---
 name: System Rules
 description: The light RPG engine for Internal Fey Affairs — attributes,
-  abilities, origins, checks, Grace, bargains, and reputation markers.
+  abilities, origins, species and archetypes, checks, Grace, bargains, and
+  reputation markers.
 $craft:
   referenceId: 019fde04-45a3-7a04-ae62-38704ecce2e1
   settings:
@@ -44,6 +45,20 @@ An origin grants exactly three trained abilities. The GM may award additional ab
 ## Origins
 
 When a player picks an origin, it defines who their character was before the story began: their attribute, their three abilities, and their place in the village. See the Origins folder for the eighteen choices.
+
+- A newly created playable protagonist is expected to have an Origin.
+- NPCs do not require an Origin. An NPC may carry an Origin only when it genuinely represents their mechanical starting background.
+- Minor NPCs do not need full attributes or trained abilities unless play requires them.
+
+## Species & Archetypes
+
+- Species is **Human** or **Fey** in ordinary project metadata.
+- **Elgafar** / **Elgafari** terminology is reserved for rare, deep technical lore; do not use it in ordinary play or character data.
+- Clones and Takelings are Human. A Takeling is a Human taken in infancy and raised by the Fey; a Clone is grown from a pattern. A Changeling is a particular clone pattern or role — not a separate Species, and not Fey.
+- Fey kinds such as Lepracaun, Banshee, Pooka, Brownie, and Leannán Sidhe are roles, functions, training, patterns, or social identities — Archetypes, not Species.
+- Characters explicitly store every applicable Archetype. Never infer an undisclosed archetype from an indirect reference chain; classification is explicit and flat.
+- Archetypes are descriptive and grant no automatic mechanics until future rules explicitly assign mechanical effects.
+- Player-facing narration must respect spoiler boundaries: never expose a character's Secrets or the GM/canon notes on Species or Archetype definitions.
 
 ## Grace
 

@@ -1,0 +1,14 @@
+{
+  "name": "Human",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/26401bfc-f14a-4a7c-ac24-90bfc1c53020",
+    "generation": {
+      "prompt": "A cinematic portrait of a weathered human storyteller in a rustic, rural village. He has a lined, sun-beaten face, wearing coarse linen garments and a heavy wool cloak. He sits by a crackling hearth in a dim, timber-framed cottage, the orange firelight casting deep shadows and highlighting the texture of his skin and the fabric of his clothes. In the background, glimpses of a lush, green pastoral landscape are visible through a window. The mood is nostalgic and earthy, with a palette of deep browns, moss greens, and warm amber glows. High detail, organic textures, soft atmospheric smoke.",
+      "status": "success",
+      "startedAt": "2026-08-10T22:09:27.258Z",
+      "finishedAt": "2026-08-10T22:09:32.552Z"
+    }
+  },
+  "gmNotes": "In ordinary project metadata, Species is Human or Fey. Human covers everyone born of this world. Takelings are biologically Human — Humans taken in infancy and raised by the Fey — and carry the Takeling (provenance) archetype. Clones are Human and carry the Clone (provenance) archetype. A Changeling is a particular clone pattern or role (a clone replacement grown and imprinted to replace an abducted human baby) — not a separate Species, and not Fey. Classification is explicit and flat: a character stores every applicable archetype directly; never infer Takeling, Clone, or Changeling through an inherited chain.",
+  "description": "The native people of this world — farmers, smiths, herdsfolk, and storytellers, born of flesh and blood and the long green land. Humans live short lives measured by seasons and harvests, and they keep the old stories about the Fair Folk even after they stop believing them."
+}

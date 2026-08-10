@@ -1,0 +1,18 @@
+{
+  "$craft": {
+    "referenceId": "019fedb8-9ea3-7530-bc68-2b1db9541538"
+  },
+  "name": "Banshee",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3729cbb6-38d7-4502-af39-e8cae7f4a19e",
+    "generation": {
+      "prompt": "A haunting cinematic portrait of a Banshee, a spectral Fey figure draped in flowing, tattered ethereal robes of silver and charcoal grey. She stands atop a jagged, mist-shrouded moor under a heavy, bruised purple twilight sky. Her expression is one of profound grief, mouth open in a silent, piercing wail, with ghostly translucent skin and long, floating white hair that blends into the swirling fog. Pale, moonlight illumination highlights the iridescent shimmer of her form, creating a mood of atmospheric dread and supernatural melancholy. Wide shot, deep depth of field, gothic fantasy aesthetic.",
+      "status": "success",
+      "startedAt": "2026-08-10T22:09:27.282Z",
+      "finishedAt": "2026-08-10T22:09:33.227Z"
+    }
+  },
+  "gmNotes": "A Banshee is a medical researcher/scanner role — not a biological species. A typical Banshee is Fey and also carries the Medical Researcher (profession) archetype. The folk stories describe a wailing omen; the underlying function is research and scanning. Do not reveal the scanner function in player-facing description unless the fiction earns it.",
+  "category": "fey-role",
+  "description": "A voice on the wind that some say foretells death — a wail heard in the hills before the news arrives. In the village, hearing a banshee is an omen, and no two people agree on what it means."
+}

@@ -218,6 +218,7 @@ Credentials are never stored in this folder.
 | Extension | Name | Content |
 | --- | --- | --- |
 | `.ability.json` | Ability | json |
+| `.archetype.json` | Archetype | json |
 | `.attribute.json` | Attribute | json |
 | `.bargain.json` | Bargain | json |
 | `.change-request.md` | Change Request | markdown |
@@ -228,3 +229,4 @@ Credentials are never stored in this folder.
 | `.grace.json` | Grace | json |
 | `.location.json` | Location | json |
 | `.origin.json` | Origin | json |
+| `.species.json` | Species | json |
