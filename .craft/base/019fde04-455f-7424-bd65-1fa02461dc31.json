@@ -3,25 +3,44 @@
   "image": {
     "url": "https://dev-media.craftrpgs.com/seed/images/starter-project/2026-05-09/gpt-image-1.5/landscape-179ed28a-d411-4532-8584-719fc5872532.png"
   },
-  "level": 1,
-  "notes": "Use notes for proficiencies, backstory, secrets, relationships, or table-specific rules.",
-  "stats": {
-    "wisdom": 13,
-    "charisma": 11,
-    "strength": 10,
-    "dexterity": 14,
-    "constitution": 12,
-    "intelligence": 10
+  "notes": "Apprenticed to the village smith. Granny tells old stories of the Aos Sí — he listens, but does not believe. Keep a cold-iron horseshoe close: iron is said to bite the Fair Folk.",
+  "origin": {
+    "slug": "blacksmith",
+    "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+    "fileTypeSlug": "origin"
   },
-  "ancestry": "Human",
-  "inventory": [
-    "longbow",
-    "leather-armor",
-    "explorers-pack",
-    "quiver-of-arrows"
+  "abilities": [
+    {
+      "slug": "repairs",
+      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "iron",
+      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "weapons",
+      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "fileTypeSlug": "ability"
+    }
   ],
-  "background": "A reliable trail guide who knows the nearby roads, ruins, and rumors.",
-  "description": "A starter character you can replace with someone from your world.",
-  "personality": "Curious, practical, and quick to point the party toward a useful lead.",
-  "characterClass": "Ranger"
+  "inventory": [
+    {
+      "slug": "explorers-pack",
+      "referenceId": "019fde04-458a-7974-913d-3b63462165b6",
+      "fileTypeSlug": "equipment"
+    }
+  ],
+  "attributes": {
+    "body": 3,
+    "head": 2,
+    "legs": 2,
+    "hands": 2,
+    "heart": 2,
+    "shadow": 2
+  },
+  "description": "A blacksmith's apprentice in a small Celtic village. He believes in iron, honest work, and things that can be held in the hand — not in fairy stories. Then the fairy ring glowed blue.",
+  "personality": "Practical, skeptical, stubbornly grounded. Loyal to his granny, quietly in love with Niamh, and too proud to admit when he is afraid."
 }

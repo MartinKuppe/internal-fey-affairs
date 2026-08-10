@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-edf2-70dc-b674-ab8e3e58d480"
+  },
+  "name": "Courier",
+  "abilities": [
+    {
+      "slug": "riding",
+      "referenceId": "019fe8d9-877f-7bb4-9371-ab27cdfe904d",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "court-life",
+      "referenceId": "019fe8d9-7e43-7510-8d2d-585d3869301b",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "legs",
+    "referenceId": "019fe8d9-78f4-71ec-b836-e6ce947c28b8",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "The courier carries messages and parcels between the village, the lord’s hall, and scattered farms. They know every road, ford, and shortcut, and remember which gatekeeper wants a greeting before opening a door. A sealed letter meant for the hollow hills has gone missing from their satchel, and only the courier knows who last handled it."
+}

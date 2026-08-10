@@ -1,0 +1,26 @@
+{
+  "name": "Good-for-nothing",
+  "abilities": [
+    {
+      "slug": "dancing",
+      "referenceId": "019fe8d9-878d-743c-9788-b0c599c703c0",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "charisma",
+      "referenceId": "019fe8d9-7f47-7b48-aedd-873128033c50",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "lying",
+      "referenceId": "019fe8d9-7e33-7bfc-b392-5da096d27560",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "heart",
+    "referenceId": "019fe8d9-78d7-7488-91b9-1436e5429fe7",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are the village ne’er-do-well, quick with a grin and quicker with your feet when honest work calls. Charm gets you fed, footwork gets you out of trouble, and a well-placed lie keeps both working. You notice who slips away from the fair unseen, because you are usually the one blamed for it."
+}

@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-f0f5-7460-a6ea-77c031c40562"
+  },
+  "name": "Bandit",
+  "abilities": [
+    {
+      "slug": "nature",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "weapons",
+      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "lying",
+      "referenceId": "019fe8d9-7e33-7bfc-b392-5da096d27560",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "body",
+    "referenceId": "019fe8d9-78b4-747c-98b4-283465086348",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are an outlaw of the woods, living by ambush, hidden paths, and the alibis that keep a rope from your neck. You read bent grass and bird calls, strike hard, and tell a convincing story when the village watch asks questions. A robbed traveller’s tale does not match the tracks you found near the hollow hill."
+}

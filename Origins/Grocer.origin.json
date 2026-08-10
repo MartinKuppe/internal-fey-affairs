@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-ed48-7644-850f-3e2a3a8d2c75"
+  },
+  "name": "Grocer",
+  "abilities": [
+    {
+      "slug": "food",
+      "referenceId": "019fe8d9-879f-74a8-9255-601fee8af116",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "milk",
+      "referenceId": "019fe8d9-7f71-7f98-8978-31359da4dddd",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "bargains",
+      "referenceId": "019fe8d9-7e26-7c5c-b6ac-38a5e792bf2a",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "hands",
+    "referenceId": "019fe8d9-78b7-7094-b0bd-295926bee011",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You run a stall or little shop, weighing food, trading milk, and hearing every rumour that passes through the market. You know which families are short of grain, who cheats the scales, and what price a desperate customer will pay. A quiet stranger keeps buying salt and butter while asking too many questions about the road to the fairy ring."
+}

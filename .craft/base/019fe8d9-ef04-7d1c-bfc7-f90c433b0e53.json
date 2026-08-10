@@ -1,0 +1,26 @@
+{
+  "name": "Bard",
+  "abilities": [
+    {
+      "slug": "music",
+      "referenceId": "019fe8d9-7f65-73e4-9f70-d8bf154016b9",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "fey-lore",
+      "referenceId": "019fe8d9-7f2b-7e9c-b24a-7330a9eb0ddd",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "court-life",
+      "referenceId": "019fe8d9-7e43-7510-8d2d-585d3869301b",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "heart",
+    "referenceId": "019fe8d9-78d7-7488-91b9-1436e5429fe7",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are a poet and harpist, welcome wherever a chieftain or noble household wants its deeds remembered. You sing for lords and know old songs whose verses name places no living map records. At a feast, a stranger requests one particular song and watches the doors whenever you reach its final verse."
+}

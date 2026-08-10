@@ -1,0 +1,8 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-78b4-747c-98b4-283465086348"
+  },
+  "name": "Body",
+  "trait": "Strength",
+  "description": "Raw physical power for lifting, forcing, smashing, and enduring strain. The GM asks for Body when a task depends on muscle, grit, or the ability to withstand hard exertion."
+}

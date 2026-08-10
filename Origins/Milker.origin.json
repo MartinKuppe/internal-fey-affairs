@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-edcd-7080-9b30-902b2bef1552"
+  },
+  "name": "Milker",
+  "abilities": [
+    {
+      "slug": "animals",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "milk",
+      "referenceId": "019fe8d9-7f71-7f98-8978-31359da4dddd",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "nature",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "hands",
+    "referenceId": "019fe8d9-78b7-7094-b0bd-295926bee011",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are the byre-hand and dairymaid, rising before dawn with gentle hands and quiet knowledge of beasts. You milk, watch for sickness, and read the pasture’s changes before most people notice them. A cow refuses the byre after finding a circle of frost in the grass, and only you see the small three-toed prints beside it."
+}

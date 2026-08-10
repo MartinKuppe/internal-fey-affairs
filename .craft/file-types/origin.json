@@ -1,0 +1,207 @@
+{
+  "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
+  "slug": "origin",
+  "name": "Origin",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "8568cb05-e623-8e16-8c6c-f60417a412f0",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name",
+      "attribute",
+      "abilities"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "abilities": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "ability"
+        },
+        "title": "Abilities",
+        "maxItems": 3,
+        "minItems": 3,
+        "description": "The three abilities this origin grants."
+      },
+      "attribute": {
+        "type": "string",
+        "title": "Attribute",
+        "description": "The main attribute this origin is rooted in. Starts at 3 dice at character creation.",
+        "referencedFileTypeSlug": "attribute"
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {
+          "centered": false,
+          "maxWidth": "full"
+        },
+        "children": [
+          "body-stack"
+        ]
+      },
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$state": "/image"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "body"
+        ]
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "description-text",
+          "attribute-select",
+          "abilities-references"
+        ]
+      },
+      "attribute-select": {
+        "type": "Select",
+        "props": {
+          "label": "Attribute",
+          "value": {
+            "$state": "/attribute"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "attribute"
+        },
+        "visible": {
+          "$state": "/attribute"
+        },
+        "children": []
+      },
+      "description-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/description"
+          }
+        },
+        "visible": {
+          "$state": "/description"
+        },
+        "children": []
+      },
+      "abilities-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/abilities"
+          },
+          "label": "Abilities",
+          "columns": 4,
+          "fileTypeSlug": "ability",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/abilities"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

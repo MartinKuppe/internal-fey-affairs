@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-eec8-7754-94b4-f3b936cca4c5"
+  },
+  "name": "Teacher",
+  "abilities": [
+    {
+      "slug": "learnedness",
+      "referenceId": "019fe8d9-7f28-74d0-b564-97856b746cf7",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "bargains",
+      "referenceId": "019fe8d9-7e26-7c5c-b6ac-38a5e792bf2a",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "art-beauty",
+      "referenceId": "019fe8d9-7f54-7b08-a50c-1437927892ef",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "head",
+    "referenceId": "019fe8d9-78e3-7794-829a-1eb1e3a560aa",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are the hedge-school master, teaching letters and numbers wherever a dry wall gives shelter. Your eye for fair judgment settles small disputes before they grow teeth, and your careful hand makes even a lesson look beautiful. A half-erased message on the schoolhouse lintel may be a bargain written in a stranger’s script."
+}

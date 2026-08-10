@@ -1,0 +1,153 @@
+{
+  "fileTypeId": "019fe8d8-fcb6-7d50-b6e5-8d8e88d7bf8b",
+  "slug": "ability",
+  "name": "Ability",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "18561dca-88aa-9762-50ea-5baf86fb9c4f",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {
+          "centered": false,
+          "maxWidth": "full"
+        },
+        "children": [
+          "body-stack"
+        ]
+      },
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$state": "/image"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "body"
+        ]
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "description-text"
+        ]
+      },
+      "description-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/description"
+          }
+        },
+        "visible": {
+          "$state": "/description"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

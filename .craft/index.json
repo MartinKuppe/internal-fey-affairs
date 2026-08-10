@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-07T23:37:48.824Z",
+  "syncedAt": "2026-08-10T11:17:06.892Z",
   "folders": [
     {
       "path": "/Characters",
@@ -20,6 +20,18 @@
     {
       "path": "/GM Instructions",
       "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
+    },
+    {
+      "path": "/Attributes",
+      "folderId": "019fe8d8-fcf1-7864-ad9d-7ba984ba239a"
+    },
+    {
+      "path": "/Abilities",
+      "folderId": "019fe8d8-fcf3-7840-9314-a401a1870ce5"
+    },
+    {
+      "path": "/Origins",
+      "folderId": "019fe8d9-00ef-7a48-b9f0-2de75a99843a"
     }
   ],
   "files": [
@@ -28,8 +40,8 @@
       "fileId": "019fde04-455f-7424-bd65-1fa02461dc31",
       "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
       "fileType": "character",
-      "baseVersionId": "019fde04-455c-72dc-a657-3eb6ce3a82c5",
-      "baseHash": "4f3363e5-9210-fb2c-aefb-3d5a472f0425",
+      "baseVersionId": "019fe8da-a4f7-7218-bae3-856b4efa2316",
+      "baseHash": "87bc2b9d-4aee-260a-bd7a-0b0ddb1ee463",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -110,25 +122,406 @@
       "metadataHash": "5b40243c-3249-283f-311e-87be49dc74c5"
     },
     {
-      "path": "/GM Instructions/Example GM Instructions.gm-instructions.md",
+      "path": "/GM Instructions/System Rules.gm-instructions.md",
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "019fde04-459e-72d8-83c8-cbc6a3ae5436",
-      "baseHash": "ea515c3d-7161-4153-b441-af63a177a2e5",
+      "baseVersionId": "019fe8da-b8b2-788c-8cab-f3e24cfd430b",
+      "baseHash": "7b0fa0d9-8973-0e69-1871-dd3ad6bc0eb5",
       "source": "project",
       "settings": {
         "agentEditable": true
       }
+    },
+    {
+      "path": "/Attributes/Body.attribute.json",
+      "fileId": "019fe8d9-78b4-73fc-8a49-ac0011d82a47",
+      "referenceId": "019fe8d9-78b4-747c-98b4-283465086348",
+      "fileType": "attribute",
+      "baseVersionId": "019fe8d9-78b1-797c-9d30-476b833be3b9",
+      "baseHash": "a580cd4a-9758-ee5c-9065-67e7c814d334",
+      "source": "project"
+    },
+    {
+      "path": "/Attributes/Hands.attribute.json",
+      "fileId": "019fe8d9-78b7-7014-97a0-6e08deb2735d",
+      "referenceId": "019fe8d9-78b7-7094-b0bd-295926bee011",
+      "fileType": "attribute",
+      "baseVersionId": "019fe8d9-78b3-749c-9de1-ecacb6b900d6",
+      "baseHash": "7dacfbc1-249a-7d7b-6f52-414ceaab0900",
+      "source": "project"
+    },
+    {
+      "path": "/Attributes/Heart.attribute.json",
+      "fileId": "019fe8d9-78d7-73f8-9ccb-f1e992068684",
+      "referenceId": "019fe8d9-78d7-7488-91b9-1436e5429fe7",
+      "fileType": "attribute",
+      "baseVersionId": "019fe8d9-78d4-7938-8e9f-7ec4b5b4bc71",
+      "baseHash": "f22e904d-65cf-f353-5465-76caeab8797c",
+      "source": "project"
+    },
+    {
+      "path": "/Attributes/Head.attribute.json",
+      "fileId": "019fe8d9-78e3-7710-ad09-4ef84b6569af",
+      "referenceId": "019fe8d9-78e3-7794-829a-1eb1e3a560aa",
+      "fileType": "attribute",
+      "baseVersionId": "019fe8d9-78e0-7dc8-a7df-561c31cc4bab",
+      "baseHash": "64d973b9-4017-3405-b50d-5367d03e1a73",
+      "source": "project"
+    },
+    {
+      "path": "/Attributes/Legs.attribute.json",
+      "fileId": "019fe8d9-78f4-7114-bf1e-4dda7efd9465",
+      "referenceId": "019fe8d9-78f4-71ec-b836-e6ce947c28b8",
+      "fileType": "attribute",
+      "baseVersionId": "019fe8d9-78f0-726c-a275-c7e45f5e7d8e",
+      "baseHash": "a6b043a5-4a71-4bd0-ca60-0283132a9a84",
+      "source": "project"
+    },
+    {
+      "path": "/Attributes/Shadow.attribute.json",
+      "fileId": "019fe8d9-7900-73f0-a9e6-3a53a5bf89a1",
+      "referenceId": "019fe8d9-7900-7474-8879-f272fe519412",
+      "fileType": "attribute",
+      "baseVersionId": "019fe8d9-78fd-7bd8-80e0-109710cea7bc",
+      "baseHash": "bc1d9a00-5d2d-0a44-f80b-781a33f3f047",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Animals.ability.json",
+      "fileId": "019fe8d9-7e07-70e8-b8a7-7f4493f4c0a8",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7e03-7164-9002-5b2da639cd5b",
+      "baseHash": "f29982fb-ae41-0e98-5df7-b3a3ee6ebd83",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Iron.ability.json",
+      "fileId": "019fe8d9-7e07-72d0-9b0d-4b6e6e25f6e2",
+      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7e03-742c-ae90-6c8f2a9c6987",
+      "baseHash": "3247288c-d4c3-df09-2fd0-597c0a49c2c4",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Bargains.ability.json",
+      "fileId": "019fe8d9-7e26-7bc4-90ae-9cf058dbb2ff",
+      "referenceId": "019fe8d9-7e26-7c5c-b6ac-38a5e792bf2a",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7e22-7de0-9955-86c8bc36fd62",
+      "baseHash": "038d2442-b73f-6b84-7b82-998a53936864",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Lying.ability.json",
+      "fileId": "019fe8d9-7e33-7b68-9100-f4008700377b",
+      "referenceId": "019fe8d9-7e33-7bfc-b392-5da096d27560",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7e2f-74e8-9b18-10871ba44458",
+      "baseHash": "ffeb4d9e-17e1-b9f9-30ea-d68d704776ab",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Court life.ability.json",
+      "fileId": "019fe8d9-7e43-748c-acdd-ad91f34a0bd6",
+      "referenceId": "019fe8d9-7e43-7510-8d2d-585d3869301b",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7e40-7978-8421-8b823d5a7c46",
+      "baseHash": "bc31b91b-2170-e3ec-0bf1-71412b9f204c",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Stealth.ability.json",
+      "fileId": "019fe8d9-7e51-7dcc-9c3e-000b9f54a834",
+      "referenceId": "019fe8d9-7e51-7e64-809b-5b9ab63c140c",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7e4d-74dc-8e32-ee6434e7f7e6",
+      "baseHash": "6eb9d124-57c1-1e80-5cae-0dae5345d8f7",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Learnedness.ability.json",
+      "fileId": "019fe8d9-7f28-744c-a152-d3f2260fecff",
+      "referenceId": "019fe8d9-7f28-74d0-b564-97856b746cf7",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7f24-7464-bb77-1e6f9c1f7d07",
+      "baseHash": "b6365f43-f070-76a2-07eb-6b222bc3d929",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Fey Lore.ability.json",
+      "fileId": "019fe8d9-7f2b-7e18-a970-4bb68516b3d5",
+      "referenceId": "019fe8d9-7f2b-7e9c-b24a-7330a9eb0ddd",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7f27-7f34-aa44-5ba53dfabd9c",
+      "baseHash": "ddc3d67f-53ce-eff5-6dbf-66a40cf07fe2",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Charisma.ability.json",
+      "fileId": "019fe8d9-7f47-7ab8-b212-ae29f698c4f1",
+      "referenceId": "019fe8d9-7f47-7b48-aedd-873128033c50",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7f43-7f8c-b312-63a86741580a",
+      "baseHash": "a284e7b3-cf8d-f9ee-67ea-9fbf5d499377",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Art & Beauty.ability.json",
+      "fileId": "019fe8d9-7f54-7a70-b298-4b6b3445e051",
+      "referenceId": "019fe8d9-7f54-7b08-a50c-1437927892ef",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7f50-7324-8837-a1c3e1a26fd7",
+      "baseHash": "2976fd5a-acaa-7313-be5a-a8e884cea8aa",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Music.ability.json",
+      "fileId": "019fe8d9-7f65-734c-b492-7a99ef7ce334",
+      "referenceId": "019fe8d9-7f65-73e4-9f70-d8bf154016b9",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7f61-7b48-be9e-f881b2cea28d",
+      "baseHash": "804b3e81-fb51-8ace-3c19-e565a24358e1",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Milk.ability.json",
+      "fileId": "019fe8d9-7f71-7f24-bdc7-7cab5e43a258",
+      "referenceId": "019fe8d9-7f71-7f98-8978-31359da4dddd",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7f6d-7640-a74d-668b892c973b",
+      "baseHash": "d621876c-4387-5d46-7bc2-0928e5c6868a",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Repairs.ability.json",
+      "fileId": "019fe8d9-7f82-7954-ba32-b2931e318bbe",
+      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-7f7e-7eb4-aabc-7490d54c7d70",
+      "baseHash": "eecb05c6-ea86-9ff6-1774-553fd9a2ff69",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Nature.ability.json",
+      "fileId": "019fe8d9-875f-71a0-a4ef-b10579b509e8",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-875c-7890-b534-09bacc55e321",
+      "baseHash": "2cea29ee-9017-6495-ca14-e544f83ff07d",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Wayfinding.ability.json",
+      "fileId": "019fe8d9-8763-7b14-aebb-42b0c4d90a24",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-875f-7d0c-9ebc-d4b5983ae05f",
+      "baseHash": "fb985f7e-8993-dda8-b7ef-91e8eea1d6fe",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Riding.ability.json",
+      "fileId": "019fe8d9-877f-7b3c-9461-f8bc9c2bb494",
+      "referenceId": "019fe8d9-877f-7bb4-9371-ab27cdfe904d",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-877a-7614-a51e-2480e729b4ed",
+      "baseHash": "fb8aa666-09a1-d973-9d27-b69dad396d4b",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Dancing.ability.json",
+      "fileId": "019fe8d9-878d-73a0-ac99-07006cd80099",
+      "referenceId": "019fe8d9-878d-743c-9788-b0c599c703c0",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-8789-7760-8390-a37c4fbcec78",
+      "baseHash": "3ac7cf32-19d3-60a3-c291-5b727735b8a3",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Food.ability.json",
+      "fileId": "019fe8d9-879f-7404-9d63-0a315e007add",
+      "referenceId": "019fe8d9-879f-74a8-9255-601fee8af116",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-879b-774c-ad41-cc8b615ceb64",
+      "baseHash": "89d887c8-6c81-91dc-f8a0-683bc429248b",
+      "source": "project"
+    },
+    {
+      "path": "/Abilities/Weapons.ability.json",
+      "fileId": "019fe8d9-87af-7074-866d-99e31ae80bd1",
+      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "fileType": "ability",
+      "baseVersionId": "019fe8d9-87ab-73f8-8963-9469dee3e0ba",
+      "baseHash": "16c3a4e7-4937-cadb-8f27-93c3dc92035b",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Grocer.origin.json",
+      "fileId": "019fe8d9-ed48-75a8-be6d-5d21a0331627",
+      "referenceId": "019fe8d9-ed48-7644-850f-3e2a3a8d2c75",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-ed43-7520-91f8-e7f2a55bf871",
+      "baseHash": "691477e6-8e58-689d-671c-594400747423",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Farmhand.origin.json",
+      "fileId": "019fe8d9-ed55-7434-a02e-69b6c69d0f46",
+      "referenceId": "019fe8d9-ed55-74d4-80e8-88d70096348c",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-ed51-7d00-bc40-9526746635bd",
+      "baseHash": "3b1f89b7-1c90-772a-4f3c-afe5bcfe7ce2",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Milker.origin.json",
+      "fileId": "019fe8d9-edcd-7f78-8798-2bc87d9ad624",
+      "referenceId": "019fe8d9-edcd-7080-9b30-902b2bef1552",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-edbd-7b58-baac-c989ae7ed7e0",
+      "baseHash": "183799d6-dcd4-4927-b047-71ade151168c",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Courier.origin.json",
+      "fileId": "019fe8d9-edf2-7054-a729-f908ff3ef235",
+      "referenceId": "019fe8d9-edf2-70dc-b674-ab8e3e58d480",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-edec-79b4-b9e0-7a2fd916e24e",
+      "baseHash": "1c097d18-623a-7491-ac8c-a4fadcfac2f3",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Horse Herder.origin.json",
+      "fileId": "019fe8d9-edf6-7b8c-a85d-d16f298b09ee",
+      "referenceId": "019fe8d9-edf6-7c1c-974b-4816ef0f6b27",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-edf1-750c-bc79-c2d5ada4ea02",
+      "baseHash": "6a05b2bb-e6de-a4b7-5cec-a35084c92d4b",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Wood Gatherer.origin.json",
+      "fileId": "019fe8d9-ee0f-704c-83ea-e5ab30ae4f78",
+      "referenceId": "019fe8d9-ee0f-70e0-87f9-2c71a5091599",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-ee0b-7290-9b4e-ead7aaa857c1",
+      "baseHash": "4cf0a2a3-3577-4ef1-f21b-e21da230042b",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Thief.origin.json",
+      "fileId": "019fe8d9-ee1c-7c14-9d5f-e2b54a97c207",
+      "referenceId": "019fe8d9-ee1c-7ca8-b8f8-867e5a463881",
+      "fileType": "origin",
+      "baseVersionId": "019fe8da-8973-7778-ac5c-a8719889cc49",
+      "baseHash": "bc5179c5-94aa-fb5b-4638-9a7016ce4a25",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Poacher.origin.json",
+      "fileId": "019fe8d9-ee2d-7d54-8279-b963a03b2392",
+      "referenceId": "019fe8d9-ee2d-7de8-b0ac-959538762e09",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-ee29-7b5c-b43f-8ceadfc65f71",
+      "baseHash": "a6be9c59-3514-84fd-7716-a6475a8ada95",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Used-horse dealer.origin.json",
+      "fileId": "019fe8d9-ee3a-7ae0-a922-404ff8eb44a4",
+      "referenceId": "019fe8d9-ee3a-7b88-854f-70ad60bf18d2",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-ee35-742c-994e-39786c5e6725",
+      "baseHash": "b063c81c-c890-3ad7-4e89-1dcd4c9bb77d",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Teacher.origin.json",
+      "fileId": "019fe8d9-eec8-76b8-8ed7-8ab1eeeb9dff",
+      "referenceId": "019fe8d9-eec8-7754-94b4-f3b936cca4c5",
+      "fileType": "origin",
+      "baseVersionId": "019fe8da-6d3b-79e8-914f-7cd21ab98325",
+      "baseHash": "fb0c1bde-30e7-5d25-1693-cee27525eb2b",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Seanchaí.origin.json",
+      "fileId": "019fe8d9-eece-7c24-9fc1-94e1cba0b892",
+      "referenceId": "019fe8d9-eece-7ca4-a384-156122d56af8",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-eeca-7e28-9bbe-02401651bb81",
+      "baseHash": "eb4c4692-b312-64e4-e642-bb1385c291d2",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Tailor.origin.json",
+      "fileId": "019fe8d9-eee7-797c-ac36-721886458eb6",
+      "referenceId": "019fe8d9-eee7-7a0c-ae09-2accd0f9dfb4",
+      "fileType": "origin",
+      "baseVersionId": "019fe8da-8973-770c-8056-d3eab5f9bfea",
+      "baseHash": "6c4d2eee-1cf2-b268-2266-54be6c5b8a4f",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Piper.origin.json",
+      "fileId": "019fe8d9-eef4-77e0-b97a-65b7dc7b5fbe",
+      "referenceId": "019fe8d9-eef4-7880-a0c8-55060bd51659",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-eef0-7838-8c89-1bb46ed732e2",
+      "baseHash": "bc45d3ac-c57a-cbd8-89cf-c270266d3a5e",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Bard.origin.json",
+      "fileId": "019fe8d9-ef04-7d1c-bfc7-f90c433b0e53",
+      "referenceId": "019fe8d9-ef04-7da8-9f5c-e24a04e4f3d4",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-ef00-70d0-bd1e-9db23e3efc75",
+      "baseHash": "04357058-28b6-5906-218e-1a0f80b554e7",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Good-for-nothing.origin.json",
+      "fileId": "019fe8d9-ef11-7438-af21-5da47bf0cbe9",
+      "referenceId": "019fe8d9-ef11-74c8-8e5b-858f193e200c",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-ef0d-7530-8c77-3a6441583e83",
+      "baseHash": "b684567c-56f2-a0c8-8618-b0b53fd7245c",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Mercenary.origin.json",
+      "fileId": "019fe8d9-f0d8-7d14-8a8f-5ec82b01b84c",
+      "referenceId": "019fe8d9-f0d8-7d9c-a7e3-c0ae92e62617",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-f0d2-7d28-a4c9-4d4be652c02d",
+      "baseHash": "1e7d571a-a866-4853-0543-8a1e87883048",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Blacksmith.origin.json",
+      "fileId": "019fe8d9-f0da-7ebc-a6ab-becd7414ecdc",
+      "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-f0d6-7650-886d-8e30a0907e8a",
+      "baseHash": "f3d92720-e135-b362-5913-71ba3fa0cd1a",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Bandit.origin.json",
+      "fileId": "019fe8d9-f0f5-73c8-baf9-2d5d01cc7e0d",
+      "referenceId": "019fe8d9-f0f5-7460-a6ea-77c031c40562",
+      "fileType": "origin",
+      "baseVersionId": "019fe8d9-f0f0-7718-906d-73999bd04505",
+      "baseHash": "714ab5d5-4797-adb1-ac47-5807bc947eb6",
+      "source": "project"
     }
   ],
   "fileTypes": [
-    {
-      "slug": "character",
-      "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-      "schemaHash": "d66cc242-7d05-bd3e-2f38-e1e89bb7c576",
-      "contentHash": "d33ef3ee-6b42-487b-4df8-936b85bc8d84"
-    },
     {
       "slug": "location",
       "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
@@ -152,6 +545,30 @@
       "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
       "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
       "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
+    },
+    {
+      "slug": "character",
+      "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
+      "schemaHash": "b92b6d54-00a1-4cc3-2f1c-a5a3c40624f6",
+      "contentHash": "53a5d35c-fabc-6d89-4864-4fc897236851"
+    },
+    {
+      "slug": "ability",
+      "fileTypeId": "019fe8d8-fcb6-7d50-b6e5-8d8e88d7bf8b",
+      "schemaHash": "18561dca-88aa-9762-50ea-5baf86fb9c4f",
+      "contentHash": "a1c3e44e-471f-2032-0e7d-eed90236e1af"
+    },
+    {
+      "slug": "attribute",
+      "fileTypeId": "019fe8d8-fca9-7324-8b54-432095c52bb8",
+      "schemaHash": "7b111924-26c4-515c-3d8a-94be5c262730",
+      "contentHash": "9cf71d00-0d57-69a3-b4e4-fa1232545956"
+    },
+    {
+      "slug": "origin",
+      "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
+      "schemaHash": "8568cb05-e623-8e16-8c6c-f60417a412f0",
+      "contentHash": "bd90104d-f386-0099-7900-9bb89c3f4797"
     }
   ],
   "projectSettingsHash": "4480c48e-51a3-4a0c-df8b-d011d7e83de2"

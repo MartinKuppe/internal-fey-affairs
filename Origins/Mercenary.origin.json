@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-f0d8-7d9c-a7e3-c0ae92e62617"
+  },
+  "name": "Mercenary",
+  "abilities": [
+    {
+      "slug": "weapons",
+      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "court-life",
+      "referenceId": "019fe8d9-7e43-7510-8d2d-585d3869301b",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "body",
+    "referenceId": "019fe8d9-78b4-747c-98b4-283465086348",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are a soldier of fortune who has crossed long roads and served in halls far grander than this village. You know war, lords, camp discipline, and the signs that keep a traveller from getting lost. A scarred token from an absent chieftain may open a door, start a quarrel, or reveal who has been paying for trouble."
+}

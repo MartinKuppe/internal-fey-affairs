@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-ee0f-70e0-87f9-2c71a5091599"
+  },
+  "name": "Wood Gatherer",
+  "abilities": [
+    {
+      "slug": "nature",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "animals",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "legs",
+    "referenceId": "019fe8d9-78f4-71ec-b836-e6ce947c28b8",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "The wood gatherer brings home fuel, hazel, berries, and whatever else the woods offer, walking paths that most villagers never see. They know the forest by its smells and silences, and wild creatures rarely startle them for long. Fresh-cut branches now form a careful trail toward a place where no tree has been felled."
+}

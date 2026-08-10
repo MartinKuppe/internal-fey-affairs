@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-ee3a-7b88-854f-70ad60bf18d2"
+  },
+  "name": "Used-horse dealer",
+  "abilities": [
+    {
+      "slug": "riding",
+      "referenceId": "019fe8d9-877f-7bb4-9371-ab27cdfe904d",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "bargains",
+      "referenceId": "019fe8d9-7e26-7c5c-b6ac-38a5e792bf2a",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "lying",
+      "referenceId": "019fe8d9-7e33-7bfc-b392-5da096d27560",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "shadow",
+    "referenceId": "019fe8d9-7900-7474-8879-f272fe519412",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "The used-horse dealer sells mounts, swaps stories, and spots a buyer’s desperation before the reins change hands. They can praise a tired animal as a warhorse and haggle until no one remembers the first price. A pale horse has been left in their yard with no owner, no brand, and a saddle still warm from the Otherworld road."
+}

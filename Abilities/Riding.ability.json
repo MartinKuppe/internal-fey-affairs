@@ -1,0 +1,7 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-877f-7bb4-9371-ab27cdfe904d"
+  },
+  "name": "Riding",
+  "description": "Riding manages a horse under saddle, whether you are riding hard, riding tired, or riding well. The GM asks for it when speed, control, or endurance matters in the saddle."
+}

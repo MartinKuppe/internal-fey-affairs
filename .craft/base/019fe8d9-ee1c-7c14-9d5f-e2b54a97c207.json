@@ -1,0 +1,26 @@
+{
+  "name": "Thief",
+  "abilities": [
+    {
+      "slug": "stealth",
+      "referenceId": "019fe8d9-7e51-7e64-809b-5b9ab63c140c",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "art-beauty",
+      "referenceId": "019fe8d9-7f54-7b08-a50c-1437927892ef",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "weapons",
+      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "shadow",
+    "referenceId": "019fe8d9-7900-7474-8879-f272fe519412",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "The thief has light fingers, a sharp eye for valuables, and the patience to work rooftops, market crowds, and unlatched windows. They notice fine metalwork and beautiful objects before anyone else, while keeping a small blade ready for trouble. A silver brooch stolen from the lord’s hall has appeared in the thief’s room, though its delicate pattern matches no craft in the village."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Blacksmith",
+  "abilities": [
+    {
+      "slug": "repairs",
+      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "iron",
+      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "weapons",
+      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "body",
+    "referenceId": "019fe8d9-78b4-747c-98b4-283465086348",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are the village smith or the apprentice who works at their elbow, with strong arms and honest craft. You mend hinges, shoe horses, and shape iron into tools and weapons, carrying the forge’s heat in your blood. A strange blue fleck in a fresh horseshoe gives you a reason to question the owner before it leaves your hands."
+}

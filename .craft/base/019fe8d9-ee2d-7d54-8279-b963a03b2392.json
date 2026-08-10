@@ -1,0 +1,26 @@
+{
+  "name": "Poacher",
+  "abilities": [
+    {
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "lying",
+      "referenceId": "019fe8d9-7e33-7bfc-b392-5da096d27560",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "stealth",
+      "referenceId": "019fe8d9-7e51-7e64-809b-5b9ab63c140c",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "shadow",
+    "referenceId": "019fe8d9-7900-7474-8879-f272fe519412",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "The poacher takes deer and hare from the lord’s forest, moving silent through fern, thorn, and moonlit brush. They know every boundary stone and can deny a bloodied snare with a straight face. A gutted stag lies beneath the fairy hill, and the poacher insists they never entered the lord’s woods that night."
+}

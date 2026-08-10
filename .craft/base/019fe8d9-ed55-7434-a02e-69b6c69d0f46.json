@@ -1,0 +1,26 @@
+{
+  "name": "Farmhand",
+  "abilities": [
+    {
+      "slug": "repairs",
+      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "animals",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "food",
+      "referenceId": "019fe8d9-879f-74a8-9255-601fee8af116",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "hands",
+    "referenceId": "019fe8d9-78b7-7094-b0bd-295926bee011",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are a hired hand and mender on a farm, a jack of every chore from patching a fence to salting the winter meat. You understand animals, tools, weather, and the steady work that keeps a household fed. One morning, every latch you repaired is open and the livestock stand facing the same dark patch of field."
+}

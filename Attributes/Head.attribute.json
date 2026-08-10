@@ -1,0 +1,8 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-78e3-7794-829a-1eb1e3a560aa"
+  },
+  "name": "Head",
+  "trait": "Intelligence",
+  "description": "Reason, memory, and learning applied to puzzles, lore, and planning. The GM asks for Head when a character must understand clues, recall knowledge, or devise a sound course of action."
+}

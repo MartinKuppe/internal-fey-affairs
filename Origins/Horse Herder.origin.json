@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-edf6-7c1c-974b-4816ef0f6b27"
+  },
+  "name": "Horse Herder",
+  "abilities": [
+    {
+      "slug": "animals",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "riding",
+      "referenceId": "019fe8d9-877f-7bb4-9371-ab27cdfe904d",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "iron",
+      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "legs",
+    "referenceId": "019fe8d9-78f4-71ec-b836-e6ce947c28b8",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "The horse herder breeds, trains, and works the village horses, spending more hours in the saddle than beside a hearth. They can read a lame step, calm a frightened mare, and mend a bit or shoe with hard-won knowledge of iron. One of the best horses has returned sweating and riderless, with a strange blue mark burned into its bridle."
+}

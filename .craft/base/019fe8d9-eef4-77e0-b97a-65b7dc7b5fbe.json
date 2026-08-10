@@ -1,0 +1,26 @@
+{
+  "name": "Piper",
+  "abilities": [
+    {
+      "slug": "music",
+      "referenceId": "019fe8d9-7f65-73e4-9f70-d8bf154016b9",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "dancing",
+      "referenceId": "019fe8d9-878d-743c-9788-b0c599c703c0",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "charisma",
+      "referenceId": "019fe8d9-7f47-7b48-aedd-873128033c50",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "heart",
+    "referenceId": "019fe8d9-78d7-7488-91b9-1436e5429fe7",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You play the pipes at fairs and weddings, filling the village green until music moves feet and hearts alike. You can draw a shy child into a dance or make a grieving household share one breath of joy. A tune you play near the fairy ring brings an answering note from beyond the trees."
+}

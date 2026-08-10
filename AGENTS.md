@@ -217,8 +217,11 @@ Credentials are never stored in this folder.
 
 | Extension | Name | Content |
 | --- | --- | --- |
+| `.ability.json` | Ability | json |
+| `.attribute.json` | Attribute | json |
 | `.character.json` | Character | json |
-| `.location.json` | Location | json |
 | `.equipment.json` | Equipment | json |
 | `.game-start.json` | Game Start | json |
 | `.gm-instructions.md` | GM Instructions | markdown |
+| `.location.json` | Location | json |
+| `.origin.json` | Origin | json |

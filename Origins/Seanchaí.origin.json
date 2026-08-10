@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019fe8d9-eece-7ca4-a384-156122d56af8"
+  },
+  "name": "Seanchaí",
+  "abilities": [
+    {
+      "slug": "learnedness",
+      "referenceId": "019fe8d9-7f28-74d0-b564-97856b746cf7",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "fey-lore",
+      "referenceId": "019fe8d9-7f2b-7e9c-b24a-7330a9eb0ddd",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "charisma",
+      "referenceId": "019fe8d9-7f47-7b48-aedd-873128033c50",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "head",
+    "referenceId": "019fe8d9-78e3-7794-829a-1eb1e3a560aa",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are a travelling storyteller, carrying letters and learning along the roads between villages. You keep tales of the Fair Folk, including old and strange details that others have forgotten, and your voice can hold a crowded hearth silent. An old woman offers you a meal if you will tell the true version of the story behind her missing son."
+}

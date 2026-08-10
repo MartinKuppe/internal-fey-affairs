@@ -5,12 +5,12 @@
   "contentType": "json",
   "designation": "character",
   "category": "world",
-  "schemaHash": "d66cc242-7d05-bd3e-2f38-e1e89bb7c576",
+  "schemaHash": "b92b6d54-00a1-4cc3-2f1c-a5a3c40624f6",
   "schema": {
     "type": "object",
     "required": [
       "name",
-      "background"
+      "origin"
     ],
     "properties": {
       "name": {
@@ -73,55 +73,25 @@
           }
         }
       },
-      "level": {
-        "type": "number",
-        "title": "Level",
-        "minimum": 1
-      },
       "notes": {
         "type": "string",
         "title": "Notes",
         "format": "textarea"
       },
-      "stats": {
-        "type": "object",
-        "title": "Ability Scores",
-        "properties": {
-          "wisdom": {
-            "type": "number",
-            "title": "Wisdom",
-            "minimum": 1
-          },
-          "charisma": {
-            "type": "number",
-            "title": "Charisma",
-            "minimum": 1
-          },
-          "strength": {
-            "type": "number",
-            "title": "Strength",
-            "minimum": 1
-          },
-          "dexterity": {
-            "type": "number",
-            "title": "Dexterity",
-            "minimum": 1
-          },
-          "constitution": {
-            "type": "number",
-            "title": "Constitution",
-            "minimum": 1
-          },
-          "intelligence": {
-            "type": "number",
-            "title": "Intelligence",
-            "minimum": 1
-          }
-        }
-      },
-      "ancestry": {
+      "origin": {
         "type": "string",
-        "title": "Ancestry"
+        "title": "Origin",
+        "description": "This character's origin — their starting attribute and three trained abilities.",
+        "referencedFileTypeSlug": "origin"
+      },
+      "abilities": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "ability"
+        },
+        "title": "Trained Abilities",
+        "description": "Start with your origin's three abilities. The GM may award additional abilities during play."
       },
       "inventory": {
         "type": "array",
@@ -132,10 +102,54 @@
         "title": "Inventory",
         "description": "Equipment files this character is carrying."
       },
-      "background": {
-        "type": "string",
-        "title": "Background",
-        "format": "textarea"
+      "attributes": {
+        "type": "object",
+        "title": "Attribute Dice",
+        "properties": {
+          "body": {
+            "type": "number",
+            "title": "Body",
+            "default": 2,
+            "maximum": 5,
+            "minimum": 1
+          },
+          "head": {
+            "type": "number",
+            "title": "Head",
+            "default": 2,
+            "maximum": 5,
+            "minimum": 1
+          },
+          "legs": {
+            "type": "number",
+            "title": "Legs",
+            "default": 2,
+            "maximum": 5,
+            "minimum": 1
+          },
+          "hands": {
+            "type": "number",
+            "title": "Hands",
+            "default": 2,
+            "maximum": 5,
+            "minimum": 1
+          },
+          "heart": {
+            "type": "number",
+            "title": "Heart",
+            "default": 2,
+            "maximum": 5,
+            "minimum": 1
+          },
+          "shadow": {
+            "type": "number",
+            "title": "Shadow",
+            "default": 2,
+            "maximum": 5,
+            "minimum": 1
+          }
+        },
+        "description": "Each attribute is a dice pool of 1-5 d6s; every 4+ is a success. Your origin's attribute starts at 3, the rest at 2."
       },
       "description": {
         "type": "string",
@@ -146,21 +160,6 @@
         "type": "string",
         "title": "Personality",
         "format": "textarea"
-      },
-      "characterClass": {
-        "type": "string",
-        "title": "Class",
-        "description": "The character's adventuring class or broad archetype."
-      },
-      "carryingCapacity": {
-        "type": "number",
-        "title": "Carrying Capacity (lbs)",
-        "expression": "($self.stats?.strength ?? 0) * 15"
-      },
-      "totalInventoryWeight": {
-        "type": "number",
-        "title": "Total Inventory Weight (lbs)",
-        "expression": "sum($self.inventory ?? [], e => load(e)?.weight ?? 0)"
       }
     }
   },
@@ -196,7 +195,10 @@
           "inventory-card",
           "background-section",
           "personality-section",
-          "notes-section"
+          "notes-section",
+          "origin-select",
+          "attributes-section",
+          "abilities-references"
         ]
       },
       "stats": {
@@ -319,6 +321,22 @@
           "notes-body"
         ]
       },
+      "origin-select": {
+        "type": "Select",
+        "props": {
+          "label": "Origin",
+          "value": {
+            "$state": "/origin"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "origin"
+        },
+        "visible": {
+          "$state": "/origin"
+        },
+        "children": []
+      },
       "overview-grid": {
         "type": "Grid",
         "props": {
@@ -363,6 +381,18 @@
         },
         "children": []
       },
+      "attributes-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_attributesEntries"
+          },
+          "bgColor": null
+        },
+        "children": []
+      },
       "description-body": {
         "type": "Markdown",
         "props": {
@@ -392,6 +422,28 @@
           }
         },
         "children": []
+      },
+      "attributes-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Attribute Dice",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "attributes-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/attributes"
+        },
+        "children": [
+          "attributes-heading",
+          "attributes-stats"
+        ]
       },
       "background-heading": {
         "type": "Heading",
@@ -457,6 +509,23 @@
           "personality-heading",
           "personality-body"
         ]
+      },
+      "abilities-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/abilities"
+          },
+          "label": "Trained Abilities",
+          "columns": 4,
+          "fileTypeSlug": "ability",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/abilities"
+        },
+        "children": []
       }
     }
   },

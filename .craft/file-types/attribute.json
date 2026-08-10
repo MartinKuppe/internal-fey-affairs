@@ -1,0 +1,192 @@
+{
+  "fileTypeId": "019fe8d8-fca9-7324-8b54-432095c52bb8",
+  "slug": "attribute",
+  "name": "Attribute",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "7b111924-26c4-515c-3d8a-94be5c262730",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name",
+      "trait"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "trait": {
+        "type": "string",
+        "title": "Trait",
+        "description": "The everyday word for what this attribute governs."
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {
+          "centered": false,
+          "maxWidth": "full"
+        },
+        "children": [
+          "body-stack"
+        ]
+      },
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$state": "/image"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "body"
+        ]
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "description-text",
+          "trait-section"
+        ]
+      },
+      "trait-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/trait"
+          }
+        },
+        "children": []
+      },
+      "trait-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Trait",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "trait-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/trait"
+        },
+        "children": [
+          "trait-heading",
+          "trait-text"
+        ]
+      },
+      "description-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/description"
+          }
+        },
+        "visible": {
+          "$state": "/description"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

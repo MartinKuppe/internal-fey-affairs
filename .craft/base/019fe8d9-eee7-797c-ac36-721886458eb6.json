@@ -1,0 +1,26 @@
+{
+  "name": "Tailor",
+  "abilities": [
+    {
+      "slug": "repairs",
+      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "art-beauty",
+      "referenceId": "019fe8d9-7f54-7b08-a50c-1437927892ef",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "court-life",
+      "referenceId": "019fe8d9-7e43-7510-8d2d-585d3869301b",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "head",
+    "referenceId": "019fe8d9-78e3-7794-829a-1eb1e3a560aa",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You work needle and thread, mending rough homespun and making finery fit for a lord’s hall. Fine clothes teach you how people wish to be seen, while fitting rooms fill your hands with secrets. A torn cloak brought in after midnight bears burrs from the hollow hills and a thread finer than anything in the village."
+}
