@@ -220,6 +220,7 @@ Credentials are never stored in this folder.
 | `.ability.json` | Ability | json |
 | `.attribute.json` | Attribute | json |
 | `.bargain.json` | Bargain | json |
+| `.change-request.md` | Change Request | markdown |
 | `.character.json` | Character | json |
 | `.equipment.json` | Equipment | json |
 | `.game-start.json` | Game Start | json |
