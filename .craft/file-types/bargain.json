@@ -1,0 +1,507 @@
+{
+  "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
+  "slug": "bargain",
+  "name": "Bargain",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "4c33229e-aa90-cd18-b277-c61ae95a1bae",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name",
+      "parties"
+    ],
+    "properties": {
+      "kind": {
+        "enum": [
+          "grace-trade",
+          "settlement",
+          "contract",
+          "indenture",
+          "standard-agreement",
+          "investigation"
+        ],
+        "type": "string",
+        "title": "Kind",
+        "default": "contract"
+      },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "notes": {
+        "type": "string",
+        "title": "Notes",
+        "format": "textarea"
+      },
+      "status": {
+        "enum": [
+          "active",
+          "resolved",
+          "breached",
+          "void"
+        ],
+        "type": "string",
+        "title": "Status",
+        "default": "active"
+      },
+      "parties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "label",
+            "wording"
+          ],
+          "properties": {
+            "refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "referencedFileTypeSlug": "character"
+              },
+              "title": "Linked characters"
+            },
+            "role": {
+              "type": "string",
+              "title": "Role"
+            },
+            "label": {
+              "type": "string",
+              "title": "Party",
+              "minLength": 1
+            },
+            "wording": {
+              "type": "string",
+              "title": "Exact obligation wording",
+              "format": "textarea"
+            },
+            "resolved": {
+              "type": "boolean",
+              "title": "Resolved",
+              "default": false
+            },
+            "resolvedOn": {
+              "type": "number",
+              "title": "Resolved (day)",
+              "minimum": 1
+            },
+            "dueCondition": {
+              "type": "string",
+              "title": "Due when"
+            },
+            "referenceContract": {
+              "type": "string",
+              "title": "Reference contract",
+              "description": "The specific Bargain contract this obligation falls under, when it is a different document (optional).",
+              "referencedFileTypeSlug": "bargain"
+            }
+          }
+        },
+        "title": "Parties",
+        "minItems": 2
+      },
+      "signedOn": {
+        "type": "number",
+        "title": "Signed (day)",
+        "minimum": 1
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      },
+      "knownToPlayer": {
+        "type": "boolean",
+        "title": "Known to the player",
+        "default": false
+      },
+      "relatedBargains": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "bargain"
+        },
+        "title": "Related Bargains"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {},
+        "children": [
+          "body-stack"
+        ]
+      },
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/kind"
+          },
+          "aspectRatio": "video"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "body"
+        ]
+      },
+      "sep0": {
+        "type": "Separator",
+        "props": {},
+        "children": []
+      },
+      "sep1": {
+        "type": "Separator",
+        "props": {},
+        "children": []
+      },
+      "due-row": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "horizontal"
+        },
+        "visible": {
+          "$item": "dueCondition"
+        },
+        "children": [
+          "due-label",
+          "due-text"
+        ]
+      },
+      "due-text": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "dueCondition"
+          },
+          "variant": "muted"
+        },
+        "children": []
+      },
+      "due-label": {
+        "type": "Text",
+        "props": {
+          "text": "Due when:",
+          "variant": "muted"
+        },
+        "children": []
+      },
+      "role-text": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "role"
+          },
+          "variant": "caption"
+        },
+        "visible": {
+          "$item": "role"
+        },
+        "children": []
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "meta-stats",
+          "known-toggle",
+          "sep0",
+          "parties-heading",
+          "parties-list",
+          "sep1",
+          "notes-section",
+          "related-section"
+        ]
+      },
+      "meta-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 3,
+          "items": [
+            [
+              "Kind",
+              {
+                "$state": "/kind"
+              }
+            ],
+            [
+              "Status",
+              {
+                "$state": "/status"
+              }
+            ],
+            [
+              "Signed (day)",
+              {
+                "$state": "/signedOn"
+              }
+            ]
+          ]
+        },
+        "children": []
+      },
+      "notes-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/notes"
+          }
+        },
+        "children": []
+      },
+      "party-card": {
+        "type": "Card",
+        "props": {
+          "title": {
+            "$item": "label"
+          }
+        },
+        "children": [
+          "party-stack"
+        ]
+      },
+      "party-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "role-text",
+          "wording-text",
+          "due-row",
+          "resolved-row"
+        ]
+      },
+      "known-toggle": {
+        "type": "Toggle",
+        "props": {
+          "label": "Known to the player",
+          "value": {
+            "$state": "/knownToPlayer"
+          }
+        },
+        "children": []
+      },
+      "parties-list": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "repeat": {
+          "statePath": "/parties"
+        },
+        "children": [
+          "party-card"
+        ]
+      },
+      "resolved-row": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "align": "center",
+          "direction": "horizontal"
+        },
+        "children": [
+          "resolved-toggle",
+          "resolved-on-row"
+        ]
+      },
+      "wording-text": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "wording"
+          },
+          "variant": "body"
+        },
+        "children": []
+      },
+      "notes-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Notes",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "notes-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/notes"
+        },
+        "children": [
+          "notes-heading",
+          "notes-text"
+        ]
+      },
+      "related-badges": {
+        "type": "BadgeList",
+        "props": {
+          "items": {
+            "$state": "/relatedBargains"
+          },
+          "variant": "secondary",
+          "fileTypeSlug": "bargain"
+        },
+        "children": []
+      },
+      "parties-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Parties & Obligations",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "related-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Related Bargains",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "related-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "related-heading",
+          "related-badges"
+        ]
+      },
+      "resolved-on-row": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "horizontal"
+        },
+        "visible": {
+          "$item": "resolvedOn"
+        },
+        "children": [
+          "resolved-on-label",
+          "resolved-on-value"
+        ]
+      },
+      "resolved-toggle": {
+        "type": "Toggle",
+        "props": {
+          "label": "Resolved",
+          "value": {
+            "$item": "resolved"
+          }
+        },
+        "children": []
+      },
+      "resolved-on-label": {
+        "type": "Text",
+        "props": {
+          "text": "on day",
+          "variant": "muted"
+        },
+        "children": []
+      },
+      "resolved-on-value": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "resolvedOn"
+          },
+          "variant": "muted"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

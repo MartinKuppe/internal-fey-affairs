@@ -1,0 +1,42 @@
+{
+  "$craft": {
+    "referenceId": "019fed62-6c7a-7ce4-891a-c2813e204357"
+  },
+  "kind": "contract",
+  "name": "One Year Employment",
+  "notes": "Sample bargain demonstrating the structure: two employees, one employer, and Green's conditional obligation to dissolve Méabh's indenture once the employees have fulfilled theirs.",
+  "status": "active",
+  "parties": [
+    {
+      "refs": [
+        {
+          "slug": "example-character",
+          "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
+          "fileTypeSlug": "character"
+        }
+      ],
+      "role": "employee",
+      "label": "Player",
+      "wording": "The Player works for one year for Internal Affairs under a standard employment contract.",
+      "resolved": false,
+      "dueCondition": "Upon execution of this bargain"
+    },
+    {
+      "role": "employee",
+      "label": "Méabh",
+      "wording": "Méabh works for one year for Internal Affairs under a standard employment contract.",
+      "resolved": false,
+      "dueCondition": "Upon execution of this bargain"
+    },
+    {
+      "role": "employer",
+      "label": "Green",
+      "wording": "Once the Player and Méabh have fulfilled their obligations, Green shall dissolve Méabh's indenture contract.",
+      "resolved": false,
+      "dueCondition": "When the Player and Méabh have fulfilled their obligations"
+    }
+  ],
+  "signedOn": 15,
+  "description": "Sample standard employment contract — three parties, one conditional clause. Replace with campaign data.",
+  "knownToPlayer": true
+}

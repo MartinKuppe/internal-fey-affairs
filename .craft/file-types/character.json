@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": "world",
-  "schemaHash": "b92b6d54-00a1-4cc3-2f1c-a5a3c40624f6",
+  "schemaHash": "6c547085-bedd-8ec2-d0ec-e7118fa51071",
   "schema": {
     "type": "object",
     "required": [
@@ -84,6 +84,44 @@
         "description": "This character's origin — their starting attribute and three trained abilities.",
         "referencedFileTypeSlug": "origin"
       },
+      "markers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "marker",
+            "reason"
+          ],
+          "properties": {
+            "marker": {
+              "enum": [
+                "Ungrateful",
+                "Disrespectful",
+                "Unsightly",
+                "Violent",
+                "Cruel",
+                "Untrustworthy",
+                "Oath-Breaker",
+                "Generous",
+                "Respectful",
+                "Handsome",
+                "Elegant",
+                "Merciful",
+                "Trustworthy",
+                "Oath-Keeper"
+              ],
+              "type": "string",
+              "title": "Marker"
+            },
+            "reason": {
+              "type": "string",
+              "title": "Reason"
+            }
+          }
+        },
+        "title": "Reputation Markers",
+        "description": "Markers are visible to everyone — simply present or absent, each with the reason it was acquired."
+      },
       "abilities": {
         "type": "array",
         "items": {
@@ -156,6 +194,42 @@
         "title": "Description",
         "format": "textarea"
       },
+      "graceLedger": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "currency",
+            "amount",
+            "day",
+            "reason"
+          ],
+          "properties": {
+            "day": {
+              "type": "number",
+              "title": "Day",
+              "minimum": 1
+            },
+            "amount": {
+              "type": "number",
+              "title": "Amount",
+              "description": "Signed balance change: positive credits the character, negative debits the character."
+            },
+            "reason": {
+              "type": "string",
+              "title": "Exact reason",
+              "description": "Explains whether this entry was a payment, an exchange, a penalty, or a debt."
+            },
+            "currency": {
+              "type": "string",
+              "title": "Currency",
+              "referencedFileTypeSlug": "grace"
+            }
+          }
+        },
+        "title": "Grace Ledger",
+        "description": "Authoritative record of every Grace gain or loss. Balances are derived from this ledger — never maintain a separate running total. Negative amounts are Grace debt."
+      },
       "personality": {
         "type": "string",
         "title": "Personality",
@@ -198,7 +272,11 @@
           "notes-section",
           "origin-select",
           "attributes-section",
-          "abilities-references"
+          "abilities-references",
+          "grace-stat",
+          "gracehistory-section",
+          "markers-section",
+          "graceledger-references"
         ]
       },
       "stats": {
@@ -243,6 +321,26 @@
               }
             ]
           ]
+        },
+        "children": []
+      },
+      "grace-stat": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 1,
+          "color": null,
+          "items": [
+            [
+              "Grace",
+              {
+                "$state": "/grace"
+              }
+            ]
+          ],
+          "bgColor": null
+        },
+        "visible": {
+          "$state": "/grace"
         },
         "children": []
       },
@@ -372,6 +470,17 @@
         },
         "children": []
       },
+      "markers-badges": {
+        "type": "BadgeList",
+        "props": {
+          "color": null,
+          "items": {
+            "$state": "/markers"
+          },
+          "variant": "secondary"
+        },
+        "children": []
+      },
       "background-body": {
         "type": "Markdown",
         "props": {
@@ -380,6 +489,28 @@
           }
         },
         "children": []
+      },
+      "markers-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Reputation Markers",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "markers-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/markers"
+        },
+        "children": [
+          "markers-heading",
+          "markers-badges"
+        ]
       },
       "attributes-stats": {
         "type": "StatGrid",
@@ -488,6 +619,17 @@
         },
         "children": []
       },
+      "gracehistory-badges": {
+        "type": "BadgeList",
+        "props": {
+          "color": null,
+          "items": {
+            "$state": "/graceHistory"
+          },
+          "variant": "secondary"
+        },
+        "children": []
+      },
       "personality-heading": {
         "type": "Heading",
         "props": {
@@ -524,6 +666,59 @@
         },
         "visible": {
           "$state": "/abilities"
+        },
+        "children": []
+      },
+      "gracehistory-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Grace History",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "gracehistory-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/graceHistory"
+        },
+        "children": [
+          "gracehistory-heading",
+          "gracehistory-badges"
+        ]
+      },
+      "graceledger-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/graceLedger"
+          },
+          "label": "Grace Ledger",
+          "columns": 4,
+          "fileTypeSlug": "grace",
+          "metadataFields": [
+            {
+              "name": "amount",
+              "type": "number"
+            },
+            {
+              "name": "day",
+              "type": "number"
+            },
+            {
+              "name": "reason",
+              "type": "string"
+            }
+          ],
+          "referenceField": "currency"
+        },
+        "visible": {
+          "$state": "/graceLedger"
         },
         "children": []
       }

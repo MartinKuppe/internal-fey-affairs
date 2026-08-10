@@ -1,6 +1,18 @@
 {
-  "syncedAt": "2026-08-10T11:17:06.892Z",
+  "syncedAt": "2026-08-10T20:52:29.057Z",
   "folders": [
+    {
+      "path": "/Bargains",
+      "folderId": "019fed62-5ebb-7804-a02d-644dc085d165"
+    },
+    {
+      "path": "/Graces",
+      "folderId": "019fed6d-ab71-7eac-8c1c-4abbdd3e0b90"
+    },
+    {
+      "path": "/Grace",
+      "folderId": "019fed6d-de09-7edc-ad7c-3c62bb9be7ed"
+    },
     {
       "path": "/Characters",
       "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
@@ -126,8 +138,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "019fe8da-b8b2-788c-8cab-f3e24cfd430b",
-      "baseHash": "7b0fa0d9-8973-0e69-1871-dd3ad6bc0eb5",
+      "baseVersionId": "019fed72-82c0-7bd4-9b79-fffd45dbc652",
+      "baseHash": "90097b09-dbd0-93bd-4582-1c904dc232ce",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -519,6 +531,24 @@
       "baseVersionId": "019fe8d9-f0f0-7718-906d-73999bd04505",
       "baseHash": "714ab5d5-4797-adb1-ac47-5807bc947eb6",
       "source": "project"
+    },
+    {
+      "path": "/Bargains/One Year Employment.bargain.json",
+      "fileId": "019fed62-6c7a-7c44-82d4-57d2e33ed35b",
+      "referenceId": "019fed62-6c7a-7ce4-891a-c2813e204357",
+      "fileType": "bargain",
+      "baseVersionId": "019fed6d-de77-74b4-acc9-af57c3ddf809",
+      "baseHash": "ccf21dab-7880-4d31-8562-3c106994983b",
+      "source": "project"
+    },
+    {
+      "path": "/Grace/Phantom Grace.grace.json",
+      "fileId": "019fed6d-de2b-7454-903c-61ac8391f380",
+      "referenceId": "019fed6d-de2b-74dc-b3bf-3eeaf89d7333",
+      "fileType": "grace",
+      "baseVersionId": "019fed72-82b9-72d0-b393-e319dce805d7",
+      "baseHash": "b4af23b2-8a8b-e0a3-d2b8-904dd2b3aab5",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -549,8 +579,20 @@
     {
       "slug": "character",
       "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-      "schemaHash": "b92b6d54-00a1-4cc3-2f1c-a5a3c40624f6",
-      "contentHash": "53a5d35c-fabc-6d89-4864-4fc897236851"
+      "schemaHash": "6c547085-bedd-8ec2-d0ec-e7118fa51071",
+      "contentHash": "b5ab440b-adae-e034-77a0-3849c338b4eb"
+    },
+    {
+      "slug": "grace",
+      "fileTypeId": "019fed6d-ab59-72fc-ab24-232764ca6432",
+      "schemaHash": "4eb16e9a-849a-0eef-77f3-150c5eb5599c",
+      "contentHash": "10e2c00c-1b77-45ec-97d3-2bafac63b8ad"
+    },
+    {
+      "slug": "bargain",
+      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
+      "schemaHash": "4c33229e-aa90-cd18-b277-c61ae95a1bae",
+      "contentHash": "18159f11-361d-2a16-fd50-7afbb03090b6"
     },
     {
       "slug": "ability",

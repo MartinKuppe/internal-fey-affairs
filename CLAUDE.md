@@ -219,9 +219,11 @@ Credentials are never stored in this folder.
 | --- | --- | --- |
 | `.ability.json` | Ability | json |
 | `.attribute.json` | Attribute | json |
+| `.bargain.json` | Bargain | json |
 | `.character.json` | Character | json |
 | `.equipment.json` | Equipment | json |
 | `.game-start.json` | Game Start | json |
 | `.gm-instructions.md` | GM Instructions | markdown |
+| `.grace.json` | Grace | json |
 | `.location.json` | Location | json |
 | `.origin.json` | Origin | json |

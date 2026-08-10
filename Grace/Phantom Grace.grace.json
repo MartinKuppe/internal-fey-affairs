@@ -1,0 +1,8 @@
+{
+  "$craft": {
+    "referenceId": "019fed6d-de2b-74dc-b3bf-3eeaf89d7333"
+  },
+  "name": "Phantom Grace",
+  "notes": "Sample/demo currency definition — adjust or remove for the campaign.",
+  "description": "Sample Grace currency for the ledger. Canon details (issuing queen or court) to be confirmed."
+}
