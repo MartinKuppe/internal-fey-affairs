@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-10T22:43:06.139Z",
+  "syncedAt": "2026-08-10T23:01:35.720Z",
   "folders": [
     {
       "path": "/Bargains",
@@ -567,8 +567,8 @@
       "fileId": "019fed90-bf36-7b38-a3fb-20edf3a9d9a4",
       "referenceId": "019fed90-bf36-7bd0-91d0-01dca408dd12",
       "fileType": "change-request",
-      "baseVersionId": "019fed97-28ba-77d8-b9ab-a71d08bde4a9",
-      "baseHash": "4c0fb284-fcb7-441f-1d9e-276fd5d8c0cc",
+      "baseVersionId": "019fede1-54bf-7c0c-8b30-45fd16d39ac0",
+      "baseHash": "3c03d102-84ca-594d-bbec-eb91b252f7ab",
       "source": "project"
     },
     {
@@ -695,6 +695,15 @@
       "fileType": "change-request",
       "baseVersionId": "019fedd7-6d67-7f64-ac09-d1ab3332fd25",
       "baseHash": "d7cc74b3-9bdc-8c13-3093-ba0b013ac8eb",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/Canon Authoring Guardrails.change-request.md",
+      "fileId": "019fede1-549f-7f14-a926-50e52685eb15",
+      "referenceId": "019fede1-549f-7000-b896-4389734ece82",
+      "fileType": "change-request",
+      "baseVersionId": "019fede8-ad25-7d58-b6c6-aeb45e46c87e",
+      "baseHash": "8e507354-6074-9aa9-9b7a-2a0d8027fec4",
       "source": "project"
     }
   ],

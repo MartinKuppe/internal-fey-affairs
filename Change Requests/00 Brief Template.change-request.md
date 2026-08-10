@@ -16,6 +16,14 @@ $craft:
 
 <What are we trying to achieve, in 2–3 sentences? Why does it matter for the game?>
 
+## Relevant canon
+
+- <Only the characters, technology, timeline, terminology, and spoiler facts needed for this change>
+- <Explicit prohibitions or invariants>
+- <Questions that must not be answered through invention>
+
+> Task-specific canon belongs here. Put only the exact characters, technology, timeline, terminology, and spoiler facts this change may rely on — do not paste the entire Bible into every Change Request.
+
 ## Files touched
 
 - <e.g. /Characters/Example Character.character.json>
