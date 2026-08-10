@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-10T20:52:29.057Z",
+  "syncedAt": "2026-08-10T21:32:50.832Z",
   "folders": [
     {
       "path": "/Bargains",
@@ -12,6 +12,10 @@
     {
       "path": "/Grace",
       "folderId": "019fed6d-de09-7edc-ad7c-3c62bb9be7ed"
+    },
+    {
+      "path": "/Change Requests",
+      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     },
     {
       "path": "/Characters",
@@ -549,6 +553,15 @@
       "baseVersionId": "019fed72-82b9-72d0-b393-e319dce805d7",
       "baseHash": "b4af23b2-8a8b-e0a3-d2b8-904dd2b3aab5",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/00 Brief Template.change-request.md",
+      "fileId": "019fed90-bf36-7b38-a3fb-20edf3a9d9a4",
+      "referenceId": "019fed90-bf36-7bd0-91d0-01dca408dd12",
+      "fileType": "change-request",
+      "baseVersionId": "019fed97-28ba-77d8-b9ab-a71d08bde4a9",
+      "baseHash": "4c0fb284-fcb7-441f-1d9e-276fd5d8c0cc",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -593,6 +606,12 @@
       "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
       "schemaHash": "4c33229e-aa90-cd18-b277-c61ae95a1bae",
       "contentHash": "18159f11-361d-2a16-fd50-7afbb03090b6"
+    },
+    {
+      "slug": "change-request",
+      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
+      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
+      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
     },
     {
       "slug": "ability",
