@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-10T23:01:35.720Z",
+  "syncedAt": "2026-08-11T11:24:44.172Z",
   "folders": [
     {
       "path": "/Bargains",
@@ -56,6 +56,14 @@
     {
       "path": "/Origins",
       "folderId": "019fe8d9-00ef-7a48-b9f0-2de75a99843a"
+    },
+    {
+      "path": "/Lore Journals",
+      "folderId": "019ff086-ac0b-7b80-a133-f7e89f1d5784"
+    },
+    {
+      "path": "/Lore Cards",
+      "folderId": "019ff086-ac05-7560-abc2-dbf37894e083"
     }
   ],
   "files": [
@@ -150,8 +158,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "019fedb8-9f43-75d0-a0be-266d9e1e2d95",
-      "baseHash": "850f239c-625e-10e0-c424-31a8ba26aaab",
+      "baseVersionId": "019ff087-e3be-7948-b48a-f4bad2a32b9f",
+      "baseHash": "6ee13125-dbe5-31f7-1afe-abb5e68cf096",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -705,6 +713,51 @@
       "baseVersionId": "019fede8-ad25-7d58-b6c6-aeb45e46c87e",
       "baseHash": "8e507354-6074-9aa9-9b7a-2a0d8027fec4",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/Lore Card System.change-request.md",
+      "fileId": "019ff086-a7e9-74f4-b405-83e29f3e1456",
+      "referenceId": "019ff086-a7e9-7558-9db8-e96b6554dd3b",
+      "fileType": "change-request",
+      "baseVersionId": "019ff090-21d8-798c-aecd-fb5c7e9b0b5e",
+      "baseHash": "21723e87-2a49-c1e1-8aef-5ac8c45b3fe9",
+      "source": "project"
+    },
+    {
+      "path": "/Lore Journals/Lore Journal.lore-journal.json",
+      "fileId": "019ff086-cddf-7418-a043-7344a96c5b14",
+      "referenceId": "019ff086-cddf-7480-8114-97923647ecc8",
+      "fileType": "lore-journal",
+      "baseVersionId": "019ff08e-b487-7634-86d4-ae9c526b2196",
+      "baseHash": "94d919d1-8c9f-41a8-f5ec-2dfd362d937f",
+      "source": "project"
+    },
+    {
+      "path": "/Lore Cards/Brownie.lore-card.json",
+      "fileId": "019ff087-0027-72e8-8798-71f73c9bc972",
+      "referenceId": "019ff087-0027-7350-9aa0-8af84fe8a660",
+      "fileType": "lore-card",
+      "baseVersionId": "019ff08f-11d4-72a8-ac4c-537f68e3e900",
+      "baseHash": "31623745-2b5e-4b04-947f-0c6dcb9a6eff",
+      "source": "project"
+    },
+    {
+      "path": "/Lore Cards/Hob.lore-card.json",
+      "fileId": "019ff087-0029-75b4-bfcb-bcd95652317d",
+      "referenceId": "019ff087-0029-7618-abae-68368c3aa4c1",
+      "fileType": "lore-card",
+      "baseVersionId": "019ff08e-b824-7090-8522-c0c92e937f92",
+      "baseHash": "6500fd18-4c02-0a9d-a507-9c4be43671d0",
+      "source": "project"
+    },
+    {
+      "path": "/Lore Cards/Boggart.lore-card.json",
+      "fileId": "019ff087-003d-7b7c-9735-e57a53685083",
+      "referenceId": "019ff087-003d-7bdc-a92e-3a0279a35cde",
+      "fileType": "lore-card",
+      "baseVersionId": "019ff08e-b83e-7f68-87ed-c9318d3ce5fc",
+      "baseHash": "02491759-adfa-d227-293f-2d4537a34b14",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -785,6 +838,18 @@
       "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
       "schemaHash": "8568cb05-e623-8e16-8c6c-f60417a412f0",
       "contentHash": "bd90104d-f386-0099-7900-9bb89c3f4797"
+    },
+    {
+      "slug": "lore-card",
+      "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
+      "schemaHash": "e8a037f7-a388-746a-048f-445b9550351c",
+      "contentHash": "5bdfb727-d6f9-f1c4-1b9c-e203c6cf2e0b"
+    },
+    {
+      "slug": "lore-journal",
+      "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
+      "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
+      "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
     }
   ],
   "projectSettingsHash": "3f1a0e06-1efc-ac9c-68b8-3fb55ec8e6de"

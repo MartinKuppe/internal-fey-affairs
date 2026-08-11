@@ -1,0 +1,17 @@
+{
+  "name": "Boggart",
+  "gmNotes": "Canon supplied by brief. Boggart is a fey role, not a Species; no Boggart Archetype file exists yet — link /subjects when the world record is created. expertRegions set to the campaign's home region (Ireland) as a placeholder; adjust per card. Images left empty pending art direction.",
+  "deepLore": "Boggarts may hide things, slam doors, curdle milk, and terrify livestock. They are nearly impossible to remove once they take over a home. Some say Boggarts are disgruntled Brownies or Hobs who were offended, neglected, or mistreated by the household.",
+  "subjects": [],
+  "discovered": false,
+  "description": "A mischievous household spirit with a talent for practical jokes.",
+  "feyKnowledge": "Boggarts are domestic researchers who wear brown filters like Hobs and Brownies. They do not work for humans but observe them and run behavioural experiments on them, which humans often interpret as pranks, mischief, or hauntings. Most are under contract with a nearby laboratory.",
+  "deepLoreKnown": false,
+  "expertRegions": [
+    "Ireland"
+  ],
+  "unlockGuidance": "Deep Lore: households that have suffered a boggart may tell of it; if feyLoreUnlocksDeepLore is set and the party has Fey Lore, grant Deep Lore at first discovery. Fey Knowledge: reveal through a mission, revelation, or a research-minded Fey — asking a Fey may require a Bargain or Grace consequences.",
+  "commonKnowledge": "Boggarts are mischievous household spirits who often perform practical jokes.",
+  "feyKnowledgeKnown": false,
+  "feyLoreUnlocksDeepLore": true
+}

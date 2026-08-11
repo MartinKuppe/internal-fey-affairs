@@ -1,8 +1,8 @@
 ---
 name: System Rules
 description: The light RPG engine for Internal Fey Affairs — attributes,
-  abilities, origins, species and archetypes, checks, Grace, bargains, and
-  reputation markers.
+  abilities, origins, species and archetypes, checks, Grace, bargains,
+  reputation markers, and lore cards.
 $craft:
   referenceId: 019fde04-45a3-7a04-ae62-38704ecce2e1
   settings:
@@ -94,6 +94,20 @@ Grace is the currency of favors among the Fey — and the measure of whether one
 - Each active marker carries a short reason explaining how it was acquired.
 - Markers influence NPC reactions and fictional position. Never add automatic hidden numerical modifiers.
 - Narrate when a marker is acquired or removed.
+
+## Lore Cards
+
+- A Lore Card holds three knowledge tiers — Common Knowledge, Deep Lore, and Fey Knowledge. The card's flags (`discovered`, `deepLoreKnown`, `feyKnowledgeKnown`) are GM-controlled; players never unlock lore directly.
+- Encountering a card's subject unlocks Common Knowledge: set `discovered` to true.
+- A meaningful conversation about the subject may unlock the card; a merely passing mention does not.
+- Starting a relevant mission may unlock Lore Cards explicitly configured by that mission — once the future Mission system supports it.
+- Following a hyperlink or reference only opens a file; it never changes discovery state automatically.
+- Consulting a suitable human expert in one of the card's `expertRegions` may unlock Deep Lore: set `deepLoreKnown` to true.
+- When `feyLoreUnlocksDeepLore` is true and the player character has the Fey Lore ability, Deep Lore may unlock at the same time the card is first discovered.
+- Fey Knowledge normally comes from a mission, a revelation, or a suitable Fey source: set `feyKnowledgeKnown` to true.
+- Asking a Fey for knowledge may require a Bargain or incur Grace consequences — use the existing Bargain and Grace Ledger rules.
+- Setting `deepLoreKnown` or `feyKnowledgeKnown` must also set `discovered` to true.
+- Keep the Lore Journal's master `cards` list updated whenever a Lore Card is created; the journal shows discovered cards automatically.
 
 ## Guiding the Game Master
 

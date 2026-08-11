@@ -228,5 +228,7 @@ Credentials are never stored in this folder.
 | `.gm-instructions.md` | GM Instructions | markdown |
 | `.grace.json` | Grace | json |
 | `.location.json` | Location | json |
+| `.lore-card.json` | Lore Card | json |
+| `.lore-journal.json` | Lore Journal | json |
 | `.origin.json` | Origin | json |
 | `.species.json` | Species | json |
