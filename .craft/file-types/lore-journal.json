@@ -1,0 +1,200 @@
+{
+  "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
+  "slug": "lore-journal",
+  "name": "Lore Journal",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "cards": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "lore-card"
+        },
+        "title": "Lore Cards",
+        "description": "Master list of all Lore Cards. Update whenever a Lore Card is created."
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      },
+      "discoveredCards": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "card": {
+              "type": "string",
+              "title": "Card",
+              "referencedFileTypeSlug": "lore-card"
+            },
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "feyKnown": {
+              "type": "string",
+              "title": "Fey Knowledge"
+            },
+            "deepKnown": {
+              "type": "string",
+              "title": "Deep Lore"
+            }
+          }
+        },
+        "title": "Discovered Cards",
+        "expression": "($self.cards ?? []).filter(card => load(card)?.discovered ?? false).map(card => ({ card: card, name: load(card)?.name ?? \"\", deepKnown: (load(card)?.deepLoreKnown ?? false) ? \"Deep Lore known\" : \"\", feyKnown: (load(card)?.feyKnowledgeKnown ?? false) ? \"Fey Knowledge known\" : \"\" }))",
+        "description": "Computed projection of discovered Lore Cards, derived from each card's flags. Read-only."
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {
+          "maxWidth": "full"
+        },
+        "children": [
+          "body-stack"
+        ]
+      },
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "body"
+        ]
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "journal-list"
+        ]
+      },
+      "journal-list": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/discoveredCards"
+          },
+          "label": "Discovered Lore",
+          "columns": 3,
+          "emptyState": "No Lore Cards discovered yet.",
+          "showAddNew": false,
+          "fileTypeSlug": "lore-card",
+          "metadataFields": [
+            {
+              "name": "deepKnown",
+              "type": "string"
+            },
+            {
+              "name": "feyKnown",
+              "type": "string"
+            }
+          ],
+          "referenceField": "card",
+          "showAddNewOnHover": false
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

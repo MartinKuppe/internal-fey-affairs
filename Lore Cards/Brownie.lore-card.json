@@ -1,0 +1,20 @@
+{
+  "$craft": {
+    "referenceId": "019ff087-0027-7350-9aa0-8af84fe8a660"
+  },
+  "name": "Brownie",
+  "gmNotes": "Canon supplied by brief. Brownie is a fey role, not a Species; no Brownie Archetype file exists yet — link /subjects when the world record is created. expertRegions set to the campaign's home region (Ireland) as a placeholder; adjust per card. Images left empty pending art direction.",
+  "deepLore": "Brownies wear ragged brown clothes. They are often linked to a fireplace, secretly perform household chores, and are traditionally paid in milk or cream. They may leave when offered clothes or a meal.",
+  "subjects": [],
+  "discovered": false,
+  "description": "A helpful but capricious and elusive household spirit who works while the family sleeps.",
+  "feyKnowledge": "Brownies are lower-ranking domestic helper-Fey, usually under contract from a lab or milk hub. Direct payment, gifts, formal naming, or explicit gratitude-settlement may break or terminate the contract. They wear brown filters, usually caps, which protect them from house dust and smoke.",
+  "deepLoreKnown": false,
+  "expertRegions": [
+    "Ireland"
+  ],
+  "unlockGuidance": "Deep Lore: household elders, storytellers, or Granny may know brownie customs; if feyLoreUnlocksDeepLore is set and the party has Fey Lore, grant Deep Lore at first discovery. Fey Knowledge: reveal through a mission, revelation, or a domestic helper-Fey — asking a Fey may require a Bargain or Grace consequences.",
+  "commonKnowledge": "Brownies or Hobs are helpful but capricious and elusive household spirits who perform work while the family sleeps.",
+  "feyKnowledgeKnown": false,
+  "feyLoreUnlocksDeepLore": true
+}

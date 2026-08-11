@@ -1,0 +1,21 @@
+{
+  "name": "Lore Journal",
+  "cards": [
+    {
+      "slug": "brownie",
+      "referenceId": "019ff087-0027-7350-9aa0-8af84fe8a660",
+      "fileTypeSlug": "lore-card"
+    },
+    {
+      "slug": "hob",
+      "referenceId": "019ff087-0029-7618-abae-68368c3aa4c1",
+      "fileTypeSlug": "lore-card"
+    },
+    {
+      "slug": "boggart",
+      "referenceId": "019ff087-003d-7bdc-a92e-3a0279a35cde",
+      "fileTypeSlug": "lore-card"
+    }
+  ],
+  "description": "Master index of Lore Cards for the current campaign. Discovered cards appear here automatically; the GM maintains the master list whenever a card is authored."
+}

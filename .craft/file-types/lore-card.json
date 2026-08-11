@@ -1,0 +1,520 @@
+{
+  "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
+  "slug": "lore-card",
+  "name": "Lore Card",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "e8a037f7-a388-746a-048f-445b9550351c",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "gmNotes": {
+        "type": "string",
+        "title": "GM / Canon Notes",
+        "format": "textarea",
+        "description": "GM-facing hidden canon. Never shown to players."
+      },
+      "deepLore": {
+        "type": "string",
+        "title": "Deep Lore",
+        "format": "textarea"
+      },
+      "subjects": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "reference": {
+            "targets": [
+              {
+                "fileTypeSlug": "species"
+              },
+              {
+                "fileTypeSlug": "archetype"
+              },
+              {
+                "fileTypeSlug": "character"
+              },
+              {
+                "fileTypeSlug": "equipment"
+              },
+              {
+                "fileTypeSlug": "location"
+              }
+            ]
+          }
+        },
+        "title": "Subjects",
+        "description": "Files this card concerns — species, archetypes, characters, equipment, or locations. Optional; leave empty until world records exist."
+      },
+      "discovered": {
+        "type": "boolean",
+        "title": "Discovered",
+        "default": false,
+        "description": "GM-controlled. Common Knowledge is visible to the player only when true."
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      },
+      "feyKnowledge": {
+        "type": "string",
+        "title": "Fey Knowledge",
+        "format": "textarea"
+      },
+      "mysteryImage": {
+        "type": "image",
+        "title": "Mystery Image",
+        "description": "Shown after discovery and before Fey Knowledge is known. Leave empty for no image."
+      },
+      "deepLoreKnown": {
+        "type": "boolean",
+        "title": "Deep Lore Known",
+        "default": false,
+        "description": "GM-controlled. Deep Lore is visible to the player only when true."
+      },
+      "expertRegions": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "title": "Expert Regions",
+        "description": "Regions where suitable human experts (storytellers, scholars, elders) may be found."
+      },
+      "revealedImage": {
+        "type": "image",
+        "title": "Revealed Image",
+        "description": "Shown once Fey Knowledge is known. Replaces the mystery image. Leave empty for no image."
+      },
+      "unlockGuidance": {
+        "type": "string",
+        "title": "Unlock Guidance",
+        "format": "textarea",
+        "description": "GM-facing special acquisition conditions. Never shown to players."
+      },
+      "commonKnowledge": {
+        "type": "string",
+        "title": "Common Knowledge",
+        "format": "textarea"
+      },
+      "expertRegionsText": {
+        "type": "string",
+        "title": "Expert Regions (display)",
+        "expression": "($self.expertRegions ?? []).join(\", \")",
+        "description": "Computed display string of the expert regions, for the locked Deep Lore panel."
+      },
+      "feyKnowledgeKnown": {
+        "type": "boolean",
+        "title": "Fey Knowledge Known",
+        "default": false,
+        "description": "GM-controlled. Fey Knowledge is visible to the player only when true."
+      },
+      "feyLoreUnlocksDeepLore": {
+        "type": "boolean",
+        "title": "Fey Lore Unlocks Deep Lore",
+        "default": false,
+        "description": "GM-facing. When true, Deep Lore may unlock at first discovery if the player character has the Fey Lore ability."
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {
+          "maxWidth": "full"
+        },
+        "children": [
+          "body-stack"
+        ]
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero-stack",
+          "body"
+        ]
+      },
+      "tabs": {
+        "type": "Tabs",
+        "props": {
+          "tabs": [
+            {
+              "label": "Common Knowledge",
+              "value": "common"
+            },
+            {
+              "label": "Deep Lore",
+              "value": "deep"
+            },
+            {
+              "label": "Fey Knowledge",
+              "value": "fey"
+            }
+          ],
+          "defaultValue": "common"
+        },
+        "children": [
+          "tab-common",
+          "tab-deep",
+          "tab-fey"
+        ]
+      },
+      "tab-fey": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "fey-text",
+          "fey-locked"
+        ]
+      },
+      "fey-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/feyKnowledge"
+          }
+        },
+        "visible": {
+          "$state": "/feyKnowledgeKnown"
+        },
+        "children": []
+      },
+      "tab-deep": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "deep-text",
+          "deep-locked",
+          "deep-expert"
+        ]
+      },
+      "deep-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/deepLore"
+          }
+        },
+        "visible": {
+          "$state": "/deepLoreKnown"
+        },
+        "children": []
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "tabs"
+        ]
+      },
+      "fey-locked": {
+        "type": "Text",
+        "props": {
+          "text": "The truth beneath the tales remains concealed for now.",
+          "variant": "muted"
+        },
+        "visible": {
+          "not": true,
+          "$state": "/feyKnowledgeKnown"
+        },
+        "children": []
+      },
+      "hero-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero-revealed",
+          "hero-mystery",
+          "hero-neutral"
+        ]
+      },
+      "tab-common": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "common-text",
+          "common-locked"
+        ]
+      },
+      "common-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/commonKnowledge"
+          }
+        },
+        "visible": {
+          "$state": "/discovered"
+        },
+        "children": []
+      },
+      "deep-expert": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$and": [
+            {
+              "$state": "/discovered"
+            },
+            {
+              "not": true,
+              "$state": "/deepLoreKnown"
+            },
+            {
+              "$state": "/expertRegions"
+            }
+          ]
+        },
+        "children": [
+          "deep-expert-heading",
+          "deep-expert-text"
+        ]
+      },
+      "deep-locked": {
+        "type": "Text",
+        "props": {
+          "text": "A suitable human expert — a storyteller, scholar, or elder — may hold deeper knowledge.",
+          "variant": "muted"
+        },
+        "visible": {
+          "not": true,
+          "$state": "/deepLoreKnown"
+        },
+        "children": []
+      },
+      "hero-mystery": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/mysteryImage"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$and": [
+            {
+              "$state": "/discovered"
+            },
+            {
+              "not": true,
+              "$state": "/feyKnowledgeKnown"
+            },
+            {
+              "$state": "/mysteryImage/url"
+            }
+          ]
+        },
+        "children": []
+      },
+      "hero-neutral": {
+        "type": "ImageHeader",
+        "props": {
+          "src": null,
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$or": [
+            {
+              "$and": [
+                {
+                  "not": true,
+                  "$state": "/discovered"
+                },
+                {
+                  "not": true,
+                  "$state": "/feyKnowledgeKnown"
+                }
+              ]
+            },
+            {
+              "$and": [
+                {
+                  "$state": "/discovered"
+                },
+                {
+                  "not": true,
+                  "$state": "/feyKnowledgeKnown"
+                },
+                {
+                  "not": true,
+                  "$state": "/mysteryImage/url"
+                }
+              ]
+            },
+            {
+              "$and": [
+                {
+                  "$state": "/feyKnowledgeKnown"
+                },
+                {
+                  "not": true,
+                  "$state": "/revealedImage/url"
+                }
+              ]
+            }
+          ]
+        },
+        "children": []
+      },
+      "common-locked": {
+        "type": "Text",
+        "props": {
+          "text": "Not yet encountered. This knowledge unlocks when its subject is met in the world.",
+          "variant": "muted"
+        },
+        "visible": {
+          "not": true,
+          "$state": "/discovered"
+        },
+        "children": []
+      },
+      "hero-revealed": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/revealedImage"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$and": [
+            {
+              "$state": "/feyKnowledgeKnown"
+            },
+            {
+              "$state": "/revealedImage/url"
+            }
+          ]
+        },
+        "children": []
+      },
+      "deep-expert-text": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/expertRegionsText"
+          },
+          "variant": "body"
+        },
+        "children": []
+      },
+      "deep-expert-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Where an expert may be found",
+          "level": "h4"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}
