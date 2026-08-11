@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-11T11:24:44.172Z",
+  "syncedAt": "2026-08-11T18:51:07.370Z",
   "folders": [
     {
       "path": "/Bargains",
@@ -64,6 +64,10 @@
     {
       "path": "/Lore Cards",
       "folderId": "019ff086-ac05-7560-abc2-dbf37894e083"
+    },
+    {
+      "path": "/Outfits",
+      "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
     }
   ],
   "files": [
@@ -72,8 +76,8 @@
       "fileId": "019fde04-455f-7424-bd65-1fa02461dc31",
       "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
       "fileType": "character",
-      "baseVersionId": "019fe8da-a4f7-7218-bae3-856b4efa2316",
-      "baseHash": "87bc2b9d-4aee-260a-bd7a-0b0ddb1ee463",
+      "baseVersionId": "019ff21e-cddb-7798-800a-06bd04a4cbfe",
+      "baseHash": "e2aa50d5-7ac4-42c7-5f8b-4003e5be183b",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -87,54 +91,6 @@
       "fileType": "location",
       "baseVersionId": "019fde04-4569-7c90-85d4-8cf94ba0e3f8",
       "baseHash": "da9b24c8-c0d8-f23d-cf08-4469bb417dbb",
-      "source": "project",
-      "settings": {
-        "agentEditable": true
-      }
-    },
-    {
-      "path": "/Equipment/Longbow.equipment.json",
-      "fileId": "019fde04-4578-7430-8a71-6a3c06ac9b3e",
-      "referenceId": "019fde04-4578-74b8-9c0b-548b2ddcff23",
-      "fileType": "equipment",
-      "baseVersionId": "019fde04-4574-79b8-94da-6171fd527149",
-      "baseHash": "ca7b9025-1267-8ac0-27fd-b8c75cfdd3e1",
-      "source": "project",
-      "settings": {
-        "agentEditable": true
-      }
-    },
-    {
-      "path": "/Equipment/Leather Armor.equipment.json",
-      "fileId": "019fde04-4583-79fc-ba75-3e17ebc167fc",
-      "referenceId": "019fde04-4583-7a94-ba86-633d80ed0b6b",
-      "fileType": "equipment",
-      "baseVersionId": "019fde04-457d-76d4-9e27-b64b3b9c2001",
-      "baseHash": "259c5969-4005-5cba-387a-1673f9b59c60",
-      "source": "project",
-      "settings": {
-        "agentEditable": true
-      }
-    },
-    {
-      "path": "/Equipment/Explorer's Pack.equipment.json",
-      "fileId": "019fde04-458a-78fc-9811-fb4c8a7fc5db",
-      "referenceId": "019fde04-458a-7974-913d-3b63462165b6",
-      "fileType": "equipment",
-      "baseVersionId": "019fde04-4588-7884-a19b-8a0b9a42fc66",
-      "baseHash": "30fa635a-d217-4c8a-5b5d-9ae9ea7a3eb3",
-      "source": "project",
-      "settings": {
-        "agentEditable": true
-      }
-    },
-    {
-      "path": "/Equipment/Quiver of Arrows.equipment.json",
-      "fileId": "019fde04-4593-78bc-be6f-7627e5f5326e",
-      "referenceId": "019fde04-4593-792c-b9d8-4b749877577f",
-      "fileType": "equipment",
-      "baseVersionId": "019fde04-458e-72d8-bfd0-d6925155a51e",
-      "baseHash": "9000b0fc-e59a-44fd-8ef6-a37f35e3c157",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -158,8 +114,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "019ff087-e3be-7948-b48a-f4bad2a32b9f",
-      "baseHash": "6ee13125-dbe5-31f7-1afe-abb5e68cf096",
+      "baseVersionId": "019ff21e-cdb4-73e8-8c33-062798415100",
+      "baseHash": "e2251f7d-291e-ad5b-83c0-9829ab072478",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -758,20 +714,74 @@
       "baseVersionId": "019ff08e-b83e-7f68-87ed-c9318d3ce5fc",
       "baseHash": "02491759-adfa-d227-293f-2d4537a34b14",
       "source": "project"
+    },
+    {
+      "path": "/Outfits/Common Clothes.outfit.json",
+      "fileId": "019ff21e-b596-78a8-a929-5fc9e30da0c1",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileType": "outfit",
+      "baseVersionId": "019ff221-5db9-70d0-9e72-fefc983b0342",
+      "baseHash": "3c303e69-a912-c0ab-d020-36737720200f",
+      "source": "project"
+    },
+    {
+      "path": "/Outfits/Dark Outfit.outfit.json",
+      "fileId": "019ff21e-b597-73bc-8e1b-ba5324614321",
+      "referenceId": "019ff21e-b597-7460-a6d8-024f985ad1cf",
+      "fileType": "outfit",
+      "baseVersionId": "019ff221-5e00-7768-acbe-f267f01fb04b",
+      "baseHash": "2351afbc-ae3a-5757-ec6f-6c67eb59ca12",
+      "source": "project"
+    },
+    {
+      "path": "/Outfits/Formal Court Attire.outfit.json",
+      "fileId": "019ff21e-b5c2-7494-8be4-3ec28e5b7efd",
+      "referenceId": "019ff21e-b5c2-7578-b55c-160c4d830fdb",
+      "fileType": "outfit",
+      "baseVersionId": "019ff221-5dc0-7bd8-9e01-dd5da39daa85",
+      "baseHash": "2e212bfa-30ad-1400-c1d1-833f359275b2",
+      "source": "project"
+    },
+    {
+      "path": "/Outfits/Fabulous Glamour.outfit.json",
+      "fileId": "019ff21e-b5d0-79a8-a0f2-19799e3b5733",
+      "referenceId": "019ff21e-b5d0-7a4c-9f18-f02edba8df91",
+      "fileType": "outfit",
+      "baseVersionId": "019ff221-5e1d-70b4-b6f5-8d956c63f2c4",
+      "baseHash": "89a20bcb-d2f4-111c-f639-2638f9539d0f",
+      "source": "project"
+    },
+    {
+      "path": "/Outfits/Vest Inside-Out.outfit.json",
+      "fileId": "019ff21e-b5e4-7af8-9d84-1ae3c0a78c1e",
+      "referenceId": "019ff21e-b5e4-7be4-b4ab-454883c5337b",
+      "fileType": "outfit",
+      "baseVersionId": "019ff221-5ac4-76b8-9fd8-4e5a1bfb5a42",
+      "baseHash": "36446097-abfe-eb83-cec8-596fe68ea4b6",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/Outfit System.change-request.md",
+      "fileId": "019ff221-cd2f-7cb0-b63e-e7a588a033c1",
+      "referenceId": "019ff221-cd2f-7d60-a24e-de91e5267da5",
+      "fileType": "change-request",
+      "baseVersionId": "019ff229-98e3-7c78-95d0-c8ed2ea5f692",
+      "baseHash": "cf1f1cb6-ec54-0cc2-746e-237f243d50f1",
+      "source": "project"
     }
   ],
   "fileTypes": [
+    {
+      "slug": "outfit",
+      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
+      "schemaHash": "18561dca-88aa-9762-50ea-5baf86fb9c4f",
+      "contentHash": "78e28778-7109-06ec-68b1-490cfe9f1f18"
+    },
     {
       "slug": "location",
       "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
       "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
       "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
-    },
-    {
-      "slug": "equipment",
-      "fileTypeId": "019fde04-4527-7374-bebf-db3bdbfd02b6",
-      "schemaHash": "7672a778-59e3-a42c-5c8a-44dddfb20762",
-      "contentHash": "f9ec4849-b410-c9fb-e14a-9b209205d34f"
     },
     {
       "slug": "game-start",
@@ -788,8 +798,8 @@
     {
       "slug": "character",
       "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-      "schemaHash": "136bcf66-c48d-b977-0079-e124ee643ec0",
-      "contentHash": "e70e5d9f-04c0-8c1e-ded0-1af5b9e9a660"
+      "schemaHash": "b8141d75-e6c1-b202-a389-a79af57c9015",
+      "contentHash": "201a25ae-985b-9dc8-dd37-85198f29ba56"
     },
     {
       "slug": "grace",
@@ -842,8 +852,8 @@
     {
       "slug": "lore-card",
       "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
-      "schemaHash": "e8a037f7-a388-746a-048f-445b9550351c",
-      "contentHash": "5bdfb727-d6f9-f1c4-1b9c-e203c6cf2e0b"
+      "schemaHash": "f22479a1-8520-9015-1a12-cfd1d5e6a5cf",
+      "contentHash": "1ee64d96-c85b-3ec1-85cc-7770c133cb1c"
     },
     {
       "slug": "lore-journal",

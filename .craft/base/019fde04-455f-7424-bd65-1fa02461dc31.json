@@ -9,6 +9,11 @@
     "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
     "fileTypeSlug": "origin"
   },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
   "abilities": [
     {
       "slug": "repairs",
@@ -24,13 +29,6 @@
       "slug": "weapons",
       "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
       "fileTypeSlug": "ability"
-    }
-  ],
-  "inventory": [
-    {
-      "slug": "explorers-pack",
-      "referenceId": "019fde04-458a-7974-913d-3b63462165b6",
-      "fileTypeSlug": "equipment"
     }
   ],
   "attributes": {

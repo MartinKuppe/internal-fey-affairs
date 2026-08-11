@@ -1,11 +1,11 @@
 {
-  "fileTypeId": "019fde04-4527-7374-bebf-db3bdbfd02b6",
-  "slug": "equipment",
-  "name": "Equipment",
+  "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
+  "slug": "outfit",
+  "name": "Outfit",
   "contentType": "json",
   "designation": null,
-  "category": "world",
-  "schemaHash": "7672a778-59e3-a42c-5c8a-44dddfb20762",
+  "category": null,
+  "schemaHash": "18561dca-88aa-9762-50ea-5baf86fb9c4f",
   "schema": {
     "type": "object",
     "required": [
@@ -72,33 +72,6 @@
           }
         }
       },
-      "notes": {
-        "type": "string",
-        "title": "Notes",
-        "format": "textarea"
-      },
-      "value": {
-        "type": "number",
-        "title": "Value (gp)",
-        "minimum": 0
-      },
-      "weight": {
-        "type": "number",
-        "title": "Weight (lbs)",
-        "minimum": 0,
-        "description": "Weight for the whole stack or bundle, in pounds. Used by carrying-capacity formulas."
-      },
-      "category": {
-        "enum": [
-          "Weapon",
-          "Armor",
-          "Gear",
-          "Consumable",
-          "Treasure"
-        ],
-        "type": "string",
-        "title": "Category"
-      },
       "description": {
         "type": "string",
         "title": "Description",
@@ -118,9 +91,6 @@
           "title": {
             "$state": "/name"
           },
-          "subtitle": {
-            "$state": "/category"
-          },
           "aspectRatio": "video"
         },
         "children": []
@@ -133,74 +103,28 @@
         },
         "children": [
           "hero",
-          "details-card",
-          "notes-section"
+          "description-card"
         ]
       },
-      "notes-body": {
+      "description-body": {
         "type": "Markdown",
         "props": {
           "content": {
-            "$state": "/notes"
+            "$state": "/description"
           }
         },
         "children": []
       },
-      "details-card": {
+      "description-card": {
         "type": "Card",
         "props": {
-          "title": "Details"
-        },
-        "children": [
-          "details-list"
-        ]
-      },
-      "details-list": {
-        "type": "FieldList",
-        "props": {
-          "items": [
-            [
-              "Category",
-              {
-                "$state": "/category"
-              }
-            ],
-            [
-              "Weight (lbs)",
-              {
-                "$state": "/weight"
-              }
-            ],
-            [
-              "Value (gp)",
-              {
-                "$state": "/value"
-              }
-            ]
-          ]
-        },
-        "children": []
-      },
-      "notes-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Notes",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "notes-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
+          "title": "Description"
         },
         "visible": {
-          "$state": "/notes"
+          "$state": "/description"
         },
         "children": [
-          "notes-heading",
-          "notes-body"
+          "description-body"
         ]
       }
     }
