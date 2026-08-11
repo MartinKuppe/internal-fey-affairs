@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "18561dca-88aa-9762-50ea-5baf86fb9c4f",
+  "schemaHash": "280e8fff-aa25-9cfe-5325-0773becc5278",
   "schema": {
     "type": "object",
     "required": [
@@ -76,6 +76,81 @@
         "type": "string",
         "title": "Description",
         "format": "textarea"
+      },
+      "conditionModifiers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "track",
+            "amount",
+            "appliesWhen"
+          ],
+          "properties": {
+            "track": {
+              "enum": [
+                "health",
+                "wakefulness",
+                "composure",
+                "decorum",
+                "concealment"
+              ],
+              "type": "string",
+              "title": "Track",
+              "description": "The Condition Track this modifier applies to."
+            },
+            "amount": {
+              "enum": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "type": "number",
+              "title": "Amount",
+              "maximum": 3,
+              "minimum": -3,
+              "description": "Signed change to the track's Effective Maximum."
+            },
+            "appliesWhen": {
+              "type": "string",
+              "title": "Applies When",
+              "description": "The fictional circumstances in which this modifier applies."
+            }
+          }
+        },
+        "title": "Condition Modifiers",
+        "description": "Definition rows describing possible Condition Track Maximum modifiers for this outfit. They do not directly alter stored Character Current or Depletion. The GM decides whether appliesWhen is true in the current fiction, combines all applicable outfit/environment/situation modifiers with Base Maximum 3, clamps the result to 0–3, and writes the resulting maximum into the appropriate Character track."
+      },
+      "conditionModifierRows": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "track": {
+              "type": "string",
+              "title": "Track"
+            },
+            "amount": {
+              "type": "string",
+              "title": "Amount"
+            },
+            "trackName": {
+              "type": "string",
+              "title": "Track Name"
+            },
+            "appliesWhen": {
+              "type": "string",
+              "title": "Applies When"
+            }
+          }
+        },
+        "title": "Condition Modifier Rows",
+        "expression": "($self.conditionModifiers ?? []).map(m => ({ track: m.track, trackName: [{ key: 'health', name: 'Health' }, { key: 'wakefulness', name: 'Wakefulness' }, { key: 'composure', name: 'Composure' }, { key: 'decorum', name: 'Decorum' }, { key: 'concealment', name: 'Concealment' }].find(r => r.key === m.track)?.name ?? m.track, amount: `${m.amount > 0 ? '+' : ''}${m.amount}`, appliesWhen: m.appliesWhen }))",
+        "description": "Player-facing rows derived from conditionModifiers for read-only display (track name, signed amount, when it applies)."
       }
     }
   },
@@ -103,8 +178,52 @@
         },
         "children": [
           "hero",
-          "description-card"
+          "description-card",
+          "condition-card"
         ]
+      },
+      "modifier-row": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "modifier-heading",
+          "modifier-applies"
+        ]
+      },
+      "condition-card": {
+        "type": "Card",
+        "props": {
+          "title": "Condition Modifiers"
+        },
+        "visible": {
+          "$state": "/conditionModifiers"
+        },
+        "children": [
+          "condition-modifiers-list"
+        ]
+      },
+      "modifier-track": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "trackName"
+          },
+          "variant": "body"
+        },
+        "children": []
+      },
+      "modifier-amount": {
+        "type": "Badge",
+        "props": {
+          "text": {
+            "$item": "amount"
+          },
+          "variant": "secondary"
+        },
+        "children": []
       },
       "description-body": {
         "type": "Markdown",
@@ -125,6 +244,42 @@
         },
         "children": [
           "description-body"
+        ]
+      },
+      "modifier-applies": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "appliesWhen"
+          },
+          "variant": "muted"
+        },
+        "children": []
+      },
+      "modifier-heading": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "align": "center",
+          "direction": "horizontal"
+        },
+        "children": [
+          "modifier-track",
+          "modifier-amount"
+        ]
+      },
+      "condition-modifiers-list": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "repeat": {
+          "key": "track",
+          "statePath": "/conditionModifierRows"
+        },
+        "children": [
+          "modifier-row"
         ]
       }
     }

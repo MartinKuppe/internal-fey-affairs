@@ -3,5 +3,12 @@
     "referenceId": "019ff21e-b597-7460-a6d8-024f985ad1cf"
   },
   "name": "Dark Outfit",
-  "description": "A dark, unobtrusive outfit."
+  "description": "A dark, unobtrusive outfit.",
+  "conditionModifiers": [
+    {
+      "track": "concealment",
+      "amount": 1,
+      "appliesWhen": "Darkness, shadow, nighttime infiltration, or another situation in which dark clothing plausibly makes the wearer harder to notice."
+    }
+  ]
 }

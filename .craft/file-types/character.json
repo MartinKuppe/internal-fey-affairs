@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": "world",
-  "schemaHash": "b8141d75-e6c1-b202-a389-a79af57c9015",
+  "schemaHash": "7e5e626b-36ad-3f32-0992-84bcc80cfd8d",
   "schema": {
     "type": "object",
     "required": [
@@ -264,6 +264,223 @@
         "type": "string",
         "title": "Personality",
         "format": "textarea"
+      },
+      "conditionState": {
+        "type": "object",
+        "title": "Condition State",
+        "properties": {
+          "health": {
+            "type": "object",
+            "title": "Health",
+            "properties": {
+              "maximum": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Maximum",
+                "default": 3,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
+              },
+              "depletion": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Depletion",
+                "default": 0,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+              }
+            }
+          },
+          "decorum": {
+            "type": "object",
+            "title": "Decorum",
+            "properties": {
+              "maximum": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Maximum",
+                "default": 3,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
+              },
+              "depletion": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Depletion",
+                "default": 0,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+              }
+            }
+          },
+          "composure": {
+            "type": "object",
+            "title": "Composure",
+            "properties": {
+              "maximum": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Maximum",
+                "default": 3,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
+              },
+              "depletion": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Depletion",
+                "default": 0,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+              }
+            }
+          },
+          "concealment": {
+            "type": "object",
+            "title": "Concealment",
+            "properties": {
+              "maximum": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Maximum",
+                "default": 3,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
+              },
+              "depletion": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Depletion",
+                "default": 0,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+              }
+            }
+          },
+          "wakefulness": {
+            "type": "object",
+            "title": "Wakefulness",
+            "properties": {
+              "maximum": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Maximum",
+                "default": 3,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
+              },
+              "depletion": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Depletion",
+                "default": 0,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+              }
+            }
+          }
+        },
+        "description": "Stored state for the five Condition Tracks. Optional — minor NPCs may omit it; missing values compute as Maximum 3 and Depletion 0.",
+        "additionalProperties": false
+      },
+      "conditionTracks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "title": "Key"
+            },
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "family": {
+              "enum": [
+                "persistent",
+                "scene"
+              ],
+              "type": "string",
+              "title": "Family"
+            },
+            "current": {
+              "type": "number",
+              "title": "Current"
+            },
+            "maximum": {
+              "type": "number",
+              "title": "Maximum"
+            },
+            "depletion": {
+              "type": "number",
+              "title": "Depletion"
+            }
+          }
+        },
+        "title": "Condition Tracks",
+        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', maximum: clamp($self.conditionState?.health?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'wakefulness', name: 'Wakefulness', family: 'persistent', maximum: clamp($self.conditionState?.wakefulness?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.wakefulness?.depletion ?? 0, 0, 3) }, { key: 'composure', name: 'Composure', family: 'persistent', maximum: clamp($self.conditionState?.composure?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.composure?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', maximum: clamp($self.conditionState?.decorum?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'concealment', name: 'Concealment', family: 'scene', maximum: clamp($self.conditionState?.concealment?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.concealment?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: t.maximum, depletion: t.depletion, current: clamp(t.maximum - t.depletion, 0, 3) }))",
+        "description": "Derived Condition Tracks — five fixed rows (Health, Wakefulness, Composure, Decorum, Concealment). Current is always derived from Maximum and Depletion; it is never stored."
       }
     }
   },
@@ -297,6 +514,7 @@
           "description-card",
           "overview-grid",
           "outfit-card",
+          "condition-card",
           "background-section",
           "personality-section",
           "origin-select",
@@ -439,6 +657,18 @@
           "outfit-select"
         ]
       },
+      "condition-row": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "align": "center",
+          "direction": "horizontal"
+        },
+        "children": [
+          "condition-row-name",
+          "condition-row-values"
+        ]
+      },
       "goals-heading": {
         "type": "Heading",
         "props": {
@@ -502,6 +732,30 @@
         "children": [
           "basics-card",
           "stats-card"
+        ]
+      },
+      "condition-card": {
+        "type": "Card",
+        "props": {
+          "title": "Condition Tracks"
+        },
+        "children": [
+          "condition-list",
+          "condition-caption"
+        ]
+      },
+      "condition-list": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "repeat": {
+          "key": "key",
+          "statePath": "/conditionTracks"
+        },
+        "children": [
+          "condition-row"
         ]
       },
       "markers-badges": {
@@ -604,6 +858,14 @@
         },
         "children": []
       },
+      "condition-caption": {
+        "type": "Text",
+        "props": {
+          "text": "3 is strong. Reaching 0 triggers a consequence.",
+          "variant": "caption"
+        },
+        "children": []
+      },
       "attributes-heading": {
         "type": "Heading",
         "props": {
@@ -647,6 +909,16 @@
           "background-heading",
           "background-body"
         ]
+      },
+      "condition-row-name": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "name"
+          },
+          "variant": "body"
+        },
+        "children": []
       },
       "gracehistory-badges": {
         "type": "BadgeList",
@@ -695,6 +967,27 @@
         },
         "visible": {
           "$state": "/abilities"
+        },
+        "children": []
+      },
+      "condition-row-values": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "items": [
+            [
+              "Current",
+              {
+                "$item": "current"
+              }
+            ],
+            [
+              "Effective Maximum",
+              {
+                "$item": "maximum"
+              }
+            ]
+          ]
         },
         "children": []
       },

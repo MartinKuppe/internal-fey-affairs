@@ -3,5 +3,17 @@
     "referenceId": "019ff21e-b5d0-7a4c-9f18-f02edba8df91"
   },
   "name": "Fabulous Glamour",
-  "description": "A spectacular visual Glamour worn as an outfit."
+  "description": "A spectacular visual Glamour worn as an outfit.",
+  "conditionModifiers": [
+    {
+      "track": "decorum",
+      "amount": 2,
+      "appliesWhen": "Fey court, spectacle, celebration, or another social context where conspicuous Glamour is admired."
+    },
+    {
+      "track": "concealment",
+      "amount": -2,
+      "appliesWhen": "The visible Glamour is active and being visually inconspicuous matters."
+    }
+  ]
 }

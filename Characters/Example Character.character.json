@@ -50,5 +50,27 @@
     "shadow": 2
   },
   "description": "A blacksmith's apprentice in a small Celtic village. He believes in iron, honest work, and things that can be held in the hand — not in fairy stories. Then the fairy ring glowed blue.",
-  "personality": "Practical, skeptical, stubbornly grounded. Loyal to his granny, quietly in love with Niamh, and too proud to admit when he is afraid."
+  "personality": "Practical, skeptical, stubbornly grounded. Loyal to his granny, quietly in love with Niamh, and too proud to admit when he is afraid.",
+  "conditionState": {
+    "health": {
+      "maximum": 3,
+      "depletion": 0
+    },
+    "decorum": {
+      "maximum": 3,
+      "depletion": 0
+    },
+    "composure": {
+      "maximum": 3,
+      "depletion": 0
+    },
+    "concealment": {
+      "maximum": 3,
+      "depletion": 0
+    },
+    "wakefulness": {
+      "maximum": 3,
+      "depletion": 0
+    }
+  }
 }

@@ -2,7 +2,7 @@
 name: System Rules
 description: The light RPG engine for Internal Fey Affairs — attributes,
   abilities, origins, species and archetypes, checks, Grace, bargains,
-  reputation markers, and lore cards.
+  reputation markers, condition tracks, and lore cards.
 $craft:
   referenceId: 019fde04-45a3-7a04-ae62-38704ecce2e1
   settings:
@@ -18,7 +18,76 @@ This is an action adventure with a strong story: an almost linear campaign where
 ## Outfits
 
 - A Character wears one current Outfit, stored as the `outfit` reference on their Character file. Changing that reference changes what they are wearing.
-- All five initial Outfits — Common Clothes, Dark Outfit, Formal Court Attire, Fabulous Glamour, Vest Inside-Out — are available to every character in v1. No outfit bonuses, penalties, unlocks, or Grace costs exist yet.
+- All five initial Outfits — Common Clothes, Dark Outfit, Formal Court Attire, Fabulous Glamour, Vest Inside-Out — are available to every character in v1. Outfits may carry Condition Modifiers that adjust Condition Track Maximums (see Condition Tracks below); no other outfit bonuses or penalties, no unlock conditions, and no Grace costs exist yet.
+
+## Condition Tracks
+
+Five Condition Tracks measure how much a character can take before the fiction turns against them: **Health**, **Wakefulness**, **Composure** (persistent personal conditions) and **Decorum**, **Concealment** (scene-position tracks). Each track runs 0–3: 3 is strong, and reaching 0 triggers a consequence. No track can kill a player character, and no track failure may block campaign progress — it changes the situation instead.
+
+A Character stores `conditionState`: per track, a `maximum` (the currently applicable Effective Maximum after outfit, environmental, and situational modifiers) and `depletion` (accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes). Current is always derived — `current = clamp(maximum − depletion, 0, 3)` — and is never stored. Clamp stored Depletion to 0–3. A character without `conditionState` is treated as Maximum 3, Depletion 0.
+
+### Relevance
+
+- Pressure only tracks that matter to the current situation. Do not call for Depletion merely because a track exists.
+- Decorum is metaphorical social and aesthetic appropriateness, not a cleanliness meter.
+- Concealment represents whether the character remains unnoticed in the current stealth situation.
+
+### Checks and Depletion
+
+Before a risky check, tell the player which track is threatened, how much Depletion is at stake, and what reaching 0 would mean.
+
+- Abilities affect the check under the existing rules. They do not raise track Maximums.
+- Normally: success avoids the threatened Depletion; an ordinary failure adds 1 Depletion and advances the fiction with a complication; an especially severe or clearly announced failure may add 2 Depletion.
+- Never inflict more than 2 Depletion from one ordinary check.
+- Certain fictional events may cause Depletion without a roll when no uncertainty exists.
+- Clamp stored Depletion to 0–3.
+
+### Maximum changes
+
+- Begin from Base Maximum 3.
+- Apply only outfit/environment/situation modifiers whose circumstances currently apply.
+- Clamp the Effective Maximum to 0–3 and store that result as the track's `maximum`.
+- Changing Maximum never changes Depletion.
+- Positive Maximum modifiers may be wasted at the cap; this is intentional.
+- A Maximum reduction may cause Current to reach 0.
+
+### Zero crossing
+
+Trigger the track's consequence when a relevant track newly crosses from above 0 to 0 because of a new setback or newly applied modifier. Do not retrigger it every turn it remains at 0, every time the file is read, or every time the formula is recalculated without a new change.
+
+Consequences:
+
+- **Health 0:** unconscious or otherwise incapacitated; never dead from the track alone.
+- **Wakefulness 0:** falls asleep or must rest.
+- **Composure 0:** panic, freezing, flight, or blurting something damaging, chosen to fit the scene.
+- **Decorum 0:** visible humiliation or serious social failure; may create an appropriate existing Reputation Marker such as Unsightly or Disrespectful.
+- **Concealment 0:** detected.
+
+The consequence is a fictional event or persistent state outside the number. Raising Maximum afterward does not undo it.
+
+Failure must not block the campaign: detection may lead to pursuit, bluffing, capture, or a changed approach; incapacitation may lead to rescue, capture, lost time, or another continuation; social failure changes relationships or reputation but does not halt the story.
+
+### Recovery and resets
+
+Recovery removes Depletion only when fiction supports it:
+
+- **Health:** treatment, healing, or sufficient rest.
+- **Wakefulness:** sleep or equivalent genuine recovery.
+- **Composure:** reassurance, safety, time, or regaining control.
+- **Decorum:** normally resets for a genuinely new social situation.
+- **Concealment:** normally resets when the character successfully establishes a genuinely new hiding or infiltration situation.
+
+Existing consequences remain even after Depletion is removed or a scene track resets.
+
+### Outfit changes
+
+When the Outfit or relevant circumstances change:
+
+1. Read the Outfit's modifier definitions.
+2. Decide which conditions apply.
+3. Recalculate affected Maximums from Base Maximum 3.
+4. Preserve every Depletion value exactly.
+5. Narrate any newly caused zero crossing.
 
 ## Attributes
 
