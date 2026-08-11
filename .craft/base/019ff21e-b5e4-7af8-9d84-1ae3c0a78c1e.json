@@ -1,4 +1,16 @@
 {
   "name": "Vest Inside-Out",
-  "description": "A vest deliberately worn inside-out."
+  "description": "A vest deliberately worn inside-out.",
+  "conditionModifiers": [
+    {
+      "track": "concealment",
+      "amount": 1,
+      "appliesWhen": "Avoiding Fey observation, Glamour-based recognition, or another situation where the inside-out garment convention is relevant."
+    },
+    {
+      "track": "decorum",
+      "amount": -1,
+      "appliesWhen": "The wearer is socially observed in a context where the inside-out vest appears improper or ridiculous."
+    }
+  ]
 }

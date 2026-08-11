@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-11T18:51:07.370Z",
+  "syncedAt": "2026-08-11T19:38:34.279Z",
   "folders": [
     {
       "path": "/Bargains",
@@ -76,8 +76,8 @@
       "fileId": "019fde04-455f-7424-bd65-1fa02461dc31",
       "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
       "fileType": "character",
-      "baseVersionId": "019ff21e-cddb-7798-800a-06bd04a4cbfe",
-      "baseHash": "e2aa50d5-7ac4-42c7-5f8b-4003e5be183b",
+      "baseVersionId": "019ff254-d7d3-7014-9259-a62cd1d6810e",
+      "baseHash": "0eff0b3c-ac32-76e3-0b9c-34a092222181",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -114,8 +114,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "019ff21e-cdb4-73e8-8c33-062798415100",
-      "baseHash": "e2251f7d-291e-ad5b-83c0-9829ab072478",
+      "baseVersionId": "019ff24d-35c3-7114-bf61-9c507a7ddfa9",
+      "baseHash": "8fe57c7d-a7d6-9c56-ef71-90b17d08c125",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -729,8 +729,8 @@
       "fileId": "019ff21e-b597-73bc-8e1b-ba5324614321",
       "referenceId": "019ff21e-b597-7460-a6d8-024f985ad1cf",
       "fileType": "outfit",
-      "baseVersionId": "019ff221-5e00-7768-acbe-f267f01fb04b",
-      "baseHash": "2351afbc-ae3a-5757-ec6f-6c67eb59ca12",
+      "baseVersionId": "019ff249-9c46-7828-b8df-604cbb889fb7",
+      "baseHash": "ab2ddea9-e6d4-7584-3e74-1effb882bfb5",
       "source": "project"
     },
     {
@@ -738,8 +738,8 @@
       "fileId": "019ff21e-b5c2-7494-8be4-3ec28e5b7efd",
       "referenceId": "019ff21e-b5c2-7578-b55c-160c4d830fdb",
       "fileType": "outfit",
-      "baseVersionId": "019ff221-5dc0-7bd8-9e01-dd5da39daa85",
-      "baseHash": "2e212bfa-30ad-1400-c1d1-833f359275b2",
+      "baseVersionId": "019ff249-9c3f-7058-a61c-d42b3796b982",
+      "baseHash": "0a4ddbfb-6918-f87d-5984-5c5f2ee8e7e6",
       "source": "project"
     },
     {
@@ -747,8 +747,8 @@
       "fileId": "019ff21e-b5d0-79a8-a0f2-19799e3b5733",
       "referenceId": "019ff21e-b5d0-7a4c-9f18-f02edba8df91",
       "fileType": "outfit",
-      "baseVersionId": "019ff221-5e1d-70b4-b6f5-8d956c63f2c4",
-      "baseHash": "89a20bcb-d2f4-111c-f639-2638f9539d0f",
+      "baseVersionId": "019ff249-9c7a-7a50-ad53-d8d3f889937e",
+      "baseHash": "57109beb-fe3c-a4f8-ce27-866a21ea4674",
       "source": "project"
     },
     {
@@ -756,8 +756,8 @@
       "fileId": "019ff21e-b5e4-7af8-9d84-1ae3c0a78c1e",
       "referenceId": "019ff21e-b5e4-7be4-b4ab-454883c5337b",
       "fileType": "outfit",
-      "baseVersionId": "019ff221-5ac4-76b8-9fd8-4e5a1bfb5a42",
-      "baseHash": "36446097-abfe-eb83-cec8-596fe68ea4b6",
+      "baseVersionId": "019ff249-9c89-70e4-967d-755a51de2997",
+      "baseHash": "b360591e-7cad-77a3-ee20-9e3b28f45ff3",
       "source": "project"
     },
     {
@@ -768,15 +768,18 @@
       "baseVersionId": "019ff229-98e3-7c78-95d0-c8ed2ea5f692",
       "baseHash": "cf1f1cb6-ec54-0cc2-746e-237f243d50f1",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/Condition Tracks.change-request.md",
+      "fileId": "019ff249-5642-7614-bb82-23553fe51dc4",
+      "referenceId": "019ff249-5642-76c4-824e-93e745a043bb",
+      "fileType": "change-request",
+      "baseVersionId": "019ff254-d753-73e4-b2c0-ed77dfd4be82",
+      "baseHash": "993a8dee-0399-6f60-7328-5ea330ba6c8f",
+      "source": "project"
     }
   ],
   "fileTypes": [
-    {
-      "slug": "outfit",
-      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
-      "schemaHash": "18561dca-88aa-9762-50ea-5baf86fb9c4f",
-      "contentHash": "78e28778-7109-06ec-68b1-490cfe9f1f18"
-    },
     {
       "slug": "location",
       "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
@@ -796,10 +799,16 @@
       "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
     },
     {
+      "slug": "outfit",
+      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
+      "schemaHash": "280e8fff-aa25-9cfe-5325-0773becc5278",
+      "contentHash": "6992a180-2942-d80a-f084-cece42c8793a"
+    },
+    {
       "slug": "character",
       "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-      "schemaHash": "b8141d75-e6c1-b202-a389-a79af57c9015",
-      "contentHash": "201a25ae-985b-9dc8-dd37-85198f29ba56"
+      "schemaHash": "7e5e626b-36ad-3f32-0992-84bcc80cfd8d",
+      "contentHash": "826a8d32-27eb-81e3-b204-326517b40ea2"
     },
     {
       "slug": "grace",

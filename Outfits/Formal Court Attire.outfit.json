@@ -3,5 +3,12 @@
     "referenceId": "019ff21e-b5c2-7578-b55c-160c4d830fdb"
   },
   "name": "Formal Court Attire",
-  "description": "Formal clothing suitable for appearing at court."
+  "description": "Formal clothing suitable for appearing at court.",
+  "conditionModifiers": [
+    {
+      "track": "decorum",
+      "amount": 1,
+      "appliesWhen": "Appearing at court, attending a formal event, or entering another setting where conventional formal dress is appropriate."
+    }
+  ]
 }
