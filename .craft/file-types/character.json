@@ -5,11 +5,12 @@
   "contentType": "json",
   "designation": "character",
   "category": "world",
-  "schemaHash": "136bcf66-c48d-b977-0079-e124ee643ec0",
+  "schemaHash": "b8141d75-e6c1-b202-a389-a79af57c9015",
   "schema": {
     "type": "object",
     "required": [
-      "name"
+      "name",
+      "outfit"
     ],
     "properties": {
       "name": {
@@ -89,6 +90,12 @@
         "description": "This character's origin — their starting attribute and three trained abilities.",
         "referencedFileTypeSlug": "origin"
       },
+      "outfit": {
+        "type": "string",
+        "title": "Outfit",
+        "description": "The character's current worn outfit.",
+        "referencedFileTypeSlug": "outfit"
+      },
       "markers": {
         "type": "array",
         "items": {
@@ -147,15 +154,6 @@
         },
         "title": "Trained Abilities",
         "description": "Start with your origin's three abilities. The GM may award additional abilities during play."
-      },
-      "inventory": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "referencedFileTypeSlug": "equipment"
-        },
-        "title": "Inventory",
-        "description": "Equipment files this character is carrying."
       },
       "archetypes": {
         "type": "array",
@@ -298,7 +296,7 @@
           "hero",
           "description-card",
           "overview-grid",
-          "inventory-card",
+          "outfit-card",
           "background-section",
           "personality-section",
           "origin-select",
@@ -432,6 +430,15 @@
         },
         "children": []
       },
+      "outfit-card": {
+        "type": "Card",
+        "props": {
+          "title": "Outfit"
+        },
+        "children": [
+          "outfit-select"
+        ]
+      },
       "goals-heading": {
         "type": "Heading",
         "props": {
@@ -470,6 +477,22 @@
         },
         "children": []
       },
+      "outfit-select": {
+        "type": "Select",
+        "props": {
+          "label": "Outfit",
+          "value": {
+            "$state": "/outfit"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "outfit"
+        },
+        "visible": {
+          "$state": "/outfit"
+        },
+        "children": []
+      },
       "overview-grid": {
         "type": "Grid",
         "props": {
@@ -480,30 +503,6 @@
           "basics-card",
           "stats-card"
         ]
-      },
-      "inventory-card": {
-        "type": "Card",
-        "props": {
-          "title": "Inventory"
-        },
-        "children": [
-          "inventory-grid",
-          "load-tracking-grid"
-        ]
-      },
-      "inventory-grid": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/inventory"
-          },
-          "label": null,
-          "columns": 4,
-          "fileTypeSlug": "equipment",
-          "referenceField": null
-        },
-        "children": []
       },
       "markers-badges": {
         "type": "BadgeList",
@@ -648,27 +647,6 @@
           "background-heading",
           "background-body"
         ]
-      },
-      "load-tracking-grid": {
-        "type": "StatGrid",
-        "props": {
-          "cols": 2,
-          "items": [
-            [
-              "Carrying Capacity (lbs)",
-              {
-                "$state": "/carryingCapacity"
-              }
-            ],
-            [
-              "Total Weight (lbs)",
-              {
-                "$state": "/totalInventoryWeight"
-              }
-            ]
-          ]
-        },
-        "children": []
       },
       "gracehistory-badges": {
         "type": "BadgeList",

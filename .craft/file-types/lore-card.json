@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "e8a037f7-a388-746a-048f-445b9550351c",
+  "schemaHash": "f22479a1-8520-9015-1a12-cfd1d5e6a5cf",
   "schema": {
     "type": "object",
     "required": [
@@ -99,7 +99,7 @@
                 "fileTypeSlug": "character"
               },
               {
-                "fileTypeSlug": "equipment"
+                "fileTypeSlug": "outfit"
               },
               {
                 "fileTypeSlug": "location"
@@ -108,7 +108,7 @@
           }
         },
         "title": "Subjects",
-        "description": "Files this card concerns — species, archetypes, characters, equipment, or locations. Optional; leave empty until world records exist."
+        "description": "Files this card concerns — species, archetypes, characters, outfits, or locations. Optional; leave empty until world records exist."
       },
       "discovered": {
         "type": "boolean",

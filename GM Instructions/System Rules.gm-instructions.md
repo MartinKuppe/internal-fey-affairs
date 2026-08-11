@@ -15,6 +15,11 @@ $craft:
 
 This is an action adventure with a strong story: an almost linear campaign where story missions are played in order, and secondary missions can be played between them in any order. Play leans on investigation, stealth, and conversation. Combat is rare, costly, and usually a failure state — not a sport. Always offer a stealthy, social, or investigative alternative.
 
+## Outfits
+
+- A Character wears one current Outfit, stored as the `outfit` reference on their Character file. Changing that reference changes what they are wearing.
+- All five initial Outfits — Common Clothes, Dark Outfit, Formal Court Attire, Fabulous Glamour, Vest Inside-Out — are available to every character in v1. No outfit bonuses, penalties, unlocks, or Grace costs exist yet.
+
 ## Attributes
 
 Six attributes, each rated 1–5 dice:

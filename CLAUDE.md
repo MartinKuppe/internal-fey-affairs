@@ -223,7 +223,6 @@ Credentials are never stored in this folder.
 | `.bargain.json` | Bargain | json |
 | `.change-request.md` | Change Request | markdown |
 | `.character.json` | Character | json |
-| `.equipment.json` | Equipment | json |
 | `.game-start.json` | Game Start | json |
 | `.gm-instructions.md` | GM Instructions | markdown |
 | `.grace.json` | Grace | json |
@@ -231,4 +230,5 @@ Credentials are never stored in this folder.
 | `.lore-card.json` | Lore Card | json |
 | `.lore-journal.json` | Lore Journal | json |
 | `.origin.json` | Origin | json |
+| `.outfit.json` | Outfit | json |
 | `.species.json` | Species | json |
