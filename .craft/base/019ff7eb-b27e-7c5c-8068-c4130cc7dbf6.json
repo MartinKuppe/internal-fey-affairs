@@ -1,0 +1,26 @@
+{
+  "name": "Herbalist",
+  "abilities": [
+    {
+      "slug": "healing",
+      "referenceId": "019ff7eb-af42-757d-af35-33aa0f6642ae",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "nature",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "eyes",
+    "referenceId": "019ff7eb-af42-757d-af35-364534420ff4",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You gather and prepare herbs, recognizing useful leaves, dangerous roots, and the small changes that reveal where a plant will grow. Your work takes you along overlooked paths and teaches you to notice symptoms before others understand that someone is ill. A bundle gathered from a familiar hillside contains one silver-veined sprig that does not belong to any season."
+}

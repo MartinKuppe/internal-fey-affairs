@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-11T19:38:34.279Z",
+  "syncedAt": "2026-08-12T21:40:46.524Z",
   "folders": [
     {
       "path": "/Bargains",
@@ -76,8 +76,8 @@
       "fileId": "019fde04-455f-7424-bd65-1fa02461dc31",
       "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
       "fileType": "character",
-      "baseVersionId": "019ff254-d7d3-7014-9259-a62cd1d6810e",
-      "baseHash": "0eff0b3c-ac32-76e3-0b9c-34a092222181",
+      "baseVersionId": "019ff7eb-b246-7908-927d-5b488690d5b1",
+      "baseHash": "aa754e10-91fb-ce0b-2752-02e43a0cf421",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -114,8 +114,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "019ff24d-35c3-7114-bf61-9c507a7ddfa9",
-      "baseHash": "8fe57c7d-a7d6-9c56-ef71-90b17d08c125",
+      "baseVersionId": "019ff7eb-b255-7c0c-b0a9-780b708cde66",
+      "baseHash": "a6845453-5bf6-7440-322a-7f15e5843ba6",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -351,8 +351,8 @@
       "fileId": "019fe8d9-ed48-75a8-be6d-5d21a0331627",
       "referenceId": "019fe8d9-ed48-7644-850f-3e2a3a8d2c75",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-ed43-7520-91f8-e7f2a55bf871",
-      "baseHash": "691477e6-8e58-689d-671c-594400747423",
+      "baseVersionId": "019ff7eb-b25f-723c-9137-7dcf1f2ba138",
+      "baseHash": "9523f4e7-dacd-2bf5-8d2f-88a6561419e3",
       "source": "project"
     },
     {
@@ -450,8 +450,8 @@
       "fileId": "019fe8d9-eee7-797c-ac36-721886458eb6",
       "referenceId": "019fe8d9-eee7-7a0c-ae09-2accd0f9dfb4",
       "fileType": "origin",
-      "baseVersionId": "019fe8da-8973-770c-8056-d3eab5f9bfea",
-      "baseHash": "6c4d2eee-1cf2-b268-2266-54be6c5b8a4f",
+      "baseVersionId": "019ff7eb-b26d-7c1c-a670-567b28c72c98",
+      "baseHash": "9430d4c9-152a-7c59-9ae1-5361331dc421",
       "source": "project"
     },
     {
@@ -531,8 +531,8 @@
       "fileId": "019fed90-bf36-7b38-a3fb-20edf3a9d9a4",
       "referenceId": "019fed90-bf36-7bd0-91d0-01dca408dd12",
       "fileType": "change-request",
-      "baseVersionId": "019fede1-54bf-7c0c-8b30-45fd16d39ac0",
-      "baseHash": "3c03d102-84ca-594d-bbec-eb91b252f7ab",
+      "baseVersionId": "019ff7eb-b212-79ac-b3c8-f3c4f4158601",
+      "baseHash": "7075c459-58c4-d3eb-4994-dfcbaa0b1b3e",
       "source": "project"
     },
     {
@@ -657,8 +657,8 @@
       "fileId": "019fedb8-e335-7614-b62d-cfbca357d93c",
       "referenceId": "019fedb8-e335-76ac-8463-2251b92cb894",
       "fileType": "change-request",
-      "baseVersionId": "019fedd7-6d67-7f64-ac09-d1ab3332fd25",
-      "baseHash": "d7cc74b3-9bdc-8c13-3093-ba0b013ac8eb",
+      "baseVersionId": "019ff7eb-b230-7a88-8e70-92b893b99a05",
+      "baseHash": "cf486070-cb3c-c747-b23d-a30946c6e20a",
       "source": "project"
     },
     {
@@ -666,8 +666,8 @@
       "fileId": "019fede1-549f-7f14-a926-50e52685eb15",
       "referenceId": "019fede1-549f-7000-b896-4389734ece82",
       "fileType": "change-request",
-      "baseVersionId": "019fede8-ad25-7d58-b6c6-aeb45e46c87e",
-      "baseHash": "8e507354-6074-9aa9-9b7a-2a0d8027fec4",
+      "baseVersionId": "019ff7eb-b225-7c84-b8e1-e293c8486585",
+      "baseHash": "7283abb7-0658-78b5-b073-017b5b6d7b8d",
       "source": "project"
     },
     {
@@ -675,8 +675,8 @@
       "fileId": "019ff086-a7e9-74f4-b405-83e29f3e1456",
       "referenceId": "019ff086-a7e9-7558-9db8-e96b6554dd3b",
       "fileType": "change-request",
-      "baseVersionId": "019ff090-21d8-798c-aecd-fb5c7e9b0b5e",
-      "baseHash": "21723e87-2a49-c1e1-8aef-5ac8c45b3fe9",
+      "baseVersionId": "019ff7eb-b23e-7a7c-b635-e54f2b8d2d8c",
+      "baseHash": "264645fb-5c10-64aa-b6a4-46c4b5027b24",
       "source": "project"
     },
     {
@@ -777,6 +777,60 @@
       "baseVersionId": "019ff254-d753-73e4-b2c0-ed77dfd4be82",
       "baseHash": "993a8dee-0399-6f60-7328-5ea330ba6c8f",
       "source": "project"
+    },
+    {
+      "path": "/Abilities/Healing.ability.json",
+      "fileId": "019ff7eb-b27d-739c-948f-092aeb268eac",
+      "referenceId": "019ff7eb-af42-757d-af35-33aa0f6642ae",
+      "fileType": "ability",
+      "baseVersionId": "019ff7eb-b275-7810-8d45-7de534b47baf",
+      "baseHash": "6e441351-22de-1761-8b9d-9f10822da11f",
+      "source": "project"
+    },
+    {
+      "path": "/Attributes/Eyes.attribute.json",
+      "fileId": "019ff7eb-b27d-7684-894d-556e8b1db3f9",
+      "referenceId": "019ff7eb-af42-757d-af35-364534420ff4",
+      "fileType": "attribute",
+      "baseVersionId": "019ff7eb-b275-7b1c-8d5d-0a2e5542aa01",
+      "baseHash": "25997cb1-811a-87dd-643e-af41141809ef",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/Eyes, Healing, and New Origins.change-request.md",
+      "fileId": "019ff7eb-b27e-77ec-8cc5-2ec8ecae7905",
+      "referenceId": "019ff7eb-af42-757d-af35-39226a7b1010",
+      "fileType": "change-request",
+      "baseVersionId": "019ff7eb-b275-7e54-ae8a-8067717a98db",
+      "baseHash": "c21880f5-04b2-6bd5-4700-03f2f7884492",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Druid.origin.json",
+      "fileId": "019ff7eb-b27e-79a8-9b96-d172981ab442",
+      "referenceId": "019ff7eb-af42-757d-af35-3ff1d06c0bb8",
+      "fileType": "origin",
+      "baseVersionId": "019ff7eb-b275-73ec-8a41-0006e52ed2e1",
+      "baseHash": "8ad4cb5f-c1e6-b930-fa86-4a6833ff3b4a",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Fairy Doctor.origin.json",
+      "fileId": "019ff7eb-b27e-7b28-9878-22b29447a9e6",
+      "referenceId": "019ff7eb-af42-757d-af35-41972e67519a",
+      "fileType": "origin",
+      "baseVersionId": "019ff7eb-b276-7168-afb0-206727856055",
+      "baseHash": "7aab620b-4cb2-e431-c73a-d8eccc9dcd23",
+      "source": "project"
+    },
+    {
+      "path": "/Origins/Herbalist.origin.json",
+      "fileId": "019ff7eb-b27e-7c5c-8068-c4130cc7dbf6",
+      "referenceId": "019ff7eb-af42-757d-af35-4598bc51619a",
+      "fileType": "origin",
+      "baseVersionId": "019ff7eb-b277-7020-8014-d4c7bbcdaff8",
+      "baseHash": "cfe73e13-5b07-b377-396b-56d3ae9ceacc",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -807,8 +861,8 @@
     {
       "slug": "character",
       "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-      "schemaHash": "7e5e626b-36ad-3f32-0992-84bcc80cfd8d",
-      "contentHash": "826a8d32-27eb-81e3-b204-326517b40ea2"
+      "schemaHash": "4a08e8b7-9292-0ec6-f80f-403d7741d561",
+      "contentHash": "50b79fb9-f77b-4ac3-1695-2f3fdabd82a2"
     },
     {
       "slug": "grace",

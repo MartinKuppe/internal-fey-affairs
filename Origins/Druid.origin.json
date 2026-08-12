@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019ff7eb-af42-757d-af35-3ff1d06c0bb8"
+  },
+  "name": "Druid",
+  "abilities": [
+    {
+      "slug": "healing",
+      "referenceId": "019ff7eb-af42-757d-af35-33aa0f6642ae",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "learnedness",
+      "referenceId": "019fe8d9-7f28-74d0-b564-97856b746cf7",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "nature",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "head",
+    "referenceId": "019fe8d9-78e3-7794-829a-1eb1e3a560aa",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are a learned keeper of remedies, natural signs, and teachings carried through memory and careful study. People seek your judgment when illness, law, or the land presents a question that cannot be settled by strength alone. A familiar medicinal plant has begun growing in a perfect ring where no one remembers sowing it."
+}

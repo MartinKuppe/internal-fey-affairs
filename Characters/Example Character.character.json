@@ -43,11 +43,12 @@
   ],
   "attributes": {
     "body": 3,
-    "head": 2,
-    "legs": 2,
     "hands": 2,
+    "head": 2,
     "heart": 2,
-    "shadow": 2
+    "legs": 2,
+    "shadow": 2,
+    "eyes": 2
   },
   "description": "A blacksmith's apprentice in a small Celtic village. He believes in iron, honest work, and things that can be held in the hand — not in fairy stories. Then the fairy ring glowed blue.",
   "personality": "Practical, skeptical, stubbornly grounded. Loyal to his granny, quietly in love with Niamh, and too proud to admit when he is afraid.",
