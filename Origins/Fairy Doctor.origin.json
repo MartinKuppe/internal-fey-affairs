@@ -1,0 +1,29 @@
+{
+  "$craft": {
+    "referenceId": "019ff7eb-af42-757d-af35-41972e67519a"
+  },
+  "name": "Fairy Doctor",
+  "abilities": [
+    {
+      "slug": "healing",
+      "referenceId": "019ff7eb-af42-757d-af35-33aa0f6642ae",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "fey-lore",
+      "referenceId": "019fe8d9-7f2b-7e9c-b24a-7330a9eb0ddd",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "bargains",
+      "referenceId": "019fe8d9-7e26-7c5c-b6ac-38a5e792bf2a",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attribute": {
+    "slug": "hands",
+    "referenceId": "019fe8d9-78b7-7094-b0bd-295926bee011",
+    "fileTypeSlug": "attribute"
+  },
+  "description": "You are called when an ordinary healer cannot explain an illness, a wasting child, or a wound that will not close. Your work combines practical treatment with old knowledge of the Fair Folk and great care over what is offered, promised, or accepted. A patient recovers overnight, but wakes insisting that someone else paid the price."
+}

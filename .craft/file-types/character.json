@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": "world",
-  "schemaHash": "7e5e626b-36ad-3f32-0992-84bcc80cfd8d",
+  "schemaHash": "4a08e8b7-9292-0ec6-f80f-403d7741d561",
   "schema": {
     "type": "object",
     "required": [
@@ -171,6 +171,13 @@
           "body": {
             "type": "number",
             "title": "Body",
+            "default": 2,
+            "maximum": 5,
+            "minimum": 1
+          },
+          "eyes": {
+            "type": "number",
+            "title": "Eyes",
             "default": 2,
             "maximum": 5,
             "minimum": 1

@@ -91,7 +91,7 @@ When the Outfit or relevant circumstances change:
 
 ## Attributes
 
-Six attributes, each rated 1–5 dice:
+Seven attributes, each rated 1–5 dice:
 
 - **Body** — strength
 - **Hands** — agility
@@ -99,12 +99,13 @@ Six attributes, each rated 1–5 dice:
 - **Heart** — intuition
 - **Legs** — speed
 - **Shadow** — deception
+- **Eyes** — perception
 
-At character creation, the attribute linked to the character's origin starts at 3 dice; the other five start at 2.
+At character creation, the attribute linked to the character's origin starts at 3 dice; the other six start at 2.
 
 ## Abilities
 
-Nineteen abilities, each trained or untrained: Fey Lore, Learnedness, Charisma, Art & Beauty, Music, Milk, Repairs, Iron, Animals, Bargains, Lying, Court life, Stealth, Nature, Wayfinding, Riding, Dancing, Food, Weapons.
+Twenty abilities, each trained or untrained: Fey Lore, Learnedness, Charisma, Art & Beauty, Music, Milk, Repairs, Iron, Animals, Bargains, Lying, Court life, Stealth, Nature, Wayfinding, Riding, Dancing, Food, Weapons, Healing.
 
 An origin grants exactly three trained abilities. The GM may award additional abilities during play.
 
@@ -118,7 +119,7 @@ An origin grants exactly three trained abilities. The GM may award additional ab
 
 ## Origins
 
-When a player picks an origin, it defines who their character was before the story began: their attribute, their three abilities, and their place in the village. See the Origins folder for the eighteen choices.
+When a player picks an origin, it defines who their character was before the story began: their attribute, their three abilities, and their place in the village. See the Origins folder for the twenty-one choices.
 
 - A newly created playable protagonist is expected to have an Origin.
 - NPCs do not require an Origin. An NPC may carry an Origin only when it genuinely represents their mechanical starting background.
