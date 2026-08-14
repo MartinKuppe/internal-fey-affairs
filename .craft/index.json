@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-12T21:40:46.524Z",
+  "syncedAt": "2026-08-14T18:38:18.776Z",
   "folders": [
     {
       "path": "/Bargains",
@@ -835,6 +835,12 @@
   ],
   "fileTypes": [
     {
+      "slug": "character",
+      "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
+      "schemaHash": "4a08e8b7-9292-0ec6-f80f-403d7741d561",
+      "contentHash": "50b79fb9-f77b-4ac3-1695-2f3fdabd82a2"
+    },
+    {
       "slug": "location",
       "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
       "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
@@ -857,12 +863,6 @@
       "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
       "schemaHash": "280e8fff-aa25-9cfe-5325-0773becc5278",
       "contentHash": "6992a180-2942-d80a-f084-cece42c8793a"
-    },
-    {
-      "slug": "character",
-      "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-      "schemaHash": "4a08e8b7-9292-0ec6-f80f-403d7741d561",
-      "contentHash": "50b79fb9-f77b-4ac3-1695-2f3fdabd82a2"
     },
     {
       "slug": "grace",
@@ -925,5 +925,5 @@
       "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
     }
   ],
-  "projectSettingsHash": "3f1a0e06-1efc-ac9c-68b8-3fb55ec8e6de"
+  "projectSettingsHash": "eda67e85-2e4b-e3d6-4fbf-6bad2f21213a"
 }
