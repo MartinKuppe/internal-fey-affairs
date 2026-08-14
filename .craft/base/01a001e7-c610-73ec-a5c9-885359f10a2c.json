@@ -1,0 +1,5 @@
+{
+  "name": "Campaign Mission Journal",
+  "missions": [],
+  "description": "Authoritative campaign-wide Mission index and calendar. The master missions list is updated whenever a permanent Mission is authored; the current date and starting Mission are recorded here, not on Mission files."
+}

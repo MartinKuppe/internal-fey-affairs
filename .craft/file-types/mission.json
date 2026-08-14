@@ -1,0 +1,1613 @@
+{
+  "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
+  "slug": "mission",
+  "name": "Mission",
+  "contentType": "json",
+  "designation": null,
+  "category": null,
+  "schemaHash": "91af0784-5ae3-9139-931b-0a34d06a174f",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name",
+      "code",
+      "kind",
+      "status",
+      "durationSteps",
+      "objective",
+      "storyBeats"
+    ],
+    "properties": {
+      "code": {
+        "type": "string",
+        "title": "Code",
+        "minLength": 1,
+        "description": "Human-readable authoring ID such as ST-01, SI-03, IN-02. Not a reference mechanism; Craft references remain authoritative."
+      },
+      "kind": {
+        "enum": [
+          "Story",
+          "Side",
+          "Opportunity",
+          "Interlude",
+          "Ability"
+        ],
+        "type": "string",
+        "title": "Kind",
+        "description": "Story: primary plot-point Mission on the campaign's linear spine. Side: non-failing Mission played in flexible order between Story Missions. Opportunity: optional Mission with a limited availability window. Interlude: mandatory event or holiday Mission. Ability: Mission that may award one or more trained Abilities."
+      },
+      "mapX": {
+        "type": "number",
+        "title": "Map X",
+        "maximum": 1,
+        "minimum": 0
+      },
+      "mapY": {
+        "type": "number",
+        "title": "Map Y",
+        "maximum": 1,
+        "minimum": 0
+      },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "status": {
+        "enum": [
+          "upcoming",
+          "available",
+          "active",
+          "completed",
+          "failed",
+          "expired"
+        ],
+        "type": "string",
+        "title": "Status",
+        "default": "upcoming",
+        "description": "expired: an Opportunity ceased to be available before being undertaken. failed: an attempted Opportunity or Ability Mission ended unsuccessfully. Story, Side, and Interlude Missions never become failed."
+      },
+      "gmNotes": {
+        "type": "string",
+        "title": "GM Notes",
+        "format": "textarea",
+        "description": "GM-facing hidden instructions and truths for the whole Mission. Never shown to players."
+      },
+      "briefing": {
+        "type": "string",
+        "title": "Briefing",
+        "format": "textarea",
+        "description": "Longer player-facing Mission brief."
+      },
+      "pinLabel": {
+        "type": "string",
+        "title": "Pin Label",
+        "description": "Player-safe label for the scene-map pin. If absent, use the Mission name."
+      },
+      "teamSize": {
+        "type": "number",
+        "title": "Team Size",
+        "minimum": 1,
+        "description": "Exact whole-number team size."
+      },
+      "endedDate": {
+        "type": "object",
+        "title": "Ended Date",
+        "required": [
+          "month",
+          "moonPhase"
+        ],
+        "properties": {
+          "month": {
+            "enum": [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December"
+            ],
+            "type": "string",
+            "title": "Month"
+          },
+          "moonPhase": {
+            "enum": [
+              "🌑",
+              "🌒",
+              "🌓",
+              "🌔",
+              "🌕",
+              "🌖",
+              "🌗",
+              "🌘"
+            ],
+            "type": "string",
+            "title": "Moon Phase"
+          }
+        },
+        "description": "Runtime. Set when the Mission ends."
+      },
+      "fixedDate": {
+        "type": "object",
+        "title": "Fixed Date",
+        "required": [
+          "month",
+          "moonPhase"
+        ],
+        "properties": {
+          "month": {
+            "enum": [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December"
+            ],
+            "type": "string",
+            "title": "Month"
+          },
+          "moonPhase": {
+            "enum": [
+              "🌑",
+              "🌒",
+              "🌓",
+              "🌔",
+              "🌕",
+              "🌖",
+              "🌗",
+              "🌘"
+            ],
+            "type": "string",
+            "title": "Moon Phase"
+          }
+        },
+        "description": "If absent, availability is controlled by prerequisites and current campaign state rather than a fixed calendar date."
+      },
+      "objective": {
+        "type": "string",
+        "title": "Objective",
+        "format": "textarea",
+        "description": "Player-facing overall objective."
+      },
+      "debriefing": {
+        "type": "string",
+        "title": "Debriefing",
+        "format": "textarea",
+        "description": "Player-facing debriefing text shown after a terminal outcome where appropriate."
+      },
+      "storyBeats": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "key",
+            "title",
+            "objective",
+            "events",
+            "gmInstructions"
+          ],
+          "properties": {
+            "key": {
+              "type": "string",
+              "title": "Key",
+              "description": "Stable short identifier unique within the Mission, such as arrival."
+            },
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "events": {
+              "type": "string",
+              "title": "Events",
+              "format": "textarea",
+              "description": "GM-facing description of what happens."
+            },
+            "location": {
+              "type": "string",
+              "title": "Location",
+              "referencedFileTypeSlug": "location"
+            },
+            "objective": {
+              "type": "string",
+              "title": "Objective",
+              "format": "textarea",
+              "description": "Player-relevant objective for this beat."
+            },
+            "loreUnlocks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "card",
+                  "level"
+                ],
+                "properties": {
+                  "card": {
+                    "type": "string",
+                    "referencedFileTypeSlug": "lore-card"
+                  },
+                  "level": {
+                    "enum": [
+                      "Common Knowledge",
+                      "Deep Lore",
+                      "Fey Knowledge"
+                    ],
+                    "type": "string"
+                  }
+                }
+              },
+              "title": "Lore Unlocks"
+            },
+            "gmInstructions": {
+              "type": "string",
+              "title": "GM Instructions",
+              "format": "textarea",
+              "description": "GM-facing special handling, restrictions, staging, or fail-forward guidance."
+            }
+          }
+        },
+        "title": "Story Beats",
+        "minItems": 1
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      },
+      "selectorMap": {
+        "type": "string",
+        "title": "Selector Map",
+        "description": "The map on which the Mission is selected. Describes where the AI GM places the per-playthrough scene-map pin; does not author or mutate the shared Location map.",
+        "referencedFileTypeSlug": "location"
+      },
+      "startedDate": {
+        "type": "object",
+        "title": "Started Date",
+        "required": [
+          "month",
+          "moonPhase"
+        ],
+        "properties": {
+          "month": {
+            "enum": [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December"
+            ],
+            "type": "string",
+            "title": "Month"
+          },
+          "moonPhase": {
+            "enum": [
+              "🌑",
+              "🌒",
+              "🌓",
+              "🌔",
+              "🌕",
+              "🌖",
+              "🌗",
+              "🌘"
+            ],
+            "type": "string",
+            "title": "Moon Phase"
+          }
+        },
+        "description": "Runtime. Set when the Mission becomes active."
+      },
+      "unlockAfter": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "mission"
+        },
+        "title": "Unlock After",
+        "description": "This Mission may become available only when every referenced Mission is completed."
+      },
+      "assignedTeam": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "character"
+        },
+        "title": "Assigned Team",
+        "description": "Runtime record of the team actually selected when the Mission becomes active."
+      },
+      "actualOutcome": {
+        "type": "string",
+        "title": "Actual Outcome",
+        "format": "textarea",
+        "description": "Runtime prose written after play, recording what actually happened."
+      },
+      "durationSteps": {
+        "type": "number",
+        "title": "Duration (Moon Steps)",
+        "default": 0,
+        "minimum": 0,
+        "description": "Whole number of moon-phase steps the Mission advances the campaign clock. May be 0."
+      },
+      "startLocation": {
+        "type": "string",
+        "title": "Start Location",
+        "referencedFileTypeSlug": "location"
+      },
+      "currentBeatKey": {
+        "type": "string",
+        "title": "Current Beat Key",
+        "description": "Runtime. The active beat's stable key. Set when the Mission starts and updated as beats advance. Omit when the Mission is not active."
+      },
+      "failureEffects": {
+        "type": "string",
+        "title": "Failure Effects",
+        "format": "textarea",
+        "description": "GM-facing prose for failure consequences."
+      },
+      "fixedDateLabel": {
+        "type": "string",
+        "title": "Fixed Date (display)",
+        "expression": "$self.fixedDate ? (($self.fixedDate.month ?? \"\") + \" \" + ($self.fixedDate.moonPhase ?? \"\")) : \"\"",
+        "description": "Computed display of the fixed date, e.g. November 🌒. Empty when no fixed date is set. Never stored."
+      },
+      "awardedAbilities": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "ability"
+        },
+        "title": "Awarded Abilities",
+        "description": "Trained Abilities granted on completion."
+      },
+      "mandatoryMembers": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "character"
+        },
+        "title": "Mandatory Members"
+      },
+      "revealedToPlayer": {
+        "type": "boolean",
+        "title": "Revealed to Player",
+        "default": false,
+        "description": "A future Mission can be known or rumoured without being available."
+      },
+      "startLoreUnlocks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "card",
+            "level"
+          ],
+          "properties": {
+            "card": {
+              "type": "string",
+              "referencedFileTypeSlug": "lore-card"
+            },
+            "level": {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "type": "string"
+            }
+          }
+        },
+        "title": "Start Lore Unlocks",
+        "description": "Lore unlock rows applied when the Mission becomes active."
+      },
+      "completionEffects": {
+        "type": "string",
+        "title": "Completion Effects",
+        "format": "textarea",
+        "description": "GM-facing prose for other completion consequences (Grace, Bargains, Reputation, relationships, Conditions, Outfits, world state)."
+      },
+      "selectableMembers": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "character"
+        },
+        "title": "Selectable Members",
+        "description": "Candidates from whom remaining team slots may be filled."
+      },
+      "failureLoreUnlocks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "card",
+            "level"
+          ],
+          "properties": {
+            "card": {
+              "type": "string",
+              "referencedFileTypeSlug": "lore-card"
+            },
+            "level": {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "type": "string"
+            }
+          }
+        },
+        "title": "Failure Lore Unlocks",
+        "description": "Lore unlock rows applied if an Opportunity or Ability Mission fails."
+      },
+      "currentBeatObjective": {
+        "type": "string",
+        "title": "Current Beat Objective",
+        "expression": "$self.status == \"active\" ? (($self.storyBeats ?? []).find(b => b.key == $self.currentBeatKey)?.objective ?? \"\") : \"\"",
+        "description": "Computed player-facing objective of the current beat, exposed without revealing future beats. Empty when no beat is current. Never stored."
+      },
+      "expiresWhenAvailable": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "mission"
+        },
+        "title": "Expires When Available",
+        "description": "Intended for Opportunities. If this Mission is upcoming or available and any referenced Mission becomes available, this Mission becomes expired."
+      },
+      "completionLoreUnlocks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "card",
+            "level"
+          ],
+          "properties": {
+            "card": {
+              "type": "string",
+              "referencedFileTypeSlug": "lore-card"
+            },
+            "level": {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "type": "string"
+            }
+          }
+        },
+        "title": "Completion Lore Unlocks",
+        "description": "Lore unlock rows applied when the Mission is completed."
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "body": {
+        "type": "Card",
+        "props": {
+          "maxWidth": "full"
+        },
+        "visible": {
+          "$or": [
+            {
+              "$state": "/revealedToPlayer"
+            },
+            {
+              "neq": "upcoming",
+              "$state": "/status"
+            }
+          ]
+        },
+        "children": [
+          "body-stack"
+        ]
+      },
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "subtitle": {
+            "$state": "/description"
+          },
+          "aspectRatio": "video"
+        },
+        "visible": {
+          "$or": [
+            {
+              "$state": "/revealedToPlayer"
+            },
+            {
+              "neq": "upcoming",
+              "$state": "/status"
+            }
+          ]
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "none",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "body",
+          "locked"
+        ]
+      },
+      "sep1": {
+        "type": "Separator",
+        "props": {},
+        "children": []
+      },
+      "sep2": {
+        "type": "Separator",
+        "props": {},
+        "children": []
+      },
+      "sep3": {
+        "type": "Separator",
+        "props": {},
+        "children": []
+      },
+      "locked": {
+        "type": "Card",
+        "props": {
+          "maxWidth": "full"
+        },
+        "visible": {
+          "$and": [
+            {
+              "eq": "upcoming",
+              "$state": "/status"
+            },
+            {
+              "not": true,
+              "$state": "/revealedToPlayer"
+            }
+          ]
+        },
+        "children": [
+          "locked-body"
+        ]
+      },
+      "mapx-stat": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 1,
+          "color": null,
+          "items": [
+            [
+              "Map X",
+              {
+                "$state": "/mapX"
+              }
+            ]
+          ],
+          "bgColor": null
+        },
+        "visible": {
+          "$state": "/mapX"
+        },
+        "children": []
+      },
+      "mapy-stat": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 1,
+          "color": null,
+          "items": [
+            [
+              "Map Y",
+              {
+                "$state": "/mapY"
+              }
+            ]
+          ],
+          "bgColor": null
+        },
+        "visible": {
+          "$state": "/mapY"
+        },
+        "children": []
+      },
+      "body-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "badges-stack",
+          "overview-stats",
+          "fixed-date-stat",
+          "sep1",
+          "objective-section",
+          "briefing-section",
+          "current-beat-section",
+          "sep2",
+          "location-section",
+          "team-section",
+          "sep3",
+          "outcome-section",
+          "mapx-stat",
+          "mapy-stat",
+          "gmnotes-section",
+          "pinlabel-section",
+          "endeddate-section",
+          "fixeddate-section",
+          "storybeats-references",
+          "selectormap-select",
+          "starteddate-section",
+          "unlockafter-references",
+          "currentbeatkey-section",
+          "failureeffects-section",
+          "awardedabilities-references",
+          "revealedtoplayer-checkbox",
+          "startloreunlocks-references",
+          "completioneffects-section",
+          "failureloreunlocks-references",
+          "expireswhenavailable-references",
+          "completionloreunlocks-references"
+        ]
+      },
+      "kind-badge": {
+        "type": "Badge",
+        "props": {
+          "text": {
+            "$state": "/kind"
+          },
+          "variant": "secondary"
+        },
+        "children": []
+      },
+      "locked-body": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "locked-text"
+        ]
+      },
+      "locked-text": {
+        "type": "Text",
+        "props": {
+          "text": "This Mission has not yet surfaced in the campaign. It will be revealed when the story brings it to light.",
+          "variant": "muted"
+        },
+        "children": []
+      },
+      "badges-stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": true,
+          "direction": "horizontal"
+        },
+        "children": [
+          "kind-badge",
+          "status-badge"
+        ]
+      },
+      "gmnotes-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/gmNotes"
+          }
+        },
+        "children": []
+      },
+      "outcome-body": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/actualOutcome"
+        },
+        "children": [
+          "outcome-heading",
+          "outcome-text"
+        ]
+      },
+      "outcome-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/actualOutcome"
+          }
+        },
+        "children": []
+      },
+      "status-badge": {
+        "type": "Badge",
+        "props": {
+          "text": {
+            "$state": "/status"
+          },
+          "variant": "default"
+        },
+        "children": []
+      },
+      "team-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "team-size-stat",
+          "mandatory-members",
+          "selectable-members",
+          "assigned-team"
+        ]
+      },
+      "assigned-team": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "sm",
+          "items": {
+            "$state": "/assignedTeam"
+          },
+          "label": "Assigned Team",
+          "columns": 4,
+          "showAddNew": false,
+          "fileTypeSlug": "character",
+          "referenceField": null,
+          "showAddNewOnHover": false
+        },
+        "visible": {
+          "$state": "/assignedTeam"
+        },
+        "children": []
+      },
+      "briefing-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/briefing"
+          }
+        },
+        "children": []
+      },
+      "location-grid": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "sm",
+          "items": [
+            {
+              "$state": "/startLocation"
+            }
+          ],
+          "label": "Start Location",
+          "showAddNew": false,
+          "fileTypeSlug": "location",
+          "referenceField": null,
+          "showAddNewOnHover": false
+        },
+        "children": []
+      },
+      "pinlabel-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/pinLabel"
+          }
+        },
+        "children": []
+      },
+      "objective-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/objective"
+          }
+        },
+        "children": []
+      },
+      "overview-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "items": [
+            [
+              "Code",
+              {
+                "$state": "/code"
+              }
+            ],
+            [
+              "Duration (moon steps)",
+              {
+                "$state": "/durationSteps"
+              }
+            ]
+          ]
+        },
+        "children": []
+      },
+      "team-size-stat": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 1,
+          "items": [
+            [
+              "Team size",
+              {
+                "$state": "/teamSize"
+              }
+            ]
+          ]
+        },
+        "visible": {
+          "$state": "/teamSize"
+        },
+        "children": []
+      },
+      "debriefing-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/debriefing"
+          }
+        },
+        "children": []
+      },
+      "endeddate-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_endedDateEntries"
+          },
+          "bgColor": null
+        },
+        "children": []
+      },
+      "fixed-date-stat": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 1,
+          "items": [
+            [
+              "Fixed date",
+              {
+                "$state": "/fixedDateLabel"
+              }
+            ]
+          ]
+        },
+        "visible": {
+          "$state": "/fixedDateLabel"
+        },
+        "children": []
+      },
+      "fixeddate-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_fixedDateEntries"
+          },
+          "bgColor": null
+        },
+        "children": []
+      },
+      "gmnotes-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "GM Notes",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "gmnotes-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/gmNotes"
+        },
+        "children": [
+          "gmnotes-heading",
+          "gmnotes-text"
+        ]
+      },
+      "outcome-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Actual Outcome",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "outcome-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$or": [
+            {
+              "eq": "completed",
+              "$state": "/status"
+            },
+            {
+              "eq": "failed",
+              "$state": "/status"
+            },
+            {
+              "eq": "expired",
+              "$state": "/status"
+            }
+          ]
+        },
+        "children": [
+          "debriefing-section",
+          "outcome-body"
+        ]
+      },
+      "briefing-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Briefing",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "briefing-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/briefing"
+        },
+        "children": [
+          "briefing-heading",
+          "briefing-text"
+        ]
+      },
+      "location-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Start Location",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "location-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/startLocation"
+        },
+        "children": [
+          "location-heading",
+          "location-grid"
+        ]
+      },
+      "pinlabel-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Pin Label",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "pinlabel-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/pinLabel"
+        },
+        "children": [
+          "pinlabel-heading",
+          "pinlabel-text"
+        ]
+      },
+      "current-beat-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/currentBeatObjective"
+          }
+        },
+        "children": []
+      },
+      "endeddate-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Ended Date",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "endeddate-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/endedDate"
+        },
+        "children": [
+          "endeddate-heading",
+          "endeddate-stats"
+        ]
+      },
+      "fixeddate-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Fixed Date",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "fixeddate-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/fixedDate"
+        },
+        "children": [
+          "fixeddate-heading",
+          "fixeddate-stats"
+        ]
+      },
+      "mandatory-members": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "sm",
+          "items": {
+            "$state": "/mandatoryMembers"
+          },
+          "label": "Mandatory Members",
+          "columns": 4,
+          "showAddNew": false,
+          "fileTypeSlug": "character",
+          "referenceField": null,
+          "showAddNewOnHover": false
+        },
+        "visible": {
+          "$state": "/mandatoryMembers"
+        },
+        "children": []
+      },
+      "objective-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Objective",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "objective-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "objective-heading",
+          "objective-text"
+        ]
+      },
+      "starteddate-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_startedDateEntries"
+          },
+          "bgColor": null
+        },
+        "children": []
+      },
+      "debriefing-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Debriefing",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "debriefing-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/debriefing"
+        },
+        "children": [
+          "debriefing-heading",
+          "debriefing-text"
+        ]
+      },
+      "selectable-members": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "sm",
+          "items": {
+            "$state": "/selectableMembers"
+          },
+          "label": "Selectable Members",
+          "columns": 4,
+          "showAddNew": false,
+          "fileTypeSlug": "character",
+          "referenceField": null,
+          "showAddNewOnHover": false
+        },
+        "visible": {
+          "$state": "/selectableMembers"
+        },
+        "children": []
+      },
+      "selectormap-select": {
+        "type": "Select",
+        "props": {
+          "label": "Selector Map",
+          "value": {
+            "$state": "/selectorMap"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "location"
+        },
+        "visible": {
+          "$state": "/selectorMap"
+        },
+        "children": []
+      },
+      "currentbeatkey-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/currentBeatKey"
+          }
+        },
+        "children": []
+      },
+      "failureeffects-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/failureEffects"
+          }
+        },
+        "children": []
+      },
+      "starteddate-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Started Date",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "starteddate-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/startedDate"
+        },
+        "children": [
+          "starteddate-heading",
+          "starteddate-stats"
+        ]
+      },
+      "current-beat-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Current Objective",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "current-beat-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$and": [
+            {
+              "eq": "active",
+              "$state": "/status"
+            },
+            {
+              "$state": "/currentBeatObjective"
+            }
+          ]
+        },
+        "children": [
+          "current-beat-heading",
+          "current-beat-text"
+        ]
+      },
+      "storybeats-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/storyBeats"
+          },
+          "label": "Story Beats",
+          "columns": 4,
+          "fileTypeSlug": "location",
+          "metadataFields": [
+            {
+              "name": "key",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "events",
+              "type": "string"
+            },
+            {
+              "name": "objective",
+              "type": "string"
+            },
+            {
+              "name": "loreUnlocks",
+              "type": "string"
+            },
+            {
+              "name": "gmInstructions",
+              "type": "string"
+            }
+          ],
+          "referenceField": "location"
+        },
+        "visible": {
+          "$state": "/storyBeats"
+        },
+        "children": []
+      },
+      "completioneffects-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/completionEffects"
+          }
+        },
+        "children": []
+      },
+      "currentbeatkey-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Current Beat Key",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "currentbeatkey-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/currentBeatKey"
+        },
+        "children": [
+          "currentbeatkey-heading",
+          "currentbeatkey-text"
+        ]
+      },
+      "failureeffects-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Failure Effects",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "failureeffects-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/failureEffects"
+        },
+        "children": [
+          "failureeffects-heading",
+          "failureeffects-text"
+        ]
+      },
+      "unlockafter-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/unlockAfter"
+          },
+          "label": "Unlock After",
+          "columns": 4,
+          "fileTypeSlug": "mission",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/unlockAfter"
+        },
+        "children": []
+      },
+      "completioneffects-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Completion Effects",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "completioneffects-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/completionEffects"
+        },
+        "children": [
+          "completioneffects-heading",
+          "completioneffects-text"
+        ]
+      },
+      "revealedtoplayer-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Revealed to Player",
+          "checked": {
+            "$state": "/revealedToPlayer"
+          }
+        },
+        "children": []
+      },
+      "awardedabilities-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/awardedAbilities"
+          },
+          "label": "Awarded Abilities",
+          "columns": 4,
+          "fileTypeSlug": "ability",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/awardedAbilities"
+        },
+        "children": []
+      },
+      "startloreunlocks-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/startLoreUnlocks"
+          },
+          "label": "Start Lore Unlocks",
+          "columns": 4,
+          "fileTypeSlug": "lore-card",
+          "metadataFields": [
+            {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "name": "level",
+              "type": "string"
+            }
+          ],
+          "referenceField": "card"
+        },
+        "visible": {
+          "$state": "/startLoreUnlocks"
+        },
+        "children": []
+      },
+      "failureloreunlocks-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/failureLoreUnlocks"
+          },
+          "label": "Failure Lore Unlocks",
+          "columns": 4,
+          "fileTypeSlug": "lore-card",
+          "metadataFields": [
+            {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "name": "level",
+              "type": "string"
+            }
+          ],
+          "referenceField": "card"
+        },
+        "visible": {
+          "$state": "/failureLoreUnlocks"
+        },
+        "children": []
+      },
+      "expireswhenavailable-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/expiresWhenAvailable"
+          },
+          "label": "Expires When Available",
+          "columns": 4,
+          "fileTypeSlug": "mission",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/expiresWhenAvailable"
+        },
+        "children": []
+      },
+      "completionloreunlocks-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/completionLoreUnlocks"
+          },
+          "label": "Completion Lore Unlocks",
+          "columns": 4,
+          "fileTypeSlug": "lore-card",
+          "metadataFields": [
+            {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "name": "level",
+              "type": "string"
+            }
+          ],
+          "referenceField": "card"
+        },
+        "visible": {
+          "$state": "/completionLoreUnlocks"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

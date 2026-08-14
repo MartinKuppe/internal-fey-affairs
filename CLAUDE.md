@@ -229,6 +229,8 @@ Credentials are never stored in this folder.
 | `.location.json` | Location | json |
 | `.lore-card.json` | Lore Card | json |
 | `.lore-journal.json` | Lore Journal | json |
+| `.mission.json` | Mission | json |
+| `.mission-journal.json` | Mission Journal | json |
 | `.origin.json` | Origin | json |
 | `.outfit.json` | Outfit | json |
 | `.species.json` | Species | json |
