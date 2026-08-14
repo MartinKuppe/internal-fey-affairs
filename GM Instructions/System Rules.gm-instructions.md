@@ -1,8 +1,9 @@
 ---
 name: System Rules
-description: The light RPG engine for Internal Fey Affairs — attributes,
-  abilities, origins, species and archetypes, checks, Grace, bargains,
-  reputation markers, condition tracks, and lore cards.
+description: |-
+  The light RPG engine for Internal Fey Affairs — attributes,
+    abilities, origins, species and archetypes, checks, Grace, bargains,
+    reputation markers, condition tracks, lore cards, and the Mission system.
 $craft:
   referenceId: 019fde04-45a3-7a04-ae62-38704ecce2e1
   settings:
@@ -175,7 +176,7 @@ Grace is the currency of favors among the Fey — and the measure of whether one
 - A Lore Card holds three knowledge tiers — Common Knowledge, Deep Lore, and Fey Knowledge. The card's flags (`discovered`, `deepLoreKnown`, `feyKnowledgeKnown`) are GM-controlled; players never unlock lore directly.
 - Encountering a card's subject unlocks Common Knowledge: set `discovered` to true.
 - A meaningful conversation about the subject may unlock the card; a merely passing mention does not.
-- Starting a relevant mission may unlock Lore Cards explicitly configured by that mission — once the future Mission system supports it.
+- Missions may unlock Lore Cards through rows configured on the Mission file — `startLoreUnlocks` when the Mission becomes active, beat `loreUnlocks` when that beat is reached or resolved, `completionLoreUnlocks` on completion, and `failureLoreUnlocks` when an Opportunity or Ability Mission fails. See the Missions section for the exact flag rules.
 - Following a hyperlink or reference only opens a file; it never changes discovery state automatically.
 - Consulting a suitable human expert in one of the card's `expertRegions` may unlock Deep Lore: set `deepLoreKnown` to true.
 - When `feyLoreUnlocksDeepLore` is true and the player character has the Fey Lore ability, Deep Lore may unlock at the same time the card is first discovered.
@@ -183,6 +184,108 @@ Grace is the currency of favors among the Fey — and the measure of whether one
 - Asking a Fey for knowledge may require a Bargain or incur Grace consequences — use the existing Bargain and Grace Ledger rules.
 - Setting `deepLoreKnown` or `feyKnowledgeKnown` must also set `discovered` to true.
 - Keep the Lore Journal's master `cards` list updated whenever a Lore Card is created; the journal shows discovered cards automatically.
+
+## Missions
+
+The campaign runs as a mostly linear sequence of **Story Missions**, with Side, Interlude, Opportunity, and Ability Missions around them. Each Mission is a file of the Mission type. The **Mission Journal** (`/Mission Journals/Campaign Mission Journal.mission-journal.json`) is the authoritative campaign-wide index and calendar: it holds the master `missions` list, the single `startingMission` reference, and the current campaign date, and derives available/active/upcoming/history projections from the Mission files' own statuses.
+
+### Mission kinds
+
+- **Story** — primary plot-point Mission on the campaign's linear spine. Played in order.
+- **Side** — non-failing Mission played in flexible order between Story Missions. Whether all Side Missions are required before the next Story Mission is determined by explicit prerequisites (`unlockAfter`), not by kind alone.
+- **Interlude** — mandatory event or holiday Mission. Mechanically like other Missions, thematically distinct.
+- **Opportunity** — optional Mission with a limited availability window.
+- **Ability** — Mission that may award one or more trained Abilities.
+
+### Statuses
+
+`upcoming` → `available` → `active` → `completed`, plus the terminal states `failed` and `expired`:
+
+- `expired` — an Opportunity ceased to be available before being undertaken.
+- `failed` — an attempted Opportunity or Ability Mission ended unsuccessfully.
+- **Story, Side, and Interlude Missions never become `failed`.** Setbacks complicate or delay them, but they continue until `completed`.
+- Opportunity and Ability Missions may become `failed`, but do not have to support failure in every authored case.
+- Failure or expiration of an Opportunity or Ability Mission never blocks the Story campaign.
+- Completed, failed, and expired Mission files remain as campaign history even after their map pins disappear.
+
+### Starting the campaign
+
+Game Start launches the Mission Journal's `startingMission` directly. The starting Mission requires no selection pin. (Actual Game Start wiring and the first Mission are deferred until campaign content exists.)
+
+### Selecting a Mission
+
+- Only `available` Mission pins are presented for selection.
+- Opening a Mission pin displays its brief but does not itself start the Mission. The player explicitly chooses to begin it.
+- On selection:
+  1. Validate and record `assignedTeam`: every `mandatoryMembers` member is included, the count matches `teamSize` when defined, remaining members come from `selectableMembers`, and no Character reference is duplicated.
+  2. Set `status` to `active`.
+  3. Set `startedDate` to the current campaign date.
+  4. Set `currentBeatKey` to the first beat's key.
+  5. Apply `startLoreUnlocks`.
+  6. Highlight the Mission's pin.
+  7. Begin at `startLocation` or the first beat's Location.
+
+### Playing beats
+
+- Follow `storyBeats` in authored order unless the Mission explicitly says otherwise.
+- Update `currentBeatKey` as play advances.
+- Apply each beat's `loreUnlocks` when that beat is reached or resolved as authored.
+- Individual actions and plans may fail. Failure must alter cost, time, Conditions, position, reputation, relationships, or approach rather than block Story, Side, or Interlude completion.
+
+### Terminal outcomes
+
+- Story, Side, and Interlude: never set `failed`. Continue through complications until `completed`.
+- Opportunity and Ability: may complete or fail as their authored content permits.
+- `expired` applies only when an availability window closes before the Mission is undertaken — never for an attempted Mission.
+- When a Mission ends:
+  1. Set `completed` or `failed` as permitted, or `expired` when the window closed unundertaken.
+  2. Record `endedDate` and `actualOutcome`.
+  3. Apply the appropriate Lore unlocks (`completionLoreUnlocks`, or `failureLoreUnlocks` on failure).
+  4. Append every `awardedAbilities` reference to the relevant Character's `abilities` without duplicates (on completion).
+  5. Apply or narrate `completionEffects` / `failureEffects`.
+  6. Remove the Mission's selectable scene-map pin.
+  7. Advance the Mission Journal calendar by `durationSteps`, then evaluate fixed-date Missions, completed-prerequisite unlocks, and Opportunity expirations, and synchronize available pins.
+  8. Clear or omit `currentBeatKey` so no stale beat state remains after the Mission ends.
+
+### Calendar
+
+- The campaign date is the Mission Journal's `currentMonth` + `currentMoonPhase`. One `durationSteps` step advances one phase in the sequence 🌑 → 🌒 → 🌓 → 🌔 → 🌕 → 🌖 → 🌗 → 🌘 → next month 🌑. After December comes January. No year is tracked in v1.
+- A fixed-date Mission becomes due when the current date reaches or passes its fixed date.
+- When a fixed-date Story or Interlude becomes available, it takes priority: do not advance the campaign clock further until that Story or Interlude is completed. This does not retroactively interrupt a Mission already being played; enforce the priority when that Mission ends and the calendar advances.
+- If a multi-step duration crosses a fixed mandatory date, make that Mission due at the resulting date and block further advancement until it is completed.
+
+### Unlocks and expirations
+
+- An upcoming Mission becomes available when:
+  - every Mission in its `unlockAfter` is `completed` (an empty list imposes no prerequisite), and
+  - any fixed-date requirement has arrived (or it has none).
+- If an upcoming or available Opportunity has any `expiresWhenAvailable` Mission become `available`, set the Opportunity to `expired` and remove its pin.
+- Resolve newly available mandatory Story/Interlude Missions before offering further time-consuming choices.
+- The AI GM evaluates prerequisites and writes explicit status changes; status is never computed.
+
+### Lore unlocks
+
+- **Common Knowledge:** set the Lore Card's `discovered` to true.
+- **Deep Lore:** set `discovered` and `deepLoreKnown` to true.
+- **Fey Knowledge:** set `discovered` and `feyKnowledgeKnown` to true.
+- Apply this consistently to start, beat, completion, and failure Lore unlock rows.
+- Never set a deeper knowledge flag while leaving `discovered` false.
+
+### Map behavior
+
+- Missions are selected through per-playthrough pins on the world map. Shared author-time maps are never mutated during play; use the runtime scene-map scope.
+- Upcoming Missions have no pin.
+- When a Mission becomes available, add its linked pin at `mapX`/`mapY` on `selectorMap`, labeled `pinLabel` (falling back to the Mission name). Re-placing the same linked Mission pin must not create duplicates.
+- When selected and made active, visually highlight or restyle its pin.
+- When completed, failed, or expired, remove its selectable pin. The Mission file and the Mission Journal retain the permanent history.
+- Evaluate status first, then synchronize the scene-map pins. Pin behavior is GM-driven, not data-bound: changing a Mission status does not automatically mutate a map without the GM performing the scene-map action.
+- Never use author-time Location/open map mutations for playthrough availability.
+- Visual styling: distinguish Mission kinds with a clear, consistent temporary colour/icon scheme and use a stronger highlight for the active pin. Exact colours and icons are a playtest choice, not binding canon — record and adjust them during testing.
+
+### Context and playability
+
+- The Mission Journal contains mutable campaign state and should be pinned in GM context. Mission files should be searchable or partial rather than all pinned. System Rules must remain standing GM context.
+- Because context visibility is app-managed, verify manually: **System Rules → pinned; Campaign Mission Journal → pinned; Mission files → partial or searchable.**
 
 ## Guiding the Game Master
 
