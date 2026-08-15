@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-14T20:47:42.916Z",
+  "syncedAt": "2026-08-15T00:33:28.435Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -93,16 +93,17 @@
       "metadataHash": "f0d6f306-a9da-7bf1-a3f8-981373980223"
     },
     {
-      "path": "/Locations/Example Location.location.json",
+      "path": "/Locations/Hibernia & Albion.location.json",
       "fileId": "019fde04-456b-7004-a752-f198d5ce70c5",
       "referenceId": "019fde04-456b-7080-8779-cdfa7ef7381d",
       "fileType": "location",
-      "baseVersionId": "019fde04-4569-7c90-85d4-8cf94ba0e3f8",
-      "baseHash": "da9b24c8-c0d8-f23d-cf08-4469bb417dbb",
+      "baseVersionId": "01a002d2-e85e-7878-9257-3efbb563bbff",
+      "baseHash": "fe2ac187-99e3-064d-079b-96a86af90690",
       "source": "project",
       "settings": {
         "agentEditable": true
-      }
+      },
+      "metadataHash": "43520054-2701-2a66-453b-4633c2bd95a5"
     },
     {
       "path": "/Game Starts/Tavern Start.game-start.json",
@@ -856,6 +857,105 @@
       "fileType": "mission-journal",
       "baseVersionId": "01a00201-a24f-733c-b6e9-eeb22e49265b",
       "baseHash": "bc2e61d8-2d21-dc50-897e-4643105198e7",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Albion-W2 — Cornwell.location.json",
+      "fileId": "01a00295-7ab6-7670-b9ee-081fd1bed383",
+      "referenceId": "01a00295-7ab6-76e8-baad-2bfe876221d4",
+      "fileType": "location",
+      "baseVersionId": "01a0029e-9b93-7e2c-a258-74469f826b43",
+      "baseHash": "571cd6ae-9c72-fbc3-8fe0-9b0648a74ba2",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Albion-W1 — Wales.location.json",
+      "fileId": "01a00296-98ef-7180-a0bf-3c2e6b52f252",
+      "referenceId": "01a00296-98ef-7214-b21b-9fac1a9a37cb",
+      "fileType": "location",
+      "baseVersionId": "01a0029d-0fae-797c-94ab-d80997d6d799",
+      "baseHash": "528d19af-eb45-78f1-527c-4359368699ba",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Hibernia-H1 — North Ireland.location.json",
+      "fileId": "01a0029a-1bed-7c54-9b65-01fb5e07db86",
+      "referenceId": "01a0029a-1bed-7cc0-9310-c73ba7b9a9a8",
+      "fileType": "location",
+      "baseVersionId": "01a0029d-9c45-7808-8e32-6755b7389df0",
+      "baseHash": "cdc1291d-7827-0010-41dd-18334d8c5ef8",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Hibernia-H2 — South Ireland.location.json",
+      "fileId": "01a0029a-7d76-73bc-b429-ef4fba0f0200",
+      "referenceId": "01a0029a-7d76-7438-b1ab-f311047c3ee2",
+      "fileType": "location",
+      "baseVersionId": "01a0029d-bbe8-725c-aaae-8724c4f60ff8",
+      "baseHash": "e0572c16-299f-c75b-1788-37214f340ad0",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Albion-N1 — Scottish Highlands.location.json",
+      "fileId": "01a0029a-d976-7d24-865b-a1f79412234d",
+      "referenceId": "01a0029a-d976-7d84-872c-f9e75b385bcb",
+      "fileType": "location",
+      "baseVersionId": "01a0029c-d57a-7ba4-9e81-7d8960b291a4",
+      "baseHash": "8d899a95-c34d-ba58-a01f-926b7f439ddb",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Albion-N2 — Scottish Lowlands.location.json",
+      "fileId": "01a0029b-1c38-74bc-ad57-11a57683843d",
+      "referenceId": "01a0029b-1c38-7538-966d-07ab025e5e9c",
+      "fileType": "location",
+      "baseVersionId": "01a0029c-fc32-7c7c-a131-c8bf630b0ce0",
+      "baseHash": "0d62705a-c3a8-ca7f-e0a9-cdc321c3f956",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Albion-C1 — Northern England.location.json",
+      "fileId": "01a0029b-5802-7264-845d-bba548465797",
+      "referenceId": "01a0029b-5802-72cc-8609-7edd66b21830",
+      "fileType": "location",
+      "baseVersionId": "01a0029c-90d1-7100-a976-6056ec1fdd8b",
+      "baseHash": "538d485a-1b6d-2e4a-6008-2d0954e7e8fa",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Albion-C2 — Midlands.location.json",
+      "fileId": "01a0029b-ad76-7460-839e-98bb5bdd90d2",
+      "referenceId": "01a0029b-ad76-74d4-a5b7-c1263de07755",
+      "fileType": "location",
+      "baseVersionId": "01a0029c-a773-7170-975d-2779d08521c7",
+      "baseHash": "ad55e304-d1bb-af68-426b-b606e63cc1a2",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Albion-E1 — East Anglia.location.json",
+      "fileId": "01a0029b-ed6c-7e30-88f8-a8f0f9c6641e",
+      "referenceId": "01a0029b-ed6c-7ea0-b35a-f15401d6ecf6",
+      "fileType": "location",
+      "baseVersionId": "01a0029c-c10e-73c8-9672-2cbfea37daba",
+      "baseHash": "c508ff72-8236-0352-a0b9-2c8d37005934",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Sector Albion-E2 — South-East England.location.json",
+      "fileId": "01a0029c-3ed6-7a20-9817-19debadfe6e7",
+      "referenceId": "01a0029c-3ed6-7a7c-8aca-ca66781ea3c5",
+      "fileType": "location",
+      "baseVersionId": "01a0029c-7b16-75c8-9bb3-ac9247bc5117",
+      "baseHash": "430bbb18-07e6-f252-b46d-4136a1a9c9c6",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Military Sector Man — Isle of Man.location.json",
+      "fileId": "01a0029e-f1dd-7f54-9711-3c9c1ed95cb6",
+      "referenceId": "01a0029e-f1dd-7014-89b0-838e715e5435",
+      "fileType": "location",
+      "baseVersionId": "01a0029f-0fd4-7428-8ec5-930f0a7024e1",
+      "baseHash": "b3298c8d-04bc-ef58-4014-8e6c0ae755f3",
       "source": "project"
     }
   ],
