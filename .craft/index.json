@@ -1,13 +1,9 @@
 {
-  "syncedAt": "2026-08-25T12:33:54.626Z",
+  "syncedAt": "2026-08-25T14:10:34.725Z",
   "folders": [
     {
       "path": "/Mission Journals",
       "folderId": "01a001e7-84d8-7130-bedb-b34325d647bd"
-    },
-    {
-      "path": "/Missions",
-      "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
     },
     {
       "path": "/Bargains",
@@ -20,10 +16,6 @@
     {
       "path": "/Grace",
       "folderId": "019fed6d-de09-7edc-ad7c-3c62bb9be7ed"
-    },
-    {
-      "path": "/Change Requests",
-      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     },
     {
       "path": "/Species",
@@ -76,6 +68,14 @@
     {
       "path": "/Outfits",
       "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
+    },
+    {
+      "path": "/Change Requests",
+      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
+    },
+    {
+      "path": "/Missions",
+      "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
     }
   ],
   "files": [
@@ -123,8 +123,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a00200-a518-72ac-b0e7-e75fe2d7856c",
-      "baseHash": "eedb4da0-7d57-db14-fcf4-e07655349613",
+      "baseVersionId": "01a03923-7582-7bcc-8a0e-e3160c2056aa",
+      "baseHash": "9854df74-f9c2-22e1-8b8c-457088e1d68b",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -957,14 +957,29 @@
       "baseVersionId": "01a002eb-5238-73b0-94fd-45d07c1cffbc",
       "baseHash": "b3298c8d-04bc-ef58-4014-8e6c0ae755f3",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/Mission Trackers.change-request.md",
+      "fileId": "01a03917-2719-748c-b2d0-53fdc0198ff1",
+      "referenceId": "01a03917-2719-751c-bc0d-82a6953368c0",
+      "fileType": "change-request",
+      "baseVersionId": "01a03924-4433-7370-859f-b266383a4048",
+      "baseHash": "b90282b9-6ff2-ea1e-142c-d93fb9f92ae7",
+      "source": "project"
     }
   ],
   "fileTypes": [
     {
+      "slug": "change-request",
+      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
+      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
+      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
+    },
+    {
       "slug": "mission",
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "91af0784-5ae3-9139-931b-0a34d06a174f",
-      "contentHash": "13c8c75c-4fe4-b8b9-6b39-6372e2b46a25"
+      "schemaHash": "eae72592-8663-314a-45be-2cc410dfc729",
+      "contentHash": "ebaf2687-e358-908f-0e2d-93f4355987d4"
     },
     {
       "slug": "mission-journal",
@@ -1007,12 +1022,6 @@
       "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
       "schemaHash": "4c33229e-aa90-cd18-b277-c61ae95a1bae",
       "contentHash": "18159f11-361d-2a16-fd50-7afbb03090b6"
-    },
-    {
-      "slug": "change-request",
-      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
-      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
-      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
     },
     {
       "slug": "species",

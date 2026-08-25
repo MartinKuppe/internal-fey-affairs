@@ -271,6 +271,19 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
 - Apply this consistently to start, beat, completion, and failure Lore unlock rows.
 - Never set a deeper knowledge flag while leaving `discovered` false.
 
+### Mission Trackers
+
+- Mission Trackers are **Mission-local objective state, not inventory**. They are labels and counters used only to represent progress inside a Mission, stored directly on the Mission file in the `missionTrackers` array. They are not equipment, have no weight, price, owner, location, or inventory behavior, and live only for the lifetime of their Mission.
+- The tracker list may be omitted when a Mission has no item/count objectives. An omitted or empty list simply shows no trackers.
+- The GM updates `current` immediately when the fiction acquires, loses, places, spends, recovers, or secures the tracked thing.
+- Values are whole numbers and normally remain from 0 through target. (The schema enforces `current >= 0` and `target >= 1`. Craft's supported `number` schema does not enforce integer-only values, so the AI GM must keep both values as whole numbers and normally clamp at the target unless an authored Mission explicitly requires surplus tracking.)
+- `target: 1` means one unique acquired object; `target` above 1 means counted progress.
+- `showAtZero` controls whether an empty tracker is displayed: `current: 0` with `showAtZero: false` stays hidden; `current: 0` with `showAtZero: true` displays as 0 / target.
+- Trackers are shown to players only while their Mission is `active`.
+- Reaching a tracker's target does not automatically complete the Mission; the Mission completes only when its authored instructions explicitly say so.
+- Mission completion, failure, or expiration ends the tracker's player-facing lifetime; stored values may remain on the Mission as history.
+- No tracker automatically transfers to another Mission in v1. If future campaign content genuinely requires cross-Mission persistence, extend the system then rather than simulating an inventory now.
+
 ### Map behavior
 
 - Missions are selected through per-playthrough pins on the world map. Shared author-time maps are never mutated during play; use the runtime scene-map scope.
