@@ -266,13 +266,20 @@ color value. `rounded?` is one of `"none"`/`"sm"`/`"md"`/`"lg"`/`"xl"`/`"2xl"`/`
 `aspectRatio` values everywhere: `"video"` (16:9), `"square"` (1:1),
 `"portrait"` (3:4), `"tall"` (9:16), `"ultrawide"` (32:9), `"ultratall"` (9:32).
 
+Stack, Grid, and Card also accept `bgImage?` (a background image URL, or a
+binding to an image field) plus `bgImageFit?` — `"cover"` (default, crop to
+fill), `"contain"` (fit inside), or `"tile"`/`"tile-x"`/`"tile-y"` (repeat at
+natural size for seamless textures). Use `bgImage` for background artwork; a
+Tailwind url() class in `className` cannot work, because the stylesheet is
+compiled at build time.
+
 ### Layout
 
 | Component | Props | Notes |
 |-----------|-------|-------|
-| `Stack` | `direction?` ("horizontal"/"vertical"), `gap?` ("sm"/"md"/"lg"/"none"), `align?` ("start"/"center"/"end"/"stretch"), `justify?` ("start"/"center"/"end"/"between"/"around"), `wrap?` (bool), `bgColor?`, `rounded?`, `className?` | Flex container. `className` takes extra Tailwind utilities (e.g. `col-span-2`, `mt-4`). |
-| `Grid` | `columns?` (1–12), `gap?` ("sm"/"md"/"lg"), `bgColor?`, `rounded?`, `className?` | CSS grid; children may use `className: "col-span-*"`. |
-| `Card` | `title?`, `description?`, `maxWidth?` ("sm"/"md"/"lg"/"full"), `centered?` (bool), `bgColor?`, `borderColor?`, `rounded?`, `className?` | Container card. |
+| `Stack` | `direction?` ("horizontal"/"vertical"), `gap?` ("sm"/"md"/"lg"/"none"), `align?` ("start"/"center"/"end"/"stretch"), `justify?` ("start"/"center"/"end"/"between"/"around"), `wrap?` (bool), `bgColor?`, `bgImage?`, `bgImageFit?`, `rounded?`, `className?` | Flex container. `className` takes extra Tailwind utilities (e.g. `col-span-2`, `mt-4`). |
+| `Grid` | `columns?` (1–12), `gap?` ("sm"/"md"/"lg"), `bgColor?`, `bgImage?`, `bgImageFit?`, `rounded?`, `className?` | CSS grid; children may use `className: "col-span-*"`. |
+| `Card` | `title?`, `description?`, `maxWidth?` ("sm"/"md"/"lg"/"full"), `centered?` (bool), `bgColor?`, `borderColor?`, `bgImage?`, `bgImageFit?`, `rounded?`, `className?` | Container card. |
 | `Separator` | `orientation?` ("horizontal"/"vertical") | Divider line. |
 | `Tabs` | `tabs` [{label, value}], `defaultValue?`, `value?`, `bgColor?` | Children map to panels by position (first child = first tab). |
 | `Accordion` | `items` [{title, content}], `type?` ("single"/"multiple") | Collapsible text sections; content is a string. |
