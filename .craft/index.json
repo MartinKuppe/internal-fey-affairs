@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-27T22:16:56.210Z",
+  "syncedAt": "2026-08-27T22:35:10.487Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -993,8 +993,8 @@
       "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
       "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
       "fileType": "location",
-      "baseVersionId": "01a04513-dab7-7dcc-91c2-f7bc163f013d",
-      "baseHash": "35f864a5-ef97-6f47-3883-ae664e28744f",
+      "baseVersionId": "01a04556-4623-7f28-b16d-032acf104065",
+      "baseHash": "6ad6d2a3-b794-dd47-1315-b7225243b975",
       "source": "project",
       "metadataHash": "00b6d5e5-5f64-c2a7-7060-4834bf505457"
     },
@@ -1003,8 +1003,8 @@
       "fileId": "01a03e78-307a-73ac-925f-b9ce92ad1a3d",
       "referenceId": "01a03e78-307a-7434-a8c3-623f3dc81170",
       "fileType": "location",
-      "baseVersionId": "01a03e92-01e3-7314-8db3-85bd1054bd76",
-      "baseHash": "8b7838d4-cf2d-3cfe-9ac5-5fb7b32bac65",
+      "baseVersionId": "01a04554-b850-76c4-850c-9c67f6011ff3",
+      "baseHash": "40bb1d3f-8634-779e-466f-01d4f9120df1",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1013,8 +1013,8 @@
       "fileId": "01a03e78-ed1e-75a8-8e24-259ae65b3def",
       "referenceId": "01a03e78-ed1e-761c-a06b-f7f41ae168c8",
       "fileType": "location",
-      "baseVersionId": "01a03e92-54de-72c4-bb4a-2f05f70575b4",
-      "baseHash": "fb4b9c7c-6d35-f447-ace1-6d8cb19f5e36",
+      "baseVersionId": "01a04555-1675-7cbc-8943-1aad9ab9a5d9",
+      "baseHash": "342a9b57-b953-782e-e243-b1abf92da452",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1023,8 +1023,8 @@
       "fileId": "01a03e8c-c67a-7e24-ba7f-1f488d8c8f2d",
       "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
       "fileType": "location",
-      "baseVersionId": "01a04087-2b1b-74fc-a5ea-959035e0d86e",
-      "baseHash": "1b5d036e-7dc4-767a-cc65-3a0609680864",
+      "baseVersionId": "01a04556-05fb-7d0c-ac9c-c8b28dbc67a5",
+      "baseHash": "90af3ec4-5349-c97b-9868-86718cb4e4af",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1033,8 +1033,8 @@
       "fileId": "01a03e8d-3e31-7208-b6e5-7804355067ec",
       "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
       "fileType": "location",
-      "baseVersionId": "01a04086-29a1-782c-927f-471b88c68571",
-      "baseHash": "efa6db7d-fbb4-83f0-8739-e8250261600d",
+      "baseVersionId": "01a04554-4c1c-724c-9660-809ce221277a",
+      "baseHash": "13059ea3-4c8f-2cec-fd51-bd4d189fec28",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1043,8 +1043,8 @@
       "fileId": "01a03e90-5d29-7e54-9594-29414db54736",
       "referenceId": "01a03e90-5d29-7ec8-8e84-0ddf56df9649",
       "fileType": "location",
-      "baseVersionId": "01a04083-dcbd-7710-ba20-bebc4965d6d8",
-      "baseHash": "77e85102-bacf-3670-db87-85dca6b87c4e",
+      "baseVersionId": "01a04555-da3d-7684-803b-85676561cc00",
+      "baseHash": "a8fcca41-928d-0408-f43b-d8548880b9b0",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1053,8 +1053,8 @@
       "fileId": "01a03e90-d005-775c-8285-6c7e96545bd1",
       "referenceId": "01a03e90-d005-77c8-bb8d-49807e030150",
       "fileType": "location",
-      "baseVersionId": "01a03e93-54e0-7804-a4f7-15279f455f14",
-      "baseHash": "608ae094-6088-3885-fcf4-2821045cf964",
+      "baseVersionId": "01a0455a-07e9-7c1c-91eb-440667ec4945",
+      "baseHash": "6bbeee1d-7cfa-0f0d-8968-9bebbdaae371",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1073,8 +1073,8 @@
       "fileId": "01a04083-61ba-7ab4-b259-746b60bad013",
       "referenceId": "01a04083-61ba-7b28-bc4c-cf65871584d4",
       "fileType": "location",
-      "baseVersionId": "01a04086-8812-7bc8-80fb-fe74700e6b89",
-      "baseHash": "b83e31de-39e7-f076-cb3f-f8ee521206c7",
+      "baseVersionId": "01a0455a-4713-7844-99e7-d23e34e73dfa",
+      "baseHash": "8415dc52-ae46-f054-ca5b-db61f8c181f1",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     }
