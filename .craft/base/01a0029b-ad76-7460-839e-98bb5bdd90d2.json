@@ -1,4 +1,7 @@
 {
   "name": "Sector Albion-C2 — Midlands",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c88d93d1-aabe-4b12-aadc-c42a49f4ab68"
+  }
 }

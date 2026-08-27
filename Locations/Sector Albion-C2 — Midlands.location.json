@@ -1,7 +1,35 @@
 {
   "$craft": {
-    "referenceId": "01a0029b-ad76-74d4-a5b7-c1263de07755"
+    "referenceId": "01a0029b-ad76-74d4-a5b7-c1263de07755",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/6fc328e9-0894-4206-b4c4-2792899f8a6c",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 4178,
+          "height": 3179
+        },
+        "useParentMap": false,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
   },
   "name": "Sector Albion-C2 — Midlands",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c88d93d1-aabe-4b12-aadc-c42a49f4ab68"
+  }
 }

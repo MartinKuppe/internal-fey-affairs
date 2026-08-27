@@ -1,0 +1,146 @@
+{
+  "$craft": {
+    "referenceId": "01a03e6e-1dea-73bc-b1fb-e1ad30b3fc75",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [
+          {
+            "id": "54870ff8-2edf-4395-bc8d-28c646d4a83d",
+            "style": {
+              "fillColor": "#3b82f6",
+              "fillOpacity": 0.2,
+              "strokeColor": "#000000",
+              "strokeWidth": 2
+            },
+            "vertices": [
+              {
+                "x": 0.2059240982995779,
+                "y": 0.26222999453153484
+              },
+              {
+                "x": 0.13483405090621292,
+                "y": 0.2441122712682209
+              },
+              {
+                "x": 0.13199049240039984,
+                "y": 0.1868984542795224
+              },
+              {
+                "x": 0.24004737890162173,
+                "y": 0.16496649837563432
+              },
+              {
+                "x": 0.3471563402510367,
+                "y": 0.19166627236191391
+              },
+              {
+                "x": 0.3035544589797467,
+                "y": 0.24888008935061245
+              }
+            ],
+            "fillImage": null,
+            "fileReferenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd"
+          },
+          {
+            "id": "618c92f3-dfe2-491c-bdcb-b94571a6a505",
+            "style": {
+              "fillColor": "#3b82f6",
+              "fillOpacity": 0.2,
+              "strokeColor": "#000000",
+              "strokeWidth": 2
+            },
+            "vertices": [
+              {
+                "x": 0.6409952028102783,
+                "y": 0.7561759769677509
+              },
+              {
+                "x": 0.6931279042320795,
+                "y": 0.8029005359742836
+              },
+              {
+                "x": 0.7651658767772511,
+                "y": 0.8029005359742836
+              },
+              {
+                "x": 0.7973933070756813,
+                "y": 0.7561759769677509
+              },
+              {
+                "x": 0.7433648999833383,
+                "y": 0.7304297156721583
+              },
+              {
+                "x": 0.6827014507275622,
+                "y": 0.7304297156721583
+              }
+            ],
+            "fillImage": null,
+            "fileReferenceId": "01a03e78-307a-7434-a8c3-623f3dc81170"
+          },
+          {
+            "id": "c1455cea-7914-40fe-af56-74821665f732",
+            "style": {
+              "fillColor": "#3b82f6",
+              "fillOpacity": 0.2,
+              "strokeColor": "#000000",
+              "strokeWidth": 2
+            },
+            "vertices": [
+              {
+                "x": 0.7367298578199052,
+                "y": 0.28320840136917064
+              },
+              {
+                "x": 0.6827014507275622,
+                "y": 0.26222999453153484
+              },
+              {
+                "x": 0.6931279042320795,
+                "y": 0.20978399562522787
+              },
+              {
+                "x": 0.7689572881183353,
+                "y": 0.1964340904443055
+              },
+              {
+                "x": 0.8277250317035693,
+                "y": 0.23934445318582936
+              },
+              {
+                "x": 0.8191942838695943,
+                "y": 0.27557986333689205
+              }
+            ],
+            "fillImage": null,
+            "fileReferenceId": "01a03e78-ed1e-761c-a06b-f7f41ae168c8"
+          }
+        ],
+        "scale": null,
+        "points": [],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/60585cc2-d889-488a-9690-645e9a8d9fdd",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 2511,
+          "height": 2496
+        },
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Rathwood Region",
+  "type": "Region",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/a5d22dc7-ac64-4f87-86e4-2cdbc395c438"
+  }
+}

@@ -1,4 +1,7 @@
 {
   "name": "Sector Albion-E2 — South-East England",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/43fa9990-2da5-4280-8480-47854e3b6a64"
+  }
 }

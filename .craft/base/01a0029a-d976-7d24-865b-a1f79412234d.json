@@ -1,4 +1,7 @@
 {
   "name": "Sector Albion-N1 — Scottish Highlands",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b1b8f227-c751-464e-a3e6-44fed4c435a5"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "$craft": {
-    "referenceId": "01a0029a-d976-7d84-872c-f9e75b385bcb",
+    "referenceId": "01a00295-7ab6-76e8-baad-2bfe876221d4",
     "metadata": {
       "map": {
         "grid": null,
@@ -8,7 +8,7 @@
         "scale": null,
         "points": [],
         "background": {
-          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/39f256eb-79f3-4792-931d-d6c1b89eef20",
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/10e32576-396d-41ad-9e63-6b5138d3a14e",
           "scale": 1,
           "offset": {
             "x": 0,
@@ -16,8 +16,8 @@
           }
         },
         "aspectRatio": {
-          "width": 1044,
-          "height": 863
+          "width": 4178,
+          "height": 1776
         },
         "useParentMap": false,
         "overlayImages": [],
@@ -27,9 +27,9 @@
       "schemaVersionId": "file-designation-metadata:v8"
     }
   },
-  "name": "Sector Albion-N1 — Scottish Highlands",
-  "type": "Sector",
+  "name": "Sector Albion-W2 — Cornwall",
+  "type": "Region",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b1b8f227-c751-464e-a3e6-44fed4c435a5"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/20a3d094-9540-464b-b888-95a4a9e233be"
   }
 }

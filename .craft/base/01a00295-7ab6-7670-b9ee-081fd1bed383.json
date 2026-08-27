@@ -1,4 +1,7 @@
 {
-  "name": "Sector Albion-W2 — Cornwell",
-  "type": "Region"
+  "name": "Sector Albion-W2 — Cornwall",
+  "type": "Region",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/20a3d094-9540-464b-b888-95a4a9e233be"
+  }
 }

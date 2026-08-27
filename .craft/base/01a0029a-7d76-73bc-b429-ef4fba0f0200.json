@@ -1,4 +1,7 @@
 {
   "name": "Sector Hibernia-H2 — South Ireland",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/246618b8-998a-4e2e-9eae-70d18a687bb1"
+  }
 }

@@ -1,4 +1,7 @@
 {
   "name": "Sector Hibernia-H1 — North Ireland",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/09cb56b9-ae5a-47cd-be45-83304f050709"
+  }
 }

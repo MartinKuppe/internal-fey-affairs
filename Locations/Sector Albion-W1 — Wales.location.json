@@ -1,7 +1,35 @@
 {
   "$craft": {
-    "referenceId": "01a00296-98ef-7214-b21b-9fac1a9a37cb"
+    "referenceId": "01a00296-98ef-7214-b21b-9fac1a9a37cb",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/c923daea-9d0e-401f-aa31-d8250e3f702d",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 4178,
+          "height": 3179
+        },
+        "useParentMap": false,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
   },
   "name": "Sector Albion-W1 — Wales",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/814b08f9-b666-4cdd-97fe-d19f2a481496"
+  }
 }

@@ -1,4 +1,7 @@
 {
   "name": "Military Sector Man — Isle of Man",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7166b4c4-24de-4ff3-9e68-a0738e11c88f"
+  }
 }

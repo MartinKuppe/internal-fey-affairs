@@ -1,7 +1,35 @@
 {
   "$craft": {
-    "referenceId": "01a0029b-5802-72cc-8609-7edd66b21830"
+    "referenceId": "01a0029b-5802-72cc-8609-7edd66b21830",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/eb3da819-9079-4bd7-9fb2-2e27184141cf",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 4178,
+          "height": 3179
+        },
+        "useParentMap": false,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
   },
   "name": "Sector Albion-C1 — Northern England",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/23374c97-98d0-4c8e-a6ba-fb9023e269f8"
+  }
 }

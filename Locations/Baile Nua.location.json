@@ -1,6 +1,6 @@
 {
   "$craft": {
-    "referenceId": "01a0029e-f1dd-7014-89b0-838e715e5435",
+    "referenceId": "01a03e78-ed1e-761c-a06b-f7f41ae168c8",
     "metadata": {
       "map": {
         "grid": null,
@@ -20,9 +20,8 @@
       "schemaVersionId": "file-designation-metadata:v8"
     }
   },
-  "name": "Military Sector Man — Isle of Man",
-  "type": "Sector",
+  "name": "Baile Nua",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7166b4c4-24de-4ff3-9e68-a0738e11c88f"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/072b5e51-92ae-4f47-949c-93a38bb46e3f"
   }
 }

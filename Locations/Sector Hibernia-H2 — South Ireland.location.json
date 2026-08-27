@@ -1,7 +1,49 @@
 {
   "$craft": {
-    "referenceId": "01a0029a-7d76-7438-b1ab-f311047c3ee2"
+    "referenceId": "01a0029a-7d76-7438-b1ab-f311047c3ee2",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [
+          {
+            "id": "7b5b8046-0380-44e1-badf-02cb394c1cd3",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#eab308"
+            },
+            "position": {
+              "x": 0.7405193675951022,
+              "y": 0.5080032593396318
+            },
+            "fileReferenceId": "01a03e6e-1dea-73bc-b1fb-e1ad30b3fc75"
+          }
+        ],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/4c637ccd-a23f-4d3e-8c7a-0e42aa40e10f",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 4178,
+          "height": 3179
+        },
+        "useParentMap": false,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
   },
   "name": "Sector Hibernia-H2 — South Ireland",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/246618b8-998a-4e2e-9eae-70d18a687bb1"
+  }
 }

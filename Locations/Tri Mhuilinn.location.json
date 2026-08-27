@@ -1,0 +1,112 @@
+{
+  "$craft": {
+    "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [
+          {
+            "id": "28aaa3a0-1196-4a89-a8e7-e9c7e10a31c1",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#6b7280"
+            },
+            "position": {
+              "x": 0.30189739647784214,
+              "y": 0.20885773509528213
+            },
+            "fileReferenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4"
+          },
+          {
+            "id": "25e460f4-5f80-47ec-b344-fc81576a2584",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#8b5cf6"
+            },
+            "position": {
+              "x": 0.08508696449084113,
+              "y": 0.11300530512994367
+            },
+            "fileReferenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d"
+          },
+          {
+            "id": "d7da07b7-47c4-4d00-8418-25ccd92d2391",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#3b82f6"
+            },
+            "position": {
+              "x": 0.49000148714976677,
+              "y": 0.392872210450354
+            },
+            "fileReferenceId": "01a03e90-5d29-7ec8-8e84-0ddf56df9649"
+          },
+          {
+            "id": "c2f9890f-73fb-42c5-b6bf-fb76c5bae0f6",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#3b82f6"
+            },
+            "position": {
+              "x": 0.6641317007545777,
+              "y": 0.533855472405326
+            },
+            "fileReferenceId": "01a03e90-d005-77c8-bb8d-49807e030150"
+          },
+          {
+            "id": "5d803bff-ad23-4b7a-809d-de3e2b172d37",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#eab308"
+            },
+            "position": {
+              "x": 0.07227657528540912,
+              "y": 0.7561838676212022
+            },
+            "fileReferenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4"
+          },
+          {
+            "id": "2c6c3389-0e34-423c-a184-d4418f769a32",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#eab308"
+            },
+            "position": {
+              "x": 0.4159836953676925,
+              "y": 0.46843409128829655
+            },
+            "fileReferenceId": "01a04083-61ba-7b28-bc4c-cf65871584d4"
+          }
+        ],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/ed6a9d00-b081-4e01-be4e-611279068db0",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 2950,
+          "height": 2134
+        },
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Tri Mhuilinn",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1ce9c761-884a-41a5-95d3-146cfdbb52a0"
+  }
+}

@@ -1,4 +1,7 @@
 {
   "name": "Sector Albion-N2 — Scottish Lowlands",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/41b5a3fb-8827-4511-aca2-d9c026a363b6"
+  }
 }

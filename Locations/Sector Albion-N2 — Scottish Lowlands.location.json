@@ -1,7 +1,35 @@
 {
   "$craft": {
-    "referenceId": "01a0029b-1c38-7538-966d-07ab025e5e9c"
+    "referenceId": "01a0029b-1c38-7538-966d-07ab025e5e9c",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/2cc453ec-4679-4ebe-8c2c-a78050429c1e",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 4178,
+          "height": 3179
+        },
+        "useParentMap": false,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
   },
   "name": "Sector Albion-N2 — Scottish Lowlands",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/41b5a3fb-8827-4511-aca2-d9c026a363b6"
+  }
 }

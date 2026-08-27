@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-25T14:10:34.725Z",
+  "syncedAt": "2026-08-27T22:16:56.210Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -28,10 +28,6 @@
     {
       "path": "/Characters",
       "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
-    },
-    {
-      "path": "/Locations",
-      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
     },
     {
       "path": "/Equipment",
@@ -74,6 +70,10 @@
       "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     },
     {
+      "path": "/Locations",
+      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
+    },
+    {
       "path": "/Missions",
       "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
     }
@@ -97,13 +97,13 @@
       "fileId": "019fde04-456b-7004-a752-f198d5ce70c5",
       "referenceId": "019fde04-456b-7080-8779-cdfa7ef7381d",
       "fileType": "location",
-      "baseVersionId": "01a002fd-140f-77b8-b290-d4887fec829f",
-      "baseHash": "fe2ac187-99e3-064d-079b-96a86af90690",
+      "baseVersionId": "01a04515-643a-7314-ba95-90c99b782180",
+      "baseHash": "72d14afb-09f7-b12a-80b7-d044f7437a07",
       "source": "project",
       "settings": {
         "agentEditable": true
       },
-      "metadataHash": "43520054-2701-2a66-453b-4633c2bd95a5"
+      "metadataHash": "376f7a89-9443-289d-af45-95de7d79fe0e"
     },
     {
       "path": "/Game Starts/Tavern Start.game-start.json",
@@ -860,103 +860,114 @@
       "source": "project"
     },
     {
-      "path": "/Locations/Sector Albion-W2 — Cornwell.location.json",
+      "path": "/Locations/Sector Albion-W2 — Cornwall.location.json",
       "fileId": "01a00295-7ab6-7670-b9ee-081fd1bed383",
       "referenceId": "01a00295-7ab6-76e8-baad-2bfe876221d4",
       "fileType": "location",
-      "baseVersionId": "01a002eb-092c-7a10-be5d-c42569eae51c",
-      "baseHash": "571cd6ae-9c72-fbc3-8fe0-9b0648a74ba2",
-      "source": "project"
+      "baseVersionId": "01a0450d-0bbe-7afc-b2ec-9c0b8f3151ae",
+      "baseHash": "4c8c3201-3662-537a-a2e8-17d5dc3e796e",
+      "source": "project",
+      "metadataHash": "b12441a0-25b7-9933-4736-7b4425897436"
     },
     {
       "path": "/Locations/Sector Albion-W1 — Wales.location.json",
       "fileId": "01a00296-98ef-7180-a0bf-3c2e6b52f252",
       "referenceId": "01a00296-98ef-7214-b21b-9fac1a9a37cb",
       "fileType": "location",
-      "baseVersionId": "01a002e9-ad24-774c-8758-6c6b3254582f",
-      "baseHash": "528d19af-eb45-78f1-527c-4359368699ba",
-      "source": "project"
+      "baseVersionId": "01a0450d-53a3-765c-8119-33a02e778847",
+      "baseHash": "73b8f3f3-cfce-914f-f423-9f1335278ec6",
+      "source": "project",
+      "metadataHash": "fdd18987-a8a7-b5ca-40bf-12eddabee0bb"
     },
     {
       "path": "/Locations/Sector Hibernia-H1 — North Ireland.location.json",
       "fileId": "01a0029a-1bed-7c54-9b65-01fb5e07db86",
       "referenceId": "01a0029a-1bed-7cc0-9310-c73ba7b9a9a8",
       "fileType": "location",
-      "baseVersionId": "01a002e9-4638-7968-87f1-c31ce8d65845",
-      "baseHash": "cdc1291d-7827-0010-41dd-18334d8c5ef8",
-      "source": "project"
+      "baseVersionId": "01a0450d-4315-7190-a59f-e809771feeb7",
+      "baseHash": "536eb0c6-4eef-a9b6-ceb0-81deb17981de",
+      "source": "project",
+      "metadataHash": "e7c5decc-bdab-a953-9e71-f3002687ee9d"
     },
     {
       "path": "/Locations/Sector Hibernia-H2 — South Ireland.location.json",
       "fileId": "01a0029a-7d76-73bc-b429-ef4fba0f0200",
       "referenceId": "01a0029a-7d76-7438-b1ab-f311047c3ee2",
       "fileType": "location",
-      "baseVersionId": "01a002e9-5a23-7e50-b0d3-9194cdcbd40e",
-      "baseHash": "e0572c16-299f-c75b-1788-37214f340ad0",
-      "source": "project"
+      "baseVersionId": "01a04513-2a3b-776c-a655-227ba75f60de",
+      "baseHash": "6b5aef64-debc-57c0-6dde-3594c63f42d5",
+      "source": "project",
+      "metadataHash": "d0c71289-2fc5-21e8-d503-58cb3c0c64a6"
     },
     {
       "path": "/Locations/Sector Albion-N1 — Scottish Highlands.location.json",
       "fileId": "01a0029a-d976-7d24-865b-a1f79412234d",
       "referenceId": "01a0029a-d976-7d84-872c-f9e75b385bcb",
       "fileType": "location",
-      "baseVersionId": "01a002e9-7ce2-7014-9f55-f9aefaaab767",
-      "baseHash": "8d899a95-c34d-ba58-a01f-926b7f439ddb",
-      "source": "project"
+      "baseVersionId": "01a04546-5b42-785c-9dc8-2cc93052afd5",
+      "baseHash": "a21e40c0-594e-5ef7-d091-c177a98ab5df",
+      "source": "project",
+      "metadataHash": "77ad5293-35a4-9a42-a40f-dff426914c84"
     },
     {
       "path": "/Locations/Sector Albion-N2 — Scottish Lowlands.location.json",
       "fileId": "01a0029b-1c38-74bc-ad57-11a57683843d",
       "referenceId": "01a0029b-1c38-7538-966d-07ab025e5e9c",
       "fileType": "location",
-      "baseVersionId": "01a002e9-7025-7ab4-b2c5-10111a454102",
-      "baseHash": "0d62705a-c3a8-ca7f-e0a9-cdc321c3f956",
-      "source": "project"
+      "baseVersionId": "01a0450d-9344-7470-9ae6-3c715a80b236",
+      "baseHash": "093156e8-4d41-de53-08f4-297665a04bde",
+      "source": "project",
+      "metadataHash": "96242e43-0d3b-d62b-f4dc-2b09a9a52c0b"
     },
     {
       "path": "/Locations/Sector Albion-C1 — Northern England.location.json",
       "fileId": "01a0029b-5802-7264-845d-bba548465797",
       "referenceId": "01a0029b-5802-72cc-8609-7edd66b21830",
       "fileType": "location",
-      "baseVersionId": "01a002e9-6761-791c-984d-f7f6d1a4736f",
-      "baseHash": "538d485a-1b6d-2e4a-6008-2d0954e7e8fa",
-      "source": "project"
+      "baseVersionId": "01a0450d-de4c-7290-ab91-63efb922bab3",
+      "baseHash": "3bc5d0fa-aae1-2d8d-a269-acfda3e232c7",
+      "source": "project",
+      "metadataHash": "c1f75b6c-2208-df29-b41b-8a2f3387cc17"
     },
     {
       "path": "/Locations/Sector Albion-C2 — Midlands.location.json",
       "fileId": "01a0029b-ad76-7460-839e-98bb5bdd90d2",
       "referenceId": "01a0029b-ad76-74d4-a5b7-c1263de07755",
       "fileType": "location",
-      "baseVersionId": "01a002e9-8d1f-7f6c-b9a8-32a2ed022bde",
-      "baseHash": "ad55e304-d1bb-af68-426b-b606e63cc1a2",
-      "source": "project"
+      "baseVersionId": "01a0450d-cdf4-7740-a1a1-de0217ded7d7",
+      "baseHash": "50e49ba3-cbe9-e46b-09ad-2f500eddb2a3",
+      "source": "project",
+      "metadataHash": "7fe33031-89b2-107c-dd78-540fb87ccca5"
     },
     {
       "path": "/Locations/Sector Albion-E1 — East Anglia.location.json",
       "fileId": "01a0029b-ed6c-7e30-88f8-a8f0f9c6641e",
       "referenceId": "01a0029b-ed6c-7ea0-b35a-f15401d6ecf6",
       "fileType": "location",
-      "baseVersionId": "01a002e9-93e1-7f50-857c-3e1ba7016362",
-      "baseHash": "c508ff72-8236-0352-a0b9-2c8d37005934",
-      "source": "project"
+      "baseVersionId": "01a0450d-bed8-7534-a80d-a6f1ff9042a5",
+      "baseHash": "9ed56c49-d915-7aba-3b29-c24e49539f5e",
+      "source": "project",
+      "metadataHash": "ab484937-c9ab-f7f8-f5c3-c36a5ab9d381"
     },
     {
       "path": "/Locations/Sector Albion-E2 — South-East England.location.json",
       "fileId": "01a0029c-3ed6-7a20-9817-19debadfe6e7",
       "referenceId": "01a0029c-3ed6-7a7c-8aca-ca66781ea3c5",
       "fileType": "location",
-      "baseVersionId": "01a002e9-a23d-739c-a5d9-8e662139bfd1",
-      "baseHash": "430bbb18-07e6-f252-b46d-4136a1a9c9c6",
-      "source": "project"
+      "baseVersionId": "01a0450d-acd0-7c54-a09b-a9bfd74aeadd",
+      "baseHash": "d1b81adb-f45a-fa90-c9cc-87d9c00bd206",
+      "source": "project",
+      "metadataHash": "ce00218e-8ec3-d60c-5f8e-541c7689cdd5"
     },
     {
       "path": "/Locations/Military Sector Man — Isle of Man.location.json",
       "fileId": "01a0029e-f1dd-7f54-9711-3c9c1ed95cb6",
       "referenceId": "01a0029e-f1dd-7014-89b0-838e715e5435",
       "fileType": "location",
-      "baseVersionId": "01a002eb-5238-73b0-94fd-45d07c1cffbc",
-      "baseHash": "b3298c8d-04bc-ef58-4014-8e6c0ae755f3",
-      "source": "project"
+      "baseVersionId": "01a04087-942b-76f4-bdaa-7fdccb291833",
+      "baseHash": "e4783bed-8544-f061-cdba-595923e3056f",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
     {
       "path": "/Change Requests/Mission Trackers.change-request.md",
@@ -966,6 +977,106 @@
       "baseVersionId": "01a03924-4433-7370-859f-b266383a4048",
       "baseHash": "b90282b9-6ff2-ea1e-142c-d93fb9f92ae7",
       "source": "project"
+    },
+    {
+      "path": "/Locations/Rathwood Region.location.json",
+      "fileId": "01a03e6e-1dea-7348-9eea-3d4229cd3f7a",
+      "referenceId": "01a03e6e-1dea-73bc-b1fb-e1ad30b3fc75",
+      "fileType": "location",
+      "baseVersionId": "01a03e79-3e81-7ef0-9f9c-3a5ee314e497",
+      "baseHash": "3be07430-8153-0a79-11f0-349b5c7f3b46",
+      "source": "project",
+      "metadataHash": "ce5f2145-eaf5-914d-48b0-1386a8561485"
+    },
+    {
+      "path": "/Locations/Tri Mhuilinn.location.json",
+      "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
+      "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
+      "fileType": "location",
+      "baseVersionId": "01a04513-dab7-7dcc-91c2-f7bc163f013d",
+      "baseHash": "35f864a5-ef97-6f47-3883-ae664e28744f",
+      "source": "project",
+      "metadataHash": "00b6d5e5-5f64-c2a7-7060-4834bf505457"
+    },
+    {
+      "path": "/Locations/Áth na hAbhann.location.json",
+      "fileId": "01a03e78-307a-73ac-925f-b9ce92ad1a3d",
+      "referenceId": "01a03e78-307a-7434-a8c3-623f3dc81170",
+      "fileType": "location",
+      "baseVersionId": "01a03e92-01e3-7314-8db3-85bd1054bd76",
+      "baseHash": "8b7838d4-cf2d-3cfe-9ac5-5fb7b32bac65",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Baile Nua.location.json",
+      "fileId": "01a03e78-ed1e-75a8-8e24-259ae65b3def",
+      "referenceId": "01a03e78-ed1e-761c-a06b-f7f41ae168c8",
+      "fileType": "location",
+      "baseVersionId": "01a03e92-54de-72c4-bb4a-2f05f70575b4",
+      "baseHash": "fb4b9c7c-6d35-f447-ace1-6d8cb19f5e36",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Granny's House.location.json",
+      "fileId": "01a03e8c-c67a-7e24-ba7f-1f488d8c8f2d",
+      "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
+      "fileType": "location",
+      "baseVersionId": "01a04087-2b1b-74fc-a5ea-959035e0d86e",
+      "baseHash": "1b5d036e-7dc4-767a-cc65-3a0609680864",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Fairy Ring.location.json",
+      "fileId": "01a03e8d-3e31-7208-b6e5-7804355067ec",
+      "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+      "fileType": "location",
+      "baseVersionId": "01a04086-29a1-782c-927f-471b88c68571",
+      "baseHash": "efa6db7d-fbb4-83f0-8739-e8250261600d",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Finn & Niamh's Tavern.location.json",
+      "fileId": "01a03e90-5d29-7e54-9594-29414db54736",
+      "referenceId": "01a03e90-5d29-7ec8-8e84-0ddf56df9649",
+      "fileType": "location",
+      "baseVersionId": "01a04083-dcbd-7710-ba20-bebc4965d6d8",
+      "baseHash": "77e85102-bacf-3670-db87-85dca6b87c4e",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Conor's Hut.location.json",
+      "fileId": "01a03e90-d005-775c-8285-6c7e96545bd1",
+      "referenceId": "01a03e90-d005-77c8-bb8d-49807e030150",
+      "fileType": "location",
+      "baseVersionId": "01a03e93-54e0-7804-a4f7-15279f455f14",
+      "baseHash": "608ae094-6088-3885-fcf4-2821045cf964",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Beekeper's Workshop.location.json",
+      "fileId": "01a0400e-cf1e-7a4c-a490-3fcf119540d6",
+      "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
+      "fileType": "location",
+      "baseVersionId": "01a04010-22f8-7f64-ab2d-959234fa729a",
+      "baseHash": "e0234f78-1dd7-0e63-a177-a9262b2c40c6",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Finn & Niamh's Hut.location.json",
+      "fileId": "01a04083-61ba-7ab4-b259-746b60bad013",
+      "referenceId": "01a04083-61ba-7b28-bc4c-cf65871584d4",
+      "fileType": "location",
+      "baseVersionId": "01a04086-8812-7bc8-80fb-fe74700e6b89",
+      "baseHash": "b83e31de-39e7-f076-cb3f-f8ee521206c7",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     }
   ],
   "fileTypes": [
@@ -974,6 +1085,12 @@
       "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
       "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
       "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
+    },
+    {
+      "slug": "location",
+      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
+      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
+      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
     },
     {
       "slug": "mission",
@@ -986,12 +1103,6 @@
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
       "schemaHash": "ceb123c0-58e8-9a2d-bc81-0aee78770c31",
       "contentHash": "46676507-1172-b244-3f45-54829f272c79"
-    },
-    {
-      "slug": "location",
-      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
-      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
-      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
     },
     {
       "slug": "game-start",

@@ -1,7 +1,35 @@
 {
   "$craft": {
-    "referenceId": "01a0029c-3ed6-7a7c-8aca-ca66781ea3c5"
+    "referenceId": "01a0029c-3ed6-7a7c-8aca-ca66781ea3c5",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/a31fcaaa-0efb-4ec7-a15e-1036813cd038",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 4178,
+          "height": 2475
+        },
+        "useParentMap": false,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
   },
   "name": "Sector Albion-E2 — South-East England",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/43fa9990-2da5-4280-8480-47854e3b6a64"
+  }
 }

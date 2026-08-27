@@ -1,6 +1,6 @@
 {
   "$craft": {
-    "referenceId": "01a0029e-f1dd-7014-89b0-838e715e5435",
+    "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
     "metadata": {
       "map": {
         "grid": null,
@@ -20,9 +20,8 @@
       "schemaVersionId": "file-designation-metadata:v8"
     }
   },
-  "name": "Military Sector Man — Isle of Man",
-  "type": "Sector",
+  "name": "Fairy Ring",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7166b4c4-24de-4ff3-9e68-a0738e11c88f"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/2b54e028-e880-4d3d-80c3-a6acad2ebda5"
   }
 }

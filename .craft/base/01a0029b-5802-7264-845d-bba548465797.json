@@ -1,4 +1,7 @@
 {
   "name": "Sector Albion-C1 — Northern England",
-  "type": "Sector"
+  "type": "Sector",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/23374c97-98d0-4c8e-a6ba-fb9023e269f8"
+  }
 }
