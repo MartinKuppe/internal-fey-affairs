@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-28T02:24:36.880Z",
+  "syncedAt": "2026-08-28T19:44:12.046Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -28,10 +28,6 @@
     {
       "path": "/Characters",
       "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
-    },
-    {
-      "path": "/Equipment",
-      "folderId": "019fde04-4552-7f08-b433-598ccbe74a08"
     },
     {
       "path": "/Game Starts",
@@ -70,12 +66,12 @@
       "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     },
     {
-      "path": "/Locations",
-      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
-    },
-    {
       "path": "/Missions",
       "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
+    },
+    {
+      "path": "/Locations",
+      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
     }
   ],
   "files": [
@@ -123,8 +119,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a03923-7582-7bcc-8a0e-e3160c2056aa",
-      "baseHash": "9854df74-f9c2-22e1-8b8c-457088e1d68b",
+      "baseVersionId": "01a04635-9d67-752c-982c-e6c3ac97f155",
+      "baseHash": "1501c9d8-682d-9e0f-f13f-57c6175e7a71",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -774,8 +770,8 @@
       "fileId": "019ff221-cd2f-7cb0-b63e-e7a588a033c1",
       "referenceId": "019ff221-cd2f-7d60-a24e-de91e5267da5",
       "fileType": "change-request",
-      "baseVersionId": "019ff229-98e3-7c78-95d0-c8ed2ea5f692",
-      "baseHash": "cf1f1cb6-ec54-0cc2-746e-237f243d50f1",
+      "baseVersionId": "01a04635-9d59-7464-91f2-55e67c3b9732",
+      "baseHash": "ffc78b6f-761f-594d-5ed1-76f82ff591b4",
       "source": "project"
     },
     {
@@ -783,8 +779,8 @@
       "fileId": "019ff249-5642-7614-bb82-23553fe51dc4",
       "referenceId": "019ff249-5642-76c4-824e-93e745a043bb",
       "fileType": "change-request",
-      "baseVersionId": "019ff254-d753-73e4-b2c0-ed77dfd4be82",
-      "baseHash": "993a8dee-0399-6f60-7328-5ea330ba6c8f",
+      "baseVersionId": "01a04635-9ce6-72e8-a571-dec06e95fcf0",
+      "baseHash": "7a804bcc-128d-e3b4-410e-033d27d18e2a",
       "source": "project"
     },
     {
@@ -810,8 +806,8 @@
       "fileId": "019ff7eb-b27e-77ec-8cc5-2ec8ecae7905",
       "referenceId": "019ff7eb-af42-757d-af35-39226a7b1010",
       "fileType": "change-request",
-      "baseVersionId": "019ff7eb-b275-7e54-ae8a-8067717a98db",
-      "baseHash": "c21880f5-04b2-6bd5-4700-03f2f7884492",
+      "baseVersionId": "01a04635-9d13-7438-9c0a-31b0ef7b2469",
+      "baseHash": "139acd52-5c27-39c5-3c08-ddcf59f76046",
       "source": "project"
     },
     {
@@ -846,8 +842,8 @@
       "fileId": "01a001e7-37f1-7b3c-bc42-c040a4b5ead4",
       "referenceId": "01a001e7-37f1-7bb4-a69c-26831e0f8435",
       "fileType": "change-request",
-      "baseVersionId": "01a00206-c1ba-7408-b97d-6264fbfe0643",
-      "baseHash": "0e649faf-ed83-8f24-f9ca-fb8f26f89052",
+      "baseVersionId": "01a04635-9d2a-74ec-aa0d-144baaf25023",
+      "baseHash": "a957a016-8014-c75a-8d8d-532a51877a26",
       "source": "project"
     },
     {
@@ -974,8 +970,8 @@
       "fileId": "01a03917-2719-748c-b2d0-53fdc0198ff1",
       "referenceId": "01a03917-2719-751c-bc0d-82a6953368c0",
       "fileType": "change-request",
-      "baseVersionId": "01a03924-4433-7370-859f-b266383a4048",
-      "baseHash": "b90282b9-6ff2-ea1e-142c-d93fb9f92ae7",
+      "baseVersionId": "01a04635-9d46-7e74-8fd3-c11a6e269e1e",
+      "baseHash": "d8de3be8-cbc4-6c7e-c171-3fad471f1b51",
       "source": "project"
     },
     {
@@ -983,7 +979,7 @@
       "fileId": "01a03e6e-1dea-7348-9eea-3d4229cd3f7a",
       "referenceId": "01a03e6e-1dea-73bc-b1fb-e1ad30b3fc75",
       "fileType": "location",
-      "baseVersionId": "01a03e79-3e81-7ef0-9f9c-3a5ee314e497",
+      "baseVersionId": "01a04987-1327-73f8-87c2-dfca3cf3cbcd",
       "baseHash": "3be07430-8153-0a79-11f0-349b5c7f3b46",
       "source": "project",
       "metadataHash": "ce5f2145-eaf5-914d-48b0-1386a8561485"
@@ -1077,6 +1073,88 @@
       "baseHash": "8415dc52-ae46-f054-ca5b-db61f8c181f1",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Rathgall Hill Fort.location.json",
+      "fileId": "01a0497b-7436-79f4-9ddf-165bc53a85b0",
+      "referenceId": "01a0497b-7436-7a98-8746-7dbc17c04d1b",
+      "fileType": "location",
+      "baseVersionId": "01a0497b-7432-7b98-802d-e146a468000a",
+      "baseHash": "96760831-63de-eaa6-59bb-8d74446af3d6",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Rathgall Stone Circle.location.json",
+      "fileId": "01a0497c-ee75-73c8-99d2-eae594d1d30b",
+      "referenceId": "01a0497c-ee75-74c0-b9fb-22793203741d",
+      "fileType": "location",
+      "baseVersionId": "01a0497c-ee6c-76e4-98ac-e46701f2e3ee",
+      "baseHash": "d9744010-995b-294e-3cd4-c75d3437f7f9",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Haroldstown Portal Tomb.location.json",
+      "fileId": "01a0497e-cf29-7c48-b225-288dfe76dfb8",
+      "referenceId": "01a0497e-cf29-7d18-aad1-e29ef0e12242",
+      "fileType": "location",
+      "baseVersionId": "01a0497e-eb66-7650-be3b-b47b39b4ef81",
+      "baseHash": "11707631-7373-5411-4f66-b006fca2119e",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Ardristan Standing Stone.location.json",
+      "fileId": "01a0497f-d61c-76b4-a8df-1ec40e8281f5",
+      "referenceId": "01a0497f-d61c-774c-9dc1-1b098aaa4b0a",
+      "fileType": "location",
+      "baseVersionId": "01a0497f-d613-7894-b30a-4ba665358f6d",
+      "baseHash": "91218b28-3a2a-7bcf-b2e3-caf6e25bfae4",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Portal Hub  H2/45-098.location.json",
+      "fileId": "01a04981-e174-7a68-82a0-cafb5c56d7ac",
+      "referenceId": "01a04981-e174-7afc-86f7-d08c68ab1c67",
+      "fileType": "location",
+      "baseVersionId": "01a04981-e16f-7a40-8238-168128d89bb4",
+      "baseHash": "5af6efee-1c73-0e94-af98-a985ea29eb78",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Portal Hub  H2/45-099.location.json",
+      "fileId": "01a04982-0f0f-7154-b951-76f54233b1fb",
+      "referenceId": "01a04982-0f0f-722c-8624-1ceda4cc58e0",
+      "fileType": "location",
+      "baseVersionId": "01a04982-0f0a-7700-a745-a5c5e939fb85",
+      "baseHash": "73e6620d-648d-432b-ab0d-6853166a0ac5",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Portal Hub  H2/45-100.location.json",
+      "fileId": "01a04982-8891-7b38-91b3-cd658965d3ae",
+      "referenceId": "01a04982-8891-7bc8-b43b-1240e5dde3e5",
+      "fileType": "location",
+      "baseVersionId": "01a04982-888c-70f8-a8db-3dadd551f929",
+      "baseHash": "81660594-a4c3-a986-c47e-59957fe8749a",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Portal Hub  H2/45-101.location.json",
+      "fileId": "01a04983-00f1-7580-923e-9f17de0dd0f4",
+      "referenceId": "01a04983-00f1-75f8-b905-121243f5e2ca",
+      "fileType": "location",
+      "baseVersionId": "01a04983-00ed-78c8-ae79-ffd9c286caf7",
+      "baseHash": "ba108cb4-9a13-619b-b118-51f98e4b7658",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Méabh.character.json",
+      "fileId": "01a049d6-1b23-77d0-8064-6ec262e237f6",
+      "referenceId": "01a049d6-1b23-7858-b9fe-c3530420572f",
+      "fileType": "character",
+      "baseVersionId": "01a049e2-7437-79d0-9ae5-7e674e751207",
+      "baseHash": "e7eabd3d-37b1-1753-0acd-11117ea63032",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1087,16 +1165,16 @@
       "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
     },
     {
-      "slug": "location",
-      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
-      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
-      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
-    },
-    {
       "slug": "mission",
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
       "schemaHash": "eae72592-8663-314a-45be-2cc410dfc729",
       "contentHash": "ebaf2687-e358-908f-0e2d-93f4355987d4"
+    },
+    {
+      "slug": "character",
+      "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
+      "schemaHash": "4a08e8b7-9292-0ec6-f80f-403d7741d561",
+      "contentHash": "50b79fb9-f77b-4ac3-1695-2f3fdabd82a2"
     },
     {
       "slug": "mission-journal",
@@ -1177,10 +1255,10 @@
       "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
     },
     {
-      "slug": "character",
-      "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-      "schemaHash": "4a08e8b7-9292-0ec6-f80f-403d7741d561",
-      "contentHash": "50b79fb9-f77b-4ac3-1695-2f3fdabd82a2"
+      "slug": "location",
+      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
+      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
+      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
     }
   ],
   "projectSettingsHash": "c6beb0a2-16fc-c0aa-045c-d107f1b6cd6e"

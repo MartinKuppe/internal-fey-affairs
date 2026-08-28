@@ -1,0 +1,24 @@
+{
+  "$craft": {
+    "referenceId": "01a0497e-cf29-7d18-aad1-e29ef0e12242",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [],
+        "background": null,
+        "aspectRatio": {
+          "width": 1,
+          "height": 1
+        },
+        "useParentMap": true,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Haroldstown Portal Tomb"
+}
