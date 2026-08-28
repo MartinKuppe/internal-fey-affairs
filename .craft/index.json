@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-28T19:44:12.046Z",
+  "syncedAt": "2026-08-28T21:22:45.749Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -62,12 +62,20 @@
       "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
     },
     {
-      "path": "/Change Requests",
-      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
-    },
-    {
       "path": "/Missions",
       "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
+    },
+    {
+      "path": "/Player Characters",
+      "folderId": "01a04a10-df36-73ac-946f-95f5bd2cd4d4"
+    },
+    {
+      "path": "/Non-Player Characters",
+      "folderId": "01a04a10-df3e-77f8-bfa2-d6b6526fc67e"
+    },
+    {
+      "path": "/Change Requests",
+      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     },
     {
       "path": "/Locations",
@@ -75,19 +83,6 @@
     }
   ],
   "files": [
-    {
-      "path": "/Characters/Example Character.character.json",
-      "fileId": "019fde04-455f-7424-bd65-1fa02461dc31",
-      "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
-      "fileType": "character",
-      "baseVersionId": "019ff7eb-b246-7908-927d-5b488690d5b1",
-      "baseHash": "aa754e10-91fb-ce0b-2752-02e43a0cf421",
-      "source": "project",
-      "settings": {
-        "agentEditable": true
-      },
-      "metadataHash": "f0d6f306-a9da-7bf1-a3f8-981373980223"
-    },
     {
       "path": "/Locations/Hibernia & Albion.location.json",
       "fileId": "019fde04-456b-7004-a752-f198d5ce70c5",
@@ -106,7 +101,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "019fde04-4597-75b8-add3-04baea5e7b79",
+      "baseVersionId": "01a04a3e-3257-7528-900e-0a56d4cc48e3",
       "baseHash": "123b2d00-ad31-c677-67a7-412ac43a8e7a",
       "source": "project",
       "settings": {
@@ -119,8 +114,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a04635-9d67-752c-982c-e6c3ac97f155",
-      "baseHash": "1501c9d8-682d-9e0f-f13f-57c6175e7a71",
+      "baseVersionId": "01a04a29-dd9b-7be8-bbd2-ed38e87ae92c",
+      "baseHash": "fcf670b0-02fb-c3a7-75ab-bff5546f3c3c",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -518,8 +513,8 @@
       "fileId": "019fed62-6c7a-7c44-82d4-57d2e33ed35b",
       "referenceId": "019fed62-6c7a-7ce4-891a-c2813e204357",
       "fileType": "bargain",
-      "baseVersionId": "019fed6d-de77-74b4-acc9-af57c3ddf809",
-      "baseHash": "ccf21dab-7880-4d31-8562-3c106994983b",
+      "baseVersionId": "01a04a29-de1f-74cc-9d9d-5add38298582",
+      "baseHash": "56a942a7-34f1-4d79-7a81-5695c6f984c6",
       "source": "project"
     },
     {
@@ -1148,33 +1143,39 @@
       "source": "project"
     },
     {
-      "path": "/Characters/Méabh.character.json",
-      "fileId": "01a049d6-1b23-77d0-8064-6ec262e237f6",
-      "referenceId": "01a049d6-1b23-7858-b9fe-c3530420572f",
-      "fileType": "character",
-      "baseVersionId": "01a049e2-7437-79d0-9ae5-7e674e751207",
-      "baseHash": "e7eabd3d-37b1-1753-0acd-11117ea63032",
+      "path": "/Player Characters/Example Character.player-character.json",
+      "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
+      "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
+      "fileType": "player-character",
+      "baseVersionId": "01a04a29-da60-7364-b29f-3869a500ceb6",
+      "baseHash": "352e7e00-b7d1-fb70-d244-bc67e9a5550b",
+      "source": "project"
+    },
+    {
+      "path": "/Non-Player Characters/Méabh.non-player-character.json",
+      "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
+      "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
+      "fileType": "non-player-character",
+      "baseVersionId": "01a04a29-de25-7364-8d0f-a1dc8b8fa29c",
+      "baseHash": "8adecdd0-94c7-b32b-1f45-f3e7e9baa89d",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/Player and Non-Player Character Split.change-request.md",
+      "fileId": "01a04a1b-11a0-74b4-80c6-54e7f59d7cac",
+      "referenceId": "01a04a1b-11a0-7528-9daa-44879e8ccc74",
+      "fileType": "change-request",
+      "baseVersionId": "01a04a3f-799d-75e8-8ea0-a273bac83a50",
+      "baseHash": "654af17c-c215-0e0a-5b3e-78e8ea18d861",
       "source": "project"
     }
   ],
   "fileTypes": [
     {
-      "slug": "change-request",
-      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
-      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
-      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
-    },
-    {
       "slug": "mission",
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "eae72592-8663-314a-45be-2cc410dfc729",
-      "contentHash": "ebaf2687-e358-908f-0e2d-93f4355987d4"
-    },
-    {
-      "slug": "character",
-      "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-      "schemaHash": "4a08e8b7-9292-0ec6-f80f-403d7741d561",
-      "contentHash": "50b79fb9-f77b-4ac3-1695-2f3fdabd82a2"
+      "schemaHash": "8f8e1680-f931-2ad4-1de3-70fa9f560f41",
+      "contentHash": "8caed3fe-69f7-3525-9dd4-49a36b99a868"
     },
     {
       "slug": "mission-journal",
@@ -1207,12 +1208,6 @@
       "contentHash": "10e2c00c-1b77-45ec-97d3-2bafac63b8ad"
     },
     {
-      "slug": "bargain",
-      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
-      "schemaHash": "4c33229e-aa90-cd18-b277-c61ae95a1bae",
-      "contentHash": "18159f11-361d-2a16-fd50-7afbb03090b6"
-    },
-    {
       "slug": "species",
       "fileTypeId": "019fedb8-3e72-79c0-93b6-bcddbccbb5e4",
       "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
@@ -1243,16 +1238,40 @@
       "contentHash": "bd90104d-f386-0099-7900-9bb89c3f4797"
     },
     {
-      "slug": "lore-card",
-      "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
-      "schemaHash": "f22479a1-8520-9015-1a12-cfd1d5e6a5cf",
-      "contentHash": "1ee64d96-c85b-3ec1-85cc-7770c133cb1c"
-    },
-    {
       "slug": "lore-journal",
       "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
       "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
       "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
+    },
+    {
+      "slug": "lore-card",
+      "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
+      "schemaHash": "8f2ffdf8-bda6-ec61-0dca-5c69e1665d41",
+      "contentHash": "ab24578d-9a89-4523-56bd-ad4910c537d0"
+    },
+    {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "1a1ebbbf-e0f8-dc18-ea61-0ecab99c97a8",
+      "contentHash": "e305aaad-ab1d-be69-25e0-1412ba7e8a22"
+    },
+    {
+      "slug": "non-player-character",
+      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
+      "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
+      "contentHash": "86149b70-fe21-6533-fd4d-e5eef9c90df1"
+    },
+    {
+      "slug": "change-request",
+      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
+      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
+      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
+    },
+    {
+      "slug": "bargain",
+      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
+      "schemaHash": "d7034a7c-91cb-b3c5-0955-4988f01c7c8b",
+      "contentHash": "e297dd64-02d6-a472-f7ce-4c8ebafb6448"
     },
     {
       "slug": "location",

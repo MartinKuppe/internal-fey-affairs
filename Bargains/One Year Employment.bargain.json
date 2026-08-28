@@ -11,8 +11,8 @@
       "refs": [
         {
           "slug": "example-character",
-          "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
-          "fileTypeSlug": "character"
+          "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
+          "fileTypeSlug": "player-character"
         }
       ],
       "role": "employee",
@@ -22,6 +22,13 @@
       "dueCondition": "Upon execution of this bargain"
     },
     {
+      "refs": [
+        {
+          "slug": "méabh",
+          "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
+          "fileTypeSlug": "non-player-character"
+        }
+      ],
       "role": "employee",
       "label": "Méabh",
       "wording": "Méabh works for one year for Internal Affairs under a standard employment contract.",

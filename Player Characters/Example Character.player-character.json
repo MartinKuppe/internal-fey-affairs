@@ -1,19 +1,8 @@
 {
   "$craft": {
-    "referenceId": "019fde04-455f-74bc-99e2-43a11d3b7b84",
-    "settings": {
-      "agentEditable": true
-    },
-    "metadata": {
-      "playable": true,
-      "schemaVersionId": "file-designation-metadata:v8"
-    }
+    "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f"
   },
   "name": "Example Character",
-  "image": {
-    "url": "https://dev-media.craftrpgs.com/seed/images/starter-project/2026-05-09/gpt-image-1.5/landscape-179ed28a-d411-4532-8584-719fc5872532.png"
-  },
-  "notes": "Apprenticed to the village smith. Granny tells old stories of the Aos Sí — he listens, but does not believe. Keep a cold-iron horseshoe close: iron is said to bite the Fair Folk.",
   "origin": {
     "slug": "blacksmith",
     "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
@@ -43,15 +32,13 @@
   ],
   "attributes": {
     "body": 3,
-    "hands": 2,
+    "eyes": 2,
     "head": 2,
-    "heart": 2,
     "legs": 2,
-    "shadow": 2,
-    "eyes": 2
+    "hands": 2,
+    "heart": 2,
+    "shadow": 2
   },
-  "description": "A blacksmith's apprentice in a small Celtic village. He believes in iron, honest work, and things that can be held in the hand — not in fairy stories. Then the fairy ring glowed blue.",
-  "personality": "Practical, skeptical, stubbornly grounded. Loyal to his granny, quietly in love with Niamh, and too proud to admit when he is afraid.",
   "conditionState": {
     "health": {
       "maximum": 3,

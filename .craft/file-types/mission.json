@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "eae72592-8663-314a-45be-2cc410dfc729",
+  "schemaHash": "8f8e1680-f931-2ad4-1de3-70fa9f560f41",
   "schema": {
     "type": "object",
     "required": [
@@ -384,7 +384,16 @@
         "type": "array",
         "items": {
           "type": "string",
-          "referencedFileTypeSlug": "character"
+          "reference": {
+            "targets": [
+              {
+                "fileTypeSlug": "player-character"
+              },
+              {
+                "fileTypeSlug": "non-player-character"
+              }
+            ]
+          }
         },
         "title": "Assigned Team",
         "description": "Runtime record of the team actually selected when the Mission becomes active."
@@ -483,7 +492,16 @@
         "type": "array",
         "items": {
           "type": "string",
-          "referencedFileTypeSlug": "character"
+          "reference": {
+            "targets": [
+              {
+                "fileTypeSlug": "player-character"
+              },
+              {
+                "fileTypeSlug": "non-player-character"
+              }
+            ]
+          }
         },
         "title": "Mandatory Members"
       },
@@ -529,7 +547,16 @@
         "type": "array",
         "items": {
           "type": "string",
-          "referencedFileTypeSlug": "character"
+          "reference": {
+            "targets": [
+              {
+                "fileTypeSlug": "player-character"
+              },
+              {
+                "fileTypeSlug": "non-player-character"
+              }
+            ]
+          }
         },
         "title": "Selectable Members",
         "description": "Candidates from whom remaining team slots may be filled."
@@ -824,7 +851,10 @@
           "label": "Assigned Team",
           "columns": 4,
           "showAddNew": false,
-          "fileTypeSlug": "character",
+          "fileTypeSlugs": [
+            "player-character",
+            "non-player-character"
+          ],
           "referenceField": null,
           "showAddNewOnHover": false
         },
@@ -1096,7 +1126,10 @@
           "label": "Mandatory Members",
           "columns": 4,
           "showAddNew": false,
-          "fileTypeSlug": "character",
+          "fileTypeSlugs": [
+            "player-character",
+            "non-player-character"
+          ],
           "referenceField": null,
           "showAddNewOnHover": false
         },
@@ -1156,7 +1189,10 @@
           "label": "Selectable Members",
           "columns": 4,
           "showAddNew": false,
-          "fileTypeSlug": "character",
+          "fileTypeSlugs": [
+            "player-character",
+            "non-player-character"
+          ],
           "referenceField": null,
           "showAddNewOnHover": false
         },

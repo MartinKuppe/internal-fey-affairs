@@ -1,0 +1,19 @@
+{
+  "name": "Méabh",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/890eed6e-d7ab-46db-be7b-ce3e97ca68b6",
+    "overlayUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8e1b70c5-d6cb-4b4e-ac75-654578433370"
+  },
+  "species": {
+    "slug": "human",
+    "referenceId": "019fedb8-9e29-74f4-af85-1c488a8a9b1d",
+    "fileTypeSlug": "species"
+  },
+  "archetypes": [
+    {
+      "slug": "takeling",
+      "referenceId": "019fedb8-9e5d-7550-a12f-22d8ebf8923f",
+      "fileTypeSlug": "archetype"
+    }
+  ]
+}

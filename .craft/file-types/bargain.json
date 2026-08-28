@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "4c33229e-aa90-cd18-b277-c61ae95a1bae",
+  "schemaHash": "d7034a7c-91cb-b3c5-0955-4988f01c7c8b",
   "schema": {
     "type": "object",
     "required": [
@@ -115,7 +115,16 @@
               "type": "array",
               "items": {
                 "type": "string",
-                "referencedFileTypeSlug": "character"
+                "reference": {
+                  "targets": [
+                    {
+                      "fileTypeSlug": "player-character"
+                    },
+                    {
+                      "fileTypeSlug": "non-player-character"
+                    }
+                  ]
+                }
               },
               "title": "Linked characters"
             },

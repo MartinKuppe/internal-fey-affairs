@@ -1,9 +1,8 @@
 ---
 name: System Rules
-description: |-
-  The light RPG engine for Internal Fey Affairs — attributes,
-    abilities, origins, species and archetypes, checks, Grace, bargains,
-    reputation markers, condition tracks, lore cards, and the Mission system.
+description: The light RPG engine for Internal Fey Affairs — attributes,
+  abilities, origins, species and archetypes, checks, Grace, bargains,
+  reputation markers, condition tracks, lore cards, and the Mission system.
 $craft:
   referenceId: 019fde04-45a3-7a04-ae62-38704ecce2e1
   settings:
@@ -16,22 +15,34 @@ $craft:
 
 This is an action adventure with a strong story: an almost linear campaign where story missions are played in order, and secondary missions can be played between them in any order. Play leans on investigation, stealth, and conversation. Combat is rare, costly, and usually a failure state — not a sport. Always offer a stealthy, social, or investigative alternative.
 
+## Player Characters & Non-Player Characters
+
+The protagonist — the **Player Character** — is the only record that carries the playable mechanics: Origin, Outfit, the seven Attributes, trained Abilities, the five Condition Tracks, the Grace Ledger, and Reputation Markers.
+
+**NPCs** (Non-Player Characters) do not possess those mechanical fields in v1. They are defined by identity and worldbuilding: name, description, image, voice, personality, background, goals, Species, Archetypes, GM Notes, and Secrets.
+
+- Species and Archetypes remain usable for NPC classification and remain optional classification on the Player Character.
+- Reputation Markers belong to the Player Character and are publicly perceptible to NPCs; they are not NPC stat blocks. NPCs do not carry Reputation Markers of their own.
+- Grace Ledger rules apply to the Player Character. NPC obligations are still tracked through Bargains and fictional accounting where relevant, without giving every NPC a personal Grace Ledger.
+- Mission rewards and mechanical consequences — awarded Abilities, Condition effects, Grace Ledger changes, and Reputation Marker changes — update the Player Character.
+- Use "character" generically only when a rule genuinely applies to both a Player Character and an NPC.
+
 ## Outfits
 
-- A Character wears one current Outfit, stored as the `outfit` reference on their Character file. Changing that reference changes what they are wearing.
-- All five initial Outfits — Common Clothes, Dark Outfit, Formal Court Attire, Fabulous Glamour, Vest Inside-Out — are available to every character in v1. Outfits may carry Condition Modifiers that adjust Condition Track Maximums (see Condition Tracks below); no other outfit bonuses or penalties, no unlock conditions, and no Grace costs exist yet.
+- A Player Character wears one current Outfit, stored as the `outfit` reference on their Player Character file. Changing that reference changes what they are wearing.
+- All five initial Outfits — Common Clothes, Dark Outfit, Formal Court Attire, Fabulous Glamour, Vest Inside-Out — are available to every player character in v1. Outfits may carry Condition Modifiers that adjust Condition Track Maximums (see Condition Tracks below); no other outfit bonuses or penalties, no unlock conditions, and no Grace costs exist yet.
 
 ## Condition Tracks
 
-Five Condition Tracks measure how much a character can take before the fiction turns against them: **Health**, **Wakefulness**, **Composure** (persistent personal conditions) and **Decorum**, **Concealment** (scene-position tracks). Each track runs 0–3: 3 is strong, and reaching 0 triggers a consequence. No track can kill a player character, and no track failure may block campaign progress — it changes the situation instead.
+Five Condition Tracks measure how much the Player Character can take before the fiction turns against them: **Health**, **Wakefulness**, **Composure** (persistent personal conditions) and **Decorum**, **Concealment** (scene-position tracks). Each track runs 0–3: 3 is strong, and reaching 0 triggers a consequence. No track can kill a player character, and no track failure may block campaign progress — it changes the situation instead.
 
-A Character stores `conditionState`: per track, a `maximum` (the currently applicable Effective Maximum after outfit, environmental, and situational modifiers) and `depletion` (accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes). Current is always derived — `current = clamp(maximum − depletion, 0, 3)` — and is never stored. Clamp stored Depletion to 0–3. A character without `conditionState` is treated as Maximum 3, Depletion 0.
+The Player Character stores `conditionState`: per track, a `maximum` (the currently applicable Effective Maximum after outfit, environmental, and situational modifiers) and `depletion` (accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes). Current is always derived — `current = clamp(maximum − depletion, 0, 3)` — and is never stored. Clamp stored Depletion to 0–3. A Player Character without `conditionState` is treated as Maximum 3, Depletion 0.
 
 ### Relevance
 
 - Pressure only tracks that matter to the current situation. Do not call for Depletion merely because a track exists.
 - Decorum is metaphorical social and aesthetic appropriateness, not a cleanliness meter.
-- Concealment represents whether the character remains unnoticed in the current stealth situation.
+- Concealment represents whether the player character remains unnoticed in the current stealth situation.
 
 ### Checks and Depletion
 
@@ -102,13 +113,13 @@ Seven attributes, each rated 1–5 dice:
 - **Shadow** — deception
 - **Eyes** — perception
 
-At character creation, the attribute linked to the character's origin starts at 3 dice; the other six start at 2.
+At character creation, the attribute linked to the Player Character's origin starts at 3 dice; the other six start at 2.
 
 ## Abilities
 
 Twenty abilities, each trained or untrained: Fey Lore, Learnedness, Charisma, Art & Beauty, Music, Milk, Repairs, Iron, Animals, Bargains, Lying, Court life, Stealth, Nature, Wayfinding, Riding, Dancing, Food, Weapons, Healing.
 
-An origin grants exactly three trained abilities. The GM may award additional abilities during play.
+An origin grants the Player Character exactly three trained abilities. The GM may award additional abilities to the Player Character during play.
 
 ## Checks
 
@@ -122,9 +133,8 @@ An origin grants exactly three trained abilities. The GM may award additional ab
 
 When a player picks an origin, it defines who their character was before the story began: their attribute, their three abilities, and their place in the village. See the Origins folder for the twenty-one choices.
 
-- A newly created playable protagonist is expected to have an Origin.
-- NPCs do not require an Origin. An NPC may carry an Origin only when it genuinely represents their mechanical starting background.
-- Minor NPCs do not need full attributes or trained abilities unless play requires them.
+- A newly created playable protagonist (the Player Character) is expected to have an Origin.
+- NPCs do not possess Origin, Outfit, Attributes, trained Abilities, Condition state, a Grace Ledger, or Reputation Markers in v1. They are defined by identity and worldbuilding fields (Species, Archetypes, description, personality, background, goals, GM Notes, Secrets).
 
 ## Species & Archetypes
 
@@ -134,6 +144,7 @@ When a player picks an origin, it defines who their character was before the sto
 - Fey kinds such as Lepracaun, Banshee, Pooka, Brownie, and Leannán Sidhe are roles, functions, training, patterns, or social identities — Archetypes, not Species.
 - Characters explicitly store every applicable Archetype. Never infer an undisclosed archetype from an indirect reference chain; classification is explicit and flat.
 - Archetypes are descriptive and grant no automatic mechanics until future rules explicitly assign mechanical effects.
+- Species and Archetypes remain usable for NPC classification and remain optional Player Character classification.
 - Player-facing narration must respect spoiler boundaries: never expose a character's Secrets or the GM/canon notes on Species or Archetype definitions.
 
 ## Grace
@@ -141,7 +152,7 @@ When a player picks an origin, it defines who their character was before the sto
 Grace is the currency of favors among the Fey — and the measure of whether one pays what courtesy demands.
 
 - Grace is issued as separate currencies, one per queen or court. Currency definitions live in the Grace folder — one file per queen-issued currency.
-- A character's Grace is a ledger, not a single number. Every entry records the currency, a signed amount (positive credits the character, negative debits the character), the day, and the exact reason. Balances are always derived from the ledger — never maintain a separate running total that could contradict it.
+- The Player Character's Grace is a ledger, not a single number. Every entry records the currency, a signed amount (positive credits the character, negative debits the character), the day, and the exact reason. Balances are always derived from the ledger — never maintain a separate running total that could contradict it.
 - A plea ("please…") proposes an implied bargain. It transfers no Grace until it is accepted and performed.
 - A rejected plea creates no cost.
 - Once a plea is accepted and performed, thanks are expected.
@@ -153,11 +164,12 @@ Grace is the currency of favors among the Fey — and the measure of whether one
 - Grace debt is a negative amount in the ledger.
 - Lepracaun exchanges move value between two currencies: record two ledger entries — a negative amount in the currency given, a positive amount in the currency received, on the same day, with the same reason naming the rate.
 - Record every Grace gain or loss in the ledger with its exact reason. Make significant changes immediately clear in narration.
+- NPC obligations are tracked through Bargains and fictional accounting rather than a personal Grace Ledger.
 
 ## Bargains & Contracts
 
 - One Bargain file per contract. Every bargain has at least two parties; each party carries its exact obligation wording, its due condition, and its resolved state.
-- Parties may be characters, informal groups, or legal entities — a party's label names them; link a character file when one exists.
+- Parties may be characters (Player Character or NPC), informal groups, or legal entities — a party's label names them; link a character file when one exists.
 - Create a Bargain file whenever an obligation forms: a grace-trade, a settlement for wrongdoing, an employment or mission contract, an indenture, or any contract the player asks to see.
 - A party's obligation may link to the specific contract it falls under via its Reference contract field (a Bargain reference, when that contract is a different document). Related contracts are also linked on the bargain file itself.
 - A bargain is player-visible when it is the player's own or was witnessed, overheard, read, disclosed, or discovered during investigation. Set "Known to the player" and narrate it.
@@ -165,7 +177,8 @@ Grace is the currency of favors among the Fey — and the measure of whether one
 
 ## Reputation Markers
 
-- Markers are universal and visible to everyone. They are simply present or absent — no scores, no scopes, no severity.
+- Markers belong to the Player Character and are publicly perceptible to NPCs; they are universal markers, not NPC stat blocks. NPCs do not carry their own Reputation Markers.
+- Markers are simply present or absent — no scores, no scopes, no severity.
 - Initial markers: Ungrateful, Disrespectful, Unsightly, Violent, Cruel, Untrustworthy, Oath-Breaker, Generous, Respectful, Handsome, Elegant, Merciful, Trustworthy, Oath-Keeper.
 - Each active marker carries a short reason explaining how it was acquired.
 - Markers influence NPC reactions and fictional position. Never add automatic hidden numerical modifiers.
@@ -217,7 +230,7 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
 - Only `available` Mission pins are presented for selection.
 - Opening a Mission pin displays its brief but does not itself start the Mission. The player explicitly chooses to begin it.
 - On selection:
-  1. Validate and record `assignedTeam`: every `mandatoryMembers` member is included, the count matches `teamSize` when defined, remaining members come from `selectableMembers`, and no Character reference is duplicated.
+  1. Validate and record `assignedTeam`: every `mandatoryMembers` member is included, the count matches `teamSize` when defined, remaining members come from `selectableMembers`, and no character reference is duplicated.
   2. Set `status` to `active`.
   3. Set `startedDate` to the current campaign date.
   4. Set `currentBeatKey` to the first beat's key.
@@ -241,7 +254,7 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
   1. Set `completed` or `failed` as permitted, or `expired` when the window closed unundertaken.
   2. Record `endedDate` and `actualOutcome`.
   3. Apply the appropriate Lore unlocks (`completionLoreUnlocks`, or `failureLoreUnlocks` on failure).
-  4. Append every `awardedAbilities` reference to the relevant Character's `abilities` without duplicates (on completion).
+  4. Append every `awardedAbilities` reference to the relevant Player Character's `abilities` without duplicates (on completion).
   5. Apply or narrate `completionEffects` / `failureEffects`.
   6. Remove the Mission's selectable scene-map pin.
   7. Advance the Mission Journal calendar by `durationSteps`, then evaluate fixed-date Missions, completed-prerequisite unlocks, and Opportunity expirations, and synchronize available pins.

@@ -1,0 +1,231 @@
+{
+  "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
+  "slug": "non-player-character",
+  "name": "Non-Player Character",
+  "contentType": "json",
+  "designation": "character",
+  "category": null,
+  "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "goals": {
+        "type": "string",
+        "title": "Goals & Motivations",
+        "format": "textarea",
+        "description": "Current motivations and priorities."
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "voice": {
+        "type": "string",
+        "title": "Voice",
+        "format": "voice",
+        "description": "Delivery cue for this character's dialogue."
+      },
+      "gmNotes": {
+        "type": "string",
+        "title": "GM Notes",
+        "format": "textarea",
+        "description": "GM-facing landmarks, relationships, hooks, hidden context, or table guidance. Never shown to players as-is."
+      },
+      "secrets": {
+        "type": "string",
+        "title": "Secrets",
+        "format": "textarea",
+        "description": "GM/AI-only hidden truth. Never reveal in player-facing narration."
+      },
+      "species": {
+        "type": "string",
+        "title": "Species",
+        "description": "The character's species — Human or Fey in ordinary project metadata.",
+        "referencedFileTypeSlug": "species"
+      },
+      "archetypes": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "archetype"
+        },
+        "title": "Archetypes",
+        "description": "Every applicable archetype — provenance, pattern, fey-role, profession, title, or social identity. Stored explicitly and flat; never inferred from indirect chains."
+      },
+      "background": {
+        "type": "string",
+        "title": "Background",
+        "format": "textarea",
+        "description": "Relevant history."
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      },
+      "personality": {
+        "type": "string",
+        "title": "Personality",
+        "format": "textarea"
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "name": {
+        "type": "Heading",
+        "props": {
+          "text": {
+            "$state": "/name"
+          },
+          "level": "h2"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "portrait",
+          "name",
+          "description-card",
+          "identity-section"
+        ]
+      },
+      "portrait": {
+        "type": "Image",
+        "props": {
+          "alt": {
+            "$state": "/name"
+          },
+          "src": {
+            "$state": "/image"
+          }
+        },
+        "children": []
+      },
+      "species-row": {
+        "type": "Select",
+        "props": {
+          "label": "Species",
+          "value": {
+            "$state": "/species"
+          },
+          "fileTypeSlug": "species"
+        },
+        "children": []
+      },
+      "archetypes-refs": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "sm",
+          "items": {
+            "$state": "/archetypes"
+          },
+          "label": "Archetypes",
+          "columns": 4,
+          "fileTypeSlug": "archetype",
+          "referenceField": null
+        },
+        "children": []
+      },
+      "description-card": {
+        "type": "Card",
+        "props": {
+          "title": "Description"
+        },
+        "visible": {
+          "$state": "/description"
+        },
+        "children": [
+          "description-text"
+        ]
+      },
+      "description-text": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/description"
+          }
+        },
+        "children": []
+      },
+      "identity-section": {
+        "type": "Card",
+        "props": {
+          "title": "Identity"
+        },
+        "children": [
+          "species-row",
+          "archetypes-refs"
+        ]
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

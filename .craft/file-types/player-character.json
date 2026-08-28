@@ -1,11 +1,11 @@
 {
-  "fileTypeId": "019fde04-450b-758c-a1f6-56a2945fdd47",
-  "slug": "character",
-  "name": "Character",
+  "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+  "slug": "player-character",
+  "name": "Player Character",
   "contentType": "json",
   "designation": "character",
-  "category": "world",
-  "schemaHash": "4a08e8b7-9292-0ec6-f80f-403d7741d561",
+  "category": null,
+  "schemaHash": "1a1ebbbf-e0f8-dc18-ea61-0ecab99c97a8",
   "schema": {
     "type": "object",
     "required": [
@@ -17,12 +17,6 @@
         "type": "string",
         "title": "Name",
         "minLength": 1
-      },
-      "goals": {
-        "type": "string",
-        "title": "Goals",
-        "format": "textarea",
-        "description": "Current motivations and priorities."
       },
       "image": {
         "type": "object",
@@ -79,21 +73,16 @@
           }
         }
       },
-      "notes": {
-        "type": "string",
-        "title": "Notes",
-        "format": "textarea"
-      },
       "origin": {
         "type": "string",
         "title": "Origin",
-        "description": "This character's origin — their starting attribute and three trained abilities.",
+        "description": "The protagonist's origin — their starting attribute and three trained abilities.",
         "referencedFileTypeSlug": "origin"
       },
       "outfit": {
         "type": "string",
         "title": "Outfit",
-        "description": "The character's current worn outfit.",
+        "description": "The protagonist's current worn outfit.",
         "referencedFileTypeSlug": "outfit"
       },
       "markers": {
@@ -134,16 +123,10 @@
         "title": "Reputation Markers",
         "description": "Markers are visible to everyone — simply present or absent, each with the reason it was acquired."
       },
-      "secrets": {
-        "type": "string",
-        "title": "Secrets",
-        "format": "textarea",
-        "description": "GM-facing hidden truth. Never reveal in player-facing narration."
-      },
       "species": {
         "type": "string",
         "title": "Species",
-        "description": "This character's species — Human or Fey in ordinary project metadata.",
+        "description": "This character's species — Human or Fey in ordinary project metadata. Optional player-character classification.",
         "referencedFileTypeSlug": "species"
       },
       "abilities": {
@@ -153,7 +136,7 @@
           "referencedFileTypeSlug": "ability"
         },
         "title": "Trained Abilities",
-        "description": "Start with your origin's three abilities. The GM may award additional abilities during play."
+        "description": "Start with the origin's three abilities. The GM may award additional abilities during play."
       },
       "archetypes": {
         "type": "array",
@@ -218,13 +201,7 @@
             "minimum": 1
           }
         },
-        "description": "Each attribute is a dice pool of 1-5 d6s; every 4+ is a success. Your origin's attribute starts at 3, the rest at 2."
-      },
-      "background": {
-        "type": "string",
-        "title": "Background",
-        "format": "textarea",
-        "description": "Relevant history."
+        "description": "Each attribute is a dice pool of 1-5 d6s; every 4+ is a success. The protagonist's origin attribute starts at 3, the rest at 2."
       },
       "description": {
         "type": "string",
@@ -266,11 +243,6 @@
         },
         "title": "Grace Ledger",
         "description": "Authoritative record of every Grace gain or loss. Balances are derived from this ledger — never maintain a separate running total. Negative amounts are Grace debt."
-      },
-      "personality": {
-        "type": "string",
-        "title": "Personality",
-        "format": "textarea"
       },
       "conditionState": {
         "type": "object",
@@ -447,7 +419,7 @@
             }
           }
         },
-        "description": "Stored state for the five Condition Tracks. Optional — minor NPCs may omit it; missing values compute as Maximum 3 and Depletion 0.",
+        "description": "Stored state for the five Condition Tracks. Missing values compute as Maximum 3 and Depletion 0.",
         "additionalProperties": false
       },
       "conditionTracks": {
@@ -494,19 +466,13 @@
   "layout": {
     "root": "page",
     "elements": {
-      "hero": {
-        "type": "ImageHeader",
+      "name": {
+        "type": "Heading",
         "props": {
-          "src": {
-            "$state": "/image"
-          },
-          "title": {
+          "text": {
             "$state": "/name"
           },
-          "subtitle": {
-            "$state": "/characterClass"
-          },
-          "aspectRatio": "video"
+          "level": "h2"
         },
         "children": []
       },
@@ -517,530 +483,27 @@
           "direction": "vertical"
         },
         "children": [
-          "hero",
-          "description-card",
-          "overview-grid",
-          "outfit-card",
-          "condition-card",
-          "background-section",
-          "personality-section",
-          "origin-select",
+          "name",
+          "divider",
+          "origin-row",
+          "outfit-row",
           "attributes-section",
-          "abilities-references",
-          "grace-stat",
-          "gracehistory-section",
+          "abilities-section",
+          "conditions-section",
+          "grace-section",
           "markers-section",
-          "graceledger-references",
-          "species-select",
-          "archetypes-references",
-          "goals-section"
+          "species-row",
+          "archetypes-section"
         ]
       },
-      "stats": {
-        "type": "StatGrid",
-        "props": {
-          "cols": 6,
-          "items": [
-            [
-              "STR",
-              {
-                "$state": "/stats/strength"
-              }
-            ],
-            [
-              "DEX",
-              {
-                "$state": "/stats/dexterity"
-              }
-            ],
-            [
-              "CON",
-              {
-                "$state": "/stats/constitution"
-              }
-            ],
-            [
-              "INT",
-              {
-                "$state": "/stats/intelligence"
-              }
-            ],
-            [
-              "WIS",
-              {
-                "$state": "/stats/wisdom"
-              }
-            ],
-            [
-              "CHA",
-              {
-                "$state": "/stats/charisma"
-              }
-            ]
-          ]
-        },
+      "divider": {
+        "type": "Separator",
+        "props": {},
         "children": []
       },
-      "goals-text": {
-        "type": "Markdown",
-        "props": {
-          "color": null,
-          "content": {
-            "$state": "/goals"
-          }
-        },
-        "children": []
-      },
-      "grace-stat": {
-        "type": "StatGrid",
-        "props": {
-          "cols": 1,
-          "color": null,
-          "items": [
-            [
-              "Grace",
-              {
-                "$state": "/grace"
-              }
-            ]
-          ],
-          "bgColor": null
-        },
-        "visible": {
-          "$state": "/grace"
-        },
-        "children": []
-      },
-      "stats-card": {
-        "type": "Card",
-        "props": {
-          "title": "Ability Scores"
-        },
-        "children": [
-          "stats"
-        ]
-      },
-      "basics-card": {
-        "type": "Card",
-        "props": {
-          "title": "Basics"
-        },
-        "children": [
-          "basics-list"
-        ]
-      },
-      "basics-list": {
-        "type": "FieldList",
-        "props": {
-          "items": [
-            [
-              "Class",
-              {
-                "$state": "/characterClass"
-              }
-            ],
-            [
-              "Level",
-              {
-                "$state": "/level"
-              }
-            ],
-            [
-              "Ancestry",
-              {
-                "$state": "/ancestry"
-              }
-            ]
-          ]
-        },
-        "children": []
-      },
-      "outfit-card": {
-        "type": "Card",
-        "props": {
-          "title": "Outfit"
-        },
-        "children": [
-          "outfit-select"
-        ]
-      },
-      "condition-row": {
-        "type": "Stack",
-        "props": {
-          "gap": "md",
-          "align": "center",
-          "direction": "horizontal"
-        },
-        "children": [
-          "condition-row-name",
-          "condition-row-values"
-        ]
-      },
-      "goals-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Goals",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "goals-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/goals"
-        },
-        "children": [
-          "goals-heading",
-          "goals-text"
-        ]
-      },
-      "origin-select": {
-        "type": "Select",
-        "props": {
-          "label": "Origin",
-          "value": {
-            "$state": "/origin"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "origin"
-        },
-        "visible": {
-          "$state": "/origin"
-        },
-        "children": []
-      },
-      "outfit-select": {
-        "type": "Select",
-        "props": {
-          "label": "Outfit",
-          "value": {
-            "$state": "/outfit"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "outfit"
-        },
-        "visible": {
-          "$state": "/outfit"
-        },
-        "children": []
-      },
-      "overview-grid": {
-        "type": "Grid",
-        "props": {
-          "gap": "md",
-          "columns": 2
-        },
-        "children": [
-          "basics-card",
-          "stats-card"
-        ]
-      },
-      "condition-card": {
-        "type": "Card",
-        "props": {
-          "title": "Condition Tracks"
-        },
-        "children": [
-          "condition-list",
-          "condition-caption"
-        ]
-      },
-      "condition-list": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "repeat": {
-          "key": "key",
-          "statePath": "/conditionTracks"
-        },
-        "children": [
-          "condition-row"
-        ]
-      },
-      "markers-badges": {
-        "type": "BadgeList",
-        "props": {
-          "color": null,
-          "items": {
-            "$state": "/markers"
-          },
-          "variant": "secondary"
-        },
-        "children": []
-      },
-      "species-select": {
-        "type": "Select",
-        "props": {
-          "label": "Species",
-          "value": {
-            "$state": "/species"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "species"
-        },
-        "visible": {
-          "$state": "/species"
-        },
-        "children": []
-      },
-      "background-body": {
-        "type": "Markdown",
-        "props": {
-          "content": {
-            "$state": "/background"
-          }
-        },
-        "children": []
-      },
-      "markers-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Reputation Markers",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "markers-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/markers"
-        },
-        "children": [
-          "markers-heading",
-          "markers-badges"
-        ]
-      },
-      "attributes-stats": {
-        "type": "StatGrid",
-        "props": {
-          "cols": 2,
-          "color": null,
-          "items": {
-            "$state": "/_attributesEntries"
-          },
-          "bgColor": null
-        },
-        "children": []
-      },
-      "description-body": {
-        "type": "Markdown",
-        "props": {
-          "content": {
-            "$state": "/description"
-          }
-        },
-        "children": []
-      },
-      "description-card": {
-        "type": "Card",
-        "props": {
-          "title": "Description"
-        },
-        "visible": {
-          "$state": "/description"
-        },
-        "children": [
-          "description-body"
-        ]
-      },
-      "personality-body": {
-        "type": "Markdown",
-        "props": {
-          "content": {
-            "$state": "/personality"
-          }
-        },
-        "children": []
-      },
-      "condition-caption": {
-        "type": "Text",
-        "props": {
-          "text": "3 is strong. Reaching 0 triggers a consequence.",
-          "variant": "caption"
-        },
-        "children": []
-      },
-      "attributes-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Attribute Dice",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "attributes-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/attributes"
-        },
-        "children": [
-          "attributes-heading",
-          "attributes-stats"
-        ]
-      },
-      "background-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Background",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "background-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/background"
-        },
-        "children": [
-          "background-heading",
-          "background-body"
-        ]
-      },
-      "condition-row-name": {
-        "type": "Text",
-        "props": {
-          "text": {
-            "$item": "name"
-          },
-          "variant": "body"
-        },
-        "children": []
-      },
-      "gracehistory-badges": {
-        "type": "BadgeList",
-        "props": {
-          "color": null,
-          "items": {
-            "$state": "/graceHistory"
-          },
-          "variant": "secondary"
-        },
-        "children": []
-      },
-      "personality-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Personality",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "personality-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/personality"
-        },
-        "children": [
-          "personality-heading",
-          "personality-body"
-        ]
-      },
-      "abilities-references": {
+      "grace-refs": {
         "type": "FileReferenceGrid",
         "props": {
-          "size": "md",
-          "items": {
-            "$state": "/abilities"
-          },
-          "label": "Trained Abilities",
-          "columns": 4,
-          "fileTypeSlug": "ability",
-          "referenceField": null
-        },
-        "visible": {
-          "$state": "/abilities"
-        },
-        "children": []
-      },
-      "condition-row-values": {
-        "type": "StatGrid",
-        "props": {
-          "cols": 2,
-          "items": [
-            [
-              "Current",
-              {
-                "$item": "current"
-              }
-            ],
-            [
-              "Effective Maximum",
-              {
-                "$item": "maximum"
-              }
-            ]
-          ]
-        },
-        "children": []
-      },
-      "gracehistory-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Grace History",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "gracehistory-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/graceHistory"
-        },
-        "children": [
-          "gracehistory-heading",
-          "gracehistory-badges"
-        ]
-      },
-      "archetypes-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/archetypes"
-          },
-          "label": "Archetypes",
-          "columns": 4,
-          "fileTypeSlug": "archetype",
-          "referenceField": null
-        },
-        "visible": {
-          "$state": "/archetypes"
-        },
-        "children": []
-      },
-      "graceledger-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
           "items": {
             "$state": "/graceLedger"
           },
@@ -1063,10 +526,221 @@
           ],
           "referenceField": "currency"
         },
-        "visible": {
-          "$state": "/graceLedger"
+        "children": []
+      },
+      "origin-row": {
+        "type": "Select",
+        "props": {
+          "label": "Origin",
+          "value": {
+            "$state": "/origin"
+          },
+          "fileTypeSlug": "origin"
         },
         "children": []
+      },
+      "outfit-row": {
+        "type": "Select",
+        "props": {
+          "label": "Outfit",
+          "value": {
+            "$state": "/outfit"
+          },
+          "fileTypeSlug": "outfit"
+        },
+        "children": []
+      },
+      "species-row": {
+        "type": "Select",
+        "props": {
+          "label": "Species",
+          "value": {
+            "$state": "/species"
+          },
+          "fileTypeSlug": "species"
+        },
+        "children": []
+      },
+      "condition-row": {
+        "type": "Dots",
+        "props": {
+          "max": {
+            "$item": "maximum"
+          },
+          "label": {
+            "$item": "name"
+          },
+          "value": {
+            "$item": "current"
+          }
+        },
+        "children": []
+      },
+      "grace-section": {
+        "type": "Card",
+        "props": {
+          "title": "Grace Ledger"
+        },
+        "children": [
+          "grace-refs"
+        ]
+      },
+      "markers-table": {
+        "type": "DataTable",
+        "props": {
+          "items": {
+            "$state": "/markers"
+          },
+          "columns": [
+            {
+              "field": "marker",
+              "label": "Marker"
+            },
+            {
+              "field": "reason",
+              "label": "Reason"
+            }
+          ]
+        },
+        "children": []
+      },
+      "abilities-refs": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/abilities"
+          },
+          "label": "Trained Abilities",
+          "columns": 4,
+          "fileTypeSlug": "ability",
+          "referenceField": null
+        },
+        "children": []
+      },
+      "archetypes-refs": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/archetypes"
+          },
+          "label": "Archetypes",
+          "columns": 4,
+          "fileTypeSlug": "archetype",
+          "referenceField": null
+        },
+        "children": []
+      },
+      "conditions-list": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "repeat": {
+          "key": "key",
+          "statePath": "/conditionTracks"
+        },
+        "children": [
+          "condition-row"
+        ]
+      },
+      "markers-section": {
+        "type": "Card",
+        "props": {
+          "title": "Reputation Markers"
+        },
+        "children": [
+          "markers-table"
+        ]
+      },
+      "attributes-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "items": [
+            [
+              "Body",
+              {
+                "$state": "/attributes/body"
+              }
+            ],
+            [
+              "Eyes",
+              {
+                "$state": "/attributes/eyes"
+              }
+            ],
+            [
+              "Head",
+              {
+                "$state": "/attributes/head"
+              }
+            ],
+            [
+              "Heart",
+              {
+                "$state": "/attributes/heart"
+              }
+            ],
+            [
+              "Legs",
+              {
+                "$state": "/attributes/legs"
+              }
+            ],
+            [
+              "Shadow",
+              {
+                "$state": "/attributes/shadow"
+              }
+            ],
+            [
+              "Hands",
+              {
+                "$state": "/attributes/hands"
+              }
+            ]
+          ]
+        },
+        "children": []
+      },
+      "abilities-section": {
+        "type": "Card",
+        "props": {
+          "title": "Trained Abilities"
+        },
+        "children": [
+          "abilities-refs"
+        ]
+      },
+      "archetypes-section": {
+        "type": "Card",
+        "props": {
+          "title": "Archetypes"
+        },
+        "children": [
+          "archetypes-refs"
+        ]
+      },
+      "attributes-section": {
+        "type": "Card",
+        "props": {
+          "title": "Attribute Dice"
+        },
+        "children": [
+          "attributes-stats"
+        ]
+      },
+      "conditions-section": {
+        "type": "Card",
+        "props": {
+          "title": "Condition Tracks"
+        },
+        "children": [
+          "conditions-list"
+        ]
       }
     }
   },

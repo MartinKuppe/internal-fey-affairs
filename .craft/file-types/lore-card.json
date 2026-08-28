@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "f22479a1-8520-9015-1a12-cfd1d5e6a5cf",
+  "schemaHash": "8f2ffdf8-bda6-ec61-0dca-5c69e1665d41",
   "schema": {
     "type": "object",
     "required": [
@@ -96,9 +96,6 @@
                 "fileTypeSlug": "archetype"
               },
               {
-                "fileTypeSlug": "character"
-              },
-              {
                 "fileTypeSlug": "outfit"
               },
               {
@@ -108,7 +105,7 @@
           }
         },
         "title": "Subjects",
-        "description": "Files this card concerns — species, archetypes, characters, outfits, or locations. Optional; leave empty until world records exist."
+        "description": "Non-character files this card concerns — species, archetypes, outfits, or locations. Optional; leave empty until world records exist."
       },
       "discovered": {
         "type": "boolean",
@@ -160,6 +157,24 @@
         "type": "string",
         "title": "Common Knowledge",
         "format": "textarea"
+      },
+      "characterSubjects": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "reference": {
+            "targets": [
+              {
+                "fileTypeSlug": "player-character"
+              },
+              {
+                "fileTypeSlug": "non-player-character"
+              }
+            ]
+          }
+        },
+        "title": "Character Subjects",
+        "description": "Character files this card concerns — Player Characters and Non-Player Characters. Optional; leave empty until world records exist."
       },
       "expertRegionsText": {
         "type": "string",
