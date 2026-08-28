@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-27T22:50:17.026Z",
+  "syncedAt": "2026-08-28T02:24:36.880Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -97,7 +97,7 @@
       "fileId": "019fde04-456b-7004-a752-f198d5ce70c5",
       "referenceId": "019fde04-456b-7080-8779-cdfa7ef7381d",
       "fileType": "location",
-      "baseVersionId": "01a04515-643a-7314-ba95-90c99b782180",
+      "baseVersionId": "01a045d7-2b3d-7430-bdcc-be3e68fb2a73",
       "baseHash": "72d14afb-09f7-b12a-80b7-d044f7437a07",
       "source": "project",
       "settings": {
@@ -864,7 +864,7 @@
       "fileId": "01a00295-7ab6-7670-b9ee-081fd1bed383",
       "referenceId": "01a00295-7ab6-76e8-baad-2bfe876221d4",
       "fileType": "location",
-      "baseVersionId": "01a0450d-0bbe-7afc-b2ec-9c0b8f3151ae",
+      "baseVersionId": "01a0462d-033e-7b10-968d-cbaa9be578a6",
       "baseHash": "4c8c3201-3662-537a-a2e8-17d5dc3e796e",
       "source": "project",
       "metadataHash": "b12441a0-25b7-9933-4736-7b4425897436"
@@ -874,7 +874,7 @@
       "fileId": "01a00296-98ef-7180-a0bf-3c2e6b52f252",
       "referenceId": "01a00296-98ef-7214-b21b-9fac1a9a37cb",
       "fileType": "location",
-      "baseVersionId": "01a0450d-53a3-765c-8119-33a02e778847",
+      "baseVersionId": "01a045cd-e1f4-7f68-bf2a-32e19ea4bb61",
       "baseHash": "73b8f3f3-cfce-914f-f423-9f1335278ec6",
       "source": "project",
       "metadataHash": "fdd18987-a8a7-b5ca-40bf-12eddabee0bb"
@@ -884,7 +884,7 @@
       "fileId": "01a0029a-1bed-7c54-9b65-01fb5e07db86",
       "referenceId": "01a0029a-1bed-7cc0-9310-c73ba7b9a9a8",
       "fileType": "location",
-      "baseVersionId": "01a0450d-4315-7190-a59f-e809771feeb7",
+      "baseVersionId": "01a045ce-04b0-73c4-9ff9-5791419ae5b2",
       "baseHash": "536eb0c6-4eef-a9b6-ceb0-81deb17981de",
       "source": "project",
       "metadataHash": "e7c5decc-bdab-a953-9e71-f3002687ee9d"
@@ -894,7 +894,7 @@
       "fileId": "01a0029a-7d76-73bc-b429-ef4fba0f0200",
       "referenceId": "01a0029a-7d76-7438-b1ab-f311047c3ee2",
       "fileType": "location",
-      "baseVersionId": "01a04513-2a3b-776c-a655-227ba75f60de",
+      "baseVersionId": "01a045ce-11f9-7210-b731-3175ec0206b9",
       "baseHash": "6b5aef64-debc-57c0-6dde-3594c63f42d5",
       "source": "project",
       "metadataHash": "d0c71289-2fc5-21e8-d503-58cb3c0c64a6"
@@ -904,7 +904,7 @@
       "fileId": "01a0029a-d976-7d24-865b-a1f79412234d",
       "referenceId": "01a0029a-d976-7d84-872c-f9e75b385bcb",
       "fileType": "location",
-      "baseVersionId": "01a04546-5b42-785c-9dc8-2cc93052afd5",
+      "baseVersionId": "01a045cd-b8e9-7ce4-9a9a-dd6521ff7431",
       "baseHash": "a21e40c0-594e-5ef7-d091-c177a98ab5df",
       "source": "project",
       "metadataHash": "77ad5293-35a4-9a42-a40f-dff426914c84"
@@ -914,7 +914,7 @@
       "fileId": "01a0029b-1c38-74bc-ad57-11a57683843d",
       "referenceId": "01a0029b-1c38-7538-966d-07ab025e5e9c",
       "fileType": "location",
-      "baseVersionId": "01a0450d-9344-7470-9ae6-3c715a80b236",
+      "baseVersionId": "01a045cd-c939-7370-96f6-f712f69c2211",
       "baseHash": "093156e8-4d41-de53-08f4-297665a04bde",
       "source": "project",
       "metadataHash": "96242e43-0d3b-d62b-f4dc-2b09a9a52c0b"
@@ -924,7 +924,7 @@
       "fileId": "01a0029b-5802-7264-845d-bba548465797",
       "referenceId": "01a0029b-5802-72cc-8609-7edd66b21830",
       "fileType": "location",
-      "baseVersionId": "01a0450d-de4c-7290-ab91-63efb922bab3",
+      "baseVersionId": "01a045cd-7dde-7174-a490-f8ab347ac4ea",
       "baseHash": "3bc5d0fa-aae1-2d8d-a269-acfda3e232c7",
       "source": "project",
       "metadataHash": "c1f75b6c-2208-df29-b41b-8a2f3387cc17"
@@ -934,7 +934,7 @@
       "fileId": "01a0029b-ad76-7460-839e-98bb5bdd90d2",
       "referenceId": "01a0029b-ad76-74d4-a5b7-c1263de07755",
       "fileType": "location",
-      "baseVersionId": "01a0450d-cdf4-7740-a1a1-de0217ded7d7",
+      "baseVersionId": "01a045cd-8e45-7f4c-bbb1-45ed6b91631e",
       "baseHash": "50e49ba3-cbe9-e46b-09ad-2f500eddb2a3",
       "source": "project",
       "metadataHash": "7fe33031-89b2-107c-dd78-540fb87ccca5"
@@ -944,7 +944,7 @@
       "fileId": "01a0029b-ed6c-7e30-88f8-a8f0f9c6641e",
       "referenceId": "01a0029b-ed6c-7ea0-b35a-f15401d6ecf6",
       "fileType": "location",
-      "baseVersionId": "01a0450d-bed8-7534-a80d-a6f1ff9042a5",
+      "baseVersionId": "01a045cd-9fe1-735c-9094-9843859e764c",
       "baseHash": "9ed56c49-d915-7aba-3b29-c24e49539f5e",
       "source": "project",
       "metadataHash": "ab484937-c9ab-f7f8-f5c3-c36a5ab9d381"
@@ -954,7 +954,7 @@
       "fileId": "01a0029c-3ed6-7a20-9817-19debadfe6e7",
       "referenceId": "01a0029c-3ed6-7a7c-8aca-ca66781ea3c5",
       "fileType": "location",
-      "baseVersionId": "01a0450d-acd0-7c54-a09b-a9bfd74aeadd",
+      "baseVersionId": "01a045cd-af86-79d0-98cc-8d52bb599dc6",
       "baseHash": "d1b81adb-f45a-fa90-c9cc-87d9c00bd206",
       "source": "project",
       "metadataHash": "ce00218e-8ec3-d60c-5f8e-541c7689cdd5"
@@ -993,7 +993,7 @@
       "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
       "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
       "fileType": "location",
-      "baseVersionId": "01a04556-4623-7f28-b16d-032acf104065",
+      "baseVersionId": "01a0462a-3bf2-7670-90bb-10f517e688a4",
       "baseHash": "6ad6d2a3-b794-dd47-1315-b7225243b975",
       "source": "project",
       "metadataHash": "00b6d5e5-5f64-c2a7-7060-4834bf505457"
@@ -1019,12 +1019,12 @@
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
     {
-      "path": "/Locations/Granny's House.location.json",
+      "path": "/Locations/Granny's Hut.location.json",
       "fileId": "01a03e8c-c67a-7e24-ba7f-1f488d8c8f2d",
       "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
       "fileType": "location",
-      "baseVersionId": "01a04556-05fb-7d0c-ac9c-c8b28dbc67a5",
-      "baseHash": "90af3ec4-5349-c97b-9868-86718cb4e4af",
+      "baseVersionId": "01a0456f-257f-7724-a98b-b25f1e1b2901",
+      "baseHash": "a3fc23c6-2669-6909-f723-4b99d950547a",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
