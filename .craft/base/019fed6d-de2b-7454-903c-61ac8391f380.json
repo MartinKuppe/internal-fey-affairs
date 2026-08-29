@@ -1,5 +1,6 @@
 {
-  "name": "Phantom Grace",
+  "name": "Phantom Graces",
   "notes": "Sample/demo currency definition — adjust or remove for the campaign.",
-  "description": "Sample Grace currency for the ledger. Canon details (issuing queen or court) to be confirmed."
+  "symbol": "🍀",
+  "description": "Graces issues by the Morrigan, aka the Phantom Queen"
 }

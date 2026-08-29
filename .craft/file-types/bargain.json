@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "d7034a7c-91cb-b3c5-0955-4988f01c7c8b",
+  "schemaHash": "c5a85a11-c621-30a3-51c0-5db3c6a3aa06",
   "schema": {
     "type": "object",
     "required": [
@@ -167,6 +167,9 @@
         "title": "Parties",
         "minItems": 2
       },
+      "wording": {
+        "type": "string"
+      },
       "signedOn": {
         "type": "number",
         "title": "Signed (day)",
@@ -176,11 +179,6 @@
         "type": "string",
         "title": "Description",
         "format": "textarea"
-      },
-      "knownToPlayer": {
-        "type": "boolean",
-        "title": "Known to the player",
-        "default": false
       },
       "relatedBargains": {
         "type": "array",
@@ -202,21 +200,23 @@
           "body-stack"
         ]
       },
-      "hero": {
-        "type": "ImageHeader",
+      "card": {
+        "type": "Card",
         "props": {
-          "src": {
-            "$state": "/image"
-          },
-          "title": {
-            "$state": "/name"
-          },
-          "subtitle": {
-            "$state": "/kind"
-          },
-          "aspectRatio": "video"
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
         },
-        "children": []
+        "children": [
+          "wording-text-2"
+        ]
       },
       "page": {
         "type": "Stack",
@@ -225,7 +225,7 @@
           "direction": "vertical"
         },
         "children": [
-          "hero",
+          "image-header",
           "body"
         ]
       },
@@ -292,13 +292,15 @@
         },
         "children": [
           "meta-stats",
-          "known-toggle",
           "sep0",
+          "wording-heading",
+          "card",
           "parties-heading",
           "parties-list",
           "sep1",
           "notes-section",
-          "related-section"
+          "related-section",
+          "wording-section"
         ]
       },
       "meta-stats": {
@@ -361,13 +363,18 @@
           "resolved-row"
         ]
       },
-      "known-toggle": {
-        "type": "Toggle",
+      "image-header": {
+        "type": "ImageHeader",
         "props": {
-          "label": "Known to the player",
-          "value": {
-            "$state": "/knownToPlayer"
-          }
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/title"
+          },
+          "subtitle": null,
+          "className": null,
+          "aspectRatio": "video"
         },
         "children": []
       },
@@ -439,6 +446,16 @@
         },
         "children": []
       },
+      "wording-text-2": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/wording"
+          }
+        },
+        "children": []
+      },
       "parties-heading": {
         "type": "Heading",
         "props": {
@@ -487,6 +504,25 @@
           "value": {
             "$item": "resolved"
           }
+        },
+        "children": []
+      },
+      "wording-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Wording",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "wording-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/wording"
         },
         "children": []
       },

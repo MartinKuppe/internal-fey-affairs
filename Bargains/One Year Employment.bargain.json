@@ -4,13 +4,16 @@
   },
   "kind": "contract",
   "name": "One Year Employment",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/32c50f70-083f-4cd5-a75c-1fc4df1d9657"
+  },
   "notes": "Sample bargain demonstrating the structure: two employees, one employer, and Green's conditional obligation to dissolve Méabh's indenture once the employees have fulfilled theirs.",
   "status": "active",
   "parties": [
     {
       "refs": [
         {
-          "slug": "example-character",
+          "slug": "the-blacksmith",
           "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
           "fileTypeSlug": "player-character"
         }
@@ -36,6 +39,7 @@
       "dueCondition": "Upon execution of this bargain"
     },
     {
+      "refs": [],
       "role": "employer",
       "label": "Green",
       "wording": "Once the Player and Méabh have fulfilled their obligations, Green shall dissolve Méabh's indenture contract.",
@@ -43,7 +47,7 @@
       "dueCondition": "When the Player and Méabh have fulfilled their obligations"
     }
   ],
+  "wording": "Meabh and the player both work for one year as Internal Affairs field agents under standard IA contract and payment, then Méabh will be free.",
   "signedOn": 15,
-  "description": "Sample standard employment contract — three parties, one conditional clause. Replace with campaign data.",
-  "knownToPlayer": true
+  "description": "Sample standard employment contract — three parties, one conditional clause. Replace with campaign data."
 }

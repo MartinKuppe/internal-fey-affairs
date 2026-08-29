@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": null,
-  "schemaHash": "1a1ebbbf-e0f8-dc18-ea61-0ecab99c97a8",
+  "schemaHash": "467a815e-2754-a2f0-2d80-bb78254b25e1",
   "schema": {
     "type": "object",
     "required": [
@@ -203,6 +203,30 @@
         },
         "description": "Each attribute is a dice pool of 1-5 d6s; every 4+ is a success. The protagonist's origin attribute starts at 3, the rest at 2."
       },
+      "myBargains": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "status": {
+              "type": "string",
+              "title": "Status"
+            },
+            "bargain": {
+              "type": "string",
+              "title": "Bargain",
+              "referencedFileTypeSlug": "bargain"
+            }
+          }
+        },
+        "title": "My Bargains",
+        "expression": "($self.knownBargains ?? []).filter(b => ($self.signedBargains ?? []).some(s => load(s)?.$name === load(b)?.$name)).filter(b => !($self.bargainFilters?.myOnlyActive == true) || (load(b)?.status ?? '') === 'active').map(b => ({ bargain: b, name: load(b)?.name ?? '', status: load(b)?.status ?? '' }))",
+        "description": "Known bargains the player is a party to, optionally filtered to active only, for display."
+      },
       "description": {
         "type": "string",
         "title": "Description",
@@ -243,6 +267,75 @@
         },
         "title": "Grace Ledger",
         "description": "Authoritative record of every Grace gain or loss. Balances are derived from this ledger — never maintain a separate running total. Negative amounts are Grace debt."
+      },
+      "graceBalances": {
+        "type": "object",
+        "title": "Grace Balances",
+        "expression": "{ \"queens-graces\": sum(($self.graceLedger ?? []).filter(e => load(e.currency)?.$name === \"Queen's Graces\"), e => number(e.amount)), \"phantom-graces\": sum(($self.graceLedger ?? []).filter(e => load(e.currency)?.$name === \"Phantom Graces\"), e => number(e.amount)), \"seelie-graces\": sum(($self.graceLedger ?? []).filter(e => load(e.currency)?.$name === \"Seelie Graces\"), e => number(e.amount)), \"spring-graces\": sum(($self.graceLedger ?? []).filter(e => load(e.currency)?.$name === \"Spring Graces\"), e => number(e.amount)), \"summer-graces\": sum(($self.graceLedger ?? []).filter(e => load(e.currency)?.$name === \"Summer Graces\"), e => number(e.amount)), \"autumn-graces\": sum(($self.graceLedger ?? []).filter(e => load(e.currency)?.$name === \"Autumn Graces\"), e => number(e.amount)), \"winter-graces\": sum(($self.graceLedger ?? []).filter(e => load(e.currency)?.$name === \"Winter Graces\"), e => number(e.amount)) }",
+        "description": "Current balance of each Grace currency, derived by summing the signed amounts in the grace ledger for that currency. Never maintain a separate running total.",
+        "additionalProperties": {
+          "type": "number",
+          "title": "Total"
+        }
+      },
+      "hasMyBargains": {
+        "type": "boolean",
+        "title": "Has My Bargains",
+        "expression": "($self.myBargains ?? []).length > 0",
+        "description": "True when there is at least one bargain to show on the 'My bargains' sub-tab."
+      },
+      "knownBargains": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "bargain"
+        },
+        "title": "Known Bargains",
+        "description": "Bargains the player is currently aware of. The GM adds references here as the player learns about bargains."
+      },
+      "otherBargains": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "status": {
+              "type": "string",
+              "title": "Status"
+            },
+            "bargain": {
+              "type": "string",
+              "title": "Bargain",
+              "referencedFileTypeSlug": "bargain"
+            }
+          }
+        },
+        "title": "Other Bargains",
+        "expression": "($self.knownBargains ?? []).filter(b => !(($self.signedBargains ?? []).some(s => load(s)?.$name === load(b)?.$name))).filter(b => !($self.bargainFilters?.otherOnlyActive == true) || (load(b)?.status ?? '') === 'active').map(b => ({ bargain: b, name: load(b)?.name ?? '', status: load(b)?.status ?? '' }))",
+        "description": "Known bargains the player is NOT a party to, optionally filtered to active only, for display."
+      },
+      "bargainFilters": {
+        "type": "object",
+        "title": "Bargain Filters",
+        "properties": {
+          "myOnlyActive": {
+            "type": "boolean",
+            "title": "My only active",
+            "default": true,
+            "description": "Only show active bargains on the 'My bargains' sub-tab."
+          },
+          "otherOnlyActive": {
+            "type": "boolean",
+            "title": "Other only active",
+            "default": true,
+            "description": "Only show active bargains on the 'Other bargains' sub-tab."
+          }
+        },
+        "description": "State of the 'Only active bargains' toggles on the two Bargains sub-tabs (My / Other).",
+        "additionalProperties": false
       },
       "conditionState": {
         "type": "object",
@@ -422,6 +515,15 @@
         "description": "Stored state for the five Condition Tracks. Missing values compute as Maximum 3 and Depletion 0.",
         "additionalProperties": false
       },
+      "signedBargains": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "bargain"
+        },
+        "title": "Signed Bargains",
+        "description": "Bargains the player is a party to (their own contracts/obligations). The GM maintains this alongside knownBargains."
+      },
       "conditionTracks": {
         "type": "array",
         "items": {
@@ -460,12 +562,104 @@
         "title": "Condition Tracks",
         "expression": "[{ key: 'health', name: 'Health', family: 'persistent', maximum: clamp($self.conditionState?.health?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'wakefulness', name: 'Wakefulness', family: 'persistent', maximum: clamp($self.conditionState?.wakefulness?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.wakefulness?.depletion ?? 0, 0, 3) }, { key: 'composure', name: 'Composure', family: 'persistent', maximum: clamp($self.conditionState?.composure?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.composure?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', maximum: clamp($self.conditionState?.decorum?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'concealment', name: 'Concealment', family: 'scene', maximum: clamp($self.conditionState?.concealment?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.concealment?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: t.maximum, depletion: t.depletion, current: clamp(t.maximum - t.depletion, 0, 3) }))",
         "description": "Derived Condition Tracks — five fixed rows (Health, Wakefulness, Composure, Decorum, Concealment). Current is always derived from Maximum and Depletion; it is never stored."
+      },
+      "outfitModifiers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "track": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "string"
+            },
+            "trackName": {
+              "type": "string"
+            },
+            "appliesWhen": {
+              "type": "string"
+            }
+          }
+        },
+        "title": "Worn Outfit Condition Modifiers",
+        "expression": "load($self.outfit)?.conditionModifierRows ?? []",
+        "description": "Condition modifiers of the currently worn outfit."
+      },
+      "hasOtherBargains": {
+        "type": "boolean",
+        "title": "Has Other Bargains",
+        "expression": "($self.otherBargains ?? []).length > 0",
+        "description": "True when there is at least one bargain to show on the 'Other bargains' sub-tab."
+      },
+      "outfitDescription": {
+        "type": "string",
+        "title": "Worn Outfit Description",
+        "expression": "load($self.outfit)?.description ?? ''",
+        "description": "Description of the currently worn outfit."
+      },
+      "graceLedgerDisplay": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "day": {
+              "type": "number",
+              "title": "Day"
+            },
+            "reason": {
+              "type": "string",
+              "title": "Reason"
+            },
+            "amountDisplay": {
+              "type": "string",
+              "title": "Amount"
+            }
+          }
+        },
+        "title": "Grace Ledger Display",
+        "expression": "($self.graceLedger ?? []).map(e => ({ day: number(e.day), amountDisplay: (number(e.amount) >= 0 ? '+' : '') + number(e.amount) + (load(e.currency)?.symbol ?? ''), reason: e.reason }))",
+        "description": "Formatted grace ledger rows: each amount as a signed number followed by its currency's symbol (e.g. +1000🍀). Derived from the ledger and each Grace currency's symbol."
       }
     }
   },
   "layout": {
     "root": "page",
     "elements": {
+      "card": {
+        "type": "Card",
+        "props": {
+          "title": "Bargains",
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "tabs-2"
+        ]
+      },
+      "grid": {
+        "type": "Grid",
+        "props": {
+          "gap": "md",
+          "bgColor": null,
+          "bgImage": null,
+          "columns": 2,
+          "rounded": null,
+          "className": null,
+          "bgImageFit": null
+        },
+        "children": [
+          "stack",
+          "conditions-section-2"
+        ]
+      },
       "name": {
         "type": "Heading",
         "props": {
@@ -480,69 +674,496 @@
         "type": "Stack",
         "props": {
           "gap": "md",
+          "align": "stretch",
+          "justify": "center",
           "direction": "vertical"
         },
         "children": [
           "name",
           "divider",
-          "origin-row",
-          "outfit-row",
-          "attributes-section",
-          "abilities-section",
-          "conditions-section",
-          "grace-section",
-          "markers-section",
-          "species-row",
-          "archetypes-section"
+          "tabs"
         ]
+      },
+      "tabs": {
+        "type": "Tabs",
+        "props": {
+          "tabs": [
+            {
+              "label": "Stats",
+              "value": "tab-stats"
+            },
+            {
+              "label": "Graces",
+              "value": "tab-graces"
+            },
+            {
+              "label": "Bargains",
+              "value": "tab-bargains"
+            },
+            {
+              "label": "Reputation",
+              "value": "tab-4"
+            }
+          ],
+          "value": null,
+          "bgColor": null,
+          "className": null,
+          "defaultValue": "tab-stats"
+        },
+        "children": [
+          "tabs-panel",
+          "tabs-panel-2",
+          "tabs-panel-3",
+          "tabs-panel-4"
+        ]
+      },
+      "text": {
+        "type": "Text",
+        "props": {
+          "text": "\"Are you wounded or sick?\"",
+          "color": "#758c7e",
+          "variant": "code",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": false,
+          "align": "stretch",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "card-2"
+        ]
+      },
+      "card-2": {
+        "type": "Card",
+        "props": {
+          "title": "Outfit",
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "card-3",
+          "text-2",
+          "outfit-modifiers-list"
+        ]
+      },
+      "card-3": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": "#000000",
+          "bgImage": null,
+          "rounded": "none",
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": "#2d4a3a",
+          "description": null
+        },
+        "children": [
+          "outfit-row"
+        ]
+      },
+      "card-4": {
+        "type": "Card",
+        "props": {
+          "title": "Grace Balances",
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "grid-2",
+          "stack-3"
+        ]
+      },
+      "card-5": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "sm",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "stack-2-2"
+        ]
+      },
+      "card-6": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": "Third-party bargains"
+        },
+        "children": [
+          "switch",
+          "other-bargain-list"
+        ]
+      },
+      "card-7": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "trackbox-row-health",
+          "text"
+        ]
+      },
+      "grid-2": {
+        "type": "Grid",
+        "props": {
+          "gap": "md",
+          "bgColor": null,
+          "bgImage": null,
+          "columns": 7,
+          "rounded": null,
+          "className": null,
+          "bgImageFit": null
+        },
+        "children": [
+          "card-5",
+          "card-5-2",
+          "card-5-2-2",
+          "card-5-2-2-2",
+          "card-5-2-2-2-2",
+          "card-5-2-2-2-2-2",
+          "card-5-2-2-2-2-2-2"
+        ]
+      },
+      "grid-3": {
+        "type": "Grid",
+        "props": {
+          "gap": "sm",
+          "bgColor": null,
+          "bgImage": null,
+          "columns": 1,
+          "rounded": null,
+          "className": null,
+          "bgImageFit": null
+        },
+        "children": [
+          "card-7",
+          "card-7-2",
+          "card-7-2-2",
+          "card-7-2-2-2",
+          "card-7-2-2-2-2"
+        ]
+      },
+      "switch": {
+        "type": "Switch",
+        "props": {
+          "color": null,
+          "label": "Only Active Bargains",
+          "checked": {
+            "$state": "/bargainFilters/otherOnlyActive"
+          },
+          "className": null
+        },
+        "children": []
+      },
+      "tabs-2": {
+        "type": "Tabs",
+        "props": {
+          "tabs": [
+            {
+              "label": "My Bargains",
+              "value": "tab-1"
+            },
+            {
+              "label": "Other Bargains",
+              "value": "tab-2"
+            }
+          ],
+          "value": null,
+          "bgColor": null,
+          "className": null,
+          "defaultValue": "tab-1"
+        },
+        "children": [
+          "tabs-2-panel",
+          "tabs-2-panel-2"
+        ]
+      },
+      "text-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/outfitDescription"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-3": {
+        "type": "Text",
+        "props": {
+          "text": "\"Are you about to fall asleep?\"",
+          "color": "#758c7e",
+          "variant": "code",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-4": {
+        "type": "Text",
+        "props": {
+          "text": "Queen's Graces",
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
       },
       "divider": {
         "type": "Separator",
         "props": {},
         "children": []
       },
-      "grace-refs": {
-        "type": "FileReferenceGrid",
+      "stack-3": {
+        "type": "Stack",
         "props": {
-          "items": {
-            "$state": "/graceLedger"
-          },
-          "label": "Grace Ledger",
-          "columns": 4,
-          "fileTypeSlug": "grace",
-          "metadataFields": [
-            {
-              "name": "amount",
-              "type": "number"
-            },
-            {
-              "name": "day",
-              "type": "number"
-            },
-            {
-              "name": "reason",
-              "type": "string"
-            }
-          ],
-          "referenceField": "currency"
+          "gap": "sm",
+          "wrap": null,
+          "align": "stretch",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
         },
         "children": []
       },
-      "origin-row": {
-        "type": "Select",
+      "card-5-2": {
+        "type": "Card",
         "props": {
-          "label": "Origin",
-          "value": {
-            "$state": "/origin"
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "sm",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "stack-2-2-2"
+        ]
+      },
+      "card-6-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": "Bargains involving the player"
+        },
+        "children": [
+          "switch-2",
+          "my-bargain-list"
+        ]
+      },
+      "card-7-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "trackbox-row-wakefulness",
+          "text-3"
+        ]
+      },
+      "switch-2": {
+        "type": "Switch",
+        "props": {
+          "color": null,
+          "label": "Only Active Bargains",
+          "checked": {
+            "$state": "/bargainFilters/myOnlyActive"
           },
-          "fileTypeSlug": "origin"
+          "className": null
         },
         "children": []
+      },
+      "text-3-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/graceBalances/queens-graces"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-3-3": {
+        "type": "Text",
+        "props": {
+          "text": "\"How calm are you?\"",
+          "color": "#758c7e",
+          "variant": "code",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-4-2": {
+        "type": "Text",
+        "props": {
+          "text": "Phantom Graces",
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "heading-2": {
+        "type": "Heading",
+        "props": {
+          "text": "👑",
+          "color": null,
+          "level": "h1",
+          "className": null
+        },
+        "children": []
+      },
+      "stack-2-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-4",
+          "heading-2",
+          "text-3-2"
+        ]
+      },
+      "card-5-2-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "sm",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "stack-2-2-2-2"
+        ]
+      },
+      "card-7-2-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "trackbox-row-composure",
+          "text-3-3"
+        ]
       },
       "outfit-row": {
         "type": "Select",
         "props": {
-          "label": "Outfit",
+          "label": "Select:",
           "value": {
             "$state": "/outfit"
           },
@@ -550,40 +1171,223 @@
         },
         "children": []
       },
-      "species-row": {
-        "type": "Select",
+      "tabs-panel": {
+        "type": "Stack",
         "props": {
-          "label": "Species",
-          "value": {
-            "$state": "/species"
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "grid",
+          "attributes-section-2",
+          "abilities-section",
+          "conditionstate-section"
+        ]
+      },
+      "text-3-2-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/graceBalances/phantom-graces"
           },
-          "fileTypeSlug": "species"
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
         },
         "children": []
       },
-      "condition-row": {
-        "type": "Dots",
+      "text-3-3-2": {
+        "type": "Text",
         "props": {
-          "max": {
+          "text": "\"How do you look?\"",
+          "color": "#758c7e",
+          "variant": "code",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-4-2-2": {
+        "type": "Text",
+        "props": {
+          "text": "Seelie Graces",
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "heading-2-2": {
+        "type": "Heading",
+        "props": {
+          "text": "🍀",
+          "color": null,
+          "level": "h1",
+          "className": null
+        },
+        "children": []
+      },
+      "stack-2-2-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-4-2",
+          "heading-2-2",
+          "text-3-2-2"
+        ]
+      },
+      "card-5-2-2-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "sm",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "stack-2-2-2-2-2"
+        ]
+      },
+      "card-7-2-2-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "trackbox-row-decorum",
+          "text-3-3-2"
+        ]
+      },
+      "tabs-2-panel": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "card-6-2"
+        ]
+      },
+      "tabs-panel-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "card-4",
+          "attributes-section-2-2"
+        ]
+      },
+      "tabs-panel-3": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "card"
+        ]
+      },
+      "tabs-panel-4": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "markers-section"
+        ]
+      },
+      "text-3-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/graceBalances/seelie-graces"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-3-3-2-2": {
+        "type": "Text",
+        "props": {
+          "text": "\"Do you blend in?\"",
+          "color": "#758c7e",
+          "variant": "code",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-4-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": "Spring Graces",
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "trackbox-row": {
+        "type": "TrackBoxes",
+        "props": {
+          "boxes": {
             "$item": "maximum"
           },
+          "color": "#6ca789",
           "label": {
             "$item": "name"
           },
           "value": {
             "$item": "current"
-          }
+          },
+          "showValue": true
         },
         "children": []
       },
-      "grace-section": {
-        "type": "Card",
+      "heading-2-2-2": {
+        "type": "Heading",
         "props": {
-          "title": "Grace Ledger"
+          "text": "✨",
+          "color": null,
+          "level": "h1",
+          "className": null
         },
-        "children": [
-          "grace-refs"
-        ]
+        "children": []
       },
       "markers-table": {
         "type": "DataTable",
@@ -604,66 +1408,313 @@
         },
         "children": []
       },
-      "abilities-refs": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/abilities"
-          },
-          "label": "Trained Abilities",
-          "columns": 4,
-          "fileTypeSlug": "ability",
-          "referenceField": null
-        },
-        "children": []
-      },
-      "archetypes-refs": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/archetypes"
-          },
-          "label": "Archetypes",
-          "columns": 4,
-          "fileTypeSlug": "archetype",
-          "referenceField": null
-        },
-        "children": []
-      },
-      "conditions-list": {
+      "stack-2-2-2-2": {
         "type": "Stack",
         "props": {
           "gap": "sm",
-          "direction": "vertical"
-        },
-        "repeat": {
-          "key": "key",
-          "statePath": "/conditionTracks"
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
         },
         "children": [
-          "condition-row"
+          "text-4-2-2",
+          "heading-2-2-2",
+          "text-3-2-2-2"
         ]
+      },
+      "abilities-refs": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "lg",
+          "items": {
+            "$state": "/abilities"
+          },
+          "label": null,
+          "columns": 4,
+          "fileTypeSlug": "ability",
+          "addNewVariant": null,
+          "titlePosition": "bottom",
+          "referenceField": null,
+          "imageAspectRatio": "ultrawide",
+          "metadataPosition": null
+        },
+        "children": []
+      },
+      "card-5-2-2-2-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "sm",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "stack-2-2-2-2-2-2"
+        ]
+      },
+      "card-7-2-2-2-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "trackbox-row-concealment",
+          "text-3-3-2-2"
+        ]
+      },
+      "species-select": {
+        "type": "Select",
+        "props": {
+          "label": "Species",
+          "value": {
+            "$state": "/species"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "species"
+        },
+        "visible": {
+          "$state": "/species"
+        },
+        "children": []
+      },
+      "tabs-2-panel-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "card-6"
+        ]
+      },
+      "text-3-2-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/graceBalances/spring-graces"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-4-2-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": "Summer Graces",
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "heading-2-2-2-2": {
+        "type": "Heading",
+        "props": {
+          "text": "🌸",
+          "color": null,
+          "level": "h1",
+          "className": null
+        },
+        "children": []
       },
       "markers-section": {
         "type": "Card",
         "props": {
-          "title": "Reputation Markers"
+          "title": "Reputation Markers",
+          "maxWidth": "full"
         },
         "children": [
           "markers-table"
         ]
       },
-      "attributes-stats": {
+      "markers-table-2": {
+        "type": "DataTable",
+        "props": {
+          "items": {
+            "$state": "/graceLedgerDisplay"
+          },
+          "columns": [
+            {
+              "type": "number",
+              "field": "day",
+              "label": "Day"
+            },
+            {
+              "type": "string",
+              "field": "amountDisplay",
+              "label": "Amount"
+            },
+            {
+              "type": "string",
+              "field": "reason",
+              "label": "Reason"
+            }
+          ]
+        },
+        "children": []
+      },
+      "my-bargain-list": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/myBargains"
+          },
+          "columns": 3,
+          "emptyState": "No bargains to list",
+          "showAddNew": false,
+          "fileTypeSlug": "bargain",
+          "titlePosition": "overlay",
+          "metadataFields": [
+            {
+              "name": "status",
+              "type": "string"
+            }
+          ],
+          "referenceField": "bargain",
+          "imageAspectRatio": "ultrawide",
+          "metadataPosition": "below",
+          "showAddNewOnHover": false
+        },
+        "children": []
+      },
+      "stack-2-2-2-2-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-4-2-2-2",
+          "heading-2-2-2-2",
+          "text-3-2-2-2-2"
+        ]
+      },
+      "card-5-2-2-2-2-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "sm",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "stack-2-2-2-2-2-2-2"
+        ]
+      },
+      "text-3-2-2-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/graceBalances/summer-graces"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-4-2-2-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": "Autumn Graces",
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "abilities-section": {
+        "type": "Card",
+        "props": {
+          "title": "Special skills",
+          "maxWidth": "full"
+        },
+        "children": [
+          "abilities-refs"
+        ]
+      },
+      "heading-2-2-2-2-2": {
+        "type": "Heading",
+        "props": {
+          "text": "☀️",
+          "color": null,
+          "level": "h1",
+          "className": null
+        },
+        "children": []
+      },
+      "stack-2-2-2-2-2-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-4-2-2-2-2",
+          "heading-2-2-2-2-2",
+          "text-3-2-2-2-2-2"
+        ]
+      },
+      "attributes-stats-2": {
         "type": "StatGrid",
         "props": {
-          "cols": 2,
+          "cols": 7,
           "items": [
             [
-              "Body",
+              "Head",
               {
-                "$state": "/attributes/body"
+                "$state": "/attributes/head"
               }
             ],
             [
@@ -673,15 +1724,21 @@
               }
             ],
             [
-              "Head",
+              "Hands",
               {
-                "$state": "/attributes/head"
+                "$state": "/attributes/hands"
               }
             ],
             [
               "Heart",
               {
                 "$state": "/attributes/heart"
+              }
+            ],
+            [
+              "Body",
+              {
+                "$state": "/attributes/body"
               }
             ],
             [
@@ -695,52 +1752,365 @@
               {
                 "$state": "/attributes/shadow"
               }
-            ],
-            [
-              "Hands",
-              {
-                "$state": "/attributes/hands"
-              }
             ]
           ]
         },
         "children": []
       },
-      "abilities-section": {
+      "card-5-2-2-2-2-2-2": {
         "type": "Card",
         "props": {
-          "title": "Trained Abilities"
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "sm",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
         },
         "children": [
-          "abilities-refs"
+          "stack-2-2-2-2-2-2-2-2"
         ]
       },
-      "archetypes-section": {
+      "other-bargain-list": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/otherBargains"
+          },
+          "columns": 3,
+          "emptyState": "No bargains to list",
+          "showAddNew": false,
+          "fileTypeSlug": "bargain",
+          "titlePosition": "overlay",
+          "metadataFields": [
+            {
+              "name": "status",
+              "type": "string"
+            }
+          ],
+          "referenceField": "bargain",
+          "imageAspectRatio": "ultrawide",
+          "metadataPosition": "below",
+          "showAddNewOnHover": false
+        },
+        "children": []
+      },
+      "text-3-2-2-2-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/graceBalances/autumn-graces"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-4-2-2-2-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": "Winter Graces",
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "heading-2-2-2-2-2-2": {
+        "type": "Heading",
+        "props": {
+          "text": "🍁",
+          "color": null,
+          "level": "h1",
+          "className": null
+        },
+        "children": []
+      },
+      "outfit-modifier-row": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "align": "stretch",
+          "direction": "vertical"
+        },
+        "children": [
+          "outfit-modifier-line",
+          "outfit-modifier-applies"
+        ]
+      },
+      "stack-2-2-2-2-2-2-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-4-2-2-2-2-2",
+          "heading-2-2-2-2-2-2",
+          "text-3-2-2-2-2-2-2"
+        ]
+      },
+      "trackbox-row-health": {
+        "type": "TrackBoxes",
+        "props": {
+          "boxes": {
+            "$state": "/conditionTracks/0/maximum"
+          },
+          "color": "#ff0019",
+          "label": "❤️ Health",
+          "value": {
+            "$state": "/conditionTracks/0/current"
+          },
+          "showValue": true
+        },
+        "children": []
+      },
+      "attributes-section-2": {
         "type": "Card",
         "props": {
-          "title": "Archetypes"
+          "title": "Attribute Dice",
+          "centered": false,
+          "maxWidth": "full",
+          "bgImageFit": null,
+          "description": null
         },
         "children": [
-          "archetypes-refs"
+          "attributes-stats-2"
         ]
       },
-      "attributes-section": {
-        "type": "Card",
-        "props": {
-          "title": "Attribute Dice"
-        },
-        "children": [
-          "attributes-stats"
-        ]
-      },
-      "conditions-section": {
+      "conditions-section-2": {
         "type": "Card",
         "props": {
           "title": "Condition Tracks"
         },
         "children": [
-          "conditions-list"
+          "grid-3",
+          "conditions-trackboxes"
         ]
+      },
+      "outfit-modifier-line": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "align": "center",
+          "direction": "horizontal"
+        },
+        "children": [
+          "outfit-modifier-track",
+          "outfit-modifier-amount"
+        ]
+      },
+      "text-3-2-2-2-2-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/graceBalances/winter-graces"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "trackbox-row-decorum": {
+        "type": "TrackBoxes",
+        "props": {
+          "boxes": {
+            "$state": "/conditionTracks/3/maximum"
+          },
+          "color": "#59d4ed",
+          "label": "💎 Decorum",
+          "value": {
+            "$state": "/conditionTracks/3/current"
+          },
+          "showValue": true
+        },
+        "children": []
+      },
+      "archetypes-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/archetypes"
+          },
+          "label": "Archetypes",
+          "columns": 4,
+          "fileTypeSlug": "archetype",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/archetypes"
+        },
+        "children": []
+      },
+      "conditions-trackboxes": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": []
+      },
+      "heading-2-2-2-2-2-2-2": {
+        "type": "Heading",
+        "props": {
+          "text": "❄️",
+          "color": null,
+          "level": "h1",
+          "className": null
+        },
+        "children": []
+      },
+      "outfit-modifier-track": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "trackName"
+          },
+          "variant": "body"
+        },
+        "children": []
+      },
+      "outfit-modifiers-list": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "repeat": {
+          "statePath": "/outfitModifiers"
+        },
+        "children": [
+          "outfit-modifier-row"
+        ]
+      },
+      "stack-2-2-2-2-2-2-2-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-4-2-2-2-2-2-2",
+          "heading-2-2-2-2-2-2-2",
+          "text-3-2-2-2-2-2-2-2"
+        ]
+      },
+      "attributes-section-2-2": {
+        "type": "Card",
+        "props": {
+          "title": "Grace Ledger",
+          "centered": false,
+          "maxWidth": "full",
+          "bgImageFit": null,
+          "description": "@Oracle: Put into \"Graces\" tab"
+        },
+        "children": [
+          "markers-table-2"
+        ]
+      },
+      "conditionstate-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/conditionState"
+        },
+        "children": []
+      },
+      "outfit-modifier-amount": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "amount"
+          },
+          "variant": "body"
+        },
+        "children": []
+      },
+      "trackbox-row-composure": {
+        "type": "TrackBoxes",
+        "props": {
+          "boxes": {
+            "$state": "/conditionTracks/2/maximum"
+          },
+          "color": "#f964c0",
+          "label": "🪷 Composure",
+          "value": {
+            "$state": "/conditionTracks/2/current"
+          },
+          "showValue": true
+        },
+        "children": []
+      },
+      "outfit-modifier-applies": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "appliesWhen"
+          },
+          "color": "#757575",
+          "variant": "code"
+        },
+        "children": []
+      },
+      "trackbox-row-concealment": {
+        "type": "TrackBoxes",
+        "props": {
+          "boxes": {
+            "$state": "/conditionTracks/4/maximum"
+          },
+          "color": "#6b6b6b",
+          "label": "👀 Concealment",
+          "value": {
+            "$state": "/conditionTracks/4/current"
+          },
+          "showValue": true
+        },
+        "children": []
+      },
+      "trackbox-row-wakefulness": {
+        "type": "TrackBoxes",
+        "props": {
+          "boxes": {
+            "$state": "/conditionTracks/1/maximum"
+          },
+          "color": "#ffea00",
+          "label": "☀️ Wakefulness",
+          "value": {
+            "$state": "/conditionTracks/1/current"
+          },
+          "showValue": true
+        },
+        "children": []
       }
     }
   },

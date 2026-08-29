@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "4eb16e9a-849a-0eef-77f3-150c5eb5599c",
+  "schemaHash": "c41caafc-4db2-99d7-8db4-b038e413388a",
   "schema": {
     "type": "object",
     "required": [
@@ -82,6 +82,11 @@
         "title": "Issuer",
         "description": "The queen, court, or authority that issues this Grace currency."
       },
+      "symbol": {
+        "type": "string",
+        "title": "Symbol",
+        "description": "The emblem or icon that represents this Grace currency, shown after amounts in the ledger (e.g. 🍀 for Phantom Grace)."
+      },
       "description": {
         "type": "string",
         "title": "Description",
@@ -141,7 +146,8 @@
         "children": [
           "description-text",
           "issuer-section",
-          "notes-section"
+          "notes-section",
+          "symbol-section"
         ]
       },
       "notes-text": {
@@ -160,6 +166,16 @@
           "color": null,
           "content": {
             "$state": "/issuer"
+          }
+        },
+        "children": []
+      },
+      "symbol-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/symbol"
           }
         },
         "children": []
@@ -206,6 +222,28 @@
         "children": [
           "issuer-heading",
           "issuer-text"
+        ]
+      },
+      "symbol-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Symbol",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "symbol-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/symbol"
+        },
+        "children": [
+          "symbol-heading",
+          "symbol-text"
         ]
       },
       "description-text": {

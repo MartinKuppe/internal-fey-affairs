@@ -1,0 +1,33 @@
+{
+  "kind": "indenture",
+  "name": "Méabh's Indenture",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/32c50f70-083f-4cd5-a75c-1fc4df1d9657"
+  },
+  "status": "active",
+  "parties": [
+    {
+      "refs": [
+        {
+          "slug": "méabh",
+          "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
+          "fileTypeSlug": "non-player-character"
+        }
+      ],
+      "role": "Laborer",
+      "label": "Méabh",
+      "wording": "The labourer shall work indefinitely for the employer under the standard takeling charter.",
+      "resolved": false,
+      "dueCondition": ""
+    },
+    {
+      "refs": [],
+      "role": "Employer",
+      "label": "The Morrigan",
+      "wording": "The employer shall provide housing and sustenance to the labourer under the standard takeling charter.",
+      "resolved": false,
+      "dueCondition": ""
+    }
+  ],
+  "wording": "Méabh shall work indefinitely for the Morrigan as an indentured worker."
+}

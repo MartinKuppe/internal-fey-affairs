@@ -1,0 +1,34 @@
+{
+  "kind": "contract",
+  "name": "Morrigan's  Agreement with the Triad",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/32c50f70-083f-4cd5-a75c-1fc4df1d9657",
+    "generation": {
+      "prompt": "A high-angle close-up of an ancient, weathered parchment scroll resting on a neutral, textured stone surface. The scroll is partially unfurled, revealing mysterious calligraphic script, and is secured by a heavy, dripping red wax seal bearing a Celtic knot symbol. Franco-Belgian Bande Dessinée style with Ligne Claire aesthetics: clean, bold black outlines, simple cell-shading, and a limited color palette of cream, deep red, and slate grey. Bright, even lighting with minimal soft shadows to emphasize the graphic linework. No text, no labels, no watermarks.",
+      "status": "success",
+      "startedAt": "2026-08-31T21:57:43.206Z",
+      "finishedAt": "2026-08-31T21:57:43.206Z"
+    }
+  },
+  "status": "void",
+  "parties": [
+    {
+      "refs": [],
+      "role": "High Queen Pretender",
+      "label": "The Morrigan",
+      "wording": "No Roman army shall set foot in Hibernia",
+      "resolved": false,
+      "dueCondition": ""
+    },
+    {
+      "refs": [],
+      "role": "Representing the Empire",
+      "label": "Imperial triad",
+      "wording": "The Morrigan shall be High Queen, as long as the contract is fulfilled on her side",
+      "resolved": false,
+      "dueCondition": ""
+    }
+  ],
+  "wording": "The Morrigan shall be High Queen as long as no Roman army sets foot in Hibernia.",
+  "signedOn": 774
+}

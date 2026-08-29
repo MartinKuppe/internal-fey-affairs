@@ -155,6 +155,36 @@
           "identity-section"
         ]
       },
+      "text": {
+        "type": "Text",
+        "props": {
+          "text": "Archetypes",
+          "color": null,
+          "variant": "muted",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": null,
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "text",
+          "badge-list"
+        ]
+      },
       "portrait": {
         "type": "Image",
         "props": {
@@ -163,7 +193,27 @@
           },
           "src": {
             "$state": "/image"
-          }
+          },
+          "size": "full",
+          "align": "left",
+          "aspectRatio": "video"
+        },
+        "children": []
+      },
+      "badge-list": {
+        "type": "BadgeList",
+        "props": {
+          "color": null,
+          "items": {
+            "$state": "/archetypes"
+          },
+          "options": null,
+          "variant": "secondary",
+          "className": null,
+          "showAddNew": true,
+          "fileTypeSlug": "archetype",
+          "fileTypeSlugs": null,
+          "showAddNewOnHover": true
         },
         "children": []
       },
@@ -175,20 +225,6 @@
             "$state": "/species"
           },
           "fileTypeSlug": "species"
-        },
-        "children": []
-      },
-      "archetypes-refs": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "sm",
-          "items": {
-            "$state": "/archetypes"
-          },
-          "label": "Archetypes",
-          "columns": 4,
-          "fileTypeSlug": "archetype",
-          "referenceField": null
         },
         "children": []
       },
@@ -220,7 +256,7 @@
         },
         "children": [
           "species-row",
-          "archetypes-refs"
+          "stack"
         ]
       }
     }

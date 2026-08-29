@@ -1,6 +1,11 @@
 {
   "name": "Internal Fey Affairs",
   "description": null,
+  "tags": [
+    "Adventure",
+    "Narrative First",
+    "Ancient World"
+  ],
   "settings": {
     "theme": {
       "presetId": "elven-realms",
@@ -36,12 +41,32 @@
       "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/8e1bc2c9-f085-4bcc-9cf8-098be718c078"
     },
     "projectIcon": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/6ba24ac3-4c56-4ee0-a88f-081b0ea3e391",
+    "attribution": "Original IP",
     "headlineLabel": "Alien visitors + Iron Age lens = Fair Folk",
     "headline": "What if the Fey were alien scientists studying us?",
-    "body": "Out of the fairy ring comes a beautiful girl. She looks like Niamh, the village beauty. Almost.\n\nYou’re a young man in a small Celtic village in ancient Ireland. By day, you apprentice at the forge, shaping iron tools with the village smith. By night, you listen to your granny’s old stories of the Aos Sí or Fair Folk: Hollow hills, wandering lights, Red Caps, the Wild Hunt, and doors to the Otherworld. Granny swears the old stories were not always old. She says the lights in the hills began when she was twenty-three winters old, and that villagefolk only started calling them fairy doors after the first people went missing. \n\nYou don’t believe in any of it, of course. You believe in iron, in work, in things that can be held in the hand. Still, you do not wander into the hollow hills after dark. \n\nNiamh? You’re secretly in love with Niamh. Half the village is. Niamh is beautiful, unapproachable, kind, sharp-witted, perfect in an almost uncanny way with her fair hair, her soft skin, her symmetrical freckles. Who has symmetrical freckles? Niamh has.\n\nSome villagers don’t like her. Some say she’s a witch. Your granny thinks she’s a changeling. But then again, Granny explains everything with the Fair Folk - missing livestock, distant lights in the dark, eerie sounds in the night, old Conroy vanishing into the woods. Superstitions. Children’s tales. \n\nStill, you do not wander into the hollow hills after dark. Until tonight.\n\nIt was the goat’s fault. He ran off; you were unable to catch him. How can a goat be that fast? Now you’re standing in a glade, under the pale moon. In the middle of the clearing, you see a perfect ring of mushrooms. Granny calls them fairy rings. Suddenly, the circle starts to glow in an eerie blue light - and out of thin air materialises a beautiful, naked girl, floating as if held by invisible hands. \n\nShe looks like Niamh. \n\nBut she is not Niamh. \n\nWho is she?",
+    "body": "You live in a small Celtic village in ancient Ireland, on the edge of the forest. There are places in the forest village folk avoid, especially after dark. They are the domain of the Aos Sí or Fair Folk, they say. Superstitions. Children’s tales. \n\nStill, you do not wander into the deep woods after dark.\n\nYour parents died years ago, and you live with your Granny. By day, you go about your trade. By night, you listen to Granny’s old stories of the Fair Folk: Hollow hills, wandering lights, Changelings, Banshees, the Wild Hunt, and doors to the Otherworld. Granny swears the old stories were not always old. She says the lights in the hills began when she was twenty-three winters old, and that villagefolk only started calling them fairy doors after the first people went missing.\n\nYou don’t believe in any of it, of course. You believe in the gods. You believe in work, in iron and timber, in things that can be held in your hand. But tiny people living in hidden palaces beneath the hills? Where would they even come from? And if they did exist, wouldn’t they have better things to do than abduct children and play silly pranks on people? Ridiculous!  \n\nStill, you do not wander into the deep woods after dark. \n\nUntil tonight…",
     "isClonable": false,
     "hideHeroTitle": false,
+    "imageStyleInstructions": "Franco-Belgian \"Bande Dessinée\" style (Ligne Claire) with simple shapes, black outlines, cell-shading with few colours, minimal texture.",
     "autoImageGeneration": false,
-    "rootMapFileReferenceId": "019fde04-456b-7080-8779-cdfa7ef7381d"
+    "gmToolSettings": {
+      "askPlayerToRoll": true,
+      "askUserQuestion": true,
+      "generateNames": true,
+      "research": true
+    },
+    "rootMapFileReferenceId": "019fde04-456b-7080-8779-cdfa7ef7381d",
+    "gm": {
+      "name": "Seanchaí",
+      "image": {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b0fbc00f-b1b4-475f-a6f6-ea7dd69d0d05",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/20f3658e-5c36-4578-a7c7-16b39d439bc5",
+        "focalPoint": {
+          "x": 0.9696969696969697,
+          "y": 0.5057526366251198
+        }
+      },
+      "voiceId": "96819d0bd28d"
+    }
   }
 }

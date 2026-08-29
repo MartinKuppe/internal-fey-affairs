@@ -1,4 +1,7 @@
 {
+  "$craft": {
+    "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f"
+  },
   "name": "The Blacksmith",
   "origin": {
     "slug": "blacksmith",

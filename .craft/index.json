@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-28T21:22:45.749Z",
+  "syncedAt": "2026-09-02T19:18:07.561Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -66,11 +66,11 @@
       "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
     },
     {
-      "path": "/Player Characters",
+      "path": "/Characters/Player Characters",
       "folderId": "01a04a10-df36-73ac-946f-95f5bd2cd4d4"
     },
     {
-      "path": "/Non-Player Characters",
+      "path": "/Characters/Non-Player Characters",
       "folderId": "01a04a10-df3e-77f8-bfa2-d6b6526fc67e"
     },
     {
@@ -513,17 +513,17 @@
       "fileId": "019fed62-6c7a-7c44-82d4-57d2e33ed35b",
       "referenceId": "019fed62-6c7a-7ce4-891a-c2813e204357",
       "fileType": "bargain",
-      "baseVersionId": "01a04a29-de1f-74cc-9d9d-5add38298582",
-      "baseHash": "56a942a7-34f1-4d79-7a81-5695c6f984c6",
+      "baseVersionId": "01a05a18-186e-706c-8465-8ef6de512fb5",
+      "baseHash": "431634c6-6d0f-60b3-076e-63a2c63fe4bf",
       "source": "project"
     },
     {
-      "path": "/Grace/Phantom Grace.grace.json",
+      "path": "/Grace/Phantom Graces.grace.json",
       "fileId": "019fed6d-de2b-7454-903c-61ac8391f380",
       "referenceId": "019fed6d-de2b-74dc-b3bf-3eeaf89d7333",
       "fileType": "grace",
-      "baseVersionId": "019fed72-82b9-72d0-b393-e319dce805d7",
-      "baseHash": "b4af23b2-8a8b-e0a3-d2b8-904dd2b3aab5",
+      "baseVersionId": "01a05998-aad0-7370-923e-df18418d39c9",
+      "baseHash": "492d9285-dc72-aba1-835d-9e3dd3b2aaa6",
       "source": "project"
     },
     {
@@ -720,8 +720,8 @@
       "fileId": "019ff21e-b596-78a8-a929-5fc9e30da0c1",
       "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
       "fileType": "outfit",
-      "baseVersionId": "019ff221-5db9-70d0-9e72-fefc983b0342",
-      "baseHash": "3c303e69-a912-c0ab-d020-36737720200f",
+      "baseVersionId": "01a04b94-2dab-7e40-85e3-d4b8594e3cdf",
+      "baseHash": "78d49739-4c56-0514-2102-4432f4c73231",
       "source": "project"
     },
     {
@@ -885,7 +885,7 @@
       "fileId": "01a0029a-7d76-73bc-b429-ef4fba0f0200",
       "referenceId": "01a0029a-7d76-7438-b1ab-f311047c3ee2",
       "fileType": "location",
-      "baseVersionId": "01a045ce-11f9-7210-b731-3175ec0206b9",
+      "baseVersionId": "01a0522a-9c03-7b8c-9a8a-77bbcca4a5cf",
       "baseHash": "6b5aef64-debc-57c0-6dde-3594c63f42d5",
       "source": "project",
       "metadataHash": "d0c71289-2fc5-21e8-d503-58cb3c0c64a6"
@@ -974,7 +974,7 @@
       "fileId": "01a03e6e-1dea-7348-9eea-3d4229cd3f7a",
       "referenceId": "01a03e6e-1dea-73bc-b1fb-e1ad30b3fc75",
       "fileType": "location",
-      "baseVersionId": "01a04987-1327-73f8-87c2-dfca3cf3cbcd",
+      "baseVersionId": "01a0522a-3034-7a08-a939-1ffb877cba3c",
       "baseHash": "3be07430-8153-0a79-11f0-349b5c7f3b46",
       "source": "project",
       "metadataHash": "ce5f2145-eaf5-914d-48b0-1386a8561485"
@@ -1102,7 +1102,7 @@
       "fileId": "01a0497f-d61c-76b4-a8df-1ec40e8281f5",
       "referenceId": "01a0497f-d61c-774c-9dc1-1b098aaa4b0a",
       "fileType": "location",
-      "baseVersionId": "01a0497f-d613-7894-b30a-4ba665358f6d",
+      "baseVersionId": "01a061d2-f86f-792c-a6d8-5f6dc26599ba",
       "baseHash": "91218b28-3a2a-7bcf-b2e3-caf6e25bfae4",
       "source": "project"
     },
@@ -1143,21 +1143,21 @@
       "source": "project"
     },
     {
-      "path": "/Player Characters/Example Character.player-character.json",
+      "path": "/Characters/Player Characters/The Blacksmith.player-character.json",
       "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileType": "player-character",
-      "baseVersionId": "01a04a29-da60-7364-b29f-3869a500ceb6",
-      "baseHash": "352e7e00-b7d1-fb70-d244-bc67e9a5550b",
+      "baseVersionId": "01a05a77-b3cb-74c8-b7ae-1879dfdb6492",
+      "baseHash": "fef3eac4-29ad-ade6-445b-9d1cb4428045",
       "source": "project"
     },
     {
-      "path": "/Non-Player Characters/Méabh.non-player-character.json",
+      "path": "/Characters/Non-Player Characters/Méabh.non-player-character.json",
       "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileType": "non-player-character",
-      "baseVersionId": "01a04a29-de25-7364-8d0f-a1dc8b8fa29c",
-      "baseHash": "8adecdd0-94c7-b32b-1f45-f3e7e9baa89d",
+      "baseVersionId": "01a04b9a-0ea7-76a0-a526-8c53cf83e78b",
+      "baseHash": "d10bc50e-2fc2-a418-ef8c-2fc09b0ac389",
       "source": "project"
     },
     {
@@ -1168,15 +1168,81 @@
       "baseVersionId": "01a04a3f-799d-75e8-8ea0-a273bac83a50",
       "baseHash": "654af17c-c215-0e0a-5b3e-78e8ea18d861",
       "source": "project"
+    },
+    {
+      "path": "/Grace/Queen's Graces.grace.json",
+      "fileId": "01a05997-0e85-7a1c-9523-c8f05d841089",
+      "referenceId": "01a05997-0e85-7aac-858f-000eda10975a",
+      "fileType": "grace",
+      "baseVersionId": "01a05997-da3a-738c-9f0f-4d6e7f0a2e07",
+      "baseHash": "5a29b2a7-7799-25c4-b85f-822cb0289287",
+      "source": "project"
+    },
+    {
+      "path": "/Grace/Seelie Graces.grace.json",
+      "fileId": "01a05998-cfa6-72e0-8658-e232673f0046",
+      "referenceId": "01a05998-cfa6-7378-91e8-eb488e42d589",
+      "fileType": "grace",
+      "baseVersionId": "01a05999-a58e-7cd8-904a-2a70f798883a",
+      "baseHash": "58c6a8ec-5be2-c6c7-5c3d-fa02956b889a",
+      "source": "project"
+    },
+    {
+      "path": "/Grace/Spring Graces.grace.json",
+      "fileId": "01a05999-ead5-787c-a198-a1f0edc6a263",
+      "referenceId": "01a05999-ead5-7918-8a15-0fe4ad292cc7",
+      "fileType": "grace",
+      "baseVersionId": "01a0599a-85ea-7464-a995-2da256bf7c25",
+      "baseHash": "7a4a3f4b-30e9-aaad-bfaa-ae035b57491f",
+      "source": "project"
+    },
+    {
+      "path": "/Grace/Summer Graces.grace.json",
+      "fileId": "01a0599a-cb83-7480-a6fb-3fb57a04722e",
+      "referenceId": "01a0599a-cb83-7520-b876-1dc50bd779af",
+      "fileType": "grace",
+      "baseVersionId": "01a0599b-696a-782c-a470-adf080c5549a",
+      "baseHash": "351c6ccd-56db-c88e-7a30-dd07e1df32cf",
+      "source": "project"
+    },
+    {
+      "path": "/Grace/Autumn Graces.grace.json",
+      "fileId": "01a0599b-90c4-7b5c-ae73-bdcf06edc669",
+      "referenceId": "01a0599b-90c4-7bf4-b6be-8cfb1d5df43d",
+      "fileType": "grace",
+      "baseVersionId": "01a0599c-0b36-7370-924b-2d1dc0c745cd",
+      "baseHash": "475badcb-4916-a9c5-9205-288c11808ae8",
+      "source": "project"
+    },
+    {
+      "path": "/Grace/Winter Graces.grace.json",
+      "fileId": "01a0599c-3eae-78d8-a80a-df2b561cd047",
+      "referenceId": "01a0599c-3eae-7978-be28-48c2f676cff9",
+      "fileType": "grace",
+      "baseVersionId": "01a0599c-ae4d-7368-bd09-c7ef6bc8ac16",
+      "baseHash": "b0744525-a9d6-ea8a-9e2e-e8df4bbf358d",
+      "source": "project"
+    },
+    {
+      "path": "/Bargains/Morrigan's  Agreement with the Triad.bargain.json",
+      "fileId": "01a059c6-cfb6-7e2c-9d75-bc01bd0d1cc0",
+      "referenceId": "01a059c6-cfb6-7ec0-88f4-5dc85aa771f7",
+      "fileType": "bargain",
+      "baseVersionId": "01a05a18-183b-75ac-bd9a-bf2fa9185c28",
+      "baseHash": "0f7d60a8-6a32-acc2-654e-69a43fbd181e",
+      "source": "project"
+    },
+    {
+      "path": "/Bargains/Méabh's Indenture.bargain.json",
+      "fileId": "01a059ed-eb7b-743c-9634-909a239fc7f6",
+      "referenceId": "01a059ed-eb7b-74e0-8d46-79fb1c21da4b",
+      "fileType": "bargain",
+      "baseVersionId": "01a05a18-1865-733c-90b3-41c7fc026b87",
+      "baseHash": "f9e74534-36bc-9466-bb81-14b3740ba89f",
+      "source": "project"
     }
   ],
   "fileTypes": [
-    {
-      "slug": "mission",
-      "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "8f8e1680-f931-2ad4-1de3-70fa9f560f41",
-      "contentHash": "8caed3fe-69f7-3525-9dd4-49a36b99a868"
-    },
     {
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
@@ -1200,12 +1266,6 @@
       "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
       "schemaHash": "280e8fff-aa25-9cfe-5325-0773becc5278",
       "contentHash": "6992a180-2942-d80a-f084-cece42c8793a"
-    },
-    {
-      "slug": "grace",
-      "fileTypeId": "019fed6d-ab59-72fc-ab24-232764ca6432",
-      "schemaHash": "4eb16e9a-849a-0eef-77f3-150c5eb5599c",
-      "contentHash": "10e2c00c-1b77-45ec-97d3-2bafac63b8ad"
     },
     {
       "slug": "species",
@@ -1244,6 +1304,12 @@
       "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
     },
     {
+      "slug": "bargain",
+      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
+      "schemaHash": "c5a85a11-c621-30a3-51c0-5db3c6a3aa06",
+      "contentHash": "e67cbb16-a447-460e-3fe7-d80aeb9ffb5c"
+    },
+    {
       "slug": "lore-card",
       "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
       "schemaHash": "8f2ffdf8-bda6-ec61-0dca-5c69e1665d41",
@@ -1252,14 +1318,14 @@
     {
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "1a1ebbbf-e0f8-dc18-ea61-0ecab99c97a8",
-      "contentHash": "e305aaad-ab1d-be69-25e0-1412ba7e8a22"
+      "schemaHash": "467a815e-2754-a2f0-2d80-bb78254b25e1",
+      "contentHash": "bc8d3bb2-b8c2-0740-6502-a974a36ed788"
     },
     {
       "slug": "non-player-character",
       "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
       "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
-      "contentHash": "86149b70-fe21-6533-fd4d-e5eef9c90df1"
+      "contentHash": "05d99dfe-d34f-cf18-5b2d-620c88c41a4b"
     },
     {
       "slug": "change-request",
@@ -1268,17 +1334,23 @@
       "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
     },
     {
-      "slug": "bargain",
-      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
-      "schemaHash": "d7034a7c-91cb-b3c5-0955-4988f01c7c8b",
-      "contentHash": "e297dd64-02d6-a472-f7ce-4c8ebafb6448"
-    },
-    {
       "slug": "location",
       "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
       "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
       "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
+    },
+    {
+      "slug": "grace",
+      "fileTypeId": "019fed6d-ab59-72fc-ab24-232764ca6432",
+      "schemaHash": "c41caafc-4db2-99d7-8db4-b038e413388a",
+      "contentHash": "21dc85aa-2c3b-a381-b492-62b7d0535fe7"
+    },
+    {
+      "slug": "mission",
+      "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
+      "schemaHash": "8f8e1680-f931-2ad4-1de3-70fa9f560f41",
+      "contentHash": "8caed3fe-69f7-3525-9dd4-49a36b99a868"
     }
   ],
-  "projectSettingsHash": "c6beb0a2-16fc-c0aa-045c-d107f1b6cd6e"
+  "projectSettingsHash": "d1497d08-25c4-a32f-08ff-fe18a09bb161"
 }
