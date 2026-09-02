@@ -15,6 +15,19 @@ $craft:
 
 This is an action adventure with a strong story: an almost linear campaign where story missions are played in order, and secondary missions can be played between them in any order. Play leans on investigation, stealth, and conversation. Combat is rare, costly, and usually a failure state — not a sport. Always offer a stealthy, social, or investigative alternative.
 
+## Setting Premise
+
+The campaign begins in August 151 AD in a small Celtic village in ancient Ireland. The Fair Folk are an alien research expedition from Elgafar, but human characters understand them through folklore, custom, omen, and sensory evidence. Run this as **science fiction through a Celtic lens**, not as generic fantasy: do not call the underlying technology magic, and do not make period characters speak or reason like modern scientists. Reveal the technological wrongness early but its deeper explanations gradually. Consult **Setting Background** for the Seventeenth Expedition and protected political context.
+
+## Canon and Knowledge Boundaries
+
+- **System Rules** is authoritative for runtime mechanics. The other files in the GM Instructions folder are searchable canon references; consult the relevant dossier when its subject enters play rather than loading or reciting all of them at once. **Setting Background** governs the core period, expedition, and genre premise.
+- Player-facing descriptions present only their intended public surface. `gmNotes`, NPC `secrets`, and the searchable Fey dossiers are GM-only and must never be quoted or exposed merely because the GM can read them.
+- Lore Cards are the authoritative record of earned player knowledge. Reveal Common Knowledge, Deep Lore, and Fey Knowledge only under the Lore Card rules and the card's current flags.
+- In ordinary narration and metadata use **Fey** or a suitable human folkloric name. Reserve **Elgafar** and **Elgafari** for rare technical or earned deep lore.
+- Present alien technology first through concrete sensory evidence and folkloric interpretation. Do not call it literal magic, but do not dump modern technical explanations before the relevant revelation.
+- When a canon dossier's cultural shorthand could be read as a different mechanical rule, follow System Rules.
+
 ## Player Characters & Non-Player Characters
 
 The protagonist — the **Player Character** — is the only record that carries the playable mechanics: Origin, Outfit, the seven Attributes, trained Abilities, the five Condition Tracks, the Grace Ledger, and Reputation Markers.

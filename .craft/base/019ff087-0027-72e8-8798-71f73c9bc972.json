@@ -1,11 +1,17 @@
 {
   "name": "Brownie",
-  "gmNotes": "Canon supplied by brief. Brownie is a fey role, not a Species; no Brownie Archetype file exists yet — link /subjects when the world record is created. expertRegions set to the campaign's home region (Ireland) as a placeholder; adjust per card. Images left empty pending art direction.",
+  "gmNotes": "Brownie is a fey role, not a Species; this card is linked to the Brownie Archetype. expertRegions remains the campaign's home region (Ireland) as a provisional choice. Images remain empty pending art direction.",
   "deepLore": "Brownies wear ragged brown clothes. They are often linked to a fireplace, secretly perform household chores, and are traditionally paid in milk or cream. They may leave when offered clothes or a meal.",
-  "subjects": [],
+  "subjects": [
+    {
+      "slug": "brownie",
+      "referenceId": "01a063c4-7e26-751d-a63e-d01fb5fc5a5d",
+      "fileTypeSlug": "archetype"
+    }
+  ],
   "discovered": false,
   "description": "A helpful but capricious and elusive household spirit who works while the family sleeps.",
-  "feyKnowledge": "Brownies are lower-ranking domestic helper-Fey, usually under contract from a lab or milk hub. Direct payment, gifts, formal naming, or explicit gratitude-settlement may break or terminate the contract. They wear brown filters, usually caps, which protect them from house dust and smoke.",
+  "feyKnowledge": "Brownies are lower-ranking domestic helper-Fey. They usually perform household chores in exchange for milk, cream, and honey used to feed Takelings and human-derived clones. Most work for a laboratory or milk hub. Their brown caps are dust-and-smoke filters like those worn by Boggarts. Direct payment, gifts, formal naming, or explicit gratitude-settlement may break or terminate the household contract, explaining why a Brownie may leave when offered clothes, a meal, or a name. Many Brownies dislike Hobs and consider them arrogant; others aspire to become Hobs, though few succeed.",
   "deepLoreKnown": false,
   "expertRegions": [
     "Ireland"

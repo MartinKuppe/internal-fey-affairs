@@ -3,7 +3,7 @@
     "referenceId": "019fed6d-de2b-74dc-b3bf-3eeaf89d7333"
   },
   "name": "Phantom Graces",
-  "notes": "Sample/demo currency definition — adjust or remove for the campaign.",
+  "issuer": "The Morrigan, Phantom Queen",
   "symbol": "🍀",
-  "description": "Graces issues by the Morrigan, aka the Phantom Queen"
+  "description": "Clovers, issued by the Morrigan's Phantom Court."
 }

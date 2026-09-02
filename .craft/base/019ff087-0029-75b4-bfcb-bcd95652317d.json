@@ -1,8 +1,14 @@
 {
   "name": "Hob",
-  "gmNotes": "Canon supplied by brief. Hob is a fey role, not a Species; no Hob Archetype file exists yet — link /subjects when the world record is created. expertRegions set to the campaign's home region (Ireland) as a placeholder; adjust per card. Images left empty pending art direction.",
+  "gmNotes": "Hob is a fey role, not a Species; this card is linked to the Hob Archetype. expertRegions remains the campaign's home region (Ireland) as a provisional choice. Images remain empty pending art direction.",
   "deepLore": "Hobs or Hobgoblins are rougher than ordinary Brownies and more fond of practical jokes. They are more closely associated with outdoor farm chores.",
-  "subjects": [],
+  "subjects": [
+    {
+      "slug": "hob",
+      "referenceId": "01a063c4-7e26-751d-a63e-d499d1583a7f",
+      "fileTypeSlug": "archetype"
+    }
+  ],
   "discovered": false,
   "description": "A rougher household spirit, fond of practical jokes, tied to outdoor farm work.",
   "feyKnowledge": "Hobs are semi-independent, middle-status rural maintenance contractors. Unlike Brownies, they are independent, sell the goods they receive to labs or other facilities, and have no contract clauses preventing them from receiving gifts. They may nevertheless be personally offended by handouts. Like Brownies, they usually wear brown filter caps. Some occasionally run behavioural experiments on humans for laboratories, which humans may interpret as practical jokes. They are not full-time researchers like Boggarts.",

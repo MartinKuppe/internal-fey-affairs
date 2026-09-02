@@ -3,7 +3,7 @@
     "referenceId": "019fedb8-9e94-70e8-9b78-76e8d1091646"
   },
   "name": "Lepracaun",
-  "gmNotes": "A Lepracaun is a Grace broker or related administrative role — not a biological species. When a Lepracaun exchange moves value between two currencies, record two Grace ledger entries: a negative amount in the currency given and a positive amount in the currency received, on the same day, with the same reason naming the rate. The archetype grants no automatic abilities.",
+  "gmNotes": "A Lepracaun is a Grace broker or related administrative role — not a biological species. When an exchange moves value between currencies, record two Grace Ledger entries: a negative amount in the currency given and a positive amount in the currency received, on the same day, with the same reason naming the rate. Wealthy Lepracauns may own expensive four-emitter cloaking glamour; leg-mounted emitters are unreliable. A broker who knowingly offers unusable glamour-gold is committing deliberate fraud rather than an innocent category error. The Archetype grants no automatic abilities; consult the searchable Grace and Fey technology dossiers for detail.",
   "category": "fey-role",
   "description": "A fairy who trades in favors and keeps the books of the Otherworld — who owes what, which debt is paid, and which promise was never kept. Lepracauns are brokers and administrators of the fairy economy, not the mischief-makers of the stories."
 }

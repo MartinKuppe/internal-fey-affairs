@@ -1,8 +1,14 @@
 {
   "name": "Boggart",
-  "gmNotes": "Canon supplied by brief. Boggart is a fey role, not a Species; no Boggart Archetype file exists yet — link /subjects when the world record is created. expertRegions set to the campaign's home region (Ireland) as a placeholder; adjust per card. Images left empty pending art direction.",
+  "gmNotes": "Boggart is a fey role, not a Species; this card is linked to the Boggart Archetype. expertRegions remains the campaign's home region (Ireland) as a provisional choice. Images remain empty pending art direction.",
   "deepLore": "Boggarts may hide things, slam doors, curdle milk, and terrify livestock. They are nearly impossible to remove once they take over a home. Some say Boggarts are disgruntled Brownies or Hobs who were offended, neglected, or mistreated by the household.",
-  "subjects": [],
+  "subjects": [
+    {
+      "slug": "boggart",
+      "referenceId": "01a063c4-7e25-76b7-ba74-5a48ef8d4ae8",
+      "fileTypeSlug": "archetype"
+    }
+  ],
   "discovered": false,
   "description": "A mischievous household spirit with a talent for practical jokes.",
   "feyKnowledge": "Boggarts are domestic researchers who wear brown filters like Hobs and Brownies. They do not work for humans but observe them and run behavioural experiments on them, which humans often interpret as pranks, mischief, or hauntings. Most are under contract with a nearby laboratory.",

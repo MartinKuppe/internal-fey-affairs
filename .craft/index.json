@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-02T19:18:07.561Z",
+  "syncedAt": "2026-09-02T21:25:03.335Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -80,6 +80,18 @@
     {
       "path": "/Locations",
       "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
+    },
+    {
+      "path": "/Non-Player Characters",
+      "folderId": "01a063c4-7eef-7678-adca-171806d6f9ff"
+    },
+    {
+      "path": "/Player Characters",
+      "folderId": "01a063c4-7ef2-7bc4-a3e8-27b1ccee6293"
+    },
+    {
+      "path": "/Locations/Portal Hub  H2",
+      "folderId": "01a063c4-7ef7-7ba8-86de-e8babad4f898"
     }
   ],
   "files": [
@@ -114,8 +126,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a04a29-dd9b-7be8-bbd2-ed38e87ae92c",
-      "baseHash": "fcf670b0-02fb-c3a7-75ab-bff5546f3c3c",
+      "baseVersionId": "01a063d6-f455-7464-8512-71a5f3bd0764",
+      "baseHash": "3053b7ca-3d42-158e-9b79-7d50933210f6",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -522,8 +534,8 @@
       "fileId": "019fed6d-de2b-7454-903c-61ac8391f380",
       "referenceId": "019fed6d-de2b-74dc-b3bf-3eeaf89d7333",
       "fileType": "grace",
-      "baseVersionId": "01a05998-aad0-7370-923e-df18418d39c9",
-      "baseHash": "492d9285-dc72-aba1-835d-9e3dd3b2aaa6",
+      "baseVersionId": "01a063c4-7f6d-70d0-b138-5cbca5bab275",
+      "baseHash": "4b363155-3190-2a3d-f2c9-60112739e389",
       "source": "project"
     },
     {
@@ -549,8 +561,8 @@
       "fileId": "019fedb8-9e2a-7b14-9075-d57053388f6b",
       "referenceId": "019fedb8-9e2a-7ba8-b08f-b5afa714bb05",
       "fileType": "species",
-      "baseVersionId": "019fedd1-08eb-7bc4-ad9e-71904511e400",
-      "baseHash": "74248d1d-875a-da47-0cab-cb02c80b5b6e",
+      "baseVersionId": "01a063c4-7ffe-71e8-bc6b-620acd8a87f6",
+      "baseHash": "118cbc44-14dc-3c44-816a-4156b1612cd4",
       "source": "project"
     },
     {
@@ -594,8 +606,8 @@
       "fileId": "019fedb8-9e94-704c-869a-608c4f99dc16",
       "referenceId": "019fedb8-9e94-70e8-9b78-76e8d1091646",
       "fileType": "archetype",
-      "baseVersionId": "019fedcb-01b6-7980-b1dc-fccf9711fd94",
-      "baseHash": "0642994f-6c91-6a47-3c48-559153c96ea6",
+      "baseVersionId": "01a063c4-7f1b-7e14-be2c-9670cd1e97d1",
+      "baseHash": "5cabdbb4-c981-7ae8-bd69-8ffee70680e5",
       "source": "project"
     },
     {
@@ -603,8 +615,8 @@
       "fileId": "019fedb8-9ea3-74ac-b34f-58289e7f41b7",
       "referenceId": "019fedb8-9ea3-7530-bc68-2b1db9541538",
       "fileType": "archetype",
-      "baseVersionId": "019fedcb-047e-7d10-a773-412d5a0f1727",
-      "baseHash": "fb39dab7-ccd5-67b1-7f5d-25e0c3e8b74f",
+      "baseVersionId": "01a063c4-7efe-7470-8429-4a6a9a364735",
+      "baseHash": "f5b31a4a-6bd6-3508-13d1-049c9bcfab50",
       "source": "project"
     },
     {
@@ -630,8 +642,8 @@
       "fileId": "019fedb8-9ed9-777c-8425-42101c2ff4c0",
       "referenceId": "019fedb8-9eda-7824-8cc7-db5ec500fabe",
       "fileType": "archetype",
-      "baseVersionId": "019fedcb-01bb-7244-9f0a-54bf4deda8e9",
-      "baseHash": "2a2758ab-3438-c8d8-d703-1eaa2c9eb3d8",
+      "baseVersionId": "01a063c4-7f2b-7de0-880c-806b9e876144",
+      "baseHash": "9fa1ab16-9c14-f7a1-6240-b69e93694f86",
       "source": "project"
     },
     {
@@ -693,8 +705,8 @@
       "fileId": "019ff087-0027-72e8-8798-71f73c9bc972",
       "referenceId": "019ff087-0027-7350-9aa0-8af84fe8a660",
       "fileType": "lore-card",
-      "baseVersionId": "019ff08f-11d4-72a8-ac4c-537f68e3e900",
-      "baseHash": "31623745-2b5e-4b04-947f-0c6dcb9a6eff",
+      "baseVersionId": "01a063c4-7fe0-7324-b693-8c70a00f2fc8",
+      "baseHash": "637094e5-3161-ed2a-1662-4e553c9dc174",
       "source": "project"
     },
     {
@@ -702,8 +714,8 @@
       "fileId": "019ff087-0029-75b4-bfcb-bcd95652317d",
       "referenceId": "019ff087-0029-7618-abae-68368c3aa4c1",
       "fileType": "lore-card",
-      "baseVersionId": "019ff08e-b824-7090-8522-c0c92e937f92",
-      "baseHash": "6500fd18-4c02-0a9d-a507-9c4be43671d0",
+      "baseVersionId": "01a063c4-7fee-77a8-adf0-00dbeecca588",
+      "baseHash": "bdea1f17-26b1-2fb8-d7b9-db7b43622d5e",
       "source": "project"
     },
     {
@@ -711,8 +723,8 @@
       "fileId": "019ff087-003d-7b7c-9735-e57a53685083",
       "referenceId": "019ff087-003d-7bdc-a92e-3a0279a35cde",
       "fileType": "lore-card",
-      "baseVersionId": "01a001ea-39d9-7cb4-be03-281362c323ab",
-      "baseHash": "02491759-adfa-d227-293f-2d4537a34b14",
+      "baseVersionId": "01a063c4-7fc9-7860-aef3-e9c329f74963",
+      "baseHash": "1171fa63-7475-9f79-aa6d-41497ea1834a",
       "source": "project"
     },
     {
@@ -1174,8 +1186,8 @@
       "fileId": "01a05997-0e85-7a1c-9523-c8f05d841089",
       "referenceId": "01a05997-0e85-7aac-858f-000eda10975a",
       "fileType": "grace",
-      "baseVersionId": "01a05997-da3a-738c-9f0f-4d6e7f0a2e07",
-      "baseHash": "5a29b2a7-7799-25c4-b85f-822cb0289287",
+      "baseVersionId": "01a063c4-7f7f-7bd4-92be-facf044f13a8",
+      "baseHash": "5ab3c45c-f13e-9ad9-94f5-251409637dd0",
       "source": "project"
     },
     {
@@ -1183,8 +1195,8 @@
       "fileId": "01a05998-cfa6-72e0-8658-e232673f0046",
       "referenceId": "01a05998-cfa6-7378-91e8-eb488e42d589",
       "fileType": "grace",
-      "baseVersionId": "01a05999-a58e-7cd8-904a-2a70f798883a",
-      "baseHash": "58c6a8ec-5be2-c6c7-5c3d-fa02956b889a",
+      "baseVersionId": "01a063c4-7f8d-7324-a5bb-222045ad6eac",
+      "baseHash": "62315f94-f206-d2d7-5cef-125dfe3ad6c2",
       "source": "project"
     },
     {
@@ -1192,8 +1204,8 @@
       "fileId": "01a05999-ead5-787c-a198-a1f0edc6a263",
       "referenceId": "01a05999-ead5-7918-8a15-0fe4ad292cc7",
       "fileType": "grace",
-      "baseVersionId": "01a0599a-85ea-7464-a995-2da256bf7c25",
-      "baseHash": "7a4a3f4b-30e9-aaad-bfaa-ae035b57491f",
+      "baseVersionId": "01a063c4-7f9c-7a38-bae2-44f050a57fbb",
+      "baseHash": "0abf11aa-52e3-be81-cb80-c2a064b593af",
       "source": "project"
     },
     {
@@ -1201,8 +1213,8 @@
       "fileId": "01a0599a-cb83-7480-a6fb-3fb57a04722e",
       "referenceId": "01a0599a-cb83-7520-b876-1dc50bd779af",
       "fileType": "grace",
-      "baseVersionId": "01a0599b-696a-782c-a470-adf080c5549a",
-      "baseHash": "351c6ccd-56db-c88e-7a30-dd07e1df32cf",
+      "baseVersionId": "01a063c4-7faa-76dc-aa81-04e464664b8b",
+      "baseHash": "cb33f8f3-5ecb-c669-f4f9-0467ee6102e0",
       "source": "project"
     },
     {
@@ -1210,8 +1222,8 @@
       "fileId": "01a0599b-90c4-7b5c-ae73-bdcf06edc669",
       "referenceId": "01a0599b-90c4-7bf4-b6be-8cfb1d5df43d",
       "fileType": "grace",
-      "baseVersionId": "01a0599c-0b36-7370-924b-2d1dc0c745cd",
-      "baseHash": "475badcb-4916-a9c5-9205-288c11808ae8",
+      "baseVersionId": "01a063c4-7f54-787c-8e26-63d826c89874",
+      "baseHash": "64c05f43-6033-4076-ea31-b5d7509cc849",
       "source": "project"
     },
     {
@@ -1219,8 +1231,8 @@
       "fileId": "01a0599c-3eae-78d8-a80a-df2b561cd047",
       "referenceId": "01a0599c-3eae-7978-be28-48c2f676cff9",
       "fileType": "grace",
-      "baseVersionId": "01a0599c-ae4d-7368-bd09-c7ef6bc8ac16",
-      "baseHash": "b0744525-a9d6-ea8a-9e2e-e8df4bbf358d",
+      "baseVersionId": "01a063c4-7fba-7d60-ac3c-96ca1a84bb8f",
+      "baseHash": "92778b3d-1b1e-866b-a506-8cd8a4e977ee",
       "source": "project"
     },
     {
@@ -1239,6 +1251,96 @@
       "fileType": "bargain",
       "baseVersionId": "01a05a18-1865-733c-90b3-41c7fc026b87",
       "baseHash": "f9e74534-36bc-9466-bb81-14b3740ba89f",
+      "source": "project"
+    },
+    {
+      "path": "/Archetypes/Boggart.archetype.json",
+      "fileId": "01a063c4-801c-7c30-8289-30fd8242ef57",
+      "referenceId": "01a063c4-7e25-76b7-ba74-5a48ef8d4ae8",
+      "fileType": "archetype",
+      "baseVersionId": "01a063c4-8014-7e1c-a9ce-aaf61adb559e",
+      "baseHash": "df684e12-c97a-9665-54de-4cde11926ef4",
+      "source": "project"
+    },
+    {
+      "path": "/Archetypes/Brownie.archetype.json",
+      "fileId": "01a063c4-801c-7034-ae5a-52a88be34bfd",
+      "referenceId": "01a063c4-7e26-751d-a63e-d01fb5fc5a5d",
+      "fileType": "archetype",
+      "baseVersionId": "01a063c4-8014-7248-9051-22acb3dacfe4",
+      "baseHash": "7aec3191-5324-a73a-f207-b424d855d70f",
+      "source": "project"
+    },
+    {
+      "path": "/Archetypes/Hob.archetype.json",
+      "fileId": "01a063c4-801c-7218-921f-09d0124b3872",
+      "referenceId": "01a063c4-7e26-751d-a63e-d499d1583a7f",
+      "fileType": "archetype",
+      "baseVersionId": "01a063c4-8014-73d4-871f-603e11071b2b",
+      "baseHash": "6934dbd9-f329-7ad8-e39a-ae3552caa7e7",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/Basic Fey Lore Integration.change-request.md",
+      "fileId": "01a063c4-801c-73b4-a170-e5ecd5707eaa",
+      "referenceId": "01a063c4-7e26-751d-a63e-d8aacea7c6cf",
+      "fileType": "change-request",
+      "baseVersionId": "01a06402-d7aa-7650-b9c7-18247cfaf86e",
+      "baseHash": "7732cafb-67d1-b0f4-a6e2-4dbf221031cc",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Fey Architecture and Facilities.gm-instructions.md",
+      "fileId": "01a063c4-8021-7174-b139-5e8a10166980",
+      "referenceId": "01a063c4-7e26-751d-a63e-df4524c00e80",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a063c4-8015-7a04-b804-5ce40527999a",
+      "baseHash": "7714e1dd-a437-3b2e-b55b-60ef23742ec9",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Fey Cognition, Beauty and Society.gm-instructions.md",
+      "fileId": "01a063c4-8021-7478-8510-d94f14916ffb",
+      "referenceId": "01a063c4-7e26-751d-a63e-e23c53dbced4",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a063c4-8015-7db8-81e4-b65ebc956f20",
+      "baseHash": "3de28ee6-6809-c292-60ad-b0a4ef7199ea",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Fey Origins, Biology and Senses.gm-instructions.md",
+      "fileId": "01a063c4-8021-75dc-9ca2-ea2b37f656da",
+      "referenceId": "01a063c4-7e26-751d-a63e-e798bcf0ab5e",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a06402-d7c4-78b0-ad06-d0aa202cf4d5",
+      "baseHash": "d5bba682-52c5-0448-608b-e6c20ec5c7c2",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Fey Technology and Transport.gm-instructions.md",
+      "fileId": "01a063c4-8021-7708-89cf-81591e68085e",
+      "referenceId": "01a063c4-7e26-751d-a63e-eb5b1b71c25c",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a063c4-8016-7820-98f4-b9e622c66c76",
+      "baseHash": "a539ff79-8b54-98c4-c1a4-4ce625e9a240",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Grace, Language and Bargains.gm-instructions.md",
+      "fileId": "01a063c4-8022-783c-84e8-0a816c241fa7",
+      "referenceId": "01a063c4-7e26-751d-a63e-ef59da9aef0e",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a063c4-8016-7ed0-b381-3e5e8fc875fa",
+      "baseHash": "0c90f44b-d152-5b7c-a168-129606eaa8da",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Setting Background.gm-instructions.md",
+      "fileId": "01a063d6-f46e-7a98-979f-ff1decd1a8ce",
+      "referenceId": "01a063d6-7097-76fb-819e-d9312e134ce4",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a063d6-f468-7480-803e-c41ac23133f1",
+      "baseHash": "637a5236-1776-15c9-0d9a-a8f316623cfd",
       "source": "project"
     }
   ],
