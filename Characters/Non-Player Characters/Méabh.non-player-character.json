@@ -3,6 +3,7 @@
     "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729"
   },
   "name": "Méabh",
+  "description": "A beautiful red-haired young woman who resembles Niamh without sharing her uncanny perfect symmetry. She has been trained to appear innocent, vulnerable, and timid; genuine uncertainty often leaks through the practised manner. A distinctive birthmark marks the inside of her left ankle, and she favours Celtic buckles, brooches, and small Fey ornaments.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/982eee25-054a-415f-9900-82b350c379f6",
     "focalPoint": {
@@ -23,14 +24,14 @@
       "fileTypeSlug": "archetype"
     },
     {
-      "slug": "ia-agent",
-      "referenceId": "019fedb8-9eb6-7aac-bc1f-f58d902ebc3b",
-      "fileTypeSlug": "archetype"
-    },
-    {
       "slug": "leannán-sidhe",
       "referenceId": "019fedb8-9e80-7904-83f3-d6026c958c4b",
       "fileTypeSlug": "archetype"
     }
-  ]
+  ],
+  "personality": "Genuinely curious, lively, optimistic, intelligent, and observant, with a professional talent for manipulation. Her constant cheerfulness is partly maintained by suppressing fear, anger, shame, and grief. She clenches one fist when an emotion she considers ugly threatens to escape.",
+  "background": "Méabh presents herself to the player as a Takeling woman fleeing the Fey. Among other humans she can use the cover story that she came from another village and was rescued while fleeing bandits. She was raised in Fey facilities, educated in Fey science and human society, and trained extensively in music, dance, art, storytelling, seduction, and inspiration.",
+  "goals": "At first, prove herself a flawless professional Leannán and complete Morrigan's assignment. Beneath that training she wants freedom and dreams of becoming a Merrow so she can swim away from every imposed role. Her long arc is to learn that love is not earned by perfect performance and that people do not become replaceable when someone ‘better’ appears.",
+  "gmNotes": "Méabh is twenty-one and has never learned human shame around nudity. Her apparent timidity is a trained technique but can overlap with real fear. Early in the story, let curiosity and lively charm show through without making her emotionally open or healthy too soon. She regards sex as professional technique, suppresses romantic attachment as contamination, confuses beauty with goodness, and has been taught that sadness, fear, anger, and shame are ugly noise. She likes Fey music, dancing, and strawberries and dislikes pickles. She later gets along with Finn, Niamh's husband; he is not her husband.",
+  "secrets": "Méabh is the biological daughter of Conor and Quinn, abducted in infancy and replaced by Niamh. Fey midwives in the Rathwood region named and raised her under a lifelong Indenture. Morrigan purchased her assignment and sent her to manipulate the player into helping with the planned baby swap. Méabh is a trained Leannán Sidhe and is not truly escaping in The Encounter, although her fear, uncertainty, and hidden desire for freedom are real. She believes Niamh is an improved replacement, assumes her parents forgot her, and fears being replaced in turn if she fails to be the best worker or lover available."
 }

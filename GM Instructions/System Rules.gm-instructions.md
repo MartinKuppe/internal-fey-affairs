@@ -236,7 +236,7 @@ The campaign runs as a mostly linear sequence of **Story Missions**, with Side, 
 
 ### Starting the campaign
 
-Game Start launches the Mission Journal's `startingMission` directly. The starting Mission requires no selection pin. (Actual Game Start wiring and the first Mission are deferred until campaign content exists.)
+Game Start launches the Mission Journal's `startingMission` directly. The starting Mission requires no selection pin. In the current campaign, **The Encounter** is the starting Mission; initialise it from the Journal and begin at Grannie's Hut before moving to the Fairy Ring.
 
 ### Selecting a Mission
 

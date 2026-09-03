@@ -2029,7 +2029,7 @@
           "centered": false,
           "maxWidth": "full",
           "bgImageFit": null,
-          "description": "@Oracle: Put into \"Graces\" tab"
+          "description": null
         },
         "children": [
           "markers-table-2"

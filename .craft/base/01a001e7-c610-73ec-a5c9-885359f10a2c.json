@@ -1,5 +1,28 @@
 {
   "name": "Campaign Mission Journal",
-  "missions": [],
-  "description": "Authoritative campaign-wide Mission index and calendar. The master missions list is updated whenever a permanent Mission is authored; the current date and starting Mission are recorded here, not on Mission files."
+  "missions": [
+    {
+      "slug": "the-encounter",
+      "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
+      "fileTypeSlug": "mission"
+    },
+    {
+      "slug": "milk-and-cream",
+      "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
+      "fileTypeSlug": "mission"
+    },
+    {
+      "slug": "iron-and-wax",
+      "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
+      "fileTypeSlug": "mission"
+    }
+  ],
+  "description": "Authoritative campaign-wide Mission index and calendar. The master missions list is updated whenever a permanent Mission is authored; the current date and starting Mission are recorded here, not on Mission files.",
+  "currentMonth": "August",
+  "startingMission": {
+    "slug": "the-encounter",
+    "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
+    "fileTypeSlug": "mission"
+  },
+  "currentMoonPhase": "🌒"
 }

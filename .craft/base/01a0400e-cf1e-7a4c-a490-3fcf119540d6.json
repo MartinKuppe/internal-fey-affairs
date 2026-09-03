@@ -1,5 +1,9 @@
 {
   "name": "Beekeper's Workshop",
+  "type": "Workshop",
+  "description": "A beekeeper's timber work shed filled with wax, moulds, wicks, honey vessels, shelves, and the tools of candle making. By day it belongs to a widower and his new apprentice; by night, its finest work is done by someone much smaller.",
+  "atmosphere": "Warm beeswax and old wood under a silence where every dropped tool sounds enormous. Newly scattered iron nails turn the familiar workshop into a poisoned maze.",
+  "notes": "Buaic works here at night in exchange for honey. The widowed beekeeper understands the arrangement, but a new apprentice has scattered and hidden iron nails to ward off evil Fairies. Do not impose a fixed nail count; the Iron and Wax Mission uses one unique clearance tracker. The filename's existing ‘Beekeper’ spelling is preserved to avoid an unsafe out-of-band rename during content editing.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e9b2e0c9-b280-4305-aeb1-154e5436afc9"
   }

@@ -1,0 +1,131 @@
+{
+  "code": "ST-01",
+  "kind": "Story",
+  "name": "The Encounter",
+  "status": "available",
+  "gmNotes": "Opening Story Mission and cinematic campaign start. The home dialogue and goat pursuit establish the village, folklore, Niamh, and Grannie before the first consequential prompt at the Fairy Ring. Méabh is not genuinely escaping: she has been assigned by Morrigan to manipulate the player, though her uncertainty and wish for freedom are real. Coinín wants supplies for the Fey logistics chain, not personal food. Protect all three secrets.",
+  "briefing": "Return home with the firewood, check the loose horseshoe, and see what has unsettled Grannie's goat. The ordinary errand will carry you farther from the hearth than expected.",
+  "teamSize": 1,
+  "fixedDate": {
+    "month": "August",
+    "moonPhase": "🌒"
+  },
+  "objective": "Protect the stranger from the patrol and bring her somewhere safe.",
+  "debriefing": "Méabh has a place by the hearth, and the patrol has passed—but Coinín's silence now has a price. Milk, cream, and honey must be found before the bargain closes around you.",
+  "storyBeats": [
+    {
+      "key": "homecoming",
+      "title": "By the Hearth",
+      "events": "Run the opening as a short cinematic exchange. Grannie sits by the hearth with cider while Niamh finishes putting groceries in the pantry. Niamh greets the player, says Finn and the baby will be hungry, and leaves. Grannie remarks that half the village fancies Niamh, then points out her unnaturally symmetrical freckles and calls her a Changeling. She contrasts helpful Hobs and Brownies, mischievous Pookas and Boggarts, and the ominous Banshee before recalling the lights, disappearances, music, and false fox from the Fey arrival. She finally asks the player to check the strange goat, leave cream by the door, and inspect the loose horseshoe.",
+      "location": {
+        "slug": "grannys-hut",
+        "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Come home with the firewood and listen to Grannie's warning.",
+      "loreUnlocks": [
+        {
+          "card": {
+            "slug": "brownie",
+            "referenceId": "019ff087-0027-7350-9aa0-8af84fe8a660",
+            "fileTypeSlug": "lore-card"
+          },
+          "level": "Common Knowledge"
+        },
+        {
+          "card": {
+            "slug": "hob",
+            "referenceId": "019ff087-0029-7618-abae-68368c3aa4c1",
+            "fileTypeSlug": "lore-card"
+          },
+          "level": "Common Knowledge"
+        },
+        {
+          "card": {
+            "slug": "boggart",
+            "referenceId": "019ff087-003d-7bdc-a92e-3a0279a35cde",
+            "fileTypeSlug": "lore-card"
+          },
+          "level": "Common Knowledge"
+        }
+      ],
+      "gmInstructions": "Treat this as scripted prelude rather than an interrogation. Preserve the essential NPC lines and information, but keep the player's prewritten replies brief and natural. Do not confirm Niamh's true origin. Grannie's claim sounds like familiar folklore rather than a solved mystery. Do not ask the first consequential player question yet."
+    },
+    {
+      "key": "runaway-goat",
+      "title": "The Goat Bolts",
+      "events": "As the player goes outside, the goat bolts toward the woods. The loose horseshoe and pot of cream remain concrete reminders of Grannie's rules. The pursuit leads away from the village and into a glade containing a Fairy Ring.",
+      "location": {
+        "slug": "tri-mhuilinn",
+        "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Catch the goat before it disappears into the woods.",
+      "gmInstructions": "Move briskly and cinematically. Minor choices about route or approach may colour the scene, but the goat reaches the glade. Do not demand a roll unless the player introduces a genuinely risky method; no outcome may prevent the encounter."
+    },
+    {
+      "key": "ring-arrival",
+      "title": "The Woman in the Ring",
+      "events": "The Fairy Ring wakes with an eerie sound and moving blue-white light. A naked young woman materialises above it: Méabh, red-haired, frightened, and disturbingly similar to Niamh without sharing her perfect symmetry. She presents herself as a Takeling fleeing the Fey and asks the player for help. A hoverbike patrol approaches through the woods.",
+      "location": {
+        "slug": "fairy-ring",
+        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Decide whether and how to help the woman emerging from the light.",
+      "gmInstructions": "This is the first real player prompt. Give the player room to question Méabh, offer clothing, hide her, doubt her, or act otherwise. Méabh's vulnerability is practised but not wholly false. She does not confess her assignment, Indenture, Leannán training, relationship to Niamh, or connection to Morrigan. Whatever the response, the approaching patrol creates urgency rather than a dead end."
+    },
+    {
+      "key": "pooka-and-patrol",
+      "title": "Rabbit in the Bush",
+      "events": "Coinín, apparently a rabbit, pulls or directs the pair behind cover. Méabh recognises him as a Pooka and tells him to switch off his glamour so its projector signature will not show on the riders' scans. A hoverbike rider searches the glade before the patrol finally moves on.",
+      "location": {
+        "slug": "fairy-ring",
+        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Avoid the patrol's search.",
+      "gmInstructions": "Allow stealth, observation, quick lies, distractions, or Méabh and Coinín's assistance. A failed check causes Concealment loss, pursuit, suspicion, or a narrow escape—not capture that ends the story. Coinín cannot lie and must not claim selfless motives; he can behave helpfully while withholding why."
+    },
+    {
+      "key": "coinins-bargain",
+      "title": "The Price of Silence",
+      "events": "Coinín offers not to tell Morrigan that he saw Méabh and the player together if they bring him ten méisrin of cream, five olderb of milk, and two méisrin of honey. He presents the demand as a helpful, almost cute arrangement while treating every word seriously.",
+      "location": {
+        "slug": "fairy-ring",
+        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Secure Coinín's silence.",
+      "gmInstructions": "Use exact operative wording: ‘Bring me ten méisrin of cream, five olderb of milk, and two méisrin of honey, and I will not tell Morrigan that I saw either of you here.’ Establish who accepts. If the player refuses, Méabh may bind herself and the player can still choose to help; never coerce the player's assent or block the tutorial Missions. When acceptance occurs, create one Bargain file named Coinín's Silence with the goods as the accepting party's joint obligation and Coinín's continuing nondisclosure as his obligation. Add it to the Player Character's knownBargains because the player witnessed it; add it to signedBargains only if the Player Character personally assents. Do not pre-resolve either side."
+    },
+    {
+      "key": "shelter",
+      "title": "A Place by the Hearth",
+      "events": "The player returns with Méabh. He may tell the truth, use Méabh's cover story about bandits and another village, or invent something else. Grannie invites Méabh to stay regardless and outwardly accepts what she is told.",
+      "location": {
+        "slug": "grannys-hut",
+        "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Bring Méabh home and decide what to tell Grannie.",
+      "gmInstructions": "Do not punish the player by denying shelter. Grannie recognises Niamh's voice and face in Méabh and correctly infers that this is the stolen baby, but she keeps that conclusion secret in hope of a future reunion with Conor. Let the player's chosen story affect trust and tone without changing the Mission's completion."
+    }
+  ],
+  "description": "A runaway goat leads beyond the village to a circle of light and a frightened stranger who should not exist. Before the night is over, shelter and silence will both have their price.",
+  "durationSteps": 0,
+  "startLocation": {
+    "slug": "grannys-hut",
+    "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
+    "fileTypeSlug": "location"
+  },
+  "mandatoryMembers": [
+    {
+      "slug": "the-blacksmith",
+      "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
+      "fileTypeSlug": "player-character"
+    }
+  ],
+  "revealedToPlayer": true,
+  "completionEffects": "Complete when Méabh has shelter and Coinín's silence has been secured through an accepted bargain (whether accepted by the player, Méabh, or both). Set Milk and Cream and Iron and Wax to available and revealedToPlayer true, then place their runtime scene-map pins on Trí Mhuilinn. Do not advance the moon phase."
+}

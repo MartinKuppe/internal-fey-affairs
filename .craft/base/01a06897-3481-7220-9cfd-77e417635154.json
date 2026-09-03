@@ -1,0 +1,21 @@
+{
+  "name": "Coinín",
+  "goals": "Protect his own position, acquire the milk, cream, and honey needed by the local Fey supply chain, and turn his accidental knowledge of Méabh into a useful bargain without provoking Morrigan.",
+  "gmNotes": "Coinín is the first actual Fey the player meets. Play him as cute and helpful enough to invite trust while preserving his self-interest. He cannot knowingly lie, but answers narrowly, withholds context, and lets humans infer that he wants the collected food for himself. He uses rabbit glamour; switching it off removes the detectable projector signature but reveals his Fey body.",
+  "secrets": "Coinín cannot safely eat the Earth food he demands. The milk, cream, and honey feed Takelings and human-derived clones through the local Fey logistics network. He does not reveal that purpose during the opening tutorials.",
+  "species": {
+    "slug": "fey",
+    "referenceId": "019fedb8-9e2a-7ba8-b08f-b5afa714bb05",
+    "fileTypeSlug": "species"
+  },
+  "archetypes": [
+    {
+      "slug": "pooka",
+      "referenceId": "01a06897-2c82-723a-b60c-a99e4176ba89",
+      "fileTypeSlug": "archetype"
+    }
+  ],
+  "background": "Coinín is a Pooka field researcher who normally wears rabbit glamour. He knows the woods, the local patrol patterns, and the domestic collection routes around Trí Mhuilinn.",
+  "description": "A small, quick rabbit that watches people with far too much calculation and occasionally occupies space in a way no rabbit should. When the borrowed shape drops, the creature beneath is unmistakably one of the Good People. Coinín cultivates cuteness as carefully as a courtier cultivates dignity.",
+  "personality": "Cheerful, ingratiating, opportunistic, and precise. Coinín pretends to be innocent and selfless, enjoys being underestimated, and never volunteers the part of a true answer that would weaken his position."
+}

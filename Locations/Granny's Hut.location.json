@@ -21,6 +21,10 @@
     }
   },
   "name": "Granny's Hut",
+  "type": "Home",
+  "description": "A modest, well-kept village hut shared by the Blacksmith and his grandmother. The hearth, Grannie's chair, and a pantry stocked by neighbours make it feel warmer and safer than its thin walls ought to allow.",
+  "atmosphere": "Hearth smoke, wool, cider, and affectionate warnings about the Good People. Comfort is real here, but every threshold has been prepared against unwelcome visitors.",
+  "notes": "Opening location. Keep a loose iron horseshoe above the entrance and a place beside the door where cream can be left. The pantry is secretly maintained by Pantry Hob, whose existence Grannie knows and conceals. When Méabh arrives, Grannie recognises Niamh's voice and face in her but does not expose the conclusion.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/78867b67-987b-446a-86e8-130cde5681fb"
   }

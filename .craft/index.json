@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-02T21:25:03.335Z",
+  "syncedAt": "2026-09-03T18:45:33.795Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -22,20 +22,12 @@
       "folderId": "019fedb8-3e95-7770-aa32-50cdb932083b"
     },
     {
-      "path": "/Archetypes",
-      "folderId": "019fedb8-3ea2-74a4-a416-7e9b657456d0"
-    },
-    {
       "path": "/Characters",
       "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
     },
     {
       "path": "/Game Starts",
       "folderId": "019fde04-4557-7328-9fe8-610994cc13cd"
-    },
-    {
-      "path": "/GM Instructions",
-      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
     },
     {
       "path": "/Attributes",
@@ -90,8 +82,16 @@
       "folderId": "01a063c4-7ef2-7bc4-a3e8-27b1ccee6293"
     },
     {
+      "path": "/GM Instructions",
+      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
+    },
+    {
+      "path": "/Archetypes",
+      "folderId": "019fedb8-3ea2-74a4-a416-7e9b657456d0"
+    },
+    {
       "path": "/Locations/Portal Hub  H2",
-      "folderId": "01a063c4-7ef7-7ba8-86de-e8babad4f898"
+      "folderId": "01a06897-3381-7cd0-9061-1ad037e90fc7"
     }
   ],
   "files": [
@@ -126,8 +126,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a063d6-f455-7464-8512-71a5f3bd0764",
-      "baseHash": "3053b7ca-3d42-158e-9b79-7d50933210f6",
+      "baseVersionId": "01a06897-33bd-7f10-a9bd-9a6f444fcca8",
+      "baseHash": "43dc0547-36a1-e08f-42ad-4a470cdbc45a",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -858,8 +858,8 @@
       "fileId": "01a001e7-c610-73ec-a5c9-885359f10a2c",
       "referenceId": "01a001e7-c610-7464-83e0-354b85494c83",
       "fileType": "mission-journal",
-      "baseVersionId": "01a00201-a24f-733c-b6e9-eeb22e49265b",
-      "baseHash": "bc2e61d8-2d21-dc50-897e-4643105198e7",
+      "baseVersionId": "01a06897-3438-7208-8ab9-b52c3f8dd712",
+      "baseHash": "ef2e80d4-018a-24fc-886c-97aaae98350e",
       "source": "project"
     },
     {
@@ -996,8 +996,8 @@
       "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
       "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
       "fileType": "location",
-      "baseVersionId": "01a0462a-3bf2-7670-90bb-10f517e688a4",
-      "baseHash": "6ad6d2a3-b794-dd47-1315-b7225243b975",
+      "baseVersionId": "01a06897-3418-7aa8-b6e2-0d185170b3f6",
+      "baseHash": "bf133a18-4c23-3b3a-13af-a4fd10fa7c3f",
       "source": "project",
       "metadataHash": "00b6d5e5-5f64-c2a7-7060-4834bf505457"
     },
@@ -1026,8 +1026,8 @@
       "fileId": "01a03e8c-c67a-7e24-ba7f-1f488d8c8f2d",
       "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
       "fileType": "location",
-      "baseVersionId": "01a0456f-257f-7724-a98b-b25f1e1b2901",
-      "baseHash": "a3fc23c6-2669-6909-f723-4b99d950547a",
+      "baseVersionId": "01a06897-340a-7cc8-b139-73f5d57d0c8d",
+      "baseHash": "02a3a93b-c78a-6f13-940b-478eb13ea569",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1036,8 +1036,8 @@
       "fileId": "01a03e8d-3e31-7208-b6e5-7804355067ec",
       "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
       "fileType": "location",
-      "baseVersionId": "01a04554-4c1c-724c-9660-809ce221277a",
-      "baseHash": "13059ea3-4c8f-2cec-fd51-bd4d189fec28",
+      "baseVersionId": "01a06897-33f4-737c-b70a-65093bdd821a",
+      "baseHash": "4e67a51e-2ca7-91f6-c28e-796f8ed47fc8",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1066,8 +1066,8 @@
       "fileId": "01a0400e-cf1e-7a4c-a490-3fcf119540d6",
       "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
       "fileType": "location",
-      "baseVersionId": "01a04010-22f8-7f64-ab2d-959234fa729a",
-      "baseHash": "e0234f78-1dd7-0e63-a177-a9262b2c40c6",
+      "baseVersionId": "01a06897-33e0-7a9c-8b42-0c3a8397070a",
+      "baseHash": "2011ef8b-c40c-e2ae-041d-e63795a2a339",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1168,8 +1168,8 @@
       "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileType": "non-player-character",
-      "baseVersionId": "01a04b9a-0ea7-76a0-a526-8c53cf83e78b",
-      "baseHash": "d10bc50e-2fc2-a418-ef8c-2fc09b0ac389",
+      "baseVersionId": "01a06897-338f-7038-b892-b90d8261b4ec",
+      "baseHash": "fa7ef948-9dce-d6c7-e652-9f57588cc854",
       "source": "project"
     },
     {
@@ -1342,6 +1342,87 @@
       "baseVersionId": "01a063d6-f468-7480-803e-c41ac23133f1",
       "baseHash": "637a5236-1776-15c9-0d9a-a8f316623cfd",
       "source": "project"
+    },
+    {
+      "path": "/Archetypes/Pooka.archetype.json",
+      "fileId": "01a06897-3468-75ac-8d42-8b0986730575",
+      "referenceId": "01a06897-2c82-723a-b60c-a99e4176ba89",
+      "fileType": "archetype",
+      "baseVersionId": "01a06897-3461-7874-b154-c4ad73c738f8",
+      "baseHash": "e6176609-bcf9-b796-154a-041da9db023d",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/First Three Missions.change-request.md",
+      "fileId": "01a06897-3477-7a38-b14d-666cbf3a2b3e",
+      "referenceId": "01a06897-2c82-723a-b60c-ac8303fc1af5",
+      "fileType": "change-request",
+      "baseVersionId": "01a06897-3461-7c78-86d7-21e7665634f8",
+      "baseHash": "3c983826-1f8c-3d32-6b09-dea5e8bca898",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Non-Player Characters/Buaic.non-player-character.json",
+      "fileId": "01a06897-3481-7e24-abca-8c9a841944c1",
+      "referenceId": "01a06897-2c82-723a-b60c-b1068e9be03a",
+      "fileType": "non-player-character",
+      "baseVersionId": "01a06897-3461-73a4-8772-6742e3591de4",
+      "baseHash": "7ac596f2-2869-b408-0206-0c77dbea1195",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Non-Player Characters/Coinín.non-player-character.json",
+      "fileId": "01a06897-3481-7220-9cfd-77e417635154",
+      "referenceId": "01a06897-2c82-723a-b60c-b67e5f7dfe38",
+      "fileType": "non-player-character",
+      "baseVersionId": "01a06897-3461-7694-a9ea-154276a01ebe",
+      "baseHash": "3b241a5f-fa94-d0bb-2bb8-e91e9f0e1231",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Non-Player Characters/Grannie.non-player-character.json",
+      "fileId": "01a06897-3481-73e4-921e-e1fad45c1c9f",
+      "referenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1",
+      "fileType": "non-player-character",
+      "baseVersionId": "01a06897-3462-7950-ad5b-9a84c4756bfa",
+      "baseHash": "b9d2d491-28dc-6a47-fba9-f8025f0de700",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Non-Player Characters/Niamh.non-player-character.json",
+      "fileId": "01a06897-3481-7540-9981-c251c8bc3c5d",
+      "referenceId": "01a06897-2c82-723a-b60c-bf2fb4de5c9d",
+      "fileType": "non-player-character",
+      "baseVersionId": "01a06897-3462-7cf8-85e3-c701ab91d054",
+      "baseHash": "9c321811-069b-2844-5f7b-a0874bba9162",
+      "source": "project"
+    },
+    {
+      "path": "/Missions/Iron and Wax.mission.json",
+      "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
+      "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
+      "fileType": "mission",
+      "baseVersionId": "01a06897-3462-70a4-9de3-0dd61aa97769",
+      "baseHash": "78db3af8-c418-0604-3b96-8df47e4ff26e",
+      "source": "project"
+    },
+    {
+      "path": "/Missions/Milk and Cream.mission.json",
+      "fileId": "01a06897-3482-783c-8439-1c31215b801d",
+      "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
+      "fileType": "mission",
+      "baseVersionId": "01a06897-3463-7818-b7dd-f9d363adebc3",
+      "baseHash": "c8d3bb09-7d92-2140-1684-34c8d7deecd1",
+      "source": "project"
+    },
+    {
+      "path": "/Missions/The Encounter.mission.json",
+      "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
+      "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
+      "fileType": "mission",
+      "baseVersionId": "01a06897-3463-7d70-87a4-cb170b9a6acb",
+      "baseHash": "67c5e6a4-d346-c819-650e-45ef05a43776",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1358,12 +1439,6 @@
       "contentHash": "c6584cfa-dc0a-9e4b-a2f8-901752ee3430"
     },
     {
-      "slug": "gm-instructions",
-      "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
-      "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
-      "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
-    },
-    {
       "slug": "outfit",
       "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
       "schemaHash": "280e8fff-aa25-9cfe-5325-0773becc5278",
@@ -1374,12 +1449,6 @@
       "fileTypeId": "019fedb8-3e72-79c0-93b6-bcddbccbb5e4",
       "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
       "contentHash": "dbf78436-aa99-0afa-cb3e-87312435f504"
-    },
-    {
-      "slug": "archetype",
-      "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
-      "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
-      "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
     },
     {
       "slug": "ability",
@@ -1421,7 +1490,7 @@
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
       "schemaHash": "467a815e-2754-a2f0-2d80-bb78254b25e1",
-      "contentHash": "bc8d3bb2-b8c2-0740-6502-a974a36ed788"
+      "contentHash": "765cb3a8-f902-7680-a956-43455f7457cd"
     },
     {
       "slug": "non-player-character",
@@ -1452,6 +1521,18 @@
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
       "schemaHash": "8f8e1680-f931-2ad4-1de3-70fa9f560f41",
       "contentHash": "8caed3fe-69f7-3525-9dd4-49a36b99a868"
+    },
+    {
+      "slug": "gm-instructions",
+      "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
+      "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
+      "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
+    },
+    {
+      "slug": "archetype",
+      "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
+      "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
+      "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
     }
   ],
   "projectSettingsHash": "d1497d08-25c4-a32f-08ff-fe18a09bb161"

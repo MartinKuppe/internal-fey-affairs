@@ -1,0 +1,17 @@
+{
+  "$craft": {
+    "referenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1"
+  },
+  "name": "Grannie",
+  "goals": "Keep her grandson and household safe while quietly helping Méabh recover the human life stolen from her.",
+  "gmNotes": "Grannie knows an encyclopedic range of human folklore, including traditions from beyond Ireland, and can supply Deep Lore when appropriate. She knows that Fey fear iron and obey bargains but not the technical reasons. She is surprisingly current on Fey gossip because she talks privately with Pantry Hob. Keep her perceptive rather than omniscient: she recognises patterns, voices, customs, and gossip, but does not possess technical dossiers.",
+  "secrets": "Grannie knows Pantry Hob exists and discusses Fey gossip with him when nobody else is listening. When the player brings Méabh home under any cover story, Grannie recognises Niamh's voice and face in her and concludes that Méabh is the stolen baby for whom Niamh was substituted. She says nothing because she hopes Méabh can be reunited with Conor and because exposing the truth immediately could endanger everyone.",
+  "species": {
+    "slug": "human",
+    "referenceId": "019fedb8-9e29-74f4-af85-1c488a8a9b1d",
+    "fileTypeSlug": "species"
+  },
+  "background": "Grannie lives with her grandson in Trí Mhuilinn and is his principal source of Fairy lore. She witnessed the Fey's arrival when she was twenty-three: lights and strange sounds came first, followed by disappearances, music in the woods, and animals that were not animals.",
+  "description": "The Blacksmith's seventy-seven-year-old grandmother is a lovely, very short-sighted woman who spends much of her day by the hearth, knitting and remembering everything. Her clothes are warm, simple, and proper—never ragged or filthy. She delivers warnings about the Good People with the patience of someone accustomed to being ignored.",
+  "personality": "Intelligent, affectionate, observant, and rightfully cautious. Grannie disguises accurate conclusions as old superstition, letting other people dismiss her without noticing how much she knows. Her habitual warning is: “Never assume anything about the Good People.”"
+}

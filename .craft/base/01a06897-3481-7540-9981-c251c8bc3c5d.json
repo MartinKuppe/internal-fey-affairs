@@ -1,0 +1,21 @@
+{
+  "name": "Niamh",
+  "goals": "To be accepted as an ordinary woman, wife, mother, and neighbour; to keep her family safe; and to prevent anyone from turning her beauty or intelligence into proof that she does not belong.",
+  "gmNotes": "At the opening, Niamh is warm, busy, and unaware of Méabh's return. Half the village is said to fancy her; the other half whispers that she is a witch or changeling. Her matching freckles provide Granny's early clue. Niamh likes cooking, dancing, and strawberries and dislikes pickles. Do not let her hidden origin make her emotionally artificial: she is a real person whose life and relationships cannot be treated as placeholders.",
+  "secrets": "Niamh is the Changeling grown from Méabh's genetic pattern and left in Méabh's cradle. Fey technicians deliberately improved her symmetry and intelligence. She bears Méabh's distinctive ankle birthmark on both ankles. She believes Conor and Quinn are her biological parents and explains the paired marks by imagining that she once shared the womb with a lost twin. She does not know Méabh exists, does not know she was grown in an incubator, and only dimly senses that something about her is different.",
+  "species": {
+    "slug": "human",
+    "referenceId": "019fedb8-9e29-74f4-af85-1c488a8a9b1d",
+    "fileTypeSlug": "species"
+  },
+  "archetypes": [
+    {
+      "slug": "changeling",
+      "referenceId": "019fedb8-9e72-7c1c-a0b4-04fae5441a36",
+      "fileTypeSlug": "archetype"
+    }
+  ],
+  "background": "Niamh is twenty-one, the daughter of Conor and the late Quinn as far as she knows. She married Finn, helps manage his inn and accounts, and is the young mother of Rory. Some villagers call her the village beauty; others distrust the faint wrongness in her perfect symmetry.",
+  "description": "A striking red-haired young woman whose freckles, gestures, and features are almost uncannily symmetrical. She dresses simply but tastefully, favours fine Celtic buckles and brooches, and carries herself like someone determined to be regarded as perfectly ordinary. She helps her husband Finn run the village inn while caring for their infant son, Rory.",
+  "personality": "Exceptionally intelligent, open, honest, and friendly. She is usually capable and composed, but becomes furious when someone threatens the ordinary identity she has worked hard to establish. She loves through acts of service and sometimes makes perfectly symmetrical gestures or holds a cup with both hands."
+}
