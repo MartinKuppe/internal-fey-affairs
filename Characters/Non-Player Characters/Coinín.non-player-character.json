@@ -4,6 +4,10 @@
   },
   "name": "Coinín",
   "goals": "Protect his own position, acquire the milk, cream, and honey needed by the local Fey supply chain, and turn his accidental knowledge of Méabh into a useful bargain without provoking Morrigan.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/d4b62617-4d78-4c17-b782-d93a13d6833a",
+    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b405de87-5c7f-4584-9bd1-c3c7a129ad90"
+  },
   "gmNotes": "Coinín is the first actual Fey the player meets. Play him as cute and helpful enough to invite trust while preserving his self-interest. He cannot knowingly lie, but answers narrowly, withholds context, and lets humans infer that he wants the collected food for himself. He uses rabbit glamour; switching it off removes the detectable projector signature but reveals his Fey body.",
   "secrets": "Coinín cannot safely eat the Earth food he demands. The milk, cream, and honey feed Takelings and human-derived clones through the local Fey logistics network. He does not reveal that purpose during the opening tutorials.",
   "species": {

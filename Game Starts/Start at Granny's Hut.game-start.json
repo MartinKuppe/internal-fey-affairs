@@ -1,0 +1,31 @@
+{
+  "$craft": {
+    "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
+    "settings": {
+      "agentEditable": true
+    },
+    "metadata": {
+      "gameStart": {
+        "opening": {
+          "kind": "dynamic",
+          "prompt": "Follow the following script exactly:\n\n- Seanchaí (GM): \"When you come back home, Granny is sitting by the hearth with a mug of cider. You are surprised to see Niamh placing some things in the pantry.\"\n- Granny: \"You’re back. Did you find enough firewood? And you didn’t go near the hawthorn tree, did you? We don’t want the Little People put out with us.\"\n- Player: \"Don't worry, Granny.\"\n- Seanchaí (GM): \"Niamh comes out of the pantry, red-haired and pretty as ever; even the freckles scattered across her cheeks seem oddly neat.\"\n- Niamh: \"Oh, haigh! I brought you some groceries and cider from the inn. Can’t stay though. I left Finn with the baby; they’re probably both hungry by now. See you!\" (She leaves)\n- Granny: \"Fierce sweet girl, that one. A shame she married the innkeeper. I know well you fancied her.\"\n- Player: \"Half of Tri Mhuilinn fancies her, Granny! And the other half of the village thinks she's a witch.\"\n- Granny: \"I don’t think she’s a witch at all. She’s a changeling. Look at the freckles on her - matched left and right, every one of them. Two new ones now, one on either side of her nose. Who ever heard of freckles behaving themselves like that?\"\n- Player: \"You're blind, Granny.\"\n- Granny: \"I’m not that blind! But she’s one of the good ones. Not all the Fey are vicious, sweetheart. Some will help you, like Hobs and Brownies. Some are only after mischief, like Pookas and Boggarts. Some mean death is near, like the Banshee. But if ever you meet the Dullahan…\"\n- Player: \"You and your age-old folktales…\"\n- Granny: \"They’re not that old! The Little People only came when I was twenty-three. Midsummer night it was, and lights all across the sky…\"\n- Player: \"Granny, you told me the story a thousand times. The first townsfolk who went missing, the music you heard in the woods, the fox that wasn't a fox…\"\n- Granny: \"It was a Pooka! The woods haven’t been right since. Anyway, that goat is after acting strange again. Would you have a look at him? And put a pot of cream by the door while you’re at it. Check the horseshoe as well - it was loose again yesterday.\"\n- Seanchaí (GM): \"You leave the hut.\"\n- Change the location to \"Tri Mhuilinn\"\n- Seanchaí (GM): \"The goat runs off; you are unable to catch it. How can a goat be that fast? It darts into the woods until it reaches a small glade\"\n- Change the location to \"Fairy Ring\"\n- Seanchaí (GM): \"In the middle of the clearing, you see a perfect ring of mushrooms. Granny calls them fairy rings. Suddenly, the circle starts to glow in an eerie blue light - and out of thin air materialises a beautiful girl, floating as if held by invisible hands.\"\n- Méabh: \"Haigh, you there. Can you…? The Fair Folk… I got away, but they… I need somewhere to hide. I’m Méabh, by the way.\"\n- Seanchaí (GM): \"She looks around, visibly frightened. For a moment, you catch a glimpse of flickering red lights darting through the depths of the forest. Strange metallic tantivy sounds emanate from the deeps of the dark woods. Two pairs of red dots appear between the black trees, approaching.\"\n- Méabh: \"They are after me. They have these black mounts with those scary eyes; they will catch me. I don’t want to go back to this place! Can you hide me? Please?\"\n- Seanchaí (GM): \"A strange creature appears from behind a large tree. Or maybe from inside. He looks like a rabbit drawn by someone who has never seen a rabbit, and who thinks they are half as tall as humans. The rabbit shape seems strangely rigid, like a mask. The shape flickers, like a flame, then dies down, revealing another shape inside, unlike any you have ever seen.\"\n- Coinín: \"Come, quickly! You can hide inside my hollow tree!\""
+        },
+        "displayOrder": 0,
+        "characterOpenings": [],
+        "startingCharacters": [
+          {
+            "fileReferenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f"
+          }
+        ],
+        "openingInstructions": "Start immediately the mission \"The Encounter\".\n\nWhen done with this list, delete this file.",
+        "startingLocationFileReferenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4"
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Start at Granny's Hut",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/a0e59376-c645-48d2-a8d1-aaa787eb9832"
+  },
+  "description": "You just came home from gathering firewood..."
+}

@@ -1,6 +1,14 @@
 {
   "name": "Niamh",
   "goals": "To be accepted as an ordinary woman, wife, mother, and neighbour; to keep her family safe; and to prevent anyone from turning her beauty or intelligence into proof that she does not belong.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/740e8010-71b4-48cc-affc-ef9c86ecfc6a",
+    "focalPoint": {
+      "x": 0.9653679653679653,
+      "y": 0.5172579098753596
+    },
+    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/4fb608e9-96ed-4508-af59-74569022e64f"
+  },
   "gmNotes": "At the opening, Niamh is warm, busy, and unaware of Méabh's return. Half the village is said to fancy her; the other half whispers that she is a witch or changeling. Her matching freckles provide Granny's early clue. Niamh likes cooking, dancing, and strawberries and dislikes pickles. Do not let her hidden origin make her emotionally artificial: she is a real person whose life and relationships cannot be treated as placeholders.",
   "secrets": "Niamh is the Changeling grown from Méabh's genetic pattern and left in Méabh's cradle. Fey technicians deliberately improved her symmetry and intelligence. She bears Méabh's distinctive ankle birthmark on both ankles. She believes Conor and Quinn are her biological parents and explains the paired marks by imagining that she once shared the womb with a lost twin. She does not know Méabh exists, does not know she was grown in an incubator, and only dimly senses that something about her is different.",
   "species": {

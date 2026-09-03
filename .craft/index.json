@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-03T18:45:33.795Z",
+  "syncedAt": "2026-09-03T21:14:10.133Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -54,20 +54,12 @@
       "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
     },
     {
-      "path": "/Missions",
-      "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
-    },
-    {
       "path": "/Characters/Player Characters",
       "folderId": "01a04a10-df36-73ac-946f-95f5bd2cd4d4"
     },
     {
       "path": "/Characters/Non-Player Characters",
       "folderId": "01a04a10-df3e-77f8-bfa2-d6b6526fc67e"
-    },
-    {
-      "path": "/Change Requests",
-      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     },
     {
       "path": "/Locations",
@@ -92,6 +84,14 @@
     {
       "path": "/Locations/Portal Hub  H2",
       "folderId": "01a06897-3381-7cd0-9061-1ad037e90fc7"
+    },
+    {
+      "path": "/Missions",
+      "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
+    },
+    {
+      "path": "/Change Requests",
+      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     }
   ],
   "files": [
@@ -109,17 +109,17 @@
       "metadataHash": "376f7a89-9443-289d-af45-95de7d79fe0e"
     },
     {
-      "path": "/Game Starts/Tavern Start.game-start.json",
+      "path": "/Game Starts/Start at Granny's Hut.game-start.json",
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a04a3e-3257-7528-900e-0a56d4cc48e3",
-      "baseHash": "123b2d00-ad31-c677-67a7-412ac43a8e7a",
+      "baseVersionId": "01a0690d-0747-70b0-b572-fef05bee36c6",
+      "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
         "agentEditable": true
       },
-      "metadataHash": "5b40243c-3249-283f-311e-87be49dc74c5"
+      "metadataHash": "6b1683bf-f53f-ab3c-58cc-3da5d7e6326a"
     },
     {
       "path": "/GM Instructions/System Rules.gm-instructions.md",
@@ -1168,8 +1168,8 @@
       "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileType": "non-player-character",
-      "baseVersionId": "01a06897-338f-7038-b892-b90d8261b4ec",
-      "baseHash": "fa7ef948-9dce-d6c7-e652-9f57588cc854",
+      "baseVersionId": "01a068c5-9b87-7974-9bc8-83ab36c10ff4",
+      "baseHash": "46bac282-82b1-b261-0223-ff22d5e4583c",
       "source": "project"
     },
     {
@@ -1366,8 +1366,8 @@
       "fileId": "01a06897-3481-7e24-abca-8c9a841944c1",
       "referenceId": "01a06897-2c82-723a-b60c-b1068e9be03a",
       "fileType": "non-player-character",
-      "baseVersionId": "01a06897-3461-73a4-8772-6742e3591de4",
-      "baseHash": "7ac596f2-2869-b408-0206-0c77dbea1195",
+      "baseVersionId": "01a068c5-29a3-7ac8-bd9c-ce7f20423397",
+      "baseHash": "8abbfb73-d124-0e5b-fe27-19234c56e9fc",
       "source": "project"
     },
     {
@@ -1375,8 +1375,8 @@
       "fileId": "01a06897-3481-7220-9cfd-77e417635154",
       "referenceId": "01a06897-2c82-723a-b60c-b67e5f7dfe38",
       "fileType": "non-player-character",
-      "baseVersionId": "01a06897-3461-7694-a9ea-154276a01ebe",
-      "baseHash": "3b241a5f-fa94-d0bb-2bb8-e91e9f0e1231",
+      "baseVersionId": "01a068c5-6444-7464-97fd-f62e6aaa8fd6",
+      "baseHash": "d44d7034-683a-9933-a0c8-f53da772c11d",
       "source": "project"
     },
     {
@@ -1384,8 +1384,8 @@
       "fileId": "01a06897-3481-73e4-921e-e1fad45c1c9f",
       "referenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1",
       "fileType": "non-player-character",
-      "baseVersionId": "01a06897-3462-7950-ad5b-9a84c4756bfa",
-      "baseHash": "b9d2d491-28dc-6a47-fba9-f8025f0de700",
+      "baseVersionId": "01a068c4-e135-7c78-a64a-c40885a04078",
+      "baseHash": "bd453b5d-a93b-fb92-6418-726c5c1413eb",
       "source": "project"
     },
     {
@@ -1393,8 +1393,8 @@
       "fileId": "01a06897-3481-7540-9981-c251c8bc3c5d",
       "referenceId": "01a06897-2c82-723a-b60c-bf2fb4de5c9d",
       "fileType": "non-player-character",
-      "baseVersionId": "01a06897-3462-7cf8-85e3-c701ab91d054",
-      "baseHash": "9c321811-069b-2844-5f7b-a0874bba9162",
+      "baseVersionId": "01a068e0-7ba4-7de8-aca2-61baac270c76",
+      "baseHash": "4e9c12d1-ff57-ea8f-736f-41454bf29221",
       "source": "project"
     },
     {
@@ -1420,8 +1420,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a06897-3463-7d70-87a4-cb170b9a6acb",
-      "baseHash": "67c5e6a4-d346-c819-650e-45ef05a43776",
+      "baseVersionId": "01a068bc-cb12-780c-8573-3d76d5336091",
+      "baseHash": "63b1260c-81b8-20c1-205d-0e91f03550bd",
       "source": "project"
     }
   ],
@@ -1535,5 +1535,5 @@
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
     }
   ],
-  "projectSettingsHash": "d1497d08-25c4-a32f-08ff-fe18a09bb161"
+  "projectSettingsHash": "f0a49c37-00f7-bc10-8e96-9aae5a14d1f1"
 }
