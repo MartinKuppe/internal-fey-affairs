@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-03T21:14:10.133Z",
+  "syncedAt": "2026-09-03T22:56:46.059Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -82,6 +82,10 @@
       "folderId": "019fedb8-3ea2-74a4-a416-7e9b657456d0"
     },
     {
+      "path": "/GM Instructions/Narrative Laws",
+      "folderId": "01a0693e-dcaa-79d0-a912-8b5338171b81"
+    },
+    {
       "path": "/Locations/Portal Hub  H2",
       "folderId": "01a06897-3381-7cd0-9061-1ad037e90fc7"
     },
@@ -113,7 +117,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a0690d-0747-70b0-b572-fef05bee36c6",
+      "baseVersionId": "01a0696c-4b8b-76ec-a1c0-3c25997503ed",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -1375,8 +1379,8 @@
       "fileId": "01a06897-3481-7220-9cfd-77e417635154",
       "referenceId": "01a06897-2c82-723a-b60c-b67e5f7dfe38",
       "fileType": "non-player-character",
-      "baseVersionId": "01a068c5-6444-7464-97fd-f62e6aaa8fd6",
-      "baseHash": "d44d7034-683a-9933-a0c8-f53da772c11d",
+      "baseVersionId": "01a06963-99dc-7b18-837d-cf1e47d20bf3",
+      "baseHash": "5920eb24-3238-0688-c76e-d76480ddb4a9",
       "source": "project"
     },
     {
@@ -1420,9 +1424,48 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a068bc-cb12-780c-8573-3d76d5336091",
-      "baseHash": "63b1260c-81b8-20c1-205d-0e91f03550bd",
+      "baseVersionId": "01a06963-99b4-7d5c-84fe-593bca89f08a",
+      "baseHash": "cd7a37c5-dbc3-f013-70f9-a0f724a87447",
       "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Narrative Laws/No magic.gm-instructions.md",
+      "fileId": "01a06937-96ef-7e30-8928-30f9b6518cf0",
+      "referenceId": "01a06937-96ef-7eb4-ac34-d8f0ded8a7ce",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a06940-4872-7144-8c8c-1e7ab6772f1e",
+      "baseHash": "7c20d361-24f4-b73d-9d30-4b425f7756f5",
+      "source": "project",
+      "settings": {
+        "contextVisibility": "hidden"
+      },
+      "metadataHash": "cd67aa98-7fb8-15f9-55d6-765c46a99b8e"
+    },
+    {
+      "path": "/GM Instructions/Narrative Laws/Courtesy Language.gm-instructions.md",
+      "fileId": "01a0693f-82a4-74a8-a055-ba15a1f4482a",
+      "referenceId": "01a0693f-82a4-7528-9e81-14d01be849e8",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a0693f-f7f8-7154-a181-8be1c8698a96",
+      "baseHash": "1ff3c2c2-f612-3f7d-92ab-bb193ff00694",
+      "source": "project",
+      "settings": {
+        "contextVisibility": "hidden"
+      },
+      "metadataHash": "e1903c01-fa0f-177c-ab58-13c07033d95d"
+    },
+    {
+      "path": "/GM Instructions/Narrative Laws/Fey ethics rely on beauty.gm-instructions.md",
+      "fileId": "01a06940-9f4b-7118-8c07-4cc6908f856e",
+      "referenceId": "01a06940-9f4b-71a0-9e8d-a9bca0cdd7b4",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a06941-21aa-714c-9153-961ecc94f5ca",
+      "baseHash": "88deebba-3399-0d3d-ab14-cd6401e2b0bf",
+      "source": "project",
+      "settings": {
+        "contextVisibility": "hidden"
+      },
+      "metadataHash": "cd67aa98-7fb8-15f9-55d6-765c46a99b8e"
     }
   ],
   "fileTypes": [
@@ -1495,8 +1538,8 @@
     {
       "slug": "non-player-character",
       "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
-      "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
-      "contentHash": "05d99dfe-d34f-cf18-5b2d-620c88c41a4b"
+      "schemaHash": "bdcb6eac-755b-db78-de0d-095b90809145",
+      "contentHash": "ba79dcae-1cdd-0d39-2449-5626b225e413"
     },
     {
       "slug": "change-request",

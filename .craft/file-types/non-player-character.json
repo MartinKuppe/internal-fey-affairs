@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": null,
-  "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
+  "schemaHash": "bdcb6eac-755b-db78-de0d-095b90809145",
   "schema": {
     "type": "object",
     "required": [
@@ -126,6 +126,33 @@
         "type": "string",
         "title": "Personality",
         "format": "textarea"
+      },
+      "glamourImage": {
+        "type": "object",
+        "title": "Glamour Image",
+        "format": "image",
+        "description": "The glamoured appearance (e.g. the rabbit cutout)."
+      },
+      "glamourActive": {
+        "type": "boolean",
+        "title": "Glamour Active",
+        "description": "Whether the character is currently wearing animal-shaped glamour. Off reveals the true Fey form."
+      },
+      "trueFormImage": {
+        "type": "object",
+        "title": "True Form Image",
+        "format": "image",
+        "description": "The character's true appearance with glamour switched off."
+      },
+      "activePortrait": {
+        "type": "object",
+        "title": "Current Portrait",
+        "expression": "$self.glamourActive == true ? ({ url: ($self.glamourImage?.url ?? $self.image?.url) }) : ({ url: ($self.trueFormImage?.url ?? $self.image?.url) })",
+        "properties": {
+          "url": {
+            "type": "string"
+          }
+        }
       }
     }
   },
@@ -192,7 +219,7 @@
             "$state": "/name"
           },
           "src": {
-            "$state": "/image"
+            "$state": "/activePortrait"
           },
           "size": "full",
           "align": "left",
@@ -228,6 +255,23 @@
         },
         "children": []
       },
+      "glamour-toggle": {
+        "type": "Toggle",
+        "props": {
+          "color": null,
+          "label": "Glamour",
+          "value": {
+            "$state": "/glamourActive"
+          },
+          "onLabel": "On",
+          "variant": "switch",
+          "offLabel": "Off"
+        },
+        "visible": {
+          "$state": "/glamourImage"
+        },
+        "children": []
+      },
       "description-card": {
         "type": "Card",
         "props": {
@@ -256,6 +300,7 @@
         },
         "children": [
           "species-row",
+          "glamour-toggle",
           "stack"
         ]
       }
