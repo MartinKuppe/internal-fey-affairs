@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-03T22:56:46.059Z",
+  "syncedAt": "2026-09-04T00:20:19.993Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -1424,8 +1424,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a06963-99b4-7d5c-84fe-593bca89f08a",
-      "baseHash": "cd7a37c5-dbc3-f013-70f9-a0f724a87447",
+      "baseVersionId": "01a069b1-222c-7a1c-870c-b52b2dc02ad8",
+      "baseHash": "113bbe31-5e9c-2598-8c49-b01c83ad89cf",
       "source": "project"
     },
     {
@@ -1466,6 +1466,19 @@
         "contextVisibility": "hidden"
       },
       "metadataHash": "cd67aa98-7fb8-15f9-55d6-765c46a99b8e"
+    },
+    {
+      "path": "/GM Instructions/Narrative Laws/GM Expressions.gm-instructions.md",
+      "fileId": "01a0698a-6a0b-72a8-b648-e08145f20a17",
+      "referenceId": "01a0698a-6a0b-7340-acdb-d816d3703b08",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a0698c-6bc5-771c-b3dc-4d8843f9d741",
+      "baseHash": "b0082eb9-5fbd-a9c5-d0ab-1017b3f0e4e7",
+      "source": "project",
+      "settings": {
+        "contextVisibility": "hidden"
+      },
+      "metadataHash": "e1903c01-fa0f-177c-ab58-13c07033d95d"
     }
   ],
   "fileTypes": [
@@ -1578,5 +1591,5 @@
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
     }
   ],
-  "projectSettingsHash": "f0a49c37-00f7-bc10-8e96-9aae5a14d1f1"
+  "projectSettingsHash": "964a738a-729f-2bd9-4603-040d1934d7ad"
 }

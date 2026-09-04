@@ -1,0 +1,5 @@
+{
+  "content": "- After the player's message, show the GM's \"Thoughtful\" expression\n- After the GM narration is generated,  show the GM's \"Neutral\" expression",
+  "name": "GM Expressions",
+  "description": ""
+}
