@@ -11,7 +11,7 @@
       "appliesWhen": "Fey court, spectacle, celebration, or another social context where conspicuous Glamour is admired."
     },
     {
-      "track": "concealment",
+      "track": "cover",
       "amount": -2,
       "appliesWhen": "The visible Glamour is active and being visually inconspicuous matters."
     }

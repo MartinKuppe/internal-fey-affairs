@@ -1,0 +1,19 @@
+{
+  "$craft": {
+    "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4"
+  },
+  "name": "Heavy Black Coat",
+  "description": "A dark, enveloping coat that hides the wearer's outline but becomes tiring and soporific over time.",
+  "conditionModifiers": [
+    {
+      "track": "cover",
+      "amount": 1,
+      "appliesWhen": "The coat's dark colour and concealing cut help the wearer pass unnoticed."
+    },
+    {
+      "track": "energy",
+      "amount": -1,
+      "appliesWhen": "The coat's weight or warmth makes the wearer tired, sluggish, or drowsy."
+    }
+  ]
+}

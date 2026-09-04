@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "8568cb05-e623-8e16-8c6c-f60417a412f0",
+  "schemaHash": "bc254d61-12eb-fe43-5e14-a47e30e909da",
   "schema": {
     "type": "object",
     "required": [
@@ -88,7 +88,7 @@
       "attribute": {
         "type": "string",
         "title": "Attribute",
-        "description": "The main attribute this origin is rooted in. Starts at 3 dice at character creation.",
+        "description": "The main Attribute this Origin makes Strong (rating 2) at character creation.",
         "referencedFileTypeSlug": "attribute"
       },
       "description": {

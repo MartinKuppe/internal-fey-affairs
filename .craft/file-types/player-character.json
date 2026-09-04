@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": null,
-  "schemaHash": "467a815e-2754-a2f0-2d80-bb78254b25e1",
+  "schemaHash": "c9150bd6-9c58-4788-3a3b-e0c0881f98be",
   "schema": {
     "type": "object",
     "required": [
@@ -129,6 +129,20 @@
         "description": "This character's species — Human or Fey in ordinary project metadata. Optional player-character classification.",
         "referencedFileTypeSlug": "species"
       },
+      "weakness": {
+        "enum": [
+          "Short-Winded",
+          "All Thumbs",
+          "Muddle-Headed",
+          "Poor Judge of Character",
+          "Flat-Footed",
+          "Squint-Eyed",
+          "Open Book"
+        ],
+        "type": "string",
+        "title": "Weakness",
+        "description": "The protagonist's one chosen weakness. It sets the associated Attribute to 0: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. It must not reduce the Attribute made Strong by the protagonist's Origin."
+      },
       "abilities": {
         "type": "array",
         "items": {
@@ -149,59 +163,59 @@
       },
       "attributes": {
         "type": "object",
-        "title": "Attribute Dice",
+        "title": "Attributes",
         "properties": {
           "body": {
             "type": "number",
             "title": "Body",
-            "default": 2,
-            "maximum": 5,
-            "minimum": 1
+            "default": 1,
+            "maximum": 2,
+            "minimum": 0
           },
           "eyes": {
             "type": "number",
             "title": "Eyes",
-            "default": 2,
-            "maximum": 5,
-            "minimum": 1
+            "default": 1,
+            "maximum": 2,
+            "minimum": 0
           },
           "head": {
             "type": "number",
             "title": "Head",
-            "default": 2,
-            "maximum": 5,
-            "minimum": 1
+            "default": 1,
+            "maximum": 2,
+            "minimum": 0
           },
           "legs": {
             "type": "number",
             "title": "Legs",
-            "default": 2,
-            "maximum": 5,
-            "minimum": 1
+            "default": 1,
+            "maximum": 2,
+            "minimum": 0
           },
           "hands": {
             "type": "number",
             "title": "Hands",
-            "default": 2,
-            "maximum": 5,
-            "minimum": 1
+            "default": 1,
+            "maximum": 2,
+            "minimum": 0
           },
           "heart": {
             "type": "number",
             "title": "Heart",
-            "default": 2,
-            "maximum": 5,
-            "minimum": 1
+            "default": 1,
+            "maximum": 2,
+            "minimum": 0
           },
           "shadow": {
             "type": "number",
             "title": "Shadow",
-            "default": 2,
-            "maximum": 5,
-            "minimum": 1
+            "default": 1,
+            "maximum": 2,
+            "minimum": 0
           }
         },
-        "description": "Each attribute is a dice pool of 1-5 d6s; every 4+ is a success. The protagonist's origin attribute starts at 3, the rest at 2."
+        "description": "The seven Attributes use a 0–2 scale: 0 Weak, 1 Ordinary, 2 Strong. Begin all at 1, raise the Origin's Attribute to 2, and lower the Attribute associated with the chosen Weakness to 0."
       },
       "myBargains": {
         "type": "array",
@@ -341,6 +355,108 @@
         "type": "object",
         "title": "Condition State",
         "properties": {
+          "cover": {
+            "type": "object",
+            "title": "Cover",
+            "properties": {
+              "maximum": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Maximum",
+                "default": 2,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
+              },
+              "depletion": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Depletion",
+                "default": 0,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+              }
+            }
+          },
+          "nerve": {
+            "type": "object",
+            "title": "Nerve",
+            "properties": {
+              "maximum": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Maximum",
+                "default": 2,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
+              },
+              "depletion": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Depletion",
+                "default": 0,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+              }
+            }
+          },
+          "energy": {
+            "type": "object",
+            "title": "Energy",
+            "properties": {
+              "maximum": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Maximum",
+                "default": 2,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
+              },
+              "depletion": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "type": "number",
+                "title": "Depletion",
+                "default": 0,
+                "maximum": 3,
+                "minimum": 0,
+                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+              }
+            }
+          },
           "health": {
             "type": "object",
             "title": "Health",
@@ -388,109 +504,7 @@
                 ],
                 "type": "number",
                 "title": "Maximum",
-                "default": 3,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
-              },
-              "depletion": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Depletion",
-                "default": 0,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
-              }
-            }
-          },
-          "composure": {
-            "type": "object",
-            "title": "Composure",
-            "properties": {
-              "maximum": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Maximum",
-                "default": 3,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
-              },
-              "depletion": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Depletion",
-                "default": 0,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
-              }
-            }
-          },
-          "concealment": {
-            "type": "object",
-            "title": "Concealment",
-            "properties": {
-              "maximum": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Maximum",
-                "default": 3,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
-              },
-              "depletion": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Depletion",
-                "default": 0,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
-              }
-            }
-          },
-          "wakefulness": {
-            "type": "object",
-            "title": "Wakefulness",
-            "properties": {
-              "maximum": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Maximum",
-                "default": 3,
+                "default": 2,
                 "maximum": 3,
                 "minimum": 0,
                 "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
@@ -512,7 +526,7 @@
             }
           }
         },
-        "description": "Stored state for the five Condition Tracks. Missing values compute as Maximum 3 and Depletion 0.",
+        "description": "Stored state for the five Condition Tracks. Missing Health values compute as Maximum 3 and Depletion 0; missing Energy, Nerve, Decorum, and Cover values compute as Maximum 2 and Depletion 0.",
         "additionalProperties": false
       },
       "signedBargains": {
@@ -560,8 +574,8 @@
           }
         },
         "title": "Condition Tracks",
-        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', maximum: clamp($self.conditionState?.health?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'wakefulness', name: 'Wakefulness', family: 'persistent', maximum: clamp($self.conditionState?.wakefulness?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.wakefulness?.depletion ?? 0, 0, 3) }, { key: 'composure', name: 'Composure', family: 'persistent', maximum: clamp($self.conditionState?.composure?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.composure?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', maximum: clamp($self.conditionState?.decorum?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'concealment', name: 'Concealment', family: 'scene', maximum: clamp($self.conditionState?.concealment?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.concealment?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: t.maximum, depletion: t.depletion, current: clamp(t.maximum - t.depletion, 0, 3) }))",
-        "description": "Derived Condition Tracks — five fixed rows (Health, Wakefulness, Composure, Decorum, Concealment). Current is always derived from Maximum and Depletion; it is never stored."
+        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', maximum: clamp($self.conditionState?.health?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'energy', name: 'Energy', family: 'persistent', maximum: clamp($self.conditionState?.energy?.maximum ?? 2, 0, 3), depletion: clamp($self.conditionState?.energy?.depletion ?? 0, 0, 3) }, { key: 'nerve', name: 'Nerve', family: 'persistent', maximum: clamp($self.conditionState?.nerve?.maximum ?? 2, 0, 3), depletion: clamp($self.conditionState?.nerve?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', maximum: clamp($self.conditionState?.decorum?.maximum ?? 2, 0, 3), depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'cover', name: 'Cover', family: 'scene', maximum: clamp($self.conditionState?.cover?.maximum ?? 2, 0, 3), depletion: clamp($self.conditionState?.cover?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: t.maximum, depletion: t.depletion, current: clamp(t.maximum - t.depletion, 0, 3) }))",
+        "description": "Derived Condition Tracks — five fixed rows (Health, Energy, Nerve, Decorum, Cover). Current is always derived from Maximum and Depletion; it is never stored."
       },
       "outfitModifiers": {
         "type": "array",
@@ -585,6 +599,15 @@
         "title": "Worn Outfit Condition Modifiers",
         "expression": "load($self.outfit)?.conditionModifierRows ?? []",
         "description": "Condition modifiers of the currently worn outfit."
+      },
+      "unlockedOutfits": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "outfit"
+        },
+        "title": "Unlocked Outfits",
+        "description": "Outfits the protagonist owns and may currently wear. Common Clothes are always included; character creation adds one spare outfit, and later missions or bargains may add more."
       },
       "hasOtherBargains": {
         "type": "boolean",
@@ -1884,7 +1907,7 @@
       "attributes-section-2": {
         "type": "Card",
         "props": {
-          "title": "Attribute Dice",
+          "title": "Attributes",
           "centered": false,
           "maxWidth": "full",
           "bgImageFit": null,
@@ -2063,7 +2086,7 @@
             "$state": "/conditionTracks/2/maximum"
           },
           "color": "#f964c0",
-          "label": "🪷 Composure",
+          "label": "🌹 Nerve",
           "value": {
             "$state": "/conditionTracks/2/current"
           },
@@ -2089,7 +2112,7 @@
             "$state": "/conditionTracks/4/maximum"
           },
           "color": "#6b6b6b",
-          "label": "👀 Concealment",
+          "label": "👀 Cover",
           "value": {
             "$state": "/conditionTracks/4/current"
           },
@@ -2104,7 +2127,7 @@
             "$state": "/conditionTracks/1/maximum"
           },
           "color": "#ffea00",
-          "label": "☀️ Wakefulness",
+          "label": "☀️ Energy",
           "value": {
             "$state": "/conditionTracks/1/current"
           },

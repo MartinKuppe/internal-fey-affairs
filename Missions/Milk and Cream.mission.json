@@ -37,7 +37,7 @@
         "fileTypeSlug": "location"
       },
       "objective": "Enter the village without alarming the watch.",
-      "gmInstructions": "Make the watchmen alert rather than murderous. A failed approach may cost Concealment or Composure, create suspicion, require a favour, split the route, or force a new plan. It must not prevent collection or turn the Mission into combat."
+      "gmInstructions": "Make the watchmen alert rather than murderous. A failed approach may cost Cover or Nerve, create suspicion, require a favour, split the route, or force a new plan. It must not prevent collection or turn the Mission into combat."
     },
     {
       "key": "doorstep-offerings",

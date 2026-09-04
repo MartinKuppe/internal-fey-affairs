@@ -15,14 +15,15 @@
   },
   "markers": [
     {
-      "marker": "Liar",
+      "marker": "Untrustworthy",
       "reason": "Told a lie"
     },
     {
-      "marker": "Hobo",
+      "marker": "Unsightly",
       "reason": "Wore once a coat inside out to court"
     }
   ],
+  "weakness": "Open Book",
   "abilities": [
     {
       "slug": "repairs",
@@ -41,13 +42,13 @@
     }
   ],
   "attributes": {
-    "body": 3,
-    "eyes": 2,
-    "head": 2,
-    "legs": 2,
-    "hands": 2,
-    "heart": 2,
-    "shadow": 2
+    "body": 2,
+    "eyes": 1,
+    "head": 1,
+    "legs": 1,
+    "hands": 1,
+    "heart": 1,
+    "shadow": 0
   },
   "graceLedger": [
     {
@@ -123,25 +124,25 @@
     "otherOnlyActive": false
   },
   "conditionState": {
+    "cover": {
+      "maximum": 2,
+      "depletion": 0
+    },
+    "nerve": {
+      "maximum": 2,
+      "depletion": 0
+    },
+    "energy": {
+      "maximum": 2,
+      "depletion": 0
+    },
     "health": {
       "maximum": 3,
       "depletion": 0
     },
     "decorum": {
-      "maximum": 3,
-      "depletion": 1
-    },
-    "composure": {
-      "maximum": 3,
-      "depletion": 1
-    },
-    "concealment": {
-      "maximum": 3,
-      "depletion": 2
-    },
-    "wakefulness": {
-      "maximum": 3,
-      "depletion": 1
+      "maximum": 2,
+      "depletion": 0
     }
   },
   "signedBargains": [
@@ -151,5 +152,16 @@
       "fileTypeSlug": "bargain"
     }
   ],
-  "outfit.description": "fabulous-glamour"
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "heavy-black-coat",
+      "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
+      "fileTypeSlug": "outfit"
+    }
+  ]
 }

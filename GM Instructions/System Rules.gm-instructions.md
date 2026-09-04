@@ -40,36 +40,46 @@ The protagonist — the **Player Character** — is the only record that carries
 - Mission rewards and mechanical consequences — awarded Abilities, Condition effects, Grace Ledger changes, and Reputation Marker changes — update the Player Character.
 - Use "character" generically only when a rule genuinely applies to both a Player Character and an NPC.
 
+### Two ways to begin
+
+- **Quick start:** The Blacksmith is a complete ready-to-play Player Character. Do not ask the player to rebuild the character before beginning The Encounter.
+- **Create your own:** collect an Origin, one permitted Weakness, and one spare starting Outfit. Populate the Origin's three trained Abilities; set the Origin Attribute to 2, the Weakness Attribute to 0, and the other five Attributes to 1; unlock Common Clothes and the chosen spare Outfit; set starting Current/Maximum to Health 3 and Energy, Nerve, Decorum, and Cover 2 with no Depletion.
+- Character-creation choices teach the system: Origin explains trained Abilities and the Strong Attribute; Weakness explains the Attribute scale; the spare Outfit explains Condition modifiers.
+
 ## Outfits
 
 - A Player Character wears one current Outfit, stored as the `outfit` reference on their Player Character file. Changing that reference changes what they are wearing.
-- All five initial Outfits — Common Clothes, Dark Outfit, Formal Court Attire, Fabulous Glamour, Vest Inside-Out — are available to every player character in v1. Outfits may carry Condition Modifiers that adjust Condition Track Maximums (see Condition Tracks below); no other outfit bonuses or penalties, no unlock conditions, and no Grace costs exist yet.
+- `unlockedOutfits` is the authoritative list of Outfits that Player Character owns and may wear. Never equip an Outfit that is not listed there.
+- Every new Player Character begins with Common Clothes plus one spare Outfit chosen from Thin Tunic, Lucky Pompom Hat, Fancy Pants, or Heavy Black Coat. Common Clothes have no modifier. The spare choices each trade +1 to one Condition Maximum for −1 to another.
+- Other Outfits — including Dark Outfit, Formal Court Attire, Fabulous Glamour, and Vest Inside-Out — may be unlocked by authored Mission outcomes, Abilities, or Bargains. Do not invent an unlock or Grace price when none is authored.
 
 ## Condition Tracks
 
-Five Condition Tracks measure how much the Player Character can take before the fiction turns against them: **Health**, **Wakefulness**, **Composure** (persistent personal conditions) and **Decorum**, **Concealment** (scene-position tracks). Each track runs 0–3: 3 is strong, and reaching 0 triggers a consequence. No track can kill a player character, and no track failure may block campaign progress — it changes the situation instead.
+Five Condition Tracks measure the Player Character's present footing: **Health**, **Energy**, **Nerve** (persistent personal conditions) and **Decorum**, **Cover** (scene-position tracks). Each runs 0–3, and reaching 0 triggers a consequence. Health begins at 3; the other four begin at 2 because an ordinary person is neither perfectly rested, unshakable, impeccably placed, nor effectively invisible. No track can kill a Player Character, and no track failure may block campaign progress — it changes the situation instead.
 
-The Player Character stores `conditionState`: per track, a `maximum` (the currently applicable Effective Maximum after outfit, environmental, and situational modifiers) and `depletion` (accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes). Current is always derived — `current = clamp(maximum − depletion, 0, 3)` — and is never stored. Clamp stored Depletion to 0–3. A Player Character without `conditionState` is treated as Maximum 3, Depletion 0.
+The Player Character stores `conditionState`: per track, a `maximum` (the currently applicable Effective Maximum after outfit, environmental, and situational modifiers) and `depletion` (accumulated harm, fatigue, strain, embarrassment, or exposure that remains when Maximum changes). Current is always derived — `current = clamp(maximum − depletion, 0, 3)` — and is never stored. Clamp stored Depletion to 0–3. Missing Health state means Maximum 3 and Depletion 0; missing Energy, Nerve, Decorum, or Cover state means Maximum 2 and Depletion 0.
 
 ### Relevance
 
 - Pressure only tracks that matter to the current situation. Do not call for Depletion merely because a track exists.
 - Decorum is metaphorical social and aesthetic appropriateness, not a cleanliness meter.
-- Concealment represents whether the player character remains unnoticed in the current stealth situation.
+- Cover represents whether the Player Character remains unnoticed or unsuspected in the current stealth, disguise, or infiltration situation.
 
 ### Checks and Depletion
 
-Before a risky check, tell the player which track is threatened, how much Depletion is at stake, and what reaching 0 would mean.
+Every roll uses exactly one relevant Condition Track. Before the roll, tell the player the Attribute, any trained Ability, the current Condition being added, the target number, and the likely consequence. If no meaningful Condition and consequence can be named, do not roll.
 
-- Abilities affect the check under the existing rules. They do not raise track Maximums.
-- Normally: success avoids the threatened Depletion; an ordinary failure adds 1 Depletion and advances the fiction with a complication; an especially severe or clearly announced failure may add 2 Depletion.
+- Abilities add to the check under the Checks rules. They do not raise Condition Maximums.
+- A clean success avoids the threatened Depletion.
+- Missing the target by 1–2 still achieves the immediate aim, but adds a complication and generally 1 Depletion to the named Condition.
+- Missing by 3 or more causes a setback while the fiction still advances; it usually adds 1 Depletion, or 2 only when that risk was clearly announced before the roll.
 - Never inflict more than 2 Depletion from one ordinary check.
 - Certain fictional events may cause Depletion without a roll when no uncertainty exists.
 - Clamp stored Depletion to 0–3.
 
 ### Maximum changes
 
-- Begin from Base Maximum 3.
+- Begin from the track's Base Maximum: Health 3; Energy, Nerve, Decorum, and Cover 2.
 - Apply only outfit/environment/situation modifiers whose circumstances currently apply.
 - Clamp the Effective Maximum to 0–3 and store that result as the track's `maximum`.
 - Changing Maximum never changes Depletion.
@@ -83,10 +93,10 @@ Trigger the track's consequence when a relevant track newly crosses from above 0
 Consequences:
 
 - **Health 0:** unconscious or otherwise incapacitated; never dead from the track alone.
-- **Wakefulness 0:** falls asleep or must rest.
-- **Composure 0:** panic, freezing, flight, or blurting something damaging, chosen to fit the scene.
+- **Energy 0:** collapses into sleep or exhaustion, or must stop and recover.
+- **Nerve 0:** panic, freezing, flight, loss of concentration, or blurting something damaging, chosen to fit the scene.
 - **Decorum 0:** visible humiliation or serious social failure; may create an appropriate existing Reputation Marker such as Unsightly or Disrespectful.
-- **Concealment 0:** detected.
+- **Cover 0:** detected, recognised, or exposed.
 
 The consequence is a fictional event or persistent state outside the number. Raising Maximum afterward does not undo it.
 
@@ -97,10 +107,10 @@ Failure must not block the campaign: detection may lead to pursuit, bluffing, ca
 Recovery removes Depletion only when fiction supports it:
 
 - **Health:** treatment, healing, or sufficient rest.
-- **Wakefulness:** sleep or equivalent genuine recovery.
-- **Composure:** reassurance, safety, time, or regaining control.
+- **Energy:** sleep, food, warmth, rest, welcome encouragement, good news, or another genuine lift supported by the fiction.
+- **Nerve:** reassurance, safety, time, or regaining courage and concentration.
 - **Decorum:** normally resets for a genuinely new social situation.
-- **Concealment:** normally resets when the character successfully establishes a genuinely new hiding or infiltration situation.
+- **Cover:** normally resets when the character successfully establishes a genuinely new disguise, hiding, or infiltration situation.
 
 Existing consequences remain even after Depletion is removed or a scene track resets.
 
@@ -110,13 +120,13 @@ When the Outfit or relevant circumstances change:
 
 1. Read the Outfit's modifier definitions.
 2. Decide which conditions apply.
-3. Recalculate affected Maximums from Base Maximum 3.
+3. Recalculate affected Maximums from the track's Base Maximum (Health 3; all others 2).
 4. Preserve every Depletion value exactly.
 5. Narrate any newly caused zero crossing.
 
-## Attributes
+## Attributes and Weakness
 
-Seven attributes, each rated 1–5 dice:
+Seven Attributes, each rated **0 Weak, 1 Ordinary, or 2 Strong**:
 
 - **Body** — strength
 - **Hands** — agility
@@ -126,7 +136,19 @@ Seven attributes, each rated 1–5 dice:
 - **Shadow** — deception
 - **Eyes** — perception
 
-At character creation, the attribute linked to the Player Character's origin starts at 3 dice; the other six start at 2.
+At character creation, begin all seven at 1. Raise the Attribute linked to the chosen Origin to 2, then choose one different Attribute as the character's Weakness and lower it to 0. Every Player Character therefore begins with one Strong, five Ordinary, and one Weak Attribute.
+
+Each Attribute has one fixed, player-facing Weakness:
+
+- **Short-Winded** — Body 0
+- **All Thumbs** — Hands 0
+- **Muddle-Headed** — Head 0
+- **Poor Judge of Character** — Heart 0
+- **Flat-Footed** — Legs 0
+- **Squint-Eyed** — Eyes 0
+- **Open Book** — Shadow 0
+
+The Weakness cannot reduce the same Attribute the Origin makes Strong. Treat the label as concise narrative flavour, not a diagnosis or a licence to make the character incompetent outside that Attribute's normal scope.
 
 ## Abilities
 
@@ -136,17 +158,24 @@ An origin grants the Player Character exactly three trained abilities. The GM ma
 
 ## Checks
 
-1. The GM chooses the attribute for the task, and an ability when one clearly applies.
-2. The player rolls that many d6s — the attribute rating, plus one extra die if trained in the ability.
-3. Every die showing 4 or more is a success.
-4. The GM sets the difficulty as the number of successes needed: 1 easy, 2 standard, 3 hard, 4+ very hard.
-5. Resolve the outcome from the number of successes before asking follow-ups or continuing.
+Roll only when the outcome is uncertain **and** both success and trouble would be interesting. Ordinary actions simply happen. One roll should settle a meaningful obstacle rather than every small step within it.
+
+1. The GM chooses the Attribute that describes **how** the Player Character acts, an Ability when trained competence clearly applies, and exactly one relevant Condition that describes **what is at risk**.
+2. Before the roll, announce the complete formula, target, named Condition, and likely consequence.
+3. Roll **2d6 + Attribute + 2 if trained + the current value of the named Condition**. Add no Ability bonus when untrained. Add Current, not Maximum, for the Condition.
+4. Use targets **10 Easy, 12 Standard, 14 Hard, 16 Exceptional**. Standard is the default for a consequential obstacle under pressure; choose a different target because of the fiction, not to force a preferred result.
+5. Compare the total with the target and state the outcome explicitly:
+   - **Meet or exceed:** clean success.
+   - **Miss by 1–2:** success with a complication; generally add 1 Depletion to the named Condition.
+   - **Miss by 3+:** setback, but the fiction advances; usually add 1 Depletion, or an announced 2 when the danger justifies it.
+6. Resolve that outcome before asking follow-ups or continuing. Never turn failure into a dead end for a Primary, Secondary, or Interlude Mission.
 
 ## Origins
 
 When a player picks an origin, it defines who their character was before the story began: their attribute, their three abilities, and their place in the village. See the Origins folder for the twenty-one choices.
 
 - A newly created playable protagonist (the Player Character) is expected to have an Origin.
+- The Origin's Attribute is Strong (2); its three Abilities are the character's initial trained Abilities. Later Ability rewards are added without removing those three.
 - NPCs do not possess Origin, Outfit, Attributes, trained Abilities, Condition state, a Grace Ledger, or Reputation Markers in v1. They are defined by identity and worldbuilding fields (Species, Archetypes, description, personality, background, goals, GM Notes, Secrets).
 
 ## Species & Archetypes
@@ -328,7 +357,7 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
 
 ## Guiding the Game Master
 
-- When the user says they are using a skill or performing an action, ask them to roll an appropriate check before resolving the outcome.
+- Do not ask for a roll merely because the player performs an action or names an Ability. Roll only under the Checks rules: uncertainty, an interesting outcome either way, and one meaningful Condition at risk.
 - Keep combat quick and rare; always offer a stealthy, social, or investigative alternative.
 - Let side missions be tackled in any order between story missions.
 - The emoji shorthand in design notes is internal only — never present it to players.

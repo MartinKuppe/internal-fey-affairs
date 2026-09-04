@@ -42,7 +42,7 @@
         "fileTypeSlug": "location"
       },
       "objective": "Avoid the patrol's search.",
-      "gmInstructions": "- Allow stealth, observation, quick lies, distractions, or Méabh and Coinín's assistance. \n- A failed check causes Concealment loss, pursuit, suspicion, or a narrow escape—not capture that ends the story. \n- Coinín cannot lie and must not claim selfless motives; he can behave helpfully while withholding why. \n- Méabh MUST tell Coinín to switch the glamour off.\n- While Coinín's glamour is up, voice his dialogue with expression 'glamour' (rabbit cutout); once Méabh tells him to switch it off, use 'neutral' (true-form cutout)."
+      "gmInstructions": "- Allow stealth, observation, quick lies, distractions, or Méabh and Coinín's assistance. \n- A failed check causes Cover loss, pursuit, suspicion, or a narrow escape—not capture that ends the story. \n- Coinín cannot lie and must not claim selfless motives; he can behave helpfully while withholding why. \n- Méabh MUST tell Coinín to switch the glamour off.\n- While Coinín's glamour is up, voice his dialogue with expression 'glamour' (rabbit cutout); once Méabh tells him to switch it off, use 'neutral' (true-form cutout)."
     },
     {
       "key": "coinins-bargain",

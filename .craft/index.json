@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-04T18:27:18.601Z",
+  "syncedAt": "2026-09-04T18:49:41.074Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -46,12 +46,12 @@
       "folderId": "019ff086-ac05-7560-abc2-dbf37894e083"
     },
     {
-      "path": "/Outfits",
-      "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
-    },
-    {
       "path": "/Game Starts",
       "folderId": "019fde04-4557-7328-9fe8-610994cc13cd"
+    },
+    {
+      "path": "/Outfits",
+      "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
     },
     {
       "path": "/Characters/Player Characters",
@@ -130,8 +130,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a06897-33bd-7f10-a9bd-9a6f444fcca8",
-      "baseHash": "43dc0547-36a1-e08f-42ad-4a470cdbc45a",
+      "baseVersionId": "01a06db7-c712-7074-8ebf-b7a0884ed693",
+      "baseHash": "4e7c26fc-fd48-ea3c-4264-70a0bfd63cd0",
       "source": "project",
       "settings": {
         "agentEditable": true
@@ -736,8 +736,8 @@
       "fileId": "019ff21e-b596-78a8-a929-5fc9e30da0c1",
       "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
       "fileType": "outfit",
-      "baseVersionId": "01a04b94-2dab-7e40-85e3-d4b8594e3cdf",
-      "baseHash": "78d49739-4c56-0514-2102-4432f4c73231",
+      "baseVersionId": "01a06db7-3a8c-7bb4-894e-fd6578a289de",
+      "baseHash": "43f514f9-c301-80d1-2571-670fdf5d38d5",
       "source": "project"
     },
     {
@@ -745,8 +745,8 @@
       "fileId": "019ff21e-b597-73bc-8e1b-ba5324614321",
       "referenceId": "019ff21e-b597-7460-a6d8-024f985ad1cf",
       "fileType": "outfit",
-      "baseVersionId": "019ff249-9c46-7828-b8df-604cbb889fb7",
-      "baseHash": "ab2ddea9-e6d4-7584-3e74-1effb882bfb5",
+      "baseVersionId": "01a06db7-3aa1-7254-b7ad-63d6fc0aa5e8",
+      "baseHash": "f48020c6-9362-cacb-8dba-e6ad8ca4895f",
       "source": "project"
     },
     {
@@ -763,8 +763,8 @@
       "fileId": "019ff21e-b5d0-79a8-a0f2-19799e3b5733",
       "referenceId": "019ff21e-b5d0-7a4c-9f18-f02edba8df91",
       "fileType": "outfit",
-      "baseVersionId": "019ff249-9c7a-7a50-ad53-d8d3f889937e",
-      "baseHash": "57109beb-fe3c-a4f8-ce27-866a21ea4674",
+      "baseVersionId": "01a06db7-3aac-77ec-b944-cb4226c5e53c",
+      "baseHash": "21ce9d96-e87f-9452-6c74-452ee35d75a4",
       "source": "project"
     },
     {
@@ -772,8 +772,8 @@
       "fileId": "019ff21e-b5e4-7af8-9d84-1ae3c0a78c1e",
       "referenceId": "019ff21e-b5e4-7be4-b4ab-454883c5337b",
       "fileType": "outfit",
-      "baseVersionId": "019ff249-9c89-70e4-967d-755a51de2997",
-      "baseHash": "b360591e-7cad-77a3-ee20-9e3b28f45ff3",
+      "baseVersionId": "01a06db7-3ab7-75b8-ba5f-33db9afca413",
+      "baseHash": "d7401ba0-4a44-1a03-e16e-b0025ab42e0a",
       "source": "project"
     },
     {
@@ -1163,8 +1163,8 @@
       "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileType": "player-character",
-      "baseVersionId": "01a06d6e-5057-7038-99ae-f9f86f8c24bb",
-      "baseHash": "47980874-3e6c-2ca9-b458-3460b945e52e",
+      "baseVersionId": "01a06db7-3a3d-747c-ac1e-11da855bada0",
+      "baseHash": "3984e141-501e-b440-1941-dab2d6d1e686",
       "source": "project"
     },
     {
@@ -1415,8 +1415,8 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a06897-3463-7818-b7dd-f9d363adebc3",
-      "baseHash": "c8d3bb09-7d92-2140-1684-34c8d7deecd1",
+      "baseVersionId": "01a06db7-3a6a-7b00-8fdd-b60226c7b7f5",
+      "baseHash": "655f8aa2-4fa2-84e6-ceea-96d8abd88427",
       "source": "project"
     },
     {
@@ -1424,8 +1424,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a06a2d-fea7-7c0c-97f5-335047fb2bcc",
-      "baseHash": "dc1ac65c-9609-d9d0-97d3-14c0b7d02dca",
+      "baseVersionId": "01a06db7-3a7e-7940-b344-d57d5fa2071e",
+      "baseHash": "fb96640c-50ca-b00f-40df-a3df99da1fef",
       "source": "project"
     },
     {
@@ -1479,20 +1479,77 @@
         "contextVisibility": "hidden"
       },
       "metadataHash": "e1903c01-fa0f-177c-ab58-13c07033d95d"
+    },
+    {
+      "path": "/Change Requests/Lightweight Character Creation and Checks.change-request.md",
+      "fileId": "01a06db7-3acc-7678-8a41-b73e02a981a1",
+      "referenceId": "01a06db7-3296-7028-991e-35e14f885524",
+      "fileType": "change-request",
+      "baseVersionId": "01a06dc1-1f0b-7b90-84ec-5f0ef9d62354",
+      "baseHash": "4aae0261-1e32-8829-e27b-906f14b85085",
+      "source": "project"
+    },
+    {
+      "path": "/Outfits/Fancy Pants.outfit.json",
+      "fileId": "01a06db7-3ad3-7174-b2e5-aca08bf46db5",
+      "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
+      "fileType": "outfit",
+      "baseVersionId": "01a06db7-3ac6-725c-9ce5-b180e306d881",
+      "baseHash": "d2506f0f-8cf6-4b24-4850-35bd1de8523e",
+      "source": "project"
+    },
+    {
+      "path": "/Outfits/Heavy Black Coat.outfit.json",
+      "fileId": "01a06db7-3ad3-749c-87c0-73fbe133a40d",
+      "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
+      "fileType": "outfit",
+      "baseVersionId": "01a06db7-3ac6-7698-a036-4fbc24ae3675",
+      "baseHash": "8052002b-2703-3cce-b255-41474c5a7b96",
+      "source": "project"
+    },
+    {
+      "path": "/Outfits/Lucky Pompom Hat.outfit.json",
+      "fileId": "01a06db7-3ad3-760c-9979-8add645eb96d",
+      "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5",
+      "fileType": "outfit",
+      "baseVersionId": "01a06db7-3ac7-7844-b951-476fc9063611",
+      "baseHash": "f0cd61bb-ae93-e3be-557b-14a9da6495c6",
+      "source": "project"
+    },
+    {
+      "path": "/Outfits/Thin Tunic.outfit.json",
+      "fileId": "01a06db7-3ad3-7744-9ce1-e541661ce3e1",
+      "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
+      "fileType": "outfit",
+      "baseVersionId": "01a06db7-3ac7-7ae4-b4fd-9f0c558031de",
+      "baseHash": "eb3a12f6-7fa2-fa39-1244-a06c71d49f6a",
+      "source": "project"
     }
   ],
   "fileTypes": [
+    {
+      "slug": "change-request",
+      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
+      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
+      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
+    },
+    {
+      "slug": "origin",
+      "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
+      "schemaHash": "bc254d61-12eb-fe43-5e14-a47e30e909da",
+      "contentHash": "049e8cec-4109-8997-3246-334f8bcfc565"
+    },
+    {
+      "slug": "outfit",
+      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
+      "schemaHash": "b7b135a8-3235-fe47-7391-4d5b8d7748ab",
+      "contentHash": "3dd1cac4-deec-7f0d-71ab-bb19820c870b"
+    },
     {
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
       "schemaHash": "ceb123c0-58e8-9a2d-bc81-0aee78770c31",
       "contentHash": "46676507-1172-b244-3f45-54829f272c79"
-    },
-    {
-      "slug": "outfit",
-      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
-      "schemaHash": "280e8fff-aa25-9cfe-5325-0773becc5278",
-      "contentHash": "6992a180-2942-d80a-f084-cece42c8793a"
     },
     {
       "slug": "species",
@@ -1513,12 +1570,6 @@
       "contentHash": "9cf71d00-0d57-69a3-b4e4-fa1232545956"
     },
     {
-      "slug": "origin",
-      "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
-      "schemaHash": "8568cb05-e623-8e16-8c6c-f60417a412f0",
-      "contentHash": "bd90104d-f386-0099-7900-9bb89c3f4797"
-    },
-    {
       "slug": "lore-journal",
       "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
       "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
@@ -1537,28 +1588,22 @@
       "contentHash": "e67cbb16-a447-460e-3fe7-d80aeb9ffb5c"
     },
     {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "c9150bd6-9c58-4788-3a3b-e0c0881f98be",
+      "contentHash": "f82e462b-a006-d1c1-bb7c-19bab710b5a4"
+    },
+    {
       "slug": "lore-card",
       "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
       "schemaHash": "8f2ffdf8-bda6-ec61-0dca-5c69e1665d41",
       "contentHash": "ab24578d-9a89-4523-56bd-ad4910c537d0"
     },
     {
-      "slug": "player-character",
-      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "467a815e-2754-a2f0-2d80-bb78254b25e1",
-      "contentHash": "765cb3a8-f902-7680-a956-43455f7457cd"
-    },
-    {
       "slug": "non-player-character",
       "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
       "schemaHash": "bdcb6eac-755b-db78-de0d-095b90809145",
       "contentHash": "ba79dcae-1cdd-0d39-2449-5626b225e413"
-    },
-    {
-      "slug": "change-request",
-      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
-      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
-      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
     },
     {
       "slug": "location",

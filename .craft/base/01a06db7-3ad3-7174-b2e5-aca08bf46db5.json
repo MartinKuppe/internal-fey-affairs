@@ -1,0 +1,16 @@
+{
+  "name": "Fancy Pants",
+  "description": "Conspicuously fine trousers that make a respectable impression and a memorable silhouette.",
+  "conditionModifiers": [
+    {
+      "track": "decorum",
+      "amount": 1,
+      "appliesWhen": "Fine dress helps the wearer appear respectable or appropriately important."
+    },
+    {
+      "track": "cover",
+      "amount": -1,
+      "appliesWhen": "Their conspicuous cut or decoration makes the wearer easier to notice or remember."
+    }
+  ]
+}

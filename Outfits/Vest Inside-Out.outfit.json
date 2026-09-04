@@ -6,7 +6,7 @@
   "description": "A vest deliberately worn inside-out.",
   "conditionModifiers": [
     {
-      "track": "concealment",
+      "track": "cover",
       "amount": 1,
       "appliesWhen": "Avoiding Fey observation, Glamour-based recognition, or another situation where the inside-out garment convention is relevant."
     },

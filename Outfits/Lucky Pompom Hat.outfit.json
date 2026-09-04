@@ -1,0 +1,19 @@
+{
+  "$craft": {
+    "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5"
+  },
+  "name": "Lucky Pompom Hat",
+  "description": "A cherished hat whose wearer is convinced it brings good fortune. Whether or not it does, wearing it makes difficult moments easier to face.",
+  "conditionModifiers": [
+    {
+      "track": "nerve",
+      "amount": 1,
+      "appliesWhen": "The wearer's confidence in the hat helps them face fear, pressure, or uncertainty."
+    },
+    {
+      "track": "decorum",
+      "amount": -1,
+      "appliesWhen": "The pompom hat looks improper, childish, or ridiculous in the current social setting."
+    }
+  ]
+}
