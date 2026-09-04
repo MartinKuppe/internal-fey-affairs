@@ -2,6 +2,13 @@
   "code": "ST-01",
   "kind": "Story",
   "name": "The Encounter",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/17c446d7-13bf-447c-af4e-727c92b40669",
+    "focalPoint": {
+      "x": 0.49783549783549785,
+      "y": 0.5977948226270374
+    }
+  },
   "status": "available",
   "gmNotes": "Opening Story Mission and cinematic campaign start. The home dialogue and goat pursuit establish the village, folklore, Niamh, and Grannie before the first consequential prompt at the Fairy Ring. Méabh is not genuinely escaping: she has been assigned by Morrigan to manipulate the player, though her uncertainty and wish for freedom are real. Coinín wants supplies for the Fey logistics chain, not personal food. Protect all three secrets.",
   "briefing": "Return home with the firewood, check the loose horseshoe, and see what has unsettled Grannie's goat. The ordinary errand will carry you farther from the hearth than expected.",
@@ -35,7 +42,7 @@
         "fileTypeSlug": "location"
       },
       "objective": "Avoid the patrol's search.",
-      "gmInstructions": "Allow stealth, observation, quick lies, distractions, or Méabh and Coinín's assistance. A failed check causes Concealment loss, pursuit, suspicion, or a narrow escape—not capture that ends the story. Coinín cannot lie and must not claim selfless motives; he can behave helpfully while withholding why. While Coinín's glamour is up, voice his dialogue with expression 'glamour' (rabbit cutout); once Méabh tells him to switch it off, use 'neutral' (true-form cutout)."
+      "gmInstructions": "- Allow stealth, observation, quick lies, distractions, or Méabh and Coinín's assistance. \n- A failed check causes Concealment loss, pursuit, suspicion, or a narrow escape—not capture that ends the story. \n- Coinín cannot lie and must not claim selfless motives; he can behave helpfully while withholding why. \n- Méabh MUST tell Coinín to switch the glamour off.\n- While Coinín's glamour is up, voice his dialogue with expression 'glamour' (rabbit cutout); once Méabh tells him to switch it off, use 'neutral' (true-form cutout)."
     },
     {
       "key": "coinins-bargain",

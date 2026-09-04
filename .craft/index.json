@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-04T00:20:19.993Z",
+  "syncedAt": "2026-09-04T18:27:18.601Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -26,10 +26,6 @@
       "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
     },
     {
-      "path": "/Game Starts",
-      "folderId": "019fde04-4557-7328-9fe8-610994cc13cd"
-    },
-    {
       "path": "/Attributes",
       "folderId": "019fe8d8-fcf1-7864-ad9d-7ba984ba239a"
     },
@@ -52,6 +48,10 @@
     {
       "path": "/Outfits",
       "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
+    },
+    {
+      "path": "/Game Starts",
+      "folderId": "019fde04-4557-7328-9fe8-610994cc13cd"
     },
     {
       "path": "/Characters/Player Characters",
@@ -117,7 +117,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a0696c-4b8b-76ec-a1c0-3c25997503ed",
+      "baseVersionId": "01a06a14-f67b-76b0-8ba8-1fabd827fb3e",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -1163,8 +1163,8 @@
       "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileType": "player-character",
-      "baseVersionId": "01a05a77-b3cb-74c8-b7ae-1879dfdb6492",
-      "baseHash": "fef3eac4-29ad-ade6-445b-9d1cb4428045",
+      "baseVersionId": "01a06d6e-5057-7038-99ae-f9f86f8c24bb",
+      "baseHash": "47980874-3e6c-2ca9-b458-3460b945e52e",
       "source": "project"
     },
     {
@@ -1388,8 +1388,8 @@
       "fileId": "01a06897-3481-73e4-921e-e1fad45c1c9f",
       "referenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1",
       "fileType": "non-player-character",
-      "baseVersionId": "01a068c4-e135-7c78-a64a-c40885a04078",
-      "baseHash": "bd453b5d-a93b-fb92-6418-726c5c1413eb",
+      "baseVersionId": "01a06a2f-72cd-75ac-9213-dc7ccfef3d30",
+      "baseHash": "e63b301a-97e7-6fce-d5f2-bc7bed46e52b",
       "source": "project"
     },
     {
@@ -1424,8 +1424,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a069b1-222c-7a1c-870c-b52b2dc02ad8",
-      "baseHash": "113bbe31-5e9c-2598-8c49-b01c83ad89cf",
+      "baseVersionId": "01a06a2d-fea7-7c0c-97f5-335047fb2bcc",
+      "baseHash": "dc1ac65c-9609-d9d0-97d3-14c0b7d02dca",
       "source": "project"
     },
     {
@@ -1489,12 +1489,6 @@
       "contentHash": "46676507-1172-b244-3f45-54829f272c79"
     },
     {
-      "slug": "game-start",
-      "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
-      "schemaHash": "9c088ea8-5a77-2c1e-8551-f6148844bb32",
-      "contentHash": "c6584cfa-dc0a-9e4b-a2f8-901752ee3430"
-    },
-    {
       "slug": "outfit",
       "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
       "schemaHash": "280e8fff-aa25-9cfe-5325-0773becc5278",
@@ -1529,6 +1523,12 @@
       "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
       "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
       "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
+    },
+    {
+      "slug": "game-start",
+      "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
+      "schemaHash": "9c088ea8-5a77-2c1e-8551-f6148844bb32",
+      "contentHash": "c6584cfa-dc0a-9e4b-a2f8-901752ee3430"
     },
     {
       "slug": "bargain",

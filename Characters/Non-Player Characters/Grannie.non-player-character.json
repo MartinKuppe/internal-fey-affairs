@@ -10,6 +10,43 @@
       "x": 0.9848484848484849,
       "y": 0.5325982742090125
     },
+    "variations": [
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c7d6404e-6965-4471-8f94-86e983d75ce1",
+        "name": "happy",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39a7c0dd-1d79-40c0-9234-e8f272e81478"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c7d6404e-6965-4471-8f94-86e983d75ce1",
+        "name": "neutral",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39a7c0dd-1d79-40c0-9234-e8f272e81478"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c7d6404e-6965-4471-8f94-86e983d75ce1",
+        "name": "thoughtful",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39a7c0dd-1d79-40c0-9234-e8f272e81478"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c7d6404e-6965-4471-8f94-86e983d75ce1",
+        "name": "sad",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39a7c0dd-1d79-40c0-9234-e8f272e81478"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c7d6404e-6965-4471-8f94-86e983d75ce1",
+        "name": "angry",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39a7c0dd-1d79-40c0-9234-e8f272e81478"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c7d6404e-6965-4471-8f94-86e983d75ce1",
+        "name": "surprised",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39a7c0dd-1d79-40c0-9234-e8f272e81478"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c7d6404e-6965-4471-8f94-86e983d75ce1",
+        "name": "amused",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39a7c0dd-1d79-40c0-9234-e8f272e81478"
+      }
+    ],
     "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39a7c0dd-1d79-40c0-9234-e8f272e81478"
   },
   "gmNotes": "Grannie knows an encyclopedic range of human folklore, including traditions from beyond Ireland, and can supply Deep Lore when appropriate. She knows that Fey fear iron and obey bargains but not the technical reasons. She is surprisingly current on Fey gossip because she talks privately with Pantry Hob. Keep her perceptive rather than omniscient: she recognises patterns, voices, customs, and gossip, but does not possess technical dossiers.",
