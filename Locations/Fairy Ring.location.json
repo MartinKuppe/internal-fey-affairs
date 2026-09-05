@@ -6,13 +6,47 @@
         "grid": null,
         "areas": [],
         "scale": null,
-        "points": [],
-        "background": null,
-        "aspectRatio": {
-          "width": 1,
-          "height": 1
+        "points": [
+          {
+            "id": "a68e8343-a12f-455c-98bf-80c1121ecfd4",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#eab308"
+            },
+            "position": {
+              "x": 0.06869813433170607,
+              "y": 0.8287321240556065
+            },
+            "fileReferenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa"
+          },
+          {
+            "id": "44ae1947-04d8-48f1-b348-5d665479aa14",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#eab308"
+            },
+            "position": {
+              "x": 0.5228356611897543,
+              "y": 0.28343700524902865
+            },
+            "fileReferenceId": "01a0730d-3ffd-736c-b70c-a0f17680e635"
+          }
+        ],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/59e3bf78-f884-44a9-aece-bdb66552655b",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
         },
-        "useParentMap": true,
+        "aspectRatio": {
+          "width": 1672,
+          "height": 941
+        },
+        "useParentMap": false,
         "overlayImages": [],
         "boundaryPolygon": null,
         "clusteringEnabled": true
@@ -22,10 +56,10 @@
   },
   "name": "Fairy Ring",
   "type": "Fey Site",
-  "description": "A mushroom-ringed clearing beyond Trí Mhuilinn where the ground can wake into a circular skin of moving blue and white light. When closed it is easy to mistake for an odd patch of woodland; when active, nothing about it looks natural.",
-  "atmosphere": "Still grass, damp leaves, and an eerie sound with no visible musician. The glade feels exposed even before patrol lights move between the trees.",
-  "notes": "The Encounter's arrival site. Technically this is a long-range reconstructive teleporter, but do not reveal reclamation/reconstruction mechanics during these Missions. A hoverbike patrol searches here after Méabh appears. Coinín's Hollow Tree stands at the glade's edge; its physical service tunnel emerges through the Hidden hatch near the far side of the clearing.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/17c446d7-13bf-447c-af4e-727c92b40669"
-  }
+  },
+  "notes": "Down the Rabbit-Hole's arrival site. Technically this is a long-range reconstructive teleporter, but do not reveal reclamation/reconstruction mechanics during these Missions. A hoverbike patrol searches here after Méabh appears. Coinín's Hollow Tree stands at the glade's edge; its physical service tunnel emerges through the Hidden hatch near the far side of the clearing.",
+  "atmosphere": "Still grass, damp leaves, and an eerie sound with no visible musician. The glade feels exposed even before patrol lights move between the trees.",
+  "description": "A mushroom-ringed clearing beyond Trí Mhuilinn where the ground can wake into a circular skin of moving blue and white light. When closed it is easy to mistake for an odd patch of woodland; when active, nothing about it looks natural."
 }

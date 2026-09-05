@@ -1,7 +1,7 @@
 {
   "name": "Hidden hatch",
   "type": "Concealed Exit",
-  "description": "A disguised hatch among mossy stones and roots near the far side of the Fairy Ring glade. From above it is almost indistinguishable from the forest floor.",
+  "notes": "The outer end of the Hollow Tree service tunnel. It is a mundane concealed hatch enhanced by Fey workmanship, not a Fairy Door. During Down the Rabbit-Hole it provides a narrow escape that leaves the patrol aware that someone slipped away and searching the surrounding woods. Coinín can open it quickly from inside.",
   "atmosphere": "Wet leaves, disturbed earth, and a thin draught escaping through an invisible seam.",
-  "notes": "The outer end of the Hollow Tree service tunnel. It is a mundane concealed hatch enhanced by Fey workmanship, not a Fairy Door. During The Encounter it provides a narrow escape that leaves the patrol aware that someone slipped away and searching the surrounding woods. Coinín can open it quickly from inside."
+  "description": "A disguised hatch among mossy stones and roots near the far side of the Fairy Ring glade. From above it is almost indistinguishable from the forest floor."
 }

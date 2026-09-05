@@ -72,7 +72,7 @@
   },
   "unlockAfter": [
     {
-      "slug": "the-encounter",
+      "slug": "down-the-rabbit-hole",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileTypeSlug": "mission"
     }

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-05T21:03:23.957Z",
+  "syncedAt": "2026-09-05T21:11:41.733Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -117,7 +117,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a0735d-adc0-74d4-aa5e-b828ca327f4b",
+      "baseVersionId": "01a07367-6330-7e48-9fa5-ad148d6d8f14",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -130,12 +130,14 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a06db7-c712-7074-8ebf-b7a0884ed693",
-      "baseHash": "4e7c26fc-fd48-ea3c-4264-70a0bfd63cd0",
+      "baseVersionId": "01a07367-6218-7658-9262-3ac5cd080a3b",
+      "baseHash": "b2f0e7dd-6eeb-a332-444f-8f8cc6084ddc",
       "source": "project",
       "settings": {
+        "contextVisibility": "pinned",
         "agentEditable": true
-      }
+      },
+      "metadataHash": "478ca086-b1be-3441-756b-39b628be5354"
     },
     {
       "path": "/Attributes/Body.attribute.json",
@@ -862,9 +864,12 @@
       "fileId": "01a001e7-c610-73ec-a5c9-885359f10a2c",
       "referenceId": "01a001e7-c610-7464-83e0-354b85494c83",
       "fileType": "mission-journal",
-      "baseVersionId": "01a06897-3438-7208-8ab9-b52c3f8dd712",
-      "baseHash": "ef2e80d4-018a-24fc-886c-97aaae98350e",
-      "source": "project"
+      "baseVersionId": "01a07367-6bb6-7b98-8eb8-a126aec0c675",
+      "baseHash": "e58cc26b-bc85-529d-2029-89e55dfaabba",
+      "source": "project",
+      "settings": {
+        "contextVisibility": "pinned"
+      }
     },
     {
       "path": "/Locations/Sector Albion-W2 — Cornwall.location.json",
@@ -1040,10 +1045,10 @@
       "fileId": "01a03e8d-3e31-7208-b6e5-7804355067ec",
       "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
       "fileType": "location",
-      "baseVersionId": "01a07329-6140-7cb4-bac7-5ccfe1fd807f",
-      "baseHash": "eafe679c-e1ec-c462-f731-e2493ea408b2",
+      "baseVersionId": "01a07367-74c3-7b28-aaab-ed3eded40588",
+      "baseHash": "f144c8b4-6e1b-1793-e33e-0293616ca348",
       "source": "project",
-      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+      "metadataHash": "a213c262-409f-37c1-d063-79792c2d21b0"
     },
     {
       "path": "/Locations/Finn & Niamh's Tavern.location.json",
@@ -1172,8 +1177,8 @@
       "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileType": "non-player-character",
-      "baseVersionId": "01a06f18-d38a-7b54-b6e3-6996df4ce764",
-      "baseHash": "7735da96-f692-ecc8-3a5c-08f87c22fa2c",
+      "baseVersionId": "01a07367-6bab-7e84-829a-bd53c93a77a6",
+      "baseHash": "6691e67c-5797-3be4-f1ac-ac80043c7492",
       "source": "project"
     },
     {
@@ -1406,8 +1411,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a07329-617c-7038-a730-9ff2d010d518",
-      "baseHash": "b84d8c92-2332-a785-a404-015060f3ad7e",
+      "baseVersionId": "01a07367-6b44-73e8-9c5a-ecbcfebe05d7",
+      "baseHash": "aae533dd-220f-7701-5048-cef8992603a8",
       "source": "project"
     },
     {
@@ -1415,17 +1420,17 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a07329-6188-7f04-b914-58d042fe06eb",
-      "baseHash": "923471bb-a50d-d1d4-b808-dc8ad5c73037",
+      "baseVersionId": "01a07367-6b46-77c0-90a4-8b0077a64f51",
+      "baseHash": "0e2f792d-9e96-3da0-0f73-27ec8c121826",
       "source": "project"
     },
     {
-      "path": "/Missions/The Encounter.mission.json",
+      "path": "/Missions/Down the Rabbit-Hole.mission.json",
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a07360-ed89-79a8-981d-1b6930c2a2c1",
-      "baseHash": "5c9cfa16-7051-181c-ba20-fc4f4e3cf981",
+      "baseVersionId": "01a07366-7fea-72e8-9d5a-d622bdfc88e3",
+      "baseHash": "9d603c25-48fd-30b1-7744-6393775cf009",
       "source": "project"
     },
     {
@@ -1530,8 +1535,8 @@
       "fileId": "01a0730b-5c08-725c-8e9c-ffc50baa9557",
       "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
       "fileType": "location",
-      "baseVersionId": "01a07329-616d-7550-803f-37e370265415",
-      "baseHash": "ac0a16bb-b663-37d9-0885-4d2fa20052e0",
+      "baseVersionId": "01a07367-6260-76f4-93f3-4763ae781730",
+      "baseHash": "84a6eccd-eaa1-19a2-a901-eefcf911fb5b",
       "source": "project",
       "metadataHash": "20ae2a31-9f79-8863-1a0d-fa0963768a35"
     },
@@ -1540,8 +1545,8 @@
       "fileId": "01a0730d-3ffd-72f4-bec9-d6c7b77be7ac",
       "referenceId": "01a0730d-3ffd-736c-b70c-a0f17680e635",
       "fileType": "location",
-      "baseVersionId": "01a07329-615d-74a4-b655-c8209a7ae74b",
-      "baseHash": "e10a7967-d9b4-b5af-8306-b88f9657ffe1",
+      "baseVersionId": "01a07367-6662-7b58-b517-f472e84f1182",
+      "baseHash": "7ae622fd-bd6d-9b32-714f-2ebe0681b209",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },

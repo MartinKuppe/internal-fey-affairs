@@ -6,7 +6,10 @@ description: The light RPG engine for Internal Fey Affairs — attributes,
 $craft:
   referenceId: 019fde04-45a3-7a04-ae62-38704ecce2e1
   settings:
+    contextVisibility: pinned
     agentEditable: true
+  metadata:
+    schemaVersionId: file-designation-metadata:v8
 ---
 
 # System Rules
@@ -42,7 +45,7 @@ The protagonist — the **Player Character** — is the only record that carries
 
 ### Two ways to begin
 
-- **Quick start:** The Blacksmith is a complete ready-to-play Player Character. Do not ask the player to rebuild the character before beginning The Encounter.
+- **Quick start:** The Blacksmith is a complete ready-to-play Player Character. Do not ask the player to rebuild the character before beginning Down the Rabbit-Hole.
 - **Create your own:** collect an Origin, one permitted Weakness, and one spare starting Outfit. Populate the Origin's three trained Abilities; set the Origin Attribute to 2, the Weakness Attribute to 0, and the other five Attributes to 1; unlock Common Clothes and the chosen spare Outfit; set starting Current/Maximum to Health 3 and Energy, Nerve, Decorum, and Cover 2 with no Depletion.
 - Character-creation choices teach the system: Origin explains trained Abilities and the Strong Attribute; Weakness explains the Attribute scale; the spare Outfit explains Condition modifiers.
 
@@ -265,7 +268,7 @@ The campaign runs as a mostly linear sequence of **Story Missions**, with Side, 
 
 ### Starting the campaign
 
-Game Start launches the Mission Journal's `startingMission` directly. The starting Mission requires no selection pin. In the current campaign, **The Encounter** is the starting Mission; initialise it from the Journal and begin at Grannie's Hut before moving to the Fairy Ring.
+Game Start launches the Mission Journal's `startingMission` directly. The starting Mission requires no selection pin. In the current campaign, **Down the Rabbit-Hole** is the starting Mission; initialise it from the Journal and begin at Grannie's Hut before moving to the Fairy Ring.
 
 ### Selecting a Mission
 
