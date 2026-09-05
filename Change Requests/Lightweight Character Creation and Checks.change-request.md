@@ -105,3 +105,9 @@ Recorded decisions:
 - Hard-filtering the Outfit selector to `unlockedOutfits` is not supported by the current Craft schema/layout system; GM-rule enforcement is accepted for v1.
 - The old internal layout element IDs, the empty `conditionstate-section`, and the minor Mission-kind vocabulary drift (Primary/Secondary vs Story/Side) are harmless and deliberately deferred while the UI and Mission system remain under development.
 - The Player Character creation flow remains intentionally unset for the human author to configure later.
+
+### Post-review playtest correction
+
+- The first live check correctly reduced Cover from 2 to 1 and advanced the Mission through a new complication rather than blocking it.
+- The sheet displayed Cover as `1 / 2` because each TrackBoxes component used the track's current Effective Maximum as its number of visible boxes. This confused the temporary ceiling with the universal 0–3 scale.
+- All five TrackBoxes now render exactly three boxes while continuing to display the computed Current value. Effective Maximum, Depletion, outfit modifiers, and the GM's play-state update are unchanged; the same Cover state therefore displays as `1 / 3`.

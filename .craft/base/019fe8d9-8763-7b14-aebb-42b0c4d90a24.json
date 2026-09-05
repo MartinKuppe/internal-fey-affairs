@@ -1,4 +1,7 @@
 {
   "name": "Wayfinding",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/98b4b9a6-dda3-4ff4-94d9-52eb0e2aa9c2"
+  },
   "description": "Wayfinding reads land, sky, and memory to find the way, including shortcuts and hidden paths. The GM asks for it when you must reach a place without getting lost."
 }

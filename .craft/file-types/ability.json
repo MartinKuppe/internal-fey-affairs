@@ -89,27 +89,9 @@
           "maxWidth": "full"
         },
         "children": [
-          "body-stack"
+          "image",
+          "description-text"
         ]
-      },
-      "hero": {
-        "type": "ImageHeader",
-        "props": {
-          "src": {
-            "$state": "/image"
-          },
-          "title": {
-            "$state": "/name"
-          },
-          "subtitle": {
-            "$state": "/description"
-          },
-          "aspectRatio": "video"
-        },
-        "visible": {
-          "$state": "/image"
-        },
-        "children": []
       },
       "page": {
         "type": "Stack",
@@ -118,19 +100,22 @@
           "direction": "vertical"
         },
         "children": [
-          "hero",
           "body"
         ]
       },
-      "body-stack": {
-        "type": "Stack",
+      "image": {
+        "type": "Image",
         "props": {
-          "gap": "md",
-          "direction": "vertical"
+          "alt": null,
+          "src": {
+            "$state": "/image"
+          },
+          "size": "sm",
+          "align": "center",
+          "className": null,
+          "aspectRatio": "square"
         },
-        "children": [
-          "description-text"
-        ]
+        "children": []
       },
       "description-text": {
         "type": "Markdown",

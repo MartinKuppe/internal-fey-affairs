@@ -3,5 +3,8 @@
     "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40"
   },
   "name": "Weapons",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/970f6e28-cc48-4c8e-bbe4-e0de45829b7a"
+  },
   "description": "Weapons covers handling blades, bows, and clubs: training, stance, and the discipline of violence. The GM asks for it when you must fight, practice, or judge how a weapon should be used."
 }

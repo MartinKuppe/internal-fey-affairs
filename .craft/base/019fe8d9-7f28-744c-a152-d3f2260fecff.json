@@ -1,4 +1,7 @@
 {
   "name": "Learnedness",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/39d64165-e4fb-479b-a82d-092cf66b859c"
+  },
   "description": "You handle letters, numbers, memorized lore, reading, and writing, picking up unfamiliar lessons quickly. The GM asks for Learnedness when knowledge must be recalled, a mark understood, or a new skill grasped."
 }

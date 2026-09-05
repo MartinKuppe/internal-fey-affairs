@@ -1493,7 +1493,7 @@
           "addNewVariant": null,
           "titlePosition": "bottom",
           "referenceField": null,
-          "imageAspectRatio": "ultrawide",
+          "imageAspectRatio": "square",
           "metadataPosition": null,
           "showAddNewOnHover": false
         },
@@ -1923,9 +1923,7 @@
       "trackbox-row-health": {
         "type": "TrackBoxes",
         "props": {
-          "boxes": {
-            "$state": "/conditionTracks/0/maximum"
-          },
+          "boxes": 3,
           "color": "#ff0019",
           "label": "❤️ Health",
           "value": {
@@ -1986,9 +1984,7 @@
       "trackbox-row-decorum": {
         "type": "TrackBoxes",
         "props": {
-          "boxes": {
-            "$state": "/conditionTracks/3/maximum"
-          },
+          "boxes": 3,
           "color": "#59d4ed",
           "label": "💎 Decorum",
           "value": {
@@ -2113,9 +2109,7 @@
       "trackbox-row-composure": {
         "type": "TrackBoxes",
         "props": {
-          "boxes": {
-            "$state": "/conditionTracks/2/maximum"
-          },
+          "boxes": 3,
           "color": "#f964c0",
           "label": "🌹 Nerve",
           "value": {
@@ -2139,9 +2133,7 @@
       "trackbox-row-concealment": {
         "type": "TrackBoxes",
         "props": {
-          "boxes": {
-            "$state": "/conditionTracks/4/maximum"
-          },
+          "boxes": 3,
           "color": "#6b6b6b",
           "label": "👀 Cover",
           "value": {
@@ -2154,9 +2146,7 @@
       "trackbox-row-wakefulness": {
         "type": "TrackBoxes",
         "props": {
-          "boxes": {
-            "$state": "/conditionTracks/1/maximum"
-          },
+          "boxes": 3,
           "color": "#ffea00",
           "label": "☀️ Energy",
           "value": {

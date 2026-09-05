@@ -3,5 +3,8 @@
     "referenceId": "019fe8d9-879f-74a8-9255-601fee8af116"
   },
   "name": "Food",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3295a145-8c91-4b9b-8659-01684d76bff2"
+  },
   "description": "Food covers cooking, baking, tasting, and preserving, along with the craft and comfort of the table. The GM asks for it when a meal must sustain, impress, reveal a poison, or survive the seasons."
 }

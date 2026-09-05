@@ -3,7 +3,7 @@
   "slug": "non-player-character",
   "name": "Non-Player Character",
   "contentType": "json",
-  "designation": null,
+  "designation": "character",
   "category": null,
   "schemaHash": "bdcb6eac-755b-db78-de0d-095b90809145",
   "schema": {
@@ -176,7 +176,7 @@
           "direction": "vertical"
         },
         "children": [
-          "portrait",
+          "image-header",
           "name",
           "description-card",
           "identity-section",
@@ -185,7 +185,8 @@
           "gmnotes-section",
           "secrets-section",
           "background-section",
-          "personality-section"
+          "personality-section",
+          "activeportrait-section"
         ]
       },
       "text": {
@@ -217,21 +218,6 @@
           "text",
           "badge-list"
         ]
-      },
-      "portrait": {
-        "type": "Image",
-        "props": {
-          "alt": {
-            "$state": "/name"
-          },
-          "src": {
-            "$state": "/activePortrait"
-          },
-          "size": "full",
-          "align": "left",
-          "aspectRatio": "video"
-        },
-        "children": []
       },
       "badge-list": {
         "type": "BadgeList",
@@ -278,6 +264,21 @@
           "content": {
             "$state": "/gmNotes"
           }
+        },
+        "children": []
+      },
+      "image-header": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/title"
+          },
+          "subtitle": null,
+          "className": null,
+          "aspectRatio": "video"
         },
         "children": []
       },
@@ -483,6 +484,40 @@
         "children": [
           "personality-heading",
           "personality-text"
+        ]
+      },
+      "activeportrait-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_activePortraitEntries"
+          },
+          "bgColor": null
+        },
+        "children": []
+      },
+      "activeportrait-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Current Portrait",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "activeportrait-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/activePortrait"
+        },
+        "children": [
+          "activeportrait-heading",
+          "activeportrait-stats"
         ]
       }
     }

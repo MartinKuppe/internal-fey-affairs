@@ -3,5 +3,8 @@
     "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861"
   },
   "name": "Animals",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/f1c6d63e-a469-4ded-b70a-bf29e8d04f75"
+  },
   "description": "You read and handle beasts, calming, training, and herding them with steady hands. When the GM asks whether an animal is frightened, ill, badly treated, or likely to bolt, this ability helps you judge its temperament and health."
 }
