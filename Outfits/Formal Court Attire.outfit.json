@@ -11,7 +11,7 @@
     {
       "track": "decorum",
       "amount": 1,
-      "appliesWhen": "Appearing at court, attending a formal event, or entering another setting where conventional formal dress is appropriate."
+      "appliesBecause": "Formal dress makes the wearer look proper and court-ready."
     }
   ]
 }

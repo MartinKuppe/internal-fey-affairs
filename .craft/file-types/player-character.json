@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": null,
-  "schemaHash": "4d8beb1e-86c5-cb3b-27cb-93bfe462be7e",
+  "schemaHash": "c7b4cbf2-aafd-39d4-6d34-a7e7edd6abdc",
   "schema": {
     "type": "object",
     "required": [
@@ -365,20 +365,6 @@
             "type": "object",
             "title": "Cover",
             "properties": {
-              "maximum": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Maximum",
-                "default": 2,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
-              },
               "depletion": {
                 "enum": [
                   0,
@@ -391,7 +377,7 @@
                 "default": 0,
                 "maximum": 3,
                 "minimum": 0,
-                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+                "description": "Accumulated harm, fatigue, strain, embarrassment, or exposure. It persists when the worn Outfit changes."
               }
             }
           },
@@ -399,20 +385,6 @@
             "type": "object",
             "title": "Nerve",
             "properties": {
-              "maximum": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Maximum",
-                "default": 2,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
-              },
               "depletion": {
                 "enum": [
                   0,
@@ -425,7 +397,7 @@
                 "default": 0,
                 "maximum": 3,
                 "minimum": 0,
-                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+                "description": "Accumulated harm, fatigue, strain, embarrassment, or exposure. It persists when the worn Outfit changes."
               }
             }
           },
@@ -433,20 +405,6 @@
             "type": "object",
             "title": "Energy",
             "properties": {
-              "maximum": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Maximum",
-                "default": 2,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
-              },
               "depletion": {
                 "enum": [
                   0,
@@ -459,7 +417,7 @@
                 "default": 0,
                 "maximum": 3,
                 "minimum": 0,
-                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+                "description": "Accumulated harm, fatigue, strain, embarrassment, or exposure. It persists when the worn Outfit changes."
               }
             }
           },
@@ -467,20 +425,6 @@
             "type": "object",
             "title": "Health",
             "properties": {
-              "maximum": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Maximum",
-                "default": 3,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
-              },
               "depletion": {
                 "enum": [
                   0,
@@ -493,7 +437,7 @@
                 "default": 0,
                 "maximum": 3,
                 "minimum": 0,
-                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+                "description": "Accumulated harm, fatigue, strain, embarrassment, or exposure. It persists when the worn Outfit changes."
               }
             }
           },
@@ -501,20 +445,6 @@
             "type": "object",
             "title": "Decorum",
             "properties": {
-              "maximum": {
-                "enum": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
-                "type": "number",
-                "title": "Maximum",
-                "default": 2,
-                "maximum": 3,
-                "minimum": 0,
-                "description": "The currently applicable Effective Maximum after outfit, environmental, and situational modifiers."
-              },
               "depletion": {
                 "enum": [
                   0,
@@ -527,12 +457,12 @@
                 "default": 0,
                 "maximum": 3,
                 "minimum": 0,
-                "description": "Accumulated damage, fatigue, strain, embarrassment, or exposure that remains when Maximum changes."
+                "description": "Accumulated harm, fatigue, strain, embarrassment, or exposure. It persists when the worn Outfit changes."
               }
             }
           }
         },
-        "description": "Stored state for the five Condition Tracks. Missing Health values compute as Maximum 3 and Depletion 0; missing Energy, Nerve, Decorum, and Cover values compute as Maximum 2 and Depletion 0.",
+        "description": "Stored Depletion for the five Condition Tracks. Effective maxima derive automatically from fixed base values (Health 3; all others 2) plus the worn Outfit's modifiers.",
         "additionalProperties": false
       },
       "signedBargains": {
@@ -580,8 +510,8 @@
           }
         },
         "title": "Condition Tracks",
-        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', maximum: clamp($self.conditionState?.health?.maximum ?? 3, 0, 3), depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'energy', name: 'Energy', family: 'persistent', maximum: clamp($self.conditionState?.energy?.maximum ?? 2, 0, 3), depletion: clamp($self.conditionState?.energy?.depletion ?? 0, 0, 3) }, { key: 'nerve', name: 'Nerve', family: 'persistent', maximum: clamp($self.conditionState?.nerve?.maximum ?? 2, 0, 3), depletion: clamp($self.conditionState?.nerve?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', maximum: clamp($self.conditionState?.decorum?.maximum ?? 2, 0, 3), depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'cover', name: 'Cover', family: 'scene', maximum: clamp($self.conditionState?.cover?.maximum ?? 2, 0, 3), depletion: clamp($self.conditionState?.cover?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: t.maximum, depletion: t.depletion, current: clamp(t.maximum - t.depletion, 0, 3) }))",
-        "description": "Derived Condition Tracks — five fixed rows (Health, Energy, Nerve, Decorum, Cover). Current is always derived from Maximum and Depletion; it is never stored."
+        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', baseMaximum: 3, depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'energy', name: 'Energy', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.energy?.depletion ?? 0, 0, 3) }, { key: 'nerve', name: 'Nerve', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.nerve?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'cover', name: 'Cover', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.cover?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: clamp(t.baseMaximum + sum((load($self.outfit)?.conditionModifiers ?? []).filter(m => m.track === t.key), m => m.amount ?? 0), 0, 3), depletion: t.depletion, current: clamp(t.baseMaximum + sum((load($self.outfit)?.conditionModifiers ?? []).filter(m => m.track === t.key), m => m.amount ?? 0) - t.depletion, 0, 3) }))",
+        "description": "Derived Condition Tracks. Effective Maximum is the fixed base value plus every modifier on the worn Outfit, clamped to 0–3; Current is Effective Maximum minus stored Depletion, likewise clamped."
       },
       "outfitModifiers": {
         "type": "array",
@@ -597,14 +527,14 @@
             "trackName": {
               "type": "string"
             },
-            "appliesWhen": {
+            "appliesBecause": {
               "type": "string"
             }
           }
         },
         "title": "Worn Outfit Condition Modifiers",
         "expression": "load($self.outfit)?.conditionModifierRows ?? []",
-        "description": "Condition modifiers of the currently worn outfit."
+        "description": "Condition modifiers that automatically apply while the current outfit is worn."
       },
       "unlockedOutfits": {
         "type": "array",
@@ -2262,7 +2192,7 @@
         "type": "Text",
         "props": {
           "text": {
-            "$item": "appliesWhen"
+            "$item": "appliesBecause"
           },
           "color": "#757575",
           "variant": "code"
@@ -3525,7 +3455,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn outfit to the chosen Outfit (or Common Clothes) and set unlockedOutfits to Common Clothes plus the chosen spare Outfit. Starting Conditions: Health 3, Energy/Nerve/Decorum/Cover 2, no Depletion. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 10/12/14/16. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn outfit to the chosen Outfit (or Common Clothes) and set unlockedOutfits to Common Clothes plus the chosen spare Outfit. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 10/12/14/16. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble."
     }
   }
 }

@@ -11,12 +11,12 @@
     {
       "track": "decorum",
       "amount": 2,
-      "appliesWhen": "Fey court, spectacle, celebration, or another social context where conspicuous Glamour is admired."
+      "appliesBecause": "Its spectacular Glamour makes the wearer look magnificent."
     },
     {
       "track": "cover",
       "amount": -2,
-      "appliesWhen": "The visible Glamour is active and being visually inconspicuous matters."
+      "appliesBecause": "Its conspicuous Glamour makes the wearer impossible to overlook."
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "track": "cover",
       "amount": 1,
-      "appliesWhen": "Darkness, shadow, nighttime infiltration, or another situation in which dark clothing plausibly makes the wearer harder to notice."
+      "appliesBecause": "Its dark colour makes the wearer harder to notice."
     }
   ]
 }

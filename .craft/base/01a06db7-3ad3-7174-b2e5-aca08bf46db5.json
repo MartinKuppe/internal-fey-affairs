@@ -8,12 +8,12 @@
     {
       "track": "decorum",
       "amount": 1,
-      "appliesWhen": "Fine dress helps the wearer appear respectable or appropriately important."
+      "appliesBecause": "Fine tailoring makes the wearer look respectable and important."
     },
     {
       "track": "cover",
       "amount": -1,
-      "appliesWhen": "Their conspicuous cut or decoration makes the wearer easier to notice or remember."
+      "appliesBecause": "Their conspicuous cut makes the wearer easy to notice and remember."
     }
   ]
 }

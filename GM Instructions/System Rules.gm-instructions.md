@@ -46,7 +46,7 @@ The protagonist — the **Player Character** — is the only record that carries
 ### Two ways to begin
 
 - **Quick start:** The Blacksmith is a complete ready-to-play Player Character. Do not ask the player to rebuild the character before beginning Down the Rabbit-Hole.
-- **Create your own:** collect an Origin, one permitted Weakness, and one spare starting Outfit. Populate the Origin's three trained Abilities; set the Origin Attribute to 2, the Weakness Attribute to 0, and the other five Attributes to 1; unlock Common Clothes and the chosen spare Outfit; set starting Current/Maximum to Health 3 and Energy, Nerve, Decorum, and Cover 2 with no Depletion.
+- **Create your own:** collect an Origin, one permitted Weakness, and one spare starting Outfit. Populate the Origin's three trained Abilities; set the Origin Attribute to 2, the Weakness Attribute to 0, and the other five Attributes to 1; unlock Common Clothes and the chosen spare Outfit; begin with no Depletion. The sheet derives Health from base 3 and Energy, Nerve, Decorum, and Cover from base 2, then applies the worn Outfit.
 - Character-creation choices teach the system: Origin explains trained Abilities and the Strong Attribute; Weakness explains the Attribute scale; the spare Outfit explains Condition modifiers.
 
 ## Outfits
@@ -58,9 +58,9 @@ The protagonist — the **Player Character** — is the only record that carries
 
 ## Condition Tracks
 
-Five Condition Tracks measure the Player Character's present footing: **Health**, **Energy**, **Nerve** (persistent personal conditions) and **Decorum**, **Cover** (scene-position tracks). Each runs 0–3, and reaching 0 triggers a consequence. Health begins at 3; the other four begin at 2 because an ordinary person is neither perfectly rested, unshakable, impeccably placed, nor effectively invisible. No track can kill a Player Character, and no track failure may block campaign progress — it changes the situation instead.
+Five Condition Tracks measure the Player Character's present footing: **Health**, **Energy**, **Nerve** (persistent personal conditions) and **Decorum**, **Cover** (scene-position tracks). Each runs 0–3, and reaching 0 triggers a consequence. Health has base 3; the other four have base 2 because an ordinary person is neither perfectly rested, unshakable, impeccably placed, nor effectively invisible. No track can kill a Player Character, and no track failure may block campaign progress — it changes the situation instead.
 
-The Player Character stores `conditionState`: per track, a `maximum` (the currently applicable Effective Maximum after outfit, environmental, and situational modifiers) and `depletion` (accumulated harm, fatigue, strain, embarrassment, or exposure that remains when Maximum changes). Current is always derived — `current = clamp(maximum − depletion, 0, 3)` — and is never stored. Clamp stored Depletion to 0–3. Missing Health state means Maximum 3 and Depletion 0; missing Energy, Nerve, Decorum, or Cover state means Maximum 2 and Depletion 0.
+The Player Character stores only `depletion` for each track in `conditionState`. The sheet derives Effective Maximum as `clamp(base + all modifiers on the worn Outfit, 0, 3)`, then derives Current as `clamp(Effective Maximum − depletion, 0, 3)`. Neither Current nor Effective Maximum is stored. Clamp Depletion to 0–3; missing state means Depletion 0.
 
 ### Relevance
 
@@ -80,14 +80,14 @@ Every roll uses exactly one relevant Condition Track. Before the roll, tell the 
 - Certain fictional events may cause Depletion without a roll when no uncertainty exists.
 - Clamp stored Depletion to 0–3.
 
-### Maximum changes
+### Outfit modifiers
 
-- Begin from the track's Base Maximum: Health 3; Energy, Nerve, Decorum, and Cover 2.
-- Apply only outfit/environment/situation modifiers whose circumstances currently apply.
-- Clamp the Effective Maximum to 0–3 and store that result as the track's `maximum`.
-- Changing Maximum never changes Depletion.
-- Positive Maximum modifiers may be wasted at the cap; this is intentional.
-- A Maximum reduction may cause Current to reach 0.
+- Begin from the track's base value: Health 3; Energy, Nerve, Decorum, and Cover 2.
+- Every modifier on the worn Outfit always applies mechanically. Do not decide whether it is contextually appropriate.
+- `appliesBecause` explains the abstraction to the player; it is not a condition for applying the modifier.
+- Add all modifiers for the relevant track and clamp Effective Maximum to 0–3.
+- Changing Outfit never changes Depletion.
+- A lower Effective Maximum can reduce Current to 0 and trigger the appropriate consequence.
 
 ### Zero crossing
 
@@ -119,13 +119,7 @@ Existing consequences remain even after Depletion is removed or a scene track re
 
 ### Outfit changes
 
-When the Outfit or relevant circumstances change:
-
-1. Read the Outfit's modifier definitions.
-2. Decide which conditions apply.
-3. Recalculate affected Maximums from the track's Base Maximum (Health 3; all others 2).
-4. Preserve every Depletion value exactly.
-5. Narrate any newly caused zero crossing.
+Changing the `outfit` reference immediately recalculates every Condition Track from its fixed base, the new Outfit's modifiers, and existing Depletion. Preserve every Depletion value exactly. Narrate any newly caused zero crossing; never manually write a Maximum.
 
 ## Attributes and Weakness
 

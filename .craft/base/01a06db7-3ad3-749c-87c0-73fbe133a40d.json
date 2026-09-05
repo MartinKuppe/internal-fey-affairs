@@ -8,12 +8,12 @@
     {
       "track": "cover",
       "amount": 1,
-      "appliesWhen": "The coat's dark colour and concealing cut help the wearer pass unnoticed."
+      "appliesBecause": "Its dark colour and concealing cut hide the wearer's outline."
     },
     {
       "track": "energy",
       "amount": -1,
-      "appliesWhen": "The coat's weight or warmth makes the wearer tired, sluggish, or drowsy."
+      "appliesBecause": "Its weight and warmth make the wearer tired and sluggish."
     }
   ]
 }

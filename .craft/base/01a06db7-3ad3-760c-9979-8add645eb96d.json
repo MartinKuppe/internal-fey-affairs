@@ -8,12 +8,12 @@
     {
       "track": "nerve",
       "amount": 1,
-      "appliesWhen": "The wearer's confidence in the hat helps them face fear, pressure, or uncertainty."
+      "appliesBecause": "Belief in the lucky hat steadies the wearer's nerve."
     },
     {
       "track": "decorum",
       "amount": -1,
-      "appliesWhen": "The pompom hat looks improper, childish, or ridiculous in the current social setting."
+      "appliesBecause": "The pompom looks childish or ridiculous."
     }
   ]
 }

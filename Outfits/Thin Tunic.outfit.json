@@ -11,12 +11,12 @@
     {
       "track": "energy",
       "amount": 1,
-      "appliesWhen": "Cold or exposure is enough to keep the wearer sharply awake."
+      "appliesBecause": "The cold keeps the wearer sharply awake."
     },
     {
       "track": "nerve",
       "amount": -1,
-      "appliesWhen": "Cold or exposure leaves the wearer shivering, distracted, or uncomfortable."
+      "appliesBecause": "Shivering discomfort frays the wearer's nerve."
     }
   ]
 }

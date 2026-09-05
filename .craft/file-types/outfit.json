@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "b7b135a8-3235-fe47-7391-4d5b8d7748ab",
+  "schemaHash": "14e475cd-a314-2743-7d28-efa6c865270f",
   "schema": {
     "type": "object",
     "required": [
@@ -84,7 +84,7 @@
           "required": [
             "track",
             "amount",
-            "appliesWhen"
+            "appliesBecause"
           ],
           "properties": {
             "track": {
@@ -115,15 +115,15 @@
               "minimum": -3,
               "description": "Signed change to the track's Effective Maximum."
             },
-            "appliesWhen": {
+            "appliesBecause": {
               "type": "string",
-              "title": "Applies When",
-              "description": "The fictional circumstances in which this modifier applies."
+              "title": "Why It Applies",
+              "description": "A short player-facing explanation of why the outfit changes this Condition Track."
             }
           }
         },
         "title": "Condition Modifiers",
-        "description": "Definition rows describing possible Condition Track Maximum modifiers for this outfit. They do not directly alter stored Character Current or Depletion. The GM decides whether appliesWhen is true in the current fiction, combines all applicable outfit/environment/situation modifiers with the track's Base Maximum (Health 3; Energy, Nerve, Decorum, and Cover 2), clamps the result to 0–3, and writes the resulting maximum into the appropriate Player Character track."
+        "description": "Mechanical Condition Track modifiers that always apply while this outfit is worn. Each row changes the named track's effective maximum; appliesBecause explains the abstraction to the player."
       },
       "conditionModifierRows": {
         "type": "array",
@@ -142,15 +142,15 @@
               "type": "string",
               "title": "Track Name"
             },
-            "appliesWhen": {
+            "appliesBecause": {
               "type": "string",
-              "title": "Applies When"
+              "title": "Why It Applies"
             }
           }
         },
         "title": "Condition Modifier Rows",
-        "expression": "($self.conditionModifiers ?? []).map(m => ({ track: m.track, trackName: [{ key: 'health', name: 'Health' }, { key: 'energy', name: 'Energy' }, { key: 'nerve', name: 'Nerve' }, { key: 'decorum', name: 'Decorum' }, { key: 'cover', name: 'Cover' }].find(r => r.key === m.track)?.name ?? m.track, amount: `${m.amount > 0 ? '+' : ''}${m.amount}`, appliesWhen: m.appliesWhen }))",
-        "description": "Player-facing rows derived from conditionModifiers for read-only display (track name, signed amount, when it applies)."
+        "expression": "($self.conditionModifiers ?? []).map(m => ({ track: m.track, trackName: [{ key: 'health', name: 'Health' }, { key: 'energy', name: 'Energy' }, { key: 'nerve', name: 'Nerve' }, { key: 'decorum', name: 'Decorum' }, { key: 'cover', name: 'Cover' }].find(r => r.key === m.track)?.name ?? m.track, amount: `${m.amount > 0 ? '+' : ''}${m.amount}`, appliesBecause: m.appliesBecause }))",
+        "description": "Player-facing rows derived from conditionModifiers for read-only display (track name, signed amount, and explanation)."
       }
     }
   },
@@ -250,7 +250,7 @@
         "type": "Text",
         "props": {
           "text": {
-            "$item": "appliesWhen"
+            "$item": "appliesBecause"
           },
           "variant": "muted"
         },
