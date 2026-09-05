@@ -1416,9 +1416,7 @@
       "trackbox-row": {
         "type": "TrackBoxes",
         "props": {
-          "boxes": {
-            "$item": "maximum"
-          },
+          "boxes": 3,
           "color": "#6ca789",
           "label": {
             "$item": "name"

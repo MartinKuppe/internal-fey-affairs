@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-05T01:18:23.822Z",
+  "syncedAt": "2026-09-05T01:53:39.302Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -1485,8 +1485,8 @@
       "fileId": "01a06db7-3acc-7678-8a41-b73e02a981a1",
       "referenceId": "01a06db7-3296-7028-991e-35e14f885524",
       "fileType": "change-request",
-      "baseVersionId": "01a06dc1-1f0b-7b90-84ec-5f0ef9d62354",
-      "baseHash": "4aae0261-1e32-8829-e27b-906f14b85085",
+      "baseVersionId": "01a06f45-78ce-76a4-8cd8-4ee97eb151d1",
+      "baseHash": "976e7b16-7306-0d28-62d1-e32a9224318a",
       "source": "project"
     },
     {
@@ -1633,7 +1633,7 @@
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
       "schemaHash": "c9150bd6-9c58-4788-3a3b-e0c0881f98be",
-      "contentHash": "5db34384-a022-1f94-c75c-d491fb041afe"
+      "contentHash": "55b60757-f8ad-5dfa-4b94-23753e280e68"
     }
   ],
   "projectSettingsHash": "079d31b4-61fe-7f9c-29d3-998573f6d90e"
