@@ -1051,7 +1051,7 @@
         "type": "Markdown",
         "props": {
           "color": null,
-          "content": "**2d6 + attribute + condition track + 2** *if special skill applies* \n \ntested against the difficulty:\n- Easy: 10\n- Standard: 12\n- Hard: 14\n- Exceptional: 16",
+          "content": "**2d6 + attribute + condition track + 2** *if special skill applies*\n\nTested against the difficulty:\n- Easy: 10\n- Standard: 12\n- Hard: 14\n- Exceptional: 16\n\n**Natural dice:**\n- **6 + 6 — Critical Success:** best realistically achievable success, plus one extra benefit.\n- **1 + 1 — Critical Mishap:** normal fail-forward result, plus one extra complication; no more than 2 total Depletion.",
           "className": null
         },
         "children": []

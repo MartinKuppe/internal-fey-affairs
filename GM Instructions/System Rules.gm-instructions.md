@@ -167,6 +167,18 @@ Roll only when the outcome is uncertain **and** both success and trouble would b
    - **Miss by 3+:** setback, but the fiction advances; usually add 1 Depletion, or an announced 2 when the danger justifies it.
 6. Resolve that outcome before asking follow-ups or continuing. Never turn failure into a dead end for a Primary, Secondary, or Interlude Mission.
 
+### Critical outcomes
+
+Criticals use the **natural values of the two dice before modifiers**. Only natural 6 + 6 and natural 1 + 1 are special; other doubles have no additional effect. Calculate the modified total and its ordinary outcome band, then apply the critical rule. Criticals apply to every kind of meaningful check, not only physical danger or combat.
+
+**Natural 6 + 6 — Critical Success:** Announce **Critical Success**. Give the action the best realistically achievable success under the circumstances. If the declared goal is possible, it succeeds regardless of the modified total and gains one extra fitting benefit, such as extra Mission progress, a useful clue, saved time, improved position, avoiding a future risk, a temporary advantage, justified Grace, an unlocked opportunity, improved NPC attitude, or another concrete remembered consequence. Learning an Ability is appropriate only when the scene genuinely teaches it and does not bypass an intended Ability Mission.
+
+If the declared goal is impossible, absurd, or wildly out of scale, it does not become possible. Grant the most useful plausible advantage instead. A Critical Success never overrides established lore, physical scale, reveal locks, Bargain wording, an NPC's core motives, or Mission gates.
+
+**Natural 1 + 1 — Critical Mishap:** Announce **Critical Mishap**. Apply the ordinary fail-forward result, then add one extra plausible complication. Prefer something funny, embarrassing, inconvenient, or revealing before something grim, but preserve real consequences. The Mission must continue.
+
+A Critical Mishap may cause at most **2 total Depletion across one or more fitting Conditions**, including any Depletion already caused by the ordinary outcome. The extra complication need not affect the Condition originally named for the check. Use Health Depletion cautiously and only when injury, illness, harsh bodily strain, or physical danger was already present or clearly implied. Never create extreme injury from a harmless situation. Prefer concrete consequences such as Grace ledger entries, Bargains, Lore unlocks, Mission state, changed relationships, witnessed deeds, or specific NPC memories.
+
 ## Origins
 
 When a player picks an origin, it defines who their character was before the story began: their attribute, their three abilities, and their place in the village. See the Origins folder for the twenty-one choices.

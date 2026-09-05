@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-05T22:45:18.841Z",
+  "syncedAt": "2026-09-05T23:29:24.044Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -130,8 +130,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a073bf-6593-7bec-b214-6714c97727e6",
-      "baseHash": "8e646ffc-9725-8c69-b527-084a8b8d3572",
+      "baseVersionId": "01a073e7-c64c-75e0-a6aa-08423d393fb7",
+      "baseHash": "99819418-cb66-5d84-ddf8-b34dc93c01f7",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1596,6 +1596,15 @@
       "baseVersionId": "01a073bf-65e0-7d6c-a7b6-69fe6578dc2a",
       "baseHash": "334c6b24-b285-5710-55a1-b178b0a5c8de",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/Critical Outcomes.change-request.md",
+      "fileId": "01a073e7-c668-7674-b7a0-567b3b3a1cfb",
+      "referenceId": "01a073e7-c317-73f6-8308-fe11f05c6c1e",
+      "fileType": "change-request",
+      "baseVersionId": "01a073e7-c666-79f8-b0d9-d1cac54f39fb",
+      "baseHash": "9976543c-244f-3e38-9ebc-84fc4d654785",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1699,7 +1708,7 @@
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
       "schemaHash": "c7b4cbf2-aafd-39d4-6d34-a7e7edd6abdc",
-      "contentHash": "167fc8b8-9b1f-2c15-f1ca-023f07606351"
+      "contentHash": "c2c8f814-b350-ed7d-31f6-cb53bb40276f"
     },
     {
       "slug": "outfit",
