@@ -104,27 +104,28 @@
           "maxWidth": "full"
         },
         "children": [
+          "heading",
           "body-stack"
         ]
       },
-      "hero": {
-        "type": "ImageHeader",
+      "card": {
+        "type": "Card",
         "props": {
-          "src": {
-            "$state": "/image"
-          },
-          "title": {
-            "$state": "/name"
-          },
-          "subtitle": {
-            "$state": "/description"
-          },
-          "aspectRatio": "video"
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
         },
-        "visible": {
-          "$state": "/image"
-        },
-        "children": []
+        "children": [
+          "issuer-heading",
+          "issuer-text"
+        ]
       },
       "page": {
         "type": "Stack",
@@ -133,9 +134,78 @@
           "direction": "vertical"
         },
         "children": [
-          "hero",
           "body"
         ]
+      },
+      "stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": false,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "start",
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "card",
+          "card-2",
+          "card-3"
+        ]
+      },
+      "card-2": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "symbol-heading",
+          "symbol-text"
+        ]
+      },
+      "card-3": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "notes-heading",
+          "notes-text"
+        ]
+      },
+      "heading": {
+        "type": "Heading",
+        "props": {
+          "text": {
+            "$state": "/name"
+          },
+          "color": null,
+          "level": "h1",
+          "className": null
+        },
+        "children": []
       },
       "body-stack": {
         "type": "Stack",
@@ -145,9 +215,7 @@
         },
         "children": [
           "description-text",
-          "issuer-section",
-          "notes-section",
-          "symbol-section"
+          "stack"
         ]
       },
       "notes-text": {
@@ -188,20 +256,6 @@
         },
         "children": []
       },
-      "notes-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/notes"
-        },
-        "children": [
-          "notes-heading",
-          "notes-text"
-        ]
-      },
       "issuer-heading": {
         "type": "Heading",
         "props": {
@@ -210,20 +264,6 @@
         },
         "children": []
       },
-      "issuer-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/issuer"
-        },
-        "children": [
-          "issuer-heading",
-          "issuer-text"
-        ]
-      },
       "symbol-heading": {
         "type": "Heading",
         "props": {
@@ -231,20 +271,6 @@
           "level": "h3"
         },
         "children": []
-      },
-      "symbol-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/symbol"
-        },
-        "children": [
-          "symbol-heading",
-          "symbol-text"
-        ]
       },
       "description-text": {
         "type": "Markdown",

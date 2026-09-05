@@ -366,15 +366,13 @@
       "image-header": {
         "type": "ImageHeader",
         "props": {
-          "src": {
-            "$state": "/image"
-          },
+          "src": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/32c50f70-083f-4cd5-a75c-1fc4df1d9657",
           "title": {
             "$state": "/title"
           },
           "subtitle": null,
           "className": null,
-          "aspectRatio": "video"
+          "aspectRatio": "ultrawide"
         },
         "children": []
       },
@@ -382,6 +380,7 @@
         "type": "Stack",
         "props": {
           "gap": "sm",
+          "align": "stretch",
           "direction": "vertical"
         },
         "repeat": {
@@ -503,7 +502,8 @@
           "label": "Resolved",
           "value": {
             "$item": "resolved"
-          }
+          },
+          "variant": "switch"
         },
         "children": []
       },

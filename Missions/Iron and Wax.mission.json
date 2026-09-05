@@ -18,14 +18,14 @@
     {
       "key": "coinins-errand",
       "title": "A Brownie in Need",
-      "events": "Coinín directs the team to his friend Buaic, a Brownie candle maker whose payment includes the honey still owed under the silence bargain. He makes helping Buaic sound charitable while carefully preserving his own interest in the result.",
+      "events": "At the Hollow Tree, Coinín directs the team to his friend Buaic, a Brownie candle maker whose payment includes the honey still owed under the silence bargain. He makes helping Buaic sound charitable while carefully preserving his own interest in the result. His concealed Fairy Door offers a route to the woods west of Trí Mhuilinn, closer to the beekeeper's workshop.",
       "location": {
-        "slug": "fairy-ring",
-        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "slug": "hollow-tree",
+        "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Hear Coinín's proposal for obtaining the honey.",
-      "gmInstructions": "Do not state that Coinín wants the honey for a supply chain. Let the player continue to believe he may want it for himself. This is assistance toward an existing obligation, not a new automatic Grace charge."
+      "gmInstructions": "Do not state that Coinín wants the honey for a supply chain. Let the player continue to believe he may want it for himself. This is assistance toward an existing obligation, not a new automatic Grace charge. Let the team use the Fairy Door to the Hidden Fairy Door in the western woods or take another sensible route. The portal bypasses travel only; it does not solve Buaic's problem or the workshop infiltration."
     },
     {
       "key": "meet-buaic",
@@ -86,10 +86,10 @@
     {
       "key": "honey-delivery",
       "title": "The Last Measures",
-      "events": "The team brings Coinín two méisrin of honey. He acknowledges delivery. If the cream and milk have also been delivered, the accepting party's promised goods are now complete; Coinín remains bound not to tell Morrigan that he saw them together.",
+      "events": "The team brings two méisrin of honey back to Coinín's Hollow Tree. He acknowledges delivery. If the cream and milk have also been delivered, the accepting party's promised goods are now complete; Coinín remains bound not to tell Morrigan that he saw them together.",
       "location": {
-        "slug": "fairy-ring",
-        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "slug": "hollow-tree",
+        "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the honey to Coinín.",
@@ -123,8 +123,8 @@
   ],
   "durationSteps": 0,
   "startLocation": {
-    "slug": "fairy-ring",
-    "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+    "slug": "hollow-tree",
+    "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
     "fileTypeSlug": "location"
   },
   "missionTrackers": [

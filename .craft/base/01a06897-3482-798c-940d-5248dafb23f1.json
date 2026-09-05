@@ -35,22 +35,22 @@
     {
       "key": "pooka-and-patrol",
       "title": "Rabbit in the Bush",
-      "events": "Coinín, apparently a rabbit, pulls or directs the pair behind cover. Méabh recognises him as a Pooka and tells him to switch off his glamour so its projector signature will not show on the riders' scans. A hoverbike rider searches the glade before the patrol finally moves on.",
+      "events": "Coinín, apparently a rabbit, pulls or directs the pair into the concealed Hollow Tree at the edge of the glade. Méabh recognises him as a Pooka and tells him to switch off his glamour so its projector signature will not show on the riders' scans. A hoverbike rider searches the glade and probes the tree's outer concealment. If the hiding attempt fails, Coinín opens the service tunnel beneath the roots and leads the group to the Hidden hatch near the far side of the clearing; they escape narrowly while the patrol begins searching the woods.",
       "location": {
-        "slug": "fairy-ring",
-        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "slug": "hollow-tree",
+        "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Avoid the patrol's search.",
-      "gmInstructions": "- Allow stealth, observation, quick lies, distractions, or Méabh and Coinín's assistance. \n- A failed check causes Cover loss, pursuit, suspicion, or a narrow escape—not capture that ends the story. \n- Coinín cannot lie and must not claim selfless motives; he can behave helpfully while withholding why. \n- Méabh MUST tell Coinín to switch the glamour off.\n- While Coinín's glamour is up, voice his dialogue with expression 'glamour' (rabbit cutout); once Méabh tells him to switch it off, use 'neutral' (true-form cutout)."
+      "gmInstructions": "- Allow stealth, observation, quick lies, distractions, or Méabh and Coinín's assistance.\n- On success, the patrol moves on without finding them; do not force use of an escape route.\n- On failure, reduce Cover when appropriate and use the established physical route: Coinín opens the Hollow Tree service tunnel, the group crawls beneath the roots, and they emerge through the Hidden hatch near the far side of the glade. The patrol realises someone escaped and searches the woods. This is pursuit or suspicion, not capture or Mission failure.\n- Do not improvise another root tunnel, emergency teleporter, or magical passage. The service tunnel and hatch are fixed geography. The separate Fairy Door inside the Hollow Tree leads to the western woods but is not the default escape from this search.\n- Coinín cannot lie and must not claim selfless motives; he can behave helpfully while withholding why.\n- Méabh MUST tell Coinín to switch the glamour off.\n- While Coinín's glamour is up, voice his dialogue with expression 'glamour' (rabbit cutout); once Méabh tells him to switch it off, use 'neutral' (true-form cutout)."
     },
     {
       "key": "coinins-bargain",
       "title": "The Price of Silence",
       "events": "Coinín offers not to tell Morrigan that he saw Méabh and the player together if they bring him ten méisrin of cream, five olderb of milk, and two méisrin of honey. He presents the demand as a helpful, almost cute arrangement while treating every word seriously.",
       "location": {
-        "slug": "fairy-ring",
-        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "slug": "hollow-tree",
+        "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Secure Coinín's silence.",

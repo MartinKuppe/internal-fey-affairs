@@ -18,14 +18,14 @@
     {
       "key": "collection-briefing",
       "title": "Coinín's Instructions",
-      "events": "Coinín explains that villagers leave milk and cream outside for household spirits. He wants the promised quantities collected during the night and returned to him. Méabh understands the collection as a supply route; the player is likely to understand it as taking neighbours' offerings.",
+      "events": "In the Hollow Tree, Coinín explains that villagers leave milk and cream outside for household spirits. He wants the promised quantities collected during the night and returned to him. Méabh understands the collection as a supply route; the player is likely to understand it as taking neighbours' offerings. A concealed Fairy Door in the lower chamber opens into the woods west of Trí Mhuilinn.",
       "location": {
-        "slug": "fairy-ring",
-        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "slug": "hollow-tree",
+        "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Learn what must be collected and where to find it.",
-      "gmInstructions": "Keep Coinín literally truthful but strategically incomplete. He does not claim he can consume the food and does not reveal the Takeling/clone supply chain. Use the existing Grace and Bargain rules to explain that the goods discharge part of an obligation; do not invent a numeric Grace reward."
+      "gmInstructions": "Keep Coinín literally truthful but strategically incomplete. He does not claim he can consume the food and does not reveal the Takeling/clone supply chain. Use the existing Grace and Bargain rules to explain that the goods discharge part of an obligation; do not invent a numeric Grace reward. Let the player choose the surface path or Coinín's Fairy Door to the Hidden Fairy Door in the western woods. The portal requires no check, but it does not bypass the watched palisade or the collection challenges."
     },
     {
       "key": "watched-gate",
@@ -54,10 +54,10 @@
     {
       "key": "delivery",
       "title": "Payment in Milk",
-      "events": "The team returns to Coinín with ten méisrin of cream and five olderb of milk. He checks the quantities with professional exactness and acknowledges that those portions of the promised payment have been delivered. Two méisrin of honey remain due unless Iron and Wax was completed first.",
+      "events": "The team returns to Coinín's Hollow Tree with ten méisrin of cream and five olderb of milk, by the woodland Fairy Door or another viable route. He checks the quantities with professional exactness and acknowledges that those portions of the promised payment have been delivered. Two méisrin of honey remain due unless Iron and Wax was completed first.",
       "location": {
-        "slug": "fairy-ring",
-        "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+        "slug": "hollow-tree",
+        "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the collected goods and record what remains owed.",
@@ -79,8 +79,8 @@
   ],
   "durationSteps": 0,
   "startLocation": {
-    "slug": "fairy-ring",
-    "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
+    "slug": "hollow-tree",
+    "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
     "fileTypeSlug": "location"
   },
   "missionTrackers": [

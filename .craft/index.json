@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-05T01:53:39.302Z",
+  "syncedAt": "2026-09-05T20:01:26.095Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -62,10 +62,6 @@
       "folderId": "01a04a10-df3e-77f8-bfa2-d6b6526fc67e"
     },
     {
-      "path": "/Locations",
-      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
-    },
-    {
       "path": "/Non-Player Characters",
       "folderId": "01a063c4-7eef-7678-adca-171806d6f9ff"
     },
@@ -86,16 +82,20 @@
       "folderId": "01a0693e-dcaa-79d0-a912-8b5338171b81"
     },
     {
-      "path": "/Locations/Portal Hub  H2",
-      "folderId": "01a06897-3381-7cd0-9061-1ad037e90fc7"
-    },
-    {
       "path": "/Missions",
       "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
     },
     {
       "path": "/Change Requests",
       "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
+    },
+    {
+      "path": "/Locations",
+      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
+    },
+    {
+      "path": "/Locations/Portal Hub  H2",
+      "folderId": "01a07329-613a-7330-a0be-3e59d1c748a0"
     }
   ],
   "files": [
@@ -1000,8 +1000,8 @@
       "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
       "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
       "fileType": "location",
-      "baseVersionId": "01a06897-3418-7aa8-b6e2-0d185170b3f6",
-      "baseHash": "bf133a18-4c23-3b3a-13af-a4fd10fa7c3f",
+      "baseVersionId": "01a07329-6173-7240-9e6a-c010f1edf222",
+      "baseHash": "23c4cf0e-2084-8d83-b8e5-e73a762f8c95",
       "source": "project",
       "metadataHash": "00b6d5e5-5f64-c2a7-7060-4834bf505457"
     },
@@ -1040,8 +1040,8 @@
       "fileId": "01a03e8d-3e31-7208-b6e5-7804355067ec",
       "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
       "fileType": "location",
-      "baseVersionId": "01a06897-33f4-737c-b70a-65093bdd821a",
-      "baseHash": "4e67a51e-2ca7-91f6-c28e-796f8ed47fc8",
+      "baseVersionId": "01a07329-6140-7cb4-bac7-5ccfe1fd807f",
+      "baseHash": "eafe679c-e1ec-c462-f731-e2493ea408b2",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1406,8 +1406,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a06897-3462-70a4-9de3-0dd61aa97769",
-      "baseHash": "78db3af8-c418-0604-3b96-8df47e4ff26e",
+      "baseVersionId": "01a07329-617c-7038-a730-9ff2d010d518",
+      "baseHash": "b84d8c92-2332-a785-a404-015060f3ad7e",
       "source": "project"
     },
     {
@@ -1415,8 +1415,8 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a06db7-3a6a-7b00-8fdd-b60226c7b7f5",
-      "baseHash": "655f8aa2-4fa2-84e6-ceea-96d8abd88427",
+      "baseVersionId": "01a07329-6188-7f04-b914-58d042fe06eb",
+      "baseHash": "923471bb-a50d-d1d4-b808-dc8ad5c73037",
       "source": "project"
     },
     {
@@ -1424,8 +1424,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a06db7-3a7e-7940-b344-d57d5fa2071e",
-      "baseHash": "fb96640c-50ca-b00f-40df-a3df99da1fef",
+      "baseVersionId": "01a07329-618f-7990-80c2-c6934e2ab0e4",
+      "baseHash": "e8264147-12df-f3c2-aae6-b6d125a6b037",
       "source": "project"
     },
     {
@@ -1524,6 +1524,55 @@
       "baseVersionId": "01a06db7-3ac7-7ae4-b4fd-9f0c558031de",
       "baseHash": "eb3a12f6-7fa2-fa39-1244-a06c71d49f6a",
       "source": "project"
+    },
+    {
+      "path": "/Locations/Hollow Tree.location.json",
+      "fileId": "01a0730b-5c08-725c-8e9c-ffc50baa9557",
+      "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
+      "fileType": "location",
+      "baseVersionId": "01a07329-616d-7550-803f-37e370265415",
+      "baseHash": "ac0a16bb-b663-37d9-0885-4d2fa20052e0",
+      "source": "project",
+      "metadataHash": "20ae2a31-9f79-8863-1a0d-fa0963768a35"
+    },
+    {
+      "path": "/Locations/Hidden hatch.location.json",
+      "fileId": "01a0730d-3ffd-72f4-bec9-d6c7b77be7ac",
+      "referenceId": "01a0730d-3ffd-736c-b70c-a0f17680e635",
+      "fileType": "location",
+      "baseVersionId": "01a07329-615d-74a4-b655-c8209a7ae74b",
+      "baseHash": "e10a7967-d9b4-b5af-8306-b88f9657ffe1",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Hidden Fairy Door.location.json",
+      "fileId": "01a07310-b769-7158-acbe-774827880c77",
+      "referenceId": "01a07310-b769-7218-9861-5f20059c8148",
+      "fileType": "location",
+      "baseVersionId": "01a07329-6154-7608-9940-59d5d50df054",
+      "baseHash": "2bf0e9d2-05e3-e9e4-24b6-dfc632775563",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Hollow tree - servide tunnel.location.json",
+      "fileId": "01a07317-75d6-7820-a5b4-a861196bff3b",
+      "referenceId": "01a07317-75d6-78a0-93d2-0efa85c6b408",
+      "fileType": "location",
+      "baseVersionId": "01a07329-6165-7e60-b1d9-4d87909c67db",
+      "baseHash": "311eae65-ceea-3c1c-bc03-7caf40ad5541",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Change Requests/Hollow Tree Escape Routes.change-request.md",
+      "fileId": "01a07329-6198-76fc-9656-01bb5b4ed6dd",
+      "referenceId": "01a07329-5cd0-70ff-9d11-653aef0efe3d",
+      "fileType": "change-request",
+      "baseVersionId": "01a07329-6197-7844-a9b2-fa7505a4b26f",
+      "baseHash": "56c02ecf-24d1-8d79-37e5-475fc26c6545",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1544,12 +1593,6 @@
       "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
       "schemaHash": "b7b135a8-3235-fe47-7391-4d5b8d7748ab",
       "contentHash": "3dd1cac4-deec-7f0d-71ab-bb19820c870b"
-    },
-    {
-      "slug": "mission-journal",
-      "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
-      "schemaHash": "ceb123c0-58e8-9a2d-bc81-0aee78770c31",
-      "contentHash": "46676507-1172-b244-3f45-54829f272c79"
     },
     {
       "slug": "species",
@@ -1585,7 +1628,7 @@
       "slug": "bargain",
       "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
       "schemaHash": "c5a85a11-c621-30a3-51c0-5db3c6a3aa06",
-      "contentHash": "e67cbb16-a447-460e-3fe7-d80aeb9ffb5c"
+      "contentHash": "04275cb2-9f03-c47a-02c5-61026927cb40"
     },
     {
       "slug": "lore-card",
@@ -1603,13 +1646,19 @@
       "slug": "grace",
       "fileTypeId": "019fed6d-ab59-72fc-ab24-232764ca6432",
       "schemaHash": "c41caafc-4db2-99d7-8db4-b038e413388a",
-      "contentHash": "21dc85aa-2c3b-a381-b492-62b7d0535fe7"
+      "contentHash": "673e3261-15b2-b58b-db64-d6ff2320d6e9"
     },
     {
       "slug": "mission",
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
       "schemaHash": "8f8e1680-f931-2ad4-1de3-70fa9f560f41",
       "contentHash": "8caed3fe-69f7-3525-9dd4-49a36b99a868"
+    },
+    {
+      "slug": "mission-journal",
+      "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
+      "schemaHash": "ceb123c0-58e8-9a2d-bc81-0aee78770c31",
+      "contentHash": "7fe23f7b-6649-e775-55d8-624c706ed01b"
     },
     {
       "slug": "gm-instructions",

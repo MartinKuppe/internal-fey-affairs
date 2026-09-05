@@ -272,24 +272,10 @@
           "maxWidth": "full"
         },
         "children": [
+          "heading",
+          "separator",
           "body-stack"
         ]
-      },
-      "hero": {
-        "type": "ImageHeader",
-        "props": {
-          "src": {
-            "$state": "/image"
-          },
-          "title": {
-            "$state": "/name"
-          },
-          "subtitle": {
-            "$state": "/description"
-          },
-          "aspectRatio": "video"
-        },
-        "children": []
       },
       "page": {
         "type": "Stack",
@@ -298,7 +284,6 @@
           "direction": "vertical"
         },
         "children": [
-          "hero",
           "body"
         ]
       },
@@ -327,6 +312,18 @@
           "tab-history"
         ]
       },
+      "heading": {
+        "type": "Heading",
+        "props": {
+          "text": {
+            "$state": "/name"
+          },
+          "color": null,
+          "level": "h1",
+          "className": null
+        },
+        "children": []
+      },
       "date-card": {
         "type": "Card",
         "props": {
@@ -336,6 +333,14 @@
           "date-label",
           "date-empty"
         ]
+      },
+      "separator": {
+        "type": "Separator",
+        "props": {
+          "className": null,
+          "orientation": "horizontal"
+        },
+        "children": []
       },
       "body-stack": {
         "type": "Stack",
@@ -535,10 +540,11 @@
             "$state": "/availableMissions"
           },
           "label": "Available Missions",
-          "columns": 2,
+          "columns": 4,
           "emptyState": "No Missions available right now.",
           "showAddNew": false,
           "fileTypeSlug": "mission",
+          "titlePosition": "overlay",
           "metadataFields": [
             {
               "name": "code",
@@ -554,6 +560,7 @@
             }
           ],
           "referenceField": "mission",
+          "imageAspectRatio": "video",
           "showAddNewOnHover": false
         },
         "children": []
@@ -611,7 +618,9 @@
           "label": "Missions",
           "columns": 4,
           "fileTypeSlug": "mission",
-          "referenceField": null
+          "titlePosition": "overlay",
+          "referenceField": null,
+          "imageAspectRatio": "video"
         },
         "visible": {
           "$state": "/missions"

@@ -24,7 +24,7 @@
   "type": "Fey Site",
   "description": "A mushroom-ringed clearing beyond Trí Mhuilinn where the ground can wake into a circular skin of moving blue and white light. When closed it is easy to mistake for an odd patch of woodland; when active, nothing about it looks natural.",
   "atmosphere": "Still grass, damp leaves, and an eerie sound with no visible musician. The glade feels exposed even before patrol lights move between the trees.",
-  "notes": "The Encounter's arrival site and Coinín's meeting place for the opening tutorials. Technically this is a long-range reconstructive teleporter, but do not reveal reclamation/reconstruction mechanics during these Missions. A hoverbike patrol searches here after Méabh appears.",
+  "notes": "The Encounter's arrival site. Technically this is a long-range reconstructive teleporter, but do not reveal reclamation/reconstruction mechanics during these Missions. A hoverbike patrol searches here after Méabh appears. Coinín's Hollow Tree stands at the glade's edge; its physical service tunnel emerges through the Hidden hatch near the far side of the clearing.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/17c446d7-13bf-447c-af4e-727c92b40669"
   }

@@ -1,0 +1,14 @@
+{
+  "name": "Hollow Tree",
+  "type": "Fey Safehouse",
+  "description": "An ancient hollow tree at the edge of the Fairy Ring glade, large enough inside for a compact hidden chamber. Shelves of bottles and herbs, low furnishings, and branching amber lights make the space look half woodland refuge and half concealed workshop.",
+  "atmosphere": "Warm bark, crushed herbs, and a faint mechanical hum. The chamber feels sheltered, but ladders and seams among the roots suggest that it has more exits than a tree ought to possess.",
+  "notes": "Coinín knows and uses this safehouse. Its lower root chamber has two distinct routes: an ordinary Fey-built service tunnel reaches the Hidden hatch near the far side of the Fairy Ring glade, while a concealed permanent Fairy Door connects to the Hidden Fairy Door in the woods west of Trí Mhuilinn. The service tunnel is the established fail-forward escape during The Encounter; the Fairy Door is a portal and must not be narrated as a root tunnel or as literal magic.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b5c97a6c-c00b-4f7c-905a-5a19a275bd1c",
+    "focalPoint": {
+      "x": 0.5262367450962545,
+      "y": 0.2597203222374221
+    }
+  }
+}

@@ -3,7 +3,7 @@
   "type": "Village",
   "description": "A small palisaded Irish village whose homes, workshops, animal pens, and inn cluster around muddy paths. Everyone knows everyone else's business, and bowls of milk or cream still appear outside certain doors after dark.",
   "atmosphere": "Woodsmoke and livestock by day; shuttered houses, creaking gates, and old bargains at night. The familiar village becomes a field of watchful windows once secrecy matters.",
-  "notes": "Primary selector map for the opening Side Missions. During Milk and Cream, one watchman guards the palisade gate and another patrols inside because of recent thefts. Household offerings provide the required milk and cream. Mission pins are runtime scene state only; do not add shared author-time Mission pins to this map.",
+  "notes": "Primary selector map for the opening Side Missions. During Milk and Cream, one watchman guards the palisade gate and another patrols inside because of recent thefts. Household offerings provide the required milk and cream. A concealed Fairy Door in the western woods connects to Coinín's Hollow Tree; it offers an approach route but does not bypass the palisade, watch, collection, or workshop obstacles. Mission pins are runtime scene state only; do not add shared author-time Mission pins to this map.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1a16672e-5e74-4be0-b729-1a3ccf8dac55"
   }
