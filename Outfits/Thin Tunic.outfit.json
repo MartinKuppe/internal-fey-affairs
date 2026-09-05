@@ -3,6 +3,9 @@
     "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3"
   },
   "name": "Thin Tunic",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/6d5a25ae-3f5d-4702-83a8-aae81c2ae542"
+  },
   "description": "A light tunic that offers little protection from the cold. Shivering keeps the wearer alert but makes it harder to remain steady.",
   "conditionModifiers": [
     {

@@ -3,6 +3,9 @@
     "referenceId": "019ff21e-b5e4-7be4-b4ab-454883c5337b"
   },
   "name": "Vest Inside-Out",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1670f369-7e45-448f-b58e-667f9b121fad"
+  },
   "description": "A vest deliberately worn inside-out.",
   "conditionModifiers": [
     {

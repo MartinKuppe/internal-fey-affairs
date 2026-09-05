@@ -3,6 +3,9 @@
     "referenceId": "019ff21e-b597-7460-a6d8-024f985ad1cf"
   },
   "name": "Dark Outfit",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/336af513-7fea-45ac-b813-536426d7ba9c"
+  },
   "description": "A dark, unobtrusive outfit.",
   "conditionModifiers": [
     {

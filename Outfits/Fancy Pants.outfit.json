@@ -3,6 +3,9 @@
     "referenceId": "01a06db7-3296-7028-991e-393baaaaaace"
   },
   "name": "Fancy Pants",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/fe2bce92-183c-418a-bd53-a376e1e48fcc"
+  },
   "description": "Conspicuously fine trousers that make a respectable impression and a memorable silhouette.",
   "conditionModifiers": [
     {

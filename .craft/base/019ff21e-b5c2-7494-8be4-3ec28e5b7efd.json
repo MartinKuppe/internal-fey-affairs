@@ -1,5 +1,8 @@
 {
   "name": "Formal Court Attire",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/2e2a8ea2-4675-44e2-9815-82f078f89cc7"
+  },
   "description": "Formal clothing suitable for appearing at court.",
   "conditionModifiers": [
     {

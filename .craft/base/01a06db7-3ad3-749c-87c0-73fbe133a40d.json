@@ -1,5 +1,8 @@
 {
   "name": "Heavy Black Coat",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/73deb827-55da-4fd8-a623-388c9a39f4cc"
+  },
   "description": "A dark, enveloping coat that hides the wearer's outline but becomes tiring and soporific over time.",
   "conditionModifiers": [
     {

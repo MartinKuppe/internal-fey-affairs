@@ -3,6 +3,9 @@
     "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5"
   },
   "name": "Lucky Pompom Hat",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/a8e859da-2092-460d-ba7f-90cb4b25cbd5"
+  },
   "description": "A cherished hat whose wearer is convinced it brings good fortune. Whether or not it does, wearing it makes difficult moments easier to face.",
   "conditionModifiers": [
     {

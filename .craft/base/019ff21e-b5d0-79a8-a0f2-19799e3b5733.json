@@ -1,5 +1,8 @@
 {
   "name": "Fabulous Glamour",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ff567e07-de7e-4989-84eb-65d16d446e0b"
+  },
   "description": "A spectacular visual Glamour worn as an outfit.",
   "conditionModifiers": [
     {

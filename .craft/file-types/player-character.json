@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": null,
-  "schemaHash": "c9150bd6-9c58-4788-3a3b-e0c0881f98be",
+  "schemaHash": "4d8beb1e-86c5-cb3b-27cb-93bfe462be7e",
   "schema": {
     "type": "object",
     "required": [
@@ -281,6 +281,12 @@
         },
         "title": "Grace Ledger",
         "description": "Authoritative record of every Grace gain or loss. Balances are derived from this ledger — never maintain a separate running total. Negative amounts are Grace debt."
+      },
+      "outfitImage": {
+        "type": "object",
+        "title": "Outfit Image",
+        "expression": "load($self.outfit)?.image ?? null",
+        "description": "The current worn outfit's image, pulled from the referenced outfit file."
       },
       "graceBalances": {
         "type": "object",
@@ -704,7 +710,16 @@
         "children": [
           "name",
           "divider",
-          "tabs"
+          "tabs",
+          "origin-select",
+          "weakness-field",
+          "graceledger-references",
+          "hasmybargains-checkbox",
+          "knownbargains-references",
+          "signedbargains-references",
+          "unlockedoutfits-references",
+          "hasotherbargains-checkbox",
+          "outfitimage-section"
         ]
       },
       "tabs": {
@@ -751,6 +766,20 @@
         },
         "children": []
       },
+      "image": {
+        "type": "Image",
+        "props": {
+          "alt": "@Oracle: Put here outfite image",
+          "src": {
+            "$state": "/outfitImage"
+          },
+          "size": "md",
+          "align": "left",
+          "className": null,
+          "aspectRatio": null
+        },
+        "children": []
+      },
       "stack": {
         "type": "Stack",
         "props": {
@@ -785,6 +814,7 @@
         },
         "children": [
           "card-3",
+          "image",
           "text-2",
           "outfit-modifiers-list"
         ]
@@ -1457,6 +1487,22 @@
         },
         "children": []
       },
+      "origin-select": {
+        "type": "Select",
+        "props": {
+          "label": "Origin",
+          "value": {
+            "$state": "/origin"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "origin"
+        },
+        "visible": {
+          "$state": "/origin"
+        },
+        "children": []
+      },
       "stack-2-2-2-2": {
         "type": "Stack",
         "props": {
@@ -1581,6 +1627,25 @@
           "variant": "caption",
           "editPath": null,
           "className": null
+        },
+        "children": []
+      },
+      "weakness-field": {
+        "type": "FieldList",
+        "props": {
+          "items": [
+            [
+              "Weakness",
+              {
+                "$state": "/weakness"
+              }
+            ]
+          ],
+          "labelColor": null,
+          "valueColor": null
+        },
+        "visible": {
+          "$state": "/weakness"
         },
         "children": []
       },
@@ -1735,6 +1800,18 @@
           "color": null,
           "level": "h1",
           "className": null
+        },
+        "children": []
+      },
+      "outfitimage-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_outfitImageEntries"
+          },
+          "bgColor": null
         },
         "children": []
       },
@@ -1896,6 +1973,28 @@
         "children": [
           "outfit-modifier-line",
           "outfit-modifier-applies"
+        ]
+      },
+      "outfitimage-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Outfit Image",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "outfitimage-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/outfitImage"
+        },
+        "children": [
+          "outfitimage-heading",
+          "outfitimage-stats"
         ]
       },
       "stack-2-2-2-2-2-2-2": {
@@ -2094,6 +2193,48 @@
         },
         "children": []
       },
+      "graceledger-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/graceLedger"
+          },
+          "label": "Grace Ledger",
+          "columns": 4,
+          "fileTypeSlug": "grace",
+          "metadataFields": [
+            {
+              "name": "day",
+              "type": "number"
+            },
+            {
+              "name": "amount",
+              "type": "number"
+            },
+            {
+              "name": "reason",
+              "type": "string"
+            }
+          ],
+          "referenceField": "currency"
+        },
+        "visible": {
+          "$state": "/graceLedger"
+        },
+        "children": []
+      },
+      "hasmybargains-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Has My Bargains",
+          "checked": {
+            "$state": "/hasMyBargains"
+          }
+        },
+        "children": []
+      },
       "outfit-modifier-amount": {
         "type": "Text",
         "props": {
@@ -2128,6 +2269,23 @@
         },
         "children": []
       },
+      "knownbargains-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/knownBargains"
+          },
+          "label": "Known Bargains",
+          "columns": 4,
+          "fileTypeSlug": "bargain",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/knownBargains"
+        },
+        "children": []
+      },
       "trackbox-row-concealment": {
         "type": "TrackBoxes",
         "props": {
@@ -2151,6 +2309,51 @@
             "$state": "/conditionTracks/1/current"
           },
           "showValue": true
+        },
+        "children": []
+      },
+      "hasotherbargains-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Has Other Bargains",
+          "checked": {
+            "$state": "/hasOtherBargains"
+          }
+        },
+        "children": []
+      },
+      "signedbargains-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/signedBargains"
+          },
+          "label": "Signed Bargains",
+          "columns": 4,
+          "fileTypeSlug": "bargain",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/signedBargains"
+        },
+        "children": []
+      },
+      "unlockedoutfits-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/unlockedOutfits"
+          },
+          "label": "Unlocked Outfits",
+          "columns": 4,
+          "fileTypeSlug": "outfit",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/unlockedOutfits"
         },
         "children": []
       }

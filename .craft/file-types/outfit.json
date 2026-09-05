@@ -166,7 +166,7 @@
           "title": {
             "$state": "/name"
           },
-          "aspectRatio": "video"
+          "aspectRatio": "square"
         },
         "children": []
       },
