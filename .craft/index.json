@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-04T18:49:41.074Z",
+  "syncedAt": "2026-09-04T23:59:32.796Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -1163,8 +1163,8 @@
       "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileType": "player-character",
-      "baseVersionId": "01a06db7-3a3d-747c-ac1e-11da855bada0",
-      "baseHash": "3984e141-501e-b440-1941-dab2d6d1e686",
+      "baseVersionId": "01a06ea3-357f-79bc-83cc-a9bba75e2b44",
+      "baseHash": "faeff17c-fea1-3f33-7630-0e86af44ec29",
       "source": "project"
     },
     {
@@ -1588,22 +1588,10 @@
       "contentHash": "e67cbb16-a447-460e-3fe7-d80aeb9ffb5c"
     },
     {
-      "slug": "player-character",
-      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "c9150bd6-9c58-4788-3a3b-e0c0881f98be",
-      "contentHash": "f82e462b-a006-d1c1-bb7c-19bab710b5a4"
-    },
-    {
       "slug": "lore-card",
       "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
       "schemaHash": "8f2ffdf8-bda6-ec61-0dca-5c69e1665d41",
       "contentHash": "ab24578d-9a89-4523-56bd-ad4910c537d0"
-    },
-    {
-      "slug": "non-player-character",
-      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
-      "schemaHash": "bdcb6eac-755b-db78-de0d-095b90809145",
-      "contentHash": "ba79dcae-1cdd-0d39-2449-5626b225e413"
     },
     {
       "slug": "location",
@@ -1634,7 +1622,19 @@
       "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
       "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
+    },
+    {
+      "slug": "non-player-character",
+      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
+      "schemaHash": "bdcb6eac-755b-db78-de0d-095b90809145",
+      "contentHash": "0efb5471-aff4-822f-62b7-d86955979890"
+    },
+    {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "c9150bd6-9c58-4788-3a3b-e0c0881f98be",
+      "contentHash": "87b20f3e-ae78-71f2-955d-5188e3de389f"
     }
   ],
-  "projectSettingsHash": "964a738a-729f-2bd9-4603-040d1934d7ad"
+  "projectSettingsHash": "079d31b4-61fe-7f9c-29d3-998573f6d90e"
 }

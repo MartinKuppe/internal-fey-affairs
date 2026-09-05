@@ -743,7 +743,7 @@
       "text": {
         "type": "Text",
         "props": {
-          "text": "\"Are you wounded or sick?\"",
+          "text": "\"How hurt or sick are you?\"",
           "color": "#758c7e",
           "variant": "code",
           "editPath": null,
@@ -882,6 +882,24 @@
           "text"
         ]
       },
+      "card-8": {
+        "type": "Card",
+        "props": {
+          "title": "The Dice Rule",
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "markdown"
+        ]
+      },
       "grid-2": {
         "type": "Grid",
         "props": {
@@ -973,7 +991,7 @@
       "text-3": {
         "type": "Text",
         "props": {
-          "text": "\"Are you about to fall asleep?\"",
+          "text": "\"Can you keep going?\"",
           "color": "#758c7e",
           "variant": "code",
           "editPath": null,
@@ -1069,6 +1087,15 @@
           "text-3"
         ]
       },
+      "markdown": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": "**2d6 + attribute + condition track + 2** *if special skill applies* \n \ntested against the difficulty:\n- Easy: 10\n- Standard: 12\n- Hard: 14\n- Exceptional: 16",
+          "className": null
+        },
+        "children": []
+      },
       "switch-2": {
         "type": "Switch",
         "props": {
@@ -1097,7 +1124,7 @@
       "text-3-3": {
         "type": "Text",
         "props": {
-          "text": "\"How calm are you?\"",
+          "text": "\"Can you keep your courage and concentration?\"",
           "color": "#758c7e",
           "variant": "code",
           "editPath": null,
@@ -1204,6 +1231,7 @@
           "grid",
           "attributes-section-2",
           "abilities-section",
+          "card-8",
           "conditionstate-section"
         ]
       },
@@ -1223,7 +1251,7 @@
       "text-3-3-2": {
         "type": "Text",
         "props": {
-          "text": "\"How do you look?\"",
+          "text": "\"Do you fit the social situation?\"",
           "color": "#758c7e",
           "variant": "code",
           "editPath": null,
@@ -1366,7 +1394,7 @@
       "text-3-3-2-2": {
         "type": "Text",
         "props": {
-          "text": "\"Do you blend in?\"",
+          "text": "\"Do you remain unnoticed or unsuspected?\"",
           "color": "#758c7e",
           "variant": "code",
           "editPath": null,
@@ -1460,12 +1488,14 @@
           },
           "label": null,
           "columns": 4,
+          "showAddNew": false,
           "fileTypeSlug": "ability",
           "addNewVariant": null,
           "titlePosition": "bottom",
           "referenceField": null,
           "imageAspectRatio": "ultrawide",
-          "metadataPosition": null
+          "metadataPosition": null,
+          "showAddNewOnHover": false
         },
         "children": []
       },
@@ -1693,6 +1723,7 @@
         "type": "Card",
         "props": {
           "title": "Special skills",
+          "centered": false,
           "maxWidth": "full"
         },
         "children": [
@@ -2139,5 +2170,1171 @@
   },
   "imageStyleInstructions": null,
   "showCoverImage": true,
-  "creationFlow": null
+  "creationFlow": {
+    "id": "make-a-character",
+    "edges": [
+      {
+        "id": "edge_4155fa8f-f03a-4b7b-89cc-ff4ccbeb5523",
+        "source": "w2",
+        "target": "node_c040a2ba-850a-4043-aa18-28a1145e48a7",
+        "sourceHandle": "what_does_all_of_this_mean"
+      },
+      {
+        "id": "edge_bandit-weak-body",
+        "source": "w2",
+        "target": "weak-body",
+        "sourceHandle": "bandit"
+      },
+      {
+        "id": "edge_blacksmith-weak-body",
+        "source": "w2",
+        "target": "weak-body",
+        "sourceHandle": "blacksmith"
+      },
+      {
+        "id": "edge_mercenary-weak-body",
+        "source": "w2",
+        "target": "weak-body",
+        "sourceHandle": "mercenary"
+      },
+      {
+        "id": "edge_fairy-doctor-weak-hands",
+        "source": "w2",
+        "target": "weak-hands",
+        "sourceHandle": "fairy-doctor"
+      },
+      {
+        "id": "edge_farmhand-weak-hands",
+        "source": "w2",
+        "target": "weak-hands",
+        "sourceHandle": "farmhand"
+      },
+      {
+        "id": "edge_milker-weak-hands",
+        "source": "w2",
+        "target": "weak-hands",
+        "sourceHandle": "milker"
+      },
+      {
+        "id": "edge_druid-weak-head",
+        "source": "w2",
+        "target": "weak-head",
+        "sourceHandle": "druid"
+      },
+      {
+        "id": "edge_seanchaí-weak-head",
+        "source": "w2",
+        "target": "weak-head",
+        "sourceHandle": "seanchaí"
+      },
+      {
+        "id": "edge_teacher-weak-head",
+        "source": "w2",
+        "target": "weak-head",
+        "sourceHandle": "teacher"
+      },
+      {
+        "id": "edge_bard-weak-heart",
+        "source": "w2",
+        "target": "weak-heart",
+        "sourceHandle": "bard"
+      },
+      {
+        "id": "edge_good-for-nothing-weak-heart",
+        "source": "w2",
+        "target": "weak-heart",
+        "sourceHandle": "good-for-nothing"
+      },
+      {
+        "id": "edge_piper-weak-heart",
+        "source": "w2",
+        "target": "weak-heart",
+        "sourceHandle": "piper"
+      },
+      {
+        "id": "edge_courier-weak-legs",
+        "source": "w2",
+        "target": "weak-legs",
+        "sourceHandle": "courier"
+      },
+      {
+        "id": "edge_horse-herder-weak-legs",
+        "source": "w2",
+        "target": "weak-legs",
+        "sourceHandle": "horse-herder"
+      },
+      {
+        "id": "edge_wood-gatherer-weak-legs",
+        "source": "w2",
+        "target": "weak-legs",
+        "sourceHandle": "wood-gatherer"
+      },
+      {
+        "id": "edge_grocer-weak-eyes",
+        "source": "w2",
+        "target": "weak-eyes",
+        "sourceHandle": "grocer"
+      },
+      {
+        "id": "edge_herbalist-weak-eyes",
+        "source": "w2",
+        "target": "weak-eyes",
+        "sourceHandle": "herbalist"
+      },
+      {
+        "id": "edge_tailor-weak-eyes",
+        "source": "w2",
+        "target": "weak-eyes",
+        "sourceHandle": "tailor"
+      },
+      {
+        "id": "edge_poacher-weak-shadow",
+        "source": "w2",
+        "target": "weak-shadow",
+        "sourceHandle": "poacher"
+      },
+      {
+        "id": "edge_thief-weak-shadow",
+        "source": "w2",
+        "target": "weak-shadow",
+        "sourceHandle": "thief"
+      },
+      {
+        "id": "edge_used-horse-dealer-weak-shadow",
+        "source": "w2",
+        "target": "weak-shadow",
+        "sourceHandle": "used-horse-dealer"
+      },
+      {
+        "id": "edge_weak-body-all-thumbs",
+        "source": "weak-body",
+        "target": "w3",
+        "sourceHandle": "All Thumbs"
+      },
+      {
+        "id": "edge_weak-body-muddle-headed",
+        "source": "weak-body",
+        "target": "w3",
+        "sourceHandle": "Muddle-Headed"
+      },
+      {
+        "id": "edge_weak-body-poor-judge-of-character",
+        "source": "weak-body",
+        "target": "w3",
+        "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-body-flat-footed",
+        "source": "weak-body",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
+        "id": "edge_weak-body-squint-eyed",
+        "source": "weak-body",
+        "target": "w3",
+        "sourceHandle": "Squint-Eyed"
+      },
+      {
+        "id": "edge_weak-body-open-book",
+        "source": "weak-body",
+        "target": "w3",
+        "sourceHandle": "Open Book"
+      },
+      {
+        "id": "edge_weak-hands-short-winded",
+        "source": "weak-hands",
+        "target": "w3",
+        "sourceHandle": "Short-Winded"
+      },
+      {
+        "id": "edge_weak-hands-muddle-headed",
+        "source": "weak-hands",
+        "target": "w3",
+        "sourceHandle": "Muddle-Headed"
+      },
+      {
+        "id": "edge_weak-hands-poor-judge-of-character",
+        "source": "weak-hands",
+        "target": "w3",
+        "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-hands-flat-footed",
+        "source": "weak-hands",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
+        "id": "edge_weak-hands-squint-eyed",
+        "source": "weak-hands",
+        "target": "w3",
+        "sourceHandle": "Squint-Eyed"
+      },
+      {
+        "id": "edge_weak-hands-open-book",
+        "source": "weak-hands",
+        "target": "w3",
+        "sourceHandle": "Open Book"
+      },
+      {
+        "id": "edge_weak-head-short-winded",
+        "source": "weak-head",
+        "target": "w3",
+        "sourceHandle": "Short-Winded"
+      },
+      {
+        "id": "edge_weak-head-all-thumbs",
+        "source": "weak-head",
+        "target": "w3",
+        "sourceHandle": "All Thumbs"
+      },
+      {
+        "id": "edge_weak-head-poor-judge-of-character",
+        "source": "weak-head",
+        "target": "w3",
+        "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-head-flat-footed",
+        "source": "weak-head",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
+        "id": "edge_weak-head-squint-eyed",
+        "source": "weak-head",
+        "target": "w3",
+        "sourceHandle": "Squint-Eyed"
+      },
+      {
+        "id": "edge_weak-head-open-book",
+        "source": "weak-head",
+        "target": "w3",
+        "sourceHandle": "Open Book"
+      },
+      {
+        "id": "edge_weak-heart-short-winded",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "Short-Winded"
+      },
+      {
+        "id": "edge_weak-heart-all-thumbs",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "All Thumbs"
+      },
+      {
+        "id": "edge_weak-heart-muddle-headed",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "Muddle-Headed"
+      },
+      {
+        "id": "edge_weak-heart-flat-footed",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
+        "id": "edge_weak-heart-squint-eyed",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "Squint-Eyed"
+      },
+      {
+        "id": "edge_weak-heart-open-book",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "Open Book"
+      },
+      {
+        "id": "edge_weak-legs-short-winded",
+        "source": "weak-legs",
+        "target": "w3",
+        "sourceHandle": "Short-Winded"
+      },
+      {
+        "id": "edge_weak-legs-all-thumbs",
+        "source": "weak-legs",
+        "target": "w3",
+        "sourceHandle": "All Thumbs"
+      },
+      {
+        "id": "edge_weak-legs-muddle-headed",
+        "source": "weak-legs",
+        "target": "w3",
+        "sourceHandle": "Muddle-Headed"
+      },
+      {
+        "id": "edge_weak-legs-poor-judge-of-character",
+        "source": "weak-legs",
+        "target": "w3",
+        "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-legs-squint-eyed",
+        "source": "weak-legs",
+        "target": "w3",
+        "sourceHandle": "Squint-Eyed"
+      },
+      {
+        "id": "edge_weak-legs-open-book",
+        "source": "weak-legs",
+        "target": "w3",
+        "sourceHandle": "Open Book"
+      },
+      {
+        "id": "edge_weak-eyes-short-winded",
+        "source": "weak-eyes",
+        "target": "w3",
+        "sourceHandle": "Short-Winded"
+      },
+      {
+        "id": "edge_weak-eyes-all-thumbs",
+        "source": "weak-eyes",
+        "target": "w3",
+        "sourceHandle": "All Thumbs"
+      },
+      {
+        "id": "edge_weak-eyes-muddle-headed",
+        "source": "weak-eyes",
+        "target": "w3",
+        "sourceHandle": "Muddle-Headed"
+      },
+      {
+        "id": "edge_weak-eyes-poor-judge-of-character",
+        "source": "weak-eyes",
+        "target": "w3",
+        "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-eyes-flat-footed",
+        "source": "weak-eyes",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
+        "id": "edge_weak-eyes-open-book",
+        "source": "weak-eyes",
+        "target": "w3",
+        "sourceHandle": "Open Book"
+      },
+      {
+        "id": "edge_weak-shadow-short-winded",
+        "source": "weak-shadow",
+        "target": "w3",
+        "sourceHandle": "Short-Winded"
+      },
+      {
+        "id": "edge_weak-shadow-all-thumbs",
+        "source": "weak-shadow",
+        "target": "w3",
+        "sourceHandle": "All Thumbs"
+      },
+      {
+        "id": "edge_weak-shadow-muddle-headed",
+        "source": "weak-shadow",
+        "target": "w3",
+        "sourceHandle": "Muddle-Headed"
+      },
+      {
+        "id": "edge_weak-shadow-poor-judge-of-character",
+        "source": "weak-shadow",
+        "target": "w3",
+        "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-shadow-flat-footed",
+        "source": "weak-shadow",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
+        "id": "edge_weak-shadow-squint-eyed",
+        "source": "weak-shadow",
+        "target": "w3",
+        "sourceHandle": "Squint-Eyed"
+      },
+      {
+        "id": "edge_416e5581-9b06-41a8-bd57-6ad2073f821c",
+        "source": "node_c040a2ba-850a-4043-aa18-28a1145e48a7",
+        "target": "node_dc0ae752-0e5a-4a22-a08f-dd9e4fe40970"
+      },
+      {
+        "id": "edge_8b9bacac-cc3a-4303-a0da-2e79ac5bb341",
+        "source": "node_dc0ae752-0e5a-4a22-a08f-dd9e4fe40970",
+        "target": "w2"
+      },
+      {
+        "id": "edge_573783cb-5cc2-4424-a4b7-636439d7ece5",
+        "source": "node_627d9659-9e73-49a4-a0ef-00160eb115e0",
+        "target": "w3"
+      },
+      {
+        "id": "edge_3db7fe57-7ec7-4f6b-b219-24cfce915d55",
+        "source": "w3",
+        "target": "node_627d9659-9e73-49a4-a0ef-00160eb115e0",
+        "sourceHandle": "i_don_t_know_what_does_all_of_this_mean"
+      },
+      {
+        "id": "edge_ed642992-a02b-4ecc-9f9b-c2ab5e682bdd",
+        "source": "w3",
+        "target": "w5",
+        "sourceHandle": "thin-tunic"
+      },
+      {
+        "id": "edge_4a26e142-411b-42e6-b917-a39efd31ea6d",
+        "source": "w3",
+        "target": "w5",
+        "sourceHandle": "lucky-pompom-hat"
+      },
+      {
+        "id": "edge_1cc11902-ee8a-4f61-a9dc-31c4c24f39b4",
+        "source": "w3",
+        "target": "w5",
+        "sourceHandle": "fancy-pants"
+      },
+      {
+        "id": "edge_05db39bb-2d62-4d7b-9254-dc656100f538",
+        "source": "w3",
+        "target": "w5",
+        "sourceHandle": "heavy-black-coat"
+      },
+      {
+        "id": "edge_9be80839-1249-4646-ba37-74d4ffc14cc7",
+        "source": "w1",
+        "target": "node_2871a81c-1a1f-46ec-a814-a142bb5f8043"
+      },
+      {
+        "id": "edge_f811994b-17fa-4093-984b-8ffe2135b098",
+        "source": "node_2871a81c-1a1f-46ec-a814-a142bb5f8043",
+        "target": "w2"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "w1",
+        "data": {
+          "title": "Create your Character",
+          "eyebrow": "Internal Fey Affairs",
+          "subtitle": "Who are you?  \nThree small choices: the trade you learned, the clothes you wear, and the weakness that will get you into trouble.",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/5cb39482-b772-4301-8bca-4c2a1df56478",
+            "kind": "image"
+          }
+        },
+        "type": "cover"
+      },
+      {
+        "id": "w2",
+        "data": {
+          "accent": "#6ca789",
+          "layout": "list",
+          "prompt": "What is your trade?",
+          "eyebrow": "Step 2 of 4 — Your origin",
+          "options": [
+            {
+              "id": "bandit",
+              "info": "",
+              "slug": "bandit",
+              "label": "Bandit (nature, weapons, lying; +Body)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "bard",
+              "slug": "bard",
+              "label": "Bard (music, Fey lore, court life; +Heart)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "blacksmith",
+              "slug": "blacksmith",
+              "label": "Blacksmith (repairs, iron, weapons; +Body)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "courier",
+              "slug": "courier",
+              "label": "Courier (riding, wayfinding, court life; +Legs)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "druid",
+              "slug": "druid",
+              "label": "Druid (healing, learnedness, nature; +Head)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "fairy-doctor",
+              "slug": "fairy-doctor",
+              "label": "Fairy Doctor (healing, Fey lore, bargains; +Hands)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "farmhand",
+              "slug": "farmhand",
+              "label": "Farmhand (repairs, animals, food; +Hands)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "good-for-nothing",
+              "slug": "good-for-nothing",
+              "label": "Good-for-nothing (dancing, charisma, lying; +Heart)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "grocer",
+              "slug": "grocer",
+              "label": "Grocer (food, milk, bargains; +Eyes)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "herbalist",
+              "slug": "herbalist",
+              "label": "Herbalist (healing, nature, wayfinding; +Eyes)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "horse-herder",
+              "slug": "horse-herder",
+              "label": "Horse Herder (animals, riding, iron; +Legs)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "mercenary",
+              "slug": "mercenary",
+              "label": "Mercenary (weapons, court life, wayfinding; +Body)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "milker",
+              "slug": "milker",
+              "label": "Milker (animals, milk, nature; +Hands)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "piper",
+              "slug": "piper",
+              "label": "Piper (music, dancing, charisma; +Heart)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "poacher",
+              "slug": "poacher",
+              "label": "Poacher (wayfinding, lying, stealth; +Shadow)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "seanchaí",
+              "slug": "seanchaí",
+              "label": "Seanchaí (learnedness, Fey lore, charisma; +Head)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "tailor",
+              "slug": "tailor",
+              "label": "Tailor (repairs, art & beauty, court life; +Eyes)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "teacher",
+              "slug": "teacher",
+              "label": "Teacher (learnedness, bargains, art & beauty; +Head)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "thief",
+              "slug": "thief",
+              "label": "Thief (stealth, art & beauty, weapons; +Shadow)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "used-horse-dealer",
+              "slug": "used-horse-dealer",
+              "label": "Used-horse dealer (riding, bargains, lying; +Shadow)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "wood-gatherer",
+              "slug": "wood-gatherer",
+              "label": "Wood Gatherer (nature, wayfinding, animals; +Legs)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "what_does_all_of_this_mean",
+              "label": "❓❓❓𝙒𝙝𝙖𝙩 𝙙𝙤𝙚𝙨 𝙖𝙡𝙡 𝙤𝙛 𝙩𝙝𝙞𝙨 𝙢𝙚𝙖𝙣?❓❓❓",
+              "ai_instruction": ""
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/3e3ff7b7-367b-4f33-8237-f9104c555830",
+            "kind": "image"
+          },
+          "ai_instruction": "The origin sets the character's Strong Attribute (raised to 2) and grants the Origin's three trained Abilities."
+        },
+        "type": "choice",
+        "field": "origin"
+      },
+      {
+        "id": "weak-body",
+        "data": {
+          "accent": "#758c7e",
+          "layout": "list",
+          "prompt": "What is your one weakness?",
+          "eyebrow": "Step 3 of 4 — Your weakness",
+          "options": [
+            {
+              "id": "All Thumbs",
+              "info": "Fine work slips through your fingers: your Hands are Weak (0).",
+              "label": "All Thumbs (-Hands)",
+              "ai_instruction": "Sets Hands to 0 (Weak). Forbidden if the Origin made Hands Strong."
+            },
+            {
+              "id": "Muddle-Headed",
+              "info": "Your thoughts scatter like startled hens: your Head is Weak (0).",
+              "label": "Muddle-Headed (-Head)",
+              "ai_instruction": "Sets Head to 0 (Weak). Forbidden if the Origin made Head Strong."
+            },
+            {
+              "id": "Poor Judge of Character",
+              "info": "You misread the folk around you: your Heart is Weak (0).",
+              "label": "Poor Judge of Character (-Heart)",
+              "ai_instruction": "Sets Heart to 0 (Weak). Forbidden if the Origin made Heart Strong."
+            },
+            {
+              "id": "Flat-Footed",
+              "info": "You cannot run fast or far: your Legs are Weak (0).",
+              "label": "Flat-Footed (-Legs)",
+              "ai_instruction": "Sets Legs to 0 (Weak). Forbidden if the Origin made Legs Strong."
+            },
+            {
+              "id": "Squint-Eyed",
+              "info": "You miss what is right in front of you: your Eyes are Weak (0).",
+              "label": "Squint-Eyed (-Eyes)",
+              "ai_instruction": "Sets Eyes to 0 (Weak). Forbidden if the Origin made Eyes Strong."
+            },
+            {
+              "id": "Open Book",
+              "info": "Everyone can read you like a weathervane: your Shadow is Weak (0).",
+              "label": "Open Book (-Shadow)",
+              "ai_instruction": "Sets Shadow to 0 (Weak). Forbidden if the Origin made Shadow Strong."
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/c4e44a19-b255-4c23-a20d-d242b43adce5",
+            "kind": "image"
+          },
+          "ai_instruction": "The chosen Weakness sets its linked Attribute to 0 (Weak). It must never be the Attribute the Origin made Strong (2). Store the exact label on the character. This panel is shown to Origins with Strong Body; the Body weakness (Short-Winded) is not offered."
+        },
+        "type": "choice",
+        "field": "weakness"
+      },
+      {
+        "id": "weak-hands",
+        "data": {
+          "accent": "#758c7e",
+          "layout": "list",
+          "prompt": "What is your one weakness?",
+          "eyebrow": "Step 3 of 4 — Your weakness",
+          "options": [
+            {
+              "id": "Short-Winded",
+              "info": "Your breath gives out on the hill: your Body is Weak (0).",
+              "label": "Short-Winded (-Body)",
+              "ai_instruction": "Sets Body to 0 (Weak). Forbidden if the Origin made Body Strong."
+            },
+            {
+              "id": "Muddle-Headed",
+              "info": "Your thoughts scatter like startled hens: your Head is Weak (0).",
+              "label": "Muddle-Headed (-Head)",
+              "ai_instruction": "Sets Head to 0 (Weak). Forbidden if the Origin made Head Strong."
+            },
+            {
+              "id": "Poor Judge of Character",
+              "info": "You misread the folk around you: your Heart is Weak (0).",
+              "label": "Poor Judge of Character (-Heart)",
+              "ai_instruction": "Sets Heart to 0 (Weak). Forbidden if the Origin made Heart Strong."
+            },
+            {
+              "id": "Flat-Footed",
+              "info": "You cannot run fast or far: your Legs are Weak (0).",
+              "label": "Flat-Footed (-Legs)",
+              "ai_instruction": "Sets Legs to 0 (Weak). Forbidden if the Origin made Legs Strong."
+            },
+            {
+              "id": "Squint-Eyed",
+              "info": "You miss what is right in front of you: your Eyes are Weak (0).",
+              "label": "Squint-Eyed (-Eyes)",
+              "ai_instruction": "Sets Eyes to 0 (Weak). Forbidden if the Origin made Eyes Strong."
+            },
+            {
+              "id": "Open Book",
+              "info": "Everyone can read you like a weathervane: your Shadow is Weak (0).",
+              "label": "Open Book (-Shadow)",
+              "ai_instruction": "Sets Shadow to 0 (Weak). Forbidden if the Origin made Shadow Strong."
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/1aa7c746-595a-4b51-b1a0-7c8e4cf23a92",
+            "kind": "image"
+          },
+          "ai_instruction": "The chosen Weakness sets its linked Attribute to 0 (Weak). It must never be the Attribute the Origin made Strong (2). Store the exact label on the character. This panel is shown to Origins with Strong Hands; the Hands weakness (All Thumbs) is not offered."
+        },
+        "type": "choice",
+        "field": "weakness"
+      },
+      {
+        "id": "weak-head",
+        "data": {
+          "accent": "#758c7e",
+          "layout": "list",
+          "prompt": "What is your one weakness?",
+          "eyebrow": "Step 3 of 4 — Your weakness",
+          "options": [
+            {
+              "id": "Short-Winded",
+              "info": "Your breath gives out on the hill: your Body is Weak (0).",
+              "label": "Short-Winded (-Body)",
+              "ai_instruction": "Sets Body to 0 (Weak). Forbidden if the Origin made Body Strong."
+            },
+            {
+              "id": "All Thumbs",
+              "info": "Fine work slips through your fingers: your Hands are Weak (0).",
+              "label": "All Thumbs (-Hands)",
+              "ai_instruction": "Sets Hands to 0 (Weak). Forbidden if the Origin made Hands Strong."
+            },
+            {
+              "id": "Poor Judge of Character",
+              "info": "You misread the folk around you: your Heart is Weak (0).",
+              "label": "Poor Judge of Character (-Heart)",
+              "ai_instruction": "Sets Heart to 0 (Weak). Forbidden if the Origin made Heart Strong."
+            },
+            {
+              "id": "Flat-Footed",
+              "info": "You cannot run fast or far: your Legs are Weak (0).",
+              "label": "Flat-Footed (-Legs)",
+              "ai_instruction": "Sets Legs to 0 (Weak). Forbidden if the Origin made Legs Strong."
+            },
+            {
+              "id": "Squint-Eyed",
+              "info": "You miss what is right in front of you: your Eyes are Weak (0).",
+              "label": "Squint-Eyed (-Eyes)",
+              "ai_instruction": "Sets Eyes to 0 (Weak). Forbidden if the Origin made Eyes Strong."
+            },
+            {
+              "id": "Open Book",
+              "info": "Everyone can read you like a weathervane: your Shadow is Weak (0).",
+              "label": "Open Book (-Shadow)",
+              "ai_instruction": "Sets Shadow to 0 (Weak). Forbidden if the Origin made Shadow Strong."
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/e58dc7df-2868-4aee-8402-93d2d10e798b",
+            "kind": "image"
+          },
+          "ai_instruction": "The chosen Weakness sets its linked Attribute to 0 (Weak). It must never be the Attribute the Origin made Strong (2). Store the exact label on the character. This panel is shown to Origins with Strong Head; the Head weakness (Muddle-Headed) is not offered."
+        },
+        "type": "choice",
+        "field": "weakness"
+      },
+      {
+        "id": "weak-heart",
+        "data": {
+          "accent": "#758c7e",
+          "layout": "list",
+          "prompt": "What is your one weakness?",
+          "eyebrow": "Step 3 of 4 — Your weakness",
+          "options": [
+            {
+              "id": "Short-Winded",
+              "info": "Your breath gives out on the hill: your Body is Weak (0).",
+              "label": "Short-Winded (-Body)",
+              "ai_instruction": "Sets Body to 0 (Weak). Forbidden if the Origin made Body Strong."
+            },
+            {
+              "id": "All Thumbs",
+              "info": "Fine work slips through your fingers: your Hands are Weak (0).",
+              "label": "All Thumbs (-Hands)",
+              "ai_instruction": "Sets Hands to 0 (Weak). Forbidden if the Origin made Hands Strong."
+            },
+            {
+              "id": "Muddle-Headed",
+              "info": "Your thoughts scatter like startled hens: your Head is Weak (0).",
+              "label": "Muddle-Headed (-Head)",
+              "ai_instruction": "Sets Head to 0 (Weak). Forbidden if the Origin made Head Strong."
+            },
+            {
+              "id": "Flat-Footed",
+              "info": "You cannot run fast or far: your Legs are Weak (0).",
+              "label": "Flat-Footed (-Legs)",
+              "ai_instruction": "Sets Legs to 0 (Weak). Forbidden if the Origin made Legs Strong."
+            },
+            {
+              "id": "Squint-Eyed",
+              "info": "You miss what is right in front of you: your Eyes are Weak (0).",
+              "label": "Squint-Eyed (-Eyes)",
+              "ai_instruction": "Sets Eyes to 0 (Weak). Forbidden if the Origin made Eyes Strong."
+            },
+            {
+              "id": "Open Book",
+              "info": "Everyone can read you like a weathervane: your Shadow is Weak (0).",
+              "label": "Open Book (-Shadow)",
+              "ai_instruction": "Sets Shadow to 0 (Weak). Forbidden if the Origin made Shadow Strong."
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/08f222a1-8119-4cce-a647-2342802ee418",
+            "kind": "image"
+          },
+          "ai_instruction": "The chosen Weakness sets its linked Attribute to 0 (Weak). It must never be the Attribute the Origin made Strong (2). Store the exact label on the character. This panel is shown to Origins with Strong Heart; the Heart weakness (Poor Judge of Character) is not offered."
+        },
+        "type": "choice",
+        "field": "weakness"
+      },
+      {
+        "id": "weak-legs",
+        "data": {
+          "accent": "#758c7e",
+          "layout": "list",
+          "prompt": "What is your one weakness?",
+          "eyebrow": "Step 3 of 4 — Your weakness",
+          "options": [
+            {
+              "id": "Short-Winded",
+              "info": "Your breath gives out on the hill: your Body is Weak (0).",
+              "label": "Short-Winded (-Body)",
+              "ai_instruction": "Sets Body to 0 (Weak). Forbidden if the Origin made Body Strong."
+            },
+            {
+              "id": "All Thumbs",
+              "info": "Fine work slips through your fingers: your Hands are Weak (0).",
+              "label": "All Thumbs (-Hands)",
+              "ai_instruction": "Sets Hands to 0 (Weak). Forbidden if the Origin made Hands Strong."
+            },
+            {
+              "id": "Muddle-Headed",
+              "info": "Your thoughts scatter like startled hens: your Head is Weak (0).",
+              "label": "Muddle-Headed (-Head)",
+              "ai_instruction": "Sets Head to 0 (Weak). Forbidden if the Origin made Head Strong."
+            },
+            {
+              "id": "Poor Judge of Character",
+              "info": "You misread the folk around you: your Heart is Weak (0).",
+              "label": "Poor Judge of Character (-Heart)",
+              "ai_instruction": "Sets Heart to 0 (Weak). Forbidden if the Origin made Heart Strong."
+            },
+            {
+              "id": "Squint-Eyed",
+              "info": "You miss what is right in front of you: your Eyes are Weak (0).",
+              "label": "Squint-Eyed (-Eyes)",
+              "ai_instruction": "Sets Eyes to 0 (Weak). Forbidden if the Origin made Eyes Strong."
+            },
+            {
+              "id": "Open Book",
+              "info": "Everyone can read you like a weathervane: your Shadow is Weak (0).",
+              "label": "Open Book (-Shadow)",
+              "ai_instruction": "Sets Shadow to 0 (Weak). Forbidden if the Origin made Shadow Strong."
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/fb38f6f9-1891-45d6-823b-774f10a31345",
+            "kind": "image"
+          },
+          "ai_instruction": "The chosen Weakness sets its linked Attribute to 0 (Weak). It must never be the Attribute the Origin made Strong (2). Store the exact label on the character. This panel is shown to Origins with Strong Legs; the Legs weakness (Flat-Footed) is not offered."
+        },
+        "type": "choice",
+        "field": "weakness"
+      },
+      {
+        "id": "weak-eyes",
+        "data": {
+          "accent": "#758c7e",
+          "layout": "list",
+          "prompt": "What is your one weakness?",
+          "eyebrow": "Step 3 of 4 — Your weakness",
+          "options": [
+            {
+              "id": "Short-Winded",
+              "info": "Your breath gives out on the hill: your Body is Weak (0).",
+              "label": "Short-Winded (-Body)",
+              "ai_instruction": "Sets Body to 0 (Weak). Forbidden if the Origin made Body Strong."
+            },
+            {
+              "id": "All Thumbs",
+              "info": "Fine work slips through your fingers: your Hands are Weak (0).",
+              "label": "All Thumbs (-Hands)",
+              "ai_instruction": "Sets Hands to 0 (Weak). Forbidden if the Origin made Hands Strong."
+            },
+            {
+              "id": "Muddle-Headed",
+              "info": "Your thoughts scatter like startled hens: your Head is Weak (0).",
+              "label": "Muddle-Headed (-Head)",
+              "ai_instruction": "Sets Head to 0 (Weak). Forbidden if the Origin made Head Strong."
+            },
+            {
+              "id": "Poor Judge of Character",
+              "info": "You misread the folk around you: your Heart is Weak (0).",
+              "label": "Poor Judge of Character (-Heart)",
+              "ai_instruction": "Sets Heart to 0 (Weak). Forbidden if the Origin made Heart Strong."
+            },
+            {
+              "id": "Flat-Footed",
+              "info": "You cannot run fast or far: your Legs are Weak (0).",
+              "label": "Flat-Footed (-Legs)",
+              "ai_instruction": "Sets Legs to 0 (Weak). Forbidden if the Origin made Legs Strong."
+            },
+            {
+              "id": "Open Book",
+              "info": "Everyone can read you like a weathervane: your Shadow is Weak (0).",
+              "label": "Open Book (-Shadow)",
+              "ai_instruction": "Sets Shadow to 0 (Weak). Forbidden if the Origin made Shadow Strong."
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/a24577d0-407a-4349-b57e-105b65b1f779",
+            "kind": "image"
+          },
+          "ai_instruction": "The chosen Weakness sets its linked Attribute to 0 (Weak). It must never be the Attribute the Origin made Strong (2). Store the exact label on the character. This panel is shown to Origins with Strong Eyes; the Eyes weakness (Squint-Eyed) is not offered."
+        },
+        "type": "choice",
+        "field": "weakness"
+      },
+      {
+        "id": "weak-shadow",
+        "data": {
+          "accent": "#758c7e",
+          "layout": "list",
+          "prompt": "What is your one weakness?",
+          "eyebrow": "Step 3 of 4 — Your weakness",
+          "options": [
+            {
+              "id": "Short-Winded",
+              "info": "Your breath gives out on the hill: your Body is Weak (0).",
+              "label": "Short-Winded (-Body)",
+              "ai_instruction": "Sets Body to 0 (Weak). Forbidden if the Origin made Body Strong."
+            },
+            {
+              "id": "All Thumbs",
+              "info": "Fine work slips through your fingers: your Hands are Weak (0).",
+              "label": "All Thumbs (-Hands)",
+              "ai_instruction": "Sets Hands to 0 (Weak). Forbidden if the Origin made Hands Strong."
+            },
+            {
+              "id": "Muddle-Headed",
+              "info": "Your thoughts scatter like startled hens: your Head is Weak (0).",
+              "label": "Muddle-Headed (-Head)",
+              "ai_instruction": "Sets Head to 0 (Weak). Forbidden if the Origin made Head Strong."
+            },
+            {
+              "id": "Poor Judge of Character",
+              "info": "You misread the folk around you: your Heart is Weak (0).",
+              "label": "Poor Judge of Character (-Heart)",
+              "ai_instruction": "Sets Heart to 0 (Weak). Forbidden if the Origin made Heart Strong."
+            },
+            {
+              "id": "Flat-Footed",
+              "info": "You cannot run fast or far: your Legs are Weak (0).",
+              "label": "Flat-Footed (-Legs)",
+              "ai_instruction": "Sets Legs to 0 (Weak). Forbidden if the Origin made Legs Strong."
+            },
+            {
+              "id": "Squint-Eyed",
+              "info": "You miss what is right in front of you: your Eyes are Weak (0).",
+              "label": "Squint-Eyed (-Eyes)",
+              "ai_instruction": "Sets Eyes to 0 (Weak). Forbidden if the Origin made Eyes Strong."
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/d852612e-01db-4e25-a9b5-f278dffa8cf4",
+            "kind": "image"
+          },
+          "ai_instruction": "The chosen Weakness sets its linked Attribute to 0 (Weak). It must never be the Attribute the Origin made Strong (2). Store the exact label on the character. This panel is shown to Origins with Strong Shadow; the Shadow weakness (Open Book) is not offered."
+        },
+        "type": "choice",
+        "field": "weakness"
+      },
+      {
+        "id": "w3",
+        "data": {
+          "accent": "#6ca789",
+          "layout": "list",
+          "prompt": "What clothes do you own, besides your common clothes?",
+          "eyebrow": "Step 4 of 4 — Your spare clothes",
+          "options": [
+            {
+              "id": "thin-tunic",
+              "info": "The cold keeps you alert, but shivering frays your self-control.",
+              "slug": "thin-tunic",
+              "label": "Thin Tunic (+Energy, −Nerve)",
+              "fileTypeSlug": "outfit",
+              "ai_instruction": "Spare starting Outfit: +Energy, −Nerve."
+            },
+            {
+              "id": "lucky-pompom-hat",
+              "info": "It steadies your nerves, although respectable company may think otherwise.",
+              "slug": "lucky-pompom-hat",
+              "label": "Lucky Pompom Hat (+Nerve, −Decorum)",
+              "fileTypeSlug": "outfit",
+              "ai_instruction": "Spare starting Outfit: +Nerve, −Decorum."
+            },
+            {
+              "id": "fancy-pants",
+              "info": "Impressive, fashionable, and exceedingly difficult not to notice.",
+              "slug": "fancy-pants",
+              "label": "Fancy Pants (+Decorum, −Cover)",
+              "fileTypeSlug": "outfit",
+              "ai_instruction": "Spare starting Outfit: +Decorum, −Cover."
+            },
+            {
+              "id": "heavy-black-coat",
+              "info": "Easy to disappear inside, but heavy, warm, and increasingly soporific.",
+              "slug": "heavy-black-coat",
+              "label": "Heavy Black Coat (+Cover, −Energy)",
+              "fileTypeSlug": "outfit",
+              "ai_instruction": "Spare starting Outfit: +Cover, −Energy."
+            },
+            {
+              "id": "i_don_t_know_what_does_all_of_this_mean",
+              "label": "❓❓❓𝙒𝙝𝙖𝙩 𝙙𝙤𝙚𝙨 𝙖𝙡𝙡 𝙤𝙛 𝙩𝙝𝙞𝙨 𝙢𝙚𝙖𝙣?❓❓❓",
+              "ai_instruction": ""
+            }
+          ],
+          "optional": false,
+          "vignette": 98,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/c6544712-e848-4326-a942-ec833056baba",
+            "kind": "image"
+          },
+          "ai_instruction": "The outfit choice sets the worn outfit. Common Clothes are always owned; the other four are the spare starting Outfits. The worn outfit applies its Condition Track modifiers."
+        },
+        "type": "choice",
+        "field": "outfit"
+      },
+      {
+        "id": "w5",
+        "data": {
+          "body": "Carry it into the village. Your Granny is waiting for you in the hut. Don't wander off into the deep woods...",
+          "title": "That is who you are.",
+          "eyebrow": "You are ready",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/f234d4ac-fc94-4782-a7df-4607c0722891",
+            "kind": "image"
+          }
+        },
+        "type": "statement"
+      },
+      {
+        "id": "node_dc0ae752-0e5a-4a22-a08f-dd9e4fe40970",
+        "data": {
+          "body": "The player has seven attributes, each one having a value 0 to 2.\nThe default value is 1. Each trade sets one value to 2. Each weak point sets another attribute to 0.\n\n𝐇𝐞𝐚𝐝 (𝐢𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞)\nReason, memory, and learning applied to puzzles, lore, and planning. \n\n𝐄𝐲𝐞𝐬 (𝐩𝐞𝐫𝐜𝐞𝐩𝐭𝐢𝐨𝐧) \nAlertness and attention for noticing details, reading expressions, spotting danger, and seeing what others overlook. \n\n𝐁𝐨𝐝𝐲 (𝐬𝐭𝐫𝐞𝐧𝐠𝐭𝐡)\nRaw physical power for lifting, forcing, smashing, and enduring strain.\n\n𝐇𝐞𝐚𝐫𝐭 (𝐢𝐧𝐭𝐮𝐢𝐭𝐢𝐨𝐧)\nA feel for people and situations, including hunches, empathy, and resolve. \n\n𝐇𝐚𝐧𝐝𝐬 (𝐚𝐠𝐢𝐥𝐢𝐭𝐲)\nFine control and quick fingers for craft, sleight, climbing, and throwing.\n\n𝐋𝐞𝐠𝐬 (𝐬𝐩𝐞𝐞𝐝)\nThe pace and endurance needed for running, chasing, fleeing, and covering ground.\n\n𝐒𝐡𝐚𝐝𝐨𝐰 (𝐝𝐞𝐜𝐞𝐩𝐭𝐢𝐨𝐧)\nThe art of lying, sneaking, disguising yourself, hiding motives, and moving like you belong.",
+          "title": "Attributes",
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "eyebrow": "",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/e2950b1e-8b82-4c07-b08c-a2add6fda483",
+            "kind": "image"
+          }
+        },
+        "type": "statement"
+      },
+      {
+        "id": "node_c040a2ba-850a-4043-aa18-28a1145e48a7",
+        "data": {
+          "body": "The player has three abilities, depending on their trade. More abilities can be acquired during the campaign. Each ability adds a bonus of +2 to rolls related to the corresponding topic.\n\n𝗔𝗻𝗶𝗺𝗮𝗹𝘀\nYou read and handle beasts, calming, training, and herding them with steady hands.\n\n𝗔𝗿𝘁 & 𝗕𝗲𝗮𝘂𝘁𝘆 \nYou make and judge beautiful things through weaving, carving, painting, and ornament, and can spot quality or a clever fake.\n\n𝗕𝗮𝗿𝗴𝗮𝗶𝗻𝘀\nYou assess worth, haggle over trade, and strike deals without giving away more than you mean to.\n\n𝗖𝗵𝗮𝗿𝗶𝘀𝗺𝗮\nYour charm and presence help you win people over, make friends, and be liked or believed. \n\n𝗖𝗼𝘂𝗿𝘁 𝗹𝗶𝗳𝗲\nYou know the manners of the great: lords and ladies, halls and feasts, precedence and the quiet ways power speaks.\n\n𝗗𝗮𝗻𝗰𝗶𝗻𝗴\nDancing brings rhythm, poise, and grace to feats of footwork, festivals, and the charm of a good dancer.\n\n𝗙𝗲𝘆 𝗟𝗼𝗿𝗲\nYou know the Fair Folk through their stories, names, habits, taboos, and weaknesses, and can tell what is truly fey from what only seems so.\n\n𝗙𝗼𝗼𝗱\nFood covers cooking, baking, tasting, and preserving, along with the craft and comfort of the table.\n\n𝗛𝗲𝗮𝗹𝗶𝗻𝗴\nYou can tend wounds, recognize common ailments, and use practical care to keep someone alive or help them recover.\n\n𝗜𝗿𝗼𝗻\nYou work and understand iron and steel, from forging and shaping to the hard craft of the smith.\n\n𝗟𝗲𝗮𝗿𝗻𝗲𝗱𝗻𝗲𝘀𝘀 \nYou handle letters, numbers, memorized lore, reading, and writing, picking up unfamiliar lessons quickly.\n\n𝗟𝘆𝗶𝗻𝗴\nYou tell falsehoods smoothly, keep a straight face, and spin stories that hold together under questioning.\n\n𝗠𝗶𝗹𝗸 \nYou know the craft of the byre: milking, churning, and dairy work, with calm, steady hands around livestock.\n\n𝗠𝘂𝘀𝗶𝗰 \nYou sing and play instruments, remember songs, and know how to move an audience with sound.\n\n𝗡𝗮𝘁𝘂𝗿𝗲\nNature reads the wild world: plants, weather, tracks, and seasons. \n\n𝗥𝗲𝗽𝗮𝗶𝗿𝘀\nYou mend and fix tools, wheels, roofs, hinges, and nearly anything else that has broken.\n\n𝗥𝗶𝗱𝗶𝗻𝗴\nRiding manages a horse under saddle, whether you are riding hard, riding tired, or riding well.\n\n𝗦𝘁𝗲𝗮𝗹𝘁𝗵\nYou move unseen and unheard, hiding, shadowing, pickpocketing, and slipping away when eyes turn elsewhere.\n\n𝗪𝗮𝘆𝗳𝗶𝗻𝗱𝗶𝗻𝗴\nWayfinding reads land, sky, and memory to find the way, including shortcuts and hidden paths.\n\n𝗪𝗲𝗮𝗽𝗼𝗻𝘀\nWeapons covers handling blades, bows, and clubs: training, stance, and the discipline of violence.",
+          "title": "Abilities",
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "eyebrow": "",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/7512180c-256c-4242-a59b-84f3e2efa6e7",
+            "kind": "image"
+          }
+        },
+        "type": "statement"
+      },
+      {
+        "id": "node_627d9659-9e73-49a4-a0ef-00160eb115e0",
+        "data": {
+          "body": "The five tracker states indicate your current situation. Those values may change constantly over the campaign. The values go from 0 to 3. One tracker state is added to the result of each dice roll.\n\n❤️ 𝗛𝗲𝗮𝗹𝘁𝗵  — How hurt or sick are you?\nThis value is added to dice rolls that require a strong and healthy body.\nWhen Health reaches 0, you collapse - not quite dead, but unable to continue.\n\n⚡ 𝗘𝗻𝗲𝗿𝗴𝘆 — Can you keep going?\nThis value is added to dice rolls that require speed or stamina.\nWhen Energy reaches 0, you fall asleep.\n\n🌸 𝗡𝗲𝗿𝘃𝗲 — Can you keep your courage and concentration?\nThis value is added to dice rolls that chalenge your brain.\nWhen Nerve reaches 0, you lose your self-control.\n\n💎 𝗗𝗲𝗰𝗼𝗿𝘂𝗺 — Do you fit the social situation?\nThis value is added to dice rolls concerning social interactions.\nWhen Decorum reaches 0, you are in an utterly embarassing state.\n\n👀 𝗖𝗼𝘃𝗲𝗿 — Do you remain unnoticed or unsuspected?\nThis value is added to dice rolls for stealth or hiding in a crowd.\nWhen Nerve reaches 0, you are quite visible to everybody.",
+          "title": "Tracker States",
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "eyebrow": "",
+          "vignette": 97,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/0411ad2b-ce20-4948-9ce1-e1a69bdc30c1",
+            "kind": "image"
+          }
+        },
+        "type": "statement"
+      },
+      {
+        "id": "node_2871a81c-1a1f-46ec-a814-a142bb5f8043",
+        "data": {
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "prompt": "What's your name?",
+          "eyebrow": "Step 1 of 4 — Your name",
+          "optional": true,
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/1e223008-3e3f-4518-85a6-a853f402050f",
+            "kind": "image"
+          },
+          "placeholder": "Skip for AI-generated name",
+          "ai_instruction": "The input becomes the player character's name. If left empty, generate an Irish-sounding name."
+        },
+        "type": "shortText",
+        "field": "your_question"
+      }
+    ],
+    "start": "w1",
+    "title": "Make Your Character",
+    "version": 1,
+    "settings": {
+      "music": {
+        "track": {
+          "url": "https://media.craftrpgs.com/studio/e092361a-7121-4ef0-9f4d-fe08d95dde2c/music/68492cec-e1af-4a7a-90cb-fc005b20cb2e",
+          "kind": "audio"
+        }
+      },
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn outfit to the chosen Outfit (or Common Clothes) and set unlockedOutfits to Common Clothes plus the chosen spare Outfit. Starting Conditions: Health 3, Energy/Nerve/Decorum/Cover 2, no Depletion. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 10/12/14/16. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble."
+    }
+  }
 }

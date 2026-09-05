@@ -3,7 +3,7 @@
   "slug": "non-player-character",
   "name": "Non-Player Character",
   "contentType": "json",
-  "designation": "character",
+  "designation": null,
   "category": null,
   "schemaHash": "bdcb6eac-755b-db78-de0d-095b90809145",
   "schema": {
@@ -179,7 +179,13 @@
           "portrait",
           "name",
           "description-card",
-          "identity-section"
+          "identity-section",
+          "goals-section",
+          "voice-select",
+          "gmnotes-section",
+          "secrets-section",
+          "background-section",
+          "personality-section"
         ]
       },
       "text": {
@@ -244,6 +250,16 @@
         },
         "children": []
       },
+      "goals-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/goals"
+          }
+        },
+        "children": []
+      },
       "species-row": {
         "type": "Select",
         "props": {
@@ -254,6 +270,63 @@
           "fileTypeSlug": "species"
         },
         "children": []
+      },
+      "gmnotes-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/gmNotes"
+          }
+        },
+        "children": []
+      },
+      "secrets-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/secrets"
+          }
+        },
+        "children": []
+      },
+      "voice-select": {
+        "type": "VoiceSelect",
+        "props": {
+          "label": "Voice",
+          "value": {
+            "$state": "/voice"
+          },
+          "showLabel": true,
+          "placeholder": "Use GM voice"
+        },
+        "visible": {
+          "$state": "/voice"
+        },
+        "children": []
+      },
+      "goals-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Goals & Motivations",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "goals-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/goals"
+        },
+        "children": [
+          "goals-heading",
+          "goals-text"
+        ]
       },
       "glamour-toggle": {
         "type": "Toggle",
@@ -271,6 +344,60 @@
           "$state": "/glamourImage"
         },
         "children": []
+      },
+      "background-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/background"
+          }
+        },
+        "children": []
+      },
+      "gmnotes-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "GM Notes",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "gmnotes-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/gmNotes"
+        },
+        "children": [
+          "gmnotes-heading",
+          "gmnotes-text"
+        ]
+      },
+      "secrets-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Secrets",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "secrets-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/secrets"
+        },
+        "children": [
+          "secrets-heading",
+          "secrets-text"
+        ]
       },
       "description-card": {
         "type": "Card",
@@ -302,6 +429,60 @@
           "species-row",
           "glamour-toggle",
           "stack"
+        ]
+      },
+      "personality-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/personality"
+          }
+        },
+        "children": []
+      },
+      "background-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Background",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "background-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/background"
+        },
+        "children": [
+          "background-heading",
+          "background-text"
+        ]
+      },
+      "personality-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Personality",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "personality-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/personality"
+        },
+        "children": [
+          "personality-heading",
+          "personality-text"
         ]
       }
     }

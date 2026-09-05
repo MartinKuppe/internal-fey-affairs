@@ -1,5 +1,8 @@
 {
   "name": "The Blacksmith",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/930588b2-0eab-45e1-aa8d-b750ae1614c1"
+  },
   "origin": {
     "slug": "blacksmith",
     "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
