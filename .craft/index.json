@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-05T20:01:26.095Z",
+  "syncedAt": "2026-09-05T21:03:23.957Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -117,7 +117,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a06a14-f67b-76b0-8ba8-1fabd827fb3e",
+      "baseVersionId": "01a0735d-adc0-74d4-aa5e-b828ca327f4b",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -1424,8 +1424,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a07329-618f-7990-80c2-c6934e2ab0e4",
-      "baseHash": "e8264147-12df-f3c2-aae6-b6d125a6b037",
+      "baseVersionId": "01a07360-ed89-79a8-981d-1b6930c2a2c1",
+      "baseHash": "5c9cfa16-7051-181c-ba20-fc4f4e3cf981",
       "source": "project"
     },
     {
@@ -1556,12 +1556,12 @@
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
     {
-      "path": "/Locations/Hollow tree - servide tunnel.location.json",
+      "path": "/Locations/Hollow tree - service tunnel.location.json",
       "fileId": "01a07317-75d6-7820-a5b4-a861196bff3b",
       "referenceId": "01a07317-75d6-78a0-93d2-0efa85c6b408",
       "fileType": "location",
-      "baseVersionId": "01a07329-6165-7e60-b1d9-4d87909c67db",
-      "baseHash": "311eae65-ceea-3c1c-bc03-7caf40ad5541",
+      "baseVersionId": "01a07329-b393-7074-8cca-ae00e19d35e8",
+      "baseHash": "796d8f20-3b15-29eb-e1dd-a5772448cdf5",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1572,6 +1572,15 @@
       "fileType": "change-request",
       "baseVersionId": "01a07329-6197-7844-a9b2-fa7505a4b26f",
       "baseHash": "56c02ecf-24d1-8d79-37e5-475fc26c6545",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/Scripted Opening Transition.change-request.md",
+      "fileId": "01a0735b-f5f4-746c-9a91-f216301103d7",
+      "referenceId": "01a0735b-d091-7186-9baa-ea396be99aec",
+      "fileType": "change-request",
+      "baseVersionId": "01a0735b-f5e6-7244-8b97-df23f150aac3",
+      "baseHash": "6e596546-ab71-293c-123e-4b5ce4bdfc97",
       "source": "project"
     }
   ],

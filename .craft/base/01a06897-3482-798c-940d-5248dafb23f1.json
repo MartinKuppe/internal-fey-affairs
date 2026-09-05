@@ -10,7 +10,7 @@
     }
   },
   "status": "available",
-  "gmNotes": "Opening Story Mission and cinematic campaign start. The home dialogue and goat pursuit establish the village, folklore, Niamh, and Grannie before the first consequential prompt at the Fairy Ring. Méabh is not genuinely escaping: she has been assigned by Morrigan to manipulate the player, though her uncertainty and wish for freedom are real. Coinín wants supplies for the Fey logistics chain, not personal food. Protect all three secrets.",
+  "gmNotes": "Opening Story Mission immediately following the static Game Start. The scripted opening ends with the goat poised at Grannie's yard gate and the player's first response. The Mission then carries that response through an uninterrupted goat chase and Fairy Ring reveal; the first genuine choice comes only after Coinín offers the Hollow Tree. Méabh is not genuinely escaping: she has been assigned by Morrigan to manipulate the player, though her uncertainty and wish for freedom are real. Coinín wants supplies for the Fey logistics chain, not personal food. Protect all three secrets.",
   "briefing": "Return home with the firewood, check the loose horseshoe, and see what has unsettled Grannie's goat. The ordinary errand will carry you farther from the hearth than expected.",
   "teamSize": 1,
   "fixedDate": {
@@ -21,16 +21,28 @@
   "debriefing": "",
   "storyBeats": [
     {
+      "key": "goat-chase",
+      "title": "The Goat Makes His Move",
+      "events": "The player's response to the goat at Grannie's yard gate changes the manner but not the result: the goat slips, dodges, distracts, steals, breaks, or carries off whatever is needed to make immediate pursuit unavoidable. It bolts through the edge of Trí Mhuilinn and into the woods, repeatedly looking back to ensure the player follows, then stops at the edge of the Fairy Ring glade.",
+      "location": {
+        "slug": "tri-mhuilinn",
+        "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Catch Grannie's misbehaving goat before it reaches the hawthorn.",
+      "gmInstructions": "This beat begins with the player's answer to the static opening's goat prompt. Treat the answer as colour and a small tactical detail, not a route out of the inciting incident. If the player grabs, the goat slips away; if lured, it feigns interest and bolts; if the cloth is inspected, it escapes during the distraction; if Grannie is warned, she calls for the player to catch it; if ignored or the player tries to leave, it steals, breaks, or carries off something important enough to demand immediate pursuit. Adapt unexpected responses by the same principle. Do not call for a roll. Do not ask another question. Set the scene to Trí Mhuilinn for the flight from the yard, narrate the pursuit continuously, then advance directly to ring-arrival and set the scene to the Fairy Ring. Make this feel like chaotic village-life momentum, not an announced railroad."
+    },
+    {
       "key": "ring-arrival",
       "title": "The Woman in the Ring",
-      "events": "The Fairy Ring wakes with an eerie sound and moving blue-white light. A naked young woman materialises above it: Méabh, red-haired, frightened, and disturbingly similar to Niamh without sharing her perfect symmetry. She presents herself as a Takeling fleeing the Fey and asks the player for help. A hoverbike patrol approaches through the woods.",
+      "events": "The goat waits at the edge of the glade as the Fairy Ring wakes with an eerie sound and moving blue-white light. A naked young woman materialises above it: Méabh, red-haired, frightened, and disturbingly similar to Niamh without sharing her perfect symmetry. She presents herself as a Takeling fleeing the Fey and asks for help. Flickering red lights, metallic tantivy sounds, and pairs of red points between the trees announce an approaching hoverbike patrol. Coinín appears in an unstable, rigid rabbit glamour that flickers enough to reveal the unfamiliar figure within. He says, ‘Come, quickly! You can hide inside my hollow tree!’",
       "location": {
         "slug": "fairy-ring",
         "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
         "fileTypeSlug": "location"
       },
-      "objective": "Decide whether and how to help the woman emerging from the light.",
-      "gmInstructions": "This is the first real player prompt. Give the player room to question Méabh, offer clothing, hide her, doubt her, or act otherwise. Méabh's vulnerability is practised but not wholly false. She does not confess her assignment, Indenture, Leannán training, relationship to Niamh, or connection to Morrigan. Whatever the response, the approaching patrol creates urgency rather than a dead end."
+      "objective": "Respond to Méabh and Coinín as the patrol closes on the glade.",
+      "gmInstructions": "Continue from goat-chase without pausing for player input. Set the scene to the Fairy Ring and narrate the activation, Méabh's arrival and plea, the patrol signs, Coinín's unstable rabbit glamour, and his exact final offer in one uninterrupted sequence. Do not ask whether the player follows the goat, approaches the ring, listens to Méabh, or waits for Coinín. Only after Coinín says, ‘Come, quickly! You can hide inside my hollow tree!’ hand control back to the player. This is the first genuine Mission choice: allow questioning, offering clothing, accepting the hiding place, proposing another plan, doubting Méabh, or refusing. Méabh's vulnerability is practised but not wholly false. She does not confess her assignment, Indenture, Leannán training, relationship to Niamh, or connection to Morrigan. The approaching patrol creates urgency rather than a dead end."
     },
     {
       "key": "pooka-and-patrol",
@@ -59,7 +71,7 @@
     {
       "key": "shelter",
       "title": "A Place by the Hearth",
-      "events": "The player returns with Méabh. He may tell the truth, use Méabh's cover story about bandits and another village, or invent something else. Grannie invites Méabh to stay regardless and outwardly accepts what she is told.",
+      "events": "The player returns with Méabh. He may tell the truth, use Méabh's cover story about bandits and another village, or invent something else. Grannie invites Méabh to stay regardless and outwardly accepts what she is told.\nThe goat is back too, acting as though nothing happened—and looking entirely innocent.",
       "location": {
         "slug": "grannys-hut",
         "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",

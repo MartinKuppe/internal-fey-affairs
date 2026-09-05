@@ -1,14 +1,14 @@
 {
-  "name": "Hollow tree - servide tunnel",
+  "name": "Hollow tree - service tunnel",
   "type": "Service Tunnel",
-  "description": "A narrow maintenance passage threaded between the roots beneath the Hollow Tree. It is cramped and earthen-looking, but regular supports and fitted panels betray deliberate construction.",
-  "atmosphere": "Cold soil, close walls, and the muffled vibration of equipment hidden behind root-shaped panels.",
-  "notes": "This is a physical service and escape tunnel, not a portal. It connects the Hollow Tree's lower chamber to the Hidden hatch near the far side of the Fairy Ring glade. Coinín may use it after a failed patrol-avoidance check so the Mission continues with lost Cover, pursuit, or suspicion rather than capture.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8c1e4dc8-9580-45ee-8e8e-304d36385309",
     "focalPoint": {
       "x": 0.5204114140081009,
       "y": 0.9387292901656786
     }
-  }
+  },
+  "notes": "This is a physical service and escape tunnel, not a portal. It connects the Hollow Tree's lower chamber to the Hidden hatch near the far side of the Fairy Ring glade. Coinín may use it after a failed patrol-avoidance check so the Mission continues with lost Cover, pursuit, or suspicion rather than capture.",
+  "atmosphere": "Cold soil, close walls, and the muffled vibration of equipment hidden behind root-shaped panels.",
+  "description": "A narrow maintenance passage threaded between the roots beneath the Hollow Tree. It is cramped and earthen-looking, but regular supports and fitted panels betray deliberate construction."
 }
