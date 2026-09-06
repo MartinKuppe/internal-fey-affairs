@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-ee2d-7de8-b0ac-959538762e09"
   },
   "name": "Poacher",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/05b41bd0-2a4b-431f-ac3c-7606839f56c9"
+  },
   "abilities": [
     {
       "slug": "wayfinding",

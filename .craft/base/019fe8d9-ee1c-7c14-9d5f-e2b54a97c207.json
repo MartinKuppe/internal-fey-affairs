@@ -1,5 +1,8 @@
 {
   "name": "Thief",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7ccfbe4a-6760-4e11-804c-8c3dab1ede08"
+  },
   "abilities": [
     {
       "slug": "stealth",

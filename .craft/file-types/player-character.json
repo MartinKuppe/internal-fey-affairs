@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": "character",
   "category": null,
-  "schemaHash": "c7b4cbf2-aafd-39d4-6d34-a7e7edd6abdc",
+  "schemaHash": "3bead313-8ba8-afc6-189d-72b1bbf1692e",
   "schema": {
     "type": "object",
     "required": [
@@ -73,6 +73,12 @@
           }
         }
       },
+      "voice": {
+        "type": "string",
+        "title": "Voice",
+        "format": "voice",
+        "description": "Optional voice used for this character's dialogue. By default, the GM voice will be used."
+      },
       "origin": {
         "type": "string",
         "title": "Origin",
@@ -84,44 +90,6 @@
         "title": "Outfit",
         "description": "The protagonist's current worn outfit.",
         "referencedFileTypeSlug": "outfit"
-      },
-      "markers": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "required": [
-            "marker",
-            "reason"
-          ],
-          "properties": {
-            "marker": {
-              "enum": [
-                "Ungrateful",
-                "Disrespectful",
-                "Unsightly",
-                "Violent",
-                "Cruel",
-                "Untrustworthy",
-                "Oath-Breaker",
-                "Generous",
-                "Respectful",
-                "Handsome",
-                "Elegant",
-                "Merciful",
-                "Trustworthy",
-                "Oath-Keeper"
-              ],
-              "type": "string",
-              "title": "Marker"
-            },
-            "reason": {
-              "type": "string",
-              "title": "Reason"
-            }
-          }
-        },
-        "title": "Reputation Markers",
-        "description": "Markers are visible to everyone — simply present or absent, each with the reason it was acquired."
       },
       "species": {
         "type": "string",
@@ -241,6 +209,10 @@
         "expression": "($self.knownBargains ?? []).filter(b => ($self.signedBargains ?? []).some(s => load(s)?.$name === load(b)?.$name)).filter(b => !($self.bargainFilters?.myOnlyActive == true) || (load(b)?.status ?? '') === 'active').map(b => ({ bargain: b, name: load(b)?.name ?? '', status: load(b)?.status ?? '' }))",
         "description": "Known bargains the player is a party to, optionally filtered to active only, for display."
       },
+      "originName": {
+        "type": "string",
+        "expression": "load($self.origin)?.name ?? null"
+      },
       "description": {
         "type": "string",
         "title": "Description",
@@ -281,6 +253,10 @@
         },
         "title": "Grace Ledger",
         "description": "Authoritative record of every Grace gain or loss. Balances are derived from this ledger — never maintain a separate running total. Negative amounts are Grace debt."
+      },
+      "originImage": {
+        "type": "object",
+        "expression": "load($self.origin)?.image ?? null"
       },
       "outfitImage": {
         "type": "object",
@@ -625,7 +601,7 @@
           "text": {
             "$state": "/name"
           },
-          "level": "h2"
+          "level": "h1"
         },
         "children": []
       },
@@ -641,15 +617,11 @@
           "name",
           "divider",
           "tabs",
-          "origin-select",
-          "weakness-field",
-          "graceledger-references",
-          "hasmybargains-checkbox",
-          "knownbargains-references",
-          "signedbargains-references",
-          "unlockedoutfits-references",
-          "hasotherbargains-checkbox",
-          "outfitimage-section"
+          "outfitimage-section",
+          "originimage-section",
+          "origindescription-section",
+          "conditionstate-section",
+          "originname-section"
         ]
       },
       "tabs": {
@@ -667,10 +639,6 @@
             {
               "label": "Bargains",
               "value": "tab-bargains"
-            },
-            {
-              "label": "Reputation",
-              "value": "tab-4"
             }
           ],
           "value": null,
@@ -681,8 +649,7 @@
         "children": [
           "tabs-panel",
           "tabs-panel-2",
-          "tabs-panel-3",
-          "tabs-panel-4"
+          "tabs-panel-3"
         ]
       },
       "text": {
@@ -699,7 +666,7 @@
       "image": {
         "type": "Image",
         "props": {
-          "alt": "@Oracle: Put here outfite image",
+          "alt": null,
           "src": {
             "$state": "/outfitImage"
           },
@@ -857,7 +824,26 @@
           "description": null
         },
         "children": [
-          "markdown"
+          "card-9",
+          "stack-2"
+        ]
+      },
+      "card-9": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": true,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": "#737875",
+          "description": null
+        },
+        "children": [
+          "text-5"
         ]
       },
       "grid-2": {
@@ -898,6 +884,37 @@
           "card-7-2-2",
           "card-7-2-2-2",
           "card-7-2-2-2-2"
+        ]
+      },
+      "grid-4": {
+        "type": "Grid",
+        "props": {
+          "gap": "md",
+          "bgColor": null,
+          "bgImage": null,
+          "columns": 2,
+          "rounded": null,
+          "className": null,
+          "bgImageFit": null
+        },
+        "children": [
+          "stack-5",
+          "stack-4"
+        ]
+      },
+      "grid-6": {
+        "type": "Grid",
+        "props": {
+          "gap": "md",
+          "bgColor": null,
+          "bgImage": null,
+          "columns": 2,
+          "rounded": null,
+          "className": null,
+          "bgImageFit": null
+        },
+        "children": [
+          "heading"
         ]
       },
       "switch": {
@@ -970,10 +987,80 @@
         },
         "children": []
       },
+      "text-5": {
+        "type": "Text",
+        "props": {
+          "text": "**2d6 + attribute + condition track + 2** *if skill applies*",
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "card-10": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "grid-4"
+        ]
+      },
       "divider": {
         "type": "Separator",
         "props": {},
         "children": []
+      },
+      "heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Attrinutes",
+          "color": null,
+          "level": "h4",
+          "className": null
+        },
+        "children": []
+      },
+      "image-2": {
+        "type": "Image",
+        "props": {
+          "alt": null,
+          "src": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/19a8f0a6-6294-413d-bb43-2019eb38173b",
+          "size": "sm",
+          "align": "center",
+          "className": null,
+          "aspectRatio": null
+        },
+        "children": []
+      },
+      "stack-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "markdown",
+          "image-2"
+        ]
       },
       "stack-3": {
         "type": "Stack",
@@ -990,6 +1077,44 @@
           "bgImageFit": null
         },
         "children": []
+      },
+      "stack-4": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-7-3-2-2",
+          "text-7-2-2-2"
+        ]
+      },
+      "stack-5": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": "start",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-7-4",
+          "text-7-2-3"
+        ]
       },
       "card-5-2": {
         "type": "Card",
@@ -1051,7 +1176,7 @@
         "type": "Markdown",
         "props": {
           "color": null,
-          "content": "**2d6 + attribute + condition track + 2** *if special skill applies*\n\nTested against the difficulty:\n- Easy: 10\n- Standard: 12\n- Hard: 14\n- Exceptional: 16\n\n**Natural dice:**\n- **6 + 6 — Critical Success:** best realistically achievable success, plus one extra benefit.\n- **1 + 1 — Critical Mishap:** normal fail-forward result, plus one extra complication; no more than 2 total Depletion.",
+          "content": "Tested against the difficulty:\n- Easy: 10\n- Standard: 12\n- Hard: 14\n- Exceptional: 16\n\n6 + 6 =  Critical Success, 1 + 1 = Critical Mishap",
           "className": null
         },
         "children": []
@@ -1098,6 +1223,17 @@
           "text": "Phantom Graces",
           "color": null,
           "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-7-4": {
+        "type": "Text",
+        "props": {
+          "text": "Origin:",
+          "color": null,
+          "variant": "body",
           "editPath": null,
           "className": null
         },
@@ -1190,9 +1326,9 @@
         "children": [
           "grid",
           "attributes-section-2",
+          "card-10",
           "abilities-section",
-          "card-8",
-          "conditionstate-section"
+          "card-8"
         ]
       },
       "text-3-2-2": {
@@ -1225,6 +1361,19 @@
           "text": "Seelie Graces",
           "color": null,
           "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-7-2-3": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/originName"
+          },
+          "color": null,
+          "variant": "body",
           "editPath": null,
           "className": null
         },
@@ -1328,16 +1477,6 @@
           "card"
         ]
       },
-      "tabs-panel-4": {
-        "type": "Stack",
-        "props": {
-          "gap": "md",
-          "direction": "vertical"
-        },
-        "children": [
-          "markers-section"
-        ]
-      },
       "text-3-2-2-2": {
         "type": "Text",
         "props": {
@@ -1373,6 +1512,30 @@
         },
         "children": []
       },
+      "text-7-2-2-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/weakness"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-7-3-2-2": {
+        "type": "Text",
+        "props": {
+          "text": "Weakness:",
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
       "trackbox-row": {
         "type": "TrackBoxes",
         "props": {
@@ -1395,41 +1558,6 @@
           "color": null,
           "level": "h1",
           "className": null
-        },
-        "children": []
-      },
-      "markers-table": {
-        "type": "DataTable",
-        "props": {
-          "items": {
-            "$state": "/markers"
-          },
-          "columns": [
-            {
-              "field": "marker",
-              "label": "Marker"
-            },
-            {
-              "field": "reason",
-              "label": "Reason"
-            }
-          ]
-        },
-        "children": []
-      },
-      "origin-select": {
-        "type": "Select",
-        "props": {
-          "label": "Origin",
-          "value": {
-            "$state": "/origin"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "origin"
-        },
-        "visible": {
-          "$state": "/origin"
         },
         "children": []
       },
@@ -1560,25 +1688,6 @@
         },
         "children": []
       },
-      "weakness-field": {
-        "type": "FieldList",
-        "props": {
-          "items": [
-            [
-              "Weakness",
-              {
-                "$state": "/weakness"
-              }
-            ]
-          ],
-          "labelColor": null,
-          "valueColor": null
-        },
-        "visible": {
-          "$state": "/weakness"
-        },
-        "children": []
-      },
       "heading-2-2-2-2": {
         "type": "Heading",
         "props": {
@@ -1586,42 +1695,6 @@
           "color": null,
           "level": "h1",
           "className": null
-        },
-        "children": []
-      },
-      "markers-section": {
-        "type": "Card",
-        "props": {
-          "title": "Reputation Markers",
-          "maxWidth": "full"
-        },
-        "children": [
-          "markers-table"
-        ]
-      },
-      "markers-table-2": {
-        "type": "DataTable",
-        "props": {
-          "items": {
-            "$state": "/graceLedgerDisplay"
-          },
-          "columns": [
-            {
-              "type": "number",
-              "field": "day",
-              "label": "Day"
-            },
-            {
-              "type": "string",
-              "field": "amountDisplay",
-              "label": "Amount"
-            },
-            {
-              "type": "string",
-              "field": "reason",
-              "label": "Reason"
-            }
-          ]
         },
         "children": []
       },
@@ -1715,7 +1788,7 @@
       "abilities-section": {
         "type": "Card",
         "props": {
-          "title": "Special skills",
+          "title": "Skills",
           "centered": false,
           "maxWidth": "full"
         },
@@ -1730,18 +1803,6 @@
           "color": null,
           "level": "h1",
           "className": null
-        },
-        "children": []
-      },
-      "outfitimage-stats": {
-        "type": "StatGrid",
-        "props": {
-          "cols": 2,
-          "color": null,
-          "items": {
-            "$state": "/_outfitImageEntries"
-          },
-          "bgColor": null
         },
         "children": []
       },
@@ -1834,6 +1895,43 @@
           "stack-2-2-2-2-2-2-2-2"
         ]
       },
+      "grace-ledger-table": {
+        "type": "DataTable",
+        "props": {
+          "items": {
+            "$state": "/graceLedgerDisplay"
+          },
+          "columns": [
+            {
+              "type": "number",
+              "field": "day",
+              "label": "Day"
+            },
+            {
+              "type": "string",
+              "field": "amountDisplay",
+              "label": "Amount"
+            },
+            {
+              "type": "string",
+              "field": "reason",
+              "label": "Reason"
+            }
+          ]
+        },
+        "children": []
+      },
+      "originname-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/originName"
+        },
+        "children": []
+      },
       "other-bargain-list": {
         "type": "FileReferenceGrid",
         "props": {
@@ -1893,6 +1991,17 @@
         },
         "children": []
       },
+      "originimage-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/originImage"
+        },
+        "children": []
+      },
       "outfit-modifier-row": {
         "type": "Stack",
         "props": {
@@ -1905,14 +2014,6 @@
           "outfit-modifier-applies"
         ]
       },
-      "outfitimage-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Outfit Image",
-          "level": "h3"
-        },
-        "children": []
-      },
       "outfitimage-section": {
         "type": "Stack",
         "props": {
@@ -1922,10 +2023,7 @@
         "visible": {
           "$state": "/outfitImage"
         },
-        "children": [
-          "outfitimage-heading",
-          "outfitimage-stats"
-        ]
+        "children": []
       },
       "stack-2-2-2-2-2-2-2": {
         "type": "Stack",
@@ -1963,13 +2061,14 @@
       "attributes-section-2": {
         "type": "Card",
         "props": {
-          "title": "Attributes",
+          "title": null,
           "centered": false,
           "maxWidth": "full",
           "bgImageFit": null,
           "description": null
         },
         "children": [
+          "grid-6",
           "attributes-stats-2"
         ]
       },
@@ -2109,7 +2208,7 @@
           "description": null
         },
         "children": [
-          "markers-table-2"
+          "grace-ledger-table"
         ]
       },
       "conditionstate-section": {
@@ -2120,48 +2219,6 @@
         },
         "visible": {
           "$state": "/conditionState"
-        },
-        "children": []
-      },
-      "graceledger-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/graceLedger"
-          },
-          "label": "Grace Ledger",
-          "columns": 4,
-          "fileTypeSlug": "grace",
-          "metadataFields": [
-            {
-              "name": "day",
-              "type": "number"
-            },
-            {
-              "name": "amount",
-              "type": "number"
-            },
-            {
-              "name": "reason",
-              "type": "string"
-            }
-          ],
-          "referenceField": "currency"
-        },
-        "visible": {
-          "$state": "/graceLedger"
-        },
-        "children": []
-      },
-      "hasmybargains-checkbox": {
-        "type": "Checkbox",
-        "props": {
-          "color": null,
-          "label": "Has My Bargains",
-          "checked": {
-            "$state": "/hasMyBargains"
-          }
         },
         "children": []
       },
@@ -2199,23 +2256,6 @@
         },
         "children": []
       },
-      "knownbargains-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/knownBargains"
-          },
-          "label": "Known Bargains",
-          "columns": 4,
-          "fileTypeSlug": "bargain",
-          "referenceField": null
-        },
-        "visible": {
-          "$state": "/knownBargains"
-        },
-        "children": []
-      },
       "trackbox-row-concealment": {
         "type": "TrackBoxes",
         "props": {
@@ -2242,48 +2282,14 @@
         },
         "children": []
       },
-      "hasotherbargains-checkbox": {
-        "type": "Checkbox",
+      "origindescription-section": {
+        "type": "Stack",
         "props": {
-          "color": null,
-          "label": "Has Other Bargains",
-          "checked": {
-            "$state": "/hasOtherBargains"
-          }
-        },
-        "children": []
-      },
-      "signedbargains-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/signedBargains"
-          },
-          "label": "Signed Bargains",
-          "columns": 4,
-          "fileTypeSlug": "bargain",
-          "referenceField": null
+          "gap": "sm",
+          "direction": "vertical"
         },
         "visible": {
-          "$state": "/signedBargains"
-        },
-        "children": []
-      },
-      "unlockedoutfits-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/unlockedOutfits"
-          },
-          "label": "Unlocked Outfits",
-          "columns": 4,
-          "fileTypeSlug": "outfit",
-          "referenceField": null
-        },
-        "visible": {
-          "$state": "/unlockedOutfits"
+          "$state": "/originDescription"
         },
         "children": []
       }
@@ -3455,7 +3461,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn outfit to the chosen Outfit (or Common Clothes) and set unlockedOutfits to Common Clothes plus the chosen spare Outfit. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 10/12/14/16. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn outfit to the chosen Outfit (or Common Clothes) and set unlockedOutfits to Common Clothes plus the chosen spare Outfit. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 10/12/14/16. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
     }
   }
 }

@@ -1,5 +1,8 @@
 {
   "name": "Good-for-nothing",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9de89a51-30c6-44a9-9678-aebe299d3fe6"
+  },
   "abilities": [
     {
       "slug": "dancing",

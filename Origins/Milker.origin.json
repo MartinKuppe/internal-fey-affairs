@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-edcd-7080-9b30-902b2bef1552"
   },
   "name": "Milker",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7151aa9f-6a1d-4e85-9646-c372ac65a436"
+  },
   "abilities": [
     {
       "slug": "animals",

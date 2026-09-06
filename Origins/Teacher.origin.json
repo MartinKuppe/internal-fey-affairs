@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-eec8-7754-94b4-f3b936cca4c5"
   },
   "name": "Teacher",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/87a70c4b-7e23-49e5-805b-82cd692e6cb2"
+  },
   "abilities": [
     {
       "slug": "learnedness",

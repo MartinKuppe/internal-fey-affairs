@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-05T23:29:24.044Z",
+  "syncedAt": "2026-09-06T05:52:17.531Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -117,7 +117,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a07367-6330-7e48-9fa5-ad148d6d8f14",
+      "baseVersionId": "01a07526-16bb-73e8-892c-673f54c36c1f",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -130,8 +130,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a073e7-c64c-75e0-a6aa-08423d393fb7",
-      "baseHash": "99819418-cb66-5d84-ddf8-b34dc93c01f7",
+      "baseVersionId": "01a073ef-f820-7668-91a7-54ce05b091cd",
+      "baseHash": "533f54b6-0bcb-0b3d-4589-d069f2c4268c",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -369,8 +369,8 @@
       "fileId": "019fe8d9-ed48-75a8-be6d-5d21a0331627",
       "referenceId": "019fe8d9-ed48-7644-850f-3e2a3a8d2c75",
       "fileType": "origin",
-      "baseVersionId": "019ff7eb-b25f-723c-9137-7dcf1f2ba138",
-      "baseHash": "9523f4e7-dacd-2bf5-8d2f-88a6561419e3",
+      "baseVersionId": "01a074b5-eeb1-7f88-b32f-33a4b491f909",
+      "baseHash": "f4c14c12-36f0-c16b-b13f-31dc12597728",
       "source": "project"
     },
     {
@@ -378,8 +378,8 @@
       "fileId": "019fe8d9-ed55-7434-a02e-69b6c69d0f46",
       "referenceId": "019fe8d9-ed55-74d4-80e8-88d70096348c",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-ed51-7d00-bc40-9526746635bd",
-      "baseHash": "3b1f89b7-1c90-772a-4f3c-afe5bcfe7ce2",
+      "baseVersionId": "01a074b5-8c0f-768c-a129-e44f89e7bfc4",
+      "baseHash": "b889385d-6dbe-559d-86f1-95175776612e",
       "source": "project"
     },
     {
@@ -387,8 +387,8 @@
       "fileId": "019fe8d9-edcd-7f78-8798-2bc87d9ad624",
       "referenceId": "019fe8d9-edcd-7080-9b30-902b2bef1552",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-edbd-7b58-baac-c989ae7ed7e0",
-      "baseHash": "183799d6-dcd4-4927-b047-71ade151168c",
+      "baseVersionId": "01a074b6-9ca4-7840-ad9b-d5b482c015c0",
+      "baseHash": "c43c035c-debb-0af2-3c7d-f6592d89af11",
       "source": "project"
     },
     {
@@ -396,8 +396,8 @@
       "fileId": "019fe8d9-edf2-7054-a729-f908ff3ef235",
       "referenceId": "019fe8d9-edf2-70dc-b674-ab8e3e58d480",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-edec-79b4-b9e0-7a2fd916e24e",
-      "baseHash": "1c097d18-623a-7491-ac8c-a4fadcfac2f3",
+      "baseVersionId": "01a074b4-aa5e-7778-b674-ed32b06e7953",
+      "baseHash": "d9a7592c-1f5d-cde0-9ecf-ed0b274a54b8",
       "source": "project"
     },
     {
@@ -405,8 +405,8 @@
       "fileId": "019fe8d9-edf6-7b8c-a85d-d16f298b09ee",
       "referenceId": "019fe8d9-edf6-7c1c-974b-4816ef0f6b27",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-edf1-750c-bc79-c2d5ada4ea02",
-      "baseHash": "6a05b2bb-e6de-a4b7-5cec-a35084c92d4b",
+      "baseVersionId": "01a074b6-4bda-7d6c-a06d-858757f81a7f",
+      "baseHash": "6e9816b2-f515-28f6-daeb-6c475853430b",
       "source": "project"
     },
     {
@@ -414,8 +414,8 @@
       "fileId": "019fe8d9-ee0f-704c-83ea-e5ab30ae4f78",
       "referenceId": "019fe8d9-ee0f-70e0-87f9-2c71a5091599",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-ee0b-7290-9b4e-ead7aaa857c1",
-      "baseHash": "4cf0a2a3-3577-4ef1-f21b-e21da230042b",
+      "baseVersionId": "01a074b7-eed4-7bc4-933f-55bb12d6933a",
+      "baseHash": "573caab5-013d-0957-7d67-5c213ed364db",
       "source": "project"
     },
     {
@@ -423,8 +423,8 @@
       "fileId": "019fe8d9-ee1c-7c14-9d5f-e2b54a97c207",
       "referenceId": "019fe8d9-ee1c-7ca8-b8f8-867e5a463881",
       "fileType": "origin",
-      "baseVersionId": "019fe8da-8973-7778-ac5c-a8719889cc49",
-      "baseHash": "bc5179c5-94aa-fb5b-4638-9a7016ce4a25",
+      "baseVersionId": "01a074b7-8e16-7608-bb88-f5c611726613",
+      "baseHash": "71d06624-2ae6-6e78-ead5-b78e14ecfd38",
       "source": "project"
     },
     {
@@ -432,8 +432,8 @@
       "fileId": "019fe8d9-ee2d-7d54-8279-b963a03b2392",
       "referenceId": "019fe8d9-ee2d-7de8-b0ac-959538762e09",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-ee29-7b5c-b43f-8ceadfc65f71",
-      "baseHash": "a6be9c59-3514-84fd-7716-a6475a8ada95",
+      "baseVersionId": "01a074b6-e5c8-7438-aca3-c18e31a037ee",
+      "baseHash": "16a0d7b9-024e-0e12-ae05-c2deddca1d91",
       "source": "project"
     },
     {
@@ -441,8 +441,8 @@
       "fileId": "019fe8d9-ee3a-7ae0-a922-404ff8eb44a4",
       "referenceId": "019fe8d9-ee3a-7b88-854f-70ad60bf18d2",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-ee35-742c-994e-39786c5e6725",
-      "baseHash": "b063c81c-c890-3ad7-4e89-1dcd4c9bb77d",
+      "baseVersionId": "01a074b7-cfe5-78f0-914e-42eb5b8ac7d5",
+      "baseHash": "1d781cb7-7bde-0e59-734c-18e385e59a68",
       "source": "project"
     },
     {
@@ -450,8 +450,8 @@
       "fileId": "019fe8d9-eec8-76b8-8ed7-8ab1eeeb9dff",
       "referenceId": "019fe8d9-eec8-7754-94b4-f3b936cca4c5",
       "fileType": "origin",
-      "baseVersionId": "019fe8da-6d3b-79e8-914f-7cd21ab98325",
-      "baseHash": "fb0c1bde-30e7-5d25-1693-cee27525eb2b",
+      "baseVersionId": "01a074b7-6b27-7c14-a847-7bd82b7c4adf",
+      "baseHash": "268a86f1-9880-01e1-91ab-37a0d120c4c3",
       "source": "project"
     },
     {
@@ -459,8 +459,8 @@
       "fileId": "019fe8d9-eece-7c24-9fc1-94e1cba0b892",
       "referenceId": "019fe8d9-eece-7ca4-a384-156122d56af8",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-eeca-7e28-9bbe-02401651bb81",
-      "baseHash": "eb4c4692-b312-64e4-e642-bb1385c291d2",
+      "baseVersionId": "01a074bc-a89d-7488-b44f-6ae7c0da52e2",
+      "baseHash": "7776e248-d435-fc21-948c-44e0f91fa2c8",
       "source": "project"
     },
     {
@@ -468,8 +468,8 @@
       "fileId": "019fe8d9-eee7-797c-ac36-721886458eb6",
       "referenceId": "019fe8d9-eee7-7a0c-ae09-2accd0f9dfb4",
       "fileType": "origin",
-      "baseVersionId": "019ff7eb-b26d-7c1c-a670-567b28c72c98",
-      "baseHash": "9430d4c9-152a-7c59-9ae1-5361331dc421",
+      "baseVersionId": "01a074b7-48ec-7d04-8941-41d5db5c708e",
+      "baseHash": "308a75fd-e73a-b29a-c51f-4977a843aa5c",
       "source": "project"
     },
     {
@@ -477,8 +477,8 @@
       "fileId": "019fe8d9-eef4-77e0-b97a-65b7dc7b5fbe",
       "referenceId": "019fe8d9-eef4-7880-a0c8-55060bd51659",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-eef0-7838-8c89-1bb46ed732e2",
-      "baseHash": "bc45d3ac-c57a-cbd8-89cf-c270266d3a5e",
+      "baseVersionId": "01a074b6-c309-7338-9b89-68e414937b76",
+      "baseHash": "99f157fe-0ae8-ae96-509a-4881d94ece59",
       "source": "project"
     },
     {
@@ -486,8 +486,8 @@
       "fileId": "019fe8d9-ef04-7d1c-bfc7-f90c433b0e53",
       "referenceId": "019fe8d9-ef04-7da8-9f5c-e24a04e4f3d4",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-ef00-70d0-bd1e-9db23e3efc75",
-      "baseHash": "04357058-28b6-5906-218e-1a0f80b554e7",
+      "baseVersionId": "01a074b3-de69-716c-9421-04a7a618c7ca",
+      "baseHash": "f8ae7de1-c16f-bdea-70c6-dd9c1f66d5da",
       "source": "project"
     },
     {
@@ -495,8 +495,8 @@
       "fileId": "019fe8d9-ef11-7438-af21-5da47bf0cbe9",
       "referenceId": "019fe8d9-ef11-74c8-8e5b-858f193e200c",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-ef0d-7530-8c77-3a6441583e83",
-      "baseHash": "b684567c-56f2-a0c8-8618-b0b53fd7245c",
+      "baseVersionId": "01a074b5-c297-7ed0-b841-b2c39b4979db",
+      "baseHash": "89390052-2601-9876-d2cb-d30041813696",
       "source": "project"
     },
     {
@@ -504,8 +504,8 @@
       "fileId": "019fe8d9-f0d8-7d14-8a8f-5ec82b01b84c",
       "referenceId": "019fe8d9-f0d8-7d9c-a7e3-c0ae92e62617",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-f0d2-7d28-a4c9-4d4be652c02d",
-      "baseHash": "1e7d571a-a866-4853-0543-8a1e87883048",
+      "baseVersionId": "01a074b6-6ed9-7ddc-b696-d0301f7865be",
+      "baseHash": "225a1fc7-7d57-26d8-aa7e-1540f5167e8b",
       "source": "project"
     },
     {
@@ -513,8 +513,8 @@
       "fileId": "019fe8d9-f0da-7ebc-a6ab-becd7414ecdc",
       "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-f0d6-7650-886d-8e30a0907e8a",
-      "baseHash": "f3d92720-e135-b362-5913-71ba3fa0cd1a",
+      "baseVersionId": "01a074b4-6c61-7b28-aee5-a1c565b25b1c",
+      "baseHash": "782d462b-8c99-fcf6-8222-303bef69d2b0",
       "source": "project"
     },
     {
@@ -522,8 +522,8 @@
       "fileId": "019fe8d9-f0f5-73c8-baf9-2d5d01cc7e0d",
       "referenceId": "019fe8d9-f0f5-7460-a6ea-77c031c40562",
       "fileType": "origin",
-      "baseVersionId": "019fe8d9-f0f0-7718-906d-73999bd04505",
-      "baseHash": "714ab5d5-4797-adb1-ac47-5807bc947eb6",
+      "baseVersionId": "01a074b3-b97a-7c74-94f1-809475020044",
+      "baseHash": "a301cea9-e1aa-1fb8-c08f-a5198dd0000b",
       "source": "project"
     },
     {
@@ -828,8 +828,8 @@
       "fileId": "019ff7eb-b27e-79a8-9b96-d172981ab442",
       "referenceId": "019ff7eb-af42-757d-af35-3ff1d06c0bb8",
       "fileType": "origin",
-      "baseVersionId": "019ff7eb-b275-73ec-8a41-0006e52ed2e1",
-      "baseHash": "8ad4cb5f-c1e6-b930-fa86-4a6833ff3b4a",
+      "baseVersionId": "01a074b9-0615-7764-ae75-0eb098558b83",
+      "baseHash": "134f75ff-2682-572c-bb12-de28ceb95389",
       "source": "project"
     },
     {
@@ -837,8 +837,8 @@
       "fileId": "019ff7eb-b27e-7b28-9878-22b29447a9e6",
       "referenceId": "019ff7eb-af42-757d-af35-41972e67519a",
       "fileType": "origin",
-      "baseVersionId": "019ff7eb-b276-7168-afb0-206727856055",
-      "baseHash": "7aab620b-4cb2-e431-c73a-d8eccc9dcd23",
+      "baseVersionId": "01a074b5-6328-7870-b7c4-cf0be06b7b3f",
+      "baseHash": "c4a07c9f-8f8f-cf4b-94d9-ea217c2c66e7",
       "source": "project"
     },
     {
@@ -846,8 +846,8 @@
       "fileId": "019ff7eb-b27e-7c5c-8068-c4130cc7dbf6",
       "referenceId": "019ff7eb-af42-757d-af35-4598bc51619a",
       "fileType": "origin",
-      "baseVersionId": "019ff7eb-b277-7020-8014-d4c7bbcdaff8",
-      "baseHash": "cfe73e13-5b07-b377-396b-56d3ae9ceacc",
+      "baseVersionId": "01a074b6-2093-7ef0-8e13-2f08086a1a18",
+      "baseHash": "23adf3da-c11b-e118-fe28-b934e4b2080c",
       "source": "project"
     },
     {
@@ -1168,8 +1168,8 @@
       "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileType": "player-character",
-      "baseVersionId": "01a0739d-122a-7714-bdf0-8729f36d8e40",
-      "baseHash": "faeff17c-fea1-3f33-7630-0e86af44ec29",
+      "baseVersionId": "01a07523-c036-7558-a655-1d5b29b53e7d",
+      "baseHash": "47fe442e-784d-8ad3-35be-2ac4fed815d1",
       "source": "project"
     },
     {
@@ -1339,8 +1339,8 @@
       "fileId": "01a063c4-8022-783c-84e8-0a816c241fa7",
       "referenceId": "01a063c4-7e26-751d-a63e-ef59da9aef0e",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a063c4-8016-7ed0-b381-3e5e8fc875fa",
-      "baseHash": "0c90f44b-d152-5b7c-a168-129606eaa8da",
+      "baseVersionId": "01a073ef-f803-7518-b590-aaa4e76092d6",
+      "baseHash": "b1b17be4-9ad1-4711-83f6-1c78519e01d0",
       "source": "project"
     },
     {
@@ -1384,8 +1384,8 @@
       "fileId": "01a06897-3481-7220-9cfd-77e417635154",
       "referenceId": "01a06897-2c82-723a-b60c-b67e5f7dfe38",
       "fileType": "non-player-character",
-      "baseVersionId": "01a06963-99dc-7b18-837d-cf1e47d20bf3",
-      "baseHash": "5920eb24-3238-0688-c76e-d76480ddb4a9",
+      "baseVersionId": "01a07537-fde4-7938-9324-4b92c17d0401",
+      "baseHash": "21b7e48d-b6ff-fc51-0f3f-ad0cb2b798de",
       "source": "project"
     },
     {
@@ -1393,8 +1393,8 @@
       "fileId": "01a06897-3481-73e4-921e-e1fad45c1c9f",
       "referenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1",
       "fileType": "non-player-character",
-      "baseVersionId": "01a06a2f-72cd-75ac-9213-dc7ccfef3d30",
-      "baseHash": "e63b301a-97e7-6fce-d5f2-bc7bed46e52b",
+      "baseVersionId": "01a0741d-3e84-7440-b12c-e8fb5ffaf35a",
+      "baseHash": "2e436746-ac67-ce87-ed17-5c689fb8408c",
       "source": "project"
     },
     {
@@ -1429,8 +1429,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a07366-7fea-72e8-9d5a-d622bdfc88e3",
-      "baseHash": "9d603c25-48fd-30b1-7744-6393775cf009",
+      "baseVersionId": "01a07530-a95a-7cc0-8963-2b3b13e2e0d2",
+      "baseHash": "abb730b8-71e9-4ce1-a5a3-6ac5ca17ead4",
       "source": "project"
     },
     {
@@ -1451,8 +1451,8 @@
       "fileId": "01a0693f-82a4-74a8-a055-ba15a1f4482a",
       "referenceId": "01a0693f-82a4-7528-9e81-14d01be849e8",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a0693f-f7f8-7154-a181-8be1c8698a96",
-      "baseHash": "1ff3c2c2-f612-3f7d-92ab-bb193ff00694",
+      "baseVersionId": "01a073ef-f811-7508-91f8-541c451eab6e",
+      "baseHash": "75426e70-0e35-af93-9433-c97eb88216cc",
       "source": "project",
       "settings": {
         "contextVisibility": "hidden"
@@ -1605,6 +1605,15 @@
       "baseVersionId": "01a073e7-c666-79f8-b0d9-d1cac54f39fb",
       "baseHash": "9976543c-244f-3e38-9ebc-84fc4d654785",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/Remove Reputation Markers.change-request.md",
+      "fileId": "01a073ef-f830-77f8-8f5e-3c14a80dee64",
+      "referenceId": "01a073ef-f483-7371-820e-b0b5dbe1c864",
+      "fileType": "change-request",
+      "baseVersionId": "01a073ef-f82c-7478-b805-d3b4f20c555a",
+      "baseHash": "85750f01-05c0-e90a-e658-4757548e2373",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1645,6 +1654,12 @@
       "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
     },
     {
+      "slug": "non-player-character",
+      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
+      "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
+      "contentHash": "ad130092-173c-dffe-c5b2-f29d02867a44"
+    },
+    {
       "slug": "game-start",
       "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
       "schemaHash": "9c088ea8-5a77-2c1e-8551-f6148844bb32",
@@ -1677,8 +1692,8 @@
     {
       "slug": "mission",
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "8f8e1680-f931-2ad4-1de3-70fa9f560f41",
-      "contentHash": "8caed3fe-69f7-3525-9dd4-49a36b99a868"
+      "schemaHash": "050d2189-3fff-3fa4-6e83-911bff8ae9d8",
+      "contentHash": "34924cf9-af59-fa1d-dcc8-71f120b1cf73"
     },
     {
       "slug": "mission-journal",
@@ -1699,16 +1714,10 @@
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
     },
     {
-      "slug": "non-player-character",
-      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
-      "schemaHash": "bdcb6eac-755b-db78-de0d-095b90809145",
-      "contentHash": "67581e04-4d0c-ef37-0ab2-bfa13ad46fb8"
-    },
-    {
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "c7b4cbf2-aafd-39d4-6d34-a7e7edd6abdc",
-      "contentHash": "c2c8f814-b350-ed7d-31f6-cb53bb40276f"
+      "schemaHash": "3bead313-8ba8-afc6-189d-72b1bbf1692e",
+      "contentHash": "c789a118-0c8e-466a-f48c-a96b9cd3d9fd"
     },
     {
       "slug": "outfit",
@@ -1717,5 +1726,5 @@
       "contentHash": "cb196323-4e76-ceb7-b977-e8019be06a2a"
     }
   ],
-  "projectSettingsHash": "079d31b4-61fe-7f9c-29d3-998573f6d90e"
+  "projectSettingsHash": "5ec7c7fe-e806-de2e-1bed-808ef05dc262"
 }

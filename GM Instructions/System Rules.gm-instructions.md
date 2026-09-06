@@ -2,7 +2,7 @@
 name: System Rules
 description: The light RPG engine for Internal Fey Affairs — attributes,
   abilities, origins, species and archetypes, checks, Grace, bargains,
-  reputation markers, condition tracks, lore cards, and the Mission system.
+  condition tracks, lore cards, and the Mission system.
 $craft:
   referenceId: 019fde04-45a3-7a04-ae62-38704ecce2e1
   settings:
@@ -33,14 +33,13 @@ The campaign begins in August 151 AD in a small Celtic village in ancient Irelan
 
 ## Player Characters & Non-Player Characters
 
-The protagonist — the **Player Character** — is the only record that carries the playable mechanics: Origin, Outfit, the seven Attributes, trained Abilities, the five Condition Tracks, the Grace Ledger, and Reputation Markers.
+The protagonist — the **Player Character** — is the only record that carries the playable mechanics: Origin, Outfit, the seven Attributes, trained Abilities, the five Condition Tracks, and the Grace Ledger.
 
 **NPCs** (Non-Player Characters) do not possess those mechanical fields in v1. They are defined by identity and worldbuilding: name, description, image, voice, personality, background, goals, Species, Archetypes, GM Notes, and Secrets.
 
 - Species and Archetypes remain usable for NPC classification and remain optional classification on the Player Character.
-- Reputation Markers belong to the Player Character and are publicly perceptible to NPCs; they are not NPC stat blocks. NPCs do not carry Reputation Markers of their own.
 - Grace Ledger rules apply to the Player Character. NPC obligations are still tracked through Bargains and fictional accounting where relevant, without giving every NPC a personal Grace Ledger.
-- Mission rewards and mechanical consequences — awarded Abilities, Condition effects, Grace Ledger changes, and Reputation Marker changes — update the Player Character.
+- Mission rewards and mechanical consequences — awarded Abilities, Condition effects, Grace Ledger changes, and Outfit unlocks — update the Player Character.
 - Use "character" generically only when a rule genuinely applies to both a Player Character and an NPC.
 
 ### Two ways to begin
@@ -98,7 +97,7 @@ Consequences:
 - **Health 0:** unconscious or otherwise incapacitated; never dead from the track alone.
 - **Energy 0:** collapses into sleep or exhaustion, or must stop and recover.
 - **Nerve 0:** panic, freezing, flight, loss of concentration, or blurting something damaging, chosen to fit the scene.
-- **Decorum 0:** visible humiliation or serious social failure; may create an appropriate existing Reputation Marker such as Unsightly or Disrespectful.
+- **Decorum 0:** visible humiliation or serious social failure; witnesses remember the specific incident and react accordingly.
 - **Cover 0:** detected, recognised, or exposed.
 
 The consequence is a fictional event or persistent state outside the number. Raising Maximum afterward does not undo it.
@@ -185,7 +184,7 @@ When a player picks an origin, it defines who their character was before the sto
 
 - A newly created playable protagonist (the Player Character) is expected to have an Origin.
 - The Origin's Attribute is Strong (2); its three Abilities are the character's initial trained Abilities. Later Ability rewards are added without removing those three.
-- NPCs do not possess Origin, Outfit, Attributes, trained Abilities, Condition state, a Grace Ledger, or Reputation Markers in v1. They are defined by identity and worldbuilding fields (Species, Archetypes, description, personality, background, goals, GM Notes, Secrets).
+- NPCs do not possess Origin, Outfit, Attributes, trained Abilities, Condition state, or a Grace Ledger in v1. They are defined by identity and worldbuilding fields (Species, Archetypes, description, personality, background, goals, GM Notes, Secrets).
 
 ## Species & Archetypes
 
@@ -225,15 +224,6 @@ Grace is the currency of favors among the Fey — and the measure of whether one
 - A party's obligation may link to the specific contract it falls under via its Reference contract field (a Bargain reference, when that contract is a different document). Related contracts are also linked on the bargain file itself.
 - A bargain is player-visible when it is the player's own or was witnessed, overheard, read, disclosed, or discovered during investigation. Set "Known to the player" and narrate it.
 - When a new bargain is created, announce it clearly and immediately — a distinct, consistent system message naming the parties and the key terms.
-
-## Reputation Markers
-
-- Markers belong to the Player Character and are publicly perceptible to NPCs; they are universal markers, not NPC stat blocks. NPCs do not carry their own Reputation Markers.
-- Markers are simply present or absent — no scores, no scopes, no severity.
-- Initial markers: Ungrateful, Disrespectful, Unsightly, Violent, Cruel, Untrustworthy, Oath-Breaker, Generous, Respectful, Handsome, Elegant, Merciful, Trustworthy, Oath-Keeper.
-- Each active marker carries a short reason explaining how it was acquired.
-- Markers influence NPC reactions and fictional position. Never add automatic hidden numerical modifiers.
-- Narrate when a marker is acquired or removed.
 
 ## Lore Cards
 
@@ -294,7 +284,7 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
 - Follow `storyBeats` in authored order unless the Mission explicitly says otherwise.
 - Update `currentBeatKey` as play advances.
 - Apply each beat's `loreUnlocks` when that beat is reached or resolved as authored.
-- Individual actions and plans may fail. Failure must alter cost, time, Conditions, position, reputation, relationships, or approach rather than block Story, Side, or Interlude completion.
+- Individual actions and plans may fail. Failure must alter cost, time, Conditions, position, social standing, relationships, or approach rather than block Story, Side, or Interlude completion.
 
 ### Terminal outcomes
 

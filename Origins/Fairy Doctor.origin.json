@@ -3,6 +3,9 @@
     "referenceId": "019ff7eb-af42-757d-af35-41972e67519a"
   },
   "name": "Fairy Doctor",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/787e6d99-1224-46d3-8038-b5190d5a3990"
+  },
   "abilities": [
     {
       "slug": "healing",

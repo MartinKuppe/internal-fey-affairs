@@ -33,12 +33,5 @@
   ],
   "background": "Coinín is a Pooka field researcher who normally wears rabbit glamour. He knows the woods, the local patrol patterns, and the domestic collection routes around Trí Mhuilinn.",
   "description": "A small, quick rabbit that watches people with far too much calculation and occasionally occupies space in a way no rabbit should. When the borrowed shape drops, the creature beneath is unmistakably one of the Good People. Coinín cultivates cuteness as carefully as a courtier cultivates dignity.",
-  "personality": "Cheerful, ingratiating, opportunistic, and precise. Coinín pretends to be innocent and selfless, enjoys being underestimated, and never volunteers the part of a true answer that would weaken his position.",
-  "glamourImage": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/612b46a4-d10e-4b4a-82d3-1a6176453122"
-  },
-  "glamourActive": true,
-  "trueFormImage": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e930394a-a27c-4580-a09f-2a3e31ea7033"
-  }
+  "personality": "Cheerful, ingratiating, opportunistic, and precise. Coinín pretends to be innocent and selfless, enjoys being underestimated, and never volunteers the part of a true answer that would weaken his position."
 }

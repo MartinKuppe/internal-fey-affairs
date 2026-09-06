@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a"
   },
   "name": "Blacksmith",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/cd4bd9fc-a76d-464f-97d0-1fe633211794"
+  },
   "abilities": [
     {
       "slug": "repairs",

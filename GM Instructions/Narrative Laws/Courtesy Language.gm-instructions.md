@@ -14,4 +14,4 @@ $craft:
     schemaVersionId: file-designation-metadata:v8
 ---
 
-Inspect the newest player or NPC dialogue for “please”, “thanks”, “sorry”, apologies, or requests for forgiveness. Exact wording matters. If it may create, settle, or alter a plea, Grace obligation, bargain, or reputation consequence, consult and apply the detailed Grace and Bargain rules.
+Inspect the newest player or NPC dialogue for “please”, “thanks”, “sorry”, apologies, or requests for forgiveness. Exact wording matters. If it may create, settle, or alter a plea, Grace obligation, Bargain, or concrete social consequence, consult and apply the detailed Grace and Bargain rules.

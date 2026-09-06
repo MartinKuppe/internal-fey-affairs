@@ -3,6 +3,9 @@
     "referenceId": "019ff7eb-af42-757d-af35-3ff1d06c0bb8"
   },
   "name": "Druid",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c89312fc-283e-4279-9a1a-6371dce42c09"
+  },
   "abilities": [
     {
       "slug": "healing",

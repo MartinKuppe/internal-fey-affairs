@@ -3,6 +3,9 @@
     "referenceId": "019ff7eb-af42-757d-af35-4598bc51619a"
   },
   "name": "Herbalist",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ef938e6b-884b-4947-ab7e-ae9ab51f1e0c"
+  },
   "abilities": [
     {
       "slug": "healing",

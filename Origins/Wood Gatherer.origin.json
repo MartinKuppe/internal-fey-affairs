@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-ee0f-70e0-87f9-2c71a5091599"
   },
   "name": "Wood Gatherer",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8e573e1f-e169-48e9-bd0c-ee528eba8356"
+  },
   "abilities": [
     {
       "slug": "nature",

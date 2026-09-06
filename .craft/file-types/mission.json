@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "8f8e1680-f931-2ad4-1de3-70fa9f560f41",
+  "schemaHash": "050d2189-3fff-3fa4-6e83-911bff8ae9d8",
   "schema": {
     "type": "object",
     "required": [
@@ -541,7 +541,7 @@
         "type": "string",
         "title": "Completion Effects",
         "format": "textarea",
-        "description": "GM-facing prose for other completion consequences (Grace, Bargains, Reputation, relationships, Conditions, Outfits, world state)."
+        "description": "GM-facing prose for other completion consequences (Grace, Bargains, relationships, witnessed deeds, Conditions, Outfits, world state)."
       },
       "selectableMembers": {
         "type": "array",

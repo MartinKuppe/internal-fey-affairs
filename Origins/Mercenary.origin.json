@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-f0d8-7d9c-a7e3-c0ae92e62617"
   },
   "name": "Mercenary",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b87f6e18-5c2d-4f87-b200-58d8e3c2188a"
+  },
   "abilities": [
     {
       "slug": "weapons",

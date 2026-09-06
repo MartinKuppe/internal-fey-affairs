@@ -1,5 +1,8 @@
 {
   "name": "Piper",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8d4361dd-f5f2-4d7d-b5b5-29bcc4a63e5e"
+  },
   "abilities": [
     {
       "slug": "music",

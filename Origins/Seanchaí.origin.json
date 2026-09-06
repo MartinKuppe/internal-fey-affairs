@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-eece-7ca4-a384-156122d56af8"
   },
   "name": "Seanchaí",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3a53f6ca-740a-4628-9053-465b1c3c37ed"
+  },
   "abilities": [
     {
       "slug": "learnedness",

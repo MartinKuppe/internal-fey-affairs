@@ -1,5 +1,8 @@
 {
   "name": "Bard",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9381120c-068e-40f7-8889-c9c2299cdd00"
+  },
   "abilities": [
     {
       "slug": "music",

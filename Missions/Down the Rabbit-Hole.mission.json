@@ -13,7 +13,7 @@
     }
   },
   "status": "available",
-  "gmNotes": "Opening Story Mission immediately following the static Game Start. The scripted opening ends with the goat poised at Grannie's yard gate and the player's first response. The Mission then carries that response through an uninterrupted goat chase and Fairy Ring reveal; the first genuine choice comes only after Coinín offers the Hollow Tree. Méabh is not genuinely escaping: she has been assigned by Morrigan to manipulate the player, though her uncertainty and wish for freedom are real. Coinín wants supplies for the Fey logistics chain, not personal food. Protect all three secrets.",
+  "gmNotes": "Opening Story Mission immediately following the static Game Start. The scripted opening ends with the goat poised at Grannie's yard gate and the player's first response. Switch the location to Tris Mhuilinn.  The Mission then carries that response through an uninterrupted goat chase and Fairy Ring reveal; the first genuine choice comes only after Coinín offers the Hollow Tree. Méabh is not genuinely escaping: she has been assigned by Morrigan to manipulate the player, though her uncertainty and wish for freedom are real. Coinín wants supplies for the Fey logistics chain, not personal food. Protect all three secrets.",
   "briefing": "Return home with the firewood, check the loose horseshoe, and see what has unsettled Grannie's goat. The ordinary errand will carry you farther from the hearth than expected.",
   "teamSize": 1,
   "fixedDate": {
@@ -38,7 +38,7 @@
     {
       "key": "ring-arrival",
       "title": "The Woman in the Ring",
-      "events": "The goat waits at the edge of the glade as the Fairy Ring wakes with an eerie sound and moving blue-white light. A naked young woman materialises above it: Méabh, red-haired, frightened, and disturbingly similar to Niamh without sharing her perfect symmetry. She presents herself as a Takeling fleeing the Fey and asks for help. Flickering red lights, metallic tantivy sounds, and pairs of red points between the trees announce an approaching hoverbike patrol. Coinín appears in an unstable, rigid rabbit glamour that flickers enough to reveal the unfamiliar figure within. He says, ‘Come, quickly! You can hide inside my hollow tree!’",
+      "events": "The goat waits at the edge of the glade as the Fairy Ring wakes with an eerie sound and moving blue-white light. A young woman materialises above it: Méabh, red-haired, frightened, and disturbingly similar to Niamh without sharing her perfect symmetry. She presents herself as a Takeling fleeing the Fey and asks for help. Flickering red lights, metallic tantivy sounds, and pairs of red points between the trees announce an approaching hoverbike patrol. Coinín appears in an unstable, rigid rabbit glamour that flickers enough to reveal the unfamiliar figure within. He says, ‘Come, quickly! You can hide inside my hollow tree!’",
       "location": {
         "slug": "fairy-ring",
         "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",

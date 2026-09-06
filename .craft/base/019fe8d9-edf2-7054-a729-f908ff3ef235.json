@@ -1,5 +1,8 @@
 {
   "name": "Courier",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e6f044e2-c74f-4062-bbb3-cd8bd58bb74a"
+  },
   "abilities": [
     {
       "slug": "riding",

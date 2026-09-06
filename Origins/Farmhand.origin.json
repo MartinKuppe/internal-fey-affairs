@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-ed55-74d4-80e8-88d70096348c"
   },
   "name": "Farmhand",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3e9ed570-c2c9-4f0b-a4b7-505bf1ae7efa"
+  },
   "abilities": [
     {
       "slug": "repairs",

@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-ed48-7644-850f-3e2a3a8d2c75"
   },
   "name": "Grocer",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/4e754ff6-8b20-40b2-9516-94c9dfc2e7ac"
+  },
   "abilities": [
     {
       "slug": "food",

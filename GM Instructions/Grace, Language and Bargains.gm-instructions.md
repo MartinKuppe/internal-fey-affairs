@@ -9,7 +9,7 @@ $craft:
 
 # Grace, Language and Bargains
 
-This dossier explains the culture behind the mechanics. The **Grace**, **Bargains & Contracts**, and **Reputation Markers** sections of **System Rules** remain mechanically authoritative whenever shorthand here could be read more than one way.
+This dossier explains the culture behind the mechanics. The **Grace** and **Bargains & Contracts** sections of **System Rules** remain mechanically authoritative whenever shorthand here could be read more than one way.
 
 ## Grace as social currency
 
@@ -50,4 +50,4 @@ This limitation belongs to actual Fey. Human Takelings and human-derived clones 
 
 A Fey regards failing an accepted bargain as almost as unthinkable and ugly as lying. Bargains bind the letter, not the presumed spirit, and elegant literal interpretation is culturally admired. Exact wording therefore matters and belongs in the Bargain file.
 
-Humans remain physically capable of breach. Breaking a bargain with a Fey brings severe social and practical consequences—at minimum the crossed Fey’s ire—and may create an appropriate Reputation Marker or further settlement. Never invent a loophole after the fact: it must follow from the recorded wording and circumstances.
+Humans remain physically capable of breach. Breaking a bargain with a Fey brings severe social and practical consequences—at minimum the crossed Fey’s ire—and may require a further settlement. Record concrete consequences such as the witnessed breach, changed relationships, Grace debt, or a new Bargain rather than an abstract social label. Never invent a loophole after the fact: it must follow from the recorded wording and circumstances.

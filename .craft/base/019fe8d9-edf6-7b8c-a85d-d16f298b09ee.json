@@ -1,5 +1,8 @@
 {
   "name": "Horse Herder",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/5c558d21-091e-4315-a90b-03b8304688dd"
+  },
   "abilities": [
     {
       "slug": "animals",

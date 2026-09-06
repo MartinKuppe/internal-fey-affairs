@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-eee7-7a0c-ae09-2accd0f9dfb4"
   },
   "name": "Tailor",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9c33904d-b584-47ef-844e-517535aaec95"
+  },
   "abilities": [
     {
       "slug": "repairs",

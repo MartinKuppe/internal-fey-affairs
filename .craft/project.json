@@ -60,7 +60,7 @@
       "name": "Seanchaí",
       "image": {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/455add73-4827-48fe-998a-906c16353b7e",
-        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ee4fb507-1970-4a37-983a-52150ca0742b",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/93b36678-cfbf-458f-b3dd-3000abae1abf",
         "focalPoint": {
           "x": 0.9696969696969697,
           "y": 0.5057526366251198
@@ -68,15 +68,15 @@
         "variations": [
           {
             "name": "neutral",
-            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/4194558f-be93-4791-9104-4f92596dd257"
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/77403ee5-9705-4a11-bacb-93e84a904434"
           },
           {
             "name": "thoughtful",
-            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ee4fb507-1970-4a37-983a-52150ca0742b"
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/93b36678-cfbf-458f-b3dd-3000abae1abf"
           }
         ]
       },
-      "voiceId": "96819d0bd28d"
+      "voiceId": "rex"
     }
   }
 }

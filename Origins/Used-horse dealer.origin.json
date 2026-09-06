@@ -3,6 +3,9 @@
     "referenceId": "019fe8d9-ee3a-7b88-854f-70ad60bf18d2"
   },
   "name": "Used-horse dealer",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/04e8cd0a-1913-4acf-b1c3-c49f3ac3560a"
+  },
   "abilities": [
     {
       "slug": "riding",
