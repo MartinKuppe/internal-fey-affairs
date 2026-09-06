@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T05:52:17.531Z",
+  "syncedAt": "2026-09-06T16:12:04.711Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -130,8 +130,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a073ef-f820-7668-91a7-54ce05b091cd",
-      "baseHash": "533f54b6-0bcb-0b3d-4589-d069f2c4268c",
+      "baseVersionId": "01a0777d-bcd0-7b40-8af4-cfcee107fa5e",
+      "baseHash": "a2878a4e-453c-4443-6207-9f34a5504fc8",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1429,8 +1429,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a07530-a95a-7cc0-8963-2b3b13e2e0d2",
-      "baseHash": "abb730b8-71e9-4ce1-a5a3-6ac5ca17ead4",
+      "baseVersionId": "01a07769-a4ad-7ae4-b282-d850de78990b",
+      "baseHash": "206752e7-2612-af2c-7e77-c20911125e3d",
       "source": "project"
     },
     {
@@ -1614,6 +1614,15 @@
       "baseVersionId": "01a073ef-f82c-7478-b805-d3b4f20c555a",
       "baseHash": "85750f01-05c0-e90a-e658-4757548e2373",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/Mission Runtime Write Guardrails.change-request.md",
+      "fileId": "01a0777d-bcef-7648-b404-7857b683c72b",
+      "referenceId": "01a0777d-bd97-7031-8933-85c654ce3a41",
+      "fileType": "change-request",
+      "baseVersionId": "01a0777d-bce8-7110-b54f-acd6f9a67b32",
+      "baseHash": "31d377c1-5ecf-e7e3-5dea-b3aaac4acfae",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1692,8 +1701,8 @@
     {
       "slug": "mission",
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "050d2189-3fff-3fa4-6e83-911bff8ae9d8",
-      "contentHash": "34924cf9-af59-fa1d-dcc8-71f120b1cf73"
+      "schemaHash": "8f0a2847-e9d0-001c-f87a-059e921eb521",
+      "contentHash": "3a6292e1-6713-300c-bf54-f396a2221506"
     },
     {
       "slug": "mission-journal",

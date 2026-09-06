@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "050d2189-3fff-3fa4-6e83-911bff8ae9d8",
+  "schemaHash": "8f0a2847-e9d0-001c-f87a-059e921eb521",
   "schema": {
     "type": "object",
     "required": [
@@ -186,7 +186,7 @@
             "title": "Moon Phase"
           }
         },
-        "description": "Runtime. Set when the Mission ends."
+        "description": "Runtime structured date. When the Mission ends, copy the Mission Journal's currentMonth and currentMoonPhase into {month, moonPhase}; never store a formatted date label."
       },
       "fixedDate": {
         "type": "object",
@@ -369,7 +369,7 @@
             "title": "Moon Phase"
           }
         },
-        "description": "Runtime. Set when the Mission becomes active."
+        "description": "Runtime structured date. When the Mission becomes active, copy the Mission Journal's currentMonth and currentMoonPhase into {month, moonPhase}; never store a formatted label such as 'August 🌒'."
       },
       "unlockAfter": {
         "type": "array",

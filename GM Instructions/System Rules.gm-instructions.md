@@ -262,6 +262,12 @@ The campaign runs as a mostly linear sequence of **Story Missions**, with Side, 
 - Failure or expiration of an Opportunity or Ability Mission never blocks the Story campaign.
 - Completed, failed, and expired Mission files remain as campaign history even after their map pins disappear.
 
+### Runtime writes
+
+- Mission dates are structured objects. When setting `startedDate` or `endedDate`, copy the Mission Journal's stored date as `{ "month": currentMonth, "moonPhase": currentMoonPhase }` — for example `{ "month": "August", "moonPhase": "🌒" }`. Never write a formatted label such as `August 🌒` into a date field.
+- The Mission Journal fields `currentDateLabel`, `availableMissions`, `activeMissions`, `knownUpcomingMissions`, and `missionHistory` are computed, read-only views. Never write them. Change the relevant Mission's stored `status` or other source field and let the Journal view update automatically.
+- The Mission Journal's writable fields are `missions`, `startingMission`, `currentMonth`, and `currentMoonPhase`. Do not rewrite `missions` merely to start, advance, or finish a Mission already listed there.
+
 ### Starting the campaign
 
 Game Start launches the Mission Journal's `startingMission` directly. The starting Mission requires no selection pin. In the current campaign, **Down the Rabbit-Hole** is the starting Mission; initialise it from the Journal and begin at Grannie's Hut before moving to the Fairy Ring.
@@ -273,7 +279,7 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
 - On selection:
   1. Validate and record `assignedTeam`: every `mandatoryMembers` member is included, the count matches `teamSize` when defined, remaining members come from `selectableMembers`, and no character reference is duplicated.
   2. Set `status` to `active`.
-  3. Set `startedDate` to the current campaign date.
+  3. Set `startedDate` to a structured copy of the current campaign date, for example `{ "month": "August", "moonPhase": "🌒" }` — never to the formatted date label.
   4. Set `currentBeatKey` to the first beat's key.
   5. Apply `startLoreUnlocks`.
   6. Highlight the Mission's pin.
