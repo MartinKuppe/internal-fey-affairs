@@ -96,5 +96,5 @@
     }
   ],
   "revealedToPlayer": true,
-  "completionEffects": "Complete when Méabh has shelter and Coinín's silence has been secured through an accepted bargain (whether accepted by the player, Méabh, or both). Set Milk and Cream and Iron and Wax to available and revealedToPlayer true, then place their runtime scene-map pins on Trí Mhuilinn. Do not advance the moon phase."
+  "completionEffects": "Complete when Méabh has shelter and Coinín's silence has been secured through an accepted bargain (whether accepted by the player, Méabh, or both). Set Milk and Cream and Iron and Wax to available and revealedToPlayer true. Do not advance the moon phase."
 }

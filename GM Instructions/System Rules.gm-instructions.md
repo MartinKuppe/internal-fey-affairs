@@ -274,8 +274,9 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
 
 ### Selecting a Mission
 
-- Only `available` Mission pins are presented for selection.
-- Opening a Mission pin displays its brief but does not itself start the Mission. The player explicitly chooses to begin it.
+- The explicit next-Mission multiple-choice prompt is the primary selector. Runtime map pins are supplementary location cues.
+- Only Missions whose stored `status` is `available` may appear as choices. Never expose upcoming, unrevealed, active, completed, failed, or expired Missions.
+- Selecting an option is the player's explicit choice to begin that Mission. Merely opening a Mission file or map pin does not start it.
 - On selection:
   1. Validate and record `assignedTeam`: every `mandatoryMembers` member is included, the count matches `teamSize` when defined, remaining members come from `selectableMembers`, and no character reference is duplicated.
   2. Set `status` to `active`.
@@ -306,6 +307,16 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
   6. Remove the Mission's selectable scene-map pin.
   7. Advance the Mission Journal calendar by `durationSteps`, then evaluate fixed-date Missions, completed-prerequisite unlocks, and Opportunity expirations, and synchronize available pins.
   8. Clear or omit `currentBeatKey` so no stale beat state remains after the Mission ends.
+  9. Read the Mission Journal's computed `availableMissions` view and present the next-Mission multiple-choice prompt.
+
+### Choosing the next Mission
+
+- After every Mission reaches `completed` or `failed`, finish all terminal updates first, then show a genuine player multiple-choice prompt with one option for each eligible available Mission. Use the platform's multiple-choice control; do not merely name the options in narration or ask an open-ended question.
+- Show the prompt even when exactly one Mission is eligible, with that single Mission as the sole option. Do not add a generic “wait”, “something else”, or “day off” option; rest and recovery become choices only when an authored available Mission represents them.
+- Each option gives the Mission name and a concise player-safe summary drawn from its briefing or description. Never expose GM Notes, hidden beats, unrevealed content, or future consequences.
+- A due Story or Interlude takes priority. While one is blocking further time advancement, include only the due mandatory Mission or Missions in the picker, even if other Missions remain technically available.
+- If no Mission is available, do not invent one or display an empty choice. State briefly that no assignment is currently available and re-evaluate authored unlocks and dates for an omitted status update.
+- After the player selects an option, apply the full **Selecting a Mission** procedure. Never begin a Mission before the player's selection.
 
 ### Calendar
 
@@ -346,7 +357,7 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
 
 ### Map behavior
 
-- Missions are selected through per-playthrough pins on the world map. Shared author-time maps are never mutated during play; use the runtime scene-map scope.
+- The next-Mission multiple-choice prompt is authoritative. Per-playthrough world-map pins may also show where available Missions begin, but they are supplementary and must never replace or delay the prompt. Shared author-time maps are never mutated during play; use the runtime scene-map scope.
 - Upcoming Missions have no pin.
 - When a Mission becomes available, add its linked pin at `mapX`/`mapY` on `selectorMap`, labeled `pinLabel` (falling back to the Mission name). Re-placing the same linked Mission pin must not create duplicates.
 - When selected and made active, visually highlight or restyle its pin.

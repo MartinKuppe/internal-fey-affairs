@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T16:12:04.711Z",
+  "syncedAt": "2026-09-06T16:21:23.477Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -130,8 +130,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a0777d-bcd0-7b40-8af4-cfcee107fa5e",
-      "baseHash": "a2878a4e-453c-4443-6207-9f34a5504fc8",
+      "baseVersionId": "01a07786-478b-7eb8-84a5-c26023549fad",
+      "baseHash": "cc9e2ba7-7758-511f-ffed-44a0239a30a5",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1429,8 +1429,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a07769-a4ad-7ae4-b282-d850de78990b",
-      "baseHash": "206752e7-2612-af2c-7e77-c20911125e3d",
+      "baseVersionId": "01a07786-4794-749c-8074-cd648bd2180a",
+      "baseHash": "8d84832a-7d16-4f2d-cc93-defe04ea3a94",
       "source": "project"
     },
     {
@@ -1622,6 +1622,15 @@
       "fileType": "change-request",
       "baseVersionId": "01a0777d-bce8-7110-b54f-acd6f9a67b32",
       "baseHash": "31d377c1-5ecf-e7e3-5dea-b3aaac4acfae",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/Post-Mission Picker.change-request.md",
+      "fileId": "01a07786-43bc-72a8-b6d2-61aeeac99d7f",
+      "referenceId": "01a07786-448e-71f8-8ae4-c82ba3a9120e",
+      "fileType": "change-request",
+      "baseVersionId": "01a07786-43ba-7b08-9efb-de292f7c0d67",
+      "baseHash": "358b1e3b-338c-37ef-3c59-286988fe1594",
       "source": "project"
     }
   ],
