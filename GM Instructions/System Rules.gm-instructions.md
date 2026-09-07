@@ -1,8 +1,8 @@
 ---
 name: System Rules
 description: The light RPG engine for Internal Fey Affairs — attributes,
-  abilities, origins, species and archetypes, checks, Grace, bargains,
-  condition tracks, lore cards, and the Mission system.
+  abilities, origins, species and archetypes, checks, Grace, bargains, condition
+  tracks, lore cards, and the Mission system.
 $craft:
   referenceId: 019fde04-45a3-7a04-ae62-38704ecce2e1
   settings:
@@ -159,12 +159,32 @@ Roll only when the outcome is uncertain **and** both success and trouble would b
 1. The GM chooses the Attribute that describes **how** the Player Character acts, an Ability when trained competence clearly applies, and exactly one relevant Condition that describes **what is at risk**.
 2. Before the roll, announce the complete formula, target, named Condition, and likely consequence.
 3. Roll **2d6 + Attribute + 2 if trained + the current value of the named Condition**. Add no Ability bonus when untrained. Add Current, not Maximum, for the Condition.
-4. Use targets **10 Easy, 12 Standard, 14 Hard, 16 Exceptional**. Standard is the default for a consequential obstacle under pressure; choose a different target because of the fiction, not to force a preferred result.
+4. Use targets **8 Easy, 10 Standard, 12 Hard, 14 Exceptional**. Standard is the default for a consequential obstacle under pressure; choose a different target because of the fiction, not to force a preferred result.
 5. Compare the total with the target and state the outcome explicitly:
    - **Meet or exceed:** clean success.
    - **Miss by 1–2:** success with a complication; generally add 1 Depletion to the named Condition.
    - **Miss by 3+:** setback, but the fiction advances; usually add 1 Depletion, or an announced 2 when the danger justifies it.
 6. Resolve that outcome before asking follow-ups or continuing. Never turn failure into a dead end for a Primary, Secondary, or Interlude Mission.
+
+### Announcing the outcome
+
+- Open the message that resolves any check with the verdict as a markdown heading on its own line — before any narrative flavour.
+- Write the verdict as plain markdown heading text: two hash characters, a space, then the exact label and emoji. Do not wrap it in backticks, bold markers, or a code block — backticks would render as monospace and defeat the heading.
+- Put a blank line immediately before the heading (and after it) so the renderer treats it as a standalone heading rather than gluing it to the previous text — this keeps it from being styled inline.
+- The exact labels (blank line before and after each):
+
+## ✅ Clean Success
+
+## ⚠️ Success with a Complication
+
+## ❌ Setback
+
+## 🌟 Critical Success
+
+## 💥 Critical Mishap
+
+- Use these exact labels and emoji. The verdict heading is the first thing the player reads; the narrated outcome follows it.
+- The critical labels replace the ordinary band label when a natural 6 + 6 or 1 + 1 occurs. Never bury the verdict mid-paragraph or inside prose.
 
 ### Critical outcomes
 

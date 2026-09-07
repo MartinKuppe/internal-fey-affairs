@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-06T16:21:23.477Z",
+  "syncedAt": "2026-09-07T10:06:18.305Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -130,8 +130,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a07786-478b-7eb8-84a5-c26023549fad",
-      "baseHash": "cc9e2ba7-7758-511f-ffed-44a0239a30a5",
+      "baseVersionId": "01a07935-a038-7a98-a9d0-5d81b5a129c0",
+      "baseHash": "646eec20-c975-0cde-0d04-c1a9a1c5fdae",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1648,6 +1648,12 @@
       "contentHash": "049e8cec-4109-8997-3246-334f8bcfc565"
     },
     {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "3bead313-8ba8-afc6-189d-72b1bbf1692e",
+      "contentHash": "a17b9214-43d1-a52a-7126-92726d90fe9e"
+    },
+    {
       "slug": "species",
       "fileTypeId": "019fedb8-3e72-79c0-93b6-bcddbccbb5e4",
       "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
@@ -1730,12 +1736,6 @@
       "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
       "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
-    },
-    {
-      "slug": "player-character",
-      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "3bead313-8ba8-afc6-189d-72b1bbf1692e",
-      "contentHash": "c789a118-0c8e-466a-f48c-a96b9cd3d9fd"
     },
     {
       "slug": "outfit",

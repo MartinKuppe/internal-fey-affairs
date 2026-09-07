@@ -621,7 +621,15 @@
           "originimage-section",
           "origindescription-section",
           "conditionstate-section",
-          "originname-section"
+          "originname-section",
+          "voice-select",
+          "origin-select",
+          "graceledger-references",
+          "hasmybargains-checkbox",
+          "knownbargains-references",
+          "signedbargains-references",
+          "unlockedoutfits-references",
+          "hasotherbargains-checkbox"
         ]
       },
       "tabs": {
@@ -1176,7 +1184,7 @@
         "type": "Markdown",
         "props": {
           "color": null,
-          "content": "Tested against the difficulty:\n- Easy: 10\n- Standard: 12\n- Hard: 14\n- Exceptional: 16\n\n6 + 6 =  Critical Success, 1 + 1 = Critical Mishap",
+          "content": "Tested against the difficulty:\n- Easy: 8\n- Standard: 10\n- Hard: 12\n- Exceptional: 14\n\n6 + 6 =  Critical Success, 1 + 1 = Critical Mishap",
           "className": null
         },
         "children": []
@@ -1551,6 +1559,21 @@
         },
         "children": []
       },
+      "voice-select": {
+        "type": "VoiceSelect",
+        "props": {
+          "label": "Voice",
+          "value": {
+            "$state": "/voice"
+          },
+          "showLabel": true,
+          "placeholder": "Use GM voice"
+        },
+        "visible": {
+          "$state": "/voice"
+        },
+        "children": []
+      },
       "heading-2-2-2": {
         "type": "Heading",
         "props": {
@@ -1558,6 +1581,22 @@
           "color": null,
           "level": "h1",
           "className": null
+        },
+        "children": []
+      },
+      "origin-select": {
+        "type": "Select",
+        "props": {
+          "label": "Origin",
+          "value": {
+            "$state": "/origin"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "origin"
+        },
+        "visible": {
+          "$state": "/origin"
         },
         "children": []
       },
@@ -2222,6 +2261,48 @@
         },
         "children": []
       },
+      "graceledger-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/graceLedger"
+          },
+          "label": "Grace Ledger",
+          "columns": 4,
+          "fileTypeSlug": "grace",
+          "metadataFields": [
+            {
+              "name": "day",
+              "type": "number"
+            },
+            {
+              "name": "amount",
+              "type": "number"
+            },
+            {
+              "name": "reason",
+              "type": "string"
+            }
+          ],
+          "referenceField": "currency"
+        },
+        "visible": {
+          "$state": "/graceLedger"
+        },
+        "children": []
+      },
+      "hasmybargains-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Has My Bargains",
+          "checked": {
+            "$state": "/hasMyBargains"
+          }
+        },
+        "children": []
+      },
       "outfit-modifier-amount": {
         "type": "Text",
         "props": {
@@ -2256,6 +2337,23 @@
         },
         "children": []
       },
+      "knownbargains-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/knownBargains"
+          },
+          "label": "Known Bargains",
+          "columns": 4,
+          "fileTypeSlug": "bargain",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/knownBargains"
+        },
+        "children": []
+      },
       "trackbox-row-concealment": {
         "type": "TrackBoxes",
         "props": {
@@ -2282,6 +2380,17 @@
         },
         "children": []
       },
+      "hasotherbargains-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Has Other Bargains",
+          "checked": {
+            "$state": "/hasOtherBargains"
+          }
+        },
+        "children": []
+      },
       "origindescription-section": {
         "type": "Stack",
         "props": {
@@ -2290,6 +2399,40 @@
         },
         "visible": {
           "$state": "/originDescription"
+        },
+        "children": []
+      },
+      "signedbargains-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/signedBargains"
+          },
+          "label": "Signed Bargains",
+          "columns": 4,
+          "fileTypeSlug": "bargain",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/signedBargains"
+        },
+        "children": []
+      },
+      "unlockedoutfits-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/unlockedOutfits"
+          },
+          "label": "Unlocked Outfits",
+          "columns": 4,
+          "fileTypeSlug": "outfit",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/unlockedOutfits"
         },
         "children": []
       }
@@ -3461,7 +3604,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn outfit to the chosen Outfit (or Common Clothes) and set unlockedOutfits to Common Clothes plus the chosen spare Outfit. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 10/12/14/16. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn outfit to the chosen Outfit (or Common Clothes) and set unlockedOutfits to Common Clothes plus the chosen spare Outfit. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
     }
   }
 }
