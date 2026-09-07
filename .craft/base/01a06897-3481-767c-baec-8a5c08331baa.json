@@ -5,7 +5,7 @@
   "mapY": 0.756183867621202,
   "name": "Iron and Wax",
   "status": "upcoming",
-  "gmNotes": "Tutorial Side Mission for iron vulnerability, the Iron ability, fail-forward infiltration, domestic Fey labour, Brownie professional status, and Mission Trackers. It may be completed before or after Milk and Cream. The player should not yet learn that Coinín's supplies serve Takelings and clones.",
+  "gmNotes": "Tutorial Side Mission for iron vulnerability, the Iron ability, fail-forward infiltration, domestic Fey labour, Brownie professional status, and Mission Trackers. It may be completed before or after Milk and Cream. The player should not yet learn that Coinín's supplies serve Takelings and clones.\n\nThe apprentice stole these horseshoes from village doors and the smithy to protect the workshop from the Fey; their disappearance caused the strengthened watch in Milk and Cream. Do not volunteer the culprit. If the player points out the coincidence between the village's missing horseshoes and the workshop cache, the apprentice will confess when confronted.",
   "briefing": "Coinín's friend Buaic cannot enter the beekeeper's workshop where he works by night. A new apprentice has scattered and hidden iron horseshoes to ward off Fairies. Get Buaic safely back to his candles and earn the honey needed for Coinín's bargain.",
   "pinLabel": "Iron and Wax",
   "teamSize": 2,
@@ -56,7 +56,7 @@
         "fileTypeSlug": "location"
       },
       "objective": "Find and remove every horseshoe that bars Buaic's return.",
-      "gmInstructions": "Do not invent an exact horseshoe count; the unique tracker represents complete clearance. Use a small number of meaningful checks rather than one roll per horseshoe. Failure may cause noise, a cut, suspicion, a missed cache Buaic detects from outside, or a hurried confrontation, but it must lead to another approach rather than block completion."
+      "gmInstructions": "Do not invent an exact horseshoe count; the unique tracker represents complete clearance. Use a small number of meaningful checks rather than one roll per horseshoe. Failure may cause noise, a cut, suspicion, a missed cache Buaic detects from outside, or a hurried confrontation, but it must lead to another approach rather than block completion. If the player confronts the apprentice and explicitly points out the coincidence between this cache and the missing village horseshoes, the apprentice confesses to stealing them. Do not make him confess before the player makes that connection."
     },
     {
       "key": "buaics-payment",

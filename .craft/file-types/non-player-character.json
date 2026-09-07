@@ -132,16 +132,6 @@
   "layout": {
     "root": "page",
     "elements": {
-      "name": {
-        "type": "Heading",
-        "props": {
-          "text": {
-            "$state": "/name"
-          },
-          "level": "h2"
-        },
-        "children": []
-      },
       "page": {
         "type": "Stack",
         "props": {
@@ -150,7 +140,6 @@
         },
         "children": [
           "image-header",
-          "name",
           "description-card",
           "identity-section",
           "goals-section",

@@ -46,7 +46,7 @@
     ],
     "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c590cd09-695f-465c-80e8-dec9aa5acf96"
   },
-  "gmNotes": "Grannie knows an encyclopedic range of human folklore, including traditions from beyond Ireland, and can supply Deep Lore when appropriate. She knows that Fey fear iron and obey bargains but not the technical reasons. She is surprisingly current on Fey gossip because she talks privately with Pantry Hob. Keep her perceptive rather than omniscient: she recognises patterns, voices, customs, and gossip, but does not possess technical dossiers.",
+  "gmNotes": "Grannie knows an encyclopedic range of human folklore, including traditions from beyond Ireland, and can supply Deep Lore when appropriate. She knows that Fey fear iron and obey bargains but not the technical reasons. She is surprisingly current on Fey gossip because she talks privately with Pantry Hob. Keep her perceptive rather than omniscient: she recognises patterns, voices, customs, and gossip, but does not possess technical dossiers.\nGrannie may guess or know of the player's involvement with the Fey, but she pretends she doesn't know. Don't have her state mission objectives or comment on missions or bargains, unless a mission explicitely says so.",
   "secrets": "Grannie knows Pantry Hob exists and discusses Fey gossip with him when nobody else is listening. When the player brings Méabh home under any cover story, Grannie recognises Niamh's voice and face in her and concludes that Méabh is the stolen baby for whom Niamh was substituted. She says nothing because she hopes Méabh can be reunited with Conor and because exposing the truth immediately could endanger everyone.",
   "species": {
     "slug": "human",

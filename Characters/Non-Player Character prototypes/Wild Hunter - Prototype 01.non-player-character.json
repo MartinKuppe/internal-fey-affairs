@@ -1,0 +1,24 @@
+{
+  "$craft": {
+    "referenceId": "01a07cc7-031e-74c8-89b4-50509fbec9ff"
+  },
+  "name": "Wild Hunter - Prototype 01",
+  "goals": "Patrol the woods and carry out any specific search orders.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/5da0ec0b-120f-4910-9f0e-1060c0fb300e"
+  },
+  "gmNotes": "Describe the Fey and his bike from the perspective of an Iron Age human who has never seen a hoverbike. From afar, it resembles a frightening dark horse with glowing red eyes; from close up, it resembles a metallic hovering sledge shaped like a horse's back and head.\n\nThe Fey wears black and brown with a helmet and opaque visor, and has blackish skin. The black-and-brown attire is a deliberate visual exception retained to match this prototype's image. Like all Fey, he has four upward-curving, tentacular legs and two arms. He does NOT wear boots.\n\nFrom afar, undergrowth may hide the fact that the hoverbike has no legs. It makes a metallic galloping sound. Its mechanical nature becomes clear only at close range.",
+  "species": {
+    "slug": "fey",
+    "referenceId": "019fedb8-9e2a-7ba8-b08f-b5afa714bb05",
+    "fileTypeSlug": "species"
+  },
+  "archetypes": [
+    {
+      "slug": "wild-hunter",
+      "referenceId": "01a07d38-54ec-74b2-8076-01892686e415",
+      "fileTypeSlug": "archetype"
+    }
+  ],
+  "description": "Dressed in black and brown with a helmet and opaque visor, he rides a mount that might be a horse—or something completely different."
+}

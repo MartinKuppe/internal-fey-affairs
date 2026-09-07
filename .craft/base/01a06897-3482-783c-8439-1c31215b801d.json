@@ -5,7 +5,7 @@
   "mapY": 0.468434091288297,
   "name": "Milk and Cream",
   "status": "upcoming",
-  "gmNotes": "Tutorial Side Mission for Mission Trackers, stealth/fail-forward play, domestic offerings, and the distinction between physical payment and Grace. It may be completed before or after Iron and Wax. Coinín conceals the true destination of the food without making a false assertion.",
+  "gmNotes": "Tutorial Side Mission for Mission Trackers, stealth/fail-forward play, domestic offerings, and the distinction between physical payment and Grace. It may be completed before or after Iron and Wax. Coinín conceals the true destination of the food without making a false assertion.\n\nThe village watch has been strengthened because horseshoes have recently vanished from doors and from the smithy. The beekeeper's apprentice stole them to protect the workshop from the Fey, but do not reveal the culprit merely because the GM knows it. If the player points out the coincidence between the missing horseshoes and the cache in Buaic's workshop, the apprentice will confess when confronted.",
   "briefing": "Coinín wants the cream and milk promised for his silence. Cross the watched palisade after dark, gather what the villagers have left outside their doors, and bring it back without turning the whole village against you.",
   "pinLabel": "Milk and Cream",
   "teamSize": 2,
@@ -15,7 +15,7 @@
     {
       "key": "collection-briefing",
       "title": "Coinín's Instructions",
-      "events": "In the Hollow Tree, Coinín explains that villagers leave cream outside for household spirits. Normally he collects them in the night, but since yesterday, the palisade and village inside are guarded for reasons he dosn't know. So he wants the player ans Méabh collect cream inside the palisade.\nAs for milk, they are two dairy farmers in the north who usually each leave a can of milk outside.\nHe wants the promised quantities collected during the night and returned to him. Méabh understands the collection as a supply route; the player is likely to understand it as taking neighbours' offerings. A concealed Fairy Door in the lower chamber opens into the woods west of Trí Mhuilinn, way outside the palisade.",
+      "events": "In the Hollow Tree, Coinín explains that villagers leave cream outside for household spirits. Normally he collects the offerings at night, but since yesterday the palisade and the village inside have been guarded for reasons he does not know. He therefore wants the player and Méabh to collect the cream inside the palisade.\nAs for milk, there are two dairy farmers in the north who usually each leave a can outside.\nHe wants the promised quantities collected during the night and returned to him. Méabh understands the collection as a supply route; the player is likely to understand it as taking neighbours' offerings. A concealed Fairy Door in the lower chamber opens into the woods west of Trí Mhuilinn, well outside the palisade.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
@@ -39,7 +39,7 @@
     {
       "key": "doorstep-offerings",
       "title": "Bowls at the Thresholds",
-      "events": "Bowls, pots, and covered vessels sit at selected thresholds. Some are easy to reach; others lie near dogs, wakeful families, creaking gates, iron charms, or the patrol's route. Update the two Mission Trackers immediately as measures are secured.",
+      "events": "Bowls, pots, and covered vessels sit at selected thresholds. Some are easy to reach; others lie near dogs, wakeful families, creaking gates, iron charms, or the patrol's route. Update the cream Mission Tracker immediately as measures are secured.",
       "location": {
         "slug": "tri-mhuilinn",
         "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
@@ -51,14 +51,14 @@
     {
       "key": "collect-milk",
       "title": "Milk and Geese",
-      "events": "The team has to collect two cans of milk from two dairy farms in the north. Each farmer has placed one can of milk in front of his door.\n- First farm: One can of milk in front of the door which normally can be taken without problems. There are more cans inside the fenced yard. The yard appears unguarded, but if the team enters it, they are attacked by an agressive territorial rooster.\n- Second farm:   One can of milk in front of the door. When the team approaches the farm, they may or may not alert the geese, which will \"defend\" the milk and/or make noise and alert the farmer. There are more cans of milk inside the yard.",
+      "events": "The team must collect two cans of milk from two dairy farms in the north. Each farmer has placed one can outside the door.\n- First farm: The can by the door can normally be taken without trouble. More cans stand inside the fenced yard. The yard appears unguarded, but an aggressive territorial rooster attacks anyone who enters.\n- Second farm: One can stands outside the door. As the team approaches, they may alert the geese, which defend the milk and may make enough noise to wake the farmer. More cans stand inside the yard.",
       "location": {
         "slug": "tri-mhuilinn",
         "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
         "fileTypeSlug": "location"
       },
-      "objective": "Collect two cans for milk from the dairy farms",
-      "gmInstructions": "Have the player decide whether to take one can from each farm (and affront the geese), or two cans from the  first farm (and enter the yard).\nThreat the geese as a known problem (they can be seen fro afar) and the yard as an unknown risk (the rooser attack must be a surprise). "
+      "objective": "Collect two cans of milk from the dairy farms.",
+      "gmInstructions": "Have the player decide whether to take one can from each farm and confront the geese, or take two cans from the first farm and enter its yard. Treat the geese as the known problem: they can be seen from afar. Treat the first farm's yard as the unknown risk: the rooster attack must be a surprise. Update the milk Mission Tracker whenever a can is secured."
     },
     {
       "key": "delivery",
@@ -70,7 +70,6 @@
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the collected goods and record what remains owed.",
-      "loreUnlocks": "",
       "gmInstructions": "Keep both tracker values at target as historical Mission-object progress once delivery is complete; these counters record the objective, not carried inventory. Update Coinín's Silence to record delivery of the cream and milk. Resolve the accepting party's combined obligation only if the honey was already delivered through Iron and Wax. Coinín's nondisclosure obligation remains active."
     }
   ],
