@@ -12,13 +12,13 @@
   "briefing": "Coinín wants the cream and milk promised for his silence. Cross the watched palisade after dark, gather what the villagers have left outside their doors, and bring it back without turning the whole village against you.",
   "pinLabel": "Milk and Cream",
   "teamSize": 2,
-  "objective": "Collect ten méisrin of cream and five olderb of milk, then deliver them to Coinín.",
+  "objective": "Collect ten measures of cream and two cans of milk, then deliver them to Coinín.",
   "debriefing": "The cream and milk are in Coinín's hands, and Trí Mhuilinn sleeps on—more or less. Only the honey remains, unless Buaic's errand has already supplied it.",
   "storyBeats": [
     {
       "key": "collection-briefing",
       "title": "Coinín's Instructions",
-      "events": "In the Hollow Tree, Coinín explains that villagers leave milk and cream outside for household spirits. He wants the promised quantities collected during the night and returned to him. Méabh understands the collection as a supply route; the player is likely to understand it as taking neighbours' offerings. A concealed Fairy Door in the lower chamber opens into the woods west of Trí Mhuilinn.",
+      "events": "In the Hollow Tree, Coinín explains that villagers leave cream outside for household spirits. Normally he collects them in the night, but since yesterday, the palisade and village inside are guarded for reasons he dosn't know. So he wants the player ans Méabh collect cream inside the palisade.\nAs for milk, they are two dairy farmers in the north who usually each leave a can of milk outside.\nHe wants the promised quantities collected during the night and returned to him. Méabh understands the collection as a supply route; the player is likely to understand it as taking neighbours' offerings. A concealed Fairy Door in the lower chamber opens into the woods west of Trí Mhuilinn, way outside the palisade.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
@@ -30,14 +30,14 @@
     {
       "key": "watched-gate",
       "title": "The Watched Palisade",
-      "events": "Recent thefts have changed the village routine. One watchman guards the palisade gate while another patrols inside. The team must choose whether to sneak, bluff, use a familiar route, create a distraction, or explain themselves.",
+      "events": "Recently, someone stole horseshoes from doors and from the smithy. This has changed the village routine. One watchman guards the palisade gate while another patrols inside. The team must choose whether to sneak, bluff, use a familiar route, create a distraction, or explain themselves.",
       "location": {
         "slug": "tri-mhuilinn",
         "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
         "fileTypeSlug": "location"
       },
       "objective": "Enter the village without alarming the watch.",
-      "gmInstructions": "Make the watchmen alert rather than murderous. A failed approach may cost Cover or Nerve, create suspicion, require a favour, split the route, or force a new plan. It must not prevent collection or turn the Mission into combat."
+      "gmInstructions": "Use Village Guard - Prototype 01 and 02 for the watchmen. Make the watchmen alert rather than murderous. A failed approach may cost Cover or Nerve, create suspicion, require a favour, split the route, or force a new plan. It must not prevent collection or turn the Mission into combat."
     },
     {
       "key": "doorstep-offerings",
@@ -48,19 +48,32 @@
         "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
         "fileTypeSlug": "location"
       },
-      "objective": "Gather the promised milk and cream from sleeping households.",
+      "objective": "Gather the promised cream from sleeping households.",
       "gmInstructions": "Offer several small problems and let player choices determine which houses they risk. Do not roll for every vessel. Use checks only where discovery or loss is meaningfully at stake. On failure, spill or lose some progress, attract attention, create a social consequence, or demand a different route; always leave enough opportunities to reach both targets."
+    },
+    {
+      "key": "collect-milk",
+      "title": "Milk and Geese",
+      "events": "The team has to collect two cans of milk from two dairy farms in the north. Each farmer has placed one can of milk in front of his door.\n- First farm: One can of milk in front of the door which normally can be taken without problems. There are more cans inside the fenced yard. The yard appears unguarded, but if the team enters it, they are attacked by an agressive territorial rooster.\n- Second farm:   One can of milk in front of the door. When the team approaches the farm, they may or may not alert the geese, which will \"defend\" the milk and/or make noise and alert the farmer. There are more cans of milk inside the yard.",
+      "location": {
+        "slug": "tri-mhuilinn",
+        "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Collect two cans for milk from the dairy farms",
+      "gmInstructions": "Have the player decide whether to take one can from each farm (and affront the geese), or two cans from the  first farm (and enter the yard).\nThreat the geese as a known problem (they can be seen fro afar) and the yard as an unknown risk (the rooser attack must be a surprise). "
     },
     {
       "key": "delivery",
       "title": "Payment in Milk",
-      "events": "The team returns to Coinín's Hollow Tree with ten méisrin of cream and five olderb of milk, by the woodland Fairy Door or another viable route. He checks the quantities with professional exactness and acknowledges that those portions of the promised payment have been delivered. Two méisrin of honey remain due unless Iron and Wax was completed first.",
+      "events": "The team returns to Coinín's Hollow Tree with ten measures of cream and two cans of milk, by the woodland Fairy Door or another viable route. He checks the quantities with professional exactness and acknowledges that those portions of the promised payment have been delivered. Two measures of honey remain due unless Iron and Wax was completed first.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the collected goods and record what remains owed.",
+      "loreUnlocks": "",
       "gmInstructions": "Keep both tracker values at target as historical Mission-object progress once delivery is complete; these counters record the objective, not carried inventory. Update Coinín's Silence to record delivery of the cream and milk. Resolve the accepting party's combined obligation only if the honey was already delivered through Iron and Wax. Coinín's nondisclosure obligation remains active."
     }
   ],
@@ -86,15 +99,15 @@
   "missionTrackers": [
     {
       "key": "cream",
-      "label": "Méisrin of cream",
+      "label": "Measures of cream",
       "target": 10,
       "current": 0,
       "showAtZero": true
     },
     {
       "key": "milk",
-      "label": "Olderb of milk",
-      "target": 5,
+      "label": "Cans of milk",
+      "target": 2,
       "current": 0,
       "showAtZero": true
     }
@@ -112,5 +125,5 @@
     }
   ],
   "revealedToPlayer": false,
-  "completionEffects": "Record the cream and milk as delivered under Coinín's Silence. If Iron and Wax has already delivered the two méisrin of honey, mark the accepting party's joint goods obligation resolved; otherwise leave it unresolved. Coinín's promise not to tell Morrigan remains an active obligation. Do not advance the moon phase."
+  "completionEffects": "Record the cream and milk as delivered under Coinín's Silence. If Iron and Wax has already delivered the two measures of honey, mark the accepting party's joint goods obligation resolved; otherwise leave it unresolved. Coinín's promise not to tell Morrigan remains an active obligation. Do not advance the moon phase."
 }

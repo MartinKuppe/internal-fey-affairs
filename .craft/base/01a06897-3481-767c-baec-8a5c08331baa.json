@@ -6,10 +6,10 @@
   "name": "Iron and Wax",
   "status": "upcoming",
   "gmNotes": "Tutorial Side Mission for iron vulnerability, the Iron ability, fail-forward infiltration, domestic Fey labour, Brownie professional status, and Mission Trackers. It may be completed before or after Milk and Cream. The player should not yet learn that Coinín's supplies serve Takelings and clones.",
-  "briefing": "Coinín's friend Buaic cannot enter the beekeeper's workshop where he works by night. A new apprentice has scattered and hidden iron nails to ward off Fairies. Get Buaic safely back to his candles and earn the honey needed for Coinín's bargain.",
+  "briefing": "Coinín's friend Buaic cannot enter the beekeeper's workshop where he works by night. A new apprentice has scattered and hidden iron horseshoes to ward off Fairies. Get Buaic safely back to his candles and earn the honey needed for Coinín's bargain.",
   "pinLabel": "Iron and Wax",
   "teamSize": 2,
-  "objective": "Remove the iron from Buaic's workshop, secure two méisrin of honey, and bring Grannie the candle he gives you.",
+  "objective": "Remove the iron from Buaic's workshop, secure two measures of honey, and bring Grannie the candle he gives you.",
   "debriefing": "Buaic is back among his candles, Grannie has a wax light fit for a feast day, and Coinín has his honey. If the milk and cream are also delivered, your side of the bargain is complete.",
   "storyBeats": [
     {
@@ -27,7 +27,7 @@
     {
       "key": "meet-buaic",
       "title": "The Finest Candles in the Region",
-      "events": "Buaic waits outside the widowed beekeeper's work shed, furious at being reduced to helplessness. A new apprentice, unaware that the Brownie's labour keeps the workshop running, has scattered nails across the floor and hidden more among tools, shelves, wax, and thresholds. Buaic insists that he is a master candle maker, not a grateful little spirit awaiting rescue.",
+      "events": "Buaic waits outside the widowed beekeeper's work shed, furious at being reduced to helplessness. A new apprentice, unaware that the Brownie's labour keeps the workshop running, has scattered horseshoes across the floor and hidden more among tools, shelves, wax, and thresholds. Buaic insists that he is a master candle maker, not a grateful little spirit awaiting rescue.",
       "location": {
         "slug": "beekepers-workshop",
         "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
@@ -44,24 +44,24 @@
           "level": "Common Knowledge"
         }
       ],
-      "gmInstructions": "Unlock Brownie Common Knowledge. Play Buaic's professional pride seriously. He is physically endangered by iron and cannot simply follow the team inside. Let the player inspect, plan, and ask him technical questions without revealing the laboratory supply chain."
+      "gmInstructions": "Unlock Brownie Common Knowledge. Play Buaic's professional pride seriously. He is physically endangered by iron and cannot simply follow the team inside. Let the player inspect, plan, and ask him technical questions without revealing the laboratory supply chain.\nThe horseshoes are actually the ones stolen from the village, cf. \"Milk and Cream\"."
     },
     {
       "key": "clear-the-workshop",
-      "title": "Nails in the Dark",
-      "events": "The team enters the dark workshop and searches for visible and concealed nails without waking the household or meeting the apprentice. Iron ability, smithcraft, careful observation, and improvised collection methods can all help. Set Workshop cleared of iron to 1 only when the room is genuinely safe for Buaic.",
+      "title": "Horseshoes in the Dark",
+      "events": "The team enters the dark workshop and searches for visible and concealed horseshoes without waking the household or meeting the apprentice. Iron ability, smithcraft, careful observation, and improvised collection methods can all help. Set Workshop cleared of iron to 1 only when the room is genuinely safe for Buaic.",
       "location": {
         "slug": "beekepers-workshop",
         "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
         "fileTypeSlug": "location"
       },
-      "objective": "Find and remove every piece of iron that bars Buaic's return.",
-      "gmInstructions": "Do not invent an exact nail count; the unique tracker represents complete clearance. Use a small number of meaningful checks rather than one roll per nail. Failure may cause noise, a cut, suspicion, a missed cache Buaic detects from outside, or a hurried confrontation, but it must lead to another approach rather than block completion."
+      "objective": "Find and remove every horseshoe that bars Buaic's return.",
+      "gmInstructions": "Do not invent an exact horseshoe count; the unique tracker represents complete clearance. Use a small number of meaningful checks rather than one roll per horseshoe. Failure may cause noise, a cut, suspicion, a missed cache Buaic detects from outside, or a hurried confrontation, but it must lead to another approach rather than block completion."
     },
     {
       "key": "buaics-payment",
       "title": "Honey and a Candle",
-      "events": "Once the iron is gone, Buaic returns to his bench and demonstrates why he calls his candles the finest in the region. From the honey left under his arrangement, he gives the team two méisrin for Coinín. He also gives the player a wax candle ‘for your grandmother’ and firmly tells him not to offer thanks. Set the honey tracker to 2 and the wax-candle tracker to 1.",
+      "events": "Once the iron is gone, Buaic returns to his bench and demonstrates why he calls his candles the finest in the region. From the honey left under his arrangement, he gives the team two measures for Coinín. He also gives the player a wax candle ‘for your grandmother’ and firmly tells him not to offer thanks. Set the honey tracker to 2 and the wax-candle tracker to 1.",
       "location": {
         "slug": "beekepers-workshop",
         "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
@@ -83,7 +83,7 @@
     {
       "key": "honey-delivery",
       "title": "The Last Measures",
-      "events": "The team brings two méisrin of honey back to Coinín's Hollow Tree. He acknowledges delivery. If the cream and milk have also been delivered, the accepting party's promised goods are now complete; Coinín remains bound not to tell Morrigan that he saw them together.",
+      "events": "The team brings two measures of honey back to Coinín's Hollow Tree. He acknowledges delivery. If the cream and milk have also been delivered, the accepting party's promised goods are now complete; Coinín remains bound not to tell Morrigan that he saw them together.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
@@ -105,7 +105,7 @@
       "gmInstructions": "Let the scene close warmly. Grannie knows more about Brownie and Hob status than she explains. Do not turn her remark into an immediate lecture unless the player asks; if asked, answer at the currently unlocked Deep Lore level."
     }
   ],
-  "description": "A proud Brownie has been driven from his candle workshop by a floor full of iron nails. Clear the hidden danger, restore his night's work, and the honey owed to Coinín may finally be within reach.",
+  "description": "A proud Brownie has been driven from his candle workshop by a floor full of iron horseshoes. Clear the hidden danger, restore his night's work, and the honey owed to Coinín may finally be within reach.",
   "selectorMap": {
     "slug": "tri-mhuilinn",
     "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
@@ -134,7 +134,7 @@
     },
     {
       "key": "honey",
-      "label": "Méisrin of honey secured",
+      "label": "Measures of honey secured",
       "target": 2,
       "current": 0,
       "showAtZero": true
@@ -160,5 +160,5 @@
     }
   ],
   "revealedToPlayer": false,
-  "completionEffects": "Record the two méisrin of honey as delivered under Coinín's Silence. If Milk and Cream has already delivered all cream and milk, mark the accepting party's joint goods obligation resolved; otherwise leave it unresolved. Coinín's nondisclosure obligation remains active. Preserve the candle tracker at target as history after Grannie receives it. Do not advance the moon phase."
+  "completionEffects": "Record the two measures of honey as delivered under Coinín's Silence. If Milk and Cream has already delivered all cream and milk, mark the accepting party's joint goods obligation resolved; otherwise leave it unresolved. Coinín's nondisclosure obligation remains active. Preserve the candle tracker at target as history after Grannie receives it. Do not advance the moon phase."
 }

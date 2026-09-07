@@ -16,13 +16,13 @@ $craft:
 
 ## Goal
 
-Add a lightweight, Mission-local tracker system for item-like Mission objectives: labels and counters used only to represent progress inside a Mission (e.g. "Facility ledger", "Méisrin of cream: 0 / 10", "Barrels recovered: 0 / 7"). These are not inventory items. Also repair the current Mission layout regression that exposes GM-only and authoring fields on the player-facing Mission page.
+Add a lightweight, Mission-local tracker system for item-like Mission objectives: labels and counters used only to represent progress inside a Mission (e.g. "Facility ledger", "Measures of cream: 0 / 10", "Barrels recovered: 0 / 7"). These are not inventory items. Also repair the current Mission layout regression that exposes GM-only and authoring fields on the player-facing Mission page.
 
 ## Relevant canon
 
 - Tracker data is Mission-local objective state, not inventory. Trackers belong directly to their Mission and live only for its lifetime.
 - Do not create an Item, Mission Object, or Mission Tracker file type. Do not add anything to Character inventory or Outfit state. Do not add tracker state to the Campaign Mission Journal. No cross-Mission persistence in v1.
-- A tracker has no image, description, weight, location, owner, equipment behavior, price, or other inventory fields. No separate unit field in v1 — the unit is included in the player-facing label (e.g. "Méisrin of cream").
+- A tracker has no image, description, weight, location, owner, equipment behavior, price, or other inventory fields. No separate unit field in v1 — the unit is included in the player-facing label (e.g. "Measures of cream").
 - Reaching a tracker's target does not automatically complete the Mission unless the authored Mission instructions explicitly say so.
 - Trackers are player-visible while a Mission is `active`, but not player-editable; the AI GM updates values through Mission state.
 - The player-facing Mission page must not bind or display GM-only or raw authoring/runtime fields (see Changes). An upcoming Mission with `revealedToPlayer: false` shows only the generic locked presentation and exposes no Mission-specific information, including trackers.

@@ -1,0 +1,11 @@
+{
+  "$craft": {
+    "referenceId": "01a07b91-4aff-7af8-9f41-43ad16212957"
+  },
+  "name": "Village Guard - Prototype 02",
+  "goals": "Keep the village safe",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/79c0bc9d-6034-4fc9-857c-100a006b4349",
+    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/521ae29b-76a0-4718-9410-3260ba067577"
+  }
+}

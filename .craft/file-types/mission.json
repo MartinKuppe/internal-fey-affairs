@@ -455,7 +455,7 @@
               "type": "string",
               "title": "Label",
               "minLength": 1,
-              "description": "Player-facing label; include any unit, e.g. 'Méisrin of cream'."
+              "description": "Player-facing label; include any unit, e.g. 'Measures of cream'."
             },
             "target": {
               "type": "number",
@@ -477,7 +477,7 @@
           }
         },
         "title": "Mission Trackers",
-        "description": "Mission-local objective counters (item-like goals). Not inventory, not equipment, not a separate file type. Each row is a label and a counter used only to represent progress inside this Mission. A row with key unique within the Mission; label is the player-facing text (include the unit, e.g. 'Méisrin of cream'); target 1 means one unique acquired object, target above 1 a counted objective; current is a whole number normally from 0 through target; showAtZero controls whether the tracker is displayed at 0. GM updates current as the fiction acquires/loses/places/spends/recovers/secures the tracked thing."
+        "description": "Mission-local objective counters (item-like goals). Not inventory, not equipment, not a separate file type. Each row is a label and a counter used only to represent progress inside this Mission. A row with key unique within the Mission; label is the player-facing text (include the unit, e.g. 'Measures of cream'); target 1 means one unique acquired object, target above 1 a counted objective; current is a whole number normally from 0 through target; showAtZero controls whether the tracker is displayed at 0. GM updates current as the fiction acquires/loses/places/spends/recovers/secures the tracked thing."
       },
       "awardedAbilities": {
         "type": "array",

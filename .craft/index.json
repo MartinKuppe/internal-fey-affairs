@@ -1,9 +1,17 @@
 {
-  "syncedAt": "2026-09-07T10:06:18.305Z",
+  "syncedAt": "2026-09-07T15:16:12.624Z",
   "folders": [
     {
       "path": "/Mission Journals",
       "folderId": "01a001e7-84d8-7130-bedb-b34325d647bd"
+    },
+    {
+      "path": "/Characters",
+      "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
+    },
+    {
+      "path": "/Characters/Non-Player Character prototypes",
+      "folderId": "01a07b8d-34e9-733c-82b3-fa80e719fbe4"
     },
     {
       "path": "/Bargains",
@@ -20,10 +28,6 @@
     {
       "path": "/Species",
       "folderId": "019fedb8-3e95-7770-aa32-50cdb932083b"
-    },
-    {
-      "path": "/Characters",
-      "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
     },
     {
       "path": "/Attributes",
@@ -1005,7 +1009,7 @@
       "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
       "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
       "fileType": "location",
-      "baseVersionId": "01a07329-6173-7240-9e6a-c010f1edf222",
+      "baseVersionId": "01a07bf0-1b8f-78dc-9d8c-181479e0f173",
       "baseHash": "23c4cf0e-2084-8d83-b8e5-e73a762f8c95",
       "source": "project",
       "metadataHash": "00b6d5e5-5f64-c2a7-7060-4834bf505457"
@@ -1411,8 +1415,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a07367-6b44-73e8-9c5a-ecbcfebe05d7",
-      "baseHash": "aae533dd-220f-7701-5048-cef8992603a8",
+      "baseVersionId": "01a07bed-71e7-7bcc-a410-fdab1380e070",
+      "baseHash": "1ff669b6-2b1a-d4cf-662f-6b2899498451",
       "source": "project"
     },
     {
@@ -1420,8 +1424,8 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a07367-6b46-77c0-90a4-8b0077a64f51",
-      "baseHash": "0e2f792d-9e96-3da0-0f73-27ec8c121826",
+      "baseVersionId": "01a07be7-b1e6-752c-9851-c41cd37ae5b8",
+      "baseHash": "fe34acc0-0e5d-9bb6-fb72-a1d6a4fa30fc",
       "source": "project"
     },
     {
@@ -1429,8 +1433,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a07786-4794-749c-8074-cd648bd2180a",
-      "baseHash": "8d84832a-7d16-4f2d-cc93-defe04ea3a94",
+      "baseVersionId": "01a07be8-d384-73a4-b855-2bb8cb5b245a",
+      "baseHash": "499b6c4e-43ca-6ba1-a0c5-c7b1c2a9c2a5",
       "source": "project"
     },
     {
@@ -1632,6 +1636,24 @@
       "baseVersionId": "01a07786-43ba-7b08-9efb-de292f7c0d67",
       "baseHash": "358b1e3b-338c-37ef-3c59-286988fe1594",
       "source": "project"
+    },
+    {
+      "path": "/Characters/Non-Player Character prototypes/Village Guard - Prototype 01.non-player-character.json",
+      "fileId": "01a07b8d-aec7-7278-b447-54cb91676f45",
+      "referenceId": "01a07b8d-aec7-72ec-a282-82d3fbf10104",
+      "fileType": "non-player-character",
+      "baseVersionId": "01a07b94-7ac5-72e4-badb-c2aa1548e7f3",
+      "baseHash": "6db21a31-ec05-d17b-9de3-bd68d188e304",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Non-Player Character prototypes/Village Guard - Prototype 02.non-player-character.json",
+      "fileId": "01a07b91-4aff-7a64-a1a4-6361120040a8",
+      "referenceId": "01a07b91-4aff-7af8-9f41-43ad16212957",
+      "fileType": "non-player-character",
+      "baseVersionId": "01a07b94-9a23-7918-a15e-26bf5b5879d2",
+      "baseHash": "8efd01b0-33f7-4fdc-ce6d-53a23c303a8b",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1676,12 +1698,6 @@
       "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
       "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
       "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
-    },
-    {
-      "slug": "non-player-character",
-      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
-      "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
-      "contentHash": "ad130092-173c-dffe-c5b2-f29d02867a44"
     },
     {
       "slug": "game-start",
@@ -1736,6 +1752,12 @@
       "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
       "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
+    },
+    {
+      "slug": "non-player-character",
+      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
+      "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
+      "contentHash": "ad130092-173c-dffe-c5b2-f29d02867a44"
     },
     {
       "slug": "outfit",

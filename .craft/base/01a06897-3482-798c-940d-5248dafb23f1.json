@@ -59,14 +59,14 @@
     {
       "key": "coinins-bargain",
       "title": "The Price of Silence",
-      "events": "Coinín offers not to tell Morrigan that he saw Méabh and the player together if they bring him ten méisrin of cream, five olderb of milk, and two méisrin of honey. He presents the demand as a helpful, almost cute arrangement while treating every word seriously.",
+      "events": "Coinín offers not to tell Morrigan that he saw Méabh and the player together if they bring him  ten measures of cream, two cans of milk, and two measures of honey. He presents the demand as a helpful, almost cute arrangement while treating every word seriously.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Secure Coinín's silence.",
-      "gmInstructions": "Use exact operative wording: ‘Bring me ten méisrin of cream, five olderb of milk, and two méisrin of honey, and I will not tell the Morrigan that I saw either of you here.’ Establish who accepts. \nIf the player refuses, Méabh may bind herself and the player can still choose to help; never coerce the player's assent or block the tutorial Missions. When acceptance occurs, create one Bargain file named Coinín's Silence with the goods as the accepting party's joint obligation and Coinín's continuing nondisclosure as his obligation. Add it to the Player Character's knownBargains because the player witnessed it; add it to signedBargains only if the Player Character personally assents. Do not pre-resolve either side.\nDo not paraphrase \" I will not tell the Morrigan\" - the exact wording matters! (At a later point in time, unbeknownst by the player, Coinín will tell the Morrigan's henchmen that he saw the two. For a Fey, this is not a breach of the bargain, as he didn't litterally tell the Morrigan herself.)"
+      "gmInstructions": "Use exact operative wording: ‘Bring me ten measures of cream, two cans of milk, and two measures of honey, and I will not tell the Morrigan that I saw either of you here.’ Establish who accepts. \nIf the player refuses, Méabh may bind herself and the player can still choose to help; never coerce the player's assent or block the tutorial Missions. When acceptance occurs, create one Bargain file named Coinín's Silence with the goods as the accepting party's joint obligation and Coinín's continuing nondisclosure as his obligation. Add it to the Player Character's knownBargains because the player witnessed it; add it to signedBargains only if the Player Character personally assents. Do not pre-resolve either side.\nDo not paraphrase \" I will not tell the Morrigan\" - the exact wording matters! (At a later point in time, unbeknownst by the player, Coinín will tell the Morrigan's henchmen that he saw the two. For a Fey, this is not a breach of the bargain, as he didn't litterally tell the Morrigan herself.)"
     },
     {
       "key": "shelter",
