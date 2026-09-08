@@ -108,11 +108,11 @@ Failure must not block the campaign: detection may lead to pursuit, bluffing, ca
 
 Recovery removes Depletion only when fiction supports it:
 
-- **Health:** treatment, healing, or sufficient rest.
-- **Energy:** sleep, food, warmth, rest, welcome encouragement, good news, or another genuine lift supported by the fiction.
-- **Nerve:** reassurance, safety, time, or regaining courage and concentration.
-- **Decorum:** normally resets for a genuinely new social situation.
-- **Cover:** normally resets when the character successfully establishes a genuinely new disguise, hiding, or infiltration situation.
+- **Health:** remove 1 Depletion after treatment or meaningful safe rest. Do not clear a serious injury overnight merely because its number improves.
+- **Energy:** remove 1 Depletion after food, warmth, sitting down, a short rest, welcome encouragement, good news, or another genuine lift. Set Energy Depletion to 0 after a real night's sleep in reasonable safety.
+- **Nerve:** remove 1 Depletion after reassurance, safety, companionship, success, time to breathe, or regaining courage and concentration. Set Nerve Depletion to 0 after a calm night or genuinely reassuring scene unless immediate dread continues.
+- **Decorum:** normally set Depletion to 0 for a genuinely new social situation. Do not reset it while the same embarrassment, audience, or gossip remains active.
+- **Cover:** normally set Depletion to 0 when the character successfully establishes a genuinely new disguise, hiding place, route, or infiltration situation. Do not reset it while the same observers are still searching or watching.
 
 Existing consequences remain even after Depletion is removed or a scene track resets.
 
@@ -234,10 +234,11 @@ Grace is the currency of favors among the Fey — and the measure of whether one
 
 ## Bargains & Contracts
 
-- One Bargain file per contract. Every bargain has at least two parties; each party carries its exact obligation wording, its due condition, and its resolved state.
+- One Bargain file per contract. Every bargain has at least two parties. Each party carries an `obligations` list; every obligation has its own exact wording, due condition, and resolved state.
 - Parties may be characters (Player Character or NPC), informal groups, or legal entities — a party's label names them; link a character file when one exists.
+- Resolve obligations independently. A party has finished only when all of that party's applicable obligations are resolved. Set the Bargain itself to `resolved` only when the contract as a whole is finished; an ongoing promise may keep it `active` after deliveries or other one-time duties are complete.
 - Create a Bargain file whenever an obligation forms: a grace-trade, a settlement for wrongdoing, an employment or mission contract, an indenture, or any contract the player asks to see.
-- A party's obligation may link to the specific contract it falls under via its Reference contract field (a Bargain reference, when that contract is a different document). Related contracts are also linked on the bargain file itself.
+- An individual obligation may link to the specific contract it falls under via its Reference contract field (a Bargain reference, when that contract is a different document). Related contracts are also linked on the bargain file itself.
 - A bargain is player-visible when it is the player's own or was witnessed, overheard, read, disclosed, or discovered during investigation. Set "Known to the player" and narrate it.
 - When a new bargain is created, announce it clearly and immediately — a distinct, consistent system message naming the parties and the key terms.
 
@@ -323,16 +324,28 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
   6. Remove the Mission's selectable scene-map pin.
   7. Advance the Mission Journal calendar by `durationSteps`, then evaluate fixed-date Missions, completed-prerequisite unlocks, and Opportunity expirations, and synchronize available pins.
   8. Clear or omit `currentBeatKey` so no stale beat state remains after the Mission ends.
-  9. Read the Mission Journal's computed `availableMissions` view and present the next-Mission multiple-choice prompt.
+  9. If the completed Mission has `immediateFollowUp`, make that referenced Mission available as its prerequisites permit and apply the full **Selecting a Mission** procedure to it immediately. Carry forward the predecessor's `assignedTeam` unless the successor's authored team requirements demand a different valid team. Do not show a picker or permit an intermezzo between the two Missions.
+  10. Otherwise, read the Mission Journal's computed `availableMissions` view and present the next-Mission multiple-choice prompt.
+- Keep terminal processing focused. Do not repeatedly re-read the same Mission, Bargain, character, or map while deciding what to do, and never write computed Mission Journal views. If the action budget interrupts processing, inspect saved state once on the next turn and resume only the unfinished steps; do not restart the whole procedure.
 
 ### Choosing the next Mission
 
 - After every Mission reaches `completed` or `failed`, finish all terminal updates first, then show a genuine player multiple-choice prompt with one option for each eligible available Mission. Use the platform's multiple-choice control; do not merely name the options in narration or ask an open-ended question.
-- Show the prompt even when exactly one Mission is eligible, with that single Mission as the sole option. Do not add a generic “wait”, “something else”, or “day off” option; rest and recovery become choices only when an authored available Mission represents them.
+- Unless the completed Mission names an `immediateFollowUp`, also include **Take an intermezzo** as the final option. Show the prompt even when exactly one Mission is eligible; that Mission and the intermezzo remain distinct choices.
 - Each option gives the Mission name and a concise player-safe summary drawn from its briefing or description. Never expose GM Notes, hidden beats, unrevealed content, or future consequences.
 - A due Story or Interlude takes priority. While one is blocking further time advancement, include only the due mandatory Mission or Missions in the picker, even if other Missions remain technically available.
 - If no Mission is available, do not invent one or display an empty choice. State briefly that no assignment is currently available and re-evaluate authored unlocks and dates for an omitted status update.
 - After the player selects an option, apply the full **Selecting a Mission** procedure. Never begin a Mission before the player's selection.
+
+### Between-Mission intermezzi
+
+An **intermezzo** is bounded free fiction between Missions, not an authored Interlude Mission. It may cover returning home, eating, sleeping, washing, talking, visiting a nearby person or place, or another modest pause. A player who types such an action instead of choosing an offered Mission is choosing the intermezzo.
+
+- No Mission is active during an intermezzo. Do not create an unauthorised Mission, rerun the previous Mission's completion procedure, suppress or alter available Missions, or award invented Grace, Abilities, Outfits, or Mission rewards.
+- Apply only recovery supported by what actually happens, using **Recovery and resets**. An ordinary intermezzo does not advance the Mission Journal's moon phase; a substantial day off or other time-bearing activity requires an authored Mission with `durationSteps`.
+- End the intermezzo when the next morning arrives, the chosen visit or pause achieves its obvious purpose, the player leaves its chosen destination, the player attempts a substantial new undertaking not represented by an available Mission, or continuing would become unbounded free-roam drift.
+- When it ends, present the current next-Mission picker again. Do not force a Mission selection merely because the player took an intermezzo.
+- An `immediateFollowUp` creates a continuous Mission chain and overrides intermezzi. Complete the predecessor's terminal bookkeeping, then begin the named successor directly. Carry forward the existing team unless the successor explicitly requires another valid composition. A brief authored transition may connect them, but there is no recovery, sightseeing, shopping, or alternative Mission choice between them. If the action budget splits the transition across responses, continue it automatically rather than asking the player what to do. Normal selection resumes after the first Mission in the chain that has no `immediateFollowUp`.
 
 ### Calendar
 

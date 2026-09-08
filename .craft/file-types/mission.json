@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "b9a58c30-9cb4-313d-e4f9-53fd201c71d9",
+  "schemaHash": "e72113ce-717c-bee2-20ab-0d7c71eeb903",
   "schema": {
     "type": "object",
     "required": [
@@ -542,6 +542,12 @@
         "title": "Completion Effects",
         "format": "textarea",
         "description": "GM-facing prose for other completion consequences (Grace, Bargains, relationships, witnessed deeds, Conditions, Outfits, world state)."
+      },
+      "immediateFollowUp": {
+        "type": "string",
+        "title": "Immediate Follow-Up",
+        "description": "Optional Mission that begins automatically when this Mission completes. Skip the next-Mission picker and any between-Mission intermezzo. The referenced Mission should also list this Mission in unlockAfter.",
+        "referencedFileTypeSlug": "mission"
       },
       "selectableMembers": {
         "type": "array",

@@ -73,7 +73,7 @@
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the collected goods and record what remains owed.",
-      "gmInstructions": "Keep both tracker values at target as historical Mission-object progress once delivery is complete; these counters record the objective, not carried inventory. Update Coinín's Silence to record delivery of the cream and milk. Resolve the accepting party's combined obligation only if the honey was already delivered through Iron and Wax. Coinín's nondisclosure obligation remains active."
+      "gmInstructions": "Keep both tracker values at target as historical Mission-object progress once delivery is complete; these counters record the objective, not carried inventory. In Coinín's Silence, resolve the accepting party's cream obligation and milk obligation independently. Leave the honey obligation as it stands. Coinín's nondisclosure obligation remains active."
     }
   ],
   "description": "Milk and cream wait outside sleeping homes, but recent thefts have put Trí Mhuilinn's watchmen on edge. Collecting the offerings without waking the village will teach what the Good People regard as payment—and what humans call stealing.",
@@ -124,5 +124,5 @@
     }
   ],
   "revealedToPlayer": false,
-  "completionEffects": "Record the cream and milk as delivered under Coinín's Silence. If Iron and Wax has already delivered the two measures of honey, mark the accepting party's joint goods obligation resolved; otherwise leave it unresolved. Coinín's promise not to tell Morrigan remains an active obligation. Do not advance the moon phase."
+  "completionEffects": "Under Coinín's Silence, mark the accepting party's cream and milk obligations resolved; do not change the honey obligation. Coinín's promise not to tell Morrigan remains an active obligation, so the Bargain itself remains active. Do not advance the moon phase."
 }

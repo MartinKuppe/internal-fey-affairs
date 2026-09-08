@@ -16,17 +16,23 @@
       "refs": [],
       "role": "High Queen Pretender",
       "label": "The Morrigan",
-      "wording": "No Roman army shall set foot in Hibernia",
-      "resolved": false,
-      "dueCondition": ""
+      "obligations": [
+        {
+          "wording": "No Roman army shall set foot in Hibernia",
+          "resolved": false
+        }
+      ]
     },
     {
       "refs": [],
       "role": "Representing the Empire",
       "label": "Imperial triad",
-      "wording": "The Morrigan shall be High Queen, as long as the contract is fulfilled on her side",
-      "resolved": false,
-      "dueCondition": ""
+      "obligations": [
+        {
+          "wording": "The Morrigan shall be High Queen, as long as the contract is fulfilled on her side",
+          "resolved": false
+        }
+      ]
     }
   ],
   "wording": "The Morrigan shall be High Queen as long as no Roman army sets foot in Hibernia.",

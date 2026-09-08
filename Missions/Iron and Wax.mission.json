@@ -86,14 +86,14 @@
     {
       "key": "honey-delivery",
       "title": "The Last Measures",
-      "events": "The team brings two measures of honey back to Coinín's Hollow Tree. He acknowledges delivery. If the cream and milk have also been delivered, the accepting party's promised goods are now complete; Coinín remains bound not to tell Morrigan that he saw them together.",
+      "events": "The team brings two measures of honey back to Coinín's Hollow Tree. He acknowledges delivery. The accepting party's honey obligation is now complete; if the cream and milk have also been delivered, all three goods obligations are complete. Coinín remains bound not to tell Morrigan that he saw them together.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the honey to Coinín.",
-      "gmInstructions": "Keep the honey tracker at target as historical objective progress. Update Coinín's Silence with the delivery. Resolve the accepting party's combined obligation only when all three quantities have been delivered. Do not resolve Coinín's ongoing nondisclosure obligation."
+      "gmInstructions": "Keep the honey tracker at target as historical objective progress. In Coinín's Silence, resolve the accepting party's honey obligation independently. Do not alter the cream or milk obligations and do not resolve Coinín's ongoing nondisclosure obligation."
     },
     {
       "key": "candle-home",
@@ -163,5 +163,5 @@
     }
   ],
   "revealedToPlayer": false,
-  "completionEffects": "Record the two measures of honey as delivered under Coinín's Silence. If Milk and Cream has already delivered all cream and milk, mark the accepting party's joint goods obligation resolved; otherwise leave it unresolved. Coinín's nondisclosure obligation remains active. Preserve the candle tracker at target as history after Grannie receives it. Do not advance the moon phase."
+  "completionEffects": "Under Coinín's Silence, mark the accepting party's honey obligation resolved; do not change the cream or milk obligations. Coinín's nondisclosure obligation remains active, so the Bargain itself remains active. Preserve the candle tracker at target as history after Grannie receives it. Do not advance the moon phase."
 }

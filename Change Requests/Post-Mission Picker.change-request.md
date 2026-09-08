@@ -20,15 +20,16 @@ Whenever a Mission ends, present the currently eligible next Missions through th
 
 - Finish the Mission's state changes, calendar movement, unlocks, expirations, and priority checks before building the choices.
 - Build choices from the Mission Journal's computed available-Mission view without writing to that computed field.
-- Show one option per eligible available Mission, even when there is only one.
+- Show one option per eligible available Mission, even when there is only one, plus a between-Mission intermezzo unless an immediate follow-up is authored.
 - Selecting an option is the player's explicit instruction to start that Mission.
-- Never invent a generic rest or day-off option; those become selectable when authored as Missions.
+- An intermezzo permits bounded rest, conversation, and other modest free fiction without becoming a Mission or advancing the campaign clock. A substantial day off still requires an authored Mission.
+- A Mission with an Immediate Follow-Up skips both the picker and intermezzo and begins its named successor directly.
 - Due Story and Interlude Missions retain priority over other available Missions.
 - Map pins remain optional supplementary cues rather than the primary picker.
 
 ## Acceptance
 
 - [x] The GM is told to invoke a multiple-choice control, not merely narrate options.
-- [x] A one-option picker is required.
+- [x] A picker is required even when only one Mission is available; the intermezzo remains a separate choice.
 - [x] Hidden and unavailable Missions cannot leak into the choices.
 - [x] Individual Missions contain no duplicated picker instruction; the general lifecycle rule is solely responsible.

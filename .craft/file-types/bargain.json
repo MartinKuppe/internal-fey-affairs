@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "c5a85a11-c621-30a3-51c0-5db3c6a3aa06",
+  "schemaHash": "944593c2-f612-f3aa-856d-69e811dd98ee",
   "schema": {
     "type": "object",
     "required": [
@@ -108,7 +108,7 @@
           "type": "object",
           "required": [
             "label",
-            "wording"
+            "obligations"
           ],
           "properties": {
             "refs": {
@@ -137,30 +137,45 @@
               "title": "Party",
               "minLength": 1
             },
-            "wording": {
-              "type": "string",
-              "title": "Exact obligation wording",
-              "format": "textarea"
-            },
-            "resolved": {
-              "type": "boolean",
-              "title": "Resolved",
-              "default": false
-            },
-            "resolvedOn": {
-              "type": "number",
-              "title": "Resolved (day)",
-              "minimum": 1
-            },
-            "dueCondition": {
-              "type": "string",
-              "title": "Due when"
-            },
-            "referenceContract": {
-              "type": "string",
-              "title": "Reference contract",
-              "description": "The specific Bargain contract this obligation falls under, when it is a different document (optional).",
-              "referencedFileTypeSlug": "bargain"
+            "obligations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "wording"
+                ],
+                "properties": {
+                  "wording": {
+                    "type": "string",
+                    "title": "Exact obligation wording",
+                    "format": "textarea",
+                    "minLength": 1
+                  },
+                  "resolved": {
+                    "type": "boolean",
+                    "title": "Resolved",
+                    "default": false
+                  },
+                  "resolvedOn": {
+                    "type": "number",
+                    "title": "Resolved (day)",
+                    "minimum": 1
+                  },
+                  "dueCondition": {
+                    "type": "string",
+                    "title": "Due when"
+                  },
+                  "referenceContract": {
+                    "type": "string",
+                    "title": "Reference contract",
+                    "description": "The specific Bargain contract this obligation falls under, when it is a different document (optional).",
+                    "referencedFileTypeSlug": "bargain"
+                  }
+                }
+              },
+              "title": "Obligations",
+              "minItems": 1,
+              "description": "The individual promises or duties carried by this party. Resolve each independently; the party is finished only when every applicable obligation is resolved."
             }
           }
         },
@@ -358,9 +373,7 @@
         },
         "children": [
           "role-text",
-          "wording-text",
-          "due-row",
-          "resolved-row"
+          "obligations-table"
         ]
       },
       "image-header": {
@@ -523,6 +536,34 @@
         },
         "visible": {
           "$state": "/wording"
+        },
+        "children": []
+      },
+      "obligations-table": {
+        "type": "DataTable",
+        "props": {
+          "items": {
+            "$item": "obligations"
+          },
+          "columns": [
+            {
+              "field": "wording",
+              "label": "Exact terms"
+            },
+            {
+              "field": "dueCondition",
+              "label": "Due when"
+            },
+            {
+              "field": "resolved",
+              "label": "Resolved"
+            },
+            {
+              "field": "resolvedOn",
+              "label": "Resolved (day)"
+            }
+          ],
+          "emptyText": "No obligations recorded."
         },
         "children": []
       },

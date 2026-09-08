@@ -20,9 +20,13 @@
       ],
       "role": "employee",
       "label": "Player",
-      "wording": "The Player works for one year for Internal Affairs under a standard employment contract.",
-      "resolved": false,
-      "dueCondition": "Upon execution of this bargain"
+      "obligations": [
+        {
+          "wording": "The Player works for one year for Internal Affairs under a standard employment contract.",
+          "resolved": false,
+          "dueCondition": "Upon execution of this bargain"
+        }
+      ]
     },
     {
       "refs": [
@@ -34,17 +38,25 @@
       ],
       "role": "employee",
       "label": "Méabh",
-      "wording": "Méabh works for one year for Internal Affairs under a standard employment contract.",
-      "resolved": false,
-      "dueCondition": "Upon execution of this bargain"
+      "obligations": [
+        {
+          "wording": "Méabh works for one year for Internal Affairs under a standard employment contract.",
+          "resolved": false,
+          "dueCondition": "Upon execution of this bargain"
+        }
+      ]
     },
     {
       "refs": [],
       "role": "employer",
       "label": "Green",
-      "wording": "Once the Player and Méabh have fulfilled their obligations, Green shall dissolve Méabh's indenture contract.",
-      "resolved": false,
-      "dueCondition": "When the Player and Méabh have fulfilled their obligations"
+      "obligations": [
+        {
+          "wording": "Once the Player and Méabh have fulfilled their obligations, Green shall dissolve Méabh's indenture contract.",
+          "resolved": false,
+          "dueCondition": "When the Player and Méabh have fulfilled their obligations"
+        }
+      ]
     }
   ],
   "wording": "Meabh and the player both work for one year as Internal Affairs field agents under standard IA contract and payment, then Méabh will be free.",

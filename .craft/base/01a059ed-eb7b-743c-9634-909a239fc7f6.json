@@ -16,17 +16,23 @@
       ],
       "role": "Laborer",
       "label": "Méabh",
-      "wording": "The labourer shall work indefinitely for the employer under the standard takeling charter.",
-      "resolved": false,
-      "dueCondition": ""
+      "obligations": [
+        {
+          "wording": "The labourer shall work indefinitely for the employer under the standard takeling charter.",
+          "resolved": false
+        }
+      ]
     },
     {
       "refs": [],
       "role": "Employer",
       "label": "The Morrigan",
-      "wording": "The employer shall provide housing and sustenance to the labourer under the standard takeling charter.",
-      "resolved": false,
-      "dueCondition": ""
+      "obligations": [
+        {
+          "wording": "The employer shall provide housing and sustenance to the labourer under the standard takeling charter.",
+          "resolved": false
+        }
+      ]
     }
   ],
   "wording": "Méabh shall work indefinitely for the Morrigan as an indentured worker."
