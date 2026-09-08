@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-08T19:00:22.224Z",
+  "syncedAt": "2026-09-08T19:11:30.106Z",
   "folders": [
     {
       "path": "/Locations",
@@ -1744,6 +1744,15 @@
       "fileType": "mission",
       "baseVersionId": "01a0825e-f3ca-7d54-9568-95ff74a95d08",
       "baseHash": "24135c72-6ada-1b40-2aa7-e7ed655ceb35",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Narrative Laws/One Obstacle, One Roll.gm-instructions.md",
+      "fileId": "01a0826e-bd46-7f90-a9fe-5ba897f4c5b1",
+      "referenceId": "01a0826e-ba19-73ad-80df-fd6e34e64425",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a0826e-bd43-7104-96d4-82f29cd5c892",
+      "baseHash": "24f888f9-41f0-f353-fcc9-4b577b77eac3",
       "source": "project"
     }
   ],

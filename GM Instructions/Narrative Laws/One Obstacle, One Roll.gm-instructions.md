@@ -1,0 +1,8 @@
+---
+name: One Obstacle, One Roll
+description: ""
+$craft:
+  referenceId: 01a0826e-ba19-73ad-80df-fd6e34e64425
+---
+
+Before requesting a check, determine whether a roll has already resolved the current action. If so, narrate the result and move forward. Never repeat a roll merely because the action has several steps or its result still needs narration. Roll again only if a distinct new obstacle appears, or if a setback leaves the obstacle unresolved and the player attempts a genuinely different approach. Rephrasing the same attempt or switching Attributes is not a new approach.
