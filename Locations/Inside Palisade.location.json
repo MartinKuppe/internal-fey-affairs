@@ -1,0 +1,24 @@
+{
+  "$craft": {
+    "referenceId": "01a080db-d705-7328-bba5-4707d8fd7e11",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [],
+        "background": null,
+        "aspectRatio": {
+          "width": 1,
+          "height": 1
+        },
+        "useParentMap": true,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Inside Palisade"
+}

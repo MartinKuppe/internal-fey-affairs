@@ -1,6 +1,10 @@
 {
-  "syncedAt": "2026-09-08T08:22:26.237Z",
+  "syncedAt": "2026-09-08T18:03:40.092Z",
   "folders": [
+    {
+      "path": "/Locations",
+      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
+    },
     {
       "path": "/Mission Journals",
       "folderId": "01a001e7-84d8-7130-bedb-b34325d647bd"
@@ -92,10 +96,6 @@
     {
       "path": "/Change Requests",
       "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
-    },
-    {
-      "path": "/Locations",
-      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
     },
     {
       "path": "/Locations/Portal Hub  H2",
@@ -1009,7 +1009,7 @@
       "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
       "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
       "fileType": "location",
-      "baseVersionId": "01a07bf0-1b8f-78dc-9d8c-181479e0f173",
+      "baseVersionId": "01a080ef-dddf-784c-b42d-717736724c95",
       "baseHash": "23c4cf0e-2084-8d83-b8e5-e73a762f8c95",
       "source": "project",
       "metadataHash": "00b6d5e5-5f64-c2a7-7060-4834bf505457"
@@ -1424,8 +1424,8 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a07d46-b958-7cd0-b0f0-a77997801f02",
-      "baseHash": "dde4a8b2-627c-789a-0cd3-cef26c0c314c",
+      "baseVersionId": "01a080f1-042c-7bb8-861a-d5eaf42da3bf",
+      "baseHash": "be2c3aad-3ece-f7d2-5d43-d6ef47d9f895",
       "source": "project"
     },
     {
@@ -1681,6 +1681,43 @@
       "baseVersionId": "01a07d46-b96e-7d70-8f52-3e0599c052a9",
       "baseHash": "b58b7b9a-a049-1a6b-4e46-eab18d0d0b06",
       "source": "project"
+    },
+    {
+      "path": "/Locations/Inside Palisade.location.json",
+      "fileId": "01a080db-d705-72b4-aff1-bf2e0646f3da",
+      "referenceId": "01a080db-d705-7328-bba5-4707d8fd7e11",
+      "fileType": "location",
+      "baseVersionId": "01a080db-e434-722c-a333-65ca931f3a86",
+      "baseHash": "89fd3ec0-a51e-c92c-2e13-d0a8731cb2c6",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Locations/Tri Mhuilinn Gate.location.json",
+      "fileId": "01a080de-7769-7370-8f41-b42d0bfb1512",
+      "referenceId": "01a080de-7769-73dc-b825-bf9eb6bcb4a9",
+      "fileType": "location",
+      "baseVersionId": "01a080de-7767-7a88-8167-c6954f63f81b",
+      "baseHash": "6692149f-b7de-692b-8bd3-cff64006c495",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Liam's Farm.location.json",
+      "fileId": "01a080e9-4c12-7b54-a941-927e0c5928b0",
+      "referenceId": "01a080e9-4c12-7bcc-96cd-ea9f40702f0a",
+      "fileType": "location",
+      "baseVersionId": "01a080ee-b131-7828-addb-aa833c989c64",
+      "baseHash": "ef312c01-ffa4-77a2-bb0c-2b8c9205e72b",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Finn's Farm.location.json",
+      "fileId": "01a080e9-de91-7750-a0de-9ad713b7f598",
+      "referenceId": "01a080e9-de91-77cc-8ce5-aa79ec2cd6e9",
+      "fileType": "location",
+      "baseVersionId": "01a080e9-de8f-76b8-a9ee-2a738a58c693",
+      "baseHash": "485fabf4-b408-ae3e-0d8c-77bc6b5cf524",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1745,12 +1782,6 @@
       "contentHash": "ab24578d-9a89-4523-56bd-ad4910c537d0"
     },
     {
-      "slug": "location",
-      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
-      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
-      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
-    },
-    {
       "slug": "grace",
       "fileTypeId": "019fed6d-ab59-72fc-ab24-232764ca6432",
       "schemaHash": "c41caafc-4db2-99d7-8db4-b038e413388a",
@@ -1779,6 +1810,12 @@
       "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
       "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
+    },
+    {
+      "slug": "location",
+      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
+      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
+      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
     },
     {
       "slug": "non-player-character",

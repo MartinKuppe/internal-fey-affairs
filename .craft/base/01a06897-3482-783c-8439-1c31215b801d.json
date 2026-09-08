@@ -51,7 +51,7 @@
     {
       "key": "collect-milk",
       "title": "Milk and Geese",
-      "events": "The team must collect two cans of milk from two dairy farms in the north. Each farmer has placed one can outside the door.\n- First farm: The can by the door can normally be taken without trouble. More cans stand inside the fenced yard. The yard appears unguarded, but an aggressive territorial rooster attacks anyone who enters.\n- Second farm: One can stands outside the door. As the team approaches, they may alert the geese, which defend the milk and may make enough noise to wake the farmer. More cans stand inside the yard.",
+      "events": "The team must collect two cans of milk from two dairy farms in the north. Each farmer has placed one can outside the door.\n- Finn's Farm: The can by the fence gate can normally be taken without trouble. More cans stand inside the fenced yard. The yard appears unguarded, but an aggressive territorial rooster attacks anyone who enters.\n- Liam's Farm: One can stands outside the door. As the team approaches, they may alert the geese, which defend the milk and may make enough noise to wake the farmer. More cans stand inside the yard.",
       "location": {
         "slug": "tri-mhuilinn",
         "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
