@@ -49,7 +49,7 @@
         "fileTypeSlug": "location"
       },
       "objective": "Gather ten measures of cream from sleeping households.",
-      "gmInstructions": "Offer several small problems and let player choices determine which houses they risk. Do not roll for every vessel. Use checks only where discovery or loss is meaningfully at stake. On failure, spill or lose some progress, attract attention, create a social consequence, or demand a different route; always leave enough opportunities to reach the target."
+      "gmInstructions": "Offer several small problems and let player choices determine which houses they risk. Do not roll for every vessel. Use checks only where discovery or loss is meaningfully at stake. On failure, spill or lose some progress, attract attention, create a social consequence, or demand a different route; always leave enough opportunities to reach the target. Once the cream is collected, do not require the team to pass through the guarded gate again. The palisade is a defensive boundary, not a prison: from inside, let them find a climbable section, exploit a gap or weak point, use nearby structures or objects, or devise another plausible way out. Require a check only if active pursuit, a hazardous method, or protecting the cream makes the exit meaningfully uncertain. Existing suspicion or pursuit does not disappear when they cross the wall."
     },
     {
       "key": "cream-delivery",
