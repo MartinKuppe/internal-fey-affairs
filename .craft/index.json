@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-08T18:18:49.277Z",
+  "syncedAt": "2026-09-08T18:54:25.543Z",
   "folders": [
     {
       "path": "/Locations",
@@ -90,16 +90,16 @@
       "folderId": "01a0693e-dcaa-79d0-a912-8b5338171b81"
     },
     {
-      "path": "/Missions",
-      "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
-    },
-    {
       "path": "/Change Requests",
       "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     },
     {
       "path": "/Locations/Portal Hub  H2",
       "folderId": "01a07329-613a-7330-a0be-3e59d1c748a0"
+    },
+    {
+      "path": "/Missions",
+      "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
     }
   ],
   "files": [
@@ -868,8 +868,8 @@
       "fileId": "01a001e7-c610-73ec-a5c9-885359f10a2c",
       "referenceId": "01a001e7-c610-7464-83e0-354b85494c83",
       "fileType": "mission-journal",
-      "baseVersionId": "01a07367-6bb6-7b98-8eb8-a126aec0c675",
-      "baseHash": "e58cc26b-bc85-529d-2029-89e55dfaabba",
+      "baseVersionId": "01a0825e-f77c-7318-a3be-21cb4baf8a8e",
+      "baseHash": "c840cf52-b3a2-2f02-045e-979f1633e1a8",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned"
@@ -1009,8 +1009,8 @@
       "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
       "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
       "fileType": "location",
-      "baseVersionId": "01a080ef-dddf-784c-b42d-717736724c95",
-      "baseHash": "23c4cf0e-2084-8d83-b8e5-e73a762f8c95",
+      "baseVersionId": "01a0825e-f770-78ac-9569-e77be2af8ba3",
+      "baseHash": "7ea19d80-4679-1a33-887e-3ce9b4612e64",
       "source": "project",
       "metadataHash": "00b6d5e5-5f64-c2a7-7060-4834bf505457"
     },
@@ -1172,7 +1172,7 @@
       "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileType": "player-character",
-      "baseVersionId": "01a07523-c036-7558-a655-1d5b29b53e7d",
+      "baseVersionId": "01a08255-3fa7-793c-aa93-13582434efa4",
       "baseHash": "47fe442e-784d-8ad3-35be-2ac4fed815d1",
       "source": "project"
     },
@@ -1415,17 +1415,17 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a0823e-81f1-7658-90a4-01e0c7a69753",
-      "baseHash": "9e8225b3-41ff-4693-7485-34c7bd415fef",
+      "baseVersionId": "01a0825e-f79b-74d0-9e4f-14f2fc7e9c73",
+      "baseHash": "16b28dad-c5e5-03b8-abcb-3c302f6e6576",
       "source": "project"
     },
     {
-      "path": "/Missions/Milk and Cream.mission.json",
+      "path": "/Missions/Cream Tax.mission.json",
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a0823e-81fa-7344-80ac-72a5d83177e8",
-      "baseHash": "dd895624-244b-e2b0-4ba1-d999a2e42e1a",
+      "baseVersionId": "01a0825e-f7a5-743c-b374-d7b7899dc2b6",
+      "baseHash": "b76a9295-6299-e37a-2882-787bb42ae38e",
       "source": "project"
     },
     {
@@ -1433,8 +1433,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a0823e-81df-7bec-9512-91b8b98daf5c",
-      "baseHash": "0f03ed91-09b3-32c1-8c27-54153dbacef4",
+      "baseVersionId": "01a0825e-f78b-7d88-ae39-4a61dd29322d",
+      "baseHash": "b8201a4b-cf96-c520-456b-f2810581ade5",
       "source": "project"
     },
     {
@@ -1559,8 +1559,8 @@
       "fileId": "01a07310-b769-7158-acbe-774827880c77",
       "referenceId": "01a07310-b769-7218-9861-5f20059c8148",
       "fileType": "location",
-      "baseVersionId": "01a07329-6154-7608-9940-59d5d50df054",
-      "baseHash": "2bf0e9d2-05e3-e9e4-24b6-dfc632775563",
+      "baseVersionId": "01a0825e-f742-78d8-bcaf-4ce40f9cf6ae",
+      "baseHash": "1055c3d9-bc46-3f5f-f24a-1aa9d2811d41",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1687,8 +1687,8 @@
       "fileId": "01a080db-d705-72b4-aff1-bf2e0646f3da",
       "referenceId": "01a080db-d705-7328-bba5-4707d8fd7e11",
       "fileType": "location",
-      "baseVersionId": "01a080db-e434-722c-a333-65ca931f3a86",
-      "baseHash": "89fd3ec0-a51e-c92c-2e13-d0a8731cb2c6",
+      "baseVersionId": "01a0825e-f74f-7ab4-b5b6-686ceafad168",
+      "baseHash": "345f7d17-25ad-c7f3-d4d6-3d1d74eb896e",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1697,8 +1697,8 @@
       "fileId": "01a080de-7769-7370-8f41-b42d0bfb1512",
       "referenceId": "01a080de-7769-73dc-b825-bf9eb6bcb4a9",
       "fileType": "location",
-      "baseVersionId": "01a080de-7767-7a88-8167-c6954f63f81b",
-      "baseHash": "6692149f-b7de-692b-8bd3-cff64006c495",
+      "baseVersionId": "01a0825e-f765-70d8-a693-93f70060102e",
+      "baseHash": "67dd9000-fc6a-90ba-8e4c-00265c6ebeb1",
       "source": "project"
     },
     {
@@ -1706,8 +1706,8 @@
       "fileId": "01a080e9-4c12-7b54-a941-927e0c5928b0",
       "referenceId": "01a080e9-4c12-7bcc-96cd-ea9f40702f0a",
       "fileType": "location",
-      "baseVersionId": "01a080ee-b131-7828-addb-aa833c989c64",
-      "baseHash": "ef312c01-ffa4-77a2-bb0c-2b8c9205e72b",
+      "baseVersionId": "01a0825e-f75a-7b88-8033-1e89c9af5001",
+      "baseHash": "ce96e83a-e903-0916-e66e-b51967f80ffc",
       "source": "project"
     },
     {
@@ -1715,8 +1715,8 @@
       "fileId": "01a080e9-de91-7750-a0de-9ad713b7f598",
       "referenceId": "01a080e9-de91-77cc-8ce5-aa79ec2cd6e9",
       "fileType": "location",
-      "baseVersionId": "01a080e9-de8f-76b8-a9ee-2a738a58c693",
-      "baseHash": "485fabf4-b408-ae3e-0d8c-77bc6b5cf524",
+      "baseVersionId": "01a0825e-f732-73d8-ab8b-58b9e5a1c01c",
+      "baseHash": "74b42291-a9c6-deab-ba30-b40b0413031b",
       "source": "project"
     },
     {
@@ -1724,18 +1724,30 @@
       "fileId": "01a0823e-8207-7c08-a15d-3ef2112a92d4",
       "referenceId": "01a0823e-7d5a-7193-a9fc-028b5e937756",
       "fileType": "change-request",
-      "baseVersionId": "01a0823e-8203-7018-b080-fd8e9c1a75b1",
-      "baseHash": "c3bdac73-25e2-5786-bb62-1b25c9f175f1",
+      "baseVersionId": "01a0825e-f720-7650-8f21-a96756a205ab",
+      "baseHash": "8d0e5cad-e44b-683e-a752-025e1978377c",
+      "source": "project"
+    },
+    {
+      "path": "/Change Requests/Split Cream and Milk Missions.change-request.md",
+      "fileId": "01a0825e-f3ce-7bc4-b18f-31ef750b6965",
+      "referenceId": "01a0825e-f38d-73fa-9a31-41ce04524662",
+      "fileType": "change-request",
+      "baseVersionId": "01a0825e-f3c9-7534-a4fd-355ad19c9800",
+      "baseHash": "84ff4bbc-d8d4-b82e-a683-df74b6590f84",
+      "source": "project"
+    },
+    {
+      "path": "/Missions/Milk and Feathers.mission.json",
+      "fileId": "01a0825e-f3ce-705c-ba85-775f0f67c4d1",
+      "referenceId": "01a0825e-f38e-72df-871e-be64a4ccb4c5",
+      "fileType": "mission",
+      "baseVersionId": "01a0825e-f3ca-7d54-9568-95ff74a95d08",
+      "baseHash": "24135c72-6ada-1b40-2aa7-e7ed655ceb35",
       "source": "project"
     }
   ],
   "fileTypes": [
-    {
-      "slug": "change-request",
-      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
-      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
-      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
-    },
     {
       "slug": "origin",
       "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
@@ -1837,6 +1849,12 @@
       "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
       "schemaHash": "14e475cd-a314-2743-7d28-efa6c865270f",
       "contentHash": "cb196323-4e76-ceb7-b977-e8019be06a2a"
+    },
+    {
+      "slug": "change-request",
+      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
+      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
+      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
     }
   ],
   "projectSettingsHash": "d9bdbbef-f6be-9a1a-75b4-acaae44d5e93"

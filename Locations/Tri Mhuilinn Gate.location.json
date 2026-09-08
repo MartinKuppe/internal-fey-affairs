@@ -2,5 +2,9 @@
   "$craft": {
     "referenceId": "01a080de-7769-73dc-b825-bf9eb6bcb4a9"
   },
-  "name": "Tri Mhuilinn Gate"
+  "name": "Tri Mhuilinn Gate",
+  "type": "Gate",
+  "description": "The timber gate in Trí Mhuilinn's southern palisade controls the main road into the village. By day it stands open amid ordinary traffic; after dark its narrow passage makes every late arrival conspicuous.",
+  "atmosphere": "Heavy timbers, churned earth, and nowhere to pass without being noticed.",
+  "notes": "Cream Tax uses this as the guarded entry point. Because horseshoes have vanished from village thresholds and the smithy, Village Guard - Prototype 01 stands here while Village Guard - Prototype 02 patrols Inside Palisade. The farms used by Milk and Feathers lie north and outside the palisade, so that Mission does not require passing this gate."
 }

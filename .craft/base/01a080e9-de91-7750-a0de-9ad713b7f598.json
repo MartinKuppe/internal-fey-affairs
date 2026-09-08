@@ -1,3 +1,7 @@
 {
-  "name": "Finn's Farm"
+  "name": "Finn's Farm",
+  "type": "Farm",
+  "description": "A dairy farm near the river north-east of Trí Mhuilinn. A can of milk waits outside, but Finn's geese patrol the approach with the confidence of a village watch.",
+  "atmosphere": "River mist, damp grass, muttering geese, and the threat of sudden indignant honking.",
+  "notes": "Milk and Feathers: this is the farm with geese, visible and audible before the team commits. They defend the milk and may wake Finn. More cans may stand farther inside if needed. Do not introduce Liam's hidden rooster here."
 }

@@ -1,3 +1,7 @@
 {
-  "name": "Liam's Farm"
+  "name": "Liam's Farm",
+  "type": "Farm",
+  "description": "A dairy farm north of Trí Mhuilinn enclosed by a conspicuous timber fence. One can of milk is normally left outside the fence gate; more milk waits within the apparently quiet yard.",
+  "atmosphere": "Still pasture, close-set rails, and the deceptive peace of a yard that seems unguarded.",
+  "notes": "Milk and Feathers: this is the fenced farm. The first can outside the gate is normally easy to take. An aggressive territorial rooster inside the fence is the hidden complication if the team enters for another can. Do not move the geese here; they belong at Finn's Farm."
 }

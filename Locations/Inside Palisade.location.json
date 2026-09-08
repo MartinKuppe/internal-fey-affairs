@@ -20,5 +20,9 @@
       "schemaVersionId": "file-designation-metadata:v8"
     }
   },
-  "name": "Inside Palisade"
+  "name": "Inside Palisade",
+  "type": "Village Interior",
+  "description": "Within Trí Mhuilinn's timber wall, roundhouses and the tavern crowd around muddy paths and the central well. Cream offerings left at selected thresholds turn the familiar lanes into a furtive collection route after dark.",
+  "atmosphere": "Banked hearths, shuttered windows, sleeping dogs, and the occasional footfall of a watchman.",
+  "notes": "Cream Tax collects its ten measures here after the team passes Tri Mhuilinn Gate. Village Guard - Prototype 02 patrols the lanes. The milk farms are outside the palisade and belong to Milk and Feathers, not this location."
 }

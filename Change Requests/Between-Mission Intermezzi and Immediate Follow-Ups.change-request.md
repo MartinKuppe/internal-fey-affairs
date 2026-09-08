@@ -15,7 +15,7 @@ $craft:
 
 ## Problem
 
-After Milk and Cream, the player tried to return home and rest before accepting another Mission. The GM repeatedly read the same Mission, Bargain, map, and character files because the standing rules required an immediate Mission choice while the player's natural between-Mission action had no legal representation. Coinín's multi-part payment was also stored as one combined obligation, making partial fulfilment unnecessarily difficult to record.
+After the then-combined Milk and Cream Mission (later split into Cream Tax and Milk and Feathers), the player tried to return home and rest before accepting another Mission. The GM repeatedly read the same Mission, Bargain, map, and character files because the standing rules required an immediate Mission choice while the player's natural between-Mission action had no legal representation. Coinín's multi-part payment was also stored as one combined obligation, making partial fulfilment unnecessarily difficult to record.
 
 ## Changes
 

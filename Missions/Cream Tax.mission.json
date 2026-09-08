@@ -1,4 +1,7 @@
 {
+  "$craft": {
+    "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d"
+  },
   "code": "SI-01",
   "kind": "Side",
   "mapX": 0.33,

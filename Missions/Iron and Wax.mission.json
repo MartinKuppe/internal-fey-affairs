@@ -2,18 +2,18 @@
   "$craft": {
     "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c"
   },
-  "code": "SI-02",
+  "code": "SI-03",
   "kind": "Side",
   "mapX": 0.0722765752854091,
   "mapY": 0.756183867621202,
   "name": "Iron and Wax",
   "status": "upcoming",
-  "gmNotes": "Tutorial Side Mission for iron vulnerability, the Iron ability, fail-forward infiltration, domestic Fey labour, Brownie professional status, and Mission Trackers. It may be completed before or after Milk and Cream. The player should not yet learn that Coinín's supplies serve Takelings and clones.\n\nThe apprentice stole these horseshoes from village doors and the smithy to protect the workshop from the Fey; their disappearance caused the strengthened watch in Milk and Cream. Do not volunteer the culprit. If the player points out the coincidence between the village's missing horseshoes and the workshop cache, the apprentice will confess when confronted.",
+  "gmNotes": "Tutorial Side Mission for iron vulnerability, the Iron ability, fail-forward infiltration, domestic Fey labour, Brownie professional status, and Mission Trackers. It may be completed before or after Cream Tax or Milk and Feathers. The player should not yet learn that Coinín's supplies serve Takelings and clones.\n\nThe apprentice stole these horseshoes from village doors and the smithy to protect the workshop from the Fey; their disappearance caused the strengthened watch in Cream Tax. Do not volunteer the culprit. If the player points out the coincidence between the village's missing horseshoes and the workshop cache, the apprentice will confess when confronted.",
   "briefing": "Coinín's friend Buaic cannot enter the beekeeper's workshop where he works by night. A new apprentice has scattered and hidden iron horseshoes to ward off Fairies. Get Buaic safely back to his candles and earn the honey needed for Coinín's bargain.",
   "pinLabel": "Iron and Wax",
   "teamSize": 2,
   "objective": "Remove the iron from Buaic's workshop, secure two measures of honey, and bring Grannie the candle he gives you.",
-  "debriefing": "Buaic is back among his candles, Grannie has a wax light fit for a feast day, and Coinín has his honey. If the milk and cream are also delivered, your side of the bargain is complete.",
+  "debriefing": "Buaic is back among his candles, Grannie has a wax light fit for a feast day, and Coinín has his honey. If the separate cream and milk obligations are also fulfilled, your side of the bargain is complete.",
   "storyBeats": [
     {
       "key": "coinins-errand",
@@ -47,7 +47,7 @@
           "level": "Common Knowledge"
         }
       ],
-      "gmInstructions": "Unlock Brownie Common Knowledge. Play Buaic's professional pride seriously. He is physically endangered by iron and cannot simply follow the team inside. Let the player inspect, plan, and ask him technical questions without revealing the laboratory supply chain.\nThe horseshoes are actually the ones stolen from the village, cf. \"Milk and Cream\"."
+      "gmInstructions": "Unlock Brownie Common Knowledge. Play Buaic's professional pride seriously. He is physically endangered by iron and cannot simply follow the team inside. Let the player inspect, plan, and ask him technical questions without revealing the laboratory supply chain.\nThe horseshoes are actually the ones stolen from the village, cf. \"Cream Tax\"."
     },
     {
       "key": "clear-the-workshop",
