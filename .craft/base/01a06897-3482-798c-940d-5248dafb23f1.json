@@ -9,7 +9,7 @@
       "y": 0.5977948226270374
     }
   },
-  "status": "available",
+  "status": "active",
   "gmNotes": "Opening Story Mission immediately following the static Game Start. The scripted opening ends with the goat poised at Grannie's yard gate and the player's first response. Switch the location to Trí Mhuilinn. The Mission then carries that response through an uninterrupted goat chase and Fairy Ring reveal; the first genuine choice comes only after Coinín offers the Hollow Tree.\n\nInstantiate the Wild Hunter from Wild Hunter - Prototype 01. The hunter's mount is a hoverbike, but describe it through the player character's Iron Age perspective as instructed by the prototype.\n\nSecrets:\n- Méabh is not genuinely escaping: she has been assigned by Morrigan to manipulate the player, though her uncertainty and wish for freedom are real. The goal is to create a \"damsel in distress\" situation that induces the player to hide Méabh.\n- Coinín wants supplies for the Fey logistics chain, not personal food.\n- The Wild Hunter plays his part in the act; he does not actually want to apprehend Méabh. If he finds himself face-to-face with her, he pretends to receive a call and abandons the chase.\n\nProtect all three secrets.",
   "briefing": "Return home with the firewood, check the loose horseshoe, and see what has unsettled Grannie's goat. The ordinary errand will carry you farther from the hearth than expected.",
   "teamSize": 1,
@@ -88,6 +88,7 @@
     "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
     "fileTypeSlug": "location"
   },
+  "currentBeatKey": "ring-arrival",
   "mandatoryMembers": [
     {
       "slug": "the-blacksmith",

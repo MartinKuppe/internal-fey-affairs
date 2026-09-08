@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "ceb123c0-58e8-9a2d-bc81-0aee78770c31",
+  "schemaHash": "6f998a98-0bca-7637-0026-033b53508bf3",
   "schema": {
     "type": "object",
     "required": [
@@ -119,6 +119,61 @@
             "name": {
               "type": "string"
             },
+            "image": {
+              "type": "object",
+              "title": "Image",
+              "format": "image",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "focalPoint": {
+                  "type": "object",
+                  "properties": {
+                    "x": {
+                      "type": "number",
+                      "maximum": 1,
+                      "minimum": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "maximum": 1,
+                      "minimum": 0
+                    }
+                  }
+                },
+                "generation": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "prompt": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "enum": [
+                        "generating",
+                        "success",
+                        "error"
+                      ],
+                      "type": "string"
+                    },
+                    "startedAt": {
+                      "type": "string"
+                    },
+                    "finishedAt": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "overlayUrl": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            },
             "status": {
               "type": "string"
             },
@@ -131,11 +186,14 @@
             },
             "fixedDateLabel": {
               "type": "string"
+            },
+            "currentBeatObjective": {
+              "type": "string"
             }
           }
         },
         "title": "Active Missions",
-        "expression": "($self.missions ?? []).filter(m => load(m)?.status == \"active\").map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", fixedDateLabel: load(m)?.fixedDateLabel ?? \"\", status: load(m)?.status ?? \"\" }))",
+        "expression": "($self.missions ?? []).filter(m => load(m)?.status == \"active\").map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", fixedDateLabel: load(m)?.fixedDateLabel ?? \"\", status: load(m)?.status ?? \"\", briefing: load(m)?.briefing ?? \"\", currentBeatObjective: load(m)?.currentBeatObjective ?? \"\", image: load(m)?.image ?? null }))",
         "description": "Computed projection of Missions whose stored status is active. Read-only; never stored."
       },
       "missionHistory": {
@@ -152,6 +210,61 @@
             "name": {
               "type": "string"
             },
+            "image": {
+              "type": "object",
+              "title": "Image",
+              "format": "image",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "focalPoint": {
+                  "type": "object",
+                  "properties": {
+                    "x": {
+                      "type": "number",
+                      "maximum": 1,
+                      "minimum": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "maximum": 1,
+                      "minimum": 0
+                    }
+                  }
+                },
+                "generation": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "prompt": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "enum": [
+                        "generating",
+                        "success",
+                        "error"
+                      ],
+                      "type": "string"
+                    },
+                    "startedAt": {
+                      "type": "string"
+                    },
+                    "finishedAt": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "overlayUrl": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            },
             "status": {
               "type": "string"
             },
@@ -165,7 +278,7 @@
           }
         },
         "title": "Mission History",
-        "expression": "($self.missions ?? []).filter(m => [\"completed\", \"failed\", \"expired\"].includes(load(m)?.status)).map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", status: load(m)?.status ?? \"\", endedDateLabel: load(m)?.endedDate ? ((load(m)?.endedDate?.month ?? \"\") + \" \" + (load(m)?.endedDate?.moonPhase ?? \"\")) : \"\" }))",
+        "expression": "($self.missions ?? []).filter(m => [\"completed\", \"failed\", \"expired\"].includes(load(m)?.status)).map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", status: load(m)?.status ?? \"\", endedDateLabel: load(m)?.endedDate ? ((load(m)?.endedDate?.month ?? \"\") + \" \" + (load(m)?.endedDate?.moonPhase ?? \"\")) : \"\", briefing: load(m)?.briefing?? \"\", image: load(m)?.image ?? null }))",
         "description": "Computed projection of completed, failed, and expired Missions, with terminal status and ended date where available. Read-only; never stored."
       },
       "startingMission": {
@@ -209,6 +322,61 @@
             "name": {
               "type": "string"
             },
+            "image": {
+              "type": "object",
+              "title": "Image",
+              "format": "image",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "focalPoint": {
+                  "type": "object",
+                  "properties": {
+                    "x": {
+                      "type": "number",
+                      "maximum": 1,
+                      "minimum": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "maximum": 1,
+                      "minimum": 0
+                    }
+                  }
+                },
+                "generation": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "prompt": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "enum": [
+                        "generating",
+                        "success",
+                        "error"
+                      ],
+                      "type": "string"
+                    },
+                    "startedAt": {
+                      "type": "string"
+                    },
+                    "finishedAt": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "overlayUrl": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            },
             "status": {
               "type": "string"
             },
@@ -225,8 +393,14 @@
           }
         },
         "title": "Available Missions",
-        "expression": "($self.missions ?? []).filter(m => load(m)?.status == \"available\").map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", fixedDateLabel: load(m)?.fixedDateLabel ?? \"\", status: load(m)?.status ?? \"\" }))",
+        "expression": "($self.missions ?? []).filter(m => load(m)?.status == \"available\").map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", fixedDateLabel: load(m)?.fixedDateLabel ?? \"\", status: load(m)?.status ?? \"\", briefing: load(m)?.briefing?? \"\", image: load(m)?.image ?? null }))",
         "description": "Computed projection of Missions whose stored status is available. Read-only; never stored."
+      },
+      "hasActiveMissions": {
+        "type": "boolean",
+        "title": "Has Active Missions",
+        "expression": "($self.missions ?? []).filter(m => load(m)?.status == \"active\").length > 0",
+        "description": "True when at least one Mission has stored status active. Read-only; for layout visibility."
       },
       "knownUpcomingMissions": {
         "type": "array",
@@ -241,6 +415,61 @@
             },
             "name": {
               "type": "string"
+            },
+            "image": {
+              "type": "object",
+              "title": "Image",
+              "format": "image",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "focalPoint": {
+                  "type": "object",
+                  "properties": {
+                    "x": {
+                      "type": "number",
+                      "maximum": 1,
+                      "minimum": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "maximum": 1,
+                      "minimum": 0
+                    }
+                  }
+                },
+                "generation": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "prompt": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "enum": [
+                        "generating",
+                        "success",
+                        "error"
+                      ],
+                      "type": "string"
+                    },
+                    "startedAt": {
+                      "type": "string"
+                    },
+                    "finishedAt": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "overlayUrl": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
             },
             "status": {
               "type": "string"
@@ -258,7 +487,7 @@
           }
         },
         "title": "Known Upcoming Missions",
-        "expression": "($self.missions ?? []).filter(m => (load(m)?.status == \"upcoming\") && (load(m)?.revealedToPlayer == true)).map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", fixedDateLabel: load(m)?.fixedDateLabel ?? \"\", status: load(m)?.status ?? \"\" }))",
+        "expression": "($self.missions ?? []).filter(m => (load(m)?.status == \"upcoming\") && (load(m)?.revealedToPlayer == true)).map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", fixedDateLabel: load(m)?.fixedDateLabel ?? \"\", status: load(m)?.status ?? \"\", briefing: load(m)?.briefing?? \"\",image: load(m)?.image ?? null }))",
         "description": "Computed projection of upcoming Missions revealed to the player. Read-only; never stored."
       }
     }
@@ -269,13 +498,45 @@
       "body": {
         "type": "Card",
         "props": {
+          "title": null,
           "maxWidth": "full"
         },
         "children": [
-          "heading",
-          "separator",
+          "stack-6",
           "body-stack"
         ]
+      },
+      "card": {
+        "type": "Card",
+        "props": {
+          "title": "Active Mission",
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "stack-2",
+          "stack-8"
+        ]
+      },
+      "grid": {
+        "type": "Grid",
+        "props": {
+          "gap": "md",
+          "bgColor": null,
+          "bgImage": null,
+          "columns": 1,
+          "rounded": null,
+          "className": null,
+          "bgImageFit": null
+        },
+        "children": []
       },
       "page": {
         "type": "Stack",
@@ -284,7 +545,8 @@
           "direction": "vertical"
         },
         "children": [
-          "body"
+          "body",
+          "stack-7"
         ]
       },
       "tabs": {
@@ -296,43 +558,312 @@
               "value": "available"
             },
             {
-              "label": "Upcoming",
-              "value": "upcoming"
-            },
-            {
               "label": "History",
               "value": "history"
             }
           ],
+          "value": null,
           "defaultValue": "available"
         },
         "children": [
           "tab-available",
-          "tab-upcoming",
-          "tab-history"
+          "tab-available-2"
         ]
+      },
+      "text": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$state": "/currentDateLabel"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "stack": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": null,
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "repeat": {
+          "statePath": "/activeMissions"
+        },
+        "children": [
+          "card"
+        ]
+      },
+      "card-2": {
+        "type": "Card",
+        "props": {
+          "title": "Active Mission",
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "visible": {
+          "eq": false,
+          "$state": "/hasActiveMissions"
+        },
+        "children": [
+          "stack-2-2"
+        ]
+      },
+      "card-3": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": "#e8f4ec",
+          "description": null
+        },
+        "visible": {
+          "$item": "currentBeatObjective"
+        },
+        "children": [
+          "text-3"
+        ]
+      },
+      "text-2": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "briefing"
+          },
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-3": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "currentBeatObjective"
+          },
+          "color": null,
+          "variant": "body",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "badge-3": {
+        "type": "Badge",
+        "props": {
+          "text": {
+            "$item": "status"
+          },
+          "color": null,
+          "variant": "default",
+          "className": null
+        },
+        "children": []
+      },
+      "callout": {
+        "type": "Callout",
+        "props": {
+          "icon": null,
+          "text": {
+            "$item": "description"
+          },
+          "color": null,
+          "title": null,
+          "bgColor": null,
+          "variant": "quote",
+          "className": null,
+          "attribution": null
+        },
+        "children": []
       },
       "heading": {
         "type": "Heading",
         "props": {
-          "text": {
-            "$state": "/name"
-          },
+          "text": "Mission Journal",
           "color": null,
           "level": "h1",
           "className": null
         },
         "children": []
       },
-      "date-card": {
-        "type": "Card",
+      "stack-2": {
+        "type": "Stack",
         "props": {
-          "title": "Campaign Date"
+          "gap": "md",
+          "wrap": false,
+          "align": "start",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
         },
         "children": [
-          "date-label",
-          "date-empty"
+          "stack-3"
         ]
+      },
+      "stack-3": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": null,
+          "align": "start",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "start",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "heading-2",
+          "callout",
+          "text-2"
+        ]
+      },
+      "stack-4": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": null,
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "repeat": {
+          "statePath": "/availableMissions"
+        },
+        "children": [
+          "collapsible-2"
+        ]
+      },
+      "stack-5": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": "end",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "badge-3"
+        ]
+      },
+      "stack-6": {
+        "type": "Stack",
+        "props": {
+          "gap": "lg",
+          "wrap": null,
+          "align": "center",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "heading",
+          "text"
+        ]
+      },
+      "stack-7": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": null,
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": []
+      },
+      "stack-8": {
+        "type": "Stack",
+        "props": {
+          "gap": "lg",
+          "wrap": null,
+          "align": "stretch",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "card-3"
+        ]
+      },
+      "badge-3-2": {
+        "type": "Badge",
+        "props": {
+          "text": {
+            "$item": "status"
+          },
+          "color": null,
+          "variant": "default",
+          "className": null
+        },
+        "children": []
+      },
+      "heading-2": {
+        "type": "Heading",
+        "props": {
+          "text": {
+            "$item": "name"
+          },
+          "color": null,
+          "level": "h2",
+          "className": null
+        },
+        "children": []
       },
       "separator": {
         "type": "Separator",
@@ -342,6 +873,86 @@
         },
         "children": []
       },
+      "stack-2-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": false,
+          "align": "start",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "center",
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "stack-3-2"
+        ]
+      },
+      "stack-3-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "wrap": null,
+          "align": "start",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": "start",
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "separator",
+          "separator-3",
+          "heading-2-2",
+          "separator-2",
+          "separator-2-2",
+          "separator-2-2-2"
+        ]
+      },
+      "stack-4-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": null,
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "repeat": {
+          "statePath": "/missionHistory"
+        },
+        "children": [
+          "collapsible"
+        ]
+      },
+      "stack-5-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": "end",
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "badge-3-2"
+        ]
+      },
       "body-stack": {
         "type": "Stack",
         "props": {
@@ -349,127 +960,85 @@
           "direction": "vertical"
         },
         "children": [
-          "date-card",
           "active-section",
           "tabs",
-          "missions-references",
-          "currentmonth-field",
-          "startingmission-select",
-          "currentmoonphase-field"
+          "grid"
         ]
       },
-      "date-empty": {
-        "type": "Text",
+      "collapsible": {
+        "type": "Collapsible",
         "props": {
-          "text": "The campaign date has not been set yet.",
-          "variant": "muted"
+          "title": {
+            "$item": "name"
+          },
+          "className": null,
+          "defaultOpen": false
         },
-        "visible": {
-          "not": true,
-          "$state": "/currentDateLabel"
-        },
-        "children": []
+        "children": [
+          "text-2-2-2-3",
+          "stack-5"
+        ]
       },
-      "date-label": {
+      "heading-2-2": {
         "type": "Heading",
         "props": {
+          "text": "No active mission ",
+          "color": "#5e826e",
+          "level": "h4",
+          "className": null
+        },
+        "children": []
+      },
+      "separator-2": {
+        "type": "Separator",
+        "props": {
+          "className": null,
+          "orientation": "horizontal"
+        },
+        "children": []
+      },
+      "separator-3": {
+        "type": "Separator",
+        "props": {
+          "className": null,
+          "orientation": "horizontal"
+        },
+        "children": []
+      },
+      "text-2-2-2-3": {
+        "type": "Text",
+        "props": {
           "text": {
-            "$state": "/currentDateLabel"
+            "$item": "description"
           },
-          "level": "h2"
-        },
-        "visible": {
-          "$state": "/currentDateLabel"
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
         },
         "children": []
       },
-      "active-grid": {
-        "type": "FileReferenceGrid",
+      "collapsible-2": {
+        "type": "Collapsible",
         "props": {
-          "size": "md",
-          "items": {
-            "$state": "/activeMissions"
+          "title": {
+            "$item": "name"
           },
-          "label": "Active",
-          "columns": 1,
-          "emptyState": "No active Mission.",
-          "showAddNew": false,
-          "fileTypeSlug": "mission",
-          "metadataFields": [
-            {
-              "name": "code",
-              "type": "string"
-            },
-            {
-              "name": "kind",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "string"
-            }
-          ],
-          "referenceField": "mission",
-          "showAddNewOnHover": false
-        },
-        "children": []
-      },
-      "tab-history": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
+          "className": null,
+          "defaultOpen": false
         },
         "children": [
-          "history-heading",
-          "history-grid"
+          "text-2-2-2-3-2",
+          "stack-5-2"
         ]
       },
-      "history-grid": {
-        "type": "FileReferenceGrid",
+      "separator-2-2": {
+        "type": "Separator",
         "props": {
-          "size": "md",
-          "items": {
-            "$state": "/missionHistory"
-          },
-          "label": "Mission History",
-          "columns": 2,
-          "emptyState": "No Missions in history yet.",
-          "showAddNew": false,
-          "fileTypeSlug": "mission",
-          "metadataFields": [
-            {
-              "name": "code",
-              "type": "string"
-            },
-            {
-              "name": "kind",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "string"
-            },
-            {
-              "name": "endedDateLabel",
-              "type": "string"
-            }
-          ],
-          "referenceField": "mission",
-          "showAddNewOnHover": false
+          "className": null,
+          "orientation": "horizontal"
         },
         "children": []
-      },
-      "tab-upcoming": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "children": [
-          "upcoming-heading",
-          "upcoming-grid"
-        ]
       },
       "tab-available": {
         "type": "Stack",
@@ -479,47 +1048,8 @@
         },
         "children": [
           "available-heading",
-          "available-grid"
+          "stack-4"
         ]
-      },
-      "upcoming-grid": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/knownUpcomingMissions"
-          },
-          "label": "Known Upcoming",
-          "columns": 2,
-          "emptyState": "No known upcoming Missions.",
-          "showAddNew": false,
-          "fileTypeSlug": "mission",
-          "metadataFields": [
-            {
-              "name": "code",
-              "type": "string"
-            },
-            {
-              "name": "kind",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "string"
-            }
-          ],
-          "referenceField": "mission",
-          "showAddNewOnHover": false
-        },
-        "children": []
-      },
-      "active-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Active Mission",
-          "level": "h3"
-        },
-        "children": []
       },
       "active-section": {
         "type": "Stack",
@@ -528,137 +1058,55 @@
           "direction": "vertical"
         },
         "children": [
-          "active-heading",
-          "active-grid"
+          "card-2",
+          "stack"
         ]
       },
-      "available-grid": {
-        "type": "FileReferenceGrid",
+      "text-2-2-2-3-2": {
+        "type": "Text",
         "props": {
-          "size": "md",
-          "items": {
-            "$state": "/availableMissions"
+          "text": {
+            "$item": "description"
           },
-          "label": "Available Missions",
-          "columns": 4,
-          "emptyState": "No Missions available right now.",
-          "showAddNew": false,
-          "fileTypeSlug": "mission",
-          "titlePosition": "overlay",
-          "metadataFields": [
-            {
-              "name": "code",
-              "type": "string"
-            },
-            {
-              "name": "kind",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "string"
-            }
-          ],
-          "referenceField": "mission",
-          "imageAspectRatio": "video",
-          "showAddNewOnHover": false
+          "color": null,
+          "variant": "caption",
+          "editPath": null,
+          "className": null
         },
         "children": []
       },
-      "history-heading": {
-        "type": "Heading",
+      "separator-2-2-2": {
+        "type": "Separator",
         "props": {
-          "text": "Mission History",
-          "level": "h3"
+          "className": null,
+          "orientation": "horizontal"
         },
         "children": []
       },
-      "upcoming-heading": {
-        "type": "Heading",
+      "tab-available-2": {
+        "type": "Stack",
         "props": {
-          "text": "Known Upcoming",
-          "level": "h3"
+          "gap": "sm",
+          "direction": "vertical"
         },
-        "children": []
+        "children": [
+          "available-heading-2",
+          "stack-4-2"
+        ]
       },
       "available-heading": {
         "type": "Heading",
         "props": {
           "text": "Available Missions",
-          "level": "h3"
+          "level": "h4"
         },
         "children": []
       },
-      "currentmonth-field": {
-        "type": "FieldList",
+      "available-heading-2": {
+        "type": "Heading",
         "props": {
-          "items": [
-            [
-              "Current Month",
-              {
-                "$state": "/currentMonth"
-              }
-            ]
-          ],
-          "labelColor": null,
-          "valueColor": null
-        },
-        "visible": {
-          "$state": "/currentMonth"
-        },
-        "children": []
-      },
-      "missions-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/missions"
-          },
-          "label": "Missions",
-          "columns": 4,
-          "fileTypeSlug": "mission",
-          "titlePosition": "overlay",
-          "referenceField": null,
-          "imageAspectRatio": "video"
-        },
-        "visible": {
-          "$state": "/missions"
-        },
-        "children": []
-      },
-      "currentmoonphase-field": {
-        "type": "FieldList",
-        "props": {
-          "items": [
-            [
-              "Current Moon Phase",
-              {
-                "$state": "/currentMoonPhase"
-              }
-            ]
-          ],
-          "labelColor": null,
-          "valueColor": null
-        },
-        "visible": {
-          "$state": "/currentMoonPhase"
-        },
-        "children": []
-      },
-      "startingmission-select": {
-        "type": "Select",
-        "props": {
-          "label": "Starting Mission",
-          "value": {
-            "$state": "/startingMission"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "mission"
-        },
-        "visible": {
-          "$state": "/startingMission"
+          "text": "Mission History",
+          "level": "h4"
         },
         "children": []
       }
