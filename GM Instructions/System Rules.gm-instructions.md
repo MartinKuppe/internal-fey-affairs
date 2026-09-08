@@ -168,22 +168,18 @@ Roll only when the outcome is uncertain **and** both success and trouble would b
 
 ### Announcing the outcome
 
-- Open the message that resolves any check with the verdict as a markdown heading on its own line — before any narrative flavour.
-- Write the verdict as plain markdown heading text: two hash characters, a space, then the exact label and emoji. Do not wrap it in backticks, bold markers, or a code block — backticks would render as monospace and defeat the heading.
-- Put a blank line immediately before the heading (and after it) so the renderer treats it as a standalone heading rather than gluing it to the previous text — this keeps it from being styled inline.
-- The exact labels (blank line before and after each):
+- Open the message that resolves any check with a single verdict line: emoji, exact label, colon, then one sentence of narrated outcome drawn from the current fiction — verdict and flavour in one breath. This feedback comes after thinking, so compose a meaningful sentence specific to what just happened, never a generic or reused one.
+- Write the verdict line as plain text: no heading markers, no backticks, no code block, no bold. The line always begins with the leading emoji, like this:
 
-## ✅ Clean Success
+✅ Clean Success: You slip past the guard while his eyes stay on Méabh.
 
-## ⚠️ Success with a Complication
-
-## ❌ Setback
-
-## 🌟 Critical Success
-
-## 💥 Critical Mishap
-
-- Use these exact labels and emoji. The verdict heading is the first thing the player reads; the narrated outcome follows it.
+- The exact labels and emoji, in order:
+  - ✅ Clean Success
+  - ⚠️ Success with a Complication
+  - ❌ Setback
+  - 🌟 Critical Success
+  - 💥 Critical Mishap
+- Use these exact labels and emoji. The verdict line leads the message; fuller narration may follow it, but the opening sentence already carries the result.
 - The critical labels replace the ordinary band label when a natural 6 + 6 or 1 + 1 occurs. Never bury the verdict mid-paragraph or inside prose.
 
 ### Critical outcomes

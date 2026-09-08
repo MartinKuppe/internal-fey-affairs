@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-07T19:09:42.586Z",
+  "syncedAt": "2026-09-08T08:22:26.237Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -134,8 +134,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a07935-a038-7a98-a9d0-5d81b5a129c0",
-      "baseHash": "646eec20-c975-0cde-0d04-c1a9a1c5fdae",
+      "baseVersionId": "01a07de0-895a-719c-80c7-7accb6d4cff4",
+      "baseHash": "87e25ac8-fad9-cbc7-1d08-7ac919c4a548",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1660,8 +1660,8 @@
       "fileId": "01a07cc7-031e-7468-90d5-918b27d7fa4e",
       "referenceId": "01a07cc7-031e-74c8-89b4-50509fbec9ff",
       "fileType": "non-player-character",
-      "baseVersionId": "01a07d46-bcb1-7a84-870e-4a527e4598e4",
-      "baseHash": "4f8d4b1b-f5f1-8778-032b-3b103f49140f",
+      "baseVersionId": "01a07d47-a106-7b00-9c7e-d99e83895b2b",
+      "baseHash": "56d9241e-5252-7ef2-3835-24024e7ddbc6",
       "source": "project"
     },
     {
@@ -1697,10 +1697,10 @@
       "contentHash": "049e8cec-4109-8997-3246-334f8bcfc565"
     },
     {
-      "slug": "player-character",
-      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "3bead313-8ba8-afc6-189d-72b1bbf1692e",
-      "contentHash": "a17b9214-43d1-a52a-7126-92726d90fe9e"
+      "slug": "bargain",
+      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
+      "schemaHash": "c5a85a11-c621-30a3-51c0-5db3c6a3aa06",
+      "contentHash": "04275cb2-9f03-c47a-02c5-61026927cb40"
     },
     {
       "slug": "species",
@@ -1721,6 +1721,12 @@
       "contentHash": "9cf71d00-0d57-69a3-b4e4-fa1232545956"
     },
     {
+      "slug": "mission",
+      "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
+      "schemaHash": "b9a58c30-9cb4-313d-e4f9-53fd201c71d9",
+      "contentHash": "4c1558ac-10ad-f7bc-975f-1bff2124ca58"
+    },
+    {
       "slug": "lore-journal",
       "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
       "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
@@ -1731,12 +1737,6 @@
       "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
       "schemaHash": "9c088ea8-5a77-2c1e-8551-f6148844bb32",
       "contentHash": "c6584cfa-dc0a-9e4b-a2f8-901752ee3430"
-    },
-    {
-      "slug": "bargain",
-      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
-      "schemaHash": "c5a85a11-c621-30a3-51c0-5db3c6a3aa06",
-      "contentHash": "04275cb2-9f03-c47a-02c5-61026927cb40"
     },
     {
       "slug": "lore-card",
@@ -1757,16 +1757,16 @@
       "contentHash": "673e3261-15b2-b58b-db64-d6ff2320d6e9"
     },
     {
-      "slug": "mission",
-      "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "b9a58c30-9cb4-313d-e4f9-53fd201c71d9",
-      "contentHash": "4c1558ac-10ad-f7bc-975f-1bff2124ca58"
-    },
-    {
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
       "schemaHash": "ceb123c0-58e8-9a2d-bc81-0aee78770c31",
       "contentHash": "7fe23f7b-6649-e775-55d8-624c706ed01b"
+    },
+    {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "3bead313-8ba8-afc6-189d-72b1bbf1692e",
+      "contentHash": "a17b9214-43d1-a52a-7126-92726d90fe9e"
     },
     {
       "slug": "gm-instructions",
@@ -1793,5 +1793,5 @@
       "contentHash": "cb196323-4e76-ceb7-b977-e8019be06a2a"
     }
   ],
-  "projectSettingsHash": "5ec7c7fe-e806-de2e-1bed-808ef05dc262"
+  "projectSettingsHash": "d9bdbbef-f6be-9a1a-75b4-acaae44d5e93"
 }
