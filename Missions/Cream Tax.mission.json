@@ -8,24 +8,24 @@
   "mapY": 0.93,
   "name": "Cream Tax",
   "status": "upcoming",
-  "gmNotes": "Tutorial Side Mission for Mission Trackers, guarded movement, stealth/fail-forward play, domestic offerings, and the distinction between physical payment and Grace. It covers only the cream portion of Coinín's bargain and may be completed before or after Milk and Feathers or Iron and Wax. Coinín conceals the true destination of the cream without making a false assertion.\n\nThe village watch has been strengthened because horseshoes have recently vanished from doors and from the smithy. The beekeeper's apprentice stole them to protect the workshop from the Fey, but do not reveal the culprit merely because the GM knows it. If the player points out the coincidence between the missing horseshoes and the cache in Buaic's workshop, the apprentice will confess when confronted.",
-  "briefing": "Coinín wants the ten measures of cream promised for his silence. Cross the watched gate after dark, gather the offerings from thresholds inside Trí Mhuilinn, and leave without turning the village against you.",
+  "gmNotes": "Tutorial Side Mission for Mission Trackers, guarded movement, stealth/fail-forward play, domestic offerings, and the distinction between physical payment and Grace. It covers only the cream portion of Coinin's bargain and may be completed before or after Milk and Feathers or Iron and Wax. Coinin conceals the true destination of the cream without making a false assertion.\n\nThe village watch has been strengthened because horseshoes have recently vanished from doors and from the smithy. The beekeeper's apprentice stole them to protect the workshop from the Fey, but do not reveal the culprit merely because the GM knows it. If the player points out the coincidence between the missing horseshoes and the cache in Buaic's workshop, the apprentice will confess when confronted.",
+  "briefing": "Coinin wants the ten measures of cream promised for his silence. Cross the watched gate after dark, gather the offerings from thresholds inside Trí Mhuilinn, and leave without turning the village against you.",
   "pinLabel": "Cream Tax",
   "teamSize": 2,
-  "objective": "Enter the guarded village, collect ten measures of cream, and deliver them to Coinín.",
-  "debriefing": "Coinín has his ten measures of cream, and Trí Mhuilinn sleeps on—more or less. The milk and honey remain due unless those errands were completed already.",
+  "objective": "Enter the guarded village, collect ten measures of cream, and deliver them to Coinin.",
+  "debriefing": "Coinin has his ten measures of cream, and Trí Mhuilinn sleeps on—more or less. The milk and honey remain due unless those errands were completed already.",
   "storyBeats": [
     {
       "key": "cream-briefing",
-      "title": "Coinín's Tax",
-      "events": "In the Hollow Tree, Coinín explains that households inside the palisade leave cream outside for household spirits. Normally he collects these offerings at night, but the village has been guarded since yesterday for reasons he claims not to know. He wants ten measures collected before morning and returned to him. Méabh recognises a supply route; the player is likely to see neighbours' offerings being taken. A concealed Fairy Door in the lower chamber opens into the western woods, outside the palisade.",
+      "title": "Coinin's Tax",
+      "events": "In the Hollow Tree, Coinin explains that households inside the palisade leave cream outside for household spirits. Normally he collects these offerings at night, but the village has been guarded since yesterday for reasons he claims not to know. He wants ten measures collected before morning and returned to him. Meabh recognises a supply route; the player is likely to see neighbours' offerings being taken. A concealed Fairy Door in the lower chamber opens into the western woods, outside the palisade.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
-      "objective": "Learn where the cream is and why Coinín cannot collect it himself.",
-      "gmInstructions": "Keep Coinín literally truthful but strategically incomplete. He does not claim he can consume the cream and does not reveal the Takeling/clone supply chain. Use the existing Grace and Bargain rules to explain that the cream discharges one obligation; do not invent a numeric Grace reward. Let the team approach by the surface path or use Coinín's Fairy Door to the Hidden Fairy Door in the western woods. The portal shortens travel but does not bypass Tri Mhuilinn Gate or the watched interior."
+      "objective": "Learn where the cream is and why Coinin cannot collect it himself.",
+      "gmInstructions": "Keep Coinin literally truthful but strategically incomplete. He does not claim he can consume the cream and does not reveal the Takeling/clone supply chain. Use the existing Grace and Bargain rules to explain that the cream discharges one obligation; do not invent a numeric Grace reward. Let the team approach by the surface path or use Coinin's Fairy Door to the Hidden Fairy Door in the western woods. The portal shortens travel but does not bypass Tri Mhuilinn Gate or the watched interior."
     },
     {
       "key": "watched-gate",
@@ -54,17 +54,17 @@
     {
       "key": "cream-delivery",
       "title": "The Tax Collected",
-      "events": "The team returns to Coinín's Hollow Tree with ten measures of cream, by the woodland Fairy Door or another viable route. He checks the quantity with professional exactness and acknowledges that the cream portion of the promised payment has been delivered. Milk and honey remain due unless their Missions were completed first.",
+      "events": "The team returns to Coinin's Hollow Tree with ten measures of cream, by the woodland Fairy Door or another viable route. He checks the quantity with professional exactness and acknowledges that the cream portion of the promised payment has been delivered. Milk and honey remain due unless their Missions were completed first.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the cream and record that part of the bargain as fulfilled.",
-      "gmInstructions": "Keep the cream tracker at target as historical Mission-object progress once delivery is complete; it records the objective, not carried inventory. In Coinín's Silence, resolve only the accepting party's cream obligation. Leave the milk, honey, and Coinín's nondisclosure obligations as they stand."
+      "gmInstructions": "Keep the cream tracker at target as historical Mission-object progress once delivery is complete; it records the objective, not carried inventory. In Coinin's Silence, resolve only the accepting party's cream obligation. Leave the milk, honey, and Coinin's nondisclosure obligations as they stand."
     }
   ],
-  "description": "Cream offerings wait outside sleeping homes within Trí Mhuilinn's palisade, but recent thefts have put two watchmen on duty. Collecting Coinín's peculiar tax will teach what the Good People regard as payment—and what humans call stealing.",
+  "description": "Cream offerings wait outside sleeping homes within Trí Mhuilinn's palisade, but recent thefts have put two watchmen on duty. Collecting Coinin's peculiar tax will teach what the Good People regard as payment—and what humans call stealing.",
   "selectorMap": {
     "slug": "tri-mhuilinn",
     "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
@@ -105,5 +105,5 @@
     }
   ],
   "revealedToPlayer": false,
-  "completionEffects": "Under Coinín's Silence, mark only the accepting party's cream obligation resolved. Do not change the milk or honey obligations. Coinín's promise not to tell Morrigan remains active, so the Bargain itself remains active. Do not advance the moon phase."
+  "completionEffects": "Under Coinin's Silence, mark only the accepting party's cream obligation resolved. Do not change the milk or honey obligations. Coinin's promise not to tell Morrigan remains active, so the Bargain itself remains active. Do not advance the moon phase."
 }

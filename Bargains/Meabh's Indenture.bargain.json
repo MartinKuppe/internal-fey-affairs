@@ -3,7 +3,7 @@
     "referenceId": "01a059ed-eb7b-74e0-8d46-79fb1c21da4b"
   },
   "kind": "indenture",
-  "name": "Méabh's Indenture",
+  "name": "Meabh's Indenture",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/32c50f70-083f-4cd5-a75c-1fc4df1d9657"
   },
@@ -18,7 +18,7 @@
         }
       ],
       "role": "Laborer",
-      "label": "Méabh",
+      "label": "Meabh",
       "obligations": [
         {
           "wording": "The labourer shall work indefinitely for the employer under the standard takeling charter.",
@@ -38,5 +38,5 @@
       ]
     }
   ],
-  "wording": "Méabh shall work indefinitely for the Morrigan as an indentured worker."
+  "wording": "Meabh shall work indefinitely for the Morrigan as an indentured worker."
 }

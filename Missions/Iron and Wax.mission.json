@@ -8,24 +8,24 @@
   "mapY": 0.756183867621202,
   "name": "Iron and Wax",
   "status": "upcoming",
-  "gmNotes": "Tutorial Side Mission for iron vulnerability, the Iron ability, fail-forward infiltration, domestic Fey labour, Brownie professional status, and Mission Trackers. It may be completed before or after Cream Tax or Milk and Feathers. The player should not yet learn that Coinín's supplies serve Takelings and clones.\n\nThe apprentice stole these horseshoes from village doors and the smithy to protect the workshop from the Fey; their disappearance caused the strengthened watch in Cream Tax. Do not volunteer the culprit. If the player points out the coincidence between the village's missing horseshoes and the workshop cache, the apprentice will confess when confronted.",
-  "briefing": "Coinín's friend Buaic cannot enter the beekeeper's workshop where he works by night. A new apprentice has scattered and hidden iron horseshoes to ward off Fairies. Get Buaic safely back to his candles and earn the honey needed for Coinín's bargain.",
+  "gmNotes": "Tutorial Side Mission for iron vulnerability, the Iron ability, fail-forward infiltration, domestic Fey labour, Brownie professional status, and Mission Trackers. It may be completed before or after Cream Tax or Milk and Feathers. The player should not yet learn that Coinin's supplies serve Takelings and clones.\n\nThe apprentice stole these horseshoes from village doors and the smithy to protect the workshop from the Fey; their disappearance caused the strengthened watch in Cream Tax. Do not volunteer the culprit. If the player points out the coincidence between the village's missing horseshoes and the workshop cache, the apprentice will confess when confronted.",
+  "briefing": "Coinin's friend Buaic cannot enter the beekeeper's workshop where he works by night. A new apprentice has scattered and hidden iron horseshoes to ward off Fairies. Get Buaic safely back to his candles and earn the honey needed for Coinin's bargain.",
   "pinLabel": "Iron and Wax",
   "teamSize": 2,
   "objective": "Remove the iron from Buaic's workshop, secure two measures of honey, and bring Grannie the candle he gives you.",
-  "debriefing": "Buaic is back among his candles, Grannie has a wax light fit for a feast day, and Coinín has his honey. If the separate cream and milk obligations are also fulfilled, your side of the bargain is complete.",
+  "debriefing": "Buaic is back among his candles, Grannie has a wax light fit for a feast day, and Coinin has his honey. If the separate cream and milk obligations are also fulfilled, your side of the bargain is complete.",
   "storyBeats": [
     {
       "key": "coinins-errand",
       "title": "A Brownie in Need",
-      "events": "At the Hollow Tree, Coinín directs the team to his friend Buaic, a Brownie candle maker whose payment includes the honey still owed under the silence bargain. He makes helping Buaic sound charitable while carefully preserving his own interest in the result. His concealed Fairy Door offers a route to the woods west of Trí Mhuilinn, closer to the beekeeper's workshop.",
+      "events": "At the Hollow Tree, Coinin directs the team to his friend Buaic, a Brownie candle maker whose payment includes the honey still owed under the silence bargain. He makes helping Buaic sound charitable while carefully preserving his own interest in the result. His concealed Fairy Door offers a route to the woods west of Trí Mhuilinn, closer to the beekeeper's workshop.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
-      "objective": "Hear Coinín's proposal for obtaining the honey.",
-      "gmInstructions": "Do not state that Coinín wants the honey for a supply chain. Let the player continue to believe he may want it for himself. This is assistance toward an existing obligation, not a new automatic Grace charge. Let the team use the Fairy Door to the Hidden Fairy Door in the western woods or take another sensible route. The portal bypasses travel only; it does not solve Buaic's problem or the workshop infiltration."
+      "objective": "Hear Coinin's proposal for obtaining the honey.",
+      "gmInstructions": "Do not state that Coinin wants the honey for a supply chain. Let the player continue to believe he may want it for himself. This is assistance toward an existing obligation, not a new automatic Grace charge. Let the team use the Fairy Door to the Hidden Fairy Door in the western woods or take another sensible route. The portal bypasses travel only; it does not solve Buaic's problem or the workshop infiltration."
     },
     {
       "key": "meet-buaic",
@@ -64,7 +64,7 @@
     {
       "key": "buaics-payment",
       "title": "Honey and a Candle",
-      "events": "Once the iron is gone, Buaic returns to his bench and demonstrates why he calls his candles the finest in the region. From the honey left under his arrangement, he gives the team two measures for Coinín. He also gives the player a wax candle ‘for your grandmother’ and firmly tells him not to offer thanks. Set the honey tracker to 2 and the wax-candle tracker to 1.",
+      "events": "Once the iron is gone, Buaic returns to his bench and demonstrates why he calls his candles the finest in the region. From the honey left under his arrangement, he gives the team two measures for Coinin. He also gives the player a wax candle ‘for your grandmother’ and firmly tells him not to offer thanks. Set the honey tracker to 2 and the wax-candle tracker to 1.",
       "location": {
         "slug": "beekepers-workshop",
         "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
@@ -86,14 +86,14 @@
     {
       "key": "honey-delivery",
       "title": "The Last Measures",
-      "events": "The team brings two measures of honey back to Coinín's Hollow Tree. He acknowledges delivery. The accepting party's honey obligation is now complete; if the cream and milk have also been delivered, all three goods obligations are complete. Coinín remains bound not to tell Morrigan that he saw them together.",
+      "events": "The team brings two measures of honey back to Coinin's Hollow Tree. He acknowledges delivery. The accepting party's honey obligation is now complete; if the cream and milk have also been delivered, all three goods obligations are complete. Coinin remains bound not to tell Morrigan that he saw them together.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
-      "objective": "Deliver the honey to Coinín.",
-      "gmInstructions": "Keep the honey tracker at target as historical objective progress. In Coinín's Silence, resolve the accepting party's honey obligation independently. Do not alter the cream or milk obligations and do not resolve Coinín's ongoing nondisclosure obligation."
+      "objective": "Deliver the honey to Coinin.",
+      "gmInstructions": "Keep the honey tracker at target as historical objective progress. In Coinin's Silence, resolve the accepting party's honey obligation independently. Do not alter the cream or milk obligations and do not resolve Coinin's ongoing nondisclosure obligation."
     },
     {
       "key": "candle-home",
@@ -108,7 +108,7 @@
       "gmInstructions": "Let the scene close warmly. Grannie knows more about Brownie and Hob status than she explains. Do not turn her remark into an immediate lecture unless the player asks; if asked, answer at the currently unlocked Deep Lore level."
     }
   ],
-  "description": "A proud Brownie has been driven from his candle workshop by a floor full of iron horseshoes. Clear the hidden danger, restore his night's work, and the honey owed to Coinín may finally be within reach.",
+  "description": "A proud Brownie has been driven from his candle workshop by a floor full of iron horseshoes. Clear the hidden danger, restore his night's work, and the honey owed to Coinin may finally be within reach.",
   "selectorMap": {
     "slug": "tri-mhuilinn",
     "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
@@ -163,5 +163,5 @@
     }
   ],
   "revealedToPlayer": false,
-  "completionEffects": "Under Coinín's Silence, mark the accepting party's honey obligation resolved; do not change the cream or milk obligations. Coinín's nondisclosure obligation remains active, so the Bargain itself remains active. Preserve the candle tracker at target as history after Grannie receives it. Do not advance the moon phase."
+  "completionEffects": "Under Coinin's Silence, mark the accepting party's honey obligation resolved; do not change the cream or milk obligations. Coinin's nondisclosure obligation remains active, so the Bargain itself remains active. Preserve the candle tracker at target as history after Grannie receives it. Do not advance the moon phase."
 }

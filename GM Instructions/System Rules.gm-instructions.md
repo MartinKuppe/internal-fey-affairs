@@ -171,7 +171,7 @@ Roll only when the outcome is uncertain **and** both success and trouble would b
 - Open the message that resolves any check with a single verdict line: emoji, exact label, colon, then one sentence of narrated outcome drawn from the current fiction — verdict and flavour in one breath. This feedback comes after thinking, so compose a meaningful sentence specific to what just happened, never a generic or reused one.
 - Write the verdict line as plain text: no heading markers, no backticks, no code block, no bold. The line always begins with the leading emoji, like this:
 
-✅ Clean Success: You slip past the guard while his eyes stay on Méabh.
+✅ Clean Success: You slip past the guard while his eyes stay on Meabh.
 
 - The exact labels and emoji, in order:
   - ✅ Clean Success
@@ -207,7 +207,7 @@ When a player picks an origin, it defines who their character was before the sto
 - Species is **Human** or **Fey** in ordinary project metadata.
 - **Elgafar** / **Elgafari** terminology is reserved for rare, deep technical lore; do not use it in ordinary play or character data.
 - Clones and Takelings are Human. A Takeling is a Human taken in infancy and raised by the Fey; a Clone is grown from a pattern. A Changeling is a particular clone pattern or role — not a separate Species, and not Fey.
-- Fey kinds such as Lepracaun, Banshee, Pooka, Brownie, and Leannán Sidhe are roles, functions, training, patterns, or social identities — Archetypes, not Species.
+- Fey kinds such as Lepracaun, Banshee, Pooka, Brownie, and Leannan Sidhe are roles, functions, training, patterns, or social identities — Archetypes, not Species.
 - Characters explicitly store every applicable Archetype. Never infer an undisclosed archetype from an indirect reference chain; classification is explicit and flat.
 - Archetypes are descriptive and grant no automatic mechanics until future rules explicitly assign mechanical effects.
 - Species and Archetypes remain usable for NPC classification and remain optional Player Character classification.

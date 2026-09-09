@@ -1,4 +1,7 @@
 {
+  "$craft": {
+    "referenceId": "019fedb8-9e80-7904-83f3-d6026c958c4b"
+  },
   "name": "Leannan Sidhe",
   "gmNotes": "A Leannan Sidhe is a Fey-trained role: a Takeling trained for seduction, artistic inspiration, sexuality, bonding, and attachment research. It is a role, training pattern, or social identity — not a biological Species; the individual's Species is recorded separately. Treat their work as research with real emotional stakes. Archetypes are descriptive and grant no automatic mechanics.",
   "category": "fey-role",
