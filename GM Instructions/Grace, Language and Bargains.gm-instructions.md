@@ -1,15 +1,14 @@
 ---
 name: Grace, Language and Bargains
 description: Searchable GM reference for Grace etiquette, Fey truthfulness,
-  deception, and the literal force of bargains. System Rules remain mechanically
-  authoritative.
+  deception, contracts, and obligation accounting. Consult when courtesy or payment has consequences.
 $craft:
   referenceId: 01a063c4-7e26-751d-a63e-ef59da9aef0e
 ---
 
 # Grace, Language and Bargains
 
-This dossier explains the culture behind the mechanics. The **Grace** and **Bargains & Contracts** sections of **System Rules** remain mechanically authoritative whenever shorthand here could be read more than one way.
+This reference owns Grace and Bargain mechanics as well as their cultural interpretation. Consult before recording payments, interpreting consequential courtesy, or creating and resolving obligations.
 
 ## Grace as social currency
 
@@ -18,7 +17,7 @@ Grace lies between money, gratitude, obligation, and courtesy. A queen or court 
 The ordinary verbal pattern is:
 
 - **Please** and similar pleading language propose an implied bargain. Stronger pleading signals a greater amount the speaker is prepared to pay. The word alone transfers nothing; a rejected plea costs nothing.
-- **Thank you** and similar gratitude settle an accepted and performed plea. Under System Rules, the amount transferred is the greater of the amount implied by the plea and the thanks. Thanks may also be agreed in advance.
+- **Thank you** and similar gratitude settle an accepted and performed plea. The amount transferred is the greater of the amount implied by the plea and the thanks. Thanks may also be agreed in advance.
 - Further gratitude after thanks—“much obliged,” “you have been very helpful,” and similar wording—may constitute a tip when the context clearly indicates an additional transfer. Record any real transfer in the Grace Ledger rather than treating every polite flourish as automatic.
 - **You’re welcome** and similar replies acknowledge receipt. They do not normally transfer Grace.
 - **Sorry** and similar apologetic language may offer Grace as compensation for a real or perceived wrong. An apology can repair the social breach while a ledger transfer settles any separate debt; do not assume that an isolated word silently creates an amount.
@@ -51,3 +50,19 @@ This limitation belongs to actual Fey. Human Takelings and human-derived clones 
 A Fey regards failing an accepted bargain as almost as unthinkable and ugly as lying. Bargains bind the letter, not the presumed spirit, and elegant literal interpretation is culturally admired. Exact wording therefore matters and belongs in the Bargain file.
 
 Humans remain physically capable of breach. Breaking a bargain with a Fey brings severe social and practical consequences—at minimum the crossed Fey’s ire—and may require a further settlement. Record concrete consequences such as the witnessed breach, changed relationships, Grace debt, or a new Bargain rather than an abstract social label. Never invent a loophole after the fact: it must follow from the recorded wording and circumstances.
+
+## Accounting and unthanked pleas
+
+The Player Character's Grace Ledger is the source of balances. Each entry records queen/court currency, signed amount, day and exact reason; credits are positive and debits/debt negative. Never maintain a separate running total. Announce significant gains or losses.
+
+After an accepted, performed plea, thanks are expected. If the conversation ends without thanks, the plea becomes unthanked; additional consequences begin the following day. Delayed thanks settles the Grace debt; an excuse, apology or forgiveness repairs the separate social breach.
+
+For Lepracaun currency exchange, record two entries on the same day: debit the currency given and credit the currency received, with the reason naming the rate. NPC obligations use Bargains and fictional accounting, not personal Grace Ledgers.
+
+## Contract records
+
+- Create one Bargain file per contract whenever an obligation forms (including grace-trades, settlements, employment, missions and indentures), or the player asks to see a contract.
+- Each contract has at least two parties: characters, informal groups or legal entities. Label each party and link its character record when one exists.
+- Each party has an `obligations` list with exact wording, due condition and resolved state for each duty. Resolve duties independently. A party is finished when all its applicable duties are resolved; the contract becomes `resolved` only when the whole contract is finished. An ongoing promise can keep it `active` after goods are delivered.
+- Link related contracts on the Bargain. An obligation's Reference contract can point to another Bargain it falls under.
+- Set Known to the player when the contract is theirs, witnessed, overheard, read, disclosed or discovered. Announce new bargains immediately in a distinct message naming parties and key terms.

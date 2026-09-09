@@ -13,4 +13,4 @@ $craft:
     schemaVersionId: file-designation-metadata:v8
 ---
 
-Before narrating a Fey ethical or aesthetic judgement, consult Beauty. Do not substitute ordinary human morality for the Fey concept of Beauty, and do not assume that “beautiful”, “good”, “ugly”, and “evil” have their human meanings in Fey reasoning.
+Before narrating a Fey ethical or aesthetic judgement, consult the Beauty section of **Fey Cognition, Beauty and Society**. Do not substitute human morality or assume that beautiful, good, ugly and evil have their human meanings.

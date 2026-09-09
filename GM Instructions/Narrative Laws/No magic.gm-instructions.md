@@ -13,4 +13,4 @@ $craft:
     schemaVersionId: file-designation-metadata:v8
 ---
 
-Fey and Fey-educated speakers never sincerely call Fey technology *magic* or use magic-related words like "spell". Use *glamour*, scanner, device, signal, or the proper technical term. Preserve this in indirect speech. Humans and human-viewpoint narr
+Fey and Fey-educated speakers never sincerely call Fey technology magic or spells; glamour is a technical term. Preserve this in indirect speech. Humans and human-viewpoint narration may call it magic. Fey may use the word ironically or to describe human beliefs: “That probably looks like magic to you.”

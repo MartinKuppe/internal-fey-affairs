@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-09T19:06:14.733Z",
+  "syncedAt": "2026-09-09T19:18:09.897Z",
   "folders": [
     {
       "path": "/Locations",
@@ -134,8 +134,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a085f1-9419-713c-9e36-136908d18d2c",
-      "baseHash": "1434069d-6923-35fb-7e40-c6ba1d20fef5",
+      "baseVersionId": "01a0879b-3185-7940-9cd0-00897bd2e312",
+      "baseHash": "e71db015-b063-c805-d3e2-9d94423121e1",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1343,8 +1343,8 @@
       "fileId": "01a063c4-8022-783c-84e8-0a816c241fa7",
       "referenceId": "01a063c4-7e26-751d-a63e-ef59da9aef0e",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a073ef-f803-7518-b590-aaa4e76092d6",
-      "baseHash": "b1b17be4-9ad1-4711-83f6-1c78519e01d0",
+      "baseVersionId": "01a0879b-352a-7c78-b593-5410e38bd427",
+      "baseHash": "f827817d-5c6c-8f2d-3167-e94e453ed572",
       "source": "project"
     },
     {
@@ -1442,8 +1442,8 @@
       "fileId": "01a06937-96ef-7e30-8928-30f9b6518cf0",
       "referenceId": "01a06937-96ef-7eb4-ac34-d8f0ded8a7ce",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a06940-4872-7144-8c8c-1e7ab6772f1e",
-      "baseHash": "7c20d361-24f4-b73d-9d30-4b425f7756f5",
+      "baseVersionId": "01a0879b-3175-7df0-a930-bcf7843d8e86",
+      "baseHash": "cce29ad3-4e7e-cdc6-6799-6df90286d6aa",
       "source": "project",
       "settings": {
         "contextVisibility": "hidden"
@@ -1455,8 +1455,8 @@
       "fileId": "01a0693f-82a4-74a8-a055-ba15a1f4482a",
       "referenceId": "01a0693f-82a4-7528-9e81-14d01be849e8",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a073ef-f811-7508-91f8-541c451eab6e",
-      "baseHash": "75426e70-0e35-af93-9433-c97eb88216cc",
+      "baseVersionId": "01a0879b-315a-77b4-99d1-f1480becf567",
+      "baseHash": "d9f1d4b1-2d92-8d92-62ee-66fba25e81ab",
       "source": "project",
       "settings": {
         "contextVisibility": "hidden"
@@ -1468,8 +1468,8 @@
       "fileId": "01a06940-9f4b-7118-8c07-4cc6908f856e",
       "referenceId": "01a06940-9f4b-71a0-9e8d-a9bca0cdd7b4",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a06941-21aa-714c-9153-961ecc94f5ca",
-      "baseHash": "88deebba-3399-0d3d-ab14-cd6401e2b0bf",
+      "baseVersionId": "01a0879b-3169-7e5c-b8c9-a84e7c5b2e13",
+      "baseHash": "9c06f266-938e-6bd9-dd38-088707bc9326",
       "source": "project",
       "settings": {
         "contextVisibility": "hidden"
@@ -1762,6 +1762,51 @@
       "fileType": "change-request",
       "baseVersionId": "01a0837c-b439-7bb0-aa2e-61daec9f1876",
       "baseHash": "e6fe8b08-790b-6181-971c-9f34c5429ef0",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Between Missions.gm-instructions.md",
+      "fileId": "01a0879b-319d-73b0-a747-327a39bf67a5",
+      "referenceId": "01a0879b-2fa5-731b-b003-1580902c9e5a",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a0879b-3198-7948-a718-48d7f4340656",
+      "baseHash": "97cfedd9-f2f0-e3af-9467-5fde1e16341e",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Character Creation.gm-instructions.md",
+      "fileId": "01a0879b-319e-7ad4-afc4-9aa74d5b7b44",
+      "referenceId": "01a0879b-2fa5-731b-b003-19c9b3cd6b94",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a0879b-3198-7220-bcdc-c08ab5be8fb2",
+      "baseHash": "0c7932ed-1341-9899-34ca-2cdb68f34151",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Checks and Conditions.gm-instructions.md",
+      "fileId": "01a0879b-319e-7ca4-b4a9-cbe0c0808b96",
+      "referenceId": "01a0879b-2fa5-731b-b003-1e7014ea6cb4",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a0879b-3198-7594-8597-73bb0def00df",
+      "baseHash": "41fe3664-dbf9-2f0d-5819-65ef0f47d64a",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Lore and Knowledge.gm-instructions.md",
+      "fileId": "01a0879b-319e-7e10-a632-0030c808b39b",
+      "referenceId": "01a0879b-2fa5-731b-b003-20090882f7f1",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a0879b-3199-7a64-9708-e379899cdfdd",
+      "baseHash": "9cd84e5a-b3e3-1c6e-fcb5-331d1ded4375",
+      "source": "project"
+    },
+    {
+      "path": "/GM Instructions/Mission Procedures.gm-instructions.md",
+      "fileId": "01a0879b-319e-7f5c-95af-f93cb0ce6395",
+      "referenceId": "01a0879b-2fa5-731b-b003-26f7be756f41",
+      "fileType": "gm-instructions",
+      "baseVersionId": "01a0879b-3199-7ce8-ae4b-66069521a933",
+      "baseHash": "cb93b9d9-f065-695d-9d0b-6ae12910e914",
       "source": "project"
     }
   ],

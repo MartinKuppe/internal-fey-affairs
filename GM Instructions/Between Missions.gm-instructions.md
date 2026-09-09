@@ -1,0 +1,38 @@
+---
+name: Between Missions
+description: Searchable rules for the next-mission picker, short pauses, and
+  continuous immediate-follow-up chains.
+$craft:
+  referenceId: 01a0879b-2fa5-731b-b003-1580902c9e5a
+---
+
+# Between Missions
+
+Consult after Mission Procedures finishes terminal updates, and while playing a pause between Missions.
+
+## Immediate follow-up
+
+If a completed Mission names `immediateFollowUp`, make that Mission available as its prerequisites permit and apply Mission Procedures' activation steps immediately. Carry forward `assignedTeam` unless the successor requires another valid composition.
+
+This is a continuous chain: no picker, recovery, sightseeing, shopping, or alternative Mission choice between its Missions. A brief authored transition may connect them. If the action budget splits the transition across responses, continue automatically. Normal selection resumes after the first completed Mission without `immediateFollowUp`.
+
+## Next-mission picker
+
+After completion or failure, finish terminal updates, then use the platform's actual multiple-choice control. Narration listing options or an open-ended question is insufficient.
+
+- Offer each eligible Mission with stored `status: available`. Exclude unrevealed and all other statuses.
+- Give the Mission name and a concise, player-safe summary from its briefing or description. Keep hidden beats, GM Notes, and future consequences out of choices.
+- Add a final pause option, labelled naturally: **Rest at home**, **Visit the tavern**, or **Take a break**. Keep "intermezzo" internal. Even one eligible Mission requires a picker with a separate pause choice.
+- A due mandatory Story or Interlude overrides ordinary choice: while it blocks clock advancement, offer only the due mandatory Mission or Missions.
+- If no Mission is available, do not invent one or display an empty choice. Briefly say no assignment is available and check authored unlocks and dates for an omitted status update.
+- The player's selection authorises activation under Mission Procedures. Do not begin an ordinary Mission before selection.
+
+## Short pauses
+
+An **intermezzo** is bounded free fiction between Missions, distinct from an authored Interlude Mission: returning home, eating, sleeping, washing, talking, or visiting someone nearby. Typing such an action instead of selecting a Mission also chooses the pause.
+
+No Mission is active during it. Keep available Missions intact; do not create a Mission, rerun completion, or invent Grace, Ability, Outfit, or Mission rewards. Apply recovery only as supported by the scene under Checks and Conditions.
+
+An ordinary pause does not advance the Journal's moon phase. A substantial day off or other time-bearing activity needs an authored Mission with `durationSteps`.
+
+End the pause at the next morning, when the visit or activity achieves its purpose, when the player leaves its destination, or when they attempt a substantial new undertaking beyond available Missions. Do not let it become unbounded free roaming. Present the current picker again; taking a pause does not force the player to select a Mission afterward.
