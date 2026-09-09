@@ -1,7 +1,7 @@
 ---
 name: Mission Procedures
 description: Searchable runtime procedure for campaign startup, mission teams,
-  beats, outcomes, dates, unlocks, trackers, maps, and journal refresh.
+  beats, outcomes, dates, unlocks, trackers, and journal refresh.
 $craft:
   referenceId: 01a0879b-2fa5-731b-b003-26f7be756f41
 ---
@@ -30,16 +30,16 @@ Normal progression is `upcoming` → `available` → `active` → `completed`. S
 
 ## Starting the campaign
 
-Game Start launches the Journal's `startingMission` directly, without a picker or required selection pin. Currently this is Down the Rabbit-Hole: apply the activation steps below and begin at Grannie's Hut before moving to the Fairy Ring. Follow the live Game Start opening and the Mission's authored opening beats.
+Game Start launches the Journal's `startingMission` directly, without a picker. Currently this is Down the Rabbit-Hole: apply the activation steps below and begin at Grannie's Hut before moving to the Fairy Ring. Follow the live Game Start opening and the Mission's authored opening beats.
 
 ## Activating a Mission
 
-Ordinary selection comes from the explicit multiple-choice prompt described in Between Missions. Opening a file or map pin does not start a Mission. On selection, or an authorised direct start:
+Ordinary selection comes from the explicit multiple-choice prompt described in Between Missions. Opening a Mission file does not start it. On selection, or an authorised direct start:
 
 1. Validate and record `assignedTeam`: include all `mandatoryMembers`, match `teamSize` when defined, choose remaining members from `selectableMembers`, and avoid duplicate character references.
 2. Set `status: active`, `startedDate` to the structured current date, and `currentBeatKey` to the first beat's key.
 3. Apply `startLoreUnlocks`.
-4. Highlight any existing Mission pin and begin at `startLocation` or the first beat's Location.
+4. Begin at `startLocation` or the first beat's Location.
 5. Refresh the Journal display as described below.
 
 ## Playing beats
@@ -53,10 +53,9 @@ When a Mission ends:
 1. Set `completed`, `failed`, or `expired` as permitted above; record structured `endedDate` and `actualOutcome`.
 2. Apply `completionLoreUnlocks` on completion or `failureLoreUnlocks` on failure. On completion, append `awardedAbilities` to the relevant Player Character's `abilities` without duplicates.
 3. Apply or narrate `completionEffects` / `failureEffects`. Mission completion does not itself resolve a Bargain: record partial deliveries and leave outstanding obligations or ongoing promises active, following Grace, Language and Bargains and the authored contract.
-4. Remove the selectable scene-map pin.
-5. Advance the Journal calendar by `durationSteps`; evaluate fixed dates, prerequisites, and Opportunity expirations, then synchronize available pins.
-6. Clear or omit `currentBeatKey` and refresh the Journal display.
-7. Consult Between Missions: start a completed Mission's `immediateFollowUp`, otherwise read the Journal's computed `availableMissions` and present the next choice.
+4. Advance the Journal calendar by `durationSteps`; evaluate fixed dates, prerequisites, and Opportunity expirations.
+5. Clear or omit `currentBeatKey` and refresh the Journal display.
+6. Consult Between Missions: start a completed Mission's `immediateFollowUp`, otherwise read the Journal's computed `availableMissions` and present the next choice.
 
 Keep this processing focused. Avoid repeated reads of the same Mission, Bargain, character, or map. If the action budget interrupts it, inspect saved state once next turn and resume only unfinished steps; do not restart completion or reapply effects.
 
@@ -68,7 +67,7 @@ An upcoming Mission becomes `available` when all `unlockAfter` Missions are `com
 
 A fixed-date Mission is due when the current date reaches or passes that date. A newly available fixed-date Story or Interlude blocks further clock advancement until completed. Do not interrupt an already active Mission retroactively; apply priority after it ends. If a multi-step duration crosses the mandatory date, make that Mission due at the resulting date. Resolve due mandatory Missions before further time-consuming choices.
 
-If any Mission in an upcoming or available Opportunity's `expiresWhenAvailable` becomes `available`, set that Opportunity to `expired` and remove its pin. Expiration is for an unundertaken Mission, not an attempted one.
+If any Mission in an upcoming or available Opportunity's `expiresWhenAvailable` becomes `available`, set that Opportunity to `expired`. Expiration is for an unundertaken Mission, not an attempted one.
 
 ## Applying Lore unlock rows
 
@@ -85,16 +84,9 @@ Consult **Lore and Knowledge** for the flags to apply to start, beat, completion
 - Display trackers only while the Mission is `active`. Retain stored values as history afterward.
 - Reaching target does not complete the Mission without its authored completion condition.
 
-## Scene-map pins
+## Mission presentation
 
-Use only the playthrough's runtime scene-map scope; never mutate shared author-time maps for Mission availability. Pins supplement the multiple-choice picker and must not replace or delay it.
-
-- `upcoming`: no pin.
-- `available`: place a linked Mission pin at `mapX`/`mapY` on `selectorMap`, labelled `pinLabel` or the Mission name. Replacing it must not create duplicates.
-- `active`: highlight or restyle its pin.
-- `completed`, `failed`, `expired`: remove its selectable pin; retain file and Journal history.
-
-Write statuses first, then perform map actions; pins do not update automatically from status. Use a consistent colour/icon scheme for Mission kinds with stronger active highlighting. Exact styling is a playtest choice, not canon.
+Present Missions through the Mission Journal and narrative picker, not map pins. Do not create or maintain Mission markers; ignore legacy `selectorMap`, `mapX`, `mapY` and `pinLabel` fields. Location pins and character tokens remain in use.
 
 ## Journal display and context
 

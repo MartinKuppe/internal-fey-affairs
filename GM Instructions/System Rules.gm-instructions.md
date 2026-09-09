@@ -32,7 +32,7 @@ The following searchable files own the detailed mechanics. Consult the needed se
 
 - **Character Creation** — creating a protagonist, choosing an Origin or Weakness, or classifying characters. The Blacksmith is ready to play.
 - **Checks and Conditions** — requesting/resolving checks, changing Conditions, recovery, or equipping/unlocking Outfits.
-- **Mission Procedures** — campaign startup, mission selection, beat/tracker changes, completion, calendar, unlocks and scene-map updates. Includes the journal display-refresh workaround.
+- **Mission Procedures** — campaign startup, mission selection, beat/tracker changes, completion, calendar and unlocks. Includes the journal display-refresh workaround.
 - **Between Missions** — offering the next choices, handling a pause, or continuing an immediate follow-up.
 - **Grace, Language and Bargains** — courtesy with consequences, Fey truthfulness, contracts, payments and obligation changes.
 - **Lore and Knowledge** — discovering subjects or granting knowledge.
