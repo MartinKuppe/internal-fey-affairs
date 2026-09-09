@@ -25,6 +25,49 @@
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/982eee25-054a-415f-9900-82b350c379f6",
         "name": "afraid",
         "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e55892d0-8f6e-4d41-b6f4-8ac171a7f307"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
+        "name": "happy",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c37400ad-0c42-4b1e-bd78-bc750b4c5c14"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
+        "name": "sad",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/93f3ad68-7a58-479c-8cd1-cfa44e905834"
+      },
+      {
+        "name": "angry",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/690bcbe5-e0a3-4aff-8ba0-b44f9b616430"
+      },
+      {
+        "name": "surprised",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e37f00e2-6038-44c1-be2c-fb84a522535c"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
+        "name": "thoughtful",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/582957f6-274f-4650-9fee-9447aeb3ed65"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
+        "name": "amused",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/702e3f6b-6fb9-457a-8274-a05ed68533f6"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
+        "name": "determined",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3c42930c-c87c-4f76-957b-3bbb289d4152"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
+        "name": "embarrassed",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/2c2f6446-1fc4-4fd7-95d1-8d7b007eedb2"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
+        "name": "smug",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/53bf7375-3822-48f5-ae37-88c9ec7b923f"
       }
     ],
     "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/a61e8e79-c4a8-427c-ab3a-8fe2caae1673"
@@ -43,9 +86,7 @@
       "fileTypeSlug": "archetype"
     },
     {
-      "slug": "leannán-sidhe",
-      "referenceId": "019fedb8-9e80-7904-83f3-d6026c958c4b",
-      "fileTypeSlug": "archetype"
+      "slug": "leannán-sidhe"
     }
   ],
   "background": "Meabh presents herself to the player as a Takeling woman fleeing the Fey. Among other humans she can use the cover story that she came from another village and was rescued while fleeing bandits. She was raised in Fey facilities, educated in Fey science and human society, and trained extensively in music, dance, art, storytelling, seduction, and inspiration.",
