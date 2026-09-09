@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-09T11:34:46.629Z",
+  "syncedAt": "2026-09-09T19:06:14.733Z",
   "folders": [
     {
       "path": "/Locations",
@@ -1835,8 +1835,8 @@
     {
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "3bead313-8ba8-afc6-189d-72b1bbf1692e",
-      "contentHash": "a17b9214-43d1-a52a-7126-92726d90fe9e"
+      "schemaHash": "7b67d9de-9083-4308-7886-105d0bbd1fd0",
+      "contentHash": "fc479b96-1297-a31e-873b-2e1172bfb772"
     },
     {
       "slug": "archetype",
