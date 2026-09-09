@@ -1,0 +1,14 @@
+{
+  "content": "# Brief: Starting Mission never sets currentBeatKey\n\n**Status:** Done\n**Opened:** 2026-09-08\n**Reviewer:** Ingame-oracle\n\n## Problem\n\nMission Journal `text-3` (`{$item: currentBeatObjective}`) is hidden on fresh starts. `card-3.visible = {$item: currentBeatObjective}` collapses it because `currentBeatObjective` is `\"\"`.\n\n## Cause\n\n`System Rules > Starting the campaign` and the pinned Game Start Instructions start Down the Rabbit-Hole narratively (\"begin with goat-chase\") but never write `currentBeatKey`. `Mission.currentBeatObjective` needs `status == active` + `storyBeats.find(key == currentBeatKey)`. No key = `\"\"` = hidden.\n\n## Fix\n\n1. `System Rules > Starting the campaign`: apply the full `Selecting a Mission` procedure to the starting Mission.\n2. `Game Start Instructions`: explicitly set `status`, structured `startedDate`, and `currentBeatKey = \"goat-chase\"`.\n\n## Acceptance\n\nFresh playthrough starting Down the Rabbit-Hole has `status=active`, structured `startedDate`, `currentBeatKey=goat-chase`, non-empty `currentBeatObjective`, visible `text-3`.\n\n---\n\n## Done — implementation notes\n\n- Updated `/GM Instructions/System Rules.gm-instructions.md` > Starting the campaign: starting Mission now applies the full Selecting a Mission procedure.\n- Updated Game Start `Start at Granny's Hut` openingInstructions via `game-start set`: set status active, structured startedDate copy, currentBeatKey \"goat-chase\", begin with goat-chase.\n- This project fix does not backfill the live run — that still needs currentBeatKey set on Down the Rabbit-Hole in play.\n\n## Review\n\n<Awaiting reviewer.>\n",
+  "name": "Starting Mission never sets currentBeatKey",
+  "description": "Starting Mission goes active without a beat key, hiding the journal beat objective.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3eda43cd-1a88-4be6-8dee-6574b56c022d",
+    "generation": {
+      "status": "success",
+      "startedAt": "2026-09-09T00:06:13.845Z",
+      "finishedAt": "2026-09-09T00:06:23.030Z",
+      "prompt": "A Franco-Belgian Bande Dessinée illustration in the Ligne Claire style. A wide shot of a whimsical, surreal landscape where a confused adventurer stands before a giant, floating mechanical journal. The journal is open, but one of its pages is a blank, white void, representing a missing objective. In the background, a mischievous goat is leaping away with a golden key in its mouth, leading the adventurer on a \"goat-chase.\" Simple shapes, clean black outlines, cell-shading with a limited palette of primary colors and flat tones. Minimal texture, bright lighting, and a clear, balanced composition. No text, no labels, no watermarks."
+    }
+  }
+}

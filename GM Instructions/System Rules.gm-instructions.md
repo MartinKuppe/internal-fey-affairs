@@ -287,7 +287,7 @@ The campaign runs as a mostly linear sequence of **Story Missions**, with Side, 
 
 ### Starting the campaign
 
-Game Start launches the Mission Journal's `startingMission` directly. The starting Mission requires no selection pin. In the current campaign, **Down the Rabbit-Hole** is the starting Mission; initialise it from the Journal and begin at Grannie's Hut before moving to the Fairy Ring.
+Game Start launches the Mission Journal's `startingMission` directly. The starting Mission requires no selection pin. In the current campaign, **Down the Rabbit-Hole** is the starting Mission; apply the full **Selecting a Mission** procedure to it (validate and record `assignedTeam`, set `status` to `active`, set `startedDate` to a structured copy of the current campaign date, set `currentBeatKey` to the first beat's key, apply `startLoreUnlocks`, highlight the pin, begin at `startLocation` or the first beat's Location) and begin at Grannie's Hut before moving to the Fairy Ring.
 
 ### Selecting a Mission
 
@@ -306,7 +306,7 @@ Game Start launches the Mission Journal's `startingMission` directly. The starti
 ### Playing beats
 
 - Follow `storyBeats` in authored order unless the Mission explicitly says otherwise.
-- Update `currentBeatKey` as play advances.
+- Update `currentBeatKey` as play advances, then force a Mission Journal display refresh with `scene unpin` followed by `scene pin campaign-mission-journal.mission-journal`.
 - Apply each beat's `loreUnlocks` when that beat is reached or resolved as authored.
 - Individual actions and plans may fail. Failure must alter cost, time, Conditions, position, social standing, relationships, or approach rather than block Story, Side, or Interlude completion.
 
@@ -397,7 +397,8 @@ An **intermezzo** is bounded free fiction between Missions, not an authored Inte
 
 ### Context and playability
 
-- The Mission Journal contains mutable campaign state and should be pinned in GM context. Mission files should be searchable or partial rather than all pinned. System Rules must remain standing GM context.
+- The Mission Journal contains mutable campaign state and must stay pinned in GM context for the whole campaign. Keep the Campaign Mission Journal pinned permanently; do not swap it out for individual Mission files. Mission files should be searchable or partial rather than all pinned. System Rules must remain standing GM context.
+- The pinned Mission Journal panel does not always re-render when computed mission state changes. After any mission state change (story beat advance, status change, tracker update, date change), force a display refresh with `scene unpin` followed by `scene pin campaign-mission-journal.mission-journal`.
 - Because context visibility is app-managed, verify manually: **System Rules → pinned; Campaign Mission Journal → pinned; Mission files → partial or searchable.**
 
 ## Guiding the Game Master

@@ -983,7 +983,7 @@
         "type": "Heading",
         "props": {
           "text": "No active mission ",
-          "color": "#5e826e",
+          "color": "#7a7a7a",
           "level": "h4",
           "className": null
         },

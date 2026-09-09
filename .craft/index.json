@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-09T00:00:26.674Z",
+  "syncedAt": "2026-09-09T11:34:46.629Z",
   "folders": [
     {
       "path": "/Locations",
@@ -121,7 +121,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a07526-16bb-73e8-892c-673f54c36c1f",
+      "baseVersionId": "01a0837c-3d59-77e0-93bf-037d5c427c55",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -134,8 +134,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a08377-21aa-7bb0-b7c8-231d5860df75",
-      "baseHash": "75d59dee-a041-e5e1-2d38-626d85afe464",
+      "baseVersionId": "01a085f1-9419-713c-9e36-136908d18d2c",
+      "baseHash": "1434069d-6923-35fb-7e40-c6ba1d20fef5",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1181,8 +1181,8 @@
       "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileType": "non-player-character",
-      "baseVersionId": "01a08377-2162-766c-a0c6-835aa6d0bfad",
-      "baseHash": "a3aa7baf-0b2a-3c06-1a7c-1a0a9b9f4824",
+      "baseVersionId": "01a085ed-bf51-7798-ae90-0229ae649f3e",
+      "baseHash": "c2f9c8ea-2b01-b0c9-6a9f-8f4637593030",
       "source": "project"
     },
     {
@@ -1754,6 +1754,15 @@
       "baseVersionId": "01a0826e-bd43-7104-96d4-82f29cd5c892",
       "baseHash": "24f888f9-41f0-f353-fcc9-4b577b77eac3",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/Starting Mission never sets currentBeatKey.change-request.md",
+      "fileId": "01a0837c-8131-7a8c-92fe-66ff732b74cf",
+      "referenceId": "01a0837c-8131-7b34-bfdc-6ca4e4accca1",
+      "fileType": "change-request",
+      "baseVersionId": "01a0837c-b439-7bb0-aa2e-61daec9f1876",
+      "baseHash": "e6fe8b08-790b-6181-971c-9f34c5429ef0",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1857,7 +1866,7 @@
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
       "schemaHash": "6f998a98-0bca-7637-0026-033b53508bf3",
-      "contentHash": "378a73fb-08b9-1356-f594-7274645c7d3f"
+      "contentHash": "09377b28-4b62-d73a-d587-236ae09227bc"
     },
     {
       "slug": "change-request",
