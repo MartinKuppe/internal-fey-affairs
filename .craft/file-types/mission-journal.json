@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "6f998a98-0bca-7637-0026-033b53508bf3",
+  "schemaHash": "8446dc01-0b90-035a-857a-986e504942ac",
   "schema": {
     "type": "object",
     "required": [
@@ -184,6 +184,17 @@
             "description": {
               "type": "string"
             },
+            "trackerCount": {
+              "type": "number",
+              "title": "Tracker Count"
+            },
+            "trackerLines": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "title": "Tracker Lines"
+            },
             "fixedDateLabel": {
               "type": "string"
             },
@@ -193,7 +204,7 @@
           }
         },
         "title": "Active Missions",
-        "expression": "($self.missions ?? []).filter(m => load(m)?.status == \"active\").map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", fixedDateLabel: load(m)?.fixedDateLabel ?? \"\", status: load(m)?.status ?? \"\", briefing: load(m)?.briefing ?? \"\", currentBeatObjective: load(m)?.currentBeatObjective ?? \"\", image: load(m)?.image ?? null }))",
+        "expression": "($self.missions ?? []).filter(m => load(m)?.status == \"active\").map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", fixedDateLabel: load(m)?.fixedDateLabel ?? \"\", status: load(m)?.status ?? \"\", briefing: load(m)?.briefing ?? \"\", currentBeatObjective: load(m)?.currentBeatObjective ?? \"\", trackerLines: (load(m)?.missionTrackers ?? []).filter(t => t.showAtZero === true || (t.current ?? 0) > 0).map(t => `${t.label ?? \"\"}: ${t.current ?? 0}/${t.target ?? 0}`), trackerCount: (load(m)?.missionTrackers ?? []).filter(t => t.showAtZero === true || (t.current ?? 0) > 0).length, image: load(m)?.image ?? null }))",
         "description": "Computed projection of Missions whose stored status is active. Read-only; never stored."
       },
       "missionHistory": {
@@ -522,7 +533,8 @@
         },
         "children": [
           "stack-2",
-          "stack-8"
+          "stack-8",
+          "stack-9"
         ]
       },
       "grid": {
@@ -670,6 +682,20 @@
           "variant": "body",
           "editPath": null,
           "className": null
+        },
+        "children": []
+      },
+      "text-4": {
+        "type": "BadgeList",
+        "props": {
+          "items": {
+            "$item": "trackerLines"
+          },
+          "variant": "secondary"
+        },
+        "visible": {
+          "gt": 0,
+          "$item": "trackerCount"
         },
         "children": []
       },
@@ -839,6 +865,24 @@
         },
         "children": [
           "card-3"
+        ]
+      },
+      "stack-9": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": null,
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "vertical",
+          "bgImageFit": null
+        },
+        "children": [
+          "text-4"
         ]
       },
       "badge-3-2": {

@@ -1,9 +1,13 @@
 {
-  "syncedAt": "2026-09-09T19:26:30.214Z",
+  "syncedAt": "2026-09-09T20:08:03.200Z",
   "folders": [
     {
       "path": "/Locations",
       "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
+    },
+    {
+      "path": "/GM Instructions",
+      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
     },
     {
       "path": "/Mission Journals",
@@ -76,10 +80,6 @@
     {
       "path": "/Player Characters",
       "folderId": "01a063c4-7ef2-7bc4-a3e8-27b1ccee6293"
-    },
-    {
-      "path": "/GM Instructions",
-      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
     },
     {
       "path": "/Archetypes",
@@ -1415,8 +1415,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a08377-1e7b-7444-a402-679a41d00a3c",
-      "baseHash": "061aed48-65cb-6c91-caae-86a0565aeaa2",
+      "baseVersionId": "01a087c7-dc69-72e4-8f03-a2d2da25c0af",
+      "baseHash": "f57836d8-cd9a-b33e-4ee8-cef687dcf16a",
       "source": "project"
     },
     {
@@ -1433,7 +1433,7 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a08377-1e6e-7a7c-9162-a04c0e42745d",
+      "baseVersionId": "01a087c8-351d-7008-9eb6-fea25d0bf801",
       "baseHash": "59675024-5d20-51f2-58ee-462f3435d732",
       "source": "project"
     },
@@ -1850,8 +1850,8 @@
     {
       "slug": "mission",
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "e72113ce-717c-bee2-20ab-0d7c71eeb903",
-      "contentHash": "de8cdb61-b068-5849-3bff-a0c988182611"
+      "schemaHash": "75c5e000-1398-1bda-a3d1-efd1dc840dad",
+      "contentHash": "32fc896f-a026-8b1a-1c5f-a8db7763a0e3"
     },
     {
       "slug": "lore-journal",
@@ -1910,8 +1910,8 @@
     {
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
-      "schemaHash": "6f998a98-0bca-7637-0026-033b53508bf3",
-      "contentHash": "09377b28-4b62-d73a-d587-236ae09227bc"
+      "schemaHash": "8446dc01-0b90-035a-857a-986e504942ac",
+      "contentHash": "d89e62be-9862-8cf3-4717-6504adf468d5"
     },
     {
       "slug": "change-request",

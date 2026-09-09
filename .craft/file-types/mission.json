@@ -5,7 +5,7 @@
   "contentType": "json",
   "designation": null,
   "category": null,
-  "schemaHash": "e72113ce-717c-bee2-20ab-0d7c71eeb903",
+  "schemaHash": "75c5e000-1398-1bda-a3d1-efd1dc840dad",
   "schema": {
     "type": "object",
     "required": [
@@ -13,9 +13,9 @@
       "code",
       "kind",
       "status",
-      "durationSteps",
       "objective",
-      "storyBeats"
+      "storyBeats",
+      "durationSteps"
     ],
     "properties": {
       "code": {
@@ -739,6 +739,46 @@
           "locked-body"
         ]
       },
+      "mapx-stat": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 1,
+          "color": null,
+          "items": [
+            [
+              "Map X",
+              {
+                "$state": "/mapX"
+              }
+            ]
+          ],
+          "bgColor": null
+        },
+        "visible": {
+          "$state": "/mapX"
+        },
+        "children": []
+      },
+      "mapy-stat": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 1,
+          "color": null,
+          "items": [
+            [
+              "Map Y",
+              {
+                "$state": "/mapY"
+              }
+            ]
+          ],
+          "bgColor": null
+        },
+        "visible": {
+          "$state": "/mapY"
+        },
+        "children": []
+      },
       "body-stack": {
         "type": "Stack",
         "props": {
@@ -758,7 +798,27 @@
           "location-section",
           "team-section",
           "sep3",
-          "outcome-section"
+          "outcome-section",
+          "mapx-stat",
+          "mapy-stat",
+          "gmnotes-section",
+          "pinlabel-section",
+          "endeddate-section",
+          "fixeddate-section",
+          "storybeats-references",
+          "selectormap-select",
+          "starteddate-section",
+          "unlockafter-references",
+          "currentbeatkey-section",
+          "failureeffects-section",
+          "awardedabilities-references",
+          "startloreunlocks-references",
+          "completioneffects-section",
+          "immediatefollowup-select",
+          "failureloreunlocks-references",
+          "expireswhenavailable-references",
+          "completionloreunlocks-references",
+          "missiontrackersdisplay-stat"
         ]
       },
       "kind-badge": {
@@ -800,6 +860,16 @@
           "kind-badge",
           "status-badge"
         ]
+      },
+      "gmnotes-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/gmNotes"
+          }
+        },
+        "children": []
       },
       "outcome-body": {
         "type": "Stack",
@@ -895,6 +965,16 @@
         },
         "children": []
       },
+      "pinlabel-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/pinLabel"
+          }
+        },
+        "children": []
+      },
       "objective-text": {
         "type": "Markdown",
         "props": {
@@ -981,6 +1061,18 @@
         },
         "children": []
       },
+      "endeddate-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_endedDateEntries"
+          },
+          "bgColor": null
+        },
+        "children": []
+      },
       "fixed-date-stat": {
         "type": "StatGrid",
         "props": {
@@ -998,6 +1090,40 @@
           "$state": "/fixedDateLabel"
         },
         "children": []
+      },
+      "fixeddate-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_fixedDateEntries"
+          },
+          "bgColor": null
+        },
+        "children": []
+      },
+      "gmnotes-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "GM Notes",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "gmnotes-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/gmNotes"
+        },
+        "children": [
+          "gmnotes-heading",
+          "gmnotes-text"
+        ]
       },
       "outcome-heading": {
         "type": "Heading",
@@ -1113,6 +1239,28 @@
           "location-grid"
         ]
       },
+      "pinlabel-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Pin Label",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "pinlabel-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/pinLabel"
+        },
+        "children": [
+          "pinlabel-heading",
+          "pinlabel-text"
+        ]
+      },
       "current-beat-text": {
         "type": "Markdown",
         "props": {
@@ -1121,6 +1269,50 @@
           }
         },
         "children": []
+      },
+      "endeddate-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Ended Date",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "endeddate-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/endedDate"
+        },
+        "children": [
+          "endeddate-heading",
+          "endeddate-stats"
+        ]
+      },
+      "fixeddate-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Fixed Date",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "fixeddate-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/fixedDate"
+        },
+        "children": [
+          "fixeddate-heading",
+          "fixeddate-stats"
+        ]
       },
       "mandatory-members": {
         "type": "FileReferenceGrid",
@@ -1162,6 +1354,18 @@
           "objective-heading",
           "objective-text"
         ]
+      },
+      "starteddate-stats": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 2,
+          "color": null,
+          "items": {
+            "$state": "/_startedDateEntries"
+          },
+          "bgColor": null
+        },
+        "children": []
       },
       "debriefing-heading": {
         "type": "Heading",
@@ -1206,6 +1410,64 @@
           "$state": "/selectableMembers"
         },
         "children": []
+      },
+      "selectormap-select": {
+        "type": "Select",
+        "props": {
+          "label": "Selector Map",
+          "value": {
+            "$state": "/selectorMap"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "location"
+        },
+        "visible": {
+          "$state": "/selectorMap"
+        },
+        "children": []
+      },
+      "currentbeatkey-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/currentBeatKey"
+          }
+        },
+        "children": []
+      },
+      "failureeffects-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/failureEffects"
+          }
+        },
+        "children": []
+      },
+      "starteddate-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Started Date",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "starteddate-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/startedDate"
+        },
+        "children": [
+          "starteddate-heading",
+          "starteddate-stats"
+        ]
       },
       "current-beat-heading": {
         "type": "Heading",
@@ -1252,6 +1514,136 @@
           "tracker-unique"
         ]
       },
+      "storybeats-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/storyBeats"
+          },
+          "label": "Story Beats",
+          "columns": 4,
+          "fileTypeSlug": "location",
+          "metadataFields": [
+            {
+              "name": "key",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "events",
+              "type": "string"
+            },
+            {
+              "name": "objective",
+              "type": "string"
+            },
+            {
+              "name": "loreUnlocks",
+              "type": "string"
+            },
+            {
+              "name": "gmInstructions",
+              "type": "string"
+            }
+          ],
+          "referenceField": "location"
+        },
+        "visible": {
+          "$state": "/storyBeats"
+        },
+        "children": []
+      },
+      "completioneffects-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/completionEffects"
+          }
+        },
+        "children": []
+      },
+      "currentbeatkey-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Current Beat Key",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "currentbeatkey-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/currentBeatKey"
+        },
+        "children": [
+          "currentbeatkey-heading",
+          "currentbeatkey-text"
+        ]
+      },
+      "failureeffects-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Failure Effects",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "failureeffects-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/failureEffects"
+        },
+        "children": [
+          "failureeffects-heading",
+          "failureeffects-text"
+        ]
+      },
+      "unlockafter-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/unlockAfter"
+          },
+          "label": "Unlock After",
+          "columns": 4,
+          "fileTypeSlug": "mission",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/unlockAfter"
+        },
+        "children": []
+      },
+      "immediatefollowup-select": {
+        "type": "Select",
+        "props": {
+          "label": "Immediate Follow-Up",
+          "value": {
+            "$state": "/immediateFollowUp"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "mission"
+        },
+        "visible": {
+          "$state": "/immediateFollowUp"
+        },
+        "children": []
+      },
       "mission-trackers-heading": {
         "type": "Heading",
         "props": {
@@ -1282,6 +1674,166 @@
           "mission-trackers-heading",
           "mission-trackers-list"
         ]
+      },
+      "completioneffects-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Completion Effects",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "completioneffects-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/completionEffects"
+        },
+        "children": [
+          "completioneffects-heading",
+          "completioneffects-text"
+        ]
+      },
+      "awardedabilities-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/awardedAbilities"
+          },
+          "label": "Awarded Abilities",
+          "columns": 4,
+          "fileTypeSlug": "ability",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/awardedAbilities"
+        },
+        "children": []
+      },
+      "missiontrackersdisplay-stat": {
+        "type": "StatGrid",
+        "props": {
+          "cols": 1,
+          "color": null,
+          "items": [
+            [
+              "Mission Trackers Display",
+              {
+                "$state": "/missionTrackersDisplay"
+              }
+            ]
+          ],
+          "bgColor": null
+        },
+        "visible": {
+          "$state": "/missionTrackersDisplay"
+        },
+        "children": []
+      },
+      "startloreunlocks-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/startLoreUnlocks"
+          },
+          "label": "Start Lore Unlocks",
+          "columns": 4,
+          "fileTypeSlug": "lore-card",
+          "metadataFields": [
+            {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "name": "level",
+              "type": "string"
+            }
+          ],
+          "referenceField": "card"
+        },
+        "visible": {
+          "$state": "/startLoreUnlocks"
+        },
+        "children": []
+      },
+      "failureloreunlocks-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/failureLoreUnlocks"
+          },
+          "label": "Failure Lore Unlocks",
+          "columns": 4,
+          "fileTypeSlug": "lore-card",
+          "metadataFields": [
+            {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "name": "level",
+              "type": "string"
+            }
+          ],
+          "referenceField": "card"
+        },
+        "visible": {
+          "$state": "/failureLoreUnlocks"
+        },
+        "children": []
+      },
+      "expireswhenavailable-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/expiresWhenAvailable"
+          },
+          "label": "Expires When Available",
+          "columns": 4,
+          "fileTypeSlug": "mission",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/expiresWhenAvailable"
+        },
+        "children": []
+      },
+      "completionloreunlocks-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/completionLoreUnlocks"
+          },
+          "label": "Completion Lore Unlocks",
+          "columns": 4,
+          "fileTypeSlug": "lore-card",
+          "metadataFields": [
+            {
+              "enum": [
+                "Common Knowledge",
+                "Deep Lore",
+                "Fey Knowledge"
+              ],
+              "name": "level",
+              "type": "string"
+            }
+          ],
+          "referenceField": "card"
+        },
+        "visible": {
+          "$state": "/completionLoreUnlocks"
+        },
+        "children": []
       }
     }
   },
