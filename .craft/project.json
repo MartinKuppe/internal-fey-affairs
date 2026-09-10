@@ -72,6 +72,46 @@
           {
             "name": "thoughtful",
             "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/93b36678-cfbf-458f-b3dd-3000abae1abf"
+          },
+          {
+            "name": "happy",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/de2a34ed-c6f7-43e7-b803-f608e3471113"
+          },
+          {
+            "name": "sad",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1b188133-91aa-4191-afb5-a836dbda9e31"
+          },
+          {
+            "name": "angry",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e3166b60-ee65-46bd-a502-f1dce1edf1b2"
+          },
+          {
+            "name": "surprised",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b69fa855-548c-46fc-9da0-18f39b3ec8d2"
+          },
+          {
+            "name": "afraid",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e4aea72c-e0fb-47dc-ab23-c7a9cff2e841"
+          },
+          {
+            "name": "amused",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e658507e-9ffe-43ea-b3ac-f69eea1832d1"
+          },
+          {
+            "name": "determined",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9e428b0c-c4a2-4e5d-adae-8e76da0c61f0"
+          },
+          {
+            "name": "embarrassed",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e45b900d-349c-43b7-9704-394674e0569c"
+          },
+          {
+            "name": "wary",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b42b5c57-b7bc-4629-9b18-52878c0bdecf"
+          },
+          {
+            "name": "smug",
+            "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/292d90e8-513f-4d2f-b3b0-e74b55e809cf"
           }
         ]
       },

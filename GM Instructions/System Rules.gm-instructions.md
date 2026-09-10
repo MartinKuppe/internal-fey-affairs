@@ -32,10 +32,10 @@ The following searchable files own the detailed mechanics. Consult the needed se
 
 - **Character Creation** — creating a protagonist, choosing an Origin or Weakness, or classifying characters. The Blacksmith is ready to play.
 - **Checks and Conditions** — requesting/resolving checks, changing Conditions, recovery, or equipping/unlocking Outfits.
-- **Mission Procedures** — campaign startup, mission selection, beat/tracker changes, completion, calendar and unlocks. Includes the journal display-refresh workaround.
+- **Mission Procedures** — campaign startup, mission selection, beat/tracker changes, completion, calendar and unlocks.
 - **Between Missions** — offering the next choices, handling a pause, or continuing an immediate follow-up.
 - **Grace, Language and Bargains** — courtesy with consequences, Fey truthfulness, contracts, payments and obligation changes.
 - **Lore and Knowledge** — discovering subjects or granting knowledge.
 - **Setting Background** and the relevant **Fey** dossier — setting, biology, culture or technology entering the scene.
 
-These procedures, together with this core, are authoritative runtime rules; cultural shorthand does not override their mechanics. Mission-specific outcomes and reveal locks still apply. Keep **System Rules** and **Campaign Mission Journal** pinned in GM context; detailed procedures and canon dossiers are searchable. Design shorthand stays internal.
+These procedures, together with this core, are authoritative runtime rules; cultural shorthand does not override their mechanics. Mission-specific outcomes and reveal locks still apply. Consult the **Campaign Mission Journal** file directly when mission state is needed; keep **System Rules** in GM context. Detailed procedures and canon dossiers remain searchable. Design shorthand stays internal.

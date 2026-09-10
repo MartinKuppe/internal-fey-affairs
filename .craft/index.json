@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-09T20:08:03.200Z",
+  "syncedAt": "2026-09-10T00:38:02.817Z",
   "folders": [
     {
       "path": "/Locations",
@@ -121,7 +121,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a0837c-3d59-77e0-93bf-037d5c427c55",
+      "baseVersionId": "01a088b1-6633-7864-99f5-cda2fe9362b5",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -134,8 +134,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a087a2-d3f5-73c8-8dd4-99d14d2d1b32",
-      "baseHash": "8008ddb9-461e-a1ef-79dd-c908c3fe9690",
+      "baseVersionId": "01a088b0-c535-78d0-baa5-09c3d21a241b",
+      "baseHash": "cff10b2c-1085-1cab-31c7-d68fc43e222b",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1181,8 +1181,8 @@
       "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileType": "non-player-character",
-      "baseVersionId": "01a085ed-bf51-7798-ae90-0229ae649f3e",
-      "baseHash": "c2f9c8ea-2b01-b0c9-6a9f-8f4637593030",
+      "baseVersionId": "01a08884-4019-7e50-87f1-5e950cce0bc6",
+      "baseHash": "64be61c2-c1e8-30ea-ab15-7d823ccbb7bc",
       "source": "project"
     },
     {
@@ -1397,8 +1397,8 @@
       "fileId": "01a06897-3481-73e4-921e-e1fad45c1c9f",
       "referenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1",
       "fileType": "non-player-character",
-      "baseVersionId": "01a08377-2152-7ec0-88f0-a079f67b871b",
-      "baseHash": "af7e7974-1449-fa7c-b1c9-0dbff2b10ddb",
+      "baseVersionId": "01a087ed-5c65-7c0c-8a68-7db1debdf250",
+      "baseHash": "97bde38e-3970-b284-1aa3-6d63a29a51df",
       "source": "project"
     },
     {
@@ -1433,8 +1433,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a087c8-351d-7008-9eb6-fea25d0bf801",
-      "baseHash": "59675024-5d20-51f2-58ee-462f3435d732",
+      "baseVersionId": "01a08852-5076-7340-b121-f63b6234ee41",
+      "baseHash": "2f29144d-03ee-1cbd-026d-400507ae3d00",
       "source": "project"
     },
     {
@@ -1805,8 +1805,8 @@
       "fileId": "01a0879b-319e-7f5c-95af-f93cb0ce6395",
       "referenceId": "01a0879b-2fa5-731b-b003-26f7be756f41",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a087a2-d3e9-7124-966d-d49b126cc662",
-      "baseHash": "d544ec5c-646c-7d51-dc21-85856c7a4be1",
+      "baseVersionId": "01a088b1-601d-7c10-a514-27aee10c8366",
+      "baseHash": "0a3bcb83-193c-ec98-664f-6114fd10d6f0",
       "source": "project"
     }
   ],
@@ -1920,5 +1920,5 @@
       "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
     }
   ],
-  "projectSettingsHash": "d9bdbbef-f6be-9a1a-75b4-acaae44d5e93"
+  "projectSettingsHash": "eaf54961-83bc-27de-8599-f2ca22ac6ed7"
 }

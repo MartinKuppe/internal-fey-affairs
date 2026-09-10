@@ -1,7 +1,7 @@
 ---
 name: Mission Procedures
 description: Searchable runtime procedure for campaign startup, mission teams,
-  beats, outcomes, dates, unlocks, trackers, and journal refresh.
+  beats, outcomes, dates, unlocks, and trackers.
 $craft:
   referenceId: 01a0879b-2fa5-731b-b003-26f7be756f41
 ---
@@ -40,11 +40,10 @@ Ordinary selection comes from the explicit multiple-choice prompt described in B
 2. Set `status: active`, `startedDate` to the structured current date, and `currentBeatKey` to the first beat's key.
 3. Apply `startLoreUnlocks`.
 4. Begin at `startLocation` or the first beat's Location.
-5. Refresh the Journal display as described below.
 
 ## Playing beats
 
-Follow `storyBeats` in authored order unless the Mission says otherwise. Update `currentBeatKey` as play advances and apply beat `loreUnlocks` when reached or resolved as authored. Refresh the Journal after beat or tracker changes. Individual plans may fail; Story, Side, and Interlude Missions continue through those consequences.
+Follow `storyBeats` in authored order unless the Mission says otherwise. Update `currentBeatKey` as play advances and apply beat `loreUnlocks` when reached or resolved as authored. Individual plans may fail; Story, Side, and Interlude Missions continue through those consequences.
 
 ## Terminal outcomes
 
@@ -54,7 +53,7 @@ When a Mission ends:
 2. Apply `completionLoreUnlocks` on completion or `failureLoreUnlocks` on failure. On completion, append `awardedAbilities` to the relevant Player Character's `abilities` without duplicates.
 3. Apply or narrate `completionEffects` / `failureEffects`. Mission completion does not itself resolve a Bargain: record partial deliveries and leave outstanding obligations or ongoing promises active, following Grace, Language and Bargains and the authored contract.
 4. Advance the Journal calendar by `durationSteps`; evaluate fixed dates, prerequisites, and Opportunity expirations.
-5. Clear or omit `currentBeatKey` and refresh the Journal display.
+5. Clear or omit `currentBeatKey`.
 6. Consult Between Missions: start a completed Mission's `immediateFollowUp`, otherwise read the Journal's computed `availableMissions` and present the next choice.
 
 Keep this processing focused. Avoid repeated reads of the same Mission, Bargain, character, or map. If the action budget interrupts it, inspect saved state once next turn and resume only unfinished steps; do not restart completion or reapply effects.
@@ -90,6 +89,4 @@ Present Missions through the Mission Journal and narrative picker, not map pins.
 
 ## Journal display and context
 
-After a beat, status, tracker, or date change, refresh the stale sidebar with `scene unpin` followed by `scene pin campaign-mission-journal.mission-journal`. Refresh once after the related updates, not once per field.
-
-This refresh concerns the **scene's displayed file**, not context visibility. Keep Campaign Mission Journal and System Rules pinned in GM context permanently; do not replace the Journal with individual Missions. Mission files remain partial or searchable. Context visibility is app-managed and must be verified in the app.
+Present Missions through the Mission Journal file and the narrative picker. Do not replace the Journal with individual Mission files. The Mission Journal and Mission file types stay `searchable`; context visibility is app-managed.
