@@ -21,40 +21,42 @@
       {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/982eee25-054a-415f-9900-82b350c379f6",
         "name": "afraid",
-        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e55892d0-8f6e-4d41-b6f4-8ac171a7f307"
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/002d6dd0-d90b-4820-aad0-1be9f0e7f46e"
       },
       {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "happy",
-        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c37400ad-0c42-4b1e-bd78-bc750b4c5c14"
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/bb29ae70-5608-4d8f-8c37-99c0972e2180"
       },
       {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "sad",
-        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/93f3ad68-7a58-479c-8cd1-cfa44e905834"
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/06d292b8-f440-4e5d-8d4b-c55410d5e22a"
       },
       {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "angry",
         "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/690bcbe5-e0a3-4aff-8ba0-b44f9b616430"
       },
       {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "surprised",
         "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e37f00e2-6038-44c1-be2c-fb84a522535c"
       },
       {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "thoughtful",
-        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/582957f6-274f-4650-9fee-9447aeb3ed65"
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b057dd11-f8ed-41fa-8afe-28cd3e313122"
       },
       {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "amused",
-        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/702e3f6b-6fb9-457a-8274-a05ed68533f6"
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3a321692-bf44-407d-87e3-115d3cce4dc1"
       },
       {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "determined",
-        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3c42930c-c87c-4f76-957b-3bbb289d4152"
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8a3e8db1-d27d-4bd0-af4c-a2495dfd33da"
       },
       {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
@@ -65,6 +67,11 @@
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "smug",
         "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/53bf7375-3822-48f5-ae37-88c9ec7b923f"
+      },
+      {
+        "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
+        "name": "teleporting",
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/95fcb01b-41db-4e55-97ac-1f4c8da8cd97"
       }
     ],
     "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/a61e8e79-c4a8-427c-ab3a-8fe2caae1673"
