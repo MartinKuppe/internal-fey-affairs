@@ -830,7 +830,7 @@
         },
         "children": [
           "card-9",
-          "stack-2"
+          "grid-5"
         ]
       },
       "card-9": {
@@ -905,6 +905,22 @@
         "children": [
           "stack-5",
           "stack-4"
+        ]
+      },
+      "grid-5": {
+        "type": "Grid",
+        "props": {
+          "gap": "md",
+          "bgColor": null,
+          "bgImage": null,
+          "columns": 2,
+          "rounded": null,
+          "className": null,
+          "bgImageFit": null
+        },
+        "children": [
+          "markdown",
+          "image-2"
         ]
       },
       "grid-6": {
@@ -1048,25 +1064,6 @@
         },
         "children": []
       },
-      "stack-2": {
-        "type": "Stack",
-        "props": {
-          "gap": "md",
-          "wrap": null,
-          "align": "center",
-          "bgColor": null,
-          "bgImage": null,
-          "justify": null,
-          "rounded": null,
-          "className": null,
-          "direction": "horizontal",
-          "bgImageFit": null
-        },
-        "children": [
-          "markdown",
-          "image-2"
-        ]
-      },
       "stack-3": {
         "type": "Stack",
         "props": {
@@ -1181,7 +1178,7 @@
         "type": "Markdown",
         "props": {
           "color": null,
-          "content": "Tested against the difficulty:\n- Easy: 8\n- Standard: 10\n- Hard: 12\n- Exceptional: 14\n\n6 + 6 =  Critical Success, 1 + 1 = Critical Mishap",
+          "content": "Tested against the difficulty:\n- Easy: 8\n- Standard: 10\n- Hard: 12\n- Exceptional: 14\n\nMiss by 1 or 2: Success with complication.\n\n6 + 6 =  Critical Success, 1 + 1 = Critical Mishap",
           "className": null
         },
         "children": []

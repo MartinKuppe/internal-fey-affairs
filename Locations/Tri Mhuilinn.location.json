@@ -4,7 +4,282 @@
     "metadata": {
       "map": {
         "grid": null,
-        "areas": [],
+        "areas": [
+          {
+            "id": "4b6f4084-eab5-4947-9267-69d10ba99718",
+            "style": {
+              "fillColor": "#22c55e",
+              "fillOpacity": 0.09,
+              "strokeColor": "#22c55e",
+              "strokeWidth": 0.5
+            },
+            "locked": true,
+            "vertices": [
+              {
+                "x": 0.4269342399772878,
+                "y": 0.6822573294168586
+              },
+              {
+                "x": 0.3725757765033403,
+                "y": 0.6572093201853167
+              },
+              {
+                "x": 0.323879637134509,
+                "y": 0.6133752383390373
+              },
+              {
+                "x": 0.29273675951585,
+                "y": 0.5515379113535263
+              },
+              {
+                "x": 0.2729185681236313,
+                "y": 0.5022246152602187
+              },
+              {
+                "x": 0.27348481954224696,
+                "y": 0.43960451335206646
+              },
+              {
+                "x": 0.2893393270365722,
+                "y": 0.3910739659049675
+              },
+              {
+                "x": 0.3170848101921616,
+                "y": 0.3527191771350135
+              },
+              {
+                "x": 0.35275758511112165,
+                "y": 0.3245401207657721
+              },
+              {
+                "x": 0.39805629200067516,
+                "y": 0.29792658796538035
+              },
+              {
+                "x": 0.43712646138270495,
+                "y": 0.27992331654971636
+              },
+              {
+                "x": 0.4943161059173145,
+                "y": 0.26896480922636273
+              },
+              {
+                "x": 0.5299888428200665,
+                "y": 0.2681820605801541
+              },
+              {
+                "x": 0.5718901552465504,
+                "y": 0.27522682467246445
+              },
+              {
+                "x": 0.6194538297943584,
+                "y": 0.29323009608812844
+              },
+              {
+                "x": 0.6641863612977125,
+                "y": 0.3253228694119807
+              },
+              {
+                "x": 0.700425311602872,
+                "y": 0.35193642848880485
+              },
+              {
+                "x": 0.7315681892215311,
+                "y": 0.3918567145511761
+              },
+              {
+                "x": 0.7457240565086336,
+                "y": 0.43099425196733876
+              },
+              {
+                "x": 0.7536513482720043,
+                "y": 0.4842213175681221
+              },
+              {
+                "x": 0.7474227727482724,
+                "y": 0.5288381217841778
+              },
+              {
+                "x": 0.7213759678161139,
+                "y": 0.576585973137933
+              },
+              {
+                "x": 0.6874019471530007,
+                "y": 0.6235509970161822
+              },
+              {
+                "x": 0.6460668481289246,
+                "y": 0.6556438228928994
+              },
+              {
+                "x": 0.6069966787468948,
+                "y": 0.6728643456623548
+              },
+              {
+                "x": 0.5571680745570403,
+                "y": 0.6869538212941105
+              },
+              {
+                "x": 0.5067732569647782,
+                "y": 0.6916503657242274
+              },
+              {
+                "x": 0.480160238630212,
+                "y": 0.6869538212941105
+              },
+              {
+                "x": 0.4541135097304696,
+                "y": 0.679126334832024
+              }
+            ],
+            "fillImage": null,
+            "fileReferenceId": "01a080db-d705-7328-bba5-4707d8fd7e11"
+          },
+          {
+            "id": "2f225636-a93d-43e4-873e-b72bb5bf0e8b",
+            "style": {
+              "fillColor": "#22c55e",
+              "fillOpacity": 0.2,
+              "strokeColor": "#22c55e",
+              "strokeWidth": 0.5
+            },
+            "locked": true,
+            "vertices": [
+              {
+                "x": 0.669953875841933,
+                "y": 0.09518917302121879
+              },
+              {
+                "x": 0.7268637939570631,
+                "y": 0.1376220553323334
+              },
+              {
+                "x": 0.7750355929242345,
+                "y": 0.10262266776841322
+              },
+              {
+                "x": 0.7781723359012913,
+                "y": 0.07939298888538233
+              },
+              {
+                "x": 0.7766039794555065,
+                "y": 0.06576491171639332
+              },
+              {
+                "x": 0.7255194690914344,
+                "y": 0.03262390823666949
+              },
+              {
+                "x": 0.7214864794518044,
+                "y": 0.03572120464626565
+              },
+              {
+                "x": 0.668385489310661,
+                "y": 0.0769151642345827
+              }
+            ],
+            "fillImage": null,
+            "fileReferenceId": "01a080e9-4c12-7bcc-96cd-ea9f40702f0a"
+          },
+          {
+            "id": "6fddad06-f051-40bb-ad70-04b18786fbea",
+            "style": {
+              "fillColor": "#22c55e",
+              "fillOpacity": 0.2,
+              "strokeColor": "#22c55e",
+              "strokeWidth": 2
+            },
+            "locked": true,
+            "vertices": [
+              {
+                "x": 0.788531261958132,
+                "y": 0.2258299145528511
+              },
+              {
+                "x": 0.7778155068896404,
+                "y": 0.21482578530190327
+              },
+              {
+                "x": 0.7644973541616582,
+                "y": 0.19958929864674474
+              },
+              {
+                "x": 0.7505668725726194,
+                "y": 0.18392957625116516
+              },
+              {
+                "x": 0.7439843373162605,
+                "y": 0.17102088616832253
+              },
+              {
+                "x": 0.7430658440246753,
+                "y": 0.15811219608547988
+              },
+              {
+                "x": 0.747352146052072,
+                "y": 0.14858939192600581
+              },
+              {
+                "x": 0.7588333121968843,
+                "y": 0.1358923197133737
+              },
+              {
+                "x": 0.7749069447996213,
+                "y": 0.12234877601989946
+              },
+              {
+                "x": 0.7843980421459995,
+                "y": 0.11197950037958324
+              },
+              {
+                "x": 0.7918990706939435,
+                "y": 0.10478449279242505
+              },
+              {
+                "x": 0.8405792151479474,
+                "y": 0.13483423036232103
+              },
+              {
+                "x": 0.8434877772379665,
+                "y": 0.13864335202611064
+              },
+              {
+                "x": 0.8433346950227023,
+                "y": 0.1521868957195849
+              },
+              {
+                "x": 0.846702503758514,
+                "y": 0.16213293561948003
+              },
+              {
+                "x": 0.8519072990774955,
+                "y": 0.16869308959600662
+              },
+              {
+                "x": 0.8520603812927596,
+                "y": 0.17546486144274376
+              },
+              {
+                "x": 0.8439470238837591,
+                "y": 0.19704988420421832
+              },
+              {
+                "x": 0.8330781866000033,
+                "y": 0.2139793138210611
+              },
+              {
+                "x": 0.811187429817228,
+                "y": 0.23217845065916712
+              },
+              {
+                "x": 0.7987877703808308,
+                "y": 0.23175521491874604
+              }
+            ],
+            "fillImage": null,
+            "fileReferenceId": "01a08b07-d358-7b30-9c56-bb6836443705"
+          }
+        ],
         "scale": null,
         "points": [
           {
@@ -84,10 +359,51 @@
               "y": 0.46843409128829655
             },
             "fileReferenceId": "01a04083-61ba-7b28-bc4c-cf65871584d4"
+          },
+          {
+            "id": "da3f445d-41b5-4a6e-8ad8-f22748027820",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#eab308"
+            },
+            "position": {
+              "x": 0.02903235388661911,
+              "y": 0.4832411073671771
+            },
+            "fileReferenceId": "01a07310-b769-7218-9861-5f20059c8148"
+          },
+          {
+            "id": "8943b3e9-072b-4ae9-ae22-015c97e272d9",
+            "kind": "pin",
+            "label": "",
+            "style": {
+              "icon": null,
+              "color": "#eab308"
+            },
+            "position": {
+              "x": 0.0253043689803088,
+              "y": 0.6322395621696063
+            },
+            "fileReferenceId": null
+          },
+          {
+            "id": "780d4e9b-0fe9-45a0-ab68-8b07a21d43af",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#92400e"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.4529835342373922,
+              "y": 0.7125731320337126
+            },
+            "fileReferenceId": "01a080de-7769-73dc-b825-bf9eb6bcb4a9"
           }
         ],
         "background": {
-          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/ed6a9d00-b081-4e01-be4e-611279068db0",
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/85728b0b-3bff-42ca-b659-85dec5899b49",
           "scale": 1,
           "offset": {
             "x": 0,
@@ -107,10 +423,10 @@
   },
   "name": "Tri Mhuilinn",
   "type": "Village",
-  "description": "A small palisaded Irish village whose homes, workshops, animal pens, and inn cluster around muddy paths. Everyone knows everyone else's business, and bowls of milk or cream still appear outside certain doors after dark.",
-  "atmosphere": "Woodsmoke and livestock by day; shuttered houses, creaking gates, and old bargains at night. The familiar village becomes a field of watchful windows once secrecy matters.",
-  "notes": "Primary selector map for the opening Side Missions. During Cream Tax, one watchman guards Tri Mhuilinn Gate and another patrols Inside Palisade because of recent horseshoe thefts; the cream offerings are collected from household thresholds within the wall. Milk and Feathers takes place at Liam's fenced farm and Finn's goose-guarded farm north of the palisade and does not require entering the village. A concealed Fairy Door in the western woods connects to Coinin's Hollow Tree and shortens travel without bypassing a Mission's actual obstacles. Mission pins are runtime scene state only; do not add shared author-time Mission pins to this map.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1a16672e-5e74-4be0-b729-1a3ccf8dac55"
-  }
+  },
+  "notes": "Primary selector map for the opening Side Missions. During Cream Tax, one watchman guards Tri Mhuilinn Gate and another patrols Inside Palisade because of recent horseshoe thefts; the cream offerings are collected from household thresholds within the wall. Milk and Feathers takes place at Liam's fenced farm and Brian's goose-guarded farm north of the palisade and does not require entering the village. A concealed Fairy Door in the western woods connects to Coinin's Hollow Tree and shortens travel without bypassing a Mission's actual obstacles. Mission pins are runtime scene state only; do not add shared author-time Mission pins to this map.",
+  "atmosphere": "Woodsmoke and livestock by day; shuttered houses, creaking gates, and old bargains at night. The familiar village becomes a field of watchful windows once secrecy matters.",
+  "description": "A small palisaded Irish village whose homes, workshops, animal pens, and inn cluster around muddy paths. Everyone knows everyone else's business, and bowls of milk or cream still appear outside certain doors after dark."
 }

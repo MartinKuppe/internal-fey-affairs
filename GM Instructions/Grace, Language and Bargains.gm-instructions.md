@@ -1,7 +1,8 @@
 ---
 name: Grace, Language and Bargains
 description: Searchable GM reference for Grace etiquette, Fey truthfulness,
-  deception, contracts, and obligation accounting. Consult when courtesy or payment has consequences.
+  deception, contracts, and obligation accounting. Consult when courtesy or
+  payment has consequences.
 $craft:
   referenceId: 01a063c4-7e26-751d-a63e-ef59da9aef0e
 ---
@@ -66,3 +67,4 @@ For Lepracaun currency exchange, record two entries on the same day: debit the c
 - Each party has an `obligations` list with exact wording, due condition and resolved state for each duty. Resolve duties independently. A party is finished when all its applicable duties are resolved; the contract becomes `resolved` only when the whole contract is finished. An ongoing promise can keep it `active` after goods are delivered.
 - Link related contracts on the Bargain. An obligation's Reference contract can point to another Bargain it falls under.
 - Set Known to the player when the contract is theirs, witnessed, overheard, read, disclosed or discovered. Announce new bargains immediately in a distinct message naming parties and key terms.
+- Present every announced or shown contract as a document handout frame: reference the Bargain file so it renders with title, exact `wording` text, and a small footer caption at the bottom. The footer caption is automatic from the Bargain's `kind`: grace-trade → Grace Trade, settlement → Settlement, contract → Contract, indenture → Indenture, standard-agreement → Standard Agreement, investigation → Investigation. Never paraphrase the wording in the frame; use the recorded `wording` verbatim.

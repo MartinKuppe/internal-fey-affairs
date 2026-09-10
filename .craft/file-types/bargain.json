@@ -226,7 +226,7 @@
           "maxWidth": "full",
           "className": null,
           "bgImageFit": null,
-          "borderColor": null,
+          "borderColor": "#e8f4df",
           "description": null
         },
         "children": [

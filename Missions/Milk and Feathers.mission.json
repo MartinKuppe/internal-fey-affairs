@@ -8,24 +8,24 @@
   "mapY": 0.12,
   "name": "Milk and Feathers",
   "status": "upcoming",
-  "gmNotes": "Tutorial Side Mission for Mission Trackers, meaningful route choices, animals, stealth/fail-forward play, and the milk portion of Coinin's bargain. It may be completed before or after Cream Tax or Iron and Wax. Both farms lie north of the palisade, so this Mission does not require entering the guarded village. Liam's Farm is the fenced farm with the concealed rooster risk. Finn's Farm is the farm with visible geese. Keep those identities fixed. Coinin conceals the true destination of the milk without making a false assertion.",
-  "briefing": "Coinin wants the two cans of milk promised for his silence. Two farms north of Trí Mhuilinn leave milk outside: Liam's fenced yard hides an unpleasant surprise, while Finn's geese advertise their objections from afar.",
+  "gmNotes": "Tutorial Side Mission for Mission Trackers, meaningful route choices, animals, stealth/fail-forward play, and the milk portion of Coinin's bargain. It may be completed before or after Cream Tax or Iron and Wax. Both farms lie north of the palisade, so this Mission does not require entering the guarded village. Liam's Farm is the fenced farm with the concealed rooster risk. Brian's Farm is the farm with visible geese. Keep those identities fixed. Coinin conceals the true destination of the milk without making a false assertion.",
+  "briefing": "Coinin wants the two cans of milk promised for his silence. Two farms north of Trí Mhuilinn leave milk outside: Liam's fenced yard hides an unpleasant surprise, while Brian's geese advertise their objections from afar.",
   "pinLabel": "Milk and Feathers",
   "teamSize": 2,
-  "objective": "Collect two cans of milk from Liam's Farm, Finn's Farm, or both, then deliver them to Coinin.",
+  "objective": "Collect two cans of milk from Liam's Farm, Brian's Farm, or both, then deliver them to Coinin.",
   "debriefing": "Coinin has his two cans of milk. The cream and honey remain due unless those errands were completed already; the birds, meanwhile, have formed strong opinions.",
   "storyBeats": [
     {
       "key": "milk-briefing",
       "title": "Two Farms, Two Cans",
-      "events": "At the Hollow Tree, Coinin explains that Liam's Farm and Finn's Farm each normally leave one can of milk outside. More cans may be found within either farmyard. He wants two cans returned before morning. His concealed Fairy Door opens into the western woods and can shorten the journey around Trí Mhuilinn without entering the palisade.",
+      "events": "At the Hollow Tree, Coinin explains that Liam's Farm and Brian's Farm each normally leave one can of milk outside. More cans may be found within either farmyard. He wants two cans returned before morning. His concealed Fairy Door opens into the western woods and can shorten the journey around Trí Mhuilinn without entering the palisade.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Choose whether to visit both farms or risk taking two cans from one.",
-      "gmInstructions": "Keep Coinin literally truthful but strategically incomplete. He does not claim he can drink the milk and does not reveal the Takeling/clone supply chain. Explain that the milk discharges one bargain obligation; do not invent a numeric Grace reward. Make the choice genuine: one can from each farm exposes the team to the known geese, while taking a second can from Liam's fenced yard avoids Finn's geese but reveals the rooster as an unexpected complication. The team may choose another credible plan. Play only the farm beats their plan requires."
+      "gmInstructions": "Keep Coinin literally truthful but strategically incomplete. He does not claim he can drink the milk and does not reveal the Takeling/clone supply chain. Explain that the milk discharges one bargain obligation; do not invent a numeric Grace reward. Make the choice genuine: one can from each farm exposes the team to the known geese, while taking a second can from Liam's fenced yard avoids Brian's geese but reveals the rooster as an unexpected complication. The team may choose another credible plan. Play only the farm beats their plan requires."
     },
     {
       "key": "liams-fence",
@@ -40,16 +40,16 @@
       "gmInstructions": "The first can outside the gate should normally require no check. If the team enters for a second, make the rooster a surprise: it may attack, chase, crow, spill milk, cost Cover or Decorum, or wake Liam. Fail forward and let ingenuity with Animals, Food, stealth, clothing, or distraction work. Update the milk tracker whenever a can is secured. Skip this beat if the team's plan does not visit Liam's Farm."
     },
     {
-      "key": "finns-geese",
-      "title": "Finn's Geese",
-      "events": "At Finn's Farm, one can stands outside the door, watched by geese visible and audible from the approach. They defend the milk and may make enough noise to wake Finn. More cans stand farther inside the farmyard if the team needs them.",
+      "key": "brians-geese",
+      "title": "Brian's Geese",
+      "events": "At Brian's Farm, one can stands outside the door, watched by geese visible and audible from the approach. They defend the milk and may make enough noise to wake Brian. More cans stand farther inside the farmyard if the team needs them.",
       "location": {
-        "slug": "finns-farm",
-        "referenceId": "01a080e9-de91-77cc-8ce5-aa79ec2cd6e9",
+        "slug": "brians-farm",
+        "referenceId": "01a08b07-d358-7b30-9c56-bb6836443705",
         "fileTypeSlug": "location"
       },
-      "objective": "Get past Finn's geese and secure the milk still needed.",
-      "gmInstructions": "The geese are the known problem and must be apparent before the player commits. They may hiss, pursue, nip, block the route, or sound the alarm. Allow Animals, Food, stealth, patience, distraction, retreat, or another sensible plan. Failure complicates the theft but never makes the target unobtainable. Update the milk tracker whenever a can is secured. Skip this beat if the team already obtained both cans at Liam's Farm and does not visit Finn's."
+      "objective": "Get past Brian's geese and secure the milk still needed.",
+      "gmInstructions": "The geese are the known problem and must be apparent before the player commits. They may hiss, pursue, nip, block the route, or sound the alarm. Allow Animals, Food, stealth, patience, distraction, retreat, or another sensible plan. Failure complicates the theft but never makes the target unobtainable. Update the milk tracker whenever a can is secured. Skip this beat if the team already obtained both cans at Liam's Farm and does not visit Brian's."
     },
     {
       "key": "milk-delivery",
@@ -64,7 +64,7 @@
       "gmInstructions": "Keep the milk tracker at target as historical Mission-object progress once delivery is complete; it records the objective, not carried inventory. In Coinin's Silence, resolve only the accepting party's milk obligation. Leave the cream, honey, and Coinin's nondisclosure obligations as they stand."
     }
   ],
-  "description": "Two cans of milk wait at farms north of Trí Mhuilinn: Liam's fenced yard hides an aggressive rooster, while Finn's geese announce their hostility from afar.",
+  "description": "Two cans of milk wait at farms north of Trí Mhuilinn: Liam's fenced yard hides an aggressive rooster, while Brian's geese announce their hostility from afar.",
   "selectorMap": {
     "slug": "tri-mhuilinn",
     "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
@@ -100,7 +100,6 @@
     },
     {
       "slug": "méabh",
-      "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileTypeSlug": "non-player-character"
     }
   ],
