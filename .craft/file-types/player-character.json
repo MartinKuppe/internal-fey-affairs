@@ -830,7 +830,9 @@
         },
         "children": [
           "card-9",
-          "grid-5"
+          "grid-5",
+          "markdown-2",
+          "markdown-2-2"
         ]
       },
       "card-9": {
@@ -1178,7 +1180,7 @@
         "type": "Markdown",
         "props": {
           "color": null,
-          "content": "Tested against the difficulty:\n- Easy: 8\n- Standard: 10\n- Hard: 12\n- Exceptional: 14\n\nMiss by 1 or 2: Success with complication.\n\n6 + 6 =  Critical Success, 1 + 1 = Critical Mishap",
+          "content": "Tested against the difficulty:\n- Easy: 8\n- Standard: 10\n- Hard: 12\n- Exceptional: 14",
           "className": null
         },
         "children": []
@@ -1307,6 +1309,15 @@
           "trackbox-row-composure",
           "text-3-3"
         ]
+      },
+      "markdown-2": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": "Miss by 1 or 2: Success with complication.",
+          "className": null
+        },
+        "children": []
       },
       "outfit-row": {
         "type": "Select",
@@ -1447,6 +1458,15 @@
           "trackbox-row-decorum",
           "text-3-3-2"
         ]
+      },
+      "markdown-2-2": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": "6 + 6 =  Critical Success, 1 + 1 = Critical Mishap",
+          "className": null
+        },
+        "children": []
       },
       "tabs-2-panel": {
         "type": "Stack",

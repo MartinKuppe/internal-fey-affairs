@@ -74,14 +74,14 @@
     {
       "key": "shelter",
       "title": "A Place by the Hearth",
-      "events": "The player returns with Meabh. He may tell the truth, use Meabh's cover story about bandits and another village, or invent something else. Grannie invites Meabh to stay regardless and outwardly accepts what she is told.\nThe goat is back too, acting as though nothing happened—and looking entirely innocent.",
+      "events": "The player returns with Meabh. He may tell the truth, use Meabh's cover story about bandits and another village, or invent something else. Grannie invites Meabh to stay regardless and outwardly accepts what she is told.\nThe goat is back too, acting as though nothing happened—and looking entirely innocent.\nGrannie encourages the player to share their bed with Meabh (\"you're young; you can share\"), reminding them that she's blind and a very deep sleeper.",
       "location": {
         "slug": "grannys-hut",
         "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
         "fileTypeSlug": "location"
       },
       "objective": "Bring Meabh home and decide what to tell Grannie.",
-      "gmInstructions": "Do not punish the player by denying shelter. Grannie recognises Niamh's voice and face in Meabh and correctly infers that this is the stolen baby, but she keeps that conclusion secret in hope of a future reunion with Conor. Let the player's chosen story affect trust and tone without changing the Mission's completion."
+      "gmInstructions": "Do not punish the player by denying shelter. Grannie recognises Niamh's voice and face in Meabh and correctly infers that this is the stolen baby, but she keeps that conclusion secret in hope of a future reunion with Conor. Let the player's chosen story affect trust and tone without changing the Mission's completion.\nIf the player ends up sharing his bed with Meabh, keep it family-friendly with implied cuddling, maybe a sweet kiss. Keep anything beyond that to the player's imagination.\nMeabh initiates gentle closeness as part of her assigned Leannan Sidhe (Fey seductress) role, without revealing the performance. Let the player reciprocate or decline. Do not portray her affection as genuine yet; that develops later in her arc."
     }
   ],
   "description": "A runaway goat leads beyond the village to a circle of light and a frightened stranger who should not exist. Before the night is over, shelter and silence will both have their price.",

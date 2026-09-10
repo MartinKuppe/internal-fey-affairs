@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-10T12:07:28.374Z",
+  "syncedAt": "2026-09-10T20:40:07.587Z",
   "folders": [
     {
       "path": "/Locations",
@@ -70,10 +70,6 @@
       "folderId": "01a04a10-df3e-77f8-bfa2-d6b6526fc67e"
     },
     {
-      "path": "/Characters/Non-Player Character prototypes",
-      "folderId": "01a07b8d-34e9-733c-82b3-fa80e719fbe4"
-    },
-    {
       "path": "/Non-Player Characters",
       "folderId": "01a063c4-7eef-7678-adca-171806d6f9ff"
     },
@@ -100,6 +96,10 @@
     {
       "path": "/GM Instructions/Narrative Laws",
       "folderId": "01a0693e-dcaa-79d0-a912-8b5338171b81"
+    },
+    {
+      "path": "/Characters/Non-Player Character prototypes",
+      "folderId": "01a07b8d-34e9-733c-82b3-fa80e719fbe4"
     }
   ],
   "files": [
@@ -121,7 +121,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a088b1-6633-7864-99f5-cda2fe9362b5",
+      "baseVersionId": "01a08cd4-d8e7-7d6c-93e5-6c25937d99a5",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -1009,7 +1009,7 @@
       "fileId": "01a03e77-5964-7414-878d-f4261490ce29",
       "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
       "fileType": "location",
-      "baseVersionId": "01a08b10-025c-7664-b5b4-93192cbcb416",
+      "baseVersionId": "01a08d0b-164e-72b4-ac86-ba5256d5103d",
       "baseHash": "0a254c8d-1344-2ae2-effa-dda918222f6a",
       "source": "project",
       "metadataHash": "36cbe9d8-1736-1203-f923-3f7dc8c1628a"
@@ -1049,7 +1049,7 @@
       "fileId": "01a03e8d-3e31-7208-b6e5-7804355067ec",
       "referenceId": "01a03e8d-3e31-7284-9c1f-cba95259b88d",
       "fileType": "location",
-      "baseVersionId": "01a08377-21d6-776c-8ee6-01a0cfac5b83",
+      "baseVersionId": "01a08ced-f102-7bd8-90a9-424e9796fd15",
       "baseHash": "e9317330-7dca-3c6a-daf2-866cf43df100",
       "source": "project",
       "metadataHash": "a213c262-409f-37c1-d063-79792c2d21b0"
@@ -1433,8 +1433,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a08b20-3a55-7920-9d06-323e9e0a99c4",
-      "baseHash": "fa6eb3fb-9c45-0da3-6918-15e750e4b4fa",
+      "baseVersionId": "01a08cbd-7c8c-70a0-b8c8-80e09b3bda87",
+      "baseHash": "16fe063a-8ba9-5781-14dd-b27263a491be",
       "source": "project"
     },
     {
@@ -1808,6 +1808,15 @@
       "baseVersionId": "01a08b08-d423-7f80-93a9-4fc17668adcc",
       "baseHash": "c63a6fa9-72a7-f65b-6dec-b9f3f8bf6134",
       "source": "project"
+    },
+    {
+      "path": "/Characters/Non-Player Character prototypes/The Goat.non-player-character.json",
+      "fileId": "01a08cd0-c8b9-7c40-8524-eb8e46565f40",
+      "referenceId": "01a08cd0-c8b9-7d08-902a-c717e77327ff",
+      "fileType": "non-player-character",
+      "baseVersionId": "01a08cd3-0e48-7914-a58c-db0cc00034cf",
+      "baseHash": "aa7fc288-1de6-8698-8a9f-15443eefed6d",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -1881,7 +1890,7 @@
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
       "schemaHash": "7b67d9de-9083-4308-7886-105d0bbd1fd0",
-      "contentHash": "3f65d3c2-459b-71e9-f602-1a848351d2a8"
+      "contentHash": "354afec7-5c8e-760b-c444-8b7c5985a938"
     },
     {
       "slug": "archetype",

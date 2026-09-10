@@ -1,0 +1,17 @@
+{
+  "$craft": {
+    "referenceId": "01a08cd0-c8b9-7d08-902a-c717e77327ff"
+  },
+  "name": "The Goat",
+  "goals": "Mischief, grass",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8f65becf-cf5c-4265-8bb9-377394590675",
+    "focalPoint": {
+      "x": 0.4264069264069264,
+      "y": 0.5057526366251198
+    },
+    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/2da5ecba-329e-4d30-a1c9-71b40095b3e4"
+  },
+  "gmNotes": "The Goat is not really a character; he doesn't speak and is just there as comedic relief.",
+  "description": "Grannie's goat, always up to no good"
+}
