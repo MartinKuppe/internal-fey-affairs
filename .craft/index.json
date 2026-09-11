@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-10T20:40:07.587Z",
+  "syncedAt": "2026-09-11T12:34:05.547Z",
   "folders": [
     {
       "path": "/Locations",
@@ -1181,8 +1181,8 @@
       "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileType": "non-player-character",
-      "baseVersionId": "01a08884-4019-7e50-87f1-5e950cce0bc6",
-      "baseHash": "64be61c2-c1e8-30ea-ab15-7d823ccbb7bc",
+      "baseVersionId": "01a09075-f64f-73e0-a564-b5950c8527d0",
+      "baseHash": "c78843e1-5852-d73c-7d78-d27ec6167e68",
       "source": "project"
     },
     {
@@ -1325,8 +1325,8 @@
       "fileId": "01a063c4-8021-75dc-9ca2-ea2b37f656da",
       "referenceId": "01a063c4-7e26-751d-a63e-e798bcf0ab5e",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a06402-d7c4-78b0-ad06-d0aa202cf4d5",
-      "baseHash": "d5bba682-52c5-0448-608b-e6c20ec5c7c2",
+      "baseVersionId": "01a09075-f66a-7f70-83cb-a33cd3a98c9d",
+      "baseHash": "9b8a1d2d-cc52-6f71-118b-0632c24f2f7e",
       "source": "project"
     },
     {
@@ -1352,8 +1352,8 @@
       "fileId": "01a063d6-f46e-7a98-979f-ff1decd1a8ce",
       "referenceId": "01a063d6-7097-76fb-819e-d9312e134ce4",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a063d6-f468-7480-803e-c41ac23133f1",
-      "baseHash": "637a5236-1776-15c9-0d9a-a8f316623cfd",
+      "baseVersionId": "01a09075-f67d-7988-a802-9219c02d8513",
+      "baseHash": "ac7589f9-d3d8-7b6b-adbc-7e0034dbe52f",
       "source": "project"
     },
     {
@@ -1415,8 +1415,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a087c7-dc69-72e4-8f03-a2d2da25c0af",
-      "baseHash": "f57836d8-cd9a-b33e-4ee8-cef687dcf16a",
+      "baseVersionId": "01a09075-f688-7eec-84e8-4e2988270fd0",
+      "baseHash": "918885ff-ae76-2b2c-a9bf-e4e0f4ddc110",
       "source": "project"
     },
     {
@@ -1733,8 +1733,8 @@
       "fileId": "01a0825e-f3ce-705c-ba85-775f0f67c4d1",
       "referenceId": "01a0825e-f38e-72df-871e-be64a4ccb4c5",
       "fileType": "mission",
-      "baseVersionId": "01a08b14-25fc-7e68-afd1-301d6f00f8d8",
-      "baseHash": "bf6557c1-57b3-672c-fa05-8d4116c1a16e",
+      "baseVersionId": "01a09075-f69c-72d0-868e-9573fe06fa7a",
+      "baseHash": "289b74f1-226b-6b5a-7be5-9c96a0cf74fa",
       "source": "project"
     },
     {
@@ -1871,8 +1871,8 @@
     {
       "slug": "game-start",
       "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
-      "schemaHash": "9c088ea8-5a77-2c1e-8551-f6148844bb32",
-      "contentHash": "c6584cfa-dc0a-9e4b-a2f8-901752ee3430"
+      "schemaHash": "2301548c-907a-782b-d5c0-7768274db3ea",
+      "contentHash": "ab5f1e0b-9023-37df-78ee-448817891dba"
     },
     {
       "slug": "lore-card",

@@ -61,9 +61,30 @@ Fey vision uses nine types of colour receptor, spanning roughly 350–850 nanome
 
 Fey hear approximately 10 Hz–6 kHz. They perceive infrasound but struggle with high frequencies. A Banshee’s sonic medical scanner operates around 7–8 kHz: effectively inaudible to Fey, but a shrill, uncanny wail to humans.
 
-### Active magnetoreception
+### Magnetoception: direction and spatial probing
 
-Fey can send a strong magnetic “ping” and analyse its reflection to locate nearby organisms and objects, even through a thin door. Researchers may scan a human house before entering. Ferromagnetic material, especially iron, disrupts this sense. A horseshoe above a doorway both interferes with the scan and sits beyond the reach of a small Fey.
+Fey continuously sense the planet’s directional field. This conscious sense supports north/south orientation, left/right relationships, position, and awareness of nearby structure and movement. They can also deliberately “ping” local space to locate nearby organisms and objects, even through a thin door, or navigate dark facilities. Researchers may probe a house before entering. The exact mechanism need not be explained.
+
+### Iron: toxicity and sensory disruption
+
+Direct iron contact is painful and biologically harmful. Sustained or concentrated exposure can poison Fey tissue or blood and cause physical illness. Separately, nearby iron disrupts magnetoception without requiring contact. These linked effects underlie human “cold iron” folklore; iron is neither a supernatural ward nor merely a generic poison.
+
+Sensory impairment scales with concentration:
+
+- **Small amounts:** discomfort, directional uncertainty, distorted pings.
+- **Larger amounts:** unreliable left/right and spatial relationships; rooms and paths become difficult to navigate and may feel “blank,” “missing,” or “gone.”
+- **Very large concentrations:** gaps in spatial perception, disorientation, panic, nausea, or inability to move safely.
+- **Extreme concentrations:** sensory collapse, fainting, or incapacitation.
+
+These gaps are absences in the spatial sense, not visible black patches or literal erasure of matter. “Not blackness. Blackness is still something. This is where the world stops answering.” Fey fear is grounded in biological harm and sensory impairment, not stupidity or superstition.
+
+Other ferromagnetic materials can also disrupt the sense; this does not establish that they share iron’s biological toxicity. A horseshoe above a doorway interferes with probing and sits beyond a small Fey’s reach. Technology has its own iron vulnerabilities; consult **Fey Technology and Transport**.
+
+### Who knows what, and when to explain it
+
+Ordinary Brownies and Pookas know that iron hurts and dense iron impairs orientation. They may know **Iron Flood** through frightening rumours of whole areas overwhelmed, without understanding its cause or strategy. Meabh knows the danger and the term’s sensitivity; she may know more, but evades early requests for details.
+
+Early scenes show symptoms and mystery before naming the cause. A later Banshee or educated specialist can explain the directional sense, spatial ping, and sensory gaps; Green can give the dry technical account. One possible explanation: “On your world, as on mine, space has a direction. It points north. Your migrating birds use it. So do we.” This scientific explanation does not itself unlock the Roman connection. See **Setting Background** for the protected Iron Flood revelation.
 
 ## Narration discipline
 

@@ -31,11 +31,21 @@ The scenario treats this encounter as the actual origin of Fairy legends in the 
 
 Do not hide the genre; hide the depth. Early scenes should contain unmistakable technological wrongness without immediately explaining the full machinery. Narrate what a period observer can see, hear, smell, touch, and infer. Later knowledge may replace folklore names with technical ones, but the player should encounter the phenomenon before receiving a lecture about it.
 
+## Iron Flood: early rumours
+
+**Iron Flood** is a feared technical-cultural term for overwhelming iron concentrations moving across landscapes. Early ordinary Fey know only rumours, taboo comparisons, and partial stories, not necessarily the military or political explanation. The term may be heard before its meaning is understood.
+
+In the planned **Iron and Wax** revision, Buaic’s impaired perception should introduce the mystery: the workshop feels “wrong” or “gone.” He reluctantly compares it to rumours of the Iron Flood, then retreats: “Not the same. It does not move. It does not flood whole landscapes. It does not leave patterns behind. I have already said too much.” Do not explain the patterns, Rome, armies, or the science here. The player must enter and discover the iron and horseshoes, not receive that answer in the briefing. This is the reveal boundary for the forthcoming mission revision, not a replacement for its beats.
+
 ## Protected revelation: the Iron Flood
 
 Do not reveal the following truth before the Mission **Iron Flood** permits it:
 
 The neighbouring island of **Albion** is divided by Hadrian’s Wall. Its southern part is occupied by Rome; its northern part remains controlled by Celtic kings, as Ireland remains under Celtic rule. Until the reveal, do not casually provide political geography, traveller exposition, dossier text, or NPC dialogue that lets the player reconstruct this situation early.
+
+A Roman force laden with iron weapons, armour, tools, nails, fittings, and pots poses more than physical danger: to Fey magnetoception it can become a moving zone of sensory erasure. This is the large-scale Iron Flood problem. Morrigan uses the term politically and rhetorically in her anti-Rome worldview.
+
+Reveal order: **experienced symptoms and taboo name → later explanation of Fey sensory biology → Roman/strategic payoff**. Explaining magnetoception does not release the political reveal lock. The sensory biology is defined in **Fey Origins, Biology and Senses**.
 
 ## Canon rulings
 
