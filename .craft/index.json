@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-15T11:21:58.771Z",
+  "syncedAt": "2026-09-15T18:52:50.319Z",
   "folders": [
     {
       "path": "/Locations",
@@ -84,10 +84,6 @@
     {
       "path": "/Change Requests",
       "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
-    },
-    {
-      "path": "/Locations/Portal Hub  H2",
-      "folderId": "01a07329-613a-7330-a0be-3e59d1c748a0"
     },
     {
       "path": "/Missions",
@@ -1129,42 +1125,6 @@
       "fileType": "location",
       "baseVersionId": "01a061d2-f86f-792c-a6d8-5f6dc26599ba",
       "baseHash": "91218b28-3a2a-7bcf-b2e3-caf6e25bfae4",
-      "source": "project"
-    },
-    {
-      "path": "/Locations/Portal Hub  H2/45-098.location.json",
-      "fileId": "01a04981-e174-7a68-82a0-cafb5c56d7ac",
-      "referenceId": "01a04981-e174-7afc-86f7-d08c68ab1c67",
-      "fileType": "location",
-      "baseVersionId": "01a04981-e16f-7a40-8238-168128d89bb4",
-      "baseHash": "5af6efee-1c73-0e94-af98-a985ea29eb78",
-      "source": "project"
-    },
-    {
-      "path": "/Locations/Portal Hub  H2/45-099.location.json",
-      "fileId": "01a04982-0f0f-7154-b951-76f54233b1fb",
-      "referenceId": "01a04982-0f0f-722c-8624-1ceda4cc58e0",
-      "fileType": "location",
-      "baseVersionId": "01a04982-0f0a-7700-a745-a5c5e939fb85",
-      "baseHash": "73e6620d-648d-432b-ab0d-6853166a0ac5",
-      "source": "project"
-    },
-    {
-      "path": "/Locations/Portal Hub  H2/45-100.location.json",
-      "fileId": "01a04982-8891-7b38-91b3-cd658965d3ae",
-      "referenceId": "01a04982-8891-7bc8-b43b-1240e5dde3e5",
-      "fileType": "location",
-      "baseVersionId": "01a04982-888c-70f8-a8db-3dadd551f929",
-      "baseHash": "81660594-a4c3-a986-c47e-59957fe8749a",
-      "source": "project"
-    },
-    {
-      "path": "/Locations/Portal Hub  H2/45-101.location.json",
-      "fileId": "01a04983-00f1-7580-923e-9f17de0dd0f4",
-      "referenceId": "01a04983-00f1-75f8-b905-121243f5e2ca",
-      "fileType": "location",
-      "baseVersionId": "01a04983-00ed-78c8-ae79-ffd9c286caf7",
-      "baseHash": "ba108cb4-9a13-619b-b118-51f98e4b7658",
       "source": "project"
     },
     {
