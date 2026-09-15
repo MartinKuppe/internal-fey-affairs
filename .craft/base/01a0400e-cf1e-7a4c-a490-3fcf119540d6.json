@@ -2,8 +2,8 @@
   "name": "Beekeper's Workshop",
   "type": "Workshop",
   "description": "A beekeeper's timber work shed filled with wax, moulds, wicks, honey vessels, shelves, and the tools of candle making. By day it belongs to a widower and his new apprentice; by night, its finest work is done by someone much smaller.",
-  "atmosphere": "Warm beeswax and old wood under a silence where every dropped tool sounds enormous. Newly scattered iron horseshoes turn the familiar workshop into a poisoned maze.",
-  "notes": "Buaic works here at night in exchange for honey. The widowed beekeeper understands the arrangement, but a new apprentice has scattered and hidden iron horseshoes to ward off evil Fairies. Do not impose a fixed horseshoe count; the Iron and Wax Mission uses one unique clearance tracker. The filename's existing ‘Beekeper’ spelling is preserved to avoid an unsafe out-of-band rename during content editing.",
+  "atmosphere": "Warm beeswax and old wood under a silence where every dropped tool sounds enormous. Bee skeps guard the approach; inside, tools and wax stores crowd the benches and shelves.",
+  "notes": "Buaic works here at night in exchange for honey. The widowed beekeeper understands the arrangement. GM secret: the apprentice stole threshold horseshoes to protect himself specifically from Morrigan, scattering and hiding them inside; he sleeps clutching the final one. Do not reveal this from outside or in a briefing. Dense iron disrupts Buaic's spatial sense; clearing it restores perception progressively. Follow Iron and Wax for bees, discovery, the apprentice's rumours and confrontation, Buaic's separate bargain, and the gift for Grannie. No fixed horseshoe count. The apprentice promises to return them soon, so the village watch is not immediately lifted.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e9b2e0c9-b280-4305-aeb1-154e5436afc9"
   }

@@ -8,35 +8,35 @@
   "mapY": 0.756183867621202,
   "name": "Iron and Wax",
   "status": "upcoming",
-  "gmNotes": "Tutorial Side Mission for iron vulnerability, the Iron ability, fail-forward infiltration, domestic Fey labour, Brownie professional status, and Mission Trackers. It may be completed before or after Cream Tax or Milk and Feathers. The player should not yet learn that Coinin's supplies serve Takelings and clones.\n\nThe apprentice stole these horseshoes from village doors and the smithy to protect the workshop from the Fey; their disappearance caused the strengthened watch in Cream Tax. Do not volunteer the culprit. If the player points out the coincidence between the village's missing horseshoes and the workshop cache, the apprentice will confess when confronted.",
-  "briefing": "Coinin's friend Buaic cannot enter the beekeeper's workshop where he works by night. A new apprentice has scattered and hidden iron horseshoes to ward off Fairies. Get Buaic safely back to his candles and earn the honey needed for Coinin's bargain.",
+  "gmNotes": "Investigation Side Mission: mystery, sensory impairment, folklore/science clues, comic danger, social correction, and home warmth. Playable before or after Cream Tax and Milk and Feathers. Do not identify the workshop's iron or horseshoes before the team enters; Coinin does not know the cause, and Buaic can only suspect iron if asked. Read Fey Origins, Biology and Senses for iron effects; symptoms now, full magnetoception explanation later, Roman Iron Flood connection only at its protected reveal. Do not expose the laboratory supply chain, Fey no-lie rule, Morrigan's human origin, staged rescue, Rory/Yror objective, or Meabh's assignment.\n\nThe apprentice stole village threshold horseshoes to protect himself from Morrigan. The thefts contributed to the village lockdown. He promises to return them soon, not instantly: this mission does not remove Cream Tax's watch. His rumours foreshadow later truths: raven/wolf appearances and animal speech are glamoured drone relays; simultaneous appearances are remote presence; ownership means service/indenture. 'She's a liar' is literally true but its significance stays hidden. These are GM-only explanations, not Meabh's early answers.\n\nEach obstacle is distinct; never collapse the mission into one search roll or demand a roll per horseshoe. Roll only for meaningful uncertainty with a named Condition at risk; apply Checks and Conditions and One Obstacle, One Roll. Humans, including Meabh, do not share Fey iron toxicity. A thrown horseshoe can injure anyone physically, but only actual Fey suffer the alien sensory/toxic effects.",
+  "briefing": "Coinin knows a Brownie candle-maker who cannot use his workshop and needs human help. Buaic has honey, but any exchange must be negotiated with him.",
   "pinLabel": "Iron and Wax",
   "teamSize": 2,
-  "objective": "Remove the iron from Buaic's workshop, secure two measures of honey, and bring Grannie the candle he gives you.",
+  "objective": "Discover what is keeping Buaic from his workshop and negotiate for the honey owed to Coinin.",
   "debriefing": "Buaic is back among his candles, Grannie has a wax light fit for a feast day, and Coinin has his honey. If the separate cream and milk obligations are also fulfilled, your side of the bargain is complete.",
   "storyBeats": [
     {
       "key": "coinins-errand",
       "title": "A Brownie in Need",
-      "events": "At the Hollow Tree, Coinin directs the team to his friend Buaic, a Brownie candle maker whose payment includes the honey still owed under the silence bargain. He makes helping Buaic sound charitable while carefully preserving his own interest in the result. His concealed Fairy Door offers a route to the woods west of Trí Mhuilinn, closer to the beekeeper's workshop.",
+      "events": "Coinin sends the team to Buaic, a Brownie who normally makes candles at the widowed beekeeper's workshop by night. Something in or around it prevents him entering. He needs human help and can provide honey, but Coinin has not negotiated payment. The concealed Fairy Door offers a route to the western woods near the workshop.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Hear Coinin's proposal for obtaining the honey.",
-      "gmInstructions": "Do not state that Coinin wants the honey for a supply chain. Let the player continue to believe he may want it for himself. This is assistance toward an existing obligation, not a new automatic Grace charge. Let the team use the Fairy Door to the Hidden Fairy Door in the western woods or take another sensible route. The portal bypasses travel only; it does not solve Buaic's problem or the workshop infiltration."
+      "gmInstructions": "Coinin knows the problem, not its cause: no iron or horseshoe explanation. He neither owns nor promises Buaic's honey. Keep the supply chain hidden. Let the team use the Fairy Door to the Hidden Fairy Door or another sensible route; this bypasses travel, not the obstacles."
     },
     {
       "key": "meet-buaic",
       "title": "The Finest Candles in the Region",
-      "events": "Buaic waits outside the widowed beekeeper's work shed, furious at being reduced to helplessness. A new apprentice, unaware that the Brownie's labour keeps the workshop running, has scattered horseshoes across the floor and hidden more among tools, shelves, wax, and thresholds. Buaic insists that he is a master candle maker, not a grateful little spirit awaiting rescue.",
+      "events": "Around nightfall, Buaic waits outside the bee skeps, angry, nauseated and disoriented. He cannot trust paths, sides or distances near the workshop: parts of it feel absent. 'There's too much of something in there. The room is wrong.' Asked how, he reluctantly compares it to the Iron Flood: 'Almost a bit like what they say about the Iron Flood. Sure, it doesn't flow, it doesn't flood whole landscapes, it doesn't leave patterns behind, but still…' Then: 'I've already said too much. We don't talk about the Iron Flood.'",
       "location": {
         "slug": "beekepers-workshop",
         "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
         "fileTypeSlug": "location"
       },
-      "objective": "Learn why Buaic cannot enter his workplace.",
+      "objective": "Hear Buaic's symptoms and agree how to help.",
       "loreUnlocks": [
         {
           "card": {
@@ -47,24 +47,60 @@
           "level": "Common Knowledge"
         }
       ],
-      "gmInstructions": "Unlock Brownie Common Knowledge. Play Buaic's professional pride seriously. He is physically endangered by iron and cannot simply follow the team inside. Let the player inspect, plan, and ask him technical questions without revealing the laboratory supply chain.\nThe horseshoes are actually the ones stolen from the village, cf. \"Cream Tax\"."
+      "gmInstructions": "Unlock Brownie Common Knowledge. Respect his professional pride and real impairment. He refuses further Iron Flood details; no Rome, armies, northward sense or active ping explanation. If the player suggests iron, he admits it is plausible, not confirmed. Before approaching the skeps, offer a separate bargain: 'If you remove whatever is preventing me from safely using my workshop, I will give you two measures of honey.' Let the team accept or negotiate. On acceptance, create Buaic's Workshop bargain with the accepting team and Buaic, record exact agreed wording and each obligation, and present the document handout per Grace, Language and Bargains. Do not pre-create acceptance or merge this with Coinin's Silence. 'Coinin does not own my honey. He has not bargained for me.'"
     },
     {
-      "key": "clear-the-workshop",
-      "title": "Horseshoes in the Dark",
-      "events": "The team enters the dark workshop and searches for visible and concealed horseshoes without waking the household or meeting the apprentice. Iron ability, smithcraft, careful observation, and improvised collection methods can all help. Set Workshop cleared of iron to 1 only when the room is genuinely safe for Buaic.",
+      "key": "bee-skeps",
+      "title": "Past the Skeps",
+      "events": "The approach passes the bee skeps. Animals, Nature, Food, sensible smoke, patience or another sound plan can avoid or reduce disturbance.",
       "location": {
         "slug": "beekepers-workshop",
         "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
         "fileTypeSlug": "location"
       },
-      "objective": "Find and remove every horseshoe that bars Buaic's return.",
-      "gmInstructions": "Do not invent an exact horseshoe count; the unique tracker represents complete clearance. Use a small number of meaningful checks rather than one roll per horseshoe. Failure may cause noise, a cut, suspicion, a missed cache Buaic detects from outside, or a hurried confrontation, but it must lead to another approach rather than block completion. If the player confronts the apprentice and explicitly points out the coincidence between this cache and the missing village horseshoes, the apprentice confesses to stealing them. Do not make him confess before the player makes that connection."
+      "objective": "Pass the bee skeps without provoking them.",
+      "gmInstructions": "Keep the obstacle light. A minor disturbance or single sting may cause 1 Nerve Depletion; a swarm or badly mishandled hive may cause 1 Health Depletion. Choose the fitting consequence, not both automatically. Safe clever handling needs no roll. Apply the normal critical limits; never make this lethal or a dead end."
+    },
+    {
+      "key": "workshop-discovery",
+      "title": "Something Among the Wax",
+      "events": "Inside are tools, wax, benches and shelves—and iron. Horseshoes lie openly across the floor and are tucked into thresholds, tools and wax stores. The quantity and placement are deliberate. The apprentice sleeps in or near the workshop clutching one more.",
+      "location": {
+        "slug": "beekepers-workshop",
+        "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Enter the workshop and identify what has changed.",
+      "gmInstructions": "Reveal the iron and then the horseshoes through inspection, not a gatekeeping roll. The smith recognises familiar village work and threshold protection. Leave the theft connection for the player to make. Meabh can explain that contact hurts Fey and dense iron disrupts their directional/spatial sense, making places feel wrong or missing. No full scientific lecture or Roman connection."
+    },
+    {
+      "key": "clear-the-workshop",
+      "title": "Horseshoes in the Dark",
+      "events": "The team gathers obvious and concealed horseshoes while the apprentice sleeps. Buaic gives feedback from a safe distance as the iron is carried away: 'Better. The left side of the room exists again.' Later: 'There—I can feel the doorway now.' The last horseshoe remains in the apprentice's hand.",
+      "location": {
+        "slug": "beekepers-workshop",
+        "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Remove the scattered iron without startling the apprentice.",
+      "gmInstructions": "No fixed horseshoe count. Iron, smithcraft and observation can help find caches; roll only if noise or another meaningful risk matters. A missed cache or noise leads to feedback or the apprentice waking, not repeated identical checks. Move collected iron away from Buaic and the entrance. Do not set workshop-cleared until the final horseshoe is removed and he can safely enter."
+    },
+    {
+      "key": "apprentice",
+      "title": "The Queen in the Stories",
+      "events": "The apprentice wakes, or is gently woken, so the last horseshoe can be relinquished. Startling him may cause panic and thrown horseshoes. He fears Morrigan specifically: 'She turns into a raven'; 'She turns into a wolf'; 'She can be in two places at once'; 'She watches through animals'; 'She owns people'; 'She's a liar.' He took the horseshoes to protect himself and the workshop.",
+      "location": {
+        "slug": "beekepers-workshop",
+        "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
+        "fileTypeSlug": "location"
+      },
+      "objective": "Persuade the apprentice to surrender the last horseshoe and return the stolen protections.",
+      "gmInstructions": "Use a few rumours naturally, not a checklist. Keep him sympathetic. Meabh takes his fear seriously: 'She does not turn into a raven.' 'So there is a raven?' She says nothing. At 'liar', she reacts sharply: 'Who told you that?' or 'That is a dangerous thing to say about a Queen.' No explanation of why. She may disclose 'She owns my service. Which is near enough to owning me,' but no details of her assignment. Discuss domestic Fey not all being alike, theft, unprotected households and the strengthened watch. When the player connects the cache to missing village horseshoes, he confesses. He takes the horseshoes away and promises to return them 'soon'; do not clear the village lockdown. Resolve panic through another approach if needed. Set workshop-cleared to 1 only once Buaic can enter safely."
     },
     {
       "key": "buaics-payment",
       "title": "Honey and a Candle",
-      "events": "Once the iron is gone, Buaic returns to his bench and demonstrates why he calls his candles the finest in the region. From the honey left under his arrangement, he gives the team two measures for Coinin. He also gives the player a wax candle ‘for your grandmother’ and firmly tells him not to offer thanks. Set the honey tracker to 2 and the wax-candle tracker to 1.",
+      "events": "Buaic enters normally at last, relieved and genuinely happy to have his bench back. He pays the agreed two measures of honey and separately gives one fine wax candle: 'The honey is payment. The candle is for your Grannie. She's a kind woman. Or so I've heard.' Set honey to 2 and wax-candle to 1 when received.",
       "location": {
         "slug": "beekepers-workshop",
         "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
@@ -81,7 +117,7 @@
           "level": "Deep Lore"
         }
       ],
-      "gmInstructions": "Unlock Brownie Deep Lore after the exchange. Explain only through behaviour that direct gifts, formal thanks, or gratitude-settlement can alter a Brownie's contract; do not reveal the full lab/milk-hub truth. If the player thanks him anyway, apply the existing Grace/Bargain rules and let Buaic react as a professional whose carefully framed exchange has been spoiled, without erasing the Mission reward."
+      "gmInstructions": "Resolve the team's workshop obligation when access is restored and Buaic's honey obligation when paid; resolve Buaic's Workshop once both are fulfilled. Honour any negotiated wording. The candle is an additional personal gift, not contract payment or a new condition. Apply normal courtesy rules if relevant without manufacturing a dispute or withholding rewards. Unlock Brownie Deep Lore through the exchange: Brownies and Hobs normally work for humans at night in return for food, cream or milk; Buaic is not usually the one hiring humans. Do not reveal who consumes those supplies. 'Or so I've heard' hints at Pantry Hob gossip without explaining it. Contrast his genuine generosity with Coinin's opportunism."
     },
     {
       "key": "honey-delivery",
@@ -98,17 +134,17 @@
     {
       "key": "candle-home",
       "title": "Waxlight",
-      "events": "The player gives Grannie the candle. She is delighted by the luxury: ‘A wax candle, no less? Fierce kind Brownie, that one! I do hope he becomes a Hob some day.’ The remark may make little sense to the player yet.",
+      "events": "The player brings Grannie the fine wax candle. She is genuinely delighted: 'Oh my, a wax candle! Like a noble woman! I'll save it for a special occasion…'",
       "location": {
         "slug": "grannys-hut",
         "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
         "fileTypeSlug": "location"
       },
       "objective": "Bring Buaic's candle to Grannie.",
-      "gmInstructions": "Let the scene close warmly. Grannie knows more about Brownie and Hob status than she explains. Do not turn her remark into an immediate lecture unless the player asks; if asked, answer at the currently unlocked Deep Lore level."
+      "gmInstructions": "Close with home warmth, not another explanation or payment demand. Preserve the candle tracker at target as history."
     }
   ],
-  "description": "A proud Brownie has been driven from his candle workshop by a floor full of iron horseshoes. Clear the hidden danger, restore his night's work, and the honey owed to Coinin may finally be within reach.",
+  "description": "Something in the beekeeper's workshop has made it unbearable to its nocturnal candle-maker. Investigate the strange disturbance and help Buaic recover his bench.",
   "selectorMap": {
     "slug": "tri-mhuilinn",
     "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
@@ -130,7 +166,7 @@
   "missionTrackers": [
     {
       "key": "workshop-cleared",
-      "label": "Workshop cleared of iron",
+      "label": "Workshop safe for Buaic",
       "target": 1,
       "current": 0,
       "showAtZero": false
@@ -163,5 +199,5 @@
     }
   ],
   "revealedToPlayer": false,
-  "completionEffects": "Under Coinin's Silence, mark the accepting party's honey obligation resolved; do not change the cream or milk obligations. Coinin's nondisclosure obligation remains active, so the Bargain itself remains active. Preserve the candle tracker at target as history after Grannie receives it. Do not advance the moon phase."
+  "completionEffects": "Verify Buaic's Workshop has its fulfilled clearance and honey-payment obligations resolved. Honey delivery independently resolves only the accepting party's honey obligation in Coinin's Silence; leave cream, milk and Coinin's ongoing nondisclosure unchanged. Preserve trackers at target as history. The apprentice's promised returns do not instantly lift the village watch. Do not advance the moon phase."
 }

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-15T10:59:30.767Z",
+  "syncedAt": "2026-09-15T11:21:58.771Z",
   "folders": [
     {
       "path": "/Locations",
@@ -1079,8 +1079,8 @@
       "fileId": "01a0400e-cf1e-7a4c-a490-3fcf119540d6",
       "referenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4",
       "fileType": "location",
-      "baseVersionId": "01a07d46-b908-7b90-aa4d-035e159ee6ca",
-      "baseHash": "7818f4a7-5ff7-f923-0288-51ba50c1b03d",
+      "baseVersionId": "01a0a4cd-5df6-763c-8496-96d616149bc6",
+      "baseHash": "531ef8e5-285c-2311-ab12-17a2ecaa68e4",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1379,8 +1379,8 @@
       "fileId": "01a06897-3481-7e24-abca-8c9a841944c1",
       "referenceId": "01a06897-2c82-723a-b60c-b1068e9be03a",
       "fileType": "non-player-character",
-      "baseVersionId": "01a08377-2115-7bf4-82f7-68614351fb21",
-      "baseHash": "2193a3ab-5f8d-967d-8410-5269e8176f3f",
+      "baseVersionId": "01a0a4cd-5dda-72e4-94cb-6d55fc47624f",
+      "baseHash": "31be2b3c-27c9-2ed4-ec76-d76348a5dab1",
       "source": "project"
     },
     {
@@ -1415,8 +1415,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a09075-f688-7eec-84e8-4e2988270fd0",
-      "baseHash": "918885ff-ae76-2b2c-a9bf-e4e0f4ddc110",
+      "baseVersionId": "01a0a4cd-6205-7f14-8e8f-5dc1ac8e1875",
+      "baseHash": "5fa64d25-39d2-295c-a18e-79886ca97983",
       "source": "project"
     },
     {
