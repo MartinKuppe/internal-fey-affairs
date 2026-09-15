@@ -1,0 +1,24 @@
+{
+  "$craft": {
+    "referenceId": "01a0a66c-0566-72cc-b67f-dd426dd9ed83",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [],
+        "background": null,
+        "aspectRatio": {
+          "width": 1,
+          "height": 1
+        },
+        "useParentMap": true,
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Portal Hub H2-45-99"
+}

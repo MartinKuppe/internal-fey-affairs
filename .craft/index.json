@@ -1,10 +1,6 @@
 {
-  "syncedAt": "2026-09-15T18:52:50.319Z",
+  "syncedAt": "2026-09-15T19:30:42.615Z",
   "folders": [
-    {
-      "path": "/Locations",
-      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
-    },
     {
       "path": "/GM Instructions",
       "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
@@ -96,6 +92,14 @@
     {
       "path": "/Characters/Non-Player Character prototypes",
       "folderId": "01a07b8d-34e9-733c-82b3-fa80e719fbe4"
+    },
+    {
+      "path": "/Locations",
+      "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
+    },
+    {
+      "path": "/Locations/Cover locations",
+      "folderId": "01a0a685-3547-782c-b99f-1ffb9ecb150b"
     }
   ],
   "files": [
@@ -995,7 +999,7 @@
       "fileId": "01a03e6e-1dea-7348-9eea-3d4229cd3f7a",
       "referenceId": "01a03e6e-1dea-73bc-b1fb-e1ad30b3fc75",
       "fileType": "location",
-      "baseVersionId": "01a0522a-3034-7a08-a939-1ffb877cba3c",
+      "baseVersionId": "01a0a67d-edc9-70f0-9bc2-8fe3127a9ca7",
       "baseHash": "3be07430-8153-0a79-11f0-349b5c7f3b46",
       "source": "project",
       "metadataHash": "ce5f2145-eaf5-914d-48b0-1386a8561485"
@@ -1091,41 +1095,42 @@
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
     {
-      "path": "/Locations/Rathgall Hill Fort.location.json",
+      "path": "/Locations/Pnantom Court.location.json",
       "fileId": "01a0497b-7436-79f4-9ddf-165bc53a85b0",
       "referenceId": "01a0497b-7436-7a98-8746-7dbc17c04d1b",
       "fileType": "location",
-      "baseVersionId": "01a0497b-7432-7b98-802d-e146a468000a",
-      "baseHash": "96760831-63de-eaa6-59bb-8d74446af3d6",
+      "baseVersionId": "01a0a673-86c5-7e60-94ae-8643ec7ffe43",
+      "baseHash": "6584af68-7312-3e85-09ce-e8db47816a51",
       "source": "project"
     },
     {
-      "path": "/Locations/Rathgall Stone Circle.location.json",
+      "path": "/Locations/Algetic Research Centre.location.json",
       "fileId": "01a0497c-ee75-73c8-99d2-eae594d1d30b",
       "referenceId": "01a0497c-ee75-74c0-b9fb-22793203741d",
       "fileType": "location",
-      "baseVersionId": "01a0497c-ee6c-76e4-98ac-e46701f2e3ee",
-      "baseHash": "d9744010-995b-294e-3cd4-c75d3437f7f9",
+      "baseVersionId": "01a0a672-ea26-74e4-9791-3b77b1f47cdc",
+      "baseHash": "3ea5feb7-f6dd-375b-3f3a-03786bcd9241",
       "source": "project"
     },
     {
-      "path": "/Locations/Haroldstown Portal Tomb.location.json",
+      "path": "/Locations/Milk Hub & Hatchery H2-45-03.location.json",
       "fileId": "01a0497e-cf29-7c48-b225-288dfe76dfb8",
       "referenceId": "01a0497e-cf29-7d18-aad1-e29ef0e12242",
       "fileType": "location",
-      "baseVersionId": "01a0497e-eb66-7650-be3b-b47b39b4ef81",
-      "baseHash": "11707631-7373-5411-4f66-b006fca2119e",
+      "baseVersionId": "01a0a65f-e9e8-74d4-b9d4-61f4dbff44bc",
+      "baseHash": "83e7205c-6725-dd22-fe9c-d9584ae69e27",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
     {
-      "path": "/Locations/Ardristan Standing Stone.location.json",
+      "path": "/Locations/Damage Control Regional Center H2-45.location.json",
       "fileId": "01a0497f-d61c-76b4-a8df-1ec40e8281f5",
       "referenceId": "01a0497f-d61c-774c-9dc1-1b098aaa4b0a",
       "fileType": "location",
-      "baseVersionId": "01a061d2-f86f-792c-a6d8-5f6dc26599ba",
-      "baseHash": "91218b28-3a2a-7bcf-b2e3-caf6e25bfae4",
-      "source": "project"
+      "baseVersionId": "01a0a67d-c99a-7364-9d68-5d03488dd170",
+      "baseHash": "436b0b51-44ee-68dc-c3c4-97142e32e56c",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
     {
       "path": "/Characters/Player Characters/The Blacksmith.player-character.json",
@@ -1777,15 +1782,136 @@
       "baseVersionId": "01a08cd3-0e48-7914-a58c-db0cc00034cf",
       "baseHash": "aa7fc288-1de6-8698-8a9f-15443eefed6d",
       "source": "project"
+    },
+    {
+      "path": "/Portal Hub H2-45-99.location.json",
+      "fileId": "01a0a66c-0566-7230-a9d7-eea16efc754a",
+      "referenceId": "01a0a66c-0566-72cc-b67f-dd426dd9ed83",
+      "fileType": "location",
+      "baseVersionId": "01a0a66c-1982-7900-801f-9b3087a8f3fb",
+      "baseHash": "bade1cbb-ef81-bdc3-0594-b92450aa6fad",
+      "source": "project",
+      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+    },
+    {
+      "path": "/Portal Hub H2-45-100.location.json",
+      "fileId": "01a0a66c-4b78-7bc0-a8a7-ec80e0254fbc",
+      "referenceId": "01a0a66c-4b78-7c58-82f1-ef097878a774",
+      "fileType": "location",
+      "baseVersionId": "01a0a66c-4b73-7c60-8753-0bb083bdf65a",
+      "baseHash": "a1adb860-2db4-b291-60e5-79bc6dfc76b9",
+      "source": "project"
+    },
+    {
+      "path": "/Portal Hub H2-45-101.location.json",
+      "fileId": "01a0a66c-9495-7b38-883d-1b702ddbe460",
+      "referenceId": "01a0a66c-9495-7bd8-9413-ae1d7ae667a4",
+      "fileType": "location",
+      "baseVersionId": "01a0a66c-9490-7454-9486-6ab8582af373",
+      "baseHash": "e760c784-3751-44b3-587d-a3b5b884ebfc",
+      "source": "project"
+    },
+    {
+      "path": "/Portal Hub H2-45-102.location.json",
+      "fileId": "01a0a66c-c624-7e98-8b9b-1d8bf01efb30",
+      "referenceId": "01a0a66c-c624-7f20-81f4-15c18eb31468",
+      "fileType": "location",
+      "baseVersionId": "01a0a66c-c622-73e4-9b68-543595b55a33",
+      "baseHash": "4ab8d2d9-4a1a-288b-bf6f-222b835bf13b",
+      "source": "project"
+    },
+    {
+      "path": "/Damage Control - Dairy Office H2-45-d.location.json",
+      "fileId": "01a0a67b-2457-7388-ad01-775b64771dc1",
+      "referenceId": "01a0a67b-2457-73f8-bdd2-9e619a5d33b2",
+      "fileType": "location",
+      "baseVersionId": "01a0a67b-2451-7a2c-92cf-901439c72662",
+      "baseHash": "46081a82-de90-6c54-bb80-e80862b40d29",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Hillfort.location.json",
+      "fileId": "01a0a685-76a9-77fc-b510-488f49e946e5",
+      "referenceId": "01a0a685-76a9-7874-8559-dc239dc8f89e",
+      "fileType": "location",
+      "baseVersionId": "01a0a686-47d6-70d4-a010-b179fdd8efcf",
+      "baseHash": "69a8ba04-797e-6f6e-5428-7468f5df9c76",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Stone Circle.location.json",
+      "fileId": "01a0a686-8005-7a90-a650-9921ad16ab9c",
+      "referenceId": "01a0a686-8005-7b2c-a50b-9b9d8bd33f07",
+      "fileType": "location",
+      "baseVersionId": "01a0a687-0f86-731c-876b-fed7512696b0",
+      "baseHash": "36d9c521-8c66-600e-9eb3-986d3fc75342",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Hawthorn tree.location.json",
+      "fileId": "01a0a687-5014-734c-be97-98ecb7ed7b8f",
+      "referenceId": "01a0a687-5014-73e0-aa1f-f3e1cbb1c663",
+      "fileType": "location",
+      "baseVersionId": "01a0a687-e98d-72dc-ac92-129016ba6639",
+      "baseHash": "81ca71d4-cda5-9f06-3b2f-c3df31340ac4",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Hawthorn bush.location.json",
+      "fileId": "01a0a688-4560-74c4-a684-5af6fa225377",
+      "referenceId": "01a0a688-4560-7528-b461-c623fcdbc51f",
+      "fileType": "location",
+      "baseVersionId": "01a0a688-e87c-7608-9981-6962c91c4ee5",
+      "baseHash": "ae0ef87b-0ffc-e068-ab47-cbc5d9a18fd5",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Standing stone.location.json",
+      "fileId": "01a0a689-2c95-75fc-a932-3b051a928e55",
+      "referenceId": "01a0a689-2c95-7688-8f12-02517233107e",
+      "fileType": "location",
+      "baseVersionId": "01a0a689-5a02-7e58-a670-2708c50e1dff",
+      "baseHash": "97eb8cb0-6425-e91b-87f3-72d2ec3bdde2",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Dolmen.location.json",
+      "fileId": "01a0a689-7dd6-7990-afb2-85414ef4965c",
+      "referenceId": "01a0a689-7dd6-7a04-8994-d211453ffdad",
+      "fileType": "location",
+      "baseVersionId": "01a0a689-d3cb-7e48-8d00-aae8770a6926",
+      "baseHash": "b4a4fa2a-06e1-4647-942e-10bd40bd7603",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Hut.location.json",
+      "fileId": "01a0a68a-3991-7674-8fab-bdd4f2d1b4fa",
+      "referenceId": "01a0a68a-3991-76f0-8ca9-3b8975e73715",
+      "fileType": "location",
+      "baseVersionId": "01a0a68a-8f10-7e3c-ac1c-e8b344c68306",
+      "baseHash": "ae65ebc8-a0af-a3ae-dee4-59abed2bd70f",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Farm.location.json",
+      "fileId": "01a0a68a-e0ce-7630-a5cd-597130e43589",
+      "referenceId": "01a0a68a-e0ce-76d4-90f6-8cc3b8c39960",
+      "fileType": "location",
+      "baseVersionId": "01a0a68b-1328-7674-abe0-29b31d11002d",
+      "baseHash": "48ebb487-8204-9335-b6e2-9758b9dd5db4",
+      "source": "project"
+    },
+    {
+      "path": "/Locations/Cover locations/Village.location.json",
+      "fileId": "01a0a68b-5a34-710c-b94b-67231a755fa1",
+      "referenceId": "01a0a68b-5a34-7188-ab01-581186eff783",
+      "fileType": "location",
+      "baseVersionId": "01a0a68b-8542-78d8-afe2-1de8cfa6ec83",
+      "baseHash": "0ac3b098-888c-2510-ec07-108d3a952f05",
+      "source": "project"
     }
   ],
   "fileTypes": [
-    {
-      "slug": "location",
-      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
-      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
-      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
-    },
     {
       "slug": "origin",
       "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
@@ -1887,6 +2013,12 @@
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
       "schemaHash": "7b67d9de-9083-4308-7886-105d0bbd1fd0",
       "contentHash": "354afec7-5c8e-760b-c444-8b7c5985a938"
+    },
+    {
+      "slug": "location",
+      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
+      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
+      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
     }
   ],
   "projectSettingsHash": "eaf54961-83bc-27de-8599-f2ca22ac6ed7"
