@@ -3,7 +3,9 @@
     "referenceId": "01a03e77-5964-74ac-bdd0-323e99ec0dfd",
     "metadata": {
       "map": {
-        "grid": null,
+        "grid": {
+          "mode": "none"
+        },
         "areas": [
           {
             "id": "4b6f4084-eab5-4947-9267-69d10ba99718",
@@ -280,7 +282,10 @@
             "fileReferenceId": "01a08b07-d358-7b30-9c56-bb6836443705"
           }
         ],
-        "scale": null,
+        "scale": {
+          "unit": "mi",
+          "widthMeasurement": 100
+        },
         "points": [
           {
             "id": "28aaa3a0-1196-4a89-a8e7-e9c7e10a31c1",
@@ -342,8 +347,8 @@
               "color": "#eab308"
             },
             "position": {
-              "x": 0.07227657528540912,
-              "y": 0.7561838676212022
+              "x": 0.07030189876900746,
+              "y": 0.8007698548823486
             },
             "fileReferenceId": "01a0400e-cf1e-7ae4-b08e-07deb2cd04e4"
           },
