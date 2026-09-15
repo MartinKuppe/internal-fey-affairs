@@ -4,7 +4,6 @@
   "name": "Ability",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "18561dca-88aa-9762-50ea-5baf86fb9c4f",
   "schema": {
     "type": "object",

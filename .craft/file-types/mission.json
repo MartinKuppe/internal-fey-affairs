@@ -4,7 +4,6 @@
   "name": "Mission",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "75c5e000-1398-1bda-a3d1-efd1dc840dad",
   "schema": {
     "type": "object",

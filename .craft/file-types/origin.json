@@ -4,7 +4,6 @@
   "name": "Origin",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "bc254d61-12eb-fe43-5e14-a47e30e909da",
   "schema": {
     "type": "object",

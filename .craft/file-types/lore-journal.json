@@ -4,7 +4,6 @@
   "name": "Lore Journal",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
   "schema": {
     "type": "object",

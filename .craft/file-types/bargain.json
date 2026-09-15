@@ -4,7 +4,6 @@
   "name": "Bargain",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "944593c2-f612-f3aa-856d-69e811dd98ee",
   "schema": {
     "type": "object",

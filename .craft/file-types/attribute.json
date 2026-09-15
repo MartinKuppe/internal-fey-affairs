@@ -4,7 +4,6 @@
   "name": "Attribute",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "7b111924-26c4-515c-3d8a-94be5c262730",
   "schema": {
     "type": "object",

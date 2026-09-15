@@ -4,7 +4,6 @@
   "name": "Location",
   "contentType": "json",
   "designation": "location",
-  "category": "world",
   "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
   "schema": {
     "type": "object",

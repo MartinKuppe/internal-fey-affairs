@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-11T12:34:05.547Z",
+  "syncedAt": "2026-09-15T10:59:30.767Z",
   "folders": [
     {
       "path": "/Locations",
@@ -121,7 +121,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a08cd4-d8e7-7d6c-93e5-6c25937d99a5",
+      "baseVersionId": "01a0a4b7-cf21-7558-9eba-a1caf4dd38b7",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -1869,12 +1869,6 @@
       "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
     },
     {
-      "slug": "game-start",
-      "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
-      "schemaHash": "2301548c-907a-782b-d5c0-7768274db3ea",
-      "contentHash": "ab5f1e0b-9023-37df-78ee-448817891dba"
-    },
-    {
       "slug": "lore-card",
       "fileTypeId": "019ff086-a7eb-7f70-8897-3b9a93676a8b",
       "schemaHash": "8f2ffdf8-bda6-ec61-0dca-5c69e1665d41",
@@ -1887,10 +1881,10 @@
       "contentHash": "673e3261-15b2-b58b-db64-d6ff2320d6e9"
     },
     {
-      "slug": "player-character",
-      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "7b67d9de-9083-4308-7886-105d0bbd1fd0",
-      "contentHash": "354afec7-5c8e-760b-c444-8b7c5985a938"
+      "slug": "game-start",
+      "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
+      "schemaHash": "2301548c-907a-782b-d5c0-7768274db3ea",
+      "contentHash": "ab5f1e0b-9023-37df-78ee-448817891dba"
     },
     {
       "slug": "archetype",
@@ -1927,6 +1921,12 @@
       "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
       "schemaHash": "944593c2-f612-f3aa-856d-69e811dd98ee",
       "contentHash": "bb2b8cc1-0c3c-cb51-aa74-f89b76239e2c"
+    },
+    {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "7b67d9de-9083-4308-7886-105d0bbd1fd0",
+      "contentHash": "354afec7-5c8e-760b-c444-8b7c5985a938"
     }
   ],
   "projectSettingsHash": "eaf54961-83bc-27de-8599-f2ca22ac6ed7"

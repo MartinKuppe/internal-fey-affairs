@@ -4,7 +4,6 @@
   "name": "Lore Card",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "8f2ffdf8-bda6-ec61-0dca-5c69e1665d41",
   "schema": {
     "type": "object",

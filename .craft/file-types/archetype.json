@@ -4,7 +4,6 @@
   "name": "Archetype",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
   "schema": {
     "type": "object",

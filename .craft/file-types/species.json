@@ -4,7 +4,6 @@
   "name": "Species",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
   "schema": {
     "type": "object",

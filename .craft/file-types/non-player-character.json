@@ -4,7 +4,6 @@
   "name": "Non-Player Character",
   "contentType": "json",
   "designation": "character",
-  "category": null,
   "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
   "schema": {
     "type": "object",

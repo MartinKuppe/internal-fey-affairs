@@ -4,7 +4,6 @@
   "name": "Change Request",
   "contentType": "markdown",
   "designation": null,
-  "category": null,
   "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
   "schema": {
     "type": "object",

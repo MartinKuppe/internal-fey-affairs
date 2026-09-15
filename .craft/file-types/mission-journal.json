@@ -4,7 +4,6 @@
   "name": "Mission Journal",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "8446dc01-0b90-035a-857a-986e504942ac",
   "schema": {
     "type": "object",

@@ -4,7 +4,6 @@
   "name": "Outfit",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "14e475cd-a314-2743-7d28-efa6c865270f",
   "schema": {
     "type": "object",

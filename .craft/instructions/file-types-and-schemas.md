@@ -24,7 +24,6 @@ means, the layout says how people see it, and each file holds the actual data.
   "name": "Quest",
   "contentType": "json",        // "json" or "markdown"
   "designation": null,          // platform behavior hook — see "Designations" below; null for most types
-  "category": null,
   "schemaHash": "…",            // server-minted concurrency token — never edit
   "schema": { … },              // JSON Schema for json types; null for markdown (a json type with null schema validates base fields only)
   "layout": null,               // rendering spec — see the designing-layouts instruction
@@ -223,14 +222,13 @@ they declare, nothing more.
 
 For an already-synced type, `schema`, `layout`, the image settings
 (`imageStyleInstructions`, `showCoverImage`), and `creationFlow`
-push. (`name`,
-`contentType`, `designation`, and `category` do push for a brand-new
+push. (`name`, `contentType`, and `designation` do push for a brand-new
 locally authored type, as part of its creation.) Everything else is
 app-managed:
 
-- **Renaming a type**, changing its `designation`/`category`/
-  `contentType`, or **deleting a type** — do these in the Craft app; the
-  next `craft pull` picks them up. Editing those keys in the local type
+- **Renaming a type**, changing its `designation`/`contentType`, or
+  **deleting a type** — do these in the Craft app; the next `craft pull`
+  picks them up. Editing those keys in the local type
   file of a synced type does nothing on push (it is not even detected as
   drift).
 - **States** (character expressions) and creation flows — these live

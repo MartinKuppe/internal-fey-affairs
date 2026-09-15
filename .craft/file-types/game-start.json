@@ -4,7 +4,6 @@
   "name": "Game Start",
   "contentType": "json",
   "designation": "game_start",
-  "category": "game_master",
   "schemaHash": "2301548c-907a-782b-d5c0-7768274db3ea",
   "schema": {
     "type": "object",

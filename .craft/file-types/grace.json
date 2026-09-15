@@ -4,7 +4,6 @@
   "name": "Grace",
   "contentType": "json",
   "designation": null,
-  "category": null,
   "schemaHash": "c41caafc-4db2-99d7-8db4-b038e413388a",
   "schema": {
     "type": "object",
