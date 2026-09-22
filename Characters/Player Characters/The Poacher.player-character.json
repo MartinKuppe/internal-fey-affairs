@@ -3,9 +3,12 @@
     "referenceId": "01a0cb01-1cb5-76d5-a287-1bec7aa7fdd8"
   },
   "name": "The Poacher",
-  "description": "Quiet routes and convincing excuses keep you out of sight. You prefer not to test them in a prolonged chase.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/05b41bd0-2a4b-431f-ac3c-7606839f56c9"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/05b41bd0-2a4b-431f-ac3c-7606839f56c9",
+    "focalPoint": {
+      "x": 0.341991341991342,
+      "y": 0.4520613614573346
+    }
   },
   "origin": {
     "slug": "poacher",
@@ -44,9 +47,9 @@
     "heart": 1,
     "shadow": 2
   },
+  "description": "Quiet routes and convincing excuses keep you out of sight. You prefer not to test them in a prolonged chase.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,16 +67,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "thin-tunic",
       "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

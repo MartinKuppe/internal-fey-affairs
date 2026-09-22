@@ -1,8 +1,11 @@
 {
   "name": "The Used-horse dealer",
-  "description": "Riding, bargaining and an untroubled relationship with the truth make your living. Craftsmanship does not.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/04e8cd0a-1913-4acf-b1c3-c49f3ac3560a"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/04e8cd0a-1913-4acf-b1c3-c49f3ac3560a",
+    "focalPoint": {
+      "x": 0.3268398268398268,
+      "y": 0.425215723873442
+    }
   },
   "origin": {
     "slug": "used-horse-dealer",
@@ -41,9 +44,9 @@
     "heart": 1,
     "shadow": 2
   },
+  "description": "Riding, bargaining and an untroubled relationship with the truth make your living. Craftsmanship does not.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -61,16 +64,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "fancy-pants",
       "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

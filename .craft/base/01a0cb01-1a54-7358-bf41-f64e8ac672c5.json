@@ -1,8 +1,11 @@
 {
   "name": "The Milker",
-  "description": "Patient hands and an understanding of livestock serve you better than brute strength or a long uphill chase.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7151aa9f-6a1d-4e85-9646-c372ac65a436"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7151aa9f-6a1d-4e85-9646-c372ac65a436",
+    "focalPoint": {
+      "x": 0.2922077922077922,
+      "y": 0.5517737296260786
+    }
   },
   "origin": {
     "slug": "milker",
@@ -41,9 +44,9 @@
     "heart": 1,
     "shadow": 1
   },
+  "description": "Patient hands and an understanding of livestock serve you better than brute strength or a long uphill chase.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -61,16 +64,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "lucky-pompom-hat",
       "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

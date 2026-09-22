@@ -1,8 +1,11 @@
 {
   "name": "The Grocer",
-  "description": "You know food, milk and a fair agreement, but your face tends to announce what you think of an offer.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/4e754ff6-8b20-40b2-9516-94c9dfc2e7ac"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/4e754ff6-8b20-40b2-9516-94c9dfc2e7ac",
+    "focalPoint": {
+      "x": 0.41125541125541126,
+      "y": 0.3408437200383509
+    }
   },
   "origin": {
     "slug": "grocer",
@@ -41,9 +44,9 @@
     "heart": 1,
     "shadow": 0
   },
+  "description": "You know food, milk and a fair agreement, but your face tends to announce what you think of an offer.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -61,16 +64,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "lucky-pompom-hat",
       "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

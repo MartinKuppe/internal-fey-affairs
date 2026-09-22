@@ -41,6 +41,7 @@
     "heart": 1,
     "shadow": 0
   },
+  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away.",
   "graceLedger": [],
   "knownBargains": [],
   "bargainFilters": {
@@ -67,15 +68,14 @@
   "signedBargains": [],
   "unlockedOutfits": [
     {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
-    {
       "slug": "heavy-black-coat",
       "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
       "fileTypeSlug": "outfit"
     }
   ],
-  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away."
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

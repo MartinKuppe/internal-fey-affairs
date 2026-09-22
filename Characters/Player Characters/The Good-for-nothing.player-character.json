@@ -3,9 +3,12 @@
     "referenceId": "01a0cb01-1cb5-76d5-a286-fc15d12ee4b9"
   },
   "name": "The Good-for-nothing",
-  "description": "You dance, charm and improvise your way out of trouble—often the very trouble you wandered into without thinking.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9de89a51-30c6-44a9-9678-aebe299d3fe6"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9de89a51-30c6-44a9-9678-aebe299d3fe6",
+    "focalPoint": {
+      "x": 0.2554112554112554,
+      "y": 0.42138063279002874
+    }
   },
   "origin": {
     "slug": "good-for-nothing",
@@ -44,9 +47,9 @@
     "heart": 2,
     "shadow": 1
   },
+  "description": "You dance, charm and improvise your way out of trouble—often the very trouble you wandered into without thinking.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,16 +67,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "lucky-pompom-hat",
       "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

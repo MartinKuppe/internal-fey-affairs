@@ -1,7 +1,5 @@
 ---
 name: Checks and Conditions
-description: Check resolution, criticals, Depletion, recovery and Outfit
-  changes. Consult when these mechanics apply.
 $craft:
   referenceId: 01a0879b-2fa5-731b-b003-1e7014ea6cb4
 ---
@@ -46,7 +44,7 @@ Check the natural dice before modifiers. Other doubles have no special effect.
 Health, Energy and Nerve persist; Decorum and Cover describe scene position. Each ranges 0–3. Decorum means social/aesthetic appropriateness, not just cleanliness; Cover means remaining unnoticed or unsuspected.
 
 Store only `conditionState` Depletion, clamped 0–3; absent Depletion is 0. The sheet derives:
-- Effective Maximum = clamp(base + worn Outfit modifiers, 0, 3).
+- Effective Maximum = clamp(base + worn wardrobe-copy modifiers, 0, 3).
 - Current = clamp(Effective Maximum − Depletion, 0, 3).
 - Base Health is 3; Energy, Nerve, Decorum and Cover are 2.
 
@@ -54,9 +52,9 @@ Never write Current or Maximum. Abilities do not raise Maximums. Apply pressure 
 
 ## Outfits
 
-`outfit` is the worn Outfit; `unlockedOutfits` lists what the PC may equip. Other Outfits may be unlocked by authored Mission outcomes, Abilities or Bargains; invent neither unlocks nor prices.
+`wornUnlockedOutfit` is the worn wardrobe copy (an Unlocked Outfit file); `outfit` is the authoring fallback Outfit. `unlockedOutfits` lists the spare Outfit(s) the PC may equip — Common Clothes are always available via the Common Clothes copy and are not listed. Other Outfits may be unlocked by authored Mission outcomes, Abilities or Bargains; invent neither unlocks nor prices. Runtime wardrobe copies live in the game instance, never in the authoring project (except the Common Clothes baseline copy).
 
-All worn modifiers apply mechanically. `appliesBecause` explains why, not when. Changing Outfit preserves Depletion exactly and recalculates Current/Maximum; narrate a newly caused zero crossing.
+All worn modifiers apply mechanically. `appliesBecause` explains why, not when. Changing the worn copy preserves Depletion exactly and recalculates Current/Maximum; narrate a newly caused zero crossing.
 
 ## Reaching zero
 
@@ -80,4 +78,3 @@ Only recover when the fiction supports it:
 - Cover: normally clear after establishing a new disguise, hiding place, route or infiltration situation, not while the same observers keep searching/watching.
 
 Existing consequences survive recovery and resets.
-

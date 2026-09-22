@@ -1,8 +1,11 @@
 {
   "name": "The Bandit",
-  "description": "Bold, quick with a lie and happier acting than planning, you trust strong arms to finish what impulse starts.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/33533205-5c8c-4698-9af6-74d887305e35"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/33533205-5c8c-4698-9af6-74d887305e35",
+    "focalPoint": {
+      "x": 0.4199134199134199,
+      "y": 0.4635666347075743
+    }
   },
   "origin": {
     "slug": "bandit",
@@ -41,9 +44,9 @@
     "heart": 1,
     "shadow": 1
   },
+  "description": "Bold, quick with a lie and happier acting than planning, you trust strong arms to finish what impulse starts.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -61,16 +64,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "thin-tunic",
       "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

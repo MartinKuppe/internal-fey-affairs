@@ -1,8 +1,11 @@
 {
   "name": "The Teacher",
-  "description": "You bring learning, measured argument and an eye for beauty. Explaining an expedition is easier than keeping up with one.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/87a70c4b-7e23-49e5-805b-82cd692e6cb2"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/87a70c4b-7e23-49e5-805b-82cd692e6cb2",
+    "focalPoint": {
+      "x": 0.329004329004329,
+      "y": 0.37535953978907
+    }
   },
   "origin": {
     "slug": "teacher",
@@ -41,9 +44,9 @@
     "heart": 1,
     "shadow": 1
   },
+  "description": "You bring learning, measured argument and an eye for beauty. Explaining an expedition is easier than keeping up with one.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -61,16 +64,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "heavy-black-coat",
       "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

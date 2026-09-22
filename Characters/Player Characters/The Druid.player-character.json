@@ -3,9 +3,12 @@
     "referenceId": "01a0cb01-1cb5-76d5-a286-f13c6e335f65"
   },
   "name": "The Druid",
-  "description": "Healing, learning and the living countryside make sense to you. Concealing what you think does not come so naturally.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c89312fc-283e-4279-9a1a-6371dce42c09"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c89312fc-283e-4279-9a1a-6371dce42c09",
+    "focalPoint": {
+      "x": 0.2792207792207792,
+      "y": 0.33317353787152443
+    }
   },
   "origin": {
     "slug": "druid",
@@ -44,9 +47,9 @@
     "heart": 1,
     "shadow": 0
   },
+  "description": "Healing, learning and the living countryside make sense to you. Concealing what you think does not come so naturally.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,16 +67,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "thin-tunic",
       "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

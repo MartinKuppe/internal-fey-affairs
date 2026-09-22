@@ -235,3 +235,4 @@ Credentials are never stored in this folder.
 | `.outfit.json` | Outfit | json |
 | `.player-character.json` | Player Character | json |
 | `.species.json` | Species | json |
+| `.unlocked-outfit.json` | Unlocked Outfit | json |

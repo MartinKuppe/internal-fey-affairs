@@ -4,7 +4,7 @@
   "name": "Player Character",
   "contentType": "json",
   "designation": "character",
-  "schemaHash": "7b67d9de-9083-4308-7886-105d0bbd1fd0",
+  "schemaHash": "90ef5ce9-0d90-5359-8b5a-55b9870e6254",
   "schema": {
     "type": "object",
     "required": [
@@ -260,7 +260,7 @@
       "outfitImage": {
         "type": "object",
         "title": "Outfit Image",
-        "expression": "load($self.outfit)?.image ?? null",
+        "expression": "load($self.wornUnlockedOutfit)?.image ?? load($self.outfit)?.image ?? null",
         "description": "The current worn outfit's image, pulled from the referenced outfit file."
       },
       "weaknessName": {
@@ -489,7 +489,7 @@
           }
         },
         "title": "Condition Tracks",
-        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', baseMaximum: 3, depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'energy', name: 'Energy', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.energy?.depletion ?? 0, 0, 3) }, { key: 'nerve', name: 'Nerve', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.nerve?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'cover', name: 'Cover', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.cover?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: clamp(t.baseMaximum + sum((load($self.outfit)?.conditionModifiers ?? []).filter(m => m.track === t.key), m => m.amount ?? 0), 0, 3), depletion: t.depletion, current: clamp(t.baseMaximum + sum((load($self.outfit)?.conditionModifiers ?? []).filter(m => m.track === t.key), m => m.amount ?? 0) - t.depletion, 0, 3) }))",
+        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', baseMaximum: 3, depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'energy', name: 'Energy', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.energy?.depletion ?? 0, 0, 3) }, { key: 'nerve', name: 'Nerve', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.nerve?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'cover', name: 'Cover', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.cover?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: clamp(t.baseMaximum + sum(((($self.wornUnlockedOutfit != null && $self.wornUnlockedOutfit != '') ? load($self.wornUnlockedOutfit)?.conditionModifiers : load($self.outfit)?.conditionModifiers) ?? []).filter(m => m.track === t.key), m => m.amount ?? 0), 0, 3), depletion: t.depletion, current: clamp(t.baseMaximum + sum(((($self.wornUnlockedOutfit != null && $self.wornUnlockedOutfit != '') ? load($self.wornUnlockedOutfit)?.conditionModifiers : load($self.outfit)?.conditionModifiers) ?? []).filter(m => m.track === t.key), m => m.amount ?? 0) - t.depletion, 0, 3) }))",
         "description": "Derived Condition Tracks. Effective Maximum is the fixed base value plus every modifier on the worn Outfit, clamped to 0–3; Current is Effective Maximum minus stored Depletion, likewise clamped."
       },
       "outfitModifiers": {
@@ -512,7 +512,7 @@
           }
         },
         "title": "Worn Outfit Condition Modifiers",
-        "expression": "load($self.outfit)?.conditionModifierRows ?? []",
+        "expression": "($self.wornUnlockedOutfit != null && $self.wornUnlockedOutfit != '') ? (load($self.wornUnlockedOutfit)?.conditionModifierRows ?? []) : (load($self.outfit)?.conditionModifierRows ?? [])",
         "description": "Condition modifiers that automatically apply while the current outfit is worn."
       },
       "unlockedOutfits": {
@@ -522,7 +522,7 @@
           "referencedFileTypeSlug": "outfit"
         },
         "title": "Unlocked Outfits",
-        "description": "Outfits the protagonist owns and may currently wear. Common Clothes are always included; character creation adds one spare outfit, and later missions or bargains may add more."
+        "description": "Spare Outfit(s) the protagonist owns besides Common Clothes (always available via the Common Clothes wardrobe copy, never listed here)."
       },
       "hasOtherBargains": {
         "type": "boolean",
@@ -533,7 +533,7 @@
       "outfitDescription": {
         "type": "string",
         "title": "Worn Outfit Description",
-        "expression": "load($self.outfit)?.description ?? ''",
+        "expression": "load($self.wornUnlockedOutfit)?.description ?? load($self.outfit)?.description ?? ''",
         "description": "Description of the currently worn outfit."
       },
       "graceLedgerDisplay": {
@@ -558,6 +558,12 @@
         "title": "Grace Ledger Display",
         "expression": "($self.graceLedger ?? []).map(e => ({ day: number(e.day), amountDisplay: (number(e.amount) >= 0 ? '+' : '') + number(e.amount) + (load(e.currency)?.symbol ?? ''), reason: e.reason }))",
         "description": "Formatted grace ledger rows: each amount as a signed number followed by its currency's symbol (e.g. +1000🍀). Derived from the ledger and each Grace currency's symbol."
+      },
+      "wornUnlockedOutfit": {
+        "type": "string",
+        "title": "Worn Wardrobe Copy",
+        "description": "The worn wardrobe copy. Player-facing selector edits this; outfit remains the authoring fallback.",
+        "referencedFileTypeSlug": "unlocked-outfit"
       }
     }
   },
@@ -614,6 +620,26 @@
           "gap": "md",
           "align": "stretch",
           "justify": "center",
+          "children": [
+            "name",
+            "divider",
+            "tabs",
+            "outfitimage-section",
+            "originimage-section",
+            "origindescription-section",
+            "conditionstate-section",
+            "originname-section",
+            "weaknessname-section",
+            "voice-select",
+            "origin-select",
+            "weakness-field",
+            "graceledger-references",
+            "hasmybargains-checkbox",
+            "knownbargains-references",
+            "signedbargains-references",
+            "unlockedoutfits-references",
+            "hasotherbargains-checkbox"
+          ],
           "direction": "vertical"
         },
         "children": [
@@ -625,7 +651,18 @@
           "origindescription-section",
           "conditionstate-section",
           "originname-section",
-          "weaknessname-section"
+          "weaknessname-section",
+          "voice-select",
+          "origin-select",
+          "weakness-field",
+          "graceledger-references",
+          "hasmybargains-checkbox",
+          "knownbargains-references",
+          "signedbargains-references",
+          "unlockedoutfits-references",
+          "hasotherbargains-checkbox",
+          "wornunlockedoutfit-select",
+          "outfit-select"
         ]
       },
       "tabs": {
@@ -1323,9 +1360,9 @@
         "props": {
           "label": "Select:",
           "value": {
-            "$state": "/outfit"
+            "$state": "/wornUnlockedOutfit"
           },
-          "fileTypeSlug": "outfit"
+          "fileTypeSlug": "unlocked-outfit"
         },
         "children": []
       },
@@ -1572,6 +1609,21 @@
         },
         "children": []
       },
+      "voice-select": {
+        "type": "VoiceSelect",
+        "props": {
+          "label": "Voice",
+          "value": {
+            "$state": "/voice"
+          },
+          "showLabel": true,
+          "placeholder": "Use GM voice"
+        },
+        "visible": {
+          "$state": "/voice"
+        },
+        "children": []
+      },
       "heading-2-2-2": {
         "type": "Heading",
         "props": {
@@ -1579,6 +1631,38 @@
           "color": null,
           "level": "h1",
           "className": null
+        },
+        "children": []
+      },
+      "origin-select": {
+        "type": "Select",
+        "props": {
+          "label": "Origin",
+          "value": {
+            "$state": "/origin"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "origin"
+        },
+        "visible": {
+          "$state": "/origin"
+        },
+        "children": []
+      },
+      "outfit-select": {
+        "type": "Select",
+        "props": {
+          "label": "Outfit",
+          "value": {
+            "$state": "/outfit"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "outfit"
+        },
+        "visible": {
+          "$state": "/outfit"
         },
         "children": []
       },
@@ -1706,6 +1790,25 @@
           "variant": "caption",
           "editPath": null,
           "className": null
+        },
+        "children": []
+      },
+      "weakness-field": {
+        "type": "FieldList",
+        "props": {
+          "items": [
+            [
+              "Weakness",
+              {
+                "$state": "/weakness"
+              }
+            ]
+          ],
+          "labelColor": null,
+          "valueColor": null
+        },
+        "visible": {
+          "$state": "/weakness"
         },
         "children": []
       },
@@ -2254,6 +2357,48 @@
         },
         "children": []
       },
+      "graceledger-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/graceLedger"
+          },
+          "label": "Grace Ledger",
+          "columns": 4,
+          "fileTypeSlug": "grace",
+          "metadataFields": [
+            {
+              "name": "day",
+              "type": "number"
+            },
+            {
+              "name": "amount",
+              "type": "number"
+            },
+            {
+              "name": "reason",
+              "type": "string"
+            }
+          ],
+          "referenceField": "currency"
+        },
+        "visible": {
+          "$state": "/graceLedger"
+        },
+        "children": []
+      },
+      "hasmybargains-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Has My Bargains",
+          "checked": {
+            "$state": "/hasMyBargains"
+          }
+        },
+        "children": []
+      },
       "outfit-modifier-amount": {
         "type": "Text",
         "props": {
@@ -2288,6 +2433,23 @@
         },
         "children": []
       },
+      "knownbargains-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/knownBargains"
+          },
+          "label": "Known Bargains",
+          "columns": 4,
+          "fileTypeSlug": "bargain",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/knownBargains"
+        },
+        "children": []
+      },
       "trackbox-row-concealment": {
         "type": "TrackBoxes",
         "props": {
@@ -2314,6 +2476,17 @@
         },
         "children": []
       },
+      "hasotherbargains-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Has Other Bargains",
+          "checked": {
+            "$state": "/hasOtherBargains"
+          }
+        },
+        "children": []
+      },
       "origindescription-section": {
         "type": "Stack",
         "props": {
@@ -2322,6 +2495,56 @@
         },
         "visible": {
           "$state": "/originDescription"
+        },
+        "children": []
+      },
+      "signedbargains-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/signedBargains"
+          },
+          "label": "Signed Bargains",
+          "columns": 4,
+          "fileTypeSlug": "bargain",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/signedBargains"
+        },
+        "children": []
+      },
+      "wornunlockedoutfit-select": {
+        "type": "Select",
+        "props": {
+          "label": "Worn Wardrobe Copy",
+          "value": {
+            "$state": "/wornUnlockedOutfit"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "unlocked-outfit"
+        },
+        "visible": {
+          "$state": "/wornUnlockedOutfit"
+        },
+        "children": []
+      },
+      "unlockedoutfits-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/unlockedOutfits"
+          },
+          "label": "Unlocked Outfits",
+          "columns": 4,
+          "fileTypeSlug": "outfit",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/unlockedOutfits"
         },
         "children": []
       }
@@ -3493,7 +3716,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn outfit to the chosen Outfit (or Common Clothes) and set unlockedOutfits to Common Clothes plus the chosen spare Outfit. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn wardrobe copy (wornUnlockedOutfit) to the Common Clothes wardrobe copy and set unlockedOutfits to the chosen spare Outfit only (Common Clothes are always available via the copy, never listed). Keep outfit as the Common Clothes authoring fallback. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn copy. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
     }
   }
 }

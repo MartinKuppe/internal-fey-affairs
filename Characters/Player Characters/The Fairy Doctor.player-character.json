@@ -3,9 +3,12 @@
     "referenceId": "01a0cb01-1cb5-76d5-a286-f6287ecc308b"
   },
   "name": "The Fairy Doctor",
-  "description": "People turn to your skilled hands and knowledge of the Fair Folk. They rarely turn to you to win a footrace.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/787e6d99-1224-46d3-8038-b5190d5a3990"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/787e6d99-1224-46d3-8038-b5190d5a3990",
+    "focalPoint": {
+      "x": 0.27705627705627706,
+      "y": 0.5134228187919463
+    }
   },
   "origin": {
     "slug": "fairy-doctor",
@@ -44,9 +47,9 @@
     "heart": 1,
     "shadow": 1
   },
+  "description": "People turn to your skilled hands and knowledge of the Fair Folk. They rarely turn to you to win a footrace.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,16 +67,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "fancy-pants",
       "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

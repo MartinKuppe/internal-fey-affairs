@@ -3,9 +3,12 @@
     "referenceId": "01a0cb01-1cb5-76d5-a286-f8409e4cef62"
   },
   "name": "The Farmhand",
-  "description": "You understand animals and practical work through patient hands; distant details have a way of escaping you.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3e9ed570-c2c9-4f0b-a4b7-505bf1ae7efa"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3e9ed570-c2c9-4f0b-a4b7-505bf1ae7efa",
+    "focalPoint": {
+      "x": 0.3874458874458874,
+      "y": 0.475071907957814
+    }
   },
   "origin": {
     "slug": "farmhand",
@@ -44,9 +47,9 @@
     "heart": 1,
     "shadow": 1
   },
+  "description": "You understand animals and practical work through patient hands; distant details have a way of escaping you.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,16 +67,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "thin-tunic",
       "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

@@ -1,8 +1,11 @@
 {
   "name": "The Herbalist",
-  "description": "Useful leaves and faint trail signs catch your eye. Getting there quickly is somebody else's speciality.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ef938e6b-884b-4947-ab7e-ae9ab51f1e0c"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ef938e6b-884b-4947-ab7e-ae9ab51f1e0c",
+    "focalPoint": {
+      "x": 0.19696969696969696,
+      "y": 0.5556088207094918
+    }
   },
   "origin": {
     "slug": "herbalist",
@@ -41,9 +44,9 @@
     "heart": 1,
     "shadow": 1
   },
+  "description": "Useful leaves and faint trail signs catch your eye. Getting there quickly is somebody else's speciality.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -61,16 +64,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "thin-tunic",
       "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

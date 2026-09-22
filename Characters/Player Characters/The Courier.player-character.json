@@ -3,9 +3,12 @@
     "referenceId": "01a0cb01-1cb5-76d5-a286-ecd85abd8d4e"
   },
   "name": "The Courier",
-  "description": "Routes, riding and arrivals are your business. Thinking three moves ahead is considerably less comfortable.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e6f044e2-c74f-4062-bbb3-cd8bd58bb74a"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e6f044e2-c74f-4062-bbb3-cd8bd58bb74a",
+    "focalPoint": {
+      "x": 0.36147186147186144,
+      "y": 0.5019175455417066
+    }
   },
   "origin": {
     "slug": "courier",
@@ -44,9 +47,9 @@
     "heart": 1,
     "shadow": 1
   },
+  "description": "Routes, riding and arrivals are your business. Thinking three moves ahead is considerably less comfortable.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,16 +67,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "thin-tunic",
       "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

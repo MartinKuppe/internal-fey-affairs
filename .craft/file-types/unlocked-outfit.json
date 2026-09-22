@@ -1,0 +1,151 @@
+{
+  "fileTypeId": "01a0cb6e-666c-780c-996a-1513cdc00e97",
+  "slug": "unlocked-outfit",
+  "name": "Unlocked Outfit",
+  "contentType": "json",
+  "designation": null,
+  "schemaHash": "1491ceb2-7cba-d273-fba1-7b793d2834c4",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      },
+      "sourceOutfit": {
+        "type": "string",
+        "description": "Source outfit this copy was made from.",
+        "referencedFileTypeSlug": "outfit"
+      },
+      "conditionModifiers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "amount",
+            "appliesBecause",
+            "track"
+          ],
+          "properties": {
+            "track": {
+              "enum": [
+                "cover",
+                "decorum",
+                "energy",
+                "health",
+                "nerve"
+              ],
+              "type": "string"
+            },
+            "amount": {
+              "enum": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "type": "number"
+            },
+            "appliesBecause": {
+              "type": "string"
+            }
+          }
+        },
+        "description": "Snapshot of source outfit modifiers."
+      },
+      "conditionModifierRows": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "track": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "string"
+            },
+            "trackName": {
+              "type": "string"
+            },
+            "appliesBecause": {
+              "type": "string"
+            }
+          }
+        },
+        "expression": "($self.conditionModifiers ?? []).map(m => ({ track: m.track, trackName: [{ key: 'health', name: 'Health' }, { key: 'energy', name: 'Energy' }, { key: 'nerve', name: 'Nerve' }, { key: 'decorum', name: 'Decorum' }, { key: 'cover', name: 'Cover' }].find(r => r.key === m.track)?.name ?? m.track, amount: `${m.amount > 0 ? '+' : ''}${m.amount}`, appliesBecause: m.appliesBecause }))",
+        "description": "Player-facing rows derived from conditionModifiers."
+      }
+    }
+  },
+  "layout": null,
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

@@ -1,0 +1,16 @@
+{
+  "$craft": {
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd"
+  },
+  "name": "Common Clothes Wardrobe",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/f3ef868e-1b06-4d21-a142-3ded32a23760"
+  },
+  "description": "Ordinary everyday clothes. They are always available and do not modify any Condition Track.",
+  "sourceOutfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "conditionModifiers": []
+}

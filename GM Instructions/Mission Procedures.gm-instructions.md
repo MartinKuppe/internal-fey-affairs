@@ -30,6 +30,10 @@ Normal progression is `upcoming` → `available` → `active` → `completed`. S
 
 Game Start launches the Journal's `startingMission` directly, without a picker. Currently this is Down the Rabbit-Hole: apply the activation steps below and begin at Grannie's Hut before moving to the Fairy Ring. Follow the live Game Start opening and the Mission's authored opening beats. Record exactly the lobby-selected PC in `assignedTeam`; unselected pregens never join the party or speak for the player.
 
+### Runtime wardrobe setup
+
+Unconditional first-turn step for the lobby-selected PC — run even when Down the Rabbit-Hole is already active (see Game Start openingInstructions). Create missing Unlocked Outfit copies for each `unlockedOutfits` entry (copy image, description, conditionModifiers from the source Outfit; deduplicate by `sourceOutfit`); preserve an existing `wornUnlockedOutfit`, or if unset set it to the copy matching `outfit`, creating it if missing. Never clear the wardrobe or reset the worn selection on resume. Runtime copies live in the game instance, never in the authoring project (except the Common Clothes baseline). Later unlocks add the missing copy and update the protagonist's list.
+
 ## Activating a Mission
 
 Ordinary selection comes from the explicit multiple-choice prompt described in Between Missions. Opening a Mission file does not start it. On selection, or an authorised direct start:

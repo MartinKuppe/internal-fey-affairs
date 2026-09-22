@@ -1,8 +1,11 @@
 {
   "name": "The Piper",
-  "description": "You find your way by rhythm, conversation and a good tune, though you may miss what sharper eyes notice.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8d4361dd-f5f2-4d7d-b5b5-29bcc4a63e5e"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8d4361dd-f5f2-4d7d-b5b5-29bcc4a63e5e",
+    "focalPoint": {
+      "x": 0.3333333333333333,
+      "y": 0.5632790028763183
+    }
   },
   "origin": {
     "slug": "piper",
@@ -41,9 +44,9 @@
     "heart": 2,
     "shadow": 1
   },
+  "description": "You find your way by rhythm, conversation and a good tune, though you may miss what sharper eyes notice.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -61,16 +64,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "fancy-pants",
       "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }

@@ -1,8 +1,11 @@
 {
   "name": "The Bard",
-  "description": "Songs, old lore and courtly manners open doors for you. Fiddly practical work is best left to someone else.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9381120c-068e-40f7-8889-c9c2299cdd00"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9381120c-068e-40f7-8889-c9c2299cdd00",
+    "focalPoint": {
+      "x": 0.45670995670995673,
+      "y": 0.2794822627037392
+    }
   },
   "origin": {
     "slug": "bard",
@@ -41,9 +44,9 @@
     "heart": 2,
     "shadow": 1
   },
+  "description": "Songs, old lore and courtly manners open doors for you. Fiddly practical work is best left to someone else.",
   "graceLedger": [],
   "knownBargains": [],
-  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -61,16 +64,17 @@
       "depletion": 0
     }
   },
+  "signedBargains": [],
   "unlockedOutfits": [
-    {
-      "slug": "common-clothes",
-      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-      "fileTypeSlug": "outfit"
-    },
     {
       "slug": "fancy-pants",
       "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "wornUnlockedOutfit": {
+    "slug": "common-clothes-wardrobe",
+    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
+    "fileTypeSlug": "unlocked-outfit"
+  }
 }
