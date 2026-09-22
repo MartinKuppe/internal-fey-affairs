@@ -1,0 +1,79 @@
+{
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a287-102824ee3563"
+  },
+  "name": "The Milker",
+  "description": "Patient hands and an understanding of livestock serve you better than brute strength or a long uphill chase.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7151aa9f-6a1d-4e85-9646-c372ac65a436"
+  },
+  "origin": {
+    "slug": "milker",
+    "referenceId": "019fe8d9-edcd-7080-9b30-902b2bef1552",
+    "fileTypeSlug": "origin"
+  },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "weakness": "Short-Winded",
+  "abilities": [
+    {
+      "slug": "animals",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "milk",
+      "referenceId": "019fe8d9-7f71-7f98-8978-31359da4dddd",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "nature",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attributes": {
+    "body": 0,
+    "eyes": 1,
+    "head": 1,
+    "legs": 1,
+    "hands": 2,
+    "heart": 1,
+    "shadow": 1
+  },
+  "graceLedger": [],
+  "knownBargains": [],
+  "signedBargains": [],
+  "conditionState": {
+    "cover": {
+      "depletion": 0
+    },
+    "nerve": {
+      "depletion": 0
+    },
+    "energy": {
+      "depletion": 0
+    },
+    "health": {
+      "depletion": 0
+    },
+    "decorum": {
+      "depletion": 0
+    }
+  },
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "lucky-pompom-hat",
+      "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5",
+      "fileTypeSlug": "outfit"
+    }
+  ]
+}

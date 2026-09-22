@@ -1,12 +1,15 @@
 {
-  "name": "The Blacksmith",
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a287-21559abbef66"
+  },
+  "name": "The Tailor",
+  "description": "You notice the seam, the colour and the social occasion. Your work travels through fine houses more easily than you run between them.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/930588b2-0eab-45e1-aa8d-b750ae1614c1",
-    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/24e721ec-4b5f-46bc-b3ce-8f34284c59e6"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9c33904d-b584-47ef-844e-517535aaec95"
   },
   "origin": {
-    "slug": "blacksmith",
-    "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+    "slug": "tailor",
+    "referenceId": "019fe8d9-eee7-7a0c-ae09-2accd0f9dfb4",
     "fileTypeSlug": "origin"
   },
   "outfit": {
@@ -14,7 +17,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
-  "weakness": "Open Book",
+  "weakness": "Short-Winded",
   "abilities": [
     {
       "slug": "repairs",
@@ -22,31 +25,28 @@
       "fileTypeSlug": "ability"
     },
     {
-      "slug": "iron",
-      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
+      "slug": "art-beauty",
+      "referenceId": "019fe8d9-7f54-7b08-a50c-1437927892ef",
       "fileTypeSlug": "ability"
     },
     {
-      "slug": "weapons",
-      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "slug": "court-life",
+      "referenceId": "019fe8d9-7e43-7510-8d2d-585d3869301b",
       "fileTypeSlug": "ability"
     }
   ],
   "attributes": {
-    "body": 2,
-    "eyes": 1,
+    "body": 0,
+    "eyes": 2,
     "head": 1,
     "legs": 1,
     "hands": 1,
     "heart": 1,
-    "shadow": 0
+    "shadow": 1
   },
   "graceLedger": [],
   "knownBargains": [],
-  "bargainFilters": {
-    "myOnlyActive": false,
-    "otherOnlyActive": false
-  },
+  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,7 +64,6 @@
       "depletion": 0
     }
   },
-  "signedBargains": [],
   "unlockedOutfits": [
     {
       "slug": "common-clothes",
@@ -72,10 +71,9 @@
       "fileTypeSlug": "outfit"
     },
     {
-      "slug": "heavy-black-coat",
-      "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
+      "slug": "fancy-pants",
+      "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
       "fileTypeSlug": "outfit"
     }
-  ],
-  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away."
+  ]
 }

@@ -1,12 +1,15 @@
 {
-  "name": "The Blacksmith",
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a286-f8409e4cef62"
+  },
+  "name": "The Farmhand",
+  "description": "You understand animals and practical work through patient hands; distant details have a way of escaping you.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/930588b2-0eab-45e1-aa8d-b750ae1614c1",
-    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/24e721ec-4b5f-46bc-b3ce-8f34284c59e6"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3e9ed570-c2c9-4f0b-a4b7-505bf1ae7efa"
   },
   "origin": {
-    "slug": "blacksmith",
-    "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+    "slug": "farmhand",
+    "referenceId": "019fe8d9-ed55-74d4-80e8-88d70096348c",
     "fileTypeSlug": "origin"
   },
   "outfit": {
@@ -14,7 +17,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
-  "weakness": "Open Book",
+  "weakness": "Squint-Eyed",
   "abilities": [
     {
       "slug": "repairs",
@@ -22,31 +25,28 @@
       "fileTypeSlug": "ability"
     },
     {
-      "slug": "iron",
-      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
+      "slug": "animals",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
       "fileTypeSlug": "ability"
     },
     {
-      "slug": "weapons",
-      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "slug": "food",
+      "referenceId": "019fe8d9-879f-74a8-9255-601fee8af116",
       "fileTypeSlug": "ability"
     }
   ],
   "attributes": {
-    "body": 2,
-    "eyes": 1,
+    "body": 1,
+    "eyes": 0,
     "head": 1,
     "legs": 1,
-    "hands": 1,
+    "hands": 2,
     "heart": 1,
-    "shadow": 0
+    "shadow": 1
   },
   "graceLedger": [],
   "knownBargains": [],
-  "bargainFilters": {
-    "myOnlyActive": false,
-    "otherOnlyActive": false
-  },
+  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,7 +64,6 @@
       "depletion": 0
     }
   },
-  "signedBargains": [],
   "unlockedOutfits": [
     {
       "slug": "common-clothes",
@@ -72,10 +71,9 @@
       "fileTypeSlug": "outfit"
     },
     {
-      "slug": "heavy-black-coat",
-      "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
+      "slug": "thin-tunic",
+      "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
       "fileTypeSlug": "outfit"
     }
-  ],
-  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away."
+  ]
 }

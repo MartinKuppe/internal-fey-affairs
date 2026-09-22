@@ -12,7 +12,7 @@ Consult when creating a character or changing classification. Campaign startup i
 
 ## Player Character
 
-The Blacksmith is ready to play; quick start needs no rebuilding.
+Any of the 21 Origin pregens is ready to play as the household protagonist in the same story role; quick start needs no rebuilding. Selecting a pregen does not repeat completed choices and does not bring unselected pregens into play.
 
 For a new protagonist:
 1. Choose an Origin from the Origins folder. It supplies village background, one Strong Attribute and three trained Abilities.
@@ -43,4 +43,3 @@ NPCs have identity, description, images, voice, personality, background, goals, 
 Species is Human or Fey. Clones and Takelings are Human: Takelings were taken in infancy and raised by Fey; clones are grown from a pattern. Changeling denotes a clone pattern or role. Fey kinds such as Banshee, Pooka, Brownie and Leannan Sidhe are Archetypes, not Species.
 
 Store all applicable Archetypes explicitly; do not infer undisclosed classification through reference chains. Archetypes are descriptive and grant no automatic mechanics. Species and Archetypes are optional PC classifications as well as NPC classifications. Keep hidden identities and classification secrets out of player narration.
-

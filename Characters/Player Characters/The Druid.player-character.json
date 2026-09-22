@@ -1,0 +1,79 @@
+{
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a286-f13c6e335f65"
+  },
+  "name": "The Druid",
+  "description": "Healing, learning and the living countryside make sense to you. Concealing what you think does not come so naturally.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/c89312fc-283e-4279-9a1a-6371dce42c09"
+  },
+  "origin": {
+    "slug": "druid",
+    "referenceId": "019ff7eb-af42-757d-af35-3ff1d06c0bb8",
+    "fileTypeSlug": "origin"
+  },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "weakness": "Open Book",
+  "abilities": [
+    {
+      "slug": "healing",
+      "referenceId": "019ff7eb-af42-757d-af35-33aa0f6642ae",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "learnedness",
+      "referenceId": "019fe8d9-7f28-74d0-b564-97856b746cf7",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "nature",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attributes": {
+    "body": 1,
+    "eyes": 1,
+    "head": 2,
+    "legs": 1,
+    "hands": 1,
+    "heart": 1,
+    "shadow": 0
+  },
+  "graceLedger": [],
+  "knownBargains": [],
+  "signedBargains": [],
+  "conditionState": {
+    "cover": {
+      "depletion": 0
+    },
+    "nerve": {
+      "depletion": 0
+    },
+    "energy": {
+      "depletion": 0
+    },
+    "health": {
+      "depletion": 0
+    },
+    "decorum": {
+      "depletion": 0
+    }
+  },
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "thin-tunic",
+      "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
+      "fileTypeSlug": "outfit"
+    }
+  ]
+}

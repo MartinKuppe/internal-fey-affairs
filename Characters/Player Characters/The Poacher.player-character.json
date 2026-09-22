@@ -1,0 +1,79 @@
+{
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a287-1bec7aa7fdd8"
+  },
+  "name": "The Poacher",
+  "description": "Quiet routes and convincing excuses keep you out of sight. You prefer not to test them in a prolonged chase.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/05b41bd0-2a4b-431f-ac3c-7606839f56c9"
+  },
+  "origin": {
+    "slug": "poacher",
+    "referenceId": "019fe8d9-ee2d-7de8-b0ac-959538762e09",
+    "fileTypeSlug": "origin"
+  },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "weakness": "Short-Winded",
+  "abilities": [
+    {
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "lying",
+      "referenceId": "019fe8d9-7e33-7bfc-b392-5da096d27560",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "stealth",
+      "referenceId": "019fe8d9-7e51-7e64-809b-5b9ab63c140c",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attributes": {
+    "body": 0,
+    "eyes": 1,
+    "head": 1,
+    "legs": 1,
+    "hands": 1,
+    "heart": 1,
+    "shadow": 2
+  },
+  "graceLedger": [],
+  "knownBargains": [],
+  "signedBargains": [],
+  "conditionState": {
+    "cover": {
+      "depletion": 0
+    },
+    "nerve": {
+      "depletion": 0
+    },
+    "energy": {
+      "depletion": 0
+    },
+    "health": {
+      "depletion": 0
+    },
+    "decorum": {
+      "depletion": 0
+    }
+  },
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "thin-tunic",
+      "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
+      "fileTypeSlug": "outfit"
+    }
+  ]
+}

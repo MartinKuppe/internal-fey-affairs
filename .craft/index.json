@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-15T22:33:19.921Z",
+  "syncedAt": "2026-09-22T21:27:00.059Z",
   "folders": [
     {
       "path": "/GM Instructions",
@@ -58,10 +58,6 @@
       "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
     },
     {
-      "path": "/Characters/Player Characters",
-      "folderId": "01a04a10-df36-73ac-946f-95f5bd2cd4d4"
-    },
-    {
       "path": "/Characters/Non-Player Characters",
       "folderId": "01a04a10-df3e-77f8-bfa2-d6b6526fc67e"
     },
@@ -76,10 +72,6 @@
     {
       "path": "/Archetypes",
       "folderId": "019fedb8-3ea2-74a4-a416-7e9b657456d0"
-    },
-    {
-      "path": "/Change Requests",
-      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     },
     {
       "path": "/Missions",
@@ -100,6 +92,14 @@
     {
       "path": "/Locations/Cover locations",
       "folderId": "01a0a685-3547-782c-b99f-1ffb9ecb150b"
+    },
+    {
+      "path": "/Characters/Player Characters",
+      "folderId": "01a04a10-df36-73ac-946f-95f5bd2cd4d4"
+    },
+    {
+      "path": "/Change Requests",
+      "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
     }
   ],
   "files": [
@@ -121,7 +121,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a0a4b7-cf21-7558-9eba-a1caf4dd38b7",
+      "baseVersionId": "01a0cb02-411e-7820-8bcc-9e39cc207a11",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -134,8 +134,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a088b0-c535-78d0-baa5-09c3d21a241b",
-      "baseHash": "cff10b2c-1085-1cab-31c7-d68fc43e222b",
+      "baseVersionId": "01a0cb02-efed-72a0-a416-eeefc2c95e1e",
+      "baseHash": "adb67645-bdd6-3527-1896-f2ea8669d36b",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1039,8 +1039,8 @@
       "fileId": "01a03e8c-c67a-7e24-ba7f-1f488d8c8f2d",
       "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b5da-7a44-bd83-32b9691c22f0",
-      "baseHash": "36ec69af-2761-f5f4-9d18-2f29519ebe11",
+      "baseVersionId": "01a0cb02-cd1e-7568-9d2a-f3849340c7d0",
+      "baseHash": "6d6a6db6-765b-fca5-cbe7-79fe81147358",
       "source": "project",
       "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
     },
@@ -1137,8 +1137,8 @@
       "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileType": "player-character",
-      "baseVersionId": "01a08255-3fa7-793c-aa93-13582434efa4",
-      "baseHash": "47fe442e-784d-8ad3-35be-2ac4fed815d1",
+      "baseVersionId": "01a0cb01-19f1-7934-9be0-564bcffb2f69",
+      "baseHash": "e6ab8f50-9ef7-36ea-7348-fc19336ae6db",
       "source": "project"
     },
     {
@@ -1380,8 +1380,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a0a731-b71d-7d6c-814e-3ee48d225fa8",
-      "baseHash": "5fa64d25-39d2-295c-a18e-79886ca97983",
+      "baseVersionId": "01a0cb02-d7a6-74cc-a3e4-c41d1c17392c",
+      "baseHash": "38a89460-837b-d035-1bf1-ac3d1bb6be73",
       "source": "project"
     },
     {
@@ -1389,8 +1389,8 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a0a731-b6fc-7bc4-be07-56916f5115f8",
-      "baseHash": "15562af2-2d86-4597-8033-ebe0f4fa0f49",
+      "baseVersionId": "01a0cb02-6d82-7b94-b07c-f8c71e8f7d28",
+      "baseHash": "9da2d979-df0c-780f-f3e1-f762a1013425",
       "source": "project"
     },
     {
@@ -1398,8 +1398,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a0a731-b710-7ae8-8643-88a39fda0b53",
-      "baseHash": "16fe063a-8ba9-5781-14dd-b27263a491be",
+      "baseVersionId": "01a0cb03-2600-7c70-b15d-5a5aa264f30c",
+      "baseHash": "1aed0cd1-b368-de0a-863b-e2aab7f54ff0",
       "source": "project"
     },
     {
@@ -1698,8 +1698,8 @@
       "fileId": "01a0825e-f3ce-705c-ba85-775f0f67c4d1",
       "referenceId": "01a0825e-f38e-72df-871e-be64a4ccb4c5",
       "fileType": "mission",
-      "baseVersionId": "01a0a731-b72b-787c-a4b8-3e90d84ccf5e",
-      "baseHash": "289b74f1-226b-6b5a-7be5-9c96a0cf74fa",
+      "baseVersionId": "01a0cb02-8c8b-727c-8b0a-0e11fb202ae8",
+      "baseHash": "274b2355-d89d-2555-14e7-ab47f327f89a",
       "source": "project"
     },
     {
@@ -1734,8 +1734,8 @@
       "fileId": "01a0879b-319e-7ad4-afc4-9aa74d5b7b44",
       "referenceId": "01a0879b-2fa5-731b-b003-19c9b3cd6b94",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a0879b-3198-7220-bcdc-c08ab5be8fb2",
-      "baseHash": "0c7932ed-1341-9899-34ca-2cdb68f34151",
+      "baseVersionId": "01a0cb02-c5d4-7a04-a6b1-bfa4b2f2c824",
+      "baseHash": "4c22b252-6c59-b3a8-46da-9f5ad49f05de",
       "source": "project"
     },
     {
@@ -1761,8 +1761,8 @@
       "fileId": "01a0879b-319e-7f5c-95af-f93cb0ce6395",
       "referenceId": "01a0879b-2fa5-731b-b003-26f7be756f41",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a0a731-b92b-70c4-82e7-5e8d57485f61",
-      "baseHash": "0a3bcb83-193c-ec98-664f-6114fd10d6f0",
+      "baseVersionId": "01a0cb02-b2d4-7a7c-8739-ed317d46d219",
+      "baseHash": "d2eddb36-8b20-b280-f042-5942b0489f2b",
       "source": "project"
     },
     {
@@ -1909,6 +1909,195 @@
       "baseVersionId": "01a0a68b-8542-78d8-afe2-1de8cfa6ec83",
       "baseHash": "0ac3b098-888c-2510-ec07-108d3a952f05",
       "source": "project"
+    },
+    {
+      "path": "/Change Requests/Connect Origin Pregens to Campaign.change-request.md",
+      "fileId": "01a0cb01-1a42-7b44-8180-c1ebc22e98b0",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-e3249e25eddc",
+      "fileType": "change-request",
+      "baseVersionId": "01a0cb01-1a19-7228-8a21-6e0e4f5563b6",
+      "baseHash": "e8865738-d89e-f3de-330a-f58e4396bd89",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Bandit.player-character.json",
+      "fileId": "01a0cb01-1a52-72cc-ad56-053eda6f9194",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a1d-73a4-8d19-927fa493ae4d",
+      "baseHash": "2b04e74b-e79c-83ac-467b-4c85ce06628b",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Bard.player-character.json",
+      "fileId": "01a0cb01-1a52-7748-9414-7448072fa3a7",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-ea0fd4720467",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a1e-7944-8bad-e60786259bf1",
+      "baseHash": "30b2a1ed-fdcf-7e67-5fe8-edd302fb874c",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Courier.player-character.json",
+      "fileId": "01a0cb01-1a53-7abc-a109-26f9d952a8cc",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-ecd85abd8d4e",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a1e-7c54-b3b6-0a1ea57c91dc",
+      "baseHash": "0fba754d-8832-9358-e4cb-0d49b64284aa",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Druid.player-character.json",
+      "fileId": "01a0cb01-1a53-7d74-b636-f62508d99329",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f13c6e335f65",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a1e-7ef0-b071-a9861ed6a871",
+      "baseHash": "6c3eb5e5-36a6-65c4-8678-83665341e545",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Fairy Doctor.player-character.json",
+      "fileId": "01a0cb01-1a53-7f70-86b6-1a6f92c51468",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f6287ecc308b",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a23-79ac-90b6-4c54dcfc63d0",
+      "baseHash": "1cf40078-fa0e-8f36-5e22-b32cc549c062",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Farmhand.player-character.json",
+      "fileId": "01a0cb01-1a53-716c-aab3-98fccc98fccb",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f8409e4cef62",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a23-76b8-9e04-e164f41a2acc",
+      "baseHash": "b7a9cb1d-6475-936b-2799-26316c55e964",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Good-for-nothing.player-character.json",
+      "fileId": "01a0cb01-1a53-7388-9a90-5986a34f9dcc",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-fc15d12ee4b9",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a24-7358-9909-3850e76ac425",
+      "baseHash": "ecc6b2d9-0f0b-bae5-3dae-6fc4a7d98cde",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Grocer.player-character.json",
+      "fileId": "01a0cb01-1a54-7b48-89a6-27804db6af8b",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-02c5a52ebae7",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a24-7750-b7b1-90deb995b9cc",
+      "baseHash": "dfad3149-62be-1936-3283-35f9d1c4fe6c",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Herbalist.player-character.json",
+      "fileId": "01a0cb01-1a54-7d70-81a5-f4e8fe9b7372",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-057e815c002a",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a25-7a18-8de7-0db70a835c25",
+      "baseHash": "83838f7d-1fb4-96b4-e6a9-a576639767b2",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Horse Herder.player-character.json",
+      "fileId": "01a0cb01-1a54-7f18-929e-d234d45feec1",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-09cca0cd267b",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a25-7ca8-83bb-64a0058934ad",
+      "baseHash": "69e7abd7-75f6-af74-61a9-d53de55f4e67",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Mercenary.player-character.json",
+      "fileId": "01a0cb01-1a54-7110-9007-76561f6b9c9f",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a25-7f08-bbe4-2f04b096eaba",
+      "baseHash": "2a6bee02-d884-e7ef-f85d-6d3ced3bdab9",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Milker.player-character.json",
+      "fileId": "01a0cb01-1a54-7358-bf41-f64e8ac672c5",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-102824ee3563",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a25-728c-b5fd-93cccf08d00c",
+      "baseHash": "90557a9d-7c18-ec39-b874-67de5ef3f730",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Piper.player-character.json",
+      "fileId": "01a0cb01-1a54-74f8-9a21-339cebef8be8",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-173e06b2a79b",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a25-75d4-a2f5-e31c10e55871",
+      "baseHash": "d6bddd4c-18dd-3ead-612b-3b68ece0f187",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Poacher.player-character.json",
+      "fileId": "01a0cb01-1a54-76fc-af81-2e94d84060b4",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-1bec7aa7fdd8",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a26-77dc-9d93-9dfce64b5fb1",
+      "baseHash": "8a77d24e-6e20-0e56-32af-89526a141c3c",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Seanchai.player-character.json",
+      "fileId": "01a0cb01-1a55-787c-b901-6ffde9751d20",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-1c510beb1456",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a26-7a10-ac5c-2f1d9f1c7e9d",
+      "baseHash": "2247dfa7-51d1-3d40-7e02-a6c01905fd85",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Tailor.player-character.json",
+      "fileId": "01a0cb01-1a55-79b4-8f06-b5c949ff583f",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-21559abbef66",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a32-78ec-bf89-45ce7f28e801",
+      "baseHash": "c3a1f679-917d-d0ae-66c4-406fa983858d",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Teacher.player-character.json",
+      "fileId": "01a0cb01-1a55-7afc-9b86-788847af94fa",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-24f52503d1ae",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a32-7dd0-ae9e-f355ce6cb56e",
+      "baseHash": "99075dd7-fee9-1e6b-86d3-65ac8f5f01a2",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Thief.player-character.json",
+      "fileId": "01a0cb01-1a55-7c4c-b06a-5d1c9f5dca39",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-29f708fc4186",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a35-79f4-ba7c-ab7f591ac740",
+      "baseHash": "82473296-17e4-b953-f397-0219f8534717",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Used-horse dealer.player-character.json",
+      "fileId": "01a0cb01-1a55-7d70-9496-224aab943e05",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-2fe23101e46c",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a35-7d58-9bbf-a2812f61a17e",
+      "baseHash": "7ca82e90-043b-ceda-b1a4-646ac7d037bd",
+      "source": "project"
+    },
+    {
+      "path": "/Characters/Player Characters/The Wood Gatherer.player-character.json",
+      "fileId": "01a0cb01-1a5d-7508-b384-b0d291339e14",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-30b5933cb566",
+      "fileType": "player-character",
+      "baseVersionId": "01a0cb01-1a35-7010-af9b-110fa87e77be",
+      "baseHash": "48d2f99c-9942-ba86-4a5e-6e74c954b18f",
+      "source": "project"
     }
   ],
   "fileTypes": [
@@ -2003,23 +2192,23 @@
       "contentHash": "bb2b8cc1-0c3c-cb51-aa74-f89b76239e2c"
     },
     {
-      "slug": "player-character",
-      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "7b67d9de-9083-4308-7886-105d0bbd1fd0",
-      "contentHash": "354afec7-5c8e-760b-c444-8b7c5985a938"
-    },
-    {
       "slug": "location",
       "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
       "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
       "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
     },
     {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "7b67d9de-9083-4308-7886-105d0bbd1fd0",
+      "contentHash": "354afec7-5c8e-760b-c444-8b7c5985a938"
+    },
+    {
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
-      "schemaHash": "8446dc01-0b90-035a-857a-986e504942ac",
-      "contentHash": "d89e62be-9862-8cf3-4717-6504adf468d5"
+      "schemaHash": "dcc7a4ef-8e74-576f-ae02-57d8bd7ed509",
+      "contentHash": "ce26e614-fbf5-1c38-b0f8-2acefd4815af"
     }
   ],
-  "projectSettingsHash": "eaf54961-83bc-27de-8599-f2ca22ac6ed7"
+  "projectSettingsHash": "ecd6825c-6bbb-cb84-6fed-4040fecb3769"
 }

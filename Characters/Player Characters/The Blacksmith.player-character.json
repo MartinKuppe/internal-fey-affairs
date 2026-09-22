@@ -44,108 +44,30 @@
     "heart": 1,
     "shadow": 0
   },
-  "graceLedger": [
-    {
-      "day": 1,
-      "amount": 1000,
-      "reason": "Start Bonus",
-      "currency": {
-        "slug": "phantom-graces",
-        "referenceId": "019fed6d-de2b-74dc-b3bf-3eeaf89d7333",
-        "fileTypeSlug": "grace"
-      }
-    },
-    {
-      "day": 1,
-      "amount": -100,
-      "reason": "Bargain",
-      "currency": {
-        "slug": "phantom-graces",
-        "referenceId": "019fed6d-de2b-74dc-b3bf-3eeaf89d7333",
-        "fileTypeSlug": "grace"
-      }
-    },
-    {
-      "day": 3,
-      "amount": -200,
-      "reason": "Favour",
-      "currency": {
-        "slug": "phantom-graces",
-        "referenceId": "019fed6d-de2b-74dc-b3bf-3eeaf89d7333",
-        "fileTypeSlug": "grace"
-      }
-    },
-    {
-      "day": 1,
-      "amount": 2000,
-      "reason": "Hiring Bonus IA",
-      "currency": {
-        "slug": "queens-graces",
-        "referenceId": "01a05997-0e85-7aac-858f-000eda10975a",
-        "fileTypeSlug": "grace"
-      }
-    },
-    {
-      "day": 1,
-      "amount": 1111,
-      "reason": "Summer Sale",
-      "currency": {
-        "slug": "summer-graces",
-        "referenceId": "01a0599a-cb83-7520-b876-1dc50bd779af",
-        "fileTypeSlug": "grace"
-      }
-    }
-  ],
-  "knownBargains": [
-    {
-      "slug": "one-year-employment",
-      "referenceId": "019fed62-6c7a-7ce4-891a-c2813e204357",
-      "fileTypeSlug": "bargain"
-    },
-    {
-      "slug": "méabhs-indenture",
-      "referenceId": "01a059ed-eb7b-74e0-8d46-79fb1c21da4b",
-      "fileTypeSlug": "bargain"
-    },
-    {
-      "slug": "morrigans-agreement-with-the-triad",
-      "referenceId": "01a059c6-cfb6-7ec0-88f4-5dc85aa771f7",
-      "fileTypeSlug": "bargain"
-    }
-  ],
+  "graceLedger": [],
+  "knownBargains": [],
   "bargainFilters": {
     "myOnlyActive": false,
     "otherOnlyActive": false
   },
   "conditionState": {
     "cover": {
-      "maximum": 2,
       "depletion": 0
     },
     "nerve": {
-      "maximum": 2,
       "depletion": 0
     },
     "energy": {
-      "maximum": 2,
       "depletion": 0
     },
     "health": {
-      "maximum": 3,
       "depletion": 0
     },
     "decorum": {
-      "maximum": 2,
       "depletion": 0
     }
   },
-  "signedBargains": [
-    {
-      "slug": "one-year-employment",
-      "referenceId": "019fed62-6c7a-7ce4-891a-c2813e204357",
-      "fileTypeSlug": "bargain"
-    }
-  ],
+  "signedBargains": [],
   "unlockedOutfits": [
     {
       "slug": "common-clothes",
@@ -157,5 +79,6 @@
       "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
       "fileTypeSlug": "outfit"
     }
-  ]
+  ],
+  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away."
 }

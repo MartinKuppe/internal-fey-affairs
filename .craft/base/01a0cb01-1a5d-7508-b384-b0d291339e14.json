@@ -1,12 +1,12 @@
 {
-  "name": "The Blacksmith",
+  "name": "The Wood Gatherer",
+  "description": "You read paths, trees and animal signs with confidence. People are much harder country.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/930588b2-0eab-45e1-aa8d-b750ae1614c1",
-    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/24e721ec-4b5f-46bc-b3ce-8f34284c59e6"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8e573e1f-e169-48e9-bd0c-ee528eba8356"
   },
   "origin": {
-    "slug": "blacksmith",
-    "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+    "slug": "wood-gatherer",
+    "referenceId": "019fe8d9-ee0f-70e0-87f9-2c71a5091599",
     "fileTypeSlug": "origin"
   },
   "outfit": {
@@ -14,39 +14,36 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
-  "weakness": "Open Book",
+  "weakness": "Poor Judge of Character",
   "abilities": [
     {
-      "slug": "repairs",
-      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
+      "slug": "nature",
+      "referenceId": "019fe8d9-875f-725c-a4f6-101de7bd43a6",
       "fileTypeSlug": "ability"
     },
     {
-      "slug": "iron",
-      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
       "fileTypeSlug": "ability"
     },
     {
-      "slug": "weapons",
-      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "slug": "animals",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
       "fileTypeSlug": "ability"
     }
   ],
   "attributes": {
-    "body": 2,
+    "body": 1,
     "eyes": 1,
     "head": 1,
-    "legs": 1,
+    "legs": 2,
     "hands": 1,
-    "heart": 1,
-    "shadow": 0
+    "heart": 0,
+    "shadow": 1
   },
   "graceLedger": [],
   "knownBargains": [],
-  "bargainFilters": {
-    "myOnlyActive": false,
-    "otherOnlyActive": false
-  },
+  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,7 +61,6 @@
       "depletion": 0
     }
   },
-  "signedBargains": [],
   "unlockedOutfits": [
     {
       "slug": "common-clothes",
@@ -76,6 +72,5 @@
       "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
       "fileTypeSlug": "outfit"
     }
-  ],
-  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away."
+  ]
 }

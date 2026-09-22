@@ -1,12 +1,12 @@
 {
-  "name": "The Blacksmith",
+  "name": "The Thief",
+  "description": "You know how to slip unnoticed into a place and recognise things worth taking. Choosing trustworthy company is harder.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/930588b2-0eab-45e1-aa8d-b750ae1614c1",
-    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/24e721ec-4b5f-46bc-b3ce-8f34284c59e6"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7ccfbe4a-6760-4e11-804c-8c3dab1ede08"
   },
   "origin": {
-    "slug": "blacksmith",
-    "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+    "slug": "thief",
+    "referenceId": "019fe8d9-ee1c-7ca8-b8f8-867e5a463881",
     "fileTypeSlug": "origin"
   },
   "outfit": {
@@ -14,16 +14,16 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
-  "weakness": "Open Book",
+  "weakness": "Poor Judge of Character",
   "abilities": [
     {
-      "slug": "repairs",
-      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
+      "slug": "stealth",
+      "referenceId": "019fe8d9-7e51-7e64-809b-5b9ab63c140c",
       "fileTypeSlug": "ability"
     },
     {
-      "slug": "iron",
-      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
+      "slug": "art-beauty",
+      "referenceId": "019fe8d9-7f54-7b08-a50c-1437927892ef",
       "fileTypeSlug": "ability"
     },
     {
@@ -33,20 +33,17 @@
     }
   ],
   "attributes": {
-    "body": 2,
+    "body": 1,
     "eyes": 1,
     "head": 1,
     "legs": 1,
     "hands": 1,
-    "heart": 1,
-    "shadow": 0
+    "heart": 0,
+    "shadow": 2
   },
   "graceLedger": [],
   "knownBargains": [],
-  "bargainFilters": {
-    "myOnlyActive": false,
-    "otherOnlyActive": false
-  },
+  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,7 +61,6 @@
       "depletion": 0
     }
   },
-  "signedBargains": [],
   "unlockedOutfits": [
     {
       "slug": "common-clothes",
@@ -76,6 +72,5 @@
       "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
       "fileTypeSlug": "outfit"
     }
-  ],
-  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away."
+  ]
 }

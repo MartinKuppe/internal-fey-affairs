@@ -1,0 +1,79 @@
+{
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a286-ecd85abd8d4e"
+  },
+  "name": "The Courier",
+  "description": "Routes, riding and arrivals are your business. Thinking three moves ahead is considerably less comfortable.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e6f044e2-c74f-4062-bbb3-cd8bd58bb74a"
+  },
+  "origin": {
+    "slug": "courier",
+    "referenceId": "019fe8d9-edf2-70dc-b674-ab8e3e58d480",
+    "fileTypeSlug": "origin"
+  },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "weakness": "Muddle-Headed",
+  "abilities": [
+    {
+      "slug": "riding",
+      "referenceId": "019fe8d9-877f-7bb4-9371-ab27cdfe904d",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "court-life",
+      "referenceId": "019fe8d9-7e43-7510-8d2d-585d3869301b",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attributes": {
+    "body": 1,
+    "eyes": 1,
+    "head": 0,
+    "legs": 2,
+    "hands": 1,
+    "heart": 1,
+    "shadow": 1
+  },
+  "graceLedger": [],
+  "knownBargains": [],
+  "signedBargains": [],
+  "conditionState": {
+    "cover": {
+      "depletion": 0
+    },
+    "nerve": {
+      "depletion": 0
+    },
+    "energy": {
+      "depletion": 0
+    },
+    "health": {
+      "depletion": 0
+    },
+    "decorum": {
+      "depletion": 0
+    }
+  },
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "thin-tunic",
+      "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
+      "fileTypeSlug": "outfit"
+    }
+  ]
+}

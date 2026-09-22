@@ -1,0 +1,79 @@
+{
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a286-fc15d12ee4b9"
+  },
+  "name": "The Good-for-nothing",
+  "description": "You dance, charm and improvise your way out of trouble—often the very trouble you wandered into without thinking.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9de89a51-30c6-44a9-9678-aebe299d3fe6"
+  },
+  "origin": {
+    "slug": "good-for-nothing",
+    "referenceId": "019fe8d9-ef11-74c8-8e5b-858f193e200c",
+    "fileTypeSlug": "origin"
+  },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "weakness": "Muddle-Headed",
+  "abilities": [
+    {
+      "slug": "dancing",
+      "referenceId": "019fe8d9-878d-743c-9788-b0c599c703c0",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "charisma",
+      "referenceId": "019fe8d9-7f47-7b48-aedd-873128033c50",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "lying",
+      "referenceId": "019fe8d9-7e33-7bfc-b392-5da096d27560",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attributes": {
+    "body": 1,
+    "eyes": 1,
+    "head": 0,
+    "legs": 1,
+    "hands": 1,
+    "heart": 2,
+    "shadow": 1
+  },
+  "graceLedger": [],
+  "knownBargains": [],
+  "signedBargains": [],
+  "conditionState": {
+    "cover": {
+      "depletion": 0
+    },
+    "nerve": {
+      "depletion": 0
+    },
+    "energy": {
+      "depletion": 0
+    },
+    "health": {
+      "depletion": 0
+    },
+    "decorum": {
+      "depletion": 0
+    }
+  },
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "lucky-pompom-hat",
+      "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5",
+      "fileTypeSlug": "outfit"
+    }
+  ]
+}

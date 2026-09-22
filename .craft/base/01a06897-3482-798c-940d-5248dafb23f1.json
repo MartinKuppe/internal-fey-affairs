@@ -71,14 +71,14 @@
     {
       "key": "shelter",
       "title": "A Place by the Hearth",
-      "events": "The player returns with Meabh. He may tell the truth, use Meabh's cover story about bandits and another village, or invent something else. Grannie invites Meabh to stay regardless and outwardly accepts what she is told.\nThe goat is back too, acting as though nothing happened—and looking entirely innocent.\nGrannie encourages the player to share their bed with Meabh (\"you're young; you can share\"), reminding them that she's blind and a very deep sleeper.",
+      "events": "The player returns with Meabh. They may tell the truth, use Meabh's cover story about bandits and another village, or invent something else. Grannie invites Meabh to stay regardless and outwardly accepts what she is told.\nThe goat is back too, acting as though nothing happened—and looking entirely innocent.\nGrannie encourages the player to share their bed with Meabh (\"you're young; you can share\"), reminding them that she's blind and a very deep sleeper.",
       "location": {
         "slug": "grannys-hut",
         "referenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4",
         "fileTypeSlug": "location"
       },
       "objective": "Bring Meabh home and decide what to tell Grannie.",
-      "gmInstructions": "Do not punish the player by denying shelter. Grannie recognises Niamh's voice and face in Meabh and correctly infers that this is the stolen baby, but she keeps that conclusion secret in hope of a future reunion with Conor. Let the player's chosen story affect trust and tone without changing the Mission's completion.\nIf the player ends up sharing his bed with Meabh, keep it family-friendly with implied cuddling, maybe a sweet kiss. Keep anything beyond that to the player's imagination.\nMeabh initiates gentle closeness as part of her assigned Leannan Sidhe (Fey seductress) role, without revealing the performance. Let the player reciprocate or decline. Do not portray her affection as genuine yet; that develops later in her arc."
+      "gmInstructions": "Do not punish the player by denying shelter. Grannie recognises Niamh's voice and face in Meabh and correctly infers that this is the stolen baby, but she keeps that conclusion secret in hope of a future reunion with Conor. Let the player's chosen story affect trust and tone without changing the Mission's completion.\nIf the player ends up sharing their bed with Meabh, keep it family-friendly with implied cuddling, maybe a sweet kiss. Keep anything beyond that to the player's imagination.\nMeabh initiates gentle closeness as part of her assigned Leannan Sidhe (Fey seductress) role, without revealing the performance. Let the player reciprocate or decline. Do not portray her affection as genuine yet; that develops later in her arc."
     }
   ],
   "description": "A runaway goat leads beyond the village to a circle of light and a frightened stranger who should not exist. Before the night is over, shelter and silence will both have their price.",
@@ -89,13 +89,114 @@
     "fileTypeSlug": "location"
   },
   "currentBeatKey": "goat-chase",
-  "mandatoryMembers": [
+  "mandatoryMembers": [],
+  "revealedToPlayer": true,
+  "completionEffects": "Complete when Meabh has shelter and Coinin's silence has been secured through an accepted bargain (whether accepted by the player, Meabh, or both). Set Cream Tax, Milk and Feathers, and Iron and Wax to available and revealedToPlayer true. Do not advance the moon phase.",
+  "selectableMembers": [
+    {
+      "slug": "the-bandit",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-bard",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-ea0fd4720467",
+      "fileTypeSlug": "player-character"
+    },
     {
       "slug": "the-blacksmith",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-courier",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-ecd85abd8d4e",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-druid",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f13c6e335f65",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-fairy-doctor",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f6287ecc308b",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-farmhand",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f8409e4cef62",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-good-for-nothing",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-fc15d12ee4b9",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-grocer",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-02c5a52ebae7",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-herbalist",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-057e815c002a",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-horse-herder",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-09cca0cd267b",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-mercenary",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-milker",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-102824ee3563",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-piper",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-173e06b2a79b",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-poacher",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-1bec7aa7fdd8",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-seanchai",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-1c510beb1456",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-tailor",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-21559abbef66",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-teacher",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-24f52503d1ae",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-thief",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-29f708fc4186",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-used-horse-dealer",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-2fe23101e46c",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-wood-gatherer",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-30b5933cb566",
+      "fileTypeSlug": "player-character"
     }
-  ],
-  "revealedToPlayer": true,
-  "completionEffects": "Complete when Meabh has shelter and Coinin's silence has been secured through an accepted bargain (whether accepted by the player, Meabh, or both). Set Cream Tax, Milk and Feathers, and Iron and Wax to available and revealedToPlayer true. Do not advance the moon phase."
+  ]
 }

@@ -1,0 +1,79 @@
+{
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a287-1c510beb1456"
+  },
+  "name": "The Seanchai",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/3a53f6ca-740a-4628-9053-465b1c3c37ed"
+  },
+  "origin": {
+    "slug": "seanchaí",
+    "referenceId": "019fe8d9-eece-7ca4-a384-156122d56af8",
+    "fileTypeSlug": "origin"
+  },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "weakness": "All Thumbs",
+  "abilities": [
+    {
+      "slug": "learnedness",
+      "referenceId": "019fe8d9-7f28-74d0-b564-97856b746cf7",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "fey-lore",
+      "referenceId": "019fe8d9-7f2b-7e9c-b24a-7330a9eb0ddd",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "charisma",
+      "referenceId": "019fe8d9-7f47-7b48-aedd-873128033c50",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attributes": {
+    "body": 1,
+    "eyes": 1,
+    "head": 2,
+    "legs": 1,
+    "hands": 0,
+    "heart": 1,
+    "shadow": 1
+  },
+  "description": "You can hold a room with a story and remember what others forget. Ask someone else to mend the clasp.",
+  "graceLedger": [],
+  "knownBargains": [],
+  "conditionState": {
+    "cover": {
+      "depletion": 0
+    },
+    "nerve": {
+      "depletion": 0
+    },
+    "energy": {
+      "depletion": 0
+    },
+    "health": {
+      "depletion": 0
+    },
+    "decorum": {
+      "depletion": 0
+    }
+  },
+  "signedBargains": [],
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "lucky-pompom-hat",
+      "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5",
+      "fileTypeSlug": "outfit"
+    }
+  ]
+}

@@ -1,12 +1,15 @@
 {
-  "name": "The Blacksmith",
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3"
+  },
+  "name": "The Mercenary",
+  "description": "You know weapons, roads and courtly employers. Knowing which people deserve your trust is another matter.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/930588b2-0eab-45e1-aa8d-b750ae1614c1",
-    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/24e721ec-4b5f-46bc-b3ce-8f34284c59e6"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b87f6e18-5c2d-4f87-b200-58d8e3c2188a"
   },
   "origin": {
-    "slug": "blacksmith",
-    "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+    "slug": "mercenary",
+    "referenceId": "019fe8d9-f0d8-7d9c-a7e3-c0ae92e62617",
     "fileTypeSlug": "origin"
   },
   "outfit": {
@@ -14,21 +17,21 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
-  "weakness": "Open Book",
+  "weakness": "Poor Judge of Character",
   "abilities": [
-    {
-      "slug": "repairs",
-      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
-      "fileTypeSlug": "ability"
-    },
-    {
-      "slug": "iron",
-      "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
-      "fileTypeSlug": "ability"
-    },
     {
       "slug": "weapons",
       "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "court-life",
+      "referenceId": "019fe8d9-7e43-7510-8d2d-585d3869301b",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "wayfinding",
+      "referenceId": "019fe8d9-8763-7b90-8111-4c7923b6dfb8",
       "fileTypeSlug": "ability"
     }
   ],
@@ -38,15 +41,12 @@
     "head": 1,
     "legs": 1,
     "hands": 1,
-    "heart": 1,
-    "shadow": 0
+    "heart": 0,
+    "shadow": 1
   },
   "graceLedger": [],
   "knownBargains": [],
-  "bargainFilters": {
-    "myOnlyActive": false,
-    "otherOnlyActive": false
-  },
+  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,7 +64,6 @@
       "depletion": 0
     }
   },
-  "signedBargains": [],
   "unlockedOutfits": [
     {
       "slug": "common-clothes",
@@ -76,6 +75,5 @@
       "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
       "fileTypeSlug": "outfit"
     }
-  ],
-  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away."
+  ]
 }

@@ -4,7 +4,7 @@
   "name": "Mission Journal",
   "contentType": "json",
   "designation": null,
-  "schemaHash": "8446dc01-0b90-035a-857a-986e504942ac",
+  "schemaHash": "dcc7a4ef-8e74-576f-ae02-57d8bd7ed509",
   "schema": {
     "type": "object",
     "required": [
@@ -282,13 +282,16 @@
               "type": "string",
               "referencedFileTypeSlug": "mission"
             },
+            "debriefing": {
+              "type": "string"
+            },
             "endedDateLabel": {
               "type": "string"
             }
           }
         },
         "title": "Mission History",
-        "expression": "($self.missions ?? []).filter(m => [\"completed\", \"failed\", \"expired\"].includes(load(m)?.status)).map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", status: load(m)?.status ?? \"\", endedDateLabel: load(m)?.endedDate ? ((load(m)?.endedDate?.month ?? \"\") + \" \" + (load(m)?.endedDate?.moonPhase ?? \"\")) : \"\", briefing: load(m)?.briefing?? \"\", image: load(m)?.image ?? null }))",
+        "expression": "($self.missions ?? []).filter(m => [\"completed\", \"failed\", \"expired\"].includes(load(m)?.status)).map(m => ({ mission: m, name: load(m)?.name ?? \"\", code: load(m)?.code ?? \"\", kind: load(m)?.kind ?? \"\", description: load(m)?.description ?? \"\", status: load(m)?.status ?? \"\", endedDateLabel: load(m)?.endedDate ? ((load(m)?.endedDate?.month ?? \"\") + \" \" + (load(m)?.endedDate?.moonPhase ?? \"\")) : \"\", briefing: load(m)?.briefing ?? \"\", debriefing: load(m)?.debriefing ?? \"\", image: load(m)?.image ?? null }))",
         "description": "Computed projection of completed, failed, and expired Missions, with terminal status and ended date where available. Read-only; never stored."
       },
       "startingMission": {
@@ -512,7 +515,7 @@
           "maxWidth": "full"
         },
         "children": [
-          "stack-6",
+          "grid-2",
           "body-stack"
         ]
       },
@@ -656,6 +659,41 @@
         },
         "children": [
           "text-3"
+        ]
+      },
+      "card-4": {
+        "type": "Card",
+        "props": {
+          "title": null,
+          "bgColor": null,
+          "bgImage": null,
+          "rounded": null,
+          "centered": false,
+          "maxWidth": "full",
+          "className": null,
+          "bgImageFit": null,
+          "borderColor": null,
+          "description": null
+        },
+        "children": [
+          "text-2-2-2-3",
+          "callout-2"
+        ]
+      },
+      "grid-2": {
+        "type": "Grid",
+        "props": {
+          "gap": "md",
+          "bgColor": null,
+          "bgImage": null,
+          "columns": 2,
+          "rounded": null,
+          "className": null,
+          "bgImageFit": null
+        },
+        "children": [
+          "heading",
+          "stack-6"
         ]
       },
       "text-2": {
@@ -818,17 +856,16 @@
         "props": {
           "gap": "lg",
           "wrap": null,
-          "align": "center",
+          "align": "end",
           "bgColor": null,
           "bgImage": null,
           "justify": null,
           "rounded": null,
           "className": null,
-          "direction": "horizontal",
+          "direction": "vertical",
           "bgImageFit": null
         },
         "children": [
-          "heading",
           "text"
         ]
       },
@@ -893,6 +930,22 @@
           "color": null,
           "variant": "default",
           "className": null
+        },
+        "children": []
+      },
+      "callout-2": {
+        "type": "Callout",
+        "props": {
+          "icon": "👍🏼",
+          "text": {
+            "$item": "debriefing"
+          },
+          "color": null,
+          "title": null,
+          "bgColor": null,
+          "variant": "quote",
+          "className": null,
+          "attribution": null
         },
         "children": []
       },
@@ -1018,7 +1071,7 @@
           "defaultOpen": false
         },
         "children": [
-          "text-2-2-2-3",
+          "card-4",
           "stack-5"
         ]
       },
@@ -1055,7 +1108,7 @@
             "$item": "description"
           },
           "color": null,
-          "variant": "caption",
+          "variant": "body",
           "editPath": null,
           "className": null
         },

@@ -30,7 +30,7 @@ Roll only for meaningful uncertainty: **2d6 + Attribute + 2 if trained + one rel
 
 The following searchable files own the detailed mechanics. Consult the needed section when its event occurs; reuse rules already available in context instead of repeatedly reading unchanged files.
 
-- **Character Creation** — creating a protagonist, choosing an Origin or Weakness, or classifying characters. The Blacksmith is ready to play.
+- **Character Creation** — creating a protagonist, choosing an Origin or Weakness, or classifying characters. Any of the 21 Origin pregens is ready to play.
 - **Checks and Conditions** — requesting/resolving checks, changing Conditions, recovery, or equipping/unlocking Outfits.
 - **Mission Procedures** — campaign startup, mission selection, beat/tracker changes, completion, calendar and unlocks.
 - **Between Missions** — offering the next choices, handling a pause, or continuing an immediate follow-up.

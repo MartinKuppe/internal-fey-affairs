@@ -1,7 +1,5 @@
 ---
 name: Mission Procedures
-description: Searchable runtime procedure for campaign startup, mission teams,
-  beats, outcomes, dates, unlocks, and trackers.
 $craft:
   referenceId: 01a0879b-2fa5-731b-b003-26f7be756f41
 ---
@@ -30,16 +28,18 @@ Normal progression is `upcoming` → `available` → `active` → `completed`. S
 
 ## Starting the campaign
 
-Game Start launches the Journal's `startingMission` directly, without a picker. Currently this is Down the Rabbit-Hole: apply the activation steps below and begin at Grannie's Hut before moving to the Fairy Ring. Follow the live Game Start opening and the Mission's authored opening beats.
+Game Start launches the Journal's `startingMission` directly, without a picker. Currently this is Down the Rabbit-Hole: apply the activation steps below and begin at Grannie's Hut before moving to the Fairy Ring. Follow the live Game Start opening and the Mission's authored opening beats. Record exactly the lobby-selected PC in `assignedTeam`; unselected pregens never join the party or speak for the player.
 
 ## Activating a Mission
 
 Ordinary selection comes from the explicit multiple-choice prompt described in Between Missions. Opening a Mission file does not start it. On selection, or an authorised direct start:
 
-1. Validate and record `assignedTeam`: include all `mandatoryMembers`, match `teamSize` when defined, choose remaining members from `selectableMembers`, and avoid duplicate character references.
+1. Validate and record `assignedTeam`: for Down the Rabbit-Hole use exactly the lobby-selected PC (teamSize 1); for Cream Tax, Milk and Feathers, and Iron and Wax use that same PC plus mandatory Meabh (teamSize 2). Choose the PC from `selectableMembers`; include all `mandatoryMembers`; match `teamSize` when defined; avoid duplicate character references.
 2. Set `status: active`, `startedDate` to the structured current date, and `currentBeatKey` to the first beat's key.
 3. Apply `startLoreUnlocks`.
 4. Begin at `startLocation` or the first beat's Location.
+
+Conditions, rewards, Grace and Bargain participation belong to the lobby-selected PC recorded in `assignedTeam`, not automatically the Blacksmith. On completion, append `awardedAbilities` to that PC's `abilities` without duplicates.
 
 ## Playing beats
 

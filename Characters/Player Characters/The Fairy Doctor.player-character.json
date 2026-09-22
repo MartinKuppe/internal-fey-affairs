@@ -1,0 +1,79 @@
+{
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a286-f6287ecc308b"
+  },
+  "name": "The Fairy Doctor",
+  "description": "People turn to your skilled hands and knowledge of the Fair Folk. They rarely turn to you to win a footrace.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/787e6d99-1224-46d3-8038-b5190d5a3990"
+  },
+  "origin": {
+    "slug": "fairy-doctor",
+    "referenceId": "019ff7eb-af42-757d-af35-41972e67519a",
+    "fileTypeSlug": "origin"
+  },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "weakness": "Flat-Footed",
+  "abilities": [
+    {
+      "slug": "healing",
+      "referenceId": "019ff7eb-af42-757d-af35-33aa0f6642ae",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "fey-lore",
+      "referenceId": "019fe8d9-7f2b-7e9c-b24a-7330a9eb0ddd",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "bargains",
+      "referenceId": "019fe8d9-7e26-7c5c-b6ac-38a5e792bf2a",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attributes": {
+    "body": 1,
+    "eyes": 1,
+    "head": 1,
+    "legs": 0,
+    "hands": 2,
+    "heart": 1,
+    "shadow": 1
+  },
+  "graceLedger": [],
+  "knownBargains": [],
+  "signedBargains": [],
+  "conditionState": {
+    "cover": {
+      "depletion": 0
+    },
+    "nerve": {
+      "depletion": 0
+    },
+    "energy": {
+      "depletion": 0
+    },
+    "health": {
+      "depletion": 0
+    },
+    "decorum": {
+      "depletion": 0
+    }
+  },
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "fancy-pants",
+      "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
+      "fileTypeSlug": "outfit"
+    }
+  ]
+}

@@ -68,7 +68,7 @@
         "fileTypeSlug": "location"
       },
       "objective": "Enter the workshop and identify what has changed.",
-      "gmInstructions": "Reveal the iron and then the horseshoes through inspection, not a gatekeeping roll. The smith recognises familiar village work and threshold protection. Leave the theft connection for the player to make. Meabh can explain that contact hurts Fey and dense iron disrupts their directional/spatial sense, making places feel wrong or missing. No full scientific lecture or Roman connection."
+      "gmInstructions": "Reveal the iron and then the horseshoes through inspection, not a gatekeeping roll. A protagonist with smith training recognises familiar village work and threshold protection; other protagonists can read the deliberate placement and protective intent plainly. Leave the theft connection for the player to make. Meabh can explain that contact hurts Fey and dense iron disrupts their directional/spatial sense, making places feel wrong or missing. No full scientific lecture or Roman connection."
     },
     {
       "key": "clear-the-workshop",
@@ -185,16 +185,118 @@
   ],
   "mandatoryMembers": [
     {
-      "slug": "the-blacksmith",
-      "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
-      "fileTypeSlug": "player-character"
-    },
-    {
       "slug": "meabh",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileTypeSlug": "non-player-character"
     }
   ],
   "revealedToPlayer": false,
-  "completionEffects": "Verify Buaic's Workshop has its fulfilled clearance and honey-payment obligations resolved. Honey delivery independently resolves only the accepting party's honey obligation in Coinin's Silence; leave cream, milk and Coinin's ongoing nondisclosure unchanged. Preserve trackers at target as history. The apprentice's promised returns do not instantly lift the village watch. Do not advance the moon phase."
+  "completionEffects": "Verify Buaic's Workshop has its fulfilled clearance and honey-payment obligations resolved. Honey delivery independently resolves only the accepting party's honey obligation in Coinin's Silence; leave cream, milk and Coinin's ongoing nondisclosure unchanged. Preserve trackers at target as history. The apprentice's promised returns do not instantly lift the village watch. Do not advance the moon phase.",
+  "selectableMembers": [
+    {
+      "slug": "the-bandit",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-bard",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-ea0fd4720467",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-blacksmith",
+      "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-courier",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-ecd85abd8d4e",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-druid",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f13c6e335f65",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-fairy-doctor",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f6287ecc308b",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-farmhand",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-f8409e4cef62",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-good-for-nothing",
+      "referenceId": "01a0cb01-1cb5-76d5-a286-fc15d12ee4b9",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-grocer",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-02c5a52ebae7",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-herbalist",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-057e815c002a",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-horse-herder",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-09cca0cd267b",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-mercenary",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-milker",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-102824ee3563",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-piper",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-173e06b2a79b",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-poacher",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-1bec7aa7fdd8",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-seanchai",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-1c510beb1456",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-tailor",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-21559abbef66",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-teacher",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-24f52503d1ae",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-thief",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-29f708fc4186",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-used-horse-dealer",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-2fe23101e46c",
+      "fileTypeSlug": "player-character"
+    },
+    {
+      "slug": "the-wood-gatherer",
+      "referenceId": "01a0cb01-1cb5-76d5-a287-30b5933cb566",
+      "fileTypeSlug": "player-character"
+    }
+  ]
 }

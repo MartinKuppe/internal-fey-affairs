@@ -1,12 +1,15 @@
 {
-  "name": "The Blacksmith",
+  "$craft": {
+    "referenceId": "01a0cb01-1cb5-76d5-a287-09cca0cd267b"
+  },
+  "name": "The Horse Herder",
+  "description": "Sure in the saddle and honest in your reactions, you understand horses better than the art of hiding your thoughts.",
   "image": {
-    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/930588b2-0eab-45e1-aa8d-b750ae1614c1",
-    "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/24e721ec-4b5f-46bc-b3ce-8f34284c59e6"
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/5c558d21-091e-4315-a90b-03b8304688dd"
   },
   "origin": {
-    "slug": "blacksmith",
-    "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+    "slug": "horse-herder",
+    "referenceId": "019fe8d9-edf6-7c1c-974b-4816ef0f6b27",
     "fileTypeSlug": "origin"
   },
   "outfit": {
@@ -17,36 +20,33 @@
   "weakness": "Open Book",
   "abilities": [
     {
-      "slug": "repairs",
-      "referenceId": "019fe8d9-7f82-79dc-8b4e-41aec7b0ab8a",
+      "slug": "animals",
+      "referenceId": "019fe8d9-7e07-7180-ac6b-37ef1cc4a861",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "riding",
+      "referenceId": "019fe8d9-877f-7bb4-9371-ab27cdfe904d",
       "fileTypeSlug": "ability"
     },
     {
       "slug": "iron",
       "referenceId": "019fe8d9-7e07-7344-b04f-e8c57513d2fa",
       "fileTypeSlug": "ability"
-    },
-    {
-      "slug": "weapons",
-      "referenceId": "019fe8d9-87af-7100-9e64-56baff3aac40",
-      "fileTypeSlug": "ability"
     }
   ],
   "attributes": {
-    "body": 2,
+    "body": 1,
     "eyes": 1,
     "head": 1,
-    "legs": 1,
+    "legs": 2,
     "hands": 1,
     "heart": 1,
     "shadow": 0
   },
   "graceLedger": [],
   "knownBargains": [],
-  "bargainFilters": {
-    "myOnlyActive": false,
-    "otherOnlyActive": false
-  },
+  "signedBargains": [],
   "conditionState": {
     "cover": {
       "depletion": 0
@@ -64,7 +64,6 @@
       "depletion": 0
     }
   },
-  "signedBargains": [],
   "unlockedOutfits": [
     {
       "slug": "common-clothes",
@@ -76,6 +75,5 @@
       "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
       "fileTypeSlug": "outfit"
     }
-  ],
-  "description": "Practical and formidable, you can mend almost anything except the expression that gives your thoughts away."
+  ]
 }

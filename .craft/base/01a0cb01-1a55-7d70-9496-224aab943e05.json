@@ -1,0 +1,76 @@
+{
+  "name": "The Used-horse dealer",
+  "description": "Riding, bargaining and an untroubled relationship with the truth make your living. Craftsmanship does not.",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/04e8cd0a-1913-4acf-b1c3-c49f3ac3560a"
+  },
+  "origin": {
+    "slug": "used-horse-dealer",
+    "referenceId": "019fe8d9-ee3a-7b88-854f-70ad60bf18d2",
+    "fileTypeSlug": "origin"
+  },
+  "outfit": {
+    "slug": "common-clothes",
+    "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+    "fileTypeSlug": "outfit"
+  },
+  "weakness": "All Thumbs",
+  "abilities": [
+    {
+      "slug": "riding",
+      "referenceId": "019fe8d9-877f-7bb4-9371-ab27cdfe904d",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "bargains",
+      "referenceId": "019fe8d9-7e26-7c5c-b6ac-38a5e792bf2a",
+      "fileTypeSlug": "ability"
+    },
+    {
+      "slug": "lying",
+      "referenceId": "019fe8d9-7e33-7bfc-b392-5da096d27560",
+      "fileTypeSlug": "ability"
+    }
+  ],
+  "attributes": {
+    "body": 1,
+    "eyes": 1,
+    "head": 1,
+    "legs": 1,
+    "hands": 0,
+    "heart": 1,
+    "shadow": 2
+  },
+  "graceLedger": [],
+  "knownBargains": [],
+  "signedBargains": [],
+  "conditionState": {
+    "cover": {
+      "depletion": 0
+    },
+    "nerve": {
+      "depletion": 0
+    },
+    "energy": {
+      "depletion": 0
+    },
+    "health": {
+      "depletion": 0
+    },
+    "decorum": {
+      "depletion": 0
+    }
+  },
+  "unlockedOutfits": [
+    {
+      "slug": "common-clothes",
+      "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
+      "fileTypeSlug": "outfit"
+    },
+    {
+      "slug": "fancy-pants",
+      "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
+      "fileTypeSlug": "outfit"
+    }
+  ]
+}
