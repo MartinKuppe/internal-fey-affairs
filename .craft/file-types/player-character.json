@@ -4,7 +4,7 @@
   "name": "Player Character",
   "contentType": "json",
   "designation": "character",
-  "schemaHash": "90ef5ce9-0d90-5359-8b5a-55b9870e6254",
+  "schemaHash": "2cae8917-6fdb-a711-1cff-1000561f1d97",
   "schema": {
     "type": "object",
     "required": [
@@ -87,8 +87,8 @@
       "outfit": {
         "type": "string",
         "title": "Outfit",
-        "description": "The protagonist's current worn outfit.",
-        "referencedFileTypeSlug": "outfit"
+        "description": "Authoring fallback pattern; the worn Outfit copy (wornUnlockedOutfit) takes precedence at runtime.",
+        "referencedFileTypeSlug": "outfit-pattern"
       },
       "species": {
         "type": "string",
@@ -519,10 +519,10 @@
         "type": "array",
         "items": {
           "type": "string",
-          "referencedFileTypeSlug": "outfit"
+          "referencedFileTypeSlug": "outfit-pattern"
         },
         "title": "Unlocked Outfits",
-        "description": "Spare Outfit(s) the protagonist owns besides Common Clothes (always available via the Common Clothes wardrobe copy, never listed here)."
+        "description": "Spare Outfit Pattern(s) the protagonist owns besides Common Clothes (always available via the Common Clothes copy, never listed here)."
       },
       "hasOtherBargains": {
         "type": "boolean",
@@ -561,9 +561,9 @@
       },
       "wornUnlockedOutfit": {
         "type": "string",
-        "title": "Worn Wardrobe Copy",
-        "description": "The worn wardrobe copy. Player-facing selector edits this; outfit remains the authoring fallback.",
-        "referencedFileTypeSlug": "unlocked-outfit"
+        "title": "Worn Outfit",
+        "description": "The worn Outfit copy. Player-facing selector edits this; outfit remains the authoring fallback.",
+        "referencedFileTypeSlug": "outfit"
       }
     }
   },
@@ -1362,7 +1362,7 @@
           "value": {
             "$state": "/wornUnlockedOutfit"
           },
-          "fileTypeSlug": "unlocked-outfit"
+          "fileTypeSlug": "outfit"
         },
         "children": []
       },
@@ -1659,7 +1659,7 @@
           },
           "options": null,
           "placeholder": null,
-          "fileTypeSlug": "outfit"
+          "fileTypeSlug": "outfit-pattern"
         },
         "visible": {
           "$state": "/outfit"
@@ -2518,13 +2518,13 @@
       "wornunlockedoutfit-select": {
         "type": "Select",
         "props": {
-          "label": "Worn Wardrobe Copy",
+          "label": "Worn Outfit",
           "value": {
             "$state": "/wornUnlockedOutfit"
           },
           "options": null,
           "placeholder": null,
-          "fileTypeSlug": "unlocked-outfit"
+          "fileTypeSlug": "outfit"
         },
         "visible": {
           "$state": "/wornUnlockedOutfit"
@@ -2540,7 +2540,7 @@
           },
           "label": "Unlocked Outfits",
           "columns": 4,
-          "fileTypeSlug": "outfit",
+          "fileTypeSlug": "outfit-pattern",
           "referenceField": null
         },
         "visible": {
@@ -3580,7 +3580,7 @@
               "info": "The cold keeps you alert, but shivering frays your self-control.",
               "slug": "thin-tunic",
               "label": "Thin Tunic (+Energy, −Nerve)",
-              "fileTypeSlug": "outfit",
+              "fileTypeSlug": "outfit-pattern",
               "ai_instruction": "Spare starting Outfit: +Energy, −Nerve."
             },
             {
@@ -3588,7 +3588,7 @@
               "info": "It steadies your nerves, although respectable company may think otherwise.",
               "slug": "lucky-pompom-hat",
               "label": "Lucky Pompom Hat (+Nerve, −Decorum)",
-              "fileTypeSlug": "outfit",
+              "fileTypeSlug": "outfit-pattern",
               "ai_instruction": "Spare starting Outfit: +Nerve, −Decorum."
             },
             {
@@ -3596,7 +3596,7 @@
               "info": "Impressive, fashionable, and exceedingly difficult not to notice.",
               "slug": "fancy-pants",
               "label": "Fancy Pants (+Decorum, −Cover)",
-              "fileTypeSlug": "outfit",
+              "fileTypeSlug": "outfit-pattern",
               "ai_instruction": "Spare starting Outfit: +Decorum, −Cover."
             },
             {
@@ -3604,7 +3604,7 @@
               "info": "Easy to disappear inside, but heavy, warm, and increasingly soporific.",
               "slug": "heavy-black-coat",
               "label": "Heavy Black Coat (+Cover, −Energy)",
-              "fileTypeSlug": "outfit",
+              "fileTypeSlug": "outfit-pattern",
               "ai_instruction": "Spare starting Outfit: +Cover, −Energy."
             },
             {
@@ -3646,6 +3646,20 @@
           "accent": "#ecdfc4",
           "anchor": "lower-left",
           "eyebrow": "",
+          "options": [
+            {
+              "fileTypeSlug": "outfit-pattern"
+            },
+            {
+              "fileTypeSlug": "outfit-pattern"
+            },
+            {
+              "fileTypeSlug": "outfit-pattern"
+            },
+            {
+              "fileTypeSlug": "outfit-pattern"
+            }
+          ],
           "vignette": 100,
           "background": {
             "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/e2950b1e-8b82-4c07-b08c-a2add6fda483",
@@ -3716,7 +3730,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn wardrobe copy (wornUnlockedOutfit) to the Common Clothes wardrobe copy and set unlockedOutfits to the chosen spare Outfit only (Common Clothes are always available via the copy, never listed). Keep outfit as the Common Clothes authoring fallback. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn copy. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit copy (wornUnlockedOutfit) to the Common Clothes copy and set unlockedOutfits to the chosen spare Outfit Pattern only (Common Clothes are always available via the copy, never listed). Keep outfit as the Common Clothes authoring fallback pattern. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn copy. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
     }
   }
 }

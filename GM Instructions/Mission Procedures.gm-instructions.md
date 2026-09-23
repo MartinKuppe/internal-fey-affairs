@@ -32,7 +32,7 @@ Game Start launches the Journal's `startingMission` directly, without a picker. 
 
 ### Runtime wardrobe setup
 
-Unconditional first-turn step for the lobby-selected PC — run even when Down the Rabbit-Hole is already active (see Game Start openingInstructions). Create missing Unlocked Outfit copies for each `unlockedOutfits` entry (copy image, description, conditionModifiers from the source Outfit; deduplicate by `sourceOutfit`); preserve an existing `wornUnlockedOutfit`, or if unset set it to the copy matching `outfit`, creating it if missing. Never clear the wardrobe or reset the worn selection on resume. Runtime copies live in the game instance, never in the authoring project (except the Common Clothes baseline). Later unlocks add the missing copy and update the protagonist's list.
+Unconditional first-turn step for the lobby-selected PC — run even when Down the Rabbit-Hole is already active (see Game Start openingInstructions). For each `unlockedOutfits` pattern entry, create the missing wearable Outfit copy, named verbatim after its source Outfit Pattern (no "Wardrobe" suffix; copy image, description, conditionModifiers); deduplicate by `sourceOutfit`, not by name. Preserve an existing `wornUnlockedOutfit`; if unset, set it to the copy matching `outfit`, creating it if missing. Never clear the wardrobe or reset the worn selection on resume. Runtime copies live in the game instance, never in the authoring project (except the Common Clothes baseline). Later unlocks add the missing copy and update the protagonist's list.
 
 ## Activating a Mission
 

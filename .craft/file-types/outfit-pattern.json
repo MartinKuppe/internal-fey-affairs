@@ -1,10 +1,10 @@
 {
-  "fileTypeId": "01a0cb6e-666c-780c-996a-1513cdc00e97",
-  "slug": "outfit",
-  "name": "Outfit",
+  "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
+  "slug": "outfit-pattern",
+  "name": "Outfit Pattern",
   "contentType": "json",
   "designation": null,
-  "schemaHash": "92a19c95-2c76-51b1-5b79-f2939a989a03",
+  "schemaHash": "14e475cd-a314-2743-7d28-efa6c865270f",
   "schema": {
     "type": "object",
     "required": [
@@ -76,30 +76,27 @@
         "title": "Description",
         "format": "textarea"
       },
-      "sourceOutfit": {
-        "type": "string",
-        "description": "Source pattern this wearable copy was made from.",
-        "referencedFileTypeSlug": "outfit-pattern"
-      },
       "conditionModifiers": {
         "type": "array",
         "items": {
           "type": "object",
           "required": [
+            "track",
             "amount",
-            "appliesBecause",
-            "track"
+            "appliesBecause"
           ],
           "properties": {
             "track": {
               "enum": [
-                "cover",
-                "decorum",
-                "energy",
                 "health",
-                "nerve"
+                "energy",
+                "nerve",
+                "decorum",
+                "cover"
               ],
-              "type": "string"
+              "type": "string",
+              "title": "Track",
+              "description": "The Condition Track this modifier applies to."
             },
             "amount": {
               "enum": [
@@ -111,14 +108,21 @@
                 2,
                 3
               ],
-              "type": "number"
+              "type": "number",
+              "title": "Amount",
+              "maximum": 3,
+              "minimum": -3,
+              "description": "Signed change to the track's Effective Maximum."
             },
             "appliesBecause": {
-              "type": "string"
+              "type": "string",
+              "title": "Why It Applies",
+              "description": "A short player-facing explanation of why the outfit changes this Condition Track."
             }
           }
         },
-        "description": "Snapshot of source outfit modifiers."
+        "title": "Condition Modifiers",
+        "description": "Mechanical Condition Track modifiers that always apply while this outfit is worn. Each row changes the named track's effective maximum; appliesBecause explains the abstraction to the player."
       },
       "conditionModifierRows": {
         "type": "array",
@@ -126,37 +130,32 @@
           "type": "object",
           "properties": {
             "track": {
-              "type": "string"
+              "type": "string",
+              "title": "Track"
             },
             "amount": {
-              "type": "string"
+              "type": "string",
+              "title": "Amount"
             },
             "trackName": {
-              "type": "string"
+              "type": "string",
+              "title": "Track Name"
             },
             "appliesBecause": {
-              "type": "string"
+              "type": "string",
+              "title": "Why It Applies"
             }
           }
         },
+        "title": "Condition Modifier Rows",
         "expression": "($self.conditionModifiers ?? []).map(m => ({ track: m.track, trackName: [{ key: 'health', name: 'Health' }, { key: 'energy', name: 'Energy' }, { key: 'nerve', name: 'Nerve' }, { key: 'decorum', name: 'Decorum' }, { key: 'cover', name: 'Cover' }].find(r => r.key === m.track)?.name ?? m.track, amount: `${m.amount > 0 ? '+' : ''}${m.amount}`, appliesBecause: m.appliesBecause }))",
-        "description": "Player-facing rows derived from conditionModifiers."
+        "description": "Player-facing rows derived from conditionModifiers for read-only display (track name, signed amount, and explanation)."
       }
     }
   },
   "layout": {
     "root": "page",
     "elements": {
-      "body": {
-        "type": "Card",
-        "props": {
-          "centered": false,
-          "maxWidth": "full"
-        },
-        "children": [
-          "body-stack"
-        ]
-      },
       "hero": {
         "type": "ImageHeader",
         "props": {
@@ -166,133 +165,120 @@
           "title": {
             "$state": "/name"
           },
-          "subtitle": {
-            "$state": "/description"
-          },
-          "aspectRatio": "video"
-        },
-        "visible": {
-          "$state": "/image"
+          "aspectRatio": "square"
         },
         "children": []
       },
       "page": {
         "type": "Stack",
         "props": {
-          "gap": "none",
-          "direction": "vertical"
-        },
-        "children": [
-          "hero",
-          "body"
-        ]
-      },
-      "body-stack": {
-        "type": "Stack",
-        "props": {
           "gap": "md",
           "direction": "vertical"
         },
         "children": [
-          "description-text",
-          "sourceoutfit-select",
-          "conditionmodifiers-section",
-          "conditionmodifierrows-section"
+          "hero",
+          "description-card",
+          "condition-card"
         ]
       },
-      "description-text": {
-        "type": "Markdown",
-        "props": {
-          "color": null,
-          "content": {
-            "$state": "/description"
-          }
-        },
-        "visible": {
-          "$state": "/description"
-        },
-        "children": []
-      },
-      "sourceoutfit-select": {
-        "type": "Select",
-        "props": {
-          "label": "Source Outfit",
-          "value": {
-            "$state": "/sourceOutfit"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "outfit"
-        },
-        "visible": {
-          "$state": "/sourceOutfit"
-        },
-        "children": []
-      },
-      "conditionmodifiers-badges": {
-        "type": "BadgeList",
-        "props": {
-          "color": null,
-          "items": {
-            "$state": "/conditionModifiers"
-          },
-          "variant": "secondary"
-        },
-        "children": []
-      },
-      "conditionmodifiers-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Condition Modifiers",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "conditionmodifiers-section": {
+      "modifier-row": {
         "type": "Stack",
         "props": {
           "gap": "sm",
           "direction": "vertical"
+        },
+        "children": [
+          "modifier-heading",
+          "modifier-applies"
+        ]
+      },
+      "condition-card": {
+        "type": "Card",
+        "props": {
+          "title": "Condition Modifiers"
         },
         "visible": {
           "$state": "/conditionModifiers"
         },
         "children": [
-          "conditionmodifiers-heading",
-          "conditionmodifiers-badges"
+          "condition-modifiers-list"
         ]
       },
-      "conditionmodifierrows-badges": {
-        "type": "BadgeList",
+      "modifier-track": {
+        "type": "Text",
         "props": {
-          "color": null,
-          "items": {
-            "$state": "/conditionModifierRows"
+          "text": {
+            "$item": "trackName"
+          },
+          "variant": "body"
+        },
+        "children": []
+      },
+      "modifier-amount": {
+        "type": "Badge",
+        "props": {
+          "text": {
+            "$item": "amount"
           },
           "variant": "secondary"
         },
         "children": []
       },
-      "conditionmodifierrows-heading": {
-        "type": "Heading",
+      "description-body": {
+        "type": "Markdown",
         "props": {
-          "text": "Condition Modifier Rows",
-          "level": "h3"
+          "content": {
+            "$state": "/description"
+          }
         },
         "children": []
       },
-      "conditionmodifierrows-section": {
+      "description-card": {
+        "type": "Card",
+        "props": {
+          "title": "Description"
+        },
+        "visible": {
+          "$state": "/description"
+        },
+        "children": [
+          "description-body"
+        ]
+      },
+      "modifier-applies": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "appliesBecause"
+          },
+          "variant": "muted"
+        },
+        "children": []
+      },
+      "modifier-heading": {
         "type": "Stack",
         "props": {
           "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/conditionModifierRows"
+          "align": "center",
+          "direction": "horizontal"
         },
         "children": [
-          "conditionmodifierrows-heading",
-          "conditionmodifierrows-badges"
+          "modifier-track",
+          "modifier-amount"
+        ]
+      },
+      "condition-modifiers-list": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "repeat": {
+          "key": "track",
+          "statePath": "/conditionModifierRows"
+        },
+        "children": [
+          "modifier-row"
         ]
       }
     }

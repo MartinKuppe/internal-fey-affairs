@@ -18,7 +18,7 @@
   "outfit": {
     "slug": "common-clothes",
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
-    "fileTypeSlug": "outfit"
+    "fileTypeSlug": "outfit-pattern"
   },
   "weakness": "Flat-Footed",
   "abilities": [
@@ -72,12 +72,12 @@
     {
       "slug": "thin-tunic",
       "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
-      "fileTypeSlug": "outfit"
+      "fileTypeSlug": "outfit-pattern"
     }
   ],
   "wornUnlockedOutfit": {
-    "slug": "common-clothes-wardrobe",
+    "slug": "common-clothes",
     "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
-    "fileTypeSlug": "unlocked-outfit"
+    "fileTypeSlug": "outfit"
   }
 }

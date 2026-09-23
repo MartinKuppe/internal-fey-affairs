@@ -15,7 +15,7 @@ Any of the 21 Origin pregens is ready to play as the household protagonist in th
 For a new protagonist:
 1. Choose an Origin from the Origins folder. It supplies village background, one Strong Attribute and three trained Abilities.
 2. Start all Attributes at 1; raise the Origin Attribute to 2. Choose a different Attribute as the Weakness and lower it to 0: one Strong, five Ordinary, one Weak.
-3. Worn wardrobe copy starts as the Common Clothes copy in /Unlocked Outfits/ (source: Outfit/Common Clothes); `unlockedOutfits` holds the spare Outfit only (Thin Tunic, Lucky Pompom Hat, Fancy Pants or Heavy Black Coat). Common Clothes have no modifiers; each spare trades +1 to one Condition Maximum for −1 to another.
+3. Worn Outfit copy starts as the Common Clothes copy in /Unlocked Outfits/ (source pattern: Outfit Pattern/Common Clothes); `unlockedOutfits` holds the spare Outfit Pattern only (Thin Tunic, Lucky Pompom Hat, Fancy Pants or Heavy Black Coat). Common Clothes have no modifiers; each spare trades +1 to one Condition Maximum for −1 to another.
 4. Begin with no Depletion. **Checks and Conditions** governs derived Conditions and worn Outfits.
 
 Use these choices to explain Attributes, training and clothing effects. Later Ability rewards add to, rather than replace, the Origin's three.
