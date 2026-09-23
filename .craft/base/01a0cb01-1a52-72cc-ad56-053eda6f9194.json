@@ -1,5 +1,5 @@
 {
-  "name": "The Bandit",
+  "name": "The Brigand",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/33533205-5c8c-4698-9af6-74d887305e35",
     "focalPoint": {
@@ -8,7 +8,7 @@
     }
   },
   "origin": {
-    "slug": "bandit",
+    "slug": "brigand",
     "referenceId": "019fe8d9-f0f5-7460-a6ea-77c031c40562",
     "fileTypeSlug": "origin"
   },

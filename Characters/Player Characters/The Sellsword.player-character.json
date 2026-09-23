@@ -2,7 +2,7 @@
   "$craft": {
     "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3"
   },
-  "name": "The Mercenary",
+  "name": "The Sellsword",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/b87f6e18-5c2d-4f87-b200-58d8e3c2188a",
     "focalPoint": {
@@ -11,7 +11,7 @@
     }
   },
   "origin": {
-    "slug": "mercenary",
+    "slug": "sellsword",
     "referenceId": "019fe8d9-f0d8-7d9c-a7e3-c0ae92e62617",
     "fileTypeSlug": "origin"
   },

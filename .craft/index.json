@@ -1,10 +1,6 @@
 {
-  "syncedAt": "2026-09-23T00:48:04.798Z",
+  "syncedAt": "2026-09-23T08:23:35.962Z",
   "folders": [
-    {
-      "path": "/GM Instructions",
-      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
-    },
     {
       "path": "/Mission Journals",
       "folderId": "01a001e7-84d8-7130-bedb-b34325d647bd"
@@ -70,6 +66,10 @@
       "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
     },
     {
+      "path": "/GM Instructions",
+      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
+    },
+    {
       "path": "/GM Instructions/Narrative Laws",
       "folderId": "01a0693e-dcaa-79d0-a912-8b5338171b81"
     },
@@ -117,7 +117,7 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a0cb94-9fd3-72c8-a0c1-576a7bd1e675",
+      "baseVersionId": "01a0cd5a-a9b1-7574-841e-af44169e4bbb",
       "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
       "source": "project",
       "settings": {
@@ -500,12 +500,12 @@
       "source": "project"
     },
     {
-      "path": "/Origins/Mercenary.origin.json",
+      "path": "/Origins/Sellsword.origin.json",
       "fileId": "019fe8d9-f0d8-7d14-8a8f-5ec82b01b84c",
       "referenceId": "019fe8d9-f0d8-7d9c-a7e3-c0ae92e62617",
       "fileType": "origin",
-      "baseVersionId": "01a074b6-6ed9-7ddc-b696-d0301f7865be",
-      "baseHash": "225a1fc7-7d57-26d8-aa7e-1540f5167e8b",
+      "baseVersionId": "01a0cd53-7b26-7d34-b432-28c8368aa33a",
+      "baseHash": "61be9f8f-b8a4-8486-950a-83e55f17a602",
       "source": "project"
     },
     {
@@ -518,12 +518,12 @@
       "source": "project"
     },
     {
-      "path": "/Origins/Bandit.origin.json",
+      "path": "/Origins/Brigand.origin.json",
       "fileId": "019fe8d9-f0f5-73c8-baf9-2d5d01cc7e0d",
       "referenceId": "019fe8d9-f0f5-7460-a6ea-77c031c40562",
       "fileType": "origin",
-      "baseVersionId": "01a074b3-b97a-7c74-94f1-809475020044",
-      "baseHash": "a301cea9-e1aa-1fb8-c08f-a5198dd0000b",
+      "baseVersionId": "01a0cd53-781e-74fc-aa4b-c06d47f8918d",
+      "baseHash": "a71cbc37-0644-f590-19dd-571a98abbf72",
       "source": "project"
     },
     {
@@ -1376,8 +1376,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a0cb02-d7a6-74cc-a3e4-c41d1c17392c",
-      "baseHash": "38a89460-837b-d035-1bf1-ac3d1bb6be73",
+      "baseVersionId": "01a0cd54-06ef-74e8-b53f-b51eb7e32b1c",
+      "baseHash": "2cbb0322-a2ff-a576-017d-bf7a574b4de1",
       "source": "project"
     },
     {
@@ -1385,8 +1385,8 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a0cb02-6d82-7b94-b07c-f8c71e8f7d28",
-      "baseHash": "9da2d979-df0c-780f-f3e1-f762a1013425",
+      "baseVersionId": "01a0cd53-ff58-75ec-81a3-461dc8120fac",
+      "baseHash": "b0ad639e-bf62-9504-e813-0156e172351b",
       "source": "project"
     },
     {
@@ -1394,8 +1394,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a0cb03-2600-7c70-b15d-5a5aa264f30c",
-      "baseHash": "1aed0cd1-b368-de0a-863b-e2aab7f54ff0",
+      "baseVersionId": "01a0cd54-283e-74e0-8fc4-dfc438913c2a",
+      "baseHash": "04cb09c8-fed7-8f33-8e31-b05fe5206612",
       "source": "project"
     },
     {
@@ -1694,8 +1694,8 @@
       "fileId": "01a0825e-f3ce-705c-ba85-775f0f67c4d1",
       "referenceId": "01a0825e-f38e-72df-871e-be64a4ccb4c5",
       "fileType": "mission",
-      "baseVersionId": "01a0cb02-8c8b-727c-8b0a-0e11fb202ae8",
-      "baseHash": "274b2355-d89d-2555-14e7-ab47f327f89a",
+      "baseVersionId": "01a0cd54-34b6-7d3c-89c4-b3dbbc36f498",
+      "baseHash": "1324fe42-88a7-9704-76ce-713aa1af284d",
       "source": "project"
     },
     {
@@ -1916,12 +1916,12 @@
       "source": "project"
     },
     {
-      "path": "/Characters/Player Characters/The Bandit.player-character.json",
+      "path": "/Characters/Player Characters/The Brigand.player-character.json",
       "fileId": "01a0cb01-1a52-72cc-ad56-053eda6f9194",
       "referenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e",
       "fileType": "player-character",
-      "baseVersionId": "01a0cb91-e92d-7a80-bd36-9cc9c4a69eb7",
-      "baseHash": "a1e35323-b3d4-fa53-ce9a-92b7f2a590b5",
+      "baseVersionId": "01a0cd53-d332-790c-b9af-ad361d4c11d6",
+      "baseHash": "84860f7d-2252-0733-e7ac-7263e4bea912",
       "source": "project"
     },
     {
@@ -2006,12 +2006,12 @@
       "source": "project"
     },
     {
-      "path": "/Characters/Player Characters/The Mercenary.player-character.json",
+      "path": "/Characters/Player Characters/The Sellsword.player-character.json",
       "fileId": "01a0cb01-1a54-7110-9007-76561f6b9c9f",
       "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3",
       "fileType": "player-character",
-      "baseVersionId": "01a0cb91-eb4c-79cc-9c44-8f4558f5a2bc",
-      "baseHash": "9a0f8ef2-58cc-6485-86ee-9c83ac986bf6",
+      "baseVersionId": "01a0cd53-d9e5-7a20-b8f1-adb0ffd34bdd",
+      "baseHash": "390a5c8c-338f-72c0-797b-8e89be66df13",
       "source": "project"
     },
     {
@@ -2122,12 +2122,6 @@
       "contentHash": "049e8cec-4109-8997-3246-334f8bcfc565"
     },
     {
-      "slug": "gm-instructions",
-      "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
-      "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
-      "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
-    },
-    {
       "slug": "species",
       "fileTypeId": "019fedb8-3e72-79c0-93b6-bcddbccbb5e4",
       "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
@@ -2206,12 +2200,6 @@
       "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
     },
     {
-      "slug": "player-character",
-      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "2cae8917-6fdb-a711-1cff-1000561f1d97",
-      "contentHash": "5924fcc5-92cb-4926-c4cb-f354031c9adb"
-    },
-    {
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
       "schemaHash": "dcc7a4ef-8e74-576f-ae02-57d8bd7ed509",
@@ -2228,6 +2216,18 @@
       "fileTypeId": "01a0cb6e-666c-780c-996a-1513cdc00e97",
       "schemaHash": "92a19c95-2c76-51b1-5b79-f2939a989a03",
       "contentHash": "645e08f5-2407-408e-f41b-13f9aabc41f7"
+    },
+    {
+      "slug": "gm-instructions",
+      "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
+      "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
+      "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
+    },
+    {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "2cae8917-6fdb-a711-1cff-1000561f1d97",
+      "contentHash": "98f7b15c-9259-a1ff-99b0-850b5b0ababa"
     }
   ],
   "projectSettingsHash": "ecd6825c-6bbb-cb84-6fed-4040fecb3769"

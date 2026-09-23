@@ -197,7 +197,7 @@
   "completionEffects": "Verify Buaic's Workshop has its fulfilled clearance and honey-payment obligations resolved. Honey delivery independently resolves only the accepting party's honey obligation in Coinin's Silence; leave cream, milk and Coinin's ongoing nondisclosure unchanged. Preserve trackers at target as history. The apprentice's promised returns do not instantly lift the village watch. Do not advance the moon phase.",
   "selectableMembers": [
     {
-      "slug": "the-bandit",
+      "slug": "the-brigand",
       "referenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e",
       "fileTypeSlug": "player-character"
     },
@@ -252,7 +252,7 @@
       "fileTypeSlug": "player-character"
     },
     {
-      "slug": "the-mercenary",
+      "slug": "the-sellsword",
       "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3",
       "fileTypeSlug": "player-character"
     },

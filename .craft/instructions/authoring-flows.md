@@ -78,7 +78,7 @@ Display screens (no `field`):
 - `reading` — `{title?, body?}`. Long prose in a scrollable column (a
   found letter, a log). Defaults to `anchor: "centered"`.
 - `video` — `{background, anchor?}` only; no cinematic keys. Full-bleed
-  clip, up to 30s.
+  clip, up to 60s.
 
 Question screens (set `field`; `ai_instruction` on `data` tells a
 downstream generator what the answer MEANS):

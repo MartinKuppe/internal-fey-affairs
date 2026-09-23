@@ -2562,10 +2562,10 @@
         "sourceHandle": "what_does_all_of_this_mean"
       },
       {
-        "id": "edge_bandit-weak-body",
+        "id": "edge_brigand-weak-body",
         "source": "w2",
         "target": "weak-body",
-        "sourceHandle": "bandit"
+        "sourceHandle": "brigand"
       },
       {
         "id": "edge_blacksmith-weak-body",
@@ -2574,10 +2574,10 @@
         "sourceHandle": "blacksmith"
       },
       {
-        "id": "edge_mercenary-weak-body",
+        "id": "edge_sellsword-weak-body",
         "source": "w2",
         "target": "weak-body",
-        "sourceHandle": "mercenary"
+        "sourceHandle": "sellsword"
       },
       {
         "id": "edge_fairy-doctor-weak-hands",
@@ -3019,14 +3019,6 @@
           "eyebrow": "Step 2 of 4 — Your origin",
           "options": [
             {
-              "id": "bandit",
-              "info": "",
-              "slug": "bandit",
-              "label": "Bandit (nature, weapons, lying; +Body)",
-              "fileTypeSlug": "origin",
-              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
-            },
-            {
               "id": "bard",
               "slug": "bard",
               "label": "Bard (music, Fey lore, court life; +Heart)",
@@ -3037,6 +3029,14 @@
               "id": "blacksmith",
               "slug": "blacksmith",
               "label": "Blacksmith (repairs, iron, weapons; +Body)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "brigand",
+              "info": "",
+              "slug": "brigand",
+              "label": "Brigand (nature, weapons, lying; +Body)",
               "fileTypeSlug": "origin",
               "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
             },
@@ -3097,13 +3097,6 @@
               "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
             },
             {
-              "id": "mercenary",
-              "slug": "mercenary",
-              "label": "Mercenary (weapons, court life, wayfinding; +Body)",
-              "fileTypeSlug": "origin",
-              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
-            },
-            {
               "id": "milker",
               "slug": "milker",
               "label": "Milker (animals, milk, nature; +Hands)",
@@ -3128,6 +3121,13 @@
               "id": "seanchaí",
               "slug": "seanchaí",
               "label": "Seanchaí (learnedness, Fey lore, charisma; +Head)",
+              "fileTypeSlug": "origin",
+              "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
+            },
+            {
+              "id": "sellsword",
+              "slug": "sellsword",
+              "label": "Sellsword (weapons, court life, wayfinding; +Body)",
               "fileTypeSlug": "origin",
               "ai_instruction": "Makes this Origin's Attribute Strong (2) and grants its three trained Abilities."
             },

@@ -103,7 +103,7 @@
   "completionEffects": "Under Coinin's Silence, mark only the accepting party's milk obligation resolved. Do not change the cream or honey obligations. Coinin's promise not to tell Morrigan remains active, so the Bargain itself remains active. Do not advance the moon phase.",
   "selectableMembers": [
     {
-      "slug": "the-bandit",
+      "slug": "the-brigand",
       "referenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e",
       "fileTypeSlug": "player-character"
     },
@@ -158,7 +158,7 @@
       "fileTypeSlug": "player-character"
     },
     {
-      "slug": "the-mercenary",
+      "slug": "the-sellsword",
       "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3",
       "fileTypeSlug": "player-character"
     },

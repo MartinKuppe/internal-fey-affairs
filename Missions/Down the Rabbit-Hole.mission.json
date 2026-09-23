@@ -97,7 +97,7 @@
   "completionEffects": "Complete when Meabh has shelter and Coinin's silence has been secured through an accepted bargain (whether accepted by the player, Meabh, or both). Set Cream Tax, Milk and Feathers, and Iron and Wax to available and revealedToPlayer true. Do not advance the moon phase.",
   "selectableMembers": [
     {
-      "slug": "the-bandit",
+      "slug": "the-brigand",
       "referenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e",
       "fileTypeSlug": "player-character"
     },
@@ -152,7 +152,7 @@
       "fileTypeSlug": "player-character"
     },
     {
-      "slug": "the-mercenary",
+      "slug": "the-sellsword",
       "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3",
       "fileTypeSlug": "player-character"
     },
