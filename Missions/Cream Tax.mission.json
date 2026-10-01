@@ -25,6 +25,8 @@
         "fileTypeSlug": "location"
       },
       "objective": "Learn where the cream is and why Coinin cannot collect it himself.",
+      "completionCondition": "The team knows the ten-measure target, the watched village route and the delivery destination, and has chosen an approach.",
+      "mandatoryChallenge": "",
       "gmInstructions": "Keep Coinin literally truthful but strategically incomplete. He does not claim he can consume the cream and does not reveal the Takeling/clone supply chain. Use the existing Grace and Bargain rules to explain that the cream discharges one obligation; do not invent a numeric Grace reward. Let the team approach by the surface path or use Coinin's Fairy Door to the Hidden Fairy Door in the western woods. The portal shortens travel but does not bypass Tri Mhuilinn Gate or the watched interior."
     },
     {
@@ -37,6 +39,8 @@
         "fileTypeSlug": "location"
       },
       "objective": "Pass Tri Mhuilinn Gate without alarming the watch.",
+      "completionCondition": "The team has reached Inside Palisade; carry any suspicion, favour owed or other entry complication into collection.",
+      "mandatoryChallenge": "Resolve entry past the village watch before granting access. Use one appropriate check if the approach risks refusal or discovery; a credible explanation or route that removes the uncertainty can succeed without a roll. A setback changes cost or approach, never makes collection impossible.",
       "gmInstructions": "Use Village Guard - Prototype 01 at the gate and Village Guard - Prototype 02 for the patrol inside. Make the guards alert rather than murderous. A failed approach may cost Cover or Nerve, create suspicion, require a favour, split the route, or force a new plan. It must not prevent collection or turn the Mission into combat."
     },
     {
@@ -49,6 +53,8 @@
         "fileTypeSlug": "location"
       },
       "objective": "Gather ten measures of cream from sleeping households.",
+      "completionCondition": "Ten measures of cream are secured and the team has left the palisade by a viable route; proceed to cream-delivery with any pursuit or suspicion intact.",
+      "mandatoryChallenge": "Present the watched household offerings as a collection obstacle. Check risky collection where discovery or loss is at stake, not every vessel. Allow safe choices without rolling and leave enough opportunities to reach ten measures. Do not require the gate again or an exit roll unless the chosen exit presents a distinct meaningful risk.",
       "gmInstructions": "Offer several small problems and let player choices determine which houses they risk. Do not roll for every vessel. Use checks only where discovery or loss is meaningfully at stake. On failure, spill or lose some progress, attract attention, create a social consequence, or demand a different route; always leave enough opportunities to reach the target. Once the cream is collected, do not require the team to pass through the guarded gate again. The palisade is a defensive boundary, not a prison: from inside, let them find a climbable section, exploit a gap or weak point, use nearby structures or objects, or devise another plausible way out. Require a check only if active pursuit, a hazardous method, or protecting the cream makes the exit meaningfully uncertain. Existing suspicion or pursuit does not disappear when they cross the wall."
     },
     {
@@ -61,6 +67,8 @@
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the cream and record that part of the bargain as fulfilled.",
+      "completionCondition": "Coinin has received ten measures and the cream obligation is recorded as resolved; complete the Mission without waiting for milk, honey or the end of his nondisclosure promise.",
+      "mandatoryChallenge": "",
       "gmInstructions": "Keep the cream tracker at target as historical Mission-object progress once delivery is complete; it records the objective, not carried inventory. In Coinin's Silence, resolve only the accepting party's cream obligation. Leave the milk, honey, and Coinin's nondisclosure obligations as they stand."
     }
   ],

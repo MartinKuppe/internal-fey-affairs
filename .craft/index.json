@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T20:47:31.950Z",
+  "syncedAt": "2026-10-01T21:41:37.037Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -1376,8 +1376,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a0cd54-06ef-74e8-b53f-b51eb7e32b1c",
-      "baseHash": "2cbb0322-a2ff-a576-017d-bf7a574b4de1",
+      "baseVersionId": "01a0f961-3c98-75ac-99f3-7ebbcf3775d0",
+      "baseHash": "cc7e0121-bf9a-19c5-df2b-c92f8203530c",
       "source": "project"
     },
     {
@@ -1385,8 +1385,8 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a0cd53-ff58-75ec-81a3-461dc8120fac",
-      "baseHash": "b0ad639e-bf62-9504-e813-0156e172351b",
+      "baseVersionId": "01a0f961-3c85-7500-bc4c-33c3ebf537b0",
+      "baseHash": "8d822d69-2e90-5930-a519-4b6a75710422",
       "source": "project"
     },
     {
@@ -1394,8 +1394,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a0cd54-283e-74e0-8fc4-dfc438913c2a",
-      "baseHash": "04cb09c8-fed7-8f33-8e31-b05fe5206612",
+      "baseVersionId": "01a0f96a-712d-7214-b8ff-f3e2bd6f010b",
+      "baseHash": "05e8d181-f22b-05e6-7329-b46bb19cba56",
       "source": "project"
     },
     {
@@ -1694,8 +1694,8 @@
       "fileId": "01a0825e-f3ce-705c-ba85-775f0f67c4d1",
       "referenceId": "01a0825e-f38e-72df-871e-be64a4ccb4c5",
       "fileType": "mission",
-      "baseVersionId": "01a0cd54-34b6-7d3c-89c4-b3dbbc36f498",
-      "baseHash": "1324fe42-88a7-9704-76ce-713aa1af284d",
+      "baseVersionId": "01a0f961-3ca3-709c-84f6-8740a0c168a8",
+      "baseHash": "5aad6295-b9b5-62fd-5547-f09ceb215435",
       "source": "project"
     },
     {
@@ -1757,8 +1757,8 @@
       "fileId": "01a0879b-319e-7f5c-95af-f93cb0ce6395",
       "referenceId": "01a0879b-2fa5-731b-b003-26f7be756f41",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a0cf84-0fcf-7b80-a22a-e92bb2ccdf1e",
-      "baseHash": "a4483f00-8c85-65cd-fdb3-256c2e88947c",
+      "baseVersionId": "01a0f95a-a808-7c24-8368-e799a302e061",
+      "baseHash": "029295de-1d4d-b9eb-976f-39ca32271657",
       "source": "project"
     },
     {
@@ -2213,8 +2213,8 @@
     {
       "slug": "mission",
       "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "75c5e000-1398-1bda-a3d1-efd1dc840dad",
-      "contentHash": "32fc896f-a026-8b1a-1c5f-a8db7763a0e3"
+      "schemaHash": "5868e54c-38e2-8e87-4915-f76b4febfb2c",
+      "contentHash": "c6b74e81-8866-dcf1-3eea-64f809300a07"
     },
     {
       "slug": "mission-journal",
@@ -2231,8 +2231,8 @@
     {
       "slug": "outfit",
       "fileTypeId": "01a0cb6e-666c-780c-996a-1513cdc00e97",
-      "schemaHash": "92a19c95-2c76-51b1-5b79-f2939a989a03",
-      "contentHash": "645e08f5-2407-408e-f41b-13f9aabc41f7"
+      "schemaHash": "1491ceb2-7cba-d273-fba1-7b793d2834c4",
+      "contentHash": "9513e14f-8b90-1c4d-f016-40ce8bf8f1b0"
     },
     {
       "slug": "outfit-pattern",

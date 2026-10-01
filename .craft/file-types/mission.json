@@ -4,7 +4,7 @@
   "name": "Mission",
   "contentType": "json",
   "designation": null,
-  "schemaHash": "75c5e000-1398-1bda-a3d1-efd1dc840dad",
+  "schemaHash": "5868e54c-38e2-8e87-4915-f76b4febfb2c",
   "schema": {
     "type": "object",
     "required": [
@@ -310,6 +310,18 @@
               "title": "GM Instructions",
               "format": "textarea",
               "description": "GM-facing special handling, restrictions, staging, or fail-forward guidance."
+            },
+            "mandatoryChallenge": {
+              "type": "string",
+              "title": "Mandatory Challenge",
+              "format": "textarea",
+              "description": "GM-facing obstacle that must be resolved before this beat ends, including any required check. Adapt to the player's approach. Empty means no mandatory challenge, not a ban on other checks."
+            },
+            "completionCondition": {
+              "type": "string",
+              "title": "Completion Condition",
+              "format": "textarea",
+              "description": "GM-facing condition for ending this beat and advancing to the next; final beat invokes Mission completion."
             }
           }
         },
@@ -1546,6 +1558,14 @@
             },
             {
               "name": "gmInstructions",
+              "type": "string"
+            },
+            {
+              "name": "completionCondition",
+              "type": "string"
+            },
+            {
+              "name": "mandatoryChallenge",
               "type": "string"
             }
           ],

@@ -4,7 +4,7 @@
   "name": "Outfit",
   "contentType": "json",
   "designation": null,
-  "schemaHash": "92a19c95-2c76-51b1-5b79-f2939a989a03",
+  "schemaHash": "1491ceb2-7cba-d273-fba1-7b793d2834c4",
   "schema": {
     "type": "object",
     "required": [
@@ -78,8 +78,8 @@
       },
       "sourceOutfit": {
         "type": "string",
-        "description": "Source pattern this wearable copy was made from.",
-        "referencedFileTypeSlug": "outfit-pattern"
+        "description": "Source outfit this copy was made from.",
+        "referencedFileTypeSlug": "outfit"
       },
       "conditionModifiers": {
         "type": "array",
@@ -144,159 +144,7 @@
       }
     }
   },
-  "layout": {
-    "root": "page",
-    "elements": {
-      "body": {
-        "type": "Card",
-        "props": {
-          "centered": false,
-          "maxWidth": "full"
-        },
-        "children": [
-          "body-stack"
-        ]
-      },
-      "hero": {
-        "type": "ImageHeader",
-        "props": {
-          "src": {
-            "$state": "/image"
-          },
-          "title": {
-            "$state": "/name"
-          },
-          "subtitle": {
-            "$state": "/description"
-          },
-          "aspectRatio": "video"
-        },
-        "visible": {
-          "$state": "/image"
-        },
-        "children": []
-      },
-      "page": {
-        "type": "Stack",
-        "props": {
-          "gap": "none",
-          "direction": "vertical"
-        },
-        "children": [
-          "hero",
-          "body"
-        ]
-      },
-      "body-stack": {
-        "type": "Stack",
-        "props": {
-          "gap": "md",
-          "direction": "vertical"
-        },
-        "children": [
-          "description-text",
-          "sourceoutfit-select",
-          "conditionmodifiers-section",
-          "conditionmodifierrows-section"
-        ]
-      },
-      "description-text": {
-        "type": "Markdown",
-        "props": {
-          "color": null,
-          "content": {
-            "$state": "/description"
-          }
-        },
-        "visible": {
-          "$state": "/description"
-        },
-        "children": []
-      },
-      "sourceoutfit-select": {
-        "type": "Select",
-        "props": {
-          "label": "Source Outfit",
-          "value": {
-            "$state": "/sourceOutfit"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "outfit"
-        },
-        "visible": {
-          "$state": "/sourceOutfit"
-        },
-        "children": []
-      },
-      "conditionmodifiers-badges": {
-        "type": "BadgeList",
-        "props": {
-          "color": null,
-          "items": {
-            "$state": "/conditionModifiers"
-          },
-          "variant": "secondary"
-        },
-        "children": []
-      },
-      "conditionmodifiers-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Condition Modifiers",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "conditionmodifiers-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/conditionModifiers"
-        },
-        "children": [
-          "conditionmodifiers-heading",
-          "conditionmodifiers-badges"
-        ]
-      },
-      "conditionmodifierrows-badges": {
-        "type": "BadgeList",
-        "props": {
-          "color": null,
-          "items": {
-            "$state": "/conditionModifierRows"
-          },
-          "variant": "secondary"
-        },
-        "children": []
-      },
-      "conditionmodifierrows-heading": {
-        "type": "Heading",
-        "props": {
-          "text": "Condition Modifier Rows",
-          "level": "h3"
-        },
-        "children": []
-      },
-      "conditionmodifierrows-section": {
-        "type": "Stack",
-        "props": {
-          "gap": "sm",
-          "direction": "vertical"
-        },
-        "visible": {
-          "$state": "/conditionModifierRows"
-        },
-        "children": [
-          "conditionmodifierrows-heading",
-          "conditionmodifierrows-badges"
-        ]
-      }
-    }
-  },
+  "layout": null,
   "imageStyleInstructions": null,
   "showCoverImage": true,
   "creationFlow": null

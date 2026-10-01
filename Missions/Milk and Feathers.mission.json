@@ -25,6 +25,8 @@
         "fileTypeSlug": "location"
       },
       "objective": "Choose whether to visit both farms or risk taking two cans from one.",
+      "completionCondition": "The team knows the two-can target and farm trade-off and has chosen an approach; advance to the chosen farm, not automatically Liam's.",
+      "mandatoryChallenge": "",
       "gmInstructions": "Keep Coinin literally truthful but strategically incomplete. He does not claim he can drink the milk and does not reveal the Takeling/clone supply chain. Explain that the milk discharges one bargain obligation; do not invent a numeric Grace reward. Make the choice genuine: one can from each farm exposes the team to the known geese, while taking a second can from Liam's fenced yard avoids Brian's geese but reveals the rooster as an unexpected complication. The team may choose another credible plan. Play only the farm beats their plan requires."
     },
     {
@@ -37,6 +39,8 @@
         "fileTypeSlug": "location"
       },
       "objective": "Secure milk from Liam's fenced farm without waking the household.",
+      "completionCondition": "The milk taken from Liam's is recorded and the team has left or chosen another route; go to milk-delivery with two cans, otherwise to the farm their plan requires.",
+      "mandatoryChallenge": "Only if the team enters the yard, resolve the fence and territorial rooster rather than granting the second can automatically. Check meaningful risks of noise, attack or spillage according to the approach; safe ingenuity may remove the need to roll. The first outside can normally requires no check. Skip this challenge if the team does not enter.",
       "gmInstructions": "The first can outside the gate should normally require no check. If the team enters for a second, make the rooster a surprise: it may attack, chase, crow, spill milk, cost Cover or Decorum, or wake Liam. Fail forward and let ingenuity with Animals, Food, stealth, clothing, or distraction work. Update the milk tracker whenever a can is secured. Skip this beat if the team's plan does not visit Liam's Farm."
     },
     {
@@ -49,6 +53,8 @@
         "fileTypeSlug": "location"
       },
       "objective": "Get past Brian's geese and secure the milk still needed.",
+      "completionCondition": "The milk taken from Brian's is recorded and the team has left or chosen another route; go to milk-delivery with two cans, otherwise continue the chosen collection plan.",
+      "mandatoryChallenge": "If visiting Brian's, present the visible geese before commitment and resolve how the team gets past them to the milk. Check meaningful risks of alarm, attack or spillage; safe handling may avoid a roll. Retreat or failure leaves another route to two cans. Skip this beat if the chosen plan does not visit Brian's.",
       "gmInstructions": "The geese are the known problem and must be apparent before the player commits. They may hiss, pursue, nip, block the route, or sound the alarm. Allow Animals, Food, stealth, patience, distraction, retreat, or another sensible plan. Failure complicates the theft but never makes the target unobtainable. Update the milk tracker whenever a can is secured. Skip this beat if the team already obtained both cans at Liam's Farm and does not visit Brian's."
     },
     {
@@ -61,6 +67,8 @@
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the milk and record that part of the bargain as fulfilled.",
+      "completionCondition": "Coinin has received two cans and the milk obligation is recorded as resolved; complete the Mission without waiting for cream, honey or the end of his nondisclosure promise.",
+      "mandatoryChallenge": "",
       "gmInstructions": "Keep the milk tracker at target as historical Mission-object progress once delivery is complete; it records the objective, not carried inventory. In Coinin's Silence, resolve only the accepting party's milk obligation. Leave the cream, honey, and Coinin's nondisclosure obligations as they stand."
     }
   ],
