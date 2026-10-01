@@ -1,5 +1,9 @@
 {
   "name": "Portal Hub H2-45-102",
+  "type": "Local Fairy Door hub",
+  "description": "Under a crooked, flowering hawthorn, a ring of luminous doorways surrounds a slender central column. Gold seams divide the pale walls, and blue lines cross the floor towards the doors. An orderly service nook and softly glowing lamps make the chamber feel maintained and familiar to its users, despite the weight of earth and roots overhead.",
+  "atmosphere": "Quiet efficiency: a faint vibration through the floor, warm lamps beside cold portal light, and no view of the weather outside.",
+  "notes": "A separate local branch with a mapped connection to Portal Hub H2-45-99. Its resemblance to H2-45-100 reflects standard hub construction, not that the two are the same place. Use its designation and destination emblems to orient travellers. The surface exit is hidden and secured; other routes are not yet specified. An encounter here can show domestic Fey treating an extraordinary journey as an ordinary errand.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/927ac203-0516-497c-bdaa-837c45b0db14",
     "focalPoint": {

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T21:41:37.037Z",
+  "syncedAt": "2026-10-01T22:07:50.477Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -1784,8 +1784,8 @@
       "fileId": "01a0a66c-0566-7230-a9d7-eea16efc754a",
       "referenceId": "01a0a66c-0566-72cc-b67f-dd426dd9ed83",
       "fileType": "location",
-      "baseVersionId": "01a0f4bb-302e-7f6c-ac95-a827643df852",
-      "baseHash": "7fec1a65-be78-b3f3-93fc-0a61f7500587",
+      "baseVersionId": "01a0f982-6f3e-7484-81d3-bd0cfb71f8a3",
+      "baseHash": "4f5b96a3-7685-0ba4-e7cf-002d82f07a7f",
       "source": "project",
       "metadataHash": "37d443b5-b214-5f0f-69d2-30d958994982"
     },
@@ -1794,8 +1794,8 @@
       "fileId": "01a0a66c-4b78-7bc0-a8a7-ec80e0254fbc",
       "referenceId": "01a0a66c-4b78-7c58-82f1-ef097878a774",
       "fileType": "location",
-      "baseVersionId": "01a0f4bb-5cc3-74e8-a360-95acc153d160",
-      "baseHash": "fdcdf58f-036a-ad09-d195-ae30b5fb567c",
+      "baseVersionId": "01a0f982-6f09-7b20-bc8d-ca8556e2ee54",
+      "baseHash": "c0864e1e-48fe-ac28-2716-b2d3be16ce98",
       "source": "project",
       "metadataHash": "a3d8b09e-ea31-0ecb-5434-0fd0e02c7d88"
     },
@@ -1804,8 +1804,8 @@
       "fileId": "01a0a66c-9495-7b38-883d-1b702ddbe460",
       "referenceId": "01a0a66c-9495-7bd8-9413-ae1d7ae667a4",
       "fileType": "location",
-      "baseVersionId": "01a0f4bb-83e4-7748-9ba8-5b845300300e",
-      "baseHash": "61b477db-7305-cce3-4e39-88b3464277cd",
+      "baseVersionId": "01a0f982-6f1a-7400-b078-3f691fdcbdcc",
+      "baseHash": "d81a5b4d-00a0-6600-7ba7-e54678492920",
       "source": "project",
       "metadataHash": "ba7c3885-7ad3-4a53-151c-38414cbeefdb"
     },
@@ -1814,8 +1814,8 @@
       "fileId": "01a0a66c-c624-7e98-8b9b-1d8bf01efb30",
       "referenceId": "01a0a66c-c624-7f20-81f4-15c18eb31468",
       "fileType": "location",
-      "baseVersionId": "01a0f4bb-a508-76a8-bf73-36c3a16618b0",
-      "baseHash": "d330a427-edaa-f5e7-fdc1-ca75569e4d3f",
+      "baseVersionId": "01a0f982-6f2d-7498-9972-5c1e8a99137c",
+      "baseHash": "681850d7-7cd6-8e17-d22f-d6a434738a28",
       "source": "project",
       "metadataHash": "1445e111-6a88-2e1f-8c7c-e5e27f5ac912"
     },
@@ -2121,8 +2121,8 @@
       "fileId": "01a0efa8-47ca-7b7c-ad0d-9e0a5833b9e1",
       "referenceId": "01a0efa8-47ca-7c24-bf66-d89708786f04",
       "fileType": "location",
-      "baseVersionId": "01a0f4bc-b24a-7290-bae7-b632af76ad2b",
-      "baseHash": "af0f6477-39b3-c94f-97af-ce8bb5bbc448",
+      "baseVersionId": "01a0f982-72d2-7f1c-b5b1-8753a3951d6b",
+      "baseHash": "9307a0d8-8edb-d79a-794f-523421af3280",
       "source": "project",
       "metadataHash": "1ea1626d-5bd9-cb02-4afd-3cb734f57102"
     },
@@ -2131,8 +2131,8 @@
       "fileId": "01a0f4b7-b02a-7318-848a-a44dc4df536f",
       "referenceId": "01a0f4b7-b02a-73bc-a753-160eca579bf6",
       "fileType": "location",
-      "baseVersionId": "01a0f4bc-8104-7970-acf0-faf90cb1ce80",
-      "baseHash": "f161b4c2-284b-0454-f4c0-34eb92eb69b2",
+      "baseVersionId": "01a0f982-6f4b-70d4-9f17-6a6502f185c0",
+      "baseHash": "e0a20255-fb5b-a45c-d60b-d6d66b3486dc",
       "source": "project",
       "metadataHash": "11950467-69bd-9d2c-935f-9510d89cf155"
     }

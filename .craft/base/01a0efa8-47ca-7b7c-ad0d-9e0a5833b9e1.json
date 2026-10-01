@@ -1,5 +1,9 @@
 {
   "name": "Central Relay H2-45",
+  "type": "Staffed regional portal relay",
+  "description": "A weathered stone circle crowns the hill; beneath it, a broad ivory-and-gold hall hums with traffic. Blue doorways line the walls between consoles where Fey attendants monitor the routes. A central column connects the concourse to an upper control room, where a luminous model echoes the stones above, and to a glowing apparatus chamber below.",
+  "atmosphere": "Murmured directions, shifting blue displays and the hum of active doors. The calm precision of a staffed interchange beneath a windswept ruin.",
+  "notes": "The regional relay between Portal Hub H2-45-99 and Nexus Station H2-1 at Newgrange; both connections are mapped. Staff coordinate local traffic, permissions and maintenance, referring wider routing problems to the Nexus. Authorised staff can set Staff Routing Doors using portal IDs. The surface circle is this facility's cover, not automatically an orbital Sky Ring. Useful scenes include seeking a route, negotiating access or tracing an interrupted journey. Reveal the working infrastructure through what staff do before explaining its technology.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ca0372a7-8505-48fd-9dbb-ab279c337b9a",
     "focalPoint": {

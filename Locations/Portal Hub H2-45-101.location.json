@@ -42,6 +42,10 @@
     }
   },
   "name": "Portal Hub H2-45-101",
+  "type": "Local Fairy Door hub with surface access shaft",
+  "description": "Within the broad hawthorn's trunk, a narrow door opens onto a ladder descending between the roots. The shaft emerges through the central pillar of a bright circular chamber, surrounded by blue-lit portals beneath individual emblems. Pale flooring and gold-edged arches give the hidden room an unexpected elegance; deeper still, a luminous sphere rests in its own enclosed well.",
+  "atmosphere": "Bark and earth give way to smooth, cool surfaces. The ladder creaks above a quiet mechanical hum, and blue light reaches up the shaft towards the daylight.",
+  "notes": "A local hub connected on the map to Portal Hub H2-45-99. The trunk door and ladder provide a physical surface entrance, distinct from the Fairy Doors around the chamber. Concealment and access security keep the entrance from being an obvious public shortcut. The vertical approach lets a first-time visitor discover the underground room gradually. The sphere below is facility apparatus, not another walk-through exit.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/7d3863e0-7548-4244-8ac4-c404c09bcf79",
     "focalPoint": {

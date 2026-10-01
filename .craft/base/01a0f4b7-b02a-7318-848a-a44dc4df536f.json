@@ -1,5 +1,9 @@
 {
   "name": "Nexus Station H2-1 - Newgrange",
+  "type": "Sector Nexus Station — Hibernia-H2",
+  "description": "Beneath Newgrange's grassy mound and stone passage, a small entrance hall opens onto an immense subterranean interchange. Galleries, stairs and blue-lit portals surround a soaring central space, with a great route display overlooking the concourse. Lower floors carry freight, workshops and control rooms; far below them, a brilliant sphere glows between banks of machinery. Travellers and staff move through the white-and-gold interior with the practised ease of people who belong here.",
+  "atmosphere": "An Otherworld city compressed into a station: layered footsteps, quiet announcements, moving freight and light flowing between floors. Awe for a newcomer; timetables and paperwork for everyone else.",
+  "notes": "Nexus H2-1 serves the South Ireland sector, Hibernia-H2, from Newgrange. Central Relay H2-45 is its currently mapped regional connection. Public upper levels provide timed Routing Doors, Fairy Rings, information desks, waiting areas and freight reception for the Fairy Path network. Lower levels handle dispatch, route permissions, Grace accounting, repairs, storage and signalling; Elevator Routing Doors connect facility floors. Keep continuous passage through Fairy Doors distinct from long-range Fairy Ring travel, whose reconstructive mechanism is a later revelation. A route enquiry, missed departure or disputed permission can expose the scale and bureaucracy of Fey society without an exposition tour.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1a0fb726-b899-4aa0-ab3b-3e3b47bd2f7d",
     "focalPoint": {

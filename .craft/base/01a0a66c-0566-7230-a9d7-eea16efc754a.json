@@ -1,5 +1,9 @@
 {
   "name": "Portal Hub H2-45-99",
+  "type": "Regional Fairy Door hub",
+  "description": "A flowering hawthorn stands above a round chamber of pale walls, golden ribs and blue-lit doorways. Below its roots, a central pillar gathers the luminous lines running across the polished floor; different emblems mark the surrounding apertures. A small service alcove interrupts the ring of doors, while a bright, caged sphere glows in a separate chamber beneath.",
+  "atmosphere": "Cool, clean air; a steady low hum; blue reflections underfoot. Above, wind moves through blossom. Below, several distant places seem only a footstep apart.",
+  "notes": "The local junction linking H2-45-100, H2-45-101 and H2-45-102 to Central Relay H2-45, as mapped. These are Fairy Doors, not reconstructive Fairy Rings. The surface entrance is concealed and secured beneath the hawthorn. Play the first visit as the discovery of a working crossroads beneath a familiar tree; explain portal IDs and routing only when a knowledgeable guide does. A missed turn or an unfamiliar destination emblem can prompt asking directions, not an automatic hazard or roll.",
   "image": {
     "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/939fcb88-c9b6-4140-9a19-3db9cc618980",
     "focalPoint": {

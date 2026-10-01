@@ -42,6 +42,10 @@
     }
   },
   "name": "Portal Hub H2-45-100",
+  "type": "Local Fairy Door hub",
+  "description": "A bent hawthorn spreads its blossom over an apparently ordinary patch of grass. Beneath it lies a compact circular hall, its ivory arches edged in gold and its doorways filled with trembling blue light. The central column rises towards the living roots overhead; a tidy alcove holds the fittings used to tend the doors.",
+  "atmosphere": "Sheltered stillness beneath a wind-bent tree. Soft amber lamps warm the blue light, and footsteps carry clearly around the curved walls.",
+  "notes": "A local branch of the H2-45 door network, with a mapped connection to Portal Hub H2-45-99. The tree conceals a secured surface exit. Destination emblems identify doors to those who understand them; they are not enough to grant an unfamiliar visitor unrestricted routing access. Use this small hub to contrast everyday Fey travel with human stories of disappearing beneath a Fairy Tree. Other destinations remain unspecified until authored.",
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/927ac203-0516-497c-bdaa-837c45b0db14",
     "focalPoint": {
