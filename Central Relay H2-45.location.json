@@ -1,0 +1,66 @@
+{
+  "$craft": {
+    "referenceId": "01a0efa8-47ca-7c24-bf66-d89708786f04",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [
+          {
+            "id": "53b3a8de-c50d-4fe3-8df6-d9f5d7103cf0",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#06b6d4"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.7060964513193814,
+              "y": 0.5655686988171064
+            },
+            "fileReferenceId": "01a0a66c-0566-72cc-b67f-dd426dd9ed83"
+          },
+          {
+            "id": "d22bd65f-c3ec-4ac0-9a38-8973e61e68f5",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#06b6d4"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.5816141738764639,
+              "y": 0.5507302748102465
+            },
+            "fileReferenceId": "01a0f4b7-b02a-73bc-a753-160eca579bf6"
+          }
+        ],
+        "background": {
+          "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ca0372a7-8505-48fd-9dbb-ab279c337b9a",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 2747,
+          "height": 1675
+        },
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Central Relay H2-45",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/ca0372a7-8505-48fd-9dbb-ab279c337b9a",
+    "focalPoint": {
+      "x": 0.49783549783549785,
+      "y": 0.6151206553021917
+    }
+  }
+}

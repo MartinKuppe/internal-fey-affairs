@@ -47,6 +47,9 @@
   "description": "Songs, old lore and courtly manners open doors for you. Fiddly practical work is best left to someone else.",
   "graceLedger": [],
   "knownBargains": [],
+  "bargainFilters": {
+    "myOnlyActive": false
+  },
   "conditionState": {
     "cover": {
       "depletion": 0

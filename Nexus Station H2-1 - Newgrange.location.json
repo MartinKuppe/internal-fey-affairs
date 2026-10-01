@@ -1,0 +1,52 @@
+{
+  "$craft": {
+    "referenceId": "01a0f4b7-b02a-73bc-a753-160eca579bf6",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [
+          {
+            "id": "50ebd0a4-5c8d-4b5a-b959-a1563ee35900",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#06b6d4"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.732129982188444,
+              "y": 0.5078845877219117
+            },
+            "fileReferenceId": "01a0efa8-47ca-7c24-bf66-d89708786f04"
+          }
+        ],
+        "background": {
+          "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1a0fb726-b899-4aa0-ab3b-3e3b47bd2f7d",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 2476,
+          "height": 3056
+        },
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
+  },
+  "name": "Nexus Station H2-1 - Newgrange",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1a0fb726-b899-4aa0-ab3b-3e3b47bd2f7d",
+    "focalPoint": {
+      "x": 0.48560395891129937,
+      "y": 0.3920200638394893
+    }
+  }
+}

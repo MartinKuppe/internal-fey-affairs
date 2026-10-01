@@ -1,3 +1,10 @@
 {
-  "name": "Portal Hub H2-45-100"
+  "name": "Portal Hub H2-45-100",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/927ac203-0516-497c-bdaa-837c45b0db14",
+    "focalPoint": {
+      "x": 0.5,
+      "y": 0.7013679890560875
+    }
+  }
 }

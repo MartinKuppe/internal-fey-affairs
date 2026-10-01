@@ -1,6 +1,6 @@
 {
   "name": "Internal Fey Affairs",
-  "description": null,
+  "description": "Do not wander into the hollow hills after nightfall.\nYou might stumble upon visitors from another world.",
   "tags": [
     "Adventure",
     "Lighthearted"
@@ -39,11 +39,12 @@
     "image": {
       "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/4d229d2a-0991-46df-bea3-d025c6e8762f"
     },
-    "projectIcon": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/6ba24ac3-4c56-4ee0-a88f-081b0ea3e391",
-    "attribution": "Original IP",
+    "projectIcon": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/a6a61482-6e07-4b02-9e45-a0fbf0ace090",
+    "gameSystemName": "Original IP + homebrew",
     "headlineLabel": "Alien visitors + Iron Age lens = Fair Folk",
     "headline": "What if the Fair Folk of Celtic folklore were alien scientists studying us?",
     "body": "You live in a small Celtic village in ancient Ireland, on the edge of the forest. There are places in the forest village folk avoid, especially after dark. They are the domain of the Aos Sí or Fair Folk, they say. Superstitions. Children’s tales. \n\nStill, you do not wander into the deep woods after dark.\n\nYour parents died years ago, and you live with your Grannie. By day, you go about your trade. By night, you listen to Grannie’s old stories of the Fair Folk: Hollow hills, wandering lights, Changelings, Banshees, the Wild Hunt, and doors to the Otherworld. Grannie swears the old stories were not always old. She says the lights in the hills began when she was twenty-three winters old, that the Little People appeared soon after, and that village folk only started calling them the “Fair Folk” after the first people went missing.\n\nYou don’t believe in any of it, of course. You believe in the gods. You believe in work, in iron and timber, in things that can be held in your hand. But tiny people living in hidden palaces beneath the hills? Where would they even come from? And if they did exist, wouldn’t they have better things to do than abduct children and play silly pranks on people? Ridiculous!  \n\nStill, you do not wander into the deep woods after dark. \n\nUntil tonight…",
+    "authorsNotes": "\"Internal Fey Affairs\" is based on Celtic folklore from Ireland and Britain, with a particular focus on Irish and Scottish traditions. Forget the familiar Victorian image of cute fairies with butterfly wings. The Fair Folk of older folklore are as fascinating as they are horrifying: Banshees foretelling death, Piskies leading travellers astray, Fey stealing babies and leaving Changelings in their place, Kelpies drowning riders, Leannán Sidhe seducing artists and draining their lives… Even friendly and helpful Fey, such as Brownies, Hobs and Lepracauns, are easily offended and may harm you if you cross them. You may appease them with gifts of milk and cream, you may avoid building on fairy paths or chopping down hawthorn trees, but you can never fully understand them. Fairy folklore is, at heart, about contact with creatures who follow different rules, hold different values, and think in different ways.\n\nMy world pushes that idea one step further: what if those creatures were actually alien visitors? What if their \"mischief\" was actually psychological experiments? And what if the gifts of mild and cream were the front end of a whole dairy logistics chain?\n\nThe story is lighthearted, often absurd, and does not take itself too seriously, but beneath the jokes it asks serious questions about how we humans think, feel, communicate, bond, and love.\n\nSpellings such as \"Lepracaun\" and \"Piskies\" are borrowed from Katharine M. Briggs’s seminal work \"A Dictionary of Fairies\".\n\nInternal Fey Affairs is an original IP.",
     "isClonable": false,
     "hideHeroTitle": false,
     "imageStyleInstructions": "Franco-Belgian \"Bande Dessinée\" style (Ligne Claire) with simple shapes, black outlines, cell-shading with few colours, minimal texture.",

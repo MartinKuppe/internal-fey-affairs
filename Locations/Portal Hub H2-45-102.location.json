@@ -1,6 +1,52 @@
 {
   "$craft": {
-    "referenceId": "01a0a66c-c624-7f20-81f4-15c18eb31468"
+    "referenceId": "01a0a66c-c624-7f20-81f4-15c18eb31468",
+    "metadata": {
+      "map": {
+        "grid": null,
+        "areas": [],
+        "scale": null,
+        "points": [
+          {
+            "id": "56dbd52c-153f-4e8a-9a1d-f98194e91be9",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#06b6d4"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.7128253768404341,
+              "y": 0.6450472135084148
+            },
+            "fileReferenceId": "01a0a66c-0566-72cc-b67f-dd426dd9ed83"
+          }
+        ],
+        "background": {
+          "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/927ac203-0516-497c-bdaa-837c45b0db14",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "aspectRatio": {
+          "width": 948,
+          "height": 1596
+        },
+        "overlayImages": [],
+        "boundaryPolygon": null,
+        "clusteringEnabled": true
+      },
+      "schemaVersionId": "file-designation-metadata:v8"
+    }
   },
-  "name": "Portal Hub H2-45-102"
+  "name": "Portal Hub H2-45-102",
+  "image": {
+    "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/927ac203-0516-497c-bdaa-837c45b0db14",
+    "focalPoint": {
+      "x": 0.5,
+      "y": 0.7286061711506308
+    }
+  }
 }

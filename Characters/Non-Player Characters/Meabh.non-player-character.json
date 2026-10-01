@@ -7,8 +7,8 @@
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/982eee25-054a-415f-9900-82b350c379f6",
     "focalPoint": {
-      "x": 0.9502164502164502,
-      "y": 0.5325982742090125
+      "x": 0.7683982683982684,
+      "y": 0.4865771812080537
     },
     "variations": [
       {
@@ -74,11 +74,12 @@
       {
         "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/8385fbdd-6996-4051-8346-c12394ef7b84",
         "name": "teleporting",
-        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/95fcb01b-41db-4e55-97ac-1f4c8da8cd97"
+        "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/64b8f0b6-67db-41b4-8c52-137cf6752e39"
       }
     ],
     "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/a61e8e79-c4a8-427c-ab3a-8fe2caae1673"
   },
+  "voice": "79f3a8b96d43",
   "gmNotes": "Meabh is twenty-one and has never learned human shame around nudity. Her apparent timidity is a trained technique but can overlap with real fear. Early in the story, let curiosity and lively charm show through without making her emotionally open or healthy too soon. She regards sex as professional technique, suppresses romantic attachment as contamination, confuses beauty with goodness, and has been taught that sadness, fear, anger, and shame are ugly noise. She likes Fey music, dancing, and strawberries and dislikes pickles. She later gets along with Finn, Niamh's husband; he is not her husband.",
   "secrets": "Meabh is the biological daughter of Conor and Quinn, abducted in infancy and replaced by Niamh. Fey midwives in the Rathwood region named and raised her under a lifelong Indenture. Morrigan purchased her assignment and sent her to manipulate the player into helping with the planned baby swap. Meabh is a trained Leannan Sidhe and is not truly escaping in Down the Rabbit-Hole, although her fear, uncertainty, and hidden desire for freedom are real. She believes Niamh is an improved replacement, assumes her parents forgot her, and fears being replaced in turn if she fails to be the best worker or lover available.",
   "species": {

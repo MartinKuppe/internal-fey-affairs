@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T08:23:35.962Z",
+  "syncedAt": "2026-10-01T20:47:31.950Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -906,7 +906,7 @@
       "fileId": "01a0029a-7d76-73bc-b429-ef4fba0f0200",
       "referenceId": "01a0029a-7d76-7438-b1ab-f311047c3ee2",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b6d8-77fc-9ff8-e2953953c89d",
+      "baseVersionId": "01a0f4b7-c6b8-76b8-8b1e-a70e21a4020c",
       "baseHash": "6b5aef64-debc-57c0-6dde-3594c63f42d5",
       "source": "project",
       "metadataHash": "d0c71289-2fc5-21e8-d503-58cb3c0c64a6"
@@ -1142,8 +1142,8 @@
       "fileId": "01a04a10-fa62-753c-b4c9-67344fd561a9",
       "referenceId": "01a04a10-fa62-75d0-add3-feebef79f729",
       "fileType": "non-player-character",
-      "baseVersionId": "01a09075-f64f-73e0-a564-b5950c8527d0",
-      "baseHash": "c78843e1-5852-d73c-7d78-d27ec6167e68",
+      "baseVersionId": "01a0df67-3be4-77d0-87e2-5d67e82508ba",
+      "baseHash": "ab52b8dd-c158-2301-7841-491c1d017a71",
       "source": "project"
     },
     {
@@ -1739,7 +1739,7 @@
       "fileId": "01a0879b-319e-7ca4-b4a9-cbe0c0808b96",
       "referenceId": "01a0879b-2fa5-731b-b003-1e7014ea6cb4",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a0cb93-88a9-7c3c-9621-945ed52391b8",
+      "baseVersionId": "01a0cf67-1ad4-746c-9b46-4091b9253b72",
       "baseHash": "83c4568f-8ede-3c58-aff9-7c45a4f27151",
       "source": "project"
     },
@@ -1757,8 +1757,8 @@
       "fileId": "01a0879b-319e-7f5c-95af-f93cb0ce6395",
       "referenceId": "01a0879b-2fa5-731b-b003-26f7be756f41",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a0cb93-7630-72e4-91e0-4874161254b9",
-      "baseHash": "6dd6732d-aee2-55f8-adca-7dd0221ddd56",
+      "baseVersionId": "01a0cf84-0fcf-7b80-a22a-e92bb2ccdf1e",
+      "baseHash": "a4483f00-8c85-65cd-fdb3-256c2e88947c",
       "source": "project"
     },
     {
@@ -1784,37 +1784,40 @@
       "fileId": "01a0a66c-0566-7230-a9d7-eea16efc754a",
       "referenceId": "01a0a66c-0566-72cc-b67f-dd426dd9ed83",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b757-7ca8-a5c8-e04d58a79bf3",
-      "baseHash": "bade1cbb-ef81-bdc3-0594-b92450aa6fad",
+      "baseVersionId": "01a0f4bb-302e-7f6c-ac95-a827643df852",
+      "baseHash": "7fec1a65-be78-b3f3-93fc-0a61f7500587",
       "source": "project",
-      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+      "metadataHash": "37d443b5-b214-5f0f-69d2-30d958994982"
     },
     {
       "path": "/Locations/Portal Hub H2-45-100.location.json",
       "fileId": "01a0a66c-4b78-7bc0-a8a7-ec80e0254fbc",
       "referenceId": "01a0a66c-4b78-7c58-82f1-ef097878a774",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b737-7e48-a690-97f36739c9b3",
-      "baseHash": "a1adb860-2db4-b291-60e5-79bc6dfc76b9",
-      "source": "project"
+      "baseVersionId": "01a0f4bb-5cc3-74e8-a360-95acc153d160",
+      "baseHash": "fdcdf58f-036a-ad09-d195-ae30b5fb567c",
+      "source": "project",
+      "metadataHash": "a3d8b09e-ea31-0ecb-5434-0fd0e02c7d88"
     },
     {
       "path": "/Locations/Portal Hub H2-45-101.location.json",
       "fileId": "01a0a66c-9495-7b38-883d-1b702ddbe460",
       "referenceId": "01a0a66c-9495-7bd8-9413-ae1d7ae667a4",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b741-7ca8-820b-57498d764c1a",
-      "baseHash": "e760c784-3751-44b3-587d-a3b5b884ebfc",
-      "source": "project"
+      "baseVersionId": "01a0f4bb-83e4-7748-9ba8-5b845300300e",
+      "baseHash": "61b477db-7305-cce3-4e39-88b3464277cd",
+      "source": "project",
+      "metadataHash": "ba7c3885-7ad3-4a53-151c-38414cbeefdb"
     },
     {
       "path": "/Locations/Portal Hub H2-45-102.location.json",
       "fileId": "01a0a66c-c624-7e98-8b9b-1d8bf01efb30",
       "referenceId": "01a0a66c-c624-7f20-81f4-15c18eb31468",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b74c-7ec8-b234-5d2420598c2a",
-      "baseHash": "4ab8d2d9-4a1a-288b-bf6f-222b835bf13b",
-      "source": "project"
+      "baseVersionId": "01a0f4bb-a508-76a8-bf73-36c3a16618b0",
+      "baseHash": "d330a427-edaa-f5e7-fdc1-ca75569e4d3f",
+      "source": "project",
+      "metadataHash": "1445e111-6a88-2e1f-8c7c-e5e27f5ac912"
     },
     {
       "path": "/Locations/Damage Control - Dairy Office H2-45-d.location.json",
@@ -1929,8 +1932,8 @@
       "fileId": "01a0cb01-1a52-7748-9414-7448072fa3a7",
       "referenceId": "01a0cb01-1cb5-76d5-a286-ea0fd4720467",
       "fileType": "player-character",
-      "baseVersionId": "01a0cb91-e931-76ac-a63b-c11bb5680e3f",
-      "baseHash": "e1edb1ba-4581-ebf9-f27e-47ba3a5e7546",
+      "baseVersionId": "01a0cfbd-bee8-7cf8-88d8-76993b20acfc",
+      "baseHash": "f5ce5c6f-49fe-c6f2-d874-ee090e1ec8e1",
       "source": "project"
     },
     {
@@ -2100,8 +2103,8 @@
       "fileId": "01a0cb6e-7557-7a3c-976b-798c5c9c83e3",
       "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
       "fileType": "unlocked-outfit",
-      "baseVersionId": "01a0cb91-d915-70dc-bb8a-b0c3a1687624",
-      "baseHash": "4d10c8f5-f7dc-f3f9-661c-d52c80e21aca",
+      "baseVersionId": "01a0cfb2-66cb-7790-b0b0-9801b2bf2ccd",
+      "baseHash": "f4d866e0-b427-7f9e-2de4-9232bd5a0ca4",
       "source": "project"
     },
     {
@@ -2112,20 +2115,46 @@
       "baseVersionId": "01a0cb72-728a-7394-a100-9da176477f64",
       "baseHash": "89f7e5cb-6668-0c79-10d1-ee914f81bc80",
       "source": "project"
+    },
+    {
+      "path": "/Central Relay H2-45.location.json",
+      "fileId": "01a0efa8-47ca-7b7c-ad0d-9e0a5833b9e1",
+      "referenceId": "01a0efa8-47ca-7c24-bf66-d89708786f04",
+      "fileType": "location",
+      "baseVersionId": "01a0f4bc-b24a-7290-bae7-b632af76ad2b",
+      "baseHash": "af0f6477-39b3-c94f-97af-ce8bb5bbc448",
+      "source": "project",
+      "metadataHash": "1ea1626d-5bd9-cb02-4afd-3cb734f57102"
+    },
+    {
+      "path": "/Nexus Station H2-1 - Newgrange.location.json",
+      "fileId": "01a0f4b7-b02a-7318-848a-a44dc4df536f",
+      "referenceId": "01a0f4b7-b02a-73bc-a753-160eca579bf6",
+      "fileType": "location",
+      "baseVersionId": "01a0f4bc-8104-7970-acf0-faf90cb1ce80",
+      "baseHash": "f161b4c2-284b-0454-f4c0-34eb92eb69b2",
+      "source": "project",
+      "metadataHash": "11950467-69bd-9d2c-935f-9510d89cf155"
     }
   ],
   "fileTypes": [
     {
-      "slug": "origin",
-      "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
-      "schemaHash": "bc254d61-12eb-fe43-5e14-a47e30e909da",
-      "contentHash": "049e8cec-4109-8997-3246-334f8bcfc565"
+      "slug": "lore-journal",
+      "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
+      "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
+      "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
     },
     {
-      "slug": "species",
-      "fileTypeId": "019fedb8-3e72-79c0-93b6-bcddbccbb5e4",
-      "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
-      "contentHash": "dbf78436-aa99-0afa-cb3e-87312435f504"
+      "slug": "non-player-character",
+      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
+      "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
+      "contentHash": "3cb4a15d-ef86-8d76-13fa-47e56f06d752"
+    },
+    {
+      "slug": "player-character",
+      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
+      "schemaHash": "2cae8917-6fdb-a711-1cff-1000561f1d97",
+      "contentHash": "587f58a0-366a-ad12-d91d-18037b19b71e"
     },
     {
       "slug": "ability",
@@ -2134,16 +2163,46 @@
       "contentHash": "d2437bcc-6cc4-3507-08c8-b8e24f2d1910"
     },
     {
+      "slug": "archetype",
+      "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
+      "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
+      "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
+    },
+    {
       "slug": "attribute",
       "fileTypeId": "019fe8d8-fca9-7324-8b54-432095c52bb8",
       "schemaHash": "7b111924-26c4-515c-3d8a-94be5c262730",
       "contentHash": "9cf71d00-0d57-69a3-b4e4-fa1232545956"
     },
     {
-      "slug": "lore-journal",
-      "fileTypeId": "019ff086-abf1-7bd4-a8de-df95f4d0eb09",
-      "schemaHash": "fd06e30b-b2b2-3e31-2f0a-f2ab3679488f",
-      "contentHash": "c699b112-9151-1b1e-e81a-1c10bc5307f1"
+      "slug": "bargain",
+      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
+      "schemaHash": "944593c2-f612-f3aa-856d-69e811dd98ee",
+      "contentHash": "bb2b8cc1-0c3c-cb51-aa74-f89b76239e2c"
+    },
+    {
+      "slug": "game-start",
+      "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
+      "schemaHash": "2301548c-907a-782b-d5c0-7768274db3ea",
+      "contentHash": "ab5f1e0b-9023-37df-78ee-448817891dba"
+    },
+    {
+      "slug": "gm-instructions",
+      "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
+      "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
+      "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
+    },
+    {
+      "slug": "grace",
+      "fileTypeId": "019fed6d-ab59-72fc-ab24-232764ca6432",
+      "schemaHash": "c41caafc-4db2-99d7-8db4-b038e413388a",
+      "contentHash": "673e3261-15b2-b58b-db64-d6ff2320d6e9"
+    },
+    {
+      "slug": "change-request",
+      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
+      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
+      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
     },
     {
       "slug": "lore-card",
@@ -2158,58 +2217,16 @@
       "contentHash": "32fc896f-a026-8b1a-1c5f-a8db7763a0e3"
     },
     {
-      "slug": "grace",
-      "fileTypeId": "019fed6d-ab59-72fc-ab24-232764ca6432",
-      "schemaHash": "c41caafc-4db2-99d7-8db4-b038e413388a",
-      "contentHash": "673e3261-15b2-b58b-db64-d6ff2320d6e9"
-    },
-    {
-      "slug": "game-start",
-      "fileTypeId": "019fde04-4536-7b40-925d-5e41c4ae644f",
-      "schemaHash": "2301548c-907a-782b-d5c0-7768274db3ea",
-      "contentHash": "ab5f1e0b-9023-37df-78ee-448817891dba"
-    },
-    {
-      "slug": "archetype",
-      "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
-      "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
-      "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
-    },
-    {
-      "slug": "non-player-character",
-      "fileTypeId": "01a04a10-df1c-77a0-b576-e5f0fcb9931f",
-      "schemaHash": "ad2d59a1-5785-bb89-eb07-a7d650a087c3",
-      "contentHash": "3cb4a15d-ef86-8d76-13fa-47e56f06d752"
-    },
-    {
-      "slug": "change-request",
-      "fileTypeId": "019fed90-a8d2-71a8-a139-4b8ff9fd149a",
-      "schemaHash": "394a0b59-94ae-e355-fdbd-ae4252ed0d82",
-      "contentHash": "a5dd3ad9-6015-0762-e482-8e780a0847f4"
-    },
-    {
-      "slug": "bargain",
-      "fileTypeId": "019fed62-5e98-7d8c-921a-555feedb41ac",
-      "schemaHash": "944593c2-f612-f3aa-856d-69e811dd98ee",
-      "contentHash": "bb2b8cc1-0c3c-cb51-aa74-f89b76239e2c"
-    },
-    {
-      "slug": "location",
-      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
-      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
-      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
-    },
-    {
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
       "schemaHash": "dcc7a4ef-8e74-576f-ae02-57d8bd7ed509",
       "contentHash": "ce26e614-fbf5-1c38-b0f8-2acefd4815af"
     },
     {
-      "slug": "outfit-pattern",
-      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
-      "schemaHash": "14e475cd-a314-2743-7d28-efa6c865270f",
-      "contentHash": "cb196323-4e76-ceb7-b977-e8019be06a2a"
+      "slug": "origin",
+      "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
+      "schemaHash": "bc254d61-12eb-fe43-5e14-a47e30e909da",
+      "contentHash": "049e8cec-4109-8997-3246-334f8bcfc565"
     },
     {
       "slug": "outfit",
@@ -2218,17 +2235,23 @@
       "contentHash": "645e08f5-2407-408e-f41b-13f9aabc41f7"
     },
     {
-      "slug": "gm-instructions",
-      "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
-      "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
-      "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
+      "slug": "outfit-pattern",
+      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
+      "schemaHash": "14e475cd-a314-2743-7d28-efa6c865270f",
+      "contentHash": "cb196323-4e76-ceb7-b977-e8019be06a2a"
     },
     {
-      "slug": "player-character",
-      "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "2cae8917-6fdb-a711-1cff-1000561f1d97",
-      "contentHash": "98f7b15c-9259-a1ff-99b0-850b5b0ababa"
+      "slug": "species",
+      "fileTypeId": "019fedb8-3e72-79c0-93b6-bcddbccbb5e4",
+      "schemaHash": "83630f49-8530-1ba6-b987-2fffd1759c54",
+      "contentHash": "dbf78436-aa99-0afa-cb3e-87312435f504"
+    },
+    {
+      "slug": "location",
+      "fileTypeId": "019fde04-451b-7e28-a61a-2c40eb6c596c",
+      "schemaHash": "1d74e4ee-a880-8090-72a3-34ddc53acb02",
+      "contentHash": "f97fc6e7-3056-f201-e2e8-24ce10d75654"
     }
   ],
-  "projectSettingsHash": "ecd6825c-6bbb-cb84-6fed-4040fecb3769"
+  "projectSettingsHash": "946fb856-1c5a-22c5-5e0b-2efabe748ae8"
 }

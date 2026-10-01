@@ -651,18 +651,7 @@
           "origindescription-section",
           "conditionstate-section",
           "originname-section",
-          "weaknessname-section",
-          "voice-select",
-          "origin-select",
-          "weakness-field",
-          "graceledger-references",
-          "hasmybargains-checkbox",
-          "knownbargains-references",
-          "signedbargains-references",
-          "unlockedoutfits-references",
-          "hasotherbargains-checkbox",
-          "wornunlockedoutfit-select",
-          "outfit-select"
+          "weaknessname-section"
         ]
       },
       "tabs": {
@@ -670,15 +659,15 @@
         "props": {
           "tabs": [
             {
-              "label": "Stats",
+              "label": "✒️ Stats",
               "value": "tab-stats"
             },
             {
-              "label": "Graces",
+              "label": "👑 Graces",
               "value": "tab-graces"
             },
             {
-              "label": "Bargains",
+              "label": "📜 Bargains",
               "value": "tab-bargains"
             }
           ],
@@ -698,7 +687,7 @@
         "props": {
           "text": "\"How hurt or sick are you?\"",
           "color": "#758c7e",
-          "variant": "code",
+          "variant": "muted",
           "editPath": null,
           "className": null
         },
@@ -772,7 +761,7 @@
           "description": null
         },
         "children": [
-          "outfit-row"
+          "stack-2"
         ]
       },
       "card-4": {
@@ -1029,7 +1018,7 @@
         "props": {
           "text": "\"Can you keep going?\"",
           "color": "#758c7e",
-          "variant": "code",
+          "variant": "muted",
           "editPath": null,
           "className": null
         },
@@ -1052,6 +1041,17 @@
           "text": "**2d6 + attribute + condition track + 2** *if skill applies*",
           "color": null,
           "variant": "caption",
+          "editPath": null,
+          "className": null
+        },
+        "children": []
+      },
+      "text-6": {
+        "type": "Text",
+        "props": {
+          "text": "← Click",
+          "color": "#969696",
+          "variant": "body",
           "editPath": null,
           "className": null
         },
@@ -1101,6 +1101,25 @@
           "aspectRatio": null
         },
         "children": []
+      },
+      "stack-2": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "wrap": null,
+          "align": null,
+          "bgColor": null,
+          "bgImage": null,
+          "justify": null,
+          "rounded": null,
+          "className": null,
+          "direction": "horizontal",
+          "bgImageFit": null
+        },
+        "children": [
+          "outfit-row",
+          "text-6"
+        ]
       },
       "stack-3": {
         "type": "Stack",
@@ -1251,7 +1270,7 @@
         "props": {
           "text": "\"Can you keep your courage and concentration?\"",
           "color": "#758c7e",
-          "variant": "code",
+          "variant": "muted",
           "editPath": null,
           "className": null
         },
@@ -1358,7 +1377,7 @@
       "outfit-row": {
         "type": "Select",
         "props": {
-          "label": "Select:",
+          "label": null,
           "value": {
             "$state": "/wornUnlockedOutfit"
           },
@@ -1398,7 +1417,7 @@
         "props": {
           "text": "\"Do you fit the social situation?\"",
           "color": "#758c7e",
-          "variant": "code",
+          "variant": "muted",
           "editPath": null,
           "className": null
         },
@@ -1553,7 +1572,7 @@
         "props": {
           "text": "\"Do you remain unnoticed or unsuspected?\"",
           "color": "#758c7e",
-          "variant": "code",
+          "variant": "muted",
           "editPath": null,
           "className": null
         },
@@ -1609,21 +1628,6 @@
         },
         "children": []
       },
-      "voice-select": {
-        "type": "VoiceSelect",
-        "props": {
-          "label": "Voice",
-          "value": {
-            "$state": "/voice"
-          },
-          "showLabel": true,
-          "placeholder": "Use GM voice"
-        },
-        "visible": {
-          "$state": "/voice"
-        },
-        "children": []
-      },
       "heading-2-2-2": {
         "type": "Heading",
         "props": {
@@ -1631,38 +1635,6 @@
           "color": null,
           "level": "h1",
           "className": null
-        },
-        "children": []
-      },
-      "origin-select": {
-        "type": "Select",
-        "props": {
-          "label": "Origin",
-          "value": {
-            "$state": "/origin"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "origin"
-        },
-        "visible": {
-          "$state": "/origin"
-        },
-        "children": []
-      },
-      "outfit-select": {
-        "type": "Select",
-        "props": {
-          "label": "Outfit",
-          "value": {
-            "$state": "/outfit"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "outfit-pattern"
-        },
-        "visible": {
-          "$state": "/outfit"
         },
         "children": []
       },
@@ -1790,25 +1762,6 @@
           "variant": "caption",
           "editPath": null,
           "className": null
-        },
-        "children": []
-      },
-      "weakness-field": {
-        "type": "FieldList",
-        "props": {
-          "items": [
-            [
-              "Weakness",
-              {
-                "$state": "/weakness"
-              }
-            ]
-          ],
-          "labelColor": null,
-          "valueColor": null
-        },
-        "visible": {
-          "$state": "/weakness"
         },
         "children": []
       },
@@ -2235,8 +2188,8 @@
         "type": "TrackBoxes",
         "props": {
           "boxes": 3,
-          "color": "#59d4ed",
-          "label": "💎 Decorum",
+          "color": "#fe6b89",
+          "label": "🌸 Decorum",
           "value": {
             "$state": "/conditionTracks/3/current"
           },
@@ -2357,48 +2310,6 @@
         },
         "children": []
       },
-      "graceledger-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/graceLedger"
-          },
-          "label": "Grace Ledger",
-          "columns": 4,
-          "fileTypeSlug": "grace",
-          "metadataFields": [
-            {
-              "name": "day",
-              "type": "number"
-            },
-            {
-              "name": "amount",
-              "type": "number"
-            },
-            {
-              "name": "reason",
-              "type": "string"
-            }
-          ],
-          "referenceField": "currency"
-        },
-        "visible": {
-          "$state": "/graceLedger"
-        },
-        "children": []
-      },
-      "hasmybargains-checkbox": {
-        "type": "Checkbox",
-        "props": {
-          "color": null,
-          "label": "Has My Bargains",
-          "checked": {
-            "$state": "/hasMyBargains"
-          }
-        },
-        "children": []
-      },
       "outfit-modifier-amount": {
         "type": "Text",
         "props": {
@@ -2413,8 +2324,8 @@
         "type": "TrackBoxes",
         "props": {
           "boxes": 3,
-          "color": "#f964c0",
-          "label": "🌹 Nerve",
+          "color": "#62f9f7",
+          "label": "❄️ Nerve",
           "value": {
             "$state": "/conditionTracks/2/current"
           },
@@ -2428,25 +2339,8 @@
           "text": {
             "$item": "appliesBecause"
           },
-          "color": "#757575",
-          "variant": "code"
-        },
-        "children": []
-      },
-      "knownbargains-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/knownBargains"
-          },
-          "label": "Known Bargains",
-          "columns": 4,
-          "fileTypeSlug": "bargain",
-          "referenceField": null
-        },
-        "visible": {
-          "$state": "/knownBargains"
+          "color": "#7d9787",
+          "variant": "muted"
         },
         "children": []
       },
@@ -2468,22 +2362,11 @@
         "props": {
           "boxes": 3,
           "color": "#ffea00",
-          "label": "☀️ Energy",
+          "label": "🔥  Energy",
           "value": {
             "$state": "/conditionTracks/1/current"
           },
           "showValue": true
-        },
-        "children": []
-      },
-      "hasotherbargains-checkbox": {
-        "type": "Checkbox",
-        "props": {
-          "color": null,
-          "label": "Has Other Bargains",
-          "checked": {
-            "$state": "/hasOtherBargains"
-          }
         },
         "children": []
       },
@@ -2495,56 +2378,6 @@
         },
         "visible": {
           "$state": "/originDescription"
-        },
-        "children": []
-      },
-      "signedbargains-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/signedBargains"
-          },
-          "label": "Signed Bargains",
-          "columns": 4,
-          "fileTypeSlug": "bargain",
-          "referenceField": null
-        },
-        "visible": {
-          "$state": "/signedBargains"
-        },
-        "children": []
-      },
-      "wornunlockedoutfit-select": {
-        "type": "Select",
-        "props": {
-          "label": "Worn Outfit",
-          "value": {
-            "$state": "/wornUnlockedOutfit"
-          },
-          "options": null,
-          "placeholder": null,
-          "fileTypeSlug": "outfit"
-        },
-        "visible": {
-          "$state": "/wornUnlockedOutfit"
-        },
-        "children": []
-      },
-      "unlockedoutfits-references": {
-        "type": "FileReferenceGrid",
-        "props": {
-          "size": "md",
-          "items": {
-            "$state": "/unlockedOutfits"
-          },
-          "label": "Unlocked Outfits",
-          "columns": 4,
-          "fileTypeSlug": "outfit-pattern",
-          "referenceField": null
-        },
-        "visible": {
-          "$state": "/unlockedOutfits"
         },
         "children": []
       }

@@ -6,13 +6,77 @@
         "grid": null,
         "areas": [],
         "scale": null,
-        "points": [],
-        "background": null,
-        "aspectRatio": {
-          "width": 1,
-          "height": 1
+        "points": [
+          {
+            "id": "d37ff65b-a753-44b9-9e3b-602ccc480094",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#06b6d4"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.8609993731642924,
+              "y": 0.6200468999466244
+            },
+            "fileReferenceId": "01a0a66c-c624-7f20-81f4-15c18eb31468"
+          },
+          {
+            "id": "61b45226-4809-4db5-8584-995702418669",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#06b6d4"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.7114361237317679,
+              "y": 0.6192022308060571
+            },
+            "fileReferenceId": "01a0a66c-9495-7bd8-9413-ae1d7ae667a4"
+          },
+          {
+            "id": "cfa86678-6adb-4be9-87cb-9babf3d2f1d5",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#06b6d4"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.2908665481194445,
+              "y": 0.6181283002842733
+            },
+            "fileReferenceId": "01a0a66c-4b78-7c58-82f1-ef097878a774"
+          },
+          {
+            "id": "e2cc1585-a65a-41c6-86b2-a8b6d4979e03",
+            "kind": "pin",
+            "style": {
+              "icon": null,
+              "color": "#06b6d4"
+            },
+            "locked": true,
+            "position": {
+              "x": 0.43926352014073006,
+              "y": 0.6108847806764084
+            },
+            "fileReferenceId": "01a0efa8-47ca-7c24-bf66-d89708786f04"
+          }
+        ],
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/939fcb88-c9b6-4140-9a19-3db9cc618980",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
         },
-        "useParentMap": true,
+        "aspectRatio": {
+          "width": 1024,
+          "height": 1536
+        },
+        "useParentMap": false,
         "overlayImages": [],
         "boundaryPolygon": null,
         "clusteringEnabled": true
@@ -20,5 +84,12 @@
       "schemaVersionId": "file-designation-metadata:v8"
     }
   },
-  "name": "Portal Hub H2-45-99"
+  "name": "Portal Hub H2-45-99",
+  "image": {
+    "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/939fcb88-c9b6-4140-9a19-3db9cc618980",
+    "focalPoint": {
+      "x": 0.49711008965548625,
+      "y": 0.6974768201854386
+    }
+  }
 }
