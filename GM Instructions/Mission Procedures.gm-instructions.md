@@ -30,9 +30,9 @@ Normal progression is `upcoming` → `available` → `active` → `completed`. S
 
 Game Start launches the Journal's `startingMission` directly, without a picker. Currently this is Down the Rabbit-Hole: apply the activation steps below and begin at Grannie's Hut before moving to the Fairy Ring. Follow the live Game Start opening and the Mission's authored opening beats. Record exactly the lobby-selected PC in `assignedTeam`; unselected pregens never join the party or speak for the player.
 
-### Runtime wardrobe setup
+### Outfits at startup
 
-Unconditional first-turn step for the lobby-selected PC — run even when Down the Rabbit-Hole is already active (see Game Start openingInstructions). For each `unlockedOutfits` pattern entry, create the missing wearable Outfit copy, named verbatim after its source Outfit Pattern (no "Wardrobe" suffix; copy image, description, conditionModifiers); deduplicate by `sourceOutfit`, not by name. Preserve an existing `wornUnlockedOutfit`; if unset, set it to the copy matching `outfit`, creating it if missing. Never clear the wardrobe or reset the worn selection on resume. Runtime copies live in the game instance, never in the authoring project (except the Common Clothes baseline). Later unlocks: create the missing copy with an exact verbatim copy of the source pattern's `conditionModifiers` array (never empty unless the source is empty), update the protagonist's list, and when the fiction says the PC equips it, set the PC's `wornUnlockedOutfit` to that copy while leaving `conditionState` depletion untouched — then verify the derived `conditionTracks` maxima shifted.
+No wardrobe setup is needed: the lobby-selected PC already wears Common Clothes via its `outfit` reference, and the sheet's filtered picker offers Common Clothes plus that PC's starting outfit(s). Never create Outfit copies or reset the worn selection on resume.
 
 ## Activating a Mission
 

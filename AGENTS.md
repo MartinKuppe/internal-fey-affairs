@@ -232,7 +232,6 @@ Credentials are never stored in this folder.
 | `.mission-journal.json` | Mission Journal | json |
 | `.non-player-character.json` | Non-Player Character | json |
 | `.origin.json` | Origin | json |
-| `.outfit.json` | Outfit | json |
 | `.outfit-pattern.json` | Outfit Pattern | json |
 | `.player-character.json` | Player Character | json |
 | `.species.json` | Species | json |

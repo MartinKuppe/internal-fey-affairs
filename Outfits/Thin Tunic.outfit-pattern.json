@@ -6,7 +6,41 @@
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/6d5a25ae-3f5d-4702-83a8-aae81c2ae542"
   },
+  "isUnlocked": false,
   "description": "A light tunic that offers little protection from the cold. Shivering keeps the wearer alert but makes it harder to remain steady.",
+  "alwaysAvailable": false,
+  "startingOrigins": [
+    {
+      "slug": "brigand",
+      "referenceId": "019fe8d9-f0f5-7460-a6ea-77c031c40562",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "courier",
+      "referenceId": "019fe8d9-edf2-70dc-b674-ab8e3e58d480",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "druid",
+      "referenceId": "019ff7eb-af42-757d-af35-3ff1d06c0bb8",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "farmhand",
+      "referenceId": "019fe8d9-ed55-74d4-80e8-88d70096348c",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "herbalist",
+      "referenceId": "019ff7eb-af42-757d-af35-4598bc51619a",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "poacher",
+      "referenceId": "019fe8d9-ee2d-7de8-b0ac-959538762e09",
+      "fileTypeSlug": "origin"
+    }
+  ],
   "conditionModifiers": [
     {
       "track": "energy",

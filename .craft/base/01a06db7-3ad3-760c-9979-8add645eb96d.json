@@ -3,7 +3,31 @@
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/a8e859da-2092-460d-ba7f-90cb4b25cbd5"
   },
+  "isUnlocked": false,
   "description": "A cherished hat whose wearer is convinced it brings good fortune. Whether or not it does, wearing it makes difficult moments easier to face.",
+  "alwaysAvailable": false,
+  "startingOrigins": [
+    {
+      "slug": "good-for-nothing",
+      "referenceId": "019fe8d9-ef11-74c8-8e5b-858f193e200c",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "grocer",
+      "referenceId": "019fe8d9-ed48-7644-850f-3e2a3a8d2c75",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "milker",
+      "referenceId": "019fe8d9-edcd-7080-9b30-902b2bef1552",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "seanchaí",
+      "referenceId": "019fe8d9-eece-7ca4-a384-156122d56af8",
+      "fileTypeSlug": "origin"
+    }
+  ],
   "conditionModifiers": [
     {
       "track": "nerve",

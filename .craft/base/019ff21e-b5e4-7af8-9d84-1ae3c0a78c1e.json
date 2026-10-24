@@ -3,7 +3,10 @@
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1670f369-7e45-448f-b58e-667f9b121fad"
   },
+  "isUnlocked": false,
   "description": "A vest deliberately worn inside-out.",
+  "alwaysAvailable": false,
+  "startingOrigins": [],
   "conditionModifiers": [
     {
       "track": "cover",

@@ -6,7 +6,41 @@
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/73deb827-55da-4fd8-a623-388c9a39f4cc"
   },
+  "isUnlocked": false,
   "description": "A dark, enveloping coat that hides the wearer's outline but becomes tiring and soporific over time.",
+  "alwaysAvailable": false,
+  "startingOrigins": [
+    {
+      "slug": "blacksmith",
+      "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "horse-herder",
+      "referenceId": "019fe8d9-edf6-7c1c-974b-4816ef0f6b27",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "sellsword",
+      "referenceId": "019fe8d9-f0d8-7d9c-a7e3-c0ae92e62617",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "teacher",
+      "referenceId": "019fe8d9-eec8-7754-94b4-f3b936cca4c5",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "thief",
+      "referenceId": "019fe8d9-ee1c-7ca8-b8f8-867e5a463881",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "wood-gatherer",
+      "referenceId": "019fe8d9-ee0f-70e0-87f9-2c71a5091599",
+      "fileTypeSlug": "origin"
+    }
+  ],
   "conditionModifiers": [
     {
       "track": "cover",

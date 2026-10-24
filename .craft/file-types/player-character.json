@@ -4,7 +4,7 @@
   "name": "Player Character",
   "contentType": "json",
   "designation": "character",
-  "schemaHash": "2cae8917-6fdb-a711-1cff-1000561f1d97",
+  "schemaHash": "926ef302-a087-5b4a-4111-01ebfc735891",
   "schema": {
     "type": "object",
     "required": [
@@ -87,7 +87,46 @@
       "outfit": {
         "type": "string",
         "title": "Outfit",
-        "description": "Authoring fallback pattern; the worn Outfit copy (wornUnlockedOutfit) takes precedence at runtime.",
+        "reference": {
+          "targets": [
+            {
+              "filter": {
+                "op": "or",
+                "args": [
+                  {
+                    "op": "eq",
+                    "left": {
+                      "path": "alwaysAvailable",
+                      "scope": "target"
+                    },
+                    "right": true
+                  },
+                  {
+                    "op": "in",
+                    "left": {
+                      "path": "origin",
+                      "scope": "source"
+                    },
+                    "right": {
+                      "path": "startingOrigins",
+                      "scope": "target"
+                    }
+                  },
+                  {
+                    "op": "eq",
+                    "left": {
+                      "path": "isUnlocked",
+                      "scope": "target"
+                    },
+                    "right": true
+                  }
+                ]
+              },
+              "fileTypeSlug": "outfit-pattern"
+            }
+          ]
+        },
+        "description": "Worn outfit. The picker offers Common Clothes, this PC's starting outfit(s), and outfits unlocked in this instance.",
         "referencedFileTypeSlug": "outfit-pattern"
       },
       "species": {
@@ -260,7 +299,7 @@
       "outfitImage": {
         "type": "object",
         "title": "Outfit Image",
-        "expression": "load($self.wornUnlockedOutfit)?.image ?? load($self.outfit)?.image ?? null",
+        "expression": "load($self.outfit)?.image ?? null",
         "description": "The current worn outfit's image, pulled from the referenced outfit file."
       },
       "weaknessName": {
@@ -489,7 +528,7 @@
           }
         },
         "title": "Condition Tracks",
-        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', baseMaximum: 3, depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'energy', name: 'Energy', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.energy?.depletion ?? 0, 0, 3) }, { key: 'nerve', name: 'Nerve', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.nerve?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'cover', name: 'Cover', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.cover?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: clamp(t.baseMaximum + sum(((($self.wornUnlockedOutfit != null && $self.wornUnlockedOutfit != '') ? load($self.wornUnlockedOutfit)?.conditionModifiers : load($self.outfit)?.conditionModifiers) ?? []).filter(m => m.track === t.key), m => m.amount ?? 0), 0, 3), depletion: t.depletion, current: clamp(t.baseMaximum + sum(((($self.wornUnlockedOutfit != null && $self.wornUnlockedOutfit != '') ? load($self.wornUnlockedOutfit)?.conditionModifiers : load($self.outfit)?.conditionModifiers) ?? []).filter(m => m.track === t.key), m => m.amount ?? 0) - t.depletion, 0, 3) }))",
+        "expression": "[{ key: 'health', name: 'Health', family: 'persistent', baseMaximum: 3, depletion: clamp($self.conditionState?.health?.depletion ?? 0, 0, 3) }, { key: 'energy', name: 'Energy', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.energy?.depletion ?? 0, 0, 3) }, { key: 'nerve', name: 'Nerve', family: 'persistent', baseMaximum: 2, depletion: clamp($self.conditionState?.nerve?.depletion ?? 0, 0, 3) }, { key: 'decorum', name: 'Decorum', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.decorum?.depletion ?? 0, 0, 3) }, { key: 'cover', name: 'Cover', family: 'scene', baseMaximum: 2, depletion: clamp($self.conditionState?.cover?.depletion ?? 0, 0, 3) }].map(t => ({ key: t.key, name: t.name, family: t.family, maximum: clamp(t.baseMaximum + sum(((load($self.outfit)?.conditionModifiers) ?? []).filter(m => m.track === t.key), m => m.amount ?? 0), 0, 3), depletion: t.depletion, current: clamp(t.baseMaximum + sum(((load($self.outfit)?.conditionModifiers) ?? []).filter(m => m.track === t.key), m => m.amount ?? 0) - t.depletion, 0, 3) }))",
         "description": "Derived Condition Tracks. Effective Maximum is the fixed base value plus every modifier on the worn Outfit, clamped to 0–3; Current is Effective Maximum minus stored Depletion, likewise clamped."
       },
       "outfitModifiers": {
@@ -512,17 +551,8 @@
           }
         },
         "title": "Worn Outfit Condition Modifiers",
-        "expression": "($self.wornUnlockedOutfit != null && $self.wornUnlockedOutfit != '') ? (load($self.wornUnlockedOutfit)?.conditionModifierRows ?? []) : (load($self.outfit)?.conditionModifierRows ?? [])",
+        "expression": "load($self.outfit)?.conditionModifierRows ?? []",
         "description": "Condition modifiers that automatically apply while the current outfit is worn."
-      },
-      "unlockedOutfits": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "referencedFileTypeSlug": "outfit-pattern"
-        },
-        "title": "Unlocked Outfits",
-        "description": "Spare Outfit Pattern(s) the protagonist owns besides Common Clothes (always available via the Common Clothes copy, never listed here)."
       },
       "hasOtherBargains": {
         "type": "boolean",
@@ -533,7 +563,7 @@
       "outfitDescription": {
         "type": "string",
         "title": "Worn Outfit Description",
-        "expression": "load($self.wornUnlockedOutfit)?.description ?? load($self.outfit)?.description ?? ''",
+        "expression": "load($self.outfit)?.description ?? ''",
         "description": "Description of the currently worn outfit."
       },
       "graceLedgerDisplay": {
@@ -558,12 +588,6 @@
         "title": "Grace Ledger Display",
         "expression": "($self.graceLedger ?? []).map(e => ({ day: number(e.day), amountDisplay: (number(e.amount) >= 0 ? '+' : '') + number(e.amount) + (load(e.currency)?.symbol ?? ''), reason: e.reason }))",
         "description": "Formatted grace ledger rows: each amount as a signed number followed by its currency's symbol (e.g. +1000🍀). Derived from the ledger and each Grace currency's symbol."
-      },
-      "wornUnlockedOutfit": {
-        "type": "string",
-        "title": "Worn Outfit",
-        "description": "The worn Outfit copy. Player-facing selector edits this; outfit remains the authoring fallback.",
-        "referencedFileTypeSlug": "outfit"
       }
     }
   },
@@ -1379,9 +1403,9 @@
         "props": {
           "label": null,
           "value": {
-            "$state": "/wornUnlockedOutfit"
+            "$state": "/outfit"
           },
-          "fileTypeSlug": "outfit"
+          "fileTypeSlug": "outfit-pattern"
         },
         "children": []
       },
@@ -3563,7 +3587,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit copy (wornUnlockedOutfit) to the Common Clothes copy and set unlockedOutfits to the chosen spare Outfit Pattern only (Common Clothes are always available via the copy, never listed). Keep outfit as the Common Clothes authoring fallback pattern. Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn copy. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit (outfit) to the Common Clothes pattern; the filtered picker offers it plus the spare starting Outfit chosen in the wizard (its startingOrigins include the PC's Origin). Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit Pattern. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
     }
   }
 }

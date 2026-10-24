@@ -4,7 +4,7 @@
   "name": "Outfit Pattern",
   "contentType": "json",
   "designation": null,
-  "schemaHash": "14e475cd-a314-2743-7d28-efa6c865270f",
+  "schemaHash": "df029da9-f5b0-7bed-4326-ebc1bbff0df5",
   "schema": {
     "type": "object",
     "required": [
@@ -71,10 +71,31 @@
           }
         }
       },
+      "isUnlocked": {
+        "type": "boolean",
+        "title": "Unlocked In Instance",
+        "default": false,
+        "description": "Unlocked during this game instance. Changing this flag affects that game instance only."
+      },
       "description": {
         "type": "string",
         "title": "Description",
         "format": "textarea"
+      },
+      "alwaysAvailable": {
+        "type": "boolean",
+        "title": "Always Available",
+        "default": false,
+        "description": "When true, this outfit is always offered regardless of origin or unlocks (e.g. Common Clothes)."
+      },
+      "startingOrigins": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "origin"
+        },
+        "title": "Starting Origins",
+        "description": "Origins for which this outfit is a starting outfit."
       },
       "conditionModifiers": {
         "type": "array",
@@ -178,7 +199,10 @@
         "children": [
           "hero",
           "description-card",
-          "condition-card"
+          "condition-card",
+          "alwaysavailable-checkbox",
+          "isunlocked-checkbox",
+          "startingorigins-references"
         ]
       },
       "modifier-row": {
@@ -267,6 +291,28 @@
           "modifier-amount"
         ]
       },
+      "isunlocked-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Unlocked In Instance",
+          "checked": {
+            "$state": "/isUnlocked"
+          }
+        },
+        "children": []
+      },
+      "alwaysavailable-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Always Available",
+          "checked": {
+            "$state": "/alwaysAvailable"
+          }
+        },
+        "children": []
+      },
       "condition-modifiers-list": {
         "type": "Stack",
         "props": {
@@ -280,6 +326,23 @@
         "children": [
           "modifier-row"
         ]
+      },
+      "startingorigins-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/startingOrigins"
+          },
+          "label": "Starting Origins",
+          "columns": 4,
+          "fileTypeSlug": "origin",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/startingOrigins"
+        },
+        "children": []
       }
     }
   },

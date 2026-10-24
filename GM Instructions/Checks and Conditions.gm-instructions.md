@@ -44,7 +44,7 @@ Check the natural dice before modifiers. Other doubles have no special effect.
 Health, Energy and Nerve persist; Decorum and Cover describe scene position. Each ranges 0–3. Decorum means social/aesthetic appropriateness, not just cleanliness; Cover means remaining unnoticed or unsuspected.
 
 Store only `conditionState` Depletion, clamped 0–3; absent Depletion is 0. The sheet derives:
-- Effective Maximum = clamp(base + worn Outfit-copy modifiers, 0, 3).
+- Effective Maximum = clamp(base + worn Outfit Pattern modifiers, 0, 3).
 - Current = clamp(Effective Maximum − Depletion, 0, 3).
 - Base Health is 3; Energy, Nerve, Decorum and Cover are 2.
 
@@ -52,9 +52,9 @@ Never write Current or Maximum. Abilities do not raise Maximums. Apply pressure 
 
 ## Outfits
 
-`wornUnlockedOutfit` is the worn wearable Outfit copy (an Outfit file); `outfit` is the authoring fallback Outfit Pattern. `unlockedOutfits` lists the spare Outfit Pattern(s) the PC may equip — Common Clothes are always available via the Common Clothes copy and are not listed. Other patterns may be unlocked by authored Mission outcomes, Abilities or Bargains; invent neither unlocks nor prices. Runtime Outfit copies live in the game instance, never in the authoring project (except the Common Clothes baseline copy).
+`outfit` is the worn Outfit Pattern. The sheet's filtered picker offers patterns where `alwaysAvailable` is true (Common Clothes), the PC's Origin is in `startingOrigins`, or `isUnlocked` is true in this instance. Outfit rewards set `isUnlocked` to true on the existing Outfit Pattern in the running instance — never create copies. Unlocking does not equip; when the fiction says the PC equips an offered outfit, set the PC's `outfit` reference. Invent neither unlocks nor prices.
 
-All worn modifiers apply mechanically. `appliesBecause` explains why, not when. Changing the worn copy preserves Depletion exactly and recalculates Current/Maximum; narrate a newly caused zero crossing.
+All worn modifiers apply mechanically. `appliesBecause` explains why, not when. Changing the worn `outfit` preserves Depletion exactly and recalculates Current/Maximum; narrate a newly caused zero crossing.
 
 ## Reaching zero
 

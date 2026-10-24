@@ -67,17 +67,5 @@
       "depletion": 0
     }
   },
-  "signedBargains": [],
-  "unlockedOutfits": [
-    {
-      "slug": "thin-tunic",
-      "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
-      "fileTypeSlug": "outfit-pattern"
-    }
-  ],
-  "wornUnlockedOutfit": {
-    "slug": "common-clothes",
-    "referenceId": "01a0cb6e-7557-7acc-8215-8cad005c43fd",
-    "fileTypeSlug": "outfit"
-  }
+  "signedBargains": []
 }

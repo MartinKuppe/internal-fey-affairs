@@ -6,7 +6,36 @@
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/fe2bce92-183c-418a-bd53-a376e1e48fcc"
   },
+  "isUnlocked": false,
   "description": "Conspicuously fine trousers that make a respectable impression and a memorable silhouette.",
+  "alwaysAvailable": false,
+  "startingOrigins": [
+    {
+      "slug": "bard",
+      "referenceId": "019fe8d9-ef04-7da8-9f5c-e24a04e4f3d4",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "fairy-doctor",
+      "referenceId": "019ff7eb-af42-757d-af35-41972e67519a",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "piper",
+      "referenceId": "019fe8d9-eef4-7880-a0c8-55060bd51659",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "tailor",
+      "referenceId": "019fe8d9-eee7-7a0c-ae09-2accd0f9dfb4",
+      "fileTypeSlug": "origin"
+    },
+    {
+      "slug": "used-horse-dealer",
+      "referenceId": "019fe8d9-ee3a-7b88-854f-70ad60bf18d2",
+      "fileTypeSlug": "origin"
+    }
+  ],
   "conditionModifiers": [
     {
       "track": "decorum",
