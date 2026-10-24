@@ -4,7 +4,7 @@
   "name": "Player Character",
   "contentType": "json",
   "designation": "character",
-  "schemaHash": "926ef302-a087-5b4a-4111-01ebfc735891",
+  "schemaHash": "5a4f52a5-bdbd-38dd-2118-64dd236f43fd",
   "schema": {
     "type": "object",
     "required": [
@@ -122,12 +122,12 @@
                   }
                 ]
               },
-              "fileTypeSlug": "outfit-pattern"
+              "fileTypeSlug": "outfit"
             }
           ]
         },
         "description": "Worn outfit. The picker offers Common Clothes, this PC's starting outfit(s), and outfits unlocked in this instance.",
-        "referencedFileTypeSlug": "outfit-pattern"
+        "referencedFileTypeSlug": "outfit"
       },
       "species": {
         "type": "string",
@@ -675,7 +675,15 @@
           "origindescription-section",
           "conditionstate-section",
           "originname-section",
-          "weaknessname-section"
+          "weaknessname-section",
+          "voice-select",
+          "origin-select",
+          "weakness-field",
+          "graceledger-references",
+          "hasmybargains-checkbox",
+          "knownbargains-references",
+          "signedbargains-references",
+          "hasotherbargains-checkbox"
         ]
       },
       "tabs": {
@@ -1405,7 +1413,7 @@
           "value": {
             "$state": "/outfit"
           },
-          "fileTypeSlug": "outfit-pattern"
+          "fileTypeSlug": "outfit"
         },
         "children": []
       },
@@ -1652,6 +1660,21 @@
         },
         "children": []
       },
+      "voice-select": {
+        "type": "VoiceSelect",
+        "props": {
+          "label": "Voice",
+          "value": {
+            "$state": "/voice"
+          },
+          "showLabel": true,
+          "placeholder": "Use GM voice"
+        },
+        "visible": {
+          "$state": "/voice"
+        },
+        "children": []
+      },
       "heading-2-2-2": {
         "type": "Heading",
         "props": {
@@ -1659,6 +1682,22 @@
           "color": null,
           "level": "h1",
           "className": null
+        },
+        "children": []
+      },
+      "origin-select": {
+        "type": "Select",
+        "props": {
+          "label": "Origin",
+          "value": {
+            "$state": "/origin"
+          },
+          "options": null,
+          "placeholder": null,
+          "fileTypeSlug": "origin"
+        },
+        "visible": {
+          "$state": "/origin"
         },
         "children": []
       },
@@ -1786,6 +1825,25 @@
           "variant": "caption",
           "editPath": null,
           "className": null
+        },
+        "children": []
+      },
+      "weakness-field": {
+        "type": "FieldList",
+        "props": {
+          "items": [
+            [
+              "Weakness",
+              {
+                "$state": "/weakness"
+              }
+            ]
+          ],
+          "labelColor": null,
+          "valueColor": null
+        },
+        "visible": {
+          "$state": "/weakness"
         },
         "children": []
       },
@@ -2334,6 +2392,48 @@
         },
         "children": []
       },
+      "graceledger-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/graceLedger"
+          },
+          "label": "Grace Ledger",
+          "columns": 4,
+          "fileTypeSlug": "grace",
+          "metadataFields": [
+            {
+              "name": "day",
+              "type": "number"
+            },
+            {
+              "name": "amount",
+              "type": "number"
+            },
+            {
+              "name": "reason",
+              "type": "string"
+            }
+          ],
+          "referenceField": "currency"
+        },
+        "visible": {
+          "$state": "/graceLedger"
+        },
+        "children": []
+      },
+      "hasmybargains-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Has My Bargains",
+          "checked": {
+            "$state": "/hasMyBargains"
+          }
+        },
+        "children": []
+      },
       "outfit-modifier-amount": {
         "type": "Text",
         "props": {
@@ -2368,6 +2468,23 @@
         },
         "children": []
       },
+      "knownbargains-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/knownBargains"
+          },
+          "label": "Known Bargains",
+          "columns": 4,
+          "fileTypeSlug": "bargain",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/knownBargains"
+        },
+        "children": []
+      },
       "trackbox-row-concealment": {
         "type": "TrackBoxes",
         "props": {
@@ -2394,6 +2511,17 @@
         },
         "children": []
       },
+      "hasotherbargains-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Has Other Bargains",
+          "checked": {
+            "$state": "/hasOtherBargains"
+          }
+        },
+        "children": []
+      },
       "origindescription-section": {
         "type": "Stack",
         "props": {
@@ -2402,6 +2530,23 @@
         },
         "visible": {
           "$state": "/originDescription"
+        },
+        "children": []
+      },
+      "signedbargains-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/signedBargains"
+          },
+          "label": "Signed Bargains",
+          "columns": 4,
+          "fileTypeSlug": "bargain",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/signedBargains"
         },
         "children": []
       }
@@ -3437,7 +3582,7 @@
               "info": "The cold keeps you alert, but shivering frays your self-control.",
               "slug": "thin-tunic",
               "label": "Thin Tunic (+Energy, −Nerve)",
-              "fileTypeSlug": "outfit-pattern",
+              "fileTypeSlug": "outfit",
               "ai_instruction": "Spare starting Outfit: +Energy, −Nerve."
             },
             {
@@ -3445,7 +3590,7 @@
               "info": "It steadies your nerves, although respectable company may think otherwise.",
               "slug": "lucky-pompom-hat",
               "label": "Lucky Pompom Hat (+Nerve, −Decorum)",
-              "fileTypeSlug": "outfit-pattern",
+              "fileTypeSlug": "outfit",
               "ai_instruction": "Spare starting Outfit: +Nerve, −Decorum."
             },
             {
@@ -3453,7 +3598,7 @@
               "info": "Impressive, fashionable, and exceedingly difficult not to notice.",
               "slug": "fancy-pants",
               "label": "Fancy Pants (+Decorum, −Cover)",
-              "fileTypeSlug": "outfit-pattern",
+              "fileTypeSlug": "outfit",
               "ai_instruction": "Spare starting Outfit: +Decorum, −Cover."
             },
             {
@@ -3461,7 +3606,7 @@
               "info": "Easy to disappear inside, but heavy, warm, and increasingly soporific.",
               "slug": "heavy-black-coat",
               "label": "Heavy Black Coat (+Cover, −Energy)",
-              "fileTypeSlug": "outfit-pattern",
+              "fileTypeSlug": "outfit",
               "ai_instruction": "Spare starting Outfit: +Cover, −Energy."
             },
             {
@@ -3505,16 +3650,16 @@
           "eyebrow": "",
           "options": [
             {
-              "fileTypeSlug": "outfit-pattern"
+              "fileTypeSlug": "outfit"
             },
             {
-              "fileTypeSlug": "outfit-pattern"
+              "fileTypeSlug": "outfit"
             },
             {
-              "fileTypeSlug": "outfit-pattern"
+              "fileTypeSlug": "outfit"
             },
             {
-              "fileTypeSlug": "outfit-pattern"
+              "fileTypeSlug": "outfit"
             }
           ],
           "vignette": 100,
@@ -3587,7 +3732,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit (outfit) to the Common Clothes pattern; the filtered picker offers it plus the spare starting Outfit chosen in the wizard (its startingOrigins include the PC's Origin). Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit Pattern. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit (outfit) to the Common Clothes pattern; the filtered picker offers it plus the spare starting Outfit chosen in the wizard (its startingOrigins include the PC's Origin). Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
     }
   }
 }

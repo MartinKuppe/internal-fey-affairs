@@ -1,0 +1,352 @@
+{
+  "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
+  "slug": "outfit",
+  "name": "Outfit",
+  "contentType": "json",
+  "designation": null,
+  "schemaHash": "df029da9-f5b0-7bed-4326-ebc1bbff0df5",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "minLength": 1
+      },
+      "image": {
+        "type": "object",
+        "title": "Image",
+        "format": "image",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "focalPoint": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "maximum": 1,
+                "minimum": 0
+              }
+            }
+          },
+          "generation": {
+            "type": "object",
+            "properties": {
+              "error": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "generating",
+                  "success",
+                  "error"
+                ],
+                "type": "string"
+              },
+              "startedAt": {
+                "type": "string"
+              },
+              "finishedAt": {
+                "type": "string"
+              }
+            }
+          },
+          "overlayUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "isUnlocked": {
+        "type": "boolean",
+        "title": "Unlocked In Instance",
+        "default": false,
+        "description": "Unlocked during this game instance. Changing this flag affects that game instance only."
+      },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "format": "textarea"
+      },
+      "alwaysAvailable": {
+        "type": "boolean",
+        "title": "Always Available",
+        "default": false,
+        "description": "When true, this outfit is always offered regardless of origin or unlocks (e.g. Common Clothes)."
+      },
+      "startingOrigins": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "referencedFileTypeSlug": "origin"
+        },
+        "title": "Starting Origins",
+        "description": "Origins for which this outfit is a starting outfit."
+      },
+      "conditionModifiers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "track",
+            "amount",
+            "appliesBecause"
+          ],
+          "properties": {
+            "track": {
+              "enum": [
+                "health",
+                "energy",
+                "nerve",
+                "decorum",
+                "cover"
+              ],
+              "type": "string",
+              "title": "Track",
+              "description": "The Condition Track this modifier applies to."
+            },
+            "amount": {
+              "enum": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "type": "number",
+              "title": "Amount",
+              "maximum": 3,
+              "minimum": -3,
+              "description": "Signed change to the track's Effective Maximum."
+            },
+            "appliesBecause": {
+              "type": "string",
+              "title": "Why It Applies",
+              "description": "A short player-facing explanation of why the outfit changes this Condition Track."
+            }
+          }
+        },
+        "title": "Condition Modifiers",
+        "description": "Mechanical Condition Track modifiers that always apply while this outfit is worn. Each row changes the named track's effective maximum; appliesBecause explains the abstraction to the player."
+      },
+      "conditionModifierRows": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "track": {
+              "type": "string",
+              "title": "Track"
+            },
+            "amount": {
+              "type": "string",
+              "title": "Amount"
+            },
+            "trackName": {
+              "type": "string",
+              "title": "Track Name"
+            },
+            "appliesBecause": {
+              "type": "string",
+              "title": "Why It Applies"
+            }
+          }
+        },
+        "title": "Condition Modifier Rows",
+        "expression": "($self.conditionModifiers ?? []).map(m => ({ track: m.track, trackName: [{ key: 'health', name: 'Health' }, { key: 'energy', name: 'Energy' }, { key: 'nerve', name: 'Nerve' }, { key: 'decorum', name: 'Decorum' }, { key: 'cover', name: 'Cover' }].find(r => r.key === m.track)?.name ?? m.track, amount: `${m.amount > 0 ? '+' : ''}${m.amount}`, appliesBecause: m.appliesBecause }))",
+        "description": "Player-facing rows derived from conditionModifiers for read-only display (track name, signed amount, and explanation)."
+      }
+    }
+  },
+  "layout": {
+    "root": "page",
+    "elements": {
+      "hero": {
+        "type": "ImageHeader",
+        "props": {
+          "src": {
+            "$state": "/image"
+          },
+          "title": {
+            "$state": "/name"
+          },
+          "aspectRatio": "square"
+        },
+        "children": []
+      },
+      "page": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "children": [
+          "hero",
+          "description-card",
+          "condition-card",
+          "alwaysavailable-checkbox",
+          "isunlocked-checkbox",
+          "startingorigins-references"
+        ]
+      },
+      "modifier-row": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "children": [
+          "modifier-heading",
+          "modifier-applies"
+        ]
+      },
+      "condition-card": {
+        "type": "Card",
+        "props": {
+          "title": "Condition Modifiers"
+        },
+        "visible": {
+          "$state": "/conditionModifiers"
+        },
+        "children": [
+          "condition-modifiers-list"
+        ]
+      },
+      "modifier-track": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "trackName"
+          },
+          "variant": "body"
+        },
+        "children": []
+      },
+      "modifier-amount": {
+        "type": "Badge",
+        "props": {
+          "text": {
+            "$item": "amount"
+          },
+          "variant": "secondary"
+        },
+        "children": []
+      },
+      "description-body": {
+        "type": "Markdown",
+        "props": {
+          "content": {
+            "$state": "/description"
+          }
+        },
+        "children": []
+      },
+      "description-card": {
+        "type": "Card",
+        "props": {
+          "title": "Description"
+        },
+        "visible": {
+          "$state": "/description"
+        },
+        "children": [
+          "description-body"
+        ]
+      },
+      "modifier-applies": {
+        "type": "Text",
+        "props": {
+          "text": {
+            "$item": "appliesBecause"
+          },
+          "variant": "muted"
+        },
+        "children": []
+      },
+      "modifier-heading": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "align": "center",
+          "direction": "horizontal"
+        },
+        "children": [
+          "modifier-track",
+          "modifier-amount"
+        ]
+      },
+      "isunlocked-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Unlocked In Instance",
+          "checked": {
+            "$state": "/isUnlocked"
+          }
+        },
+        "children": []
+      },
+      "alwaysavailable-checkbox": {
+        "type": "Checkbox",
+        "props": {
+          "color": null,
+          "label": "Always Available",
+          "checked": {
+            "$state": "/alwaysAvailable"
+          }
+        },
+        "children": []
+      },
+      "condition-modifiers-list": {
+        "type": "Stack",
+        "props": {
+          "gap": "md",
+          "direction": "vertical"
+        },
+        "repeat": {
+          "key": "track",
+          "statePath": "/conditionModifierRows"
+        },
+        "children": [
+          "modifier-row"
+        ]
+      },
+      "startingorigins-references": {
+        "type": "FileReferenceGrid",
+        "props": {
+          "size": "md",
+          "items": {
+            "$state": "/startingOrigins"
+          },
+          "label": "Starting Origins",
+          "columns": 4,
+          "fileTypeSlug": "origin",
+          "referenceField": null
+        },
+        "visible": {
+          "$state": "/startingOrigins"
+        },
+        "children": []
+      }
+    }
+  },
+  "imageStyleInstructions": null,
+  "showCoverImage": true,
+  "creationFlow": null
+}

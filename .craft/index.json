@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-24T17:06:14.373Z",
+  "syncedAt": "2026-10-24T17:41:33.641Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -100,10 +100,6 @@
     {
       "path": "/Change Requests",
       "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
-    },
-    {
-      "path": "/Unlocked Outfits",
-      "folderId": "01a0cb6e-6685-79cc-9da9-8cbebf5a5439"
     }
   ],
   "files": [
@@ -742,7 +738,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Common Clothes.outfit-pattern.json",
+      "path": "/Outfits/Common Clothes.outfit.json",
       "fileId": "019ff21e-b596-78a8-a929-5fc9e30da0c1",
       "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
       "fileType": "outfit",
@@ -751,7 +747,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Dark Outfit.outfit-pattern.json",
+      "path": "/Outfits/Dark Outfit.outfit.json",
       "fileId": "019ff21e-b597-73bc-8e1b-ba5324614321",
       "referenceId": "019ff21e-b597-7460-a6d8-024f985ad1cf",
       "fileType": "outfit",
@@ -760,7 +756,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Formal Court Attire.outfit-pattern.json",
+      "path": "/Outfits/Formal Court Attire.outfit.json",
       "fileId": "019ff21e-b5c2-7494-8be4-3ec28e5b7efd",
       "referenceId": "019ff21e-b5c2-7578-b55c-160c4d830fdb",
       "fileType": "outfit",
@@ -769,7 +765,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Fabulous Glamour.outfit-pattern.json",
+      "path": "/Outfits/Fabulous Glamour.outfit.json",
       "fileId": "019ff21e-b5d0-79a8-a0f2-19799e3b5733",
       "referenceId": "019ff21e-b5d0-7a4c-9f18-f02edba8df91",
       "fileType": "outfit",
@@ -778,7 +774,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Vest Inside-Out.outfit-pattern.json",
+      "path": "/Outfits/Vest Inside-Out.outfit.json",
       "fileId": "019ff21e-b5e4-7af8-9d84-1ae3c0a78c1e",
       "referenceId": "019ff21e-b5e4-7be4-b4ab-454883c5337b",
       "fileType": "outfit",
@@ -1141,8 +1137,8 @@
       "fileId": "01a04a10-fa51-75bc-b956-bb830caf91b3",
       "referenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b90-7258-a138-03d21e8312bc",
-      "baseHash": "28f50df5-5974-9e25-a4fe-71e2bb313008",
+      "baseVersionId": "01a16efb-d59d-73dc-8022-27d69520e3ea",
+      "baseHash": "da641067-6ea9-8554-8de2-4f6a73c4249c",
       "source": "project"
     },
     {
@@ -1468,7 +1464,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Fancy Pants.outfit-pattern.json",
+      "path": "/Outfits/Fancy Pants.outfit.json",
       "fileId": "01a06db7-3ad3-7174-b2e5-aca08bf46db5",
       "referenceId": "01a06db7-3296-7028-991e-393baaaaaace",
       "fileType": "outfit",
@@ -1477,7 +1473,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Heavy Black Coat.outfit-pattern.json",
+      "path": "/Outfits/Heavy Black Coat.outfit.json",
       "fileId": "01a06db7-3ad3-749c-87c0-73fbe133a40d",
       "referenceId": "01a06db7-3296-7028-991e-3d2dc73daba4",
       "fileType": "outfit",
@@ -1486,7 +1482,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Lucky Pompom Hat.outfit-pattern.json",
+      "path": "/Outfits/Lucky Pompom Hat.outfit.json",
       "fileId": "01a06db7-3ad3-760c-9979-8add645eb96d",
       "referenceId": "01a06db7-3296-7028-991e-425fd5f677b5",
       "fileType": "outfit",
@@ -1495,7 +1491,7 @@
       "source": "project"
     },
     {
-      "path": "/Outfits/Thin Tunic.outfit-pattern.json",
+      "path": "/Outfits/Thin Tunic.outfit.json",
       "fileId": "01a06db7-3ad3-7744-9ce1-e541661ce3e1",
       "referenceId": "01a06db7-3296-7028-991e-47ce250cdbd3",
       "fileType": "outfit",
@@ -1738,8 +1734,8 @@
       "fileId": "01a0879b-319e-7ad4-afc4-9aa74d5b7b44",
       "referenceId": "01a0879b-2fa5-731b-b003-19c9b3cd6b94",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a16eba-60d7-739c-bb38-192bf8384bab",
-      "baseHash": "eac14488-2616-4c12-b149-ce723b81a3a1",
+      "baseVersionId": "01a16efb-0d6b-7d44-9570-0e6699fe65d5",
+      "baseHash": "8303f83c-101b-7b4d-36ee-6868e9a649e8",
       "source": "project"
     },
     {
@@ -1747,8 +1743,8 @@
       "fileId": "01a0879b-319e-7ca4-b4a9-cbe0c0808b96",
       "referenceId": "01a0879b-2fa5-731b-b003-1e7014ea6cb4",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a16eba-7c09-74e8-b456-dee23711db41",
-      "baseHash": "214df9c1-bf5e-40e2-9016-f23df071d0a0",
+      "baseVersionId": "01a16efb-1b4a-7c1c-98f3-6d839adce1bc",
+      "baseHash": "241ffd14-8ab5-ed6c-499c-7feb8fb45712",
       "source": "project"
     },
     {
@@ -1932,8 +1928,8 @@
       "fileId": "01a0cb01-1a52-72cc-ad56-053eda6f9194",
       "referenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b25-7f14-bcbc-b8549a559711",
-      "baseHash": "1bb695eb-adfe-709e-2cda-d02417264463",
+      "baseVersionId": "01a16efb-d58b-7af4-84fa-75e2824eeb50",
+      "baseHash": "23aefb0a-7672-27f3-bb4a-4ae0475784f6",
       "source": "project"
     },
     {
@@ -1941,8 +1937,8 @@
       "fileId": "01a0cb01-1a52-7748-9414-7448072fa3a7",
       "referenceId": "01a0cb01-1cb5-76d5-a286-ea0fd4720467",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b59-7bcc-9d5a-be33d51f96e0",
-      "baseHash": "0f44b63f-420b-2502-a6ec-6321d76d6c66",
+      "baseVersionId": "01a16efb-83d6-79fc-ab94-928ebe65178b",
+      "baseHash": "91d8d847-ea6e-a138-4fb2-8406246a39e7",
       "source": "project"
     },
     {
@@ -1950,8 +1946,8 @@
       "fileId": "01a0cb01-1a53-7abc-a109-26f9d952a8cc",
       "referenceId": "01a0cb01-1cb5-76d5-a286-ecd85abd8d4e",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b88-74e0-adbf-f3a6184804b5",
-      "baseHash": "514c9266-24d3-b139-b2dc-8ba13b3835fe",
+      "baseVersionId": "01a16efb-d56c-7434-aecb-0dbf62b923f9",
+      "baseHash": "d574d844-d38b-6a54-a5eb-94596f16701b",
       "source": "project"
     },
     {
@@ -1959,8 +1955,8 @@
       "fileId": "01a0cb01-1a53-7d74-b636-f62508d99329",
       "referenceId": "01a0cb01-1cb5-76d5-a286-f13c6e335f65",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b67-77a0-98a5-d335489a1513",
-      "baseHash": "f1e2120d-992d-dc59-1158-7c6bbd6db0d1",
+      "baseVersionId": "01a16efb-d5b3-7f38-a98f-758838f869a4",
+      "baseHash": "1d1a855d-d28b-3ac1-1024-98d79291a050",
       "source": "project"
     },
     {
@@ -1968,8 +1964,8 @@
       "fileId": "01a0cb01-1a53-7f70-86b6-1a6f92c51468",
       "referenceId": "01a0cb01-1cb5-76d5-a286-f6287ecc308b",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b99-7e74-835d-f0ab52f66748",
-      "baseHash": "e66828bd-24a4-54da-24d3-c0130c96943c",
+      "baseVersionId": "01a16efb-d589-7200-bd73-4febc1385e1d",
+      "baseHash": "4578b5ea-889d-714a-bf54-f9d73386c598",
       "source": "project"
     },
     {
@@ -1977,8 +1973,8 @@
       "fileId": "01a0cb01-1a53-716c-aab3-98fccc98fccb",
       "referenceId": "01a0cb01-1cb5-76d5-a286-f8409e4cef62",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8f8f-7254-9517-da69968445bb",
-      "baseHash": "8f5f74cb-a15c-51f8-a26e-8db18173bc64",
+      "baseVersionId": "01a16efb-d5a1-7854-b2b1-d15244f42fb2",
+      "baseHash": "62a3034e-1b01-a956-cb4a-0cbfea88ee0a",
       "source": "project"
     },
     {
@@ -1986,8 +1982,8 @@
       "fileId": "01a0cb01-1a53-7388-9a90-5986a34f9dcc",
       "referenceId": "01a0cb01-1cb5-76d5-a286-fc15d12ee4b9",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8ad5-7380-9b50-b51f217424d4",
-      "baseHash": "84382ce2-a010-2910-ac68-d03e09332632",
+      "baseVersionId": "01a16efb-d5ce-7898-a53c-69d9c55a7b43",
+      "baseHash": "367cd543-0f5f-1c0f-f5f4-2b990099fb5e",
       "source": "project"
     },
     {
@@ -1995,8 +1991,8 @@
       "fileId": "01a0cb01-1a54-7b48-89a6-27804db6af8b",
       "referenceId": "01a0cb01-1cb5-76d5-a287-02c5a52ebae7",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8ad5-736c-ae2b-306c8d7fb91f",
-      "baseHash": "61070a3c-d691-749d-969c-4dfdc7898b8f",
+      "baseVersionId": "01a16efb-d916-7578-80a2-40f93a746008",
+      "baseHash": "3d2c1e83-cbbf-c02b-678d-d835c1897933",
       "source": "project"
     },
     {
@@ -2004,8 +2000,8 @@
       "fileId": "01a0cb01-1a54-7d70-81a5-f4e8fe9b7372",
       "referenceId": "01a0cb01-1cb5-76d5-a287-057e815c002a",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8aff-7df8-abff-3935057e8368",
-      "baseHash": "1040099b-82ab-1680-2845-e938c905d230",
+      "baseVersionId": "01a16efb-d930-7d90-b734-dae1e5219882",
+      "baseHash": "26c128e1-256d-d090-7abc-53498374bc1e",
       "source": "project"
     },
     {
@@ -2013,8 +2009,8 @@
       "fileId": "01a0cb01-1a54-7f18-929e-d234d45feec1",
       "referenceId": "01a0cb01-1cb5-76d5-a287-09cca0cd267b",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8afa-7604-9bda-9756b68c2e8f",
-      "baseHash": "c712ef39-1a86-1d50-b750-bbabf00aa481",
+      "baseVersionId": "01a16efb-d93c-7a60-8407-229cb60904cc",
+      "baseHash": "9a7dedfa-34d3-79db-0572-8352d4a035b2",
       "source": "project"
     },
     {
@@ -2022,8 +2018,8 @@
       "fileId": "01a0cb01-1a54-7110-9007-76561f6b9c9f",
       "referenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-9c19-72a8-a667-c865a16958b2",
-      "baseHash": "b486dfa0-a177-b432-bf8c-06ddd8f6ff98",
+      "baseVersionId": "01a16efb-deae-796c-906f-27e26c803e9b",
+      "baseHash": "3702733b-1886-006f-ff7c-ba7442813ff2",
       "source": "project"
     },
     {
@@ -2031,8 +2027,8 @@
       "fileId": "01a0cb01-1a54-7358-bf41-f64e8ac672c5",
       "referenceId": "01a0cb01-1cb5-76d5-a287-102824ee3563",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b14-7014-a308-ad1c30fb85e7",
-      "baseHash": "9699892b-1a57-c1cd-52de-7594ec2907e0",
+      "baseVersionId": "01a16efb-d945-7418-9c26-3c45afb85d1f",
+      "baseHash": "6b36d291-3a69-c5b6-a59b-4808208ccde0",
       "source": "project"
     },
     {
@@ -2040,8 +2036,8 @@
       "fileId": "01a0cb01-1a54-74f8-9a21-339cebef8be8",
       "referenceId": "01a0cb01-1cb5-76d5-a287-173e06b2a79b",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b0c-70ec-a159-44bdb9cfe5f5",
-      "baseHash": "229cd543-f83b-9f22-2b32-61e273be03b9",
+      "baseVersionId": "01a16efb-d958-78dc-8d11-03017176e39b",
+      "baseHash": "0118d6bc-8ab8-cb6e-26cd-ca91aac161a8",
       "source": "project"
     },
     {
@@ -2049,8 +2045,8 @@
       "fileId": "01a0cb01-1a54-76fc-af81-2e94d84060b4",
       "referenceId": "01a0cb01-1cb5-76d5-a287-1bec7aa7fdd8",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-8b2d-7038-9a0c-39858cbc4a1a",
-      "baseHash": "782fc14d-c65f-d34a-d9c1-5ce5b4df94f7",
+      "baseVersionId": "01a16efb-d95a-75f8-9d72-4114c9c9e64c",
+      "baseHash": "f4ae8c32-27f6-2378-38aa-d7b0404e23fc",
       "source": "project"
     },
     {
@@ -2058,8 +2054,8 @@
       "fileId": "01a0cb01-1a55-787c-b901-6ffde9751d20",
       "referenceId": "01a0cb01-1cb5-76d5-a287-1c510beb1456",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-9c2c-76e0-88ad-6848a1c035eb",
-      "baseHash": "57ec85a2-100d-8e7a-37bb-b824fa8d5ffa",
+      "baseVersionId": "01a16efb-d926-7570-8a38-6b35a64f1bb8",
+      "baseHash": "7ab02a93-1ca8-4e42-4a49-58093f0b7806",
       "source": "project"
     },
     {
@@ -2067,8 +2063,8 @@
       "fileId": "01a0cb01-1a55-79b4-8f06-b5c949ff583f",
       "referenceId": "01a0cb01-1cb5-76d5-a287-21559abbef66",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-9c4d-76b0-9f30-84c37d8afde9",
-      "baseHash": "d680b25c-207e-ecd2-2fdf-1f673702c0d5",
+      "baseVersionId": "01a16efb-de9b-765c-8f78-d826ca4d70fe",
+      "baseHash": "a62cb087-c651-c6c1-25ae-9299f5d79188",
       "source": "project"
     },
     {
@@ -2076,8 +2072,8 @@
       "fileId": "01a0cb01-1a55-7afc-9b86-788847af94fa",
       "referenceId": "01a0cb01-1cb5-76d5-a287-24f52503d1ae",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-9c3b-748c-b686-9b6ca6c40706",
-      "baseHash": "f15c3318-553e-ba83-85fb-12d9584078b5",
+      "baseVersionId": "01a16efb-dec1-78e8-9d56-e2b8c44c1a0f",
+      "baseHash": "ed7a166e-b73d-9b59-1c77-efe0b43a25c3",
       "source": "project"
     },
     {
@@ -2085,8 +2081,8 @@
       "fileId": "01a0cb01-1a55-7c4c-b06a-5d1c9f5dca39",
       "referenceId": "01a0cb01-1cb5-76d5-a287-29f708fc4186",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-9c61-74a4-8041-08d24b1cabed",
-      "baseHash": "afc87530-fa0f-ab55-ca3e-01b6ffb72f24",
+      "baseVersionId": "01a16efb-dec3-7be0-bbef-583b1f044796",
+      "baseHash": "1f78456f-6b4e-6629-b676-46fad1b3498f",
       "source": "project"
     },
     {
@@ -2094,8 +2090,8 @@
       "fileId": "01a0cb01-1a55-7d70-9496-224aab943e05",
       "referenceId": "01a0cb01-1cb5-76d5-a287-2fe23101e46c",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-9c47-705c-ae54-7cf81baff488",
-      "baseHash": "69db1a84-73cf-0ca2-ad5c-eec2c8f78d51",
+      "baseVersionId": "01a16efb-de9c-7d00-bc7f-1afc4dc5add6",
+      "baseHash": "8b79aff1-581b-d3ac-9340-4eab1bf87a82",
       "source": "project"
     },
     {
@@ -2103,8 +2099,8 @@
       "fileId": "01a0cb01-1a5d-7508-b384-b0d291339e14",
       "referenceId": "01a0cb01-1cb5-76d5-a287-30b5933cb566",
       "fileType": "player-character",
-      "baseVersionId": "01a16ed2-9c64-76c4-b094-5db2e73c5161",
-      "baseHash": "4e2ffdd2-f645-0ffa-ecc1-9623bef8793c",
+      "baseVersionId": "01a16efb-deab-74ec-a018-7aedb1031bd1",
+      "baseHash": "4201298a-02b1-8c92-5c90-8bdab93638db",
       "source": "project"
     },
     {
@@ -2169,6 +2165,12 @@
       "contentHash": "c6b74e81-8866-dcf1-3eea-64f809300a07"
     },
     {
+      "slug": "outfit",
+      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
+      "schemaHash": "df029da9-f5b0-7bed-4326-ebc1bbff0df5",
+      "contentHash": "c6ebfd09-ea44-9bb3-16ab-ca0ade6c7221"
+    },
+    {
       "slug": "attribute",
       "fileTypeId": "019fe8d8-fca9-7324-8b54-432095c52bb8",
       "schemaHash": "7b111924-26c4-515c-3d8a-94be5c262730",
@@ -2191,12 +2193,6 @@
       "fileTypeId": "019fed6d-ab59-72fc-ab24-232764ca6432",
       "schemaHash": "c41caafc-4db2-99d7-8db4-b038e413388a",
       "contentHash": "673e3261-15b2-b58b-db64-d6ff2320d6e9"
-    },
-    {
-      "slug": "outfit-pattern",
-      "fileTypeId": "019ff21e-97ce-70e0-8912-311103f24d50",
-      "schemaHash": "df029da9-f5b0-7bed-4326-ebc1bbff0df5",
-      "contentHash": "c6ebfd09-ea44-9bb3-16ab-ca0ade6c7221"
     },
     {
       "slug": "change-request",
@@ -2243,8 +2239,8 @@
     {
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
-      "schemaHash": "926ef302-a087-5b4a-4111-01ebfc735891",
-      "contentHash": "8200abd6-c421-b6a6-2769-b83eea8fe911"
+      "schemaHash": "5a4f52a5-bdbd-38dd-2118-64dd236f43fd",
+      "contentHash": "7ff1aca2-f503-2e78-82cb-809120102762"
     }
   ],
   "projectSettingsHash": "946fb856-1c5a-22c5-5e0b-2efabe748ae8"
