@@ -7,17 +7,233 @@
     "metadata": {
       "gameStart": {
         "opening": {
-          "kind": "dynamic",
-          "prompt": "Follow the following script exactly:\n\n- Seanchaí (GM): \"When you come back home, Granny is sitting by the hearth with a mug of cider. You are surprised to see Niamh placing some things in the pantry.\"\n- Granny: \"You’re back. Did you find enough firewood? And you didn’t go near the hawthorn tree, did you? We don’t want the Little People put out with us.\"\n- Player: \"Don't worry, Granny.\"\n- Seanchaí (GM): \"Niamh comes out of the pantry, red-haired and pretty as ever; even the freckles scattered across her cheeks seem oddly neat.\"\n- Niamh: \"Oh, haigh! I brought you some groceries and cider from the inn. Can’t stay though. I left Finn with the baby; they’re probably both hungry by now. See you!\" (She leaves)\n- Granny: \"Fierce sweet girl, that one. A shame she married the innkeeper. I know well you fancied her.\"\n- Player: \"Half of Tri Mhuilinn fancies her, Granny! And the other half of the village thinks she's a witch.\"\n- Granny: \"I don’t think she’s a witch at all. She’s a changeling. Look at the freckles on her - matched left and right, every one of them. Two new ones now, one on either side of her nose. Who ever heard of freckles behaving themselves like that?\"\n- Player: \"You're blind, Granny.\"\n- Granny: \"I’m not that blind! But she’s one of the good ones. Not all the Fey are vicious, sweetheart. Some will help you, like Hobs and Brownies. Some are only after mischief, like Pookas and Boggarts. Some mean death is near, like the Banshee. But if ever you meet the Dullahan…\"\n- Player: \"You and your age-old folktales…\"\n- Granny: \"They’re not that old! The Little People only came when I was twenty-three. Midsummer night it was, and lights all across the sky…\"\n- Player: \"Granny, you told me the story a thousand times. The first townsfolk who went missing, the music you heard in the woods, the fox that wasn't a fox…\"\n- Granny: \"It was a Pooka! The woods haven’t been right since. Anyway, that goat is after acting strange again. Would you have a look at him? And put a pot of cream by the door while you’re at it. Check the horseshoe as well - it was loose again yesterday.\"\n- Seanchaí (GM): \"You leave the hut.\"\n- Change the location to \"Tri Mhuilinn\"\n- Seanchaí (GM): \"The goat runs off; you are unable to catch it. How can a goat be that fast? It darts into the woods until it reaches a small glade\"\n- Change the location to \"Fairy Ring\"\n- Seanchaí (GM): \"In the middle of the clearing, you see a perfect ring of mushrooms. Granny calls them fairy rings. Suddenly, the circle starts to glow in an eerie blue light - and out of thin air materialises a beautiful girl, floating as if held by invisible hands.\"\n- Méabh: \"Haigh, you there. Can you…? The Fair Folk… I got away, but they… I need somewhere to hide. I’m Méabh, by the way.\"\n- Seanchaí (GM): \"She looks around, visibly frightened. For a moment, you catch a glimpse of flickering red lights darting through the depths of the forest. Strange metallic tantivy sounds emanate from the deeps of the dark woods. Two pairs of red dots appear between the black trees, approaching.\"\n- Méabh: \"They are after me. They have these black mounts with those scary eyes; they will catch me. I don’t want to go back to this place! Can you hide me? Please?\"\n- Seanchaí (GM): \"A strange creature appears from behind a large tree. Or maybe from inside. He looks like a rabbit drawn by someone who has never seen a rabbit, and who thinks they are half as tall as humans. The rabbit shape seems strangely rigid, like a mask. The shape flickers, like a flame, then dies down, revealing another shape inside, unlike any you have ever seen.\"\n- Coinín: \"Come, quickly! You can hide inside my hollow tree!\""
+          "kind": "static",
+          "beats": [
+            {
+              "id": "64c3367a-a30f-4631-82d9-3bdf24b5eb3a",
+              "text": "When you come back home with an armful of dry sticks, Grannie is sitting by the hearth with a mug of cider. You are surprised to see Niamh placing jars and wrapped provisions in the pantry.",
+              "speaker": {
+                "kind": "gm"
+              }
+            },
+            {
+              "id": "2b7dc82b-a3d2-4b55-8cd9-0a69da4e576d",
+              "text": "“You’re back. Did you find enough kindling? And you didn’t go near the hawthorn tree, did you? We don’t want the Little People put out with us.”",
+              "speaker": {
+                "kind": "character",
+                "name": "Grannie",
+                "fileReferenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1"
+              },
+              "expression": "happy"
+            },
+            {
+              "id": "7d5cc0f0-2c18-4d81-8c37-7f0a5be3a2d8",
+              "text": "Niamh comes out of the pantry, red-haired and pretty as ever; even the freckles scattered across her cheeks seem oddly neat.",
+              "speaker": {
+                "kind": "gm"
+              },
+              "expression": "happy"
+            },
+            {
+              "id": "a47a2db4-73e9-4b3d-8f1b-a0d3de42ad76",
+              "text": "“Oh, haigh! I brought you some groceries and cider from the inn. Can’t stay, though. I left Finn with the baby; they’re probably both hungry by now. See you!”",
+              "speaker": {
+                "kind": "character",
+                "name": "Niamh",
+                "fileReferenceId": "01a06897-2c82-723a-b60c-bf2fb4de5c9d"
+              }
+            },
+            {
+              "id": "01ba848f-d9ff-4ec0-9314-0d37de3958aa",
+              "text": "Niamh slips out into the village before Grannie can press another cup on her.",
+              "speaker": {
+                "kind": "gm"
+              },
+              "expression": "neutral"
+            },
+            {
+              "id": "90bcadc2-a78e-4dc4-aa99-ee0715251b8f",
+              "text": "“Fierce sweet girl, that one. A shame she married the innkeeper. I know well you fancied her.”",
+              "speaker": {
+                "kind": "character",
+                "name": "Grannie",
+                "fileReferenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1"
+              }
+            },
+            {
+              "id": "bc0ba2c6-f812-469f-9960-0e4e37a9c897",
+              "text": "\"Half of Trí Mhuilinn fancies her, Grannie\", you say. \"The other half thinks she’s a witch.”",
+              "speaker": {
+                "kind": "gm"
+              },
+              "expression": "embarrassed"
+            },
+            {
+              "id": "a8816583-6ba8-4cef-9298-770ace6176bb",
+              "text": "“I don’t think she’s a witch at all. She’s a Changeling. Look at the freckles on her—matched left and right, every one of them. Two new ones now, one on either side of her nose. Who ever heard of freckles behaving themselves like that?”",
+              "speaker": {
+                "kind": "character",
+                "name": "Grannie",
+                "fileReferenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1"
+              },
+              "expression": "thoughtful"
+            },
+            {
+              "id": "624c651e-d09b-498e-878e-e05b3ffe2ae8",
+              "text": "“You’re blind, Grannie”, you say.",
+              "speaker": {
+                "kind": "gm"
+              },
+              "expression": "smug"
+            },
+            {
+              "id": "74ce061f-fb37-452e-bc46-b96bf1fd6f17",
+              "text": "“I’m not that blind! But she’s one of the good ones. Not all the Fey are vicious, sweetheart. Some will help you, like Hobs and Brownies. Some are only after mischief, like Pookas and Boggarts. Some are powerful and dangerous, like the Morrigan. Some mean death is near, like the Banshee. But if ever you meet the Dullahan…”",
+              "speaker": {
+                "kind": "character",
+                "name": "Grannie",
+                "fileReferenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1"
+              },
+              "expression": "smug"
+            },
+            {
+              "id": "87fc0c81-37f3-43ce-8a09-627fd3097752",
+              "text": "“You and your age-old folktales…”, you say.",
+              "speaker": {
+                "kind": "gm"
+              },
+              "expression": "amused"
+            },
+            {
+              "id": "87cf03d2-616e-4551-bcc4-625062c5097c",
+              "text": "“They’re not that old! The Little People only came when I was twenty-three. Midsummer night it was, and lights all across the sky…”",
+              "speaker": {
+                "kind": "character",
+                "name": "Grannie",
+                "fileReferenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1"
+              },
+              "expression": "thoughtful"
+            },
+            {
+              "id": "d2b967cd-0783-4eeb-8541-1d700043c0c7",
+              "text": "“Grannie, you told me the story a thousand times\", you sigh. \"The first townsfolk who went missing, the music you heard in the woods, the fox that wasn’t a fox…”",
+              "speaker": {
+                "kind": "gm"
+              },
+              "expression": "smug"
+            },
+            {
+              "id": "882b5b63-83a2-4e12-a42d-7451c3a03162",
+              "text": "“It was a Pooka! The woods haven’t been right since. Anyway, that goat is after acting strange again. Would you have a look at him? And put a pot of cream by the door while you’re at it. And someone has been snatching horseshoes from the doors - check ours is well attached.”",
+              "speaker": {
+                "kind": "character",
+                "name": "Grannie",
+                "fileReferenceId": "01a06897-2c82-723a-b60c-ba3e2a3dd3a1"
+              },
+              "expression": "amused"
+            },
+            {
+              "id": "14c1ba6c-5896-47cb-9964-c5e5ee8b00ac",
+              "text": "You set a pot of cream beside the threshold and press the loose horseshoe back into place above the door. Then you step into the yard.",
+              "speaker": {
+                "kind": "gm"
+              }
+            },
+            {
+              "id": "1e058139-2116-4d63-a8c5-86ee09723461",
+              "text": "The goat is waiting by the yard gate. He is standing much too still, with one hoof hooked over the lower bar and a strip of red cloth hanging from his mouth. His yellow eyes meet yours with the calm of a creature who has already sinned and is considering whether to make it worse.",
+              "speaker": {
+                "kind": "gm"
+              },
+              "expression": "surprised"
+            },
+            {
+              "id": "d1bab16d-242c-4a1f-91d0-3683ecbcd651",
+              "text": "...",
+              "speaker": {
+                "kind": "character",
+                "name": "The Goat",
+                "fileReferenceId": "01a08cd0-c8b9-7d08-902a-c717e77327ff"
+              }
+            },
+            {
+              "id": "7a5bc588-c9a2-4535-9287-ab5658418b16",
+              "text": "The goat chews once. What do you do?",
+              "speaker": {
+                "kind": "gm"
+              }
+            }
+          ],
+          "message": "When you come back home with an armful of dry sticks, Grannie is sitting by the hearth with a mug of cider. You are surprised to see Niamh placing jars and wrapped provisions in the pantry.\n\nGrannie: “You’re back. Did you find enough kindling? And you didn’t go near the hawthorn tree, did you? We don’t want the Little People put out with us.”\n\nNiamh comes out of the pantry, red-haired and pretty as ever; even the freckles scattered across her cheeks seem oddly neat.\n\nNiamh: “Oh, haigh! I brought you some groceries and cider from the inn. Can’t stay, though. I left Finn with the baby; they’re probably both hungry by now. See you!”\n\nNiamh slips out into the village before Grannie can press another cup on her.\n\nGrannie: “Fierce sweet girl, that one. A shame she married the innkeeper. I know well you fancied her.”\n\n\"Half of Trí Mhuilinn fancies her, Grannie\", you say. \"The other half thinks she’s a witch.”\n\nGrannie: “I don’t think she’s a witch at all. She’s a Changeling. Look at the freckles on her—matched left and right, every one of them. Two new ones now, one on either side of her nose. Who ever heard of freckles behaving themselves like that?”\n\n“You’re blind, Grannie”, you say.\n\nGrannie: “I’m not that blind! But she’s one of the good ones. Not all the Fey are vicious, sweetheart. Some will help you, like Hobs and Brownies. Some are only after mischief, like Pookas and Boggarts. Some are powerful and dangerous, like the Morrigan. Some mean death is near, like the Banshee. But if ever you meet the Dullahan…”\n\n“You and your age-old folktales…”, you say.\n\nGrannie: “They’re not that old! The Little People only came when I was twenty-three. Midsummer night it was, and lights all across the sky…”\n\n“Grannie, you told me the story a thousand times\", you sigh. \"The first townsfolk who went missing, the music you heard in the woods, the fox that wasn’t a fox…”\n\nGrannie: “It was a Pooka! The woods haven’t been right since. Anyway, that goat is after acting strange again. Would you have a look at him? And put a pot of cream by the door while you’re at it. And someone has been snatching horseshoes from the doors - check ours is well attached.”\n\nYou set a pot of cream beside the threshold and press the loose horseshoe back into place above the door. Then you step into the yard.\n\nThe goat is waiting by the yard gate. He is standing much too still, with one hoof hooked over the lower bar and a strip of red cloth hanging from his mouth. His yellow eyes meet yours with the calm of a creature who has already sinned and is considering whether to make it worse.\n\nThe Goat: ...\n\nThe goat chews once. What do you do?"
         },
         "displayOrder": 0,
         "characterOpenings": [],
         "startingCharacters": [
           {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a286-ea0fd4720467"
+          },
+          {
             "fileReferenceId": "01a04a10-fa51-764c-b20e-02ee5da32f8f"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a286-e76bf40a917e"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a286-ecd85abd8d4e"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a286-f13c6e335f65"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a286-f6287ecc308b"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a286-f8409e4cef62"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a286-fc15d12ee4b9"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-02c5a52ebae7"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-057e815c002a"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-09cca0cd267b"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-102824ee3563"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-173e06b2a79b"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-1bec7aa7fdd8"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-1c510beb1456"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-0f5423a4d1b3"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-21559abbef66"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-24f52503d1ae"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-29f708fc4186"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-2fe23101e46c"
+          },
+          {
+            "fileReferenceId": "01a0cb01-1cb5-76d5-a287-30b5933cb566"
           }
         ],
-        "openingInstructions": "Start immediately the mission \"The Encounter\".\n\nWhen done with this list, delete this file.",
+        "openingInstructions": "First-turn checklist — delete after this turn. Outfit setup for the lobby-selected PC first (before any mission-status check): for each unlockedOutfits pattern entry create the missing wearable Outfit copy named verbatim after its source Outfit Pattern (no Wardrobe suffix; copy image, description, conditionModifiers), deduplicate by sourceOutfit not name — then preserve an existing wornUnlockedOutfit, or if unset set it to the copy matching outfit (creating it if missing); see Mission Procedures Runtime wardrobe setup. If Down the Rabbit-Hole is not already active, activate once in a single update: status active + structured startedDate { month: currentMonth, moonPhase: currentMoonPhase } + currentBeatKey only if empty; if already active, never reset currentBeatKey backwards. Treat the goat answer as colour only. Then follow the current beat as authored through to Coinin's hollow-tree offer before handing control back.",
         "startingLocationFileReferenceId": "01a03e8c-c67a-7e98-994c-1bfb440c22f4"
       },
       "schemaVersionId": "file-designation-metadata:v8"
@@ -27,5 +243,5 @@
   "image": {
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/a0e59376-c645-48d2-a8d1-aaa787eb9832"
   },
-  "description": "You just came home from gathering firewood..."
+  "description": "You just came home from gathering an armful of dry sticks..."
 }

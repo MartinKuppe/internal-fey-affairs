@@ -1,3 +1,10 @@
 {
-  "name": "Damage Control - Dairy Office H2-45-d"
+  "name": "Damage Control - Dairy Office H2-45-d",
+  "image": {
+    "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/c729eea3-b4a6-474a-b444-0337cacf02a0",
+    "focalPoint": {
+      "x": 0.5058480862877167,
+      "y": 0.30057759537923695
+    }
+  }
 }

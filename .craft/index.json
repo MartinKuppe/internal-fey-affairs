@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T22:07:50.477Z",
+  "syncedAt": "2026-10-24T15:35:13.000Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -117,13 +117,13 @@
       "fileId": "019fde04-4599-7798-b833-c659c5ad3e18",
       "referenceId": "019fde04-459a-7804-83c6-a3a0706dace4",
       "fileType": "game-start",
-      "baseVersionId": "01a0cd5a-a9b1-7574-841e-af44169e4bbb",
-      "baseHash": "55a5a7af-36aa-5291-1d87-dd56752275aa",
+      "baseVersionId": "01a10b2d-d677-76fc-8850-f8412c0e19ff",
+      "baseHash": "8ff8c612-cea3-c617-e484-2718e2ef2df4",
       "source": "project",
       "settings": {
         "agentEditable": true
       },
-      "metadataHash": "6b1683bf-f53f-ab3c-58cc-3da5d7e6326a"
+      "metadataHash": "770679e1-7e73-81e8-298b-86420b78a0d1"
     },
     {
       "path": "/GM Instructions/System Rules.gm-instructions.md",
@@ -995,7 +995,7 @@
       "fileId": "01a03e6e-1dea-7348-9eea-3d4229cd3f7a",
       "referenceId": "01a03e6e-1dea-73bc-b1fb-e1ad30b3fc75",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b667-7eb8-bfee-e3cacaa38c3c",
+      "baseVersionId": "01a1415a-ea8c-7054-b9f4-b66888d0d436",
       "baseHash": "6b0521de-59ac-1355-542d-ef6a40871775",
       "source": "project",
       "metadataHash": "e8cdc6f9-4e12-1cfe-4e09-26eb7f0cb493"
@@ -1113,20 +1113,20 @@
       "fileId": "01a0497e-cf29-7c48-b225-288dfe76dfb8",
       "referenceId": "01a0497e-cf29-7d18-aad1-e29ef0e12242",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b653-7e64-bcee-313df7f1a92a",
-      "baseHash": "83e7205c-6725-dd22-fe9c-d9584ae69e27",
+      "baseVersionId": "01a14158-35eb-7c20-8fd7-076bf634c723",
+      "baseHash": "65f64cee-ac3a-8566-d783-2388b359f3ad",
       "source": "project",
-      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+      "metadataHash": "8b6c1837-2a86-f698-564a-19b3b7e9f993"
     },
     {
       "path": "/Locations/Damage Control Regional Center H2-45.location.json",
       "fileId": "01a0497f-d61c-76b4-a8df-1ec40e8281f5",
       "referenceId": "01a0497f-d61c-774c-9dc1-1b098aaa4b0a",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b98e-7a58-8405-c2c2fdbf1b34",
-      "baseHash": "436b0b51-44ee-68dc-c3c4-97142e32e56c",
+      "baseVersionId": "01a14156-8555-7e6c-95c7-0923f2b57cfe",
+      "baseHash": "66e0f96a-61de-21da-a72e-ef46c7074733",
       "source": "project",
-      "metadataHash": "df6c911b-aa69-47cc-fb20-4a49fabbd50b"
+      "metadataHash": "5bbd8860-e8e1-37db-94ca-904f9c146c33"
     },
     {
       "path": "/Characters/Player Characters/The Blacksmith.player-character.json",
@@ -1824,9 +1824,10 @@
       "fileId": "01a0a67b-2457-7388-ad01-775b64771dc1",
       "referenceId": "01a0a67b-2457-73f8-bdd2-9e619a5d33b2",
       "fileType": "location",
-      "baseVersionId": "01a0a731-b917-7b38-a2a5-b150a27d145e",
-      "baseHash": "46081a82-de90-6c54-bb80-e80862b40d29",
-      "source": "project"
+      "baseVersionId": "01a1415c-159a-7a98-b7cd-ffbcdb12b2b3",
+      "baseHash": "c7adac31-a5b1-9d79-d8da-31e72a85765d",
+      "source": "project",
+      "metadataHash": "b6b66ba4-195e-7174-5a8a-2a179d0cfebc"
     },
     {
       "path": "/Locations/Cover locations/Hillfort.location.json",
@@ -2131,7 +2132,7 @@
       "fileId": "01a0f4b7-b02a-7318-848a-a44dc4df536f",
       "referenceId": "01a0f4b7-b02a-73bc-a753-160eca579bf6",
       "fileType": "location",
-      "baseVersionId": "01a0f982-6f4b-70d4-9f17-6a6502f185c0",
+      "baseVersionId": "01a1415e-718a-7418-b113-1e29ed81dc12",
       "baseHash": "e0a20255-fb5b-a45c-d60b-d6d66b3486dc",
       "source": "project",
       "metadataHash": "11950467-69bd-9d2c-935f-9510d89cf155"
@@ -2167,6 +2168,18 @@
       "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
       "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
+    },
+    {
+      "slug": "mission",
+      "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
+      "schemaHash": "5868e54c-38e2-8e87-4915-f76b4febfb2c",
+      "contentHash": "c6b74e81-8866-dcf1-3eea-64f809300a07"
+    },
+    {
+      "slug": "outfit",
+      "fileTypeId": "01a0cb6e-666c-780c-996a-1513cdc00e97",
+      "schemaHash": "1491ceb2-7cba-d273-fba1-7b793d2834c4",
+      "contentHash": "9513e14f-8b90-1c4d-f016-40ce8bf8f1b0"
     },
     {
       "slug": "attribute",
@@ -2211,12 +2224,6 @@
       "contentHash": "ab24578d-9a89-4523-56bd-ad4910c537d0"
     },
     {
-      "slug": "mission",
-      "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "5868e54c-38e2-8e87-4915-f76b4febfb2c",
-      "contentHash": "c6b74e81-8866-dcf1-3eea-64f809300a07"
-    },
-    {
       "slug": "mission-journal",
       "fileTypeId": "01a001e7-84ad-7620-b78c-023a22697f00",
       "schemaHash": "dcc7a4ef-8e74-576f-ae02-57d8bd7ed509",
@@ -2227,12 +2234,6 @@
       "fileTypeId": "019fe8d8-fcde-7818-8395-c7fe42e24b57",
       "schemaHash": "bc254d61-12eb-fe43-5e14-a47e30e909da",
       "contentHash": "049e8cec-4109-8997-3246-334f8bcfc565"
-    },
-    {
-      "slug": "outfit",
-      "fileTypeId": "01a0cb6e-666c-780c-996a-1513cdc00e97",
-      "schemaHash": "1491ceb2-7cba-d273-fba1-7b793d2834c4",
-      "contentHash": "9513e14f-8b90-1c4d-f016-40ce8bf8f1b0"
     },
     {
       "slug": "outfit-pattern",

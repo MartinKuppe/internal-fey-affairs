@@ -7,12 +7,19 @@
         "areas": [],
         "scale": null,
         "points": [],
-        "background": null,
-        "aspectRatio": {
-          "width": 1,
-          "height": 1
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/c729eea3-b4a6-474a-b444-0337cacf02a0",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
         },
-        "useParentMap": true,
+        "aspectRatio": {
+          "width": 2048,
+          "height": 3072
+        },
+        "useParentMap": false,
         "overlayImages": [],
         "boundaryPolygon": null,
         "clusteringEnabled": true
@@ -20,5 +27,12 @@
       "schemaVersionId": "file-designation-metadata:v8"
     }
   },
-  "name": "Milk Hub & Hatchery H2-45-03"
+  "name": "Milk Hub & Hatchery H2-45-03",
+  "image": {
+    "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/c729eea3-b4a6-474a-b444-0337cacf02a0",
+    "focalPoint": {
+      "x": 0.5000227551995631,
+      "y": 0.3375436996504028
+    }
+  }
 }

@@ -7,12 +7,19 @@
         "areas": [],
         "scale": null,
         "points": [],
-        "background": null,
-        "aspectRatio": {
-          "width": 1,
-          "height": 1
+        "background": {
+          "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/9cacdd77-6961-45b3-91ef-21b5a64f83de",
+          "scale": 1,
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
         },
-        "useParentMap": true,
+        "aspectRatio": {
+          "width": 4796,
+          "height": 5248
+        },
+        "useParentMap": false,
         "overlayImages": [],
         "boundaryPolygon": null,
         "clusteringEnabled": true
@@ -20,5 +27,8 @@
       "schemaVersionId": "file-designation-metadata:v8"
     }
   },
-  "name": "Damage Control Regional Center H2-45"
+  "name": "Damage Control Regional Center H2-45",
+  "image": {
+    "url": "https://media.craftrpgs.com/projects/019fde04-44f9-7460-9bbd-1d0450f60a79/images/9cacdd77-6961-45b3-91ef-21b5a64f83de"
+  }
 }
