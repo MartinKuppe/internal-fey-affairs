@@ -7,6 +7,7 @@
       "y": 0.42138063279002874
     }
   },
+  "gender": "Man",
   "origin": {
     "slug": "good-for-nothing",
     "referenceId": "019fe8d9-ef11-74c8-8e5b-858f193e200c",
@@ -17,6 +18,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "he/him",
   "weakness": "Muddle-Headed",
   "abilities": [
     {

@@ -10,6 +10,7 @@
       "y": 0.4290508149568552
     }
   },
+  "gender": "Woman",
   "origin": {
     "slug": "tailor",
     "referenceId": "019fe8d9-eee7-7a0c-ae09-2accd0f9dfb4",
@@ -20,6 +21,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "she/her",
   "weakness": "Short-Winded",
   "abilities": [
     {

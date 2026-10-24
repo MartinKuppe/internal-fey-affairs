@@ -7,6 +7,7 @@
       "y": 0.4635666347075743
     }
   },
+  "gender": "Man",
   "origin": {
     "slug": "brigand",
     "referenceId": "019fe8d9-f0f5-7460-a6ea-77c031c40562",
@@ -17,6 +18,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "he/him",
   "weakness": "Muddle-Headed",
   "abilities": [
     {

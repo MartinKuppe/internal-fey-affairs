@@ -10,6 +10,7 @@
       "y": 0.44439117929050814
     }
   },
+  "gender": "Man",
   "origin": {
     "slug": "seanchaí",
     "referenceId": "019fe8d9-eece-7ca4-a384-156122d56af8",
@@ -20,6 +21,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "he/him",
   "weakness": "All Thumbs",
   "abilities": [
     {

@@ -4,7 +4,7 @@
   "name": "Player Character",
   "contentType": "json",
   "designation": "character",
-  "schemaHash": "5a4f52a5-bdbd-38dd-2118-64dd236f43fd",
+  "schemaHash": "686d6692-99dc-9ca1-6786-4dd34d33fa61",
   "schema": {
     "type": "object",
     "required": [
@@ -78,6 +78,10 @@
         "format": "voice",
         "description": "Optional voice used for this character's dialogue. By default, the GM voice will be used."
       },
+      "gender": {
+        "type": "string",
+        "title": "Gender"
+      },
       "origin": {
         "type": "string",
         "title": "Origin",
@@ -134,6 +138,10 @@
         "title": "Species",
         "description": "This character's species — Human or Fey in ordinary project metadata. Optional player-character classification.",
         "referencedFileTypeSlug": "species"
+      },
+      "pronouns": {
+        "type": "string",
+        "title": "Pronouns"
       },
       "weakness": {
         "enum": [
@@ -683,7 +691,9 @@
           "hasmybargains-checkbox",
           "knownbargains-references",
           "signedbargains-references",
-          "hasotherbargains-checkbox"
+          "hasotherbargains-checkbox",
+          "gender-section",
+          "pronouns-section"
         ]
       },
       "tabs": {
@@ -1479,6 +1489,16 @@
         },
         "children": []
       },
+      "gender-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/gender"
+          }
+        },
+        "children": []
+      },
       "heading-2-2": {
         "type": "Heading",
         "props": {
@@ -1701,6 +1721,16 @@
         },
         "children": []
       },
+      "pronouns-text": {
+        "type": "Markdown",
+        "props": {
+          "color": null,
+          "content": {
+            "$state": "/pronouns"
+          }
+        },
+        "children": []
+      },
       "stack-2-2-2-2": {
         "type": "Stack",
         "props": {
@@ -1776,6 +1806,28 @@
         "children": [
           "trackbox-row-concealment",
           "text-3-3-2-2"
+        ]
+      },
+      "gender-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Gender",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "gender-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/gender"
+        },
+        "children": [
+          "gender-heading",
+          "gender-text"
         ]
       },
       "species-select": {
@@ -1918,6 +1970,28 @@
         },
         "children": [
           "stack-2-2-2-2-2-2-2"
+        ]
+      },
+      "pronouns-heading": {
+        "type": "Heading",
+        "props": {
+          "text": "Pronouns",
+          "level": "h3"
+        },
+        "children": []
+      },
+      "pronouns-section": {
+        "type": "Stack",
+        "props": {
+          "gap": "sm",
+          "direction": "vertical"
+        },
+        "visible": {
+          "$state": "/pronouns"
+        },
+        "children": [
+          "pronouns-heading",
+          "pronouns-text"
         ]
       },
       "text-3-2-2-2-2-2": {
@@ -2564,22 +2638,22 @@
         "sourceHandle": "what_does_all_of_this_mean"
       },
       {
-        "id": "edge_brigand-weak-body",
-        "source": "w2",
-        "target": "weak-body",
-        "sourceHandle": "brigand"
-      },
-      {
         "id": "edge_blacksmith-weak-body",
         "source": "w2",
         "target": "weak-body",
         "sourceHandle": "blacksmith"
       },
       {
-        "id": "edge_sellsword-weak-body",
+        "id": "edge_brigand-weak-body",
         "source": "w2",
         "target": "weak-body",
-        "sourceHandle": "sellsword"
+        "sourceHandle": "brigand"
+      },
+      {
+        "id": "edge_druid-weak-head",
+        "source": "w2",
+        "target": "weak-head",
+        "sourceHandle": "druid"
       },
       {
         "id": "edge_fairy-doctor-weak-hands",
@@ -2594,19 +2668,25 @@
         "sourceHandle": "farmhand"
       },
       {
+        "id": "edge_good-for-nothing-weak-heart",
+        "source": "w2",
+        "target": "weak-heart",
+        "sourceHandle": "good-for-nothing"
+      },
+      {
         "id": "edge_milker-weak-hands",
         "source": "w2",
         "target": "weak-hands",
         "sourceHandle": "milker"
       },
       {
-        "id": "edge_druid-weak-head",
+        "id": "edge_courier-weak-legs",
         "source": "w2",
-        "target": "weak-head",
-        "sourceHandle": "druid"
+        "target": "weak-legs",
+        "sourceHandle": "courier"
       },
       {
-        "id": "edge_seanchaí-weak-head",
+        "id": "edge_seanchai-weak-head",
         "source": "w2",
         "target": "weak-head",
         "sourceHandle": "seanchaí"
@@ -2624,22 +2704,10 @@
         "sourceHandle": "bard"
       },
       {
-        "id": "edge_good-for-nothing-weak-heart",
-        "source": "w2",
-        "target": "weak-heart",
-        "sourceHandle": "good-for-nothing"
-      },
-      {
         "id": "edge_piper-weak-heart",
         "source": "w2",
         "target": "weak-heart",
         "sourceHandle": "piper"
-      },
-      {
-        "id": "edge_courier-weak-legs",
-        "source": "w2",
-        "target": "weak-legs",
-        "sourceHandle": "courier"
       },
       {
         "id": "edge_horse-herder-weak-legs",
@@ -2690,22 +2758,16 @@
         "sourceHandle": "used-horse-dealer"
       },
       {
+        "id": "edge_sellsword-weak-body",
+        "source": "w2",
+        "target": "weak-body",
+        "sourceHandle": "sellsword"
+      },
+      {
         "id": "edge_weak-body-all-thumbs",
         "source": "weak-body",
         "target": "w3",
         "sourceHandle": "All Thumbs"
-      },
-      {
-        "id": "edge_weak-body-muddle-headed",
-        "source": "weak-body",
-        "target": "w3",
-        "sourceHandle": "Muddle-Headed"
-      },
-      {
-        "id": "edge_weak-body-poor-judge-of-character",
-        "source": "weak-body",
-        "target": "w3",
-        "sourceHandle": "Poor Judge of Character"
       },
       {
         "id": "edge_weak-body-flat-footed",
@@ -2714,10 +2776,10 @@
         "sourceHandle": "Flat-Footed"
       },
       {
-        "id": "edge_weak-body-squint-eyed",
+        "id": "edge_weak-body-muddle-headed",
         "source": "weak-body",
         "target": "w3",
-        "sourceHandle": "Squint-Eyed"
+        "sourceHandle": "Muddle-Headed"
       },
       {
         "id": "edge_weak-body-open-book",
@@ -2726,22 +2788,16 @@
         "sourceHandle": "Open Book"
       },
       {
-        "id": "edge_weak-hands-short-winded",
-        "source": "weak-hands",
-        "target": "w3",
-        "sourceHandle": "Short-Winded"
-      },
-      {
-        "id": "edge_weak-hands-muddle-headed",
-        "source": "weak-hands",
-        "target": "w3",
-        "sourceHandle": "Muddle-Headed"
-      },
-      {
-        "id": "edge_weak-hands-poor-judge-of-character",
-        "source": "weak-hands",
+        "id": "edge_weak-body-poor-judge-of-character",
+        "source": "weak-body",
         "target": "w3",
         "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-body-squint-eyed",
+        "source": "weak-body",
+        "target": "w3",
+        "sourceHandle": "Squint-Eyed"
       },
       {
         "id": "edge_weak-hands-flat-footed",
@@ -2750,10 +2806,10 @@
         "sourceHandle": "Flat-Footed"
       },
       {
-        "id": "edge_weak-hands-squint-eyed",
+        "id": "edge_weak-hands-muddle-headed",
         "source": "weak-hands",
         "target": "w3",
-        "sourceHandle": "Squint-Eyed"
+        "sourceHandle": "Muddle-Headed"
       },
       {
         "id": "edge_weak-hands-open-book",
@@ -2762,10 +2818,22 @@
         "sourceHandle": "Open Book"
       },
       {
-        "id": "edge_weak-head-short-winded",
-        "source": "weak-head",
+        "id": "edge_weak-hands-poor-judge-of-character",
+        "source": "weak-hands",
+        "target": "w3",
+        "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-hands-short-winded",
+        "source": "weak-hands",
         "target": "w3",
         "sourceHandle": "Short-Winded"
+      },
+      {
+        "id": "edge_weak-hands-squint-eyed",
+        "source": "weak-hands",
+        "target": "w3",
+        "sourceHandle": "Squint-Eyed"
       },
       {
         "id": "edge_weak-head-all-thumbs",
@@ -2774,16 +2842,28 @@
         "sourceHandle": "All Thumbs"
       },
       {
+        "id": "edge_weak-head-flat-footed",
+        "source": "weak-head",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
+        "id": "edge_weak-head-open-book",
+        "source": "weak-head",
+        "target": "w3",
+        "sourceHandle": "Open Book"
+      },
+      {
         "id": "edge_weak-head-poor-judge-of-character",
         "source": "weak-head",
         "target": "w3",
         "sourceHandle": "Poor Judge of Character"
       },
       {
-        "id": "edge_weak-head-flat-footed",
+        "id": "edge_weak-head-short-winded",
         "source": "weak-head",
         "target": "w3",
-        "sourceHandle": "Flat-Footed"
+        "sourceHandle": "Short-Winded"
       },
       {
         "id": "edge_weak-head-squint-eyed",
@@ -2792,8 +2872,26 @@
         "sourceHandle": "Squint-Eyed"
       },
       {
-        "id": "edge_weak-head-open-book",
-        "source": "weak-head",
+        "id": "edge_weak-heart-all-thumbs",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "All Thumbs"
+      },
+      {
+        "id": "edge_weak-heart-flat-footed",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
+        "id": "edge_weak-heart-muddle-headed",
+        "source": "weak-heart",
+        "target": "w3",
+        "sourceHandle": "Muddle-Headed"
+      },
+      {
+        "id": "edge_weak-heart-open-book",
+        "source": "weak-heart",
         "target": "w3",
         "sourceHandle": "Open Book"
       },
@@ -2804,40 +2902,10 @@
         "sourceHandle": "Short-Winded"
       },
       {
-        "id": "edge_weak-heart-all-thumbs",
-        "source": "weak-heart",
-        "target": "w3",
-        "sourceHandle": "All Thumbs"
-      },
-      {
-        "id": "edge_weak-heart-muddle-headed",
-        "source": "weak-heart",
-        "target": "w3",
-        "sourceHandle": "Muddle-Headed"
-      },
-      {
-        "id": "edge_weak-heart-flat-footed",
-        "source": "weak-heart",
-        "target": "w3",
-        "sourceHandle": "Flat-Footed"
-      },
-      {
         "id": "edge_weak-heart-squint-eyed",
         "source": "weak-heart",
         "target": "w3",
         "sourceHandle": "Squint-Eyed"
-      },
-      {
-        "id": "edge_weak-heart-open-book",
-        "source": "weak-heart",
-        "target": "w3",
-        "sourceHandle": "Open Book"
-      },
-      {
-        "id": "edge_weak-legs-short-winded",
-        "source": "weak-legs",
-        "target": "w3",
-        "sourceHandle": "Short-Winded"
       },
       {
         "id": "edge_weak-legs-all-thumbs",
@@ -2852,10 +2920,22 @@
         "sourceHandle": "Muddle-Headed"
       },
       {
+        "id": "edge_weak-legs-open-book",
+        "source": "weak-legs",
+        "target": "w3",
+        "sourceHandle": "Open Book"
+      },
+      {
         "id": "edge_weak-legs-poor-judge-of-character",
         "source": "weak-legs",
         "target": "w3",
         "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-legs-short-winded",
+        "source": "weak-legs",
+        "target": "w3",
+        "sourceHandle": "Short-Winded"
       },
       {
         "id": "edge_weak-legs-squint-eyed",
@@ -2864,34 +2944,10 @@
         "sourceHandle": "Squint-Eyed"
       },
       {
-        "id": "edge_weak-legs-open-book",
-        "source": "weak-legs",
-        "target": "w3",
-        "sourceHandle": "Open Book"
-      },
-      {
-        "id": "edge_weak-eyes-short-winded",
-        "source": "weak-eyes",
-        "target": "w3",
-        "sourceHandle": "Short-Winded"
-      },
-      {
         "id": "edge_weak-eyes-all-thumbs",
         "source": "weak-eyes",
         "target": "w3",
         "sourceHandle": "All Thumbs"
-      },
-      {
-        "id": "edge_weak-eyes-muddle-headed",
-        "source": "weak-eyes",
-        "target": "w3",
-        "sourceHandle": "Muddle-Headed"
-      },
-      {
-        "id": "edge_weak-eyes-poor-judge-of-character",
-        "source": "weak-eyes",
-        "target": "w3",
-        "sourceHandle": "Poor Judge of Character"
       },
       {
         "id": "edge_weak-eyes-flat-footed",
@@ -2900,14 +2956,26 @@
         "sourceHandle": "Flat-Footed"
       },
       {
+        "id": "edge_weak-eyes-muddle-headed",
+        "source": "weak-eyes",
+        "target": "w3",
+        "sourceHandle": "Muddle-Headed"
+      },
+      {
         "id": "edge_weak-eyes-open-book",
         "source": "weak-eyes",
         "target": "w3",
         "sourceHandle": "Open Book"
       },
       {
-        "id": "edge_weak-shadow-short-winded",
-        "source": "weak-shadow",
+        "id": "edge_weak-eyes-poor-judge-of-character",
+        "source": "weak-eyes",
+        "target": "w3",
+        "sourceHandle": "Poor Judge of Character"
+      },
+      {
+        "id": "edge_weak-eyes-short-winded",
+        "source": "weak-eyes",
         "target": "w3",
         "sourceHandle": "Short-Winded"
       },
@@ -2918,10 +2986,22 @@
         "sourceHandle": "All Thumbs"
       },
       {
+        "id": "edge_weak-shadow-flat-footed",
+        "source": "weak-shadow",
+        "target": "w3",
+        "sourceHandle": "Flat-Footed"
+      },
+      {
         "id": "edge_weak-shadow-muddle-headed",
         "source": "weak-shadow",
         "target": "w3",
         "sourceHandle": "Muddle-Headed"
+      },
+      {
+        "id": "edge_weak-shadow-open-book",
+        "source": "weak-shadow",
+        "target": "w3",
+        "sourceHandle": "Open Book"
       },
       {
         "id": "edge_weak-shadow-poor-judge-of-character",
@@ -2930,10 +3010,10 @@
         "sourceHandle": "Poor Judge of Character"
       },
       {
-        "id": "edge_weak-shadow-flat-footed",
+        "id": "edge_weak-shadow-short-winded",
         "source": "weak-shadow",
         "target": "w3",
-        "sourceHandle": "Flat-Footed"
+        "sourceHandle": "Short-Winded"
       },
       {
         "id": "edge_weak-shadow-squint-eyed",
@@ -2987,13 +3067,41 @@
         "sourceHandle": "heavy-black-coat"
       },
       {
-        "id": "edge_9be80839-1249-4646-ba37-74d4ffc14cc7",
+        "id": "edge_w1-to-name",
         "source": "w1",
         "target": "node_2871a81c-1a1f-46ec-a814-a142bb5f8043"
       },
       {
-        "id": "edge_f811994b-17fa-4093-984b-8ffe2135b098",
+        "id": "edge_name-to-gender",
         "source": "node_2871a81c-1a1f-46ec-a814-a142bb5f8043",
+        "target": "w-gender"
+      },
+      {
+        "id": "edge_w-gender-man",
+        "source": "w-gender",
+        "target": "w2",
+        "sourceHandle": "man"
+      },
+      {
+        "id": "edge_w-gender-woman",
+        "source": "w-gender",
+        "target": "w2",
+        "sourceHandle": "woman"
+      },
+      {
+        "id": "edge_w-gender-other",
+        "source": "w-gender",
+        "target": "w-gender-other",
+        "sourceHandle": "other"
+      },
+      {
+        "id": "edge_w-gender-other-next",
+        "source": "w-gender-other",
+        "target": "w-pronouns-other"
+      },
+      {
+        "id": "edge_w-pronouns-other-next",
+        "source": "w-pronouns-other",
         "target": "w2"
       }
     ],
@@ -3003,7 +3111,7 @@
         "data": {
           "title": "Create your Character",
           "eyebrow": "Internal Fey Affairs",
-          "subtitle": "Who are you?  \nThree small choices: the trade you learned, the clothes you wear, and the weakness that will get you into trouble.",
+          "subtitle": "Who are you?\nFive small choices: your name, gender, the trade you learned, the clothes you wear, and the weakness that will get you into trouble.",
           "vignette": 100,
           "background": {
             "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/5cb39482-b772-4301-8bca-4c2a1df56478",
@@ -3018,7 +3126,7 @@
           "accent": "#6ca789",
           "layout": "list",
           "prompt": "What is your trade?",
-          "eyebrow": "Step 2 of 4 — Your origin",
+          "eyebrow": "Step 3 of 5 — Your trade",
           "options": [
             {
               "id": "bard",
@@ -3190,7 +3298,7 @@
           "accent": "#758c7e",
           "layout": "list",
           "prompt": "What is your one weakness?",
-          "eyebrow": "Step 3 of 4 — Your weakness",
+          "eyebrow": "Step 4 of 5 — Your weakness",
           "options": [
             {
               "id": "All Thumbs",
@@ -3245,7 +3353,7 @@
           "accent": "#758c7e",
           "layout": "list",
           "prompt": "What is your one weakness?",
-          "eyebrow": "Step 3 of 4 — Your weakness",
+          "eyebrow": "Step 4 of 5 — Your weakness",
           "options": [
             {
               "id": "Short-Winded",
@@ -3300,7 +3408,7 @@
           "accent": "#758c7e",
           "layout": "list",
           "prompt": "What is your one weakness?",
-          "eyebrow": "Step 3 of 4 — Your weakness",
+          "eyebrow": "Step 4 of 5 — Your weakness",
           "options": [
             {
               "id": "Short-Winded",
@@ -3355,7 +3463,7 @@
           "accent": "#758c7e",
           "layout": "list",
           "prompt": "What is your one weakness?",
-          "eyebrow": "Step 3 of 4 — Your weakness",
+          "eyebrow": "Step 4 of 5 — Your weakness",
           "options": [
             {
               "id": "Short-Winded",
@@ -3410,7 +3518,7 @@
           "accent": "#758c7e",
           "layout": "list",
           "prompt": "What is your one weakness?",
-          "eyebrow": "Step 3 of 4 — Your weakness",
+          "eyebrow": "Step 4 of 5 — Your weakness",
           "options": [
             {
               "id": "Short-Winded",
@@ -3465,7 +3573,7 @@
           "accent": "#758c7e",
           "layout": "list",
           "prompt": "What is your one weakness?",
-          "eyebrow": "Step 3 of 4 — Your weakness",
+          "eyebrow": "Step 4 of 5 — Your weakness",
           "options": [
             {
               "id": "Short-Winded",
@@ -3520,7 +3628,7 @@
           "accent": "#758c7e",
           "layout": "list",
           "prompt": "What is your one weakness?",
-          "eyebrow": "Step 3 of 4 — Your weakness",
+          "eyebrow": "Step 4 of 5 — Your weakness",
           "options": [
             {
               "id": "Short-Winded",
@@ -3575,7 +3683,7 @@
           "accent": "#6ca789",
           "layout": "list",
           "prompt": "What clothes do you own, besides your common clothes?",
-          "eyebrow": "Step 4 of 4 — Your spare clothes",
+          "eyebrow": "Step 5 of 5 — Your spare clothes",
           "options": [
             {
               "id": "thin-tunic",
@@ -3708,18 +3816,85 @@
           "accent": "#ecdfc4",
           "anchor": "lower-left",
           "prompt": "What's your name?",
-          "eyebrow": "Step 1 of 4 — Your name",
+          "eyebrow": "Step 1 of 5 — Your name",
           "optional": true,
           "vignette": 100,
           "background": {
             "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/1e223008-3e3f-4518-85a6-a853f402050f",
             "kind": "image"
           },
-          "placeholder": "Skip for AI-generated name",
-          "ai_instruction": "The input becomes the player character's name. If left empty, generate an Irish-sounding name."
+          "placeholder": "Skip for AI-generated name"
         },
         "type": "shortText",
         "field": "your_question"
+      },
+      {
+        "id": "w-gender",
+        "data": {
+          "accent": "#6ca789",
+          "layout": "list",
+          "prompt": "Who is your protagonist?",
+          "eyebrow": "Step 2 of 5 — Your protagonist",
+          "options": [
+            {
+              "id": "man",
+              "label": "Man, he/him",
+              "ai_instruction": "Maps to gender Man and pronouns he/him."
+            },
+            {
+              "id": "woman",
+              "label": "Woman, she/her",
+              "ai_instruction": "Maps to gender Woman and pronouns she/her."
+            },
+            {
+              "id": "other",
+              "label": "Other",
+              "ai_instruction": "Continue to the self-described gender and pronoun questions."
+            }
+          ],
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/1e223008-3e3f-4518-85a6-a853f402050f",
+            "kind": "image"
+          },
+          "ai_instruction": "Use this answer to determine the character's gender and default pronouns: Man means gender Man and pronouns he/him; Woman means gender Woman and pronouns she/her. Other continues to the self-description questions; do not store the choice label as the character's gender."
+        },
+        "type": "choice",
+        "field": "genderChoice"
+      },
+      {
+        "id": "w-gender-other",
+        "data": {
+          "prompt": "Describe your character's gender.",
+          "eyebrow": "Step 2 of 5 — Gender",
+          "optional": true,
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/1e223008-3e3f-4518-85a6-a853f402050f",
+            "kind": "image"
+          },
+          "placeholder": "e.g. nonbinary, genderfluid, …",
+          "ai_instruction": "Stores the self-described gender on the character."
+        },
+        "type": "shortText",
+        "field": "gender"
+      },
+      {
+        "id": "w-pronouns-other",
+        "data": {
+          "prompt": "Which pronouns should the narrator use?",
+          "eyebrow": "Step 2 of 5 — Pronouns",
+          "optional": true,
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/avatars/e092361a-7121-4ef0-9f4d-fe08d95dde2c/1e223008-3e3f-4518-85a6-a853f402050f",
+            "kind": "image"
+          },
+          "placeholder": "e.g. they/them",
+          "ai_instruction": "Stores the narrator pronouns on the character."
+        },
+        "type": "shortText",
+        "field": "pronouns"
       }
     ],
     "start": "w1",
@@ -3732,7 +3907,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit (outfit) to the Common Clothes pattern; the filtered picker offers it plus the spare starting Outfit chosen in the wizard (its startingOrigins include the PC's Origin). Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit (outfit) to the Common Clothes pattern; the filtered picker offers it plus the spare starting Outfit chosen in the wizard (its startingOrigins include the PC's Origin). Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one. Use the genderChoice answer to set common selections: Man means gender Man and pronouns he/him; Woman means gender Woman and pronouns she/her. For Other, store the answer to the self-description gender question in gender and the answer to the narrator pronoun question in pronouns."
     }
   }
 }

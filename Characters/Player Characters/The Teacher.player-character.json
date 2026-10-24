@@ -10,6 +10,7 @@
       "y": 0.37535953978907
     }
   },
+  "gender": "Woman",
   "origin": {
     "slug": "teacher",
     "referenceId": "019fe8d9-eec8-7754-94b4-f3b936cca4c5",
@@ -20,6 +21,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "she/her",
   "weakness": "Short-Winded",
   "abilities": [
     {

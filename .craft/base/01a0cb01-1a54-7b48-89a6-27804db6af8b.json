@@ -7,6 +7,7 @@
       "y": 0.3408437200383509
     }
   },
+  "gender": "Man",
   "origin": {
     "slug": "grocer",
     "referenceId": "019fe8d9-ed48-7644-850f-3e2a3a8d2c75",
@@ -17,6 +18,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "he/him",
   "weakness": "Open Book",
   "abilities": [
     {

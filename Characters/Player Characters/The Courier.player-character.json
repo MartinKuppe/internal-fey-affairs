@@ -10,6 +10,7 @@
       "y": 0.5019175455417066
     }
   },
+  "gender": "Woman",
   "origin": {
     "slug": "courier",
     "referenceId": "019fe8d9-edf2-70dc-b674-ab8e3e58d480",
@@ -20,6 +21,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "she/her",
   "weakness": "Muddle-Headed",
   "abilities": [
     {

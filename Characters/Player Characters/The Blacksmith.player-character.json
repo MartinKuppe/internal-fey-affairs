@@ -7,6 +7,7 @@
     "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/930588b2-0eab-45e1-aa8d-b750ae1614c1",
     "backgroundRemovedUrl": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/24e721ec-4b5f-46bc-b3ce-8f34284c59e6"
   },
+  "gender": "Man",
   "origin": {
     "slug": "blacksmith",
     "referenceId": "019fe8d9-f0da-7f3c-adfe-176154639f1a",
@@ -17,6 +18,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "he/him",
   "weakness": "Open Book",
   "abilities": [
     {

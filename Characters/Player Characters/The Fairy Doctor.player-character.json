@@ -10,6 +10,7 @@
       "y": 0.5134228187919463
     }
   },
+  "gender": "Woman",
   "origin": {
     "slug": "fairy-doctor",
     "referenceId": "019ff7eb-af42-757d-af35-41972e67519a",
@@ -20,6 +21,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "she/her",
   "weakness": "Flat-Footed",
   "abilities": [
     {

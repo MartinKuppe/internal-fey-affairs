@@ -10,6 +10,7 @@
       "y": 0.5632790028763183
     }
   },
+  "gender": "Woman",
   "origin": {
     "slug": "piper",
     "referenceId": "019fe8d9-eef4-7880-a0c8-55060bd51659",
@@ -20,6 +21,7 @@
     "referenceId": "019ff21e-b596-794c-a083-a9eed4784ce2",
     "fileTypeSlug": "outfit"
   },
+  "pronouns": "she/her",
   "weakness": "Squint-Eyed",
   "abilities": [
     {
