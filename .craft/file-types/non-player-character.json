@@ -432,5 +432,262 @@
   },
   "imageStyleInstructions": null,
   "showCoverImage": true,
-  "creationFlow": null
+  "creationFlow": {
+    "id": "da19f155-cbc2-4143-9c8e-21223f4c194a",
+    "edges": [
+      {
+        "id": "edge_275e203b-8ac9-40ea-9a94-f9514082e3c3",
+        "source": "0d240b0f-a6ee-4cb9-8e5c-1c4ff0332312",
+        "target": "node_cc9ebc10-42c3-4b54-839c-724c3e74052a"
+      },
+      {
+        "id": "edge_074aa923-fd77-4fce-b1ae-f3796fa48c81",
+        "source": "node_7df00c14-ac12-4515-9685-ac9372c86681",
+        "target": "node_5966ecb9-c7bc-487c-8318-8d07202b2158"
+      },
+      {
+        "id": "edge_1dd3fea6-a978-4180-90c5-d9769b58e535",
+        "source": "node_cc9ebc10-42c3-4b54-839c-724c3e74052a",
+        "target": "node_5966ecb9-c7bc-487c-8318-8d07202b2158",
+        "sourceHandle": "a"
+      },
+      {
+        "id": "edge_0acc5326-e68d-4321-8914-222e2a0b452b",
+        "source": "node_5966ecb9-c7bc-487c-8318-8d07202b2158",
+        "target": "node_b28c41b0-f84a-432b-ab5a-c95fa8b3a515"
+      },
+      {
+        "id": "edge_f50252cc-1d6a-4d77-a0bc-3d38fd487579",
+        "source": "node_b28c41b0-f84a-432b-ab5a-c95fa8b3a515",
+        "target": "node_cc9ebc10-42c3-4b54-839c-724c3e74052a",
+        "sourceHandle": "b"
+      },
+      {
+        "id": "edge_9f959dbb-a88b-4c7c-8528-579e5918de82",
+        "source": "node_b28c41b0-f84a-432b-ab5a-c95fa8b3a515",
+        "target": "node_6d7ddfc7-73a5-42a4-9eb3-068b8979db85",
+        "sourceHandle": "a"
+      },
+      {
+        "id": "edge_075bd1ec-c266-46fb-b561-a71526e8d219",
+        "source": "node_6d7ddfc7-73a5-42a4-9eb3-068b8979db85",
+        "target": "node_b28c41b0-f84a-432b-ab5a-c95fa8b3a515",
+        "sourceHandle": "a"
+      },
+      {
+        "id": "edge_fee17f84-a7fc-4680-a127-08ce17eb8b73",
+        "source": "node_cc9ebc10-42c3-4b54-839c-724c3e74052a",
+        "target": "node_e0460ee2-dfc3-4509-beb9-8229b190cad5",
+        "sourceHandle": "b"
+      },
+      {
+        "id": "edge_e91ffb67-0f31-4e46-a698-48fc02f87e54",
+        "source": "node_e0460ee2-dfc3-4509-beb9-8229b190cad5",
+        "target": "node_b28c41b0-f84a-432b-ab5a-c95fa8b3a515"
+      },
+      {
+        "id": "edge_49dd7ccf-41d6-4f91-a2d1-51a90d004b33",
+        "source": "node_cc9ebc10-42c3-4b54-839c-724c3e74052a",
+        "target": "node_230221c5-aad5-4804-8869-36d2672b422c",
+        "sourceHandle": "the_character_part"
+      },
+      {
+        "id": "edge_9e40b5c9-debe-46da-8117-8feff88f2a02",
+        "source": "node_230221c5-aad5-4804-8869-36d2672b422c",
+        "target": "node_b28c41b0-f84a-432b-ab5a-c95fa8b3a515"
+      },
+      {
+        "id": "edge_1e2eb54d-99ac-469d-aae4-7c0636cb2ae5",
+        "source": "node_6d7ddfc7-73a5-42a4-9eb3-068b8979db85",
+        "target": "node_defb033f-caa1-4554-ab9d-30d25d2c8ad8",
+        "sourceHandle": "how"
+      },
+      {
+        "id": "edge_3a182a0b-588f-4b60-8e26-d6c82751623f",
+        "source": "node_defb033f-caa1-4554-ab9d-30d25d2c8ad8",
+        "target": "node_b28c41b0-f84a-432b-ab5a-c95fa8b3a515"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "0d240b0f-a6ee-4cb9-8e5c-1c4ff0332312",
+        "data": {
+          "title": "Non-Player Character",
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "eyebrow": "DON'T CREATE YOUR CHARACTER",
+          "subtitle": "I asked you not to select this type, but you did anyway.\nMy, aren't you a little Rebel?",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/292d90e8-513f-4d2f-b3b0-e74b55e809cf",
+            "kind": "image"
+          }
+        },
+        "type": "cover"
+      },
+      {
+        "id": "node_cc9ebc10-42c3-4b54-839c-724c3e74052a",
+        "data": {
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "layout": "list",
+          "prompt": "Which part of \"Non-Player Character\" don't you understand?",
+          "eyebrow": "",
+          "options": [
+            {
+              "id": "a",
+              "info": "It sounds French.",
+              "label": "The \"Non\" part"
+            },
+            {
+              "id": "b",
+              "info": "Player means I can play it, right?",
+              "label": "The \"Player\" part"
+            },
+            {
+              "id": "the_character_part",
+              "info": "It's a character, I want a character, what's the problem?",
+              "label": "The \"Character\" part",
+              "ai_instruction": ""
+            }
+          ],
+          "multiple": false,
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/77403ee5-9705-4a11-bacb-93e84a904434",
+            "kind": "image"
+          },
+          "ai_instruction": ""
+        },
+        "type": "choice",
+        "field": "your_question"
+      },
+      {
+        "id": "node_5966ecb9-c7bc-487c-8318-8d07202b2158",
+        "data": {
+          "body": "non- (prefix)\n\nUsed in the sense of \"no\" or \"none\", to show lack of or failure to perform; or in the sense of \"not\", to negate the meaning of the word to which it is prefixed.\n\nExamples:\n- nonpayment (“lack of payment, failure to pay”)\n- nonaggressive (“not aggressive”)\n\nIn the case of  \"Non-Player Character\", we have the second meaning: It is NOT a player character; which means it can't be played.",
+          "title": "The meaning of \"Non-\"",
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "eyebrow": "You don't understand the \"Non\" part",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/93b36678-cfbf-458f-b3dd-3000abae1abf",
+            "kind": "image"
+          }
+        },
+        "type": "statement"
+      },
+      {
+        "id": "node_b28c41b0-f84a-432b-ab5a-c95fa8b3a515",
+        "data": {
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "layout": "list",
+          "prompt": "So please go back to the character selection screen.",
+          "eyebrow": "",
+          "options": [
+            {
+              "id": "a",
+              "label": "Alright"
+            },
+            {
+              "id": "b",
+              "label": "I still don't understand..."
+            }
+          ],
+          "multiple": false,
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/9e428b0c-c4a2-4e5d-adae-8e76da0c61f0",
+            "kind": "image"
+          },
+          "ai_instruction": ""
+        },
+        "type": "choice",
+        "field": "your_question_2"
+      },
+      {
+        "id": "node_6d7ddfc7-73a5-42a4-9eb3-068b8979db85",
+        "data": {
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "layout": "list",
+          "prompt": "Now.",
+          "eyebrow": "Why are you still here?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Ok"
+            },
+            {
+              "id": "how",
+              "label": "How do I go back?",
+              "ai_instruction": ""
+            }
+          ],
+          "multiple": false,
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e3166b60-ee65-46bd-a502-f1dce1edf1b2",
+            "kind": "image"
+          },
+          "ai_instruction": ""
+        },
+        "type": "choice",
+        "field": "your_question_3"
+      },
+      {
+        "id": "node_e0460ee2-dfc3-4509-beb9-8229b190cad5",
+        "data": {
+          "body": "Yes, \"player\" alone means that you can play the character. But there's a \"Non-\" before that, which negates that: This kind of character is NOT playable.",
+          "title": "The meaning of \"Player\"",
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "eyebrow": "You don't understand the \"Player\" part",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/e45b900d-349c-43b7-9704-394674e0569c",
+            "kind": "image"
+          }
+        },
+        "type": "statement"
+      },
+      {
+        "id": "node_230221c5-aad5-4804-8869-36d2672b422c",
+        "data": {
+          "body": "A game contains many kinds of characters. Some are playable (\"\"Player Character\" or \"PC\"), and some are not playable (\"Non-Player Character\" or \"NPC\") .\nCraft doesn't understand that; it proposes all kinds of characters as playable. But you are a human; you should understand the difference.",
+          "title": "The meaning of \"Character\"",
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "eyebrow": "You don't understand the \"Character\" part",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/1b188133-91aa-4191-afb5-a836dbda9e31",
+            "kind": "image"
+          }
+        },
+        "type": "statement"
+      },
+      {
+        "id": "node_defb033f-caa1-4554-ab9d-30d25d2c8ad8",
+        "data": {
+          "body": "Look at the top left corner of your screen, left of the progress bar. There's a little arrow. See it? Click onto that arrow until it becomes an \"x\", then click once more.\n\nYou're welcome.",
+          "title": "How to go back?",
+          "accent": "#ecdfc4",
+          "anchor": "lower-left",
+          "eyebrow": "",
+          "vignette": 100,
+          "background": {
+            "url": "https://media.craftrpgs.com/containers/019fde04-44fd-75c8-8f5e-d680c880596d/images/292d90e8-513f-4d2f-b3b0-e74b55e809cf",
+            "kind": "image"
+          }
+        },
+        "type": "statement"
+      }
+    ],
+    "start": "0d240b0f-a6ee-4cb9-8e5c-1c4ff0332312",
+    "title": "Character creation",
+    "version": 1
+  }
 }
