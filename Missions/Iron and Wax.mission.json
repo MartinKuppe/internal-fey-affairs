@@ -25,9 +25,9 @@
         "fileTypeSlug": "location"
       },
       "objective": "Hear Coinin's proposal for obtaining the honey.",
-      "completionCondition": "The team knows Buaic needs help at the beekeeper's workshop and may pay honey, and has chosen to approach him without being told the cause.",
+      "gmInstructions": "Coinin knows the problem, not its cause: no iron or horseshoe explanation. He neither owns nor promises Buaic's honey. Keep the supply chain hidden. Let the team use the Fairy Door to the Hidden Fairy Door or another sensible route; this bypasses travel, not the obstacles.",
       "mandatoryChallenge": "",
-      "gmInstructions": "Coinin knows the problem, not its cause: no iron or horseshoe explanation. He neither owns nor promises Buaic's honey. Keep the supply chain hidden. Let the team use the Fairy Door to the Hidden Fairy Door or another sensible route; this bypasses travel, not the obstacles."
+      "completionCondition": "The team knows Buaic needs help at the beekeeper's workshop and may pay honey, and has chosen to approach him without being told the cause."
     },
     {
       "key": "meet-buaic",
@@ -39,8 +39,6 @@
         "fileTypeSlug": "location"
       },
       "objective": "Hear Buaic's symptoms and agree how to help.",
-      "completionCondition": "Buaic has described his symptoms and the team has agreed how to help; record any accepted honey bargain before proceeding, without inventing assent.",
-      "mandatoryChallenge": "",
       "loreUnlocks": [
         {
           "card": {
@@ -51,7 +49,9 @@
           "level": "Common Knowledge"
         }
       ],
-      "gmInstructions": "Unlock Brownie Common Knowledge. Respect his professional pride and real impairment. He refuses further Iron Flood details; no Rome, armies, northward sense or active ping explanation. If the player suggests iron, he admits it is plausible, not confirmed. Before approaching the skeps, offer a separate bargain: 'If you remove whatever is preventing me from safely using my workshop, I will give you two measures of honey.' Let the team accept or negotiate. On acceptance, create Buaic's Workshop bargain with the accepting team and Buaic, record exact agreed wording and each obligation, and present the document handout per Grace, Language and Bargains. Do not pre-create acceptance or merge this with Coinin's Silence. 'Coinin does not own my honey. He has not bargained for me.'"
+      "gmInstructions": "Unlock Brownie Common Knowledge. Respect his professional pride and real impairment. He refuses further Iron Flood details; no Rome, armies, northward sense or active ping explanation. If the player suggests iron, he admits it is plausible, not confirmed. Before approaching the skeps, offer a separate bargain: 'If you remove whatever is preventing me from safely using my workshop, I will give you two measures of honey.' Let the team read the offered terms and accept or negotiate; present the bargain at the offer according to Grace, Language and Bargains. On acceptance, create Buaic's Workshop bargain with the accepting team and Buaic, record exact agreed wording and each obligation. Do not pre-create acceptance or merge this with Coinin's Silence. 'Coinin does not own my honey. He has not bargained for me.'",
+      "mandatoryChallenge": "",
+      "completionCondition": "Buaic has described his symptoms and the team has agreed how to help; record any accepted honey bargain before proceeding, without inventing assent."
     },
     {
       "key": "bee-skeps",
@@ -63,9 +63,9 @@
         "fileTypeSlug": "location"
       },
       "objective": "Pass the bee skeps without provoking them.",
-      "completionCondition": "The team has passed the skeps and any disturbance or sting consequences are resolved.",
+      "gmInstructions": "Keep the obstacle light. A minor disturbance or single sting may cause 1 Nerve Depletion; a swarm or badly mishandled hive may cause 1 Health Depletion. Choose the fitting consequence, not both automatically. Safe clever handling needs no roll. Apply the normal critical limits; never make this lethal or a dead end.",
       "mandatoryChallenge": "Resolve passage past the bees using the team's approach. Safe, clever handling needs no roll; if disturbance is meaningfully uncertain, request one appropriate check and announce the fitting Nerve or Health risk. Do not apply both automatically or block workshop access on failure.",
-      "gmInstructions": "Keep the obstacle light. A minor disturbance or single sting may cause 1 Nerve Depletion; a swarm or badly mishandled hive may cause 1 Health Depletion. Choose the fitting consequence, not both automatically. Safe clever handling needs no roll. Apply the normal critical limits; never make this lethal or a dead end."
+      "completionCondition": "The team has passed the skeps and any disturbance or sting consequences are resolved."
     },
     {
       "key": "workshop-discovery",
@@ -77,9 +77,9 @@
         "fileTypeSlug": "location"
       },
       "objective": "Enter the workshop and identify what has changed.",
-      "completionCondition": "Inspection has revealed the deliberately placed iron horseshoes and the sleeping apprentice holding another; proceed without requiring the theft connection yet.",
+      "gmInstructions": "Reveal the iron and then the horseshoes through inspection, not a gatekeeping roll. A protagonist with smith training recognises familiar village work and threshold protection; other protagonists can read the deliberate placement and protective intent plainly. Leave the theft connection for the player to make. Meabh can explain that contact hurts Fey and dense iron disrupts their directional/spatial sense, making places feel wrong or missing. No full scientific lecture or Roman connection.",
       "mandatoryChallenge": "",
-      "gmInstructions": "Reveal the iron and then the horseshoes through inspection, not a gatekeeping roll. A protagonist with smith training recognises familiar village work and threshold protection; other protagonists can read the deliberate placement and protective intent plainly. Leave the theft connection for the player to make. Meabh can explain that contact hurts Fey and dense iron disrupts their directional/spatial sense, making places feel wrong or missing. No full scientific lecture or Roman connection."
+      "completionCondition": "Inspection has revealed the deliberately placed iron horseshoes and the sleeping apprentice holding another; proceed without requiring the theft connection yet."
     },
     {
       "key": "clear-the-workshop",
@@ -91,9 +91,9 @@
         "fileTypeSlug": "location"
       },
       "objective": "Remove the scattered iron without startling the apprentice.",
-      "completionCondition": "The scattered iron has been removed and the apprentice's final horseshoe remains to address, or his waking brings the apprentice beat forward; any remaining caches still need clearing before payment.",
+      "gmInstructions": "No fixed horseshoe count. Iron, smithcraft and observation can help find caches; roll only if noise or another meaningful risk matters. A missed cache or noise leads to feedback or the apprentice waking, not repeated identical checks. Move collected iron away from Buaic and the entrance. Do not set workshop-cleared until the final horseshoe is removed and he can safely enter.",
       "mandatoryChallenge": "Address removing the iron without startling the apprentice. Check only meaningful noise or other risks, not each horseshoe. Use Buaic's improving perception as feedback; if the apprentice wakes, carry unresolved clearance into his beat instead of repeating the same check.",
-      "gmInstructions": "No fixed horseshoe count. Iron, smithcraft and observation can help find caches; roll only if noise or another meaningful risk matters. A missed cache or noise leads to feedback or the apprentice waking, not repeated identical checks. Move collected iron away from Buaic and the entrance. Do not set workshop-cleared until the final horseshoe is removed and he can safely enter."
+      "completionCondition": "The scattered iron has been removed and the apprentice's final horseshoe remains to address, or his waking brings the apprentice beat forward; any remaining caches still need clearing before payment."
     },
     {
       "key": "apprentice",
@@ -105,9 +105,9 @@
         "fileTypeSlug": "location"
       },
       "objective": "Persuade the apprentice to surrender the last horseshoe and return the stolen protections.",
-      "completionCondition": "The final horseshoe and remaining caches are removed, Buaic can enter safely, and the apprentice has agreed to take the horseshoes back to their owners; record workshop-cleared as 1 without lifting the village watch.",
+      "gmInstructions": "Use a few rumours naturally, not a checklist. Keep him sympathetic. Meabh takes his fear seriously: 'She does not turn into a raven.' 'So there is a raven?' She says nothing. At 'liar', she reacts sharply: 'Who told you that?' or 'That is a dangerous thing to say about a Queen.' No explanation of why. She may disclose 'She owns my service. Which is near enough to owning me,' but no details of her assignment. Discuss domestic Fey not all being alike, theft, unprotected households and the strengthened watch. When the player connects the cache to missing village horseshoes, he confesses. He takes the horseshoes away and promises to return them 'soon'; do not clear the village lockdown. Resolve panic through another approach if needed. Set workshop-cleared to 1 only once Buaic can enter safely.",
       "mandatoryChallenge": "Resolve the frightened apprentice's resistance to relinquishing his protection, allowing reassurance, explanation or another player approach. Roll only for meaningful uncertainty or danger; gentle cooperation needs no roll. If panic leads to thrown iron, resolve that distinct danger without requiring success on a repeated persuasion check.",
-      "gmInstructions": "Use a few rumours naturally, not a checklist. Keep him sympathetic. Meabh takes his fear seriously: 'She does not turn into a raven.' 'So there is a raven?' She says nothing. At 'liar', she reacts sharply: 'Who told you that?' or 'That is a dangerous thing to say about a Queen.' No explanation of why. She may disclose 'She owns my service. Which is near enough to owning me,' but no details of her assignment. Discuss domestic Fey not all being alike, theft, unprotected households and the strengthened watch. When the player connects the cache to missing village horseshoes, he confesses. He takes the horseshoes away and promises to return them 'soon'; do not clear the village lockdown. Resolve panic through another approach if needed. Set workshop-cleared to 1 only once Buaic can enter safely."
+      "completionCondition": "The final horseshoe and remaining caches are removed, Buaic can enter safely, and the apprentice has agreed to take the horseshoes back to their owners; record workshop-cleared as 1 without lifting the village watch."
     },
     {
       "key": "buaics-payment",
@@ -119,8 +119,6 @@
         "fileTypeSlug": "location"
       },
       "objective": "Restore Buaic's work and receive the promised payment.",
-      "completionCondition": "The agreed honey payment and separate candle gift have been received and recorded, and the fulfilled Buaic's Workshop bargain is resolved; proceed to honey-delivery.",
-      "mandatoryChallenge": "",
       "loreUnlocks": [
         {
           "card": {
@@ -131,7 +129,9 @@
           "level": "Deep Lore"
         }
       ],
-      "gmInstructions": "Resolve the team's workshop obligation when access is restored and Buaic's honey obligation when paid; resolve Buaic's Workshop once both are fulfilled. Honour any negotiated wording. The candle is an additional personal gift, not contract payment or a new condition. Apply normal courtesy rules if relevant without manufacturing a dispute or withholding rewards. Unlock Brownie Deep Lore through the exchange: Brownies and Hobs normally work for humans at night in return for food, cream or milk; Buaic is not usually the one hiring humans. Do not reveal who consumes those supplies. 'Or so I've heard' hints at Pantry Hob gossip without explaining it. Contrast his genuine generosity with Coinin's opportunism."
+      "gmInstructions": "Resolve the team's workshop obligation when access is restored and Buaic's honey obligation when paid; resolve Buaic's Workshop once both are fulfilled. Honour any negotiated wording. The candle is an additional personal gift, not contract payment or a new condition. Apply normal courtesy rules if relevant without manufacturing a dispute or withholding rewards. Unlock Brownie Deep Lore through the exchange: Brownies and Hobs normally work for humans at night in return for food, cream or milk; Buaic is not usually the one hiring humans. Do not reveal who consumes those supplies. 'Or so I've heard' hints at Pantry Hob gossip without explaining it. Contrast his genuine generosity with Coinin's opportunism.",
+      "mandatoryChallenge": "",
+      "completionCondition": "The agreed honey payment and separate candle gift have been received and recorded, and the fulfilled Buaic's Workshop bargain is resolved; proceed to honey-delivery."
     },
     {
       "key": "honey-delivery",
@@ -143,9 +143,9 @@
         "fileTypeSlug": "location"
       },
       "objective": "Deliver the honey to Coinin.",
-      "completionCondition": "Coinin has received two measures of honey and only that goods obligation is marked resolved; proceed to candle-home, leaving his nondisclosure promise active.",
+      "gmInstructions": "Keep the honey tracker at target as historical objective progress. In Coinin's Silence, resolve the accepting party's honey obligation independently. Do not alter the cream or milk obligations and do not resolve Coinin's ongoing nondisclosure obligation.",
       "mandatoryChallenge": "",
-      "gmInstructions": "Keep the honey tracker at target as historical objective progress. In Coinin's Silence, resolve the accepting party's honey obligation independently. Do not alter the cream or milk obligations and do not resolve Coinin's ongoing nondisclosure obligation."
+      "completionCondition": "Coinin has received two measures of honey and only that goods obligation is marked resolved; proceed to candle-home, leaving his nondisclosure promise active."
     },
     {
       "key": "candle-home",
@@ -157,9 +157,9 @@
         "fileTypeSlug": "location"
       },
       "objective": "Bring Buaic's candle to Grannie.",
-      "completionCondition": "Grannie has received Buaic's candle and its homecoming payoff has played out; complete the Mission once workshop restoration and honey delivery are also recorded.",
+      "gmInstructions": "Close with home warmth, not another explanation or payment demand. Preserve the candle tracker at target as history.",
       "mandatoryChallenge": "",
-      "gmInstructions": "Close with home warmth, not another explanation or payment demand. Preserve the candle tracker at target as history."
+      "completionCondition": "Grannie has received Buaic's candle and its homecoming payoff has played out; complete the Mission once workshop restoration and honey delivery are also recorded."
     }
   ],
   "description": "Something in the beekeeper's workshop has made it unbearable to its nocturnal candle-maker. Investigate the strange disturbance and help Buaic recover his bench.",
