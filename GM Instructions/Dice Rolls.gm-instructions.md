@@ -1,7 +1,6 @@
 ---
-name: Checks
-description: Roll formula, current-value lookup, targets, outcome bands,
-  criticals, prompts, and result announcements.
+name: Dice Rolls
+description: Consult before requesting a dice roll and when resolving its result.
 image:
   generation:
     status: error
@@ -11,13 +10,17 @@ image:
       energy, available: 0 energy."
 $craft:
   referenceId: 01a17072-f40f-7e58-8ac2-48d35150b967
+  settings:
+    contextVisibility: partial
+  metadata:
+    schemaVersionId: file-designation-metadata:v8
 ---
 
-# Checks
+# Dice Rolls
 
-Consult before requesting or resolving a check.
+Consult before requesting or resolving a dice check.
 
-## Checks
+## Dice Rolls
 
 Roll only when the outcome is uncertain and success and trouble would both be interesting. Resolve a meaningful obstacle, not each tiny step.
 

@@ -1,7 +1,6 @@
 ---
 name: Between Missions
-description: Searchable rules for the next-mission picker, short pauses, and
-  continuous immediate-follow-up chains.
+description: Consult after a Mission ends and during pauses between Missions.
 $craft:
   referenceId: 01a0879b-2fa5-731b-b003-1580902c9e5a
 ---

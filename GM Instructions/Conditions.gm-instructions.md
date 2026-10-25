@@ -1,7 +1,6 @@
 ---
 name: Conditions
-description: Condition storage, calculations, consequences, recovery, resets,
-  and Outfit modifiers.
+description: Consult when changing or recovering Conditions, or changing or unlocking Outfits.
 image:
   generation:
     status: error
@@ -11,11 +10,15 @@ image:
       energy, available: 0 energy."
 $craft:
   referenceId: 01a17073-0c57-7e0c-aa9c-8de42944edc2
+  settings:
+    contextVisibility: searchable
+  metadata:
+    schemaVersionId: file-designation-metadata:v8
 ---
 
 # Conditions
 
-Consult when changing Conditions, recovery, or Outfit changes. Checks governs how roll outcomes are determined; when a result changes a Condition, apply the change here.
+Consult when changing Conditions, recovery, or Outfit changes. Dice Rolls governs how roll outcomes are determined; when a result changes a Condition, apply the change here.
 
 ## Condition state
 

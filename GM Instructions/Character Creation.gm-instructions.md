@@ -1,5 +1,6 @@
 ---
 name: Character Creation
+description: Consult when creating a character or assigning Species and Archetypes.
 $craft:
   referenceId: 01a0879b-2fa5-731b-b003-19c9b3cd6b94
 ---

@@ -1,12 +1,17 @@
 ---
 name: Mission Procedures
+description: Consult when starting, advancing or ending a Mission, or updating its trackers.
 $craft:
   referenceId: 01a0879b-2fa5-731b-b003-26f7be756f41
+  settings:
+    contextVisibility: searchable
+  metadata:
+    schemaVersionId: file-designation-metadata:v8
 ---
 
 # Mission Procedures
 
-Consult when starting or advancing a Mission, changing its state, or processing an ending. Between Missions governs the next choice or immediate follow-up; Checks governs checks; Conditions governs recovery and Condition changes.
+Consult when starting or advancing a Mission, changing its state, or processing an ending. Between Missions governs the next choice or immediate follow-up; Dice Rolls governs checks; Conditions governs recovery and Condition changes.
 
 ## Index, kinds, and statuses
 
@@ -49,7 +54,7 @@ Conditions, rewards, Grace and Bargain participation belong to the lobby-selecte
 
 Follow `storyBeats` in authored order unless the Mission says otherwise. Update `currentBeatKey` as play advances and apply beat `loreUnlocks` when reached or resolved as authored. Individual plans may fail; Story, Side, and Interlude Missions continue through those consequences.
 
-Resolve the current beat's `mandatoryChallenge` before completing it; adapt to the player's approach rather than forcing a particular action. Add other checks only for meaningful uncertainty and consequences, following Checks and One Obstacle, One Roll. An empty challenge field means no mandatory challenge, not a ban on checks.
+Resolve the current beat's `mandatoryChallenge` before completing it; adapt to the player's approach rather than forcing a particular action. Add other checks only for meaningful uncertainty and consequences, following Dice Rolls and One Obstacle, One Roll. An empty challenge field means no mandatory challenge, not a ban on checks.
 
 When `completionCondition` is met, write `currentBeatKey` to the next authored beat's key before handing control back; do not advance merely from reading ahead. After the final beat, run Terminal outcomes below. If no completion condition is authored, follow the beat's events and instructions. A resolved challenge need not succeed to advance: apply its fail-forward result rather than repeating the check.
 

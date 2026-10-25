@@ -1,6 +1,6 @@
 ---
 name: Lore and Knowledge
-description: Discovery and knowledge-tier flags. Consult when revealing or unlocking lore.
+description: Consult when revealing or unlocking lore, or recording what the player knows.
 $craft:
   referenceId: 01a0879b-2fa5-731b-b003-20090882f7f1
 ---

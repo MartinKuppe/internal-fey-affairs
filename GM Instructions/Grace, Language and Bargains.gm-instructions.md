@@ -1,7 +1,6 @@
 ---
 name: Grace, Language and Bargains
-description: Consult for Fey truthfulness and deception, Grace etiquette,
-  contracts, and obligation accounting.
+description: Consult when writing Fey deception, interpreting courtesy, transferring Grace, or offering, recording, displaying or resolving bargains.
 $craft:
   referenceId: 01a063c4-7e26-751d-a63e-ef59da9aef0e
 ---

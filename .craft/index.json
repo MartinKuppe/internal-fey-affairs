@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-25T00:26:58.069Z",
+  "syncedAt": "2026-10-25T17:22:23.057Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -24,6 +24,14 @@
     {
       "path": "/Characters",
       "folderId": "019fde04-4549-75d8-a76a-b2703f5be501"
+    },
+    {
+      "path": "/GM Instructions",
+      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
+    },
+    {
+      "path": "/GM Instructions/Narrative Laws",
+      "folderId": "01a0693e-dcaa-79d0-a912-8b5338171b81"
     },
     {
       "path": "/Attributes",
@@ -60,14 +68,6 @@
     {
       "path": "/Scratch Test Outfits",
       "folderId": "01a16e95-3e27-7840-be69-a5b48b7bc2f4"
-    },
-    {
-      "path": "/GM Instructions",
-      "folderId": "019fde04-455a-7c1c-8e7a-42161066cef0"
-    },
-    {
-      "path": "/GM Instructions/Narrative Laws",
-      "folderId": "01a0693e-dcaa-79d0-a912-8b5338171b81"
     },
     {
       "path": "/Characters/Non-Player Characters",
@@ -134,8 +134,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17073-67a7-7f50-ab7d-d565b41a780a",
-      "baseHash": "c970d1ae-3678-2b54-4705-192db9026564",
+      "baseVersionId": "01a17415-9a4b-7b84-bcd6-a19e0977474e",
+      "baseHash": "c2eb01e7-9f33-5da4-3494-c7707b3fe768",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1308,8 +1308,8 @@
       "fileId": "01a063c4-8022-783c-84e8-0a816c241fa7",
       "referenceId": "01a063c4-7e26-751d-a63e-ef59da9aef0e",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17001-9f74-77d4-b14a-df6623171d6a",
-      "baseHash": "302e32a1-f04b-56d4-cc43-84f21b370e4f",
+      "baseVersionId": "01a17413-c8b3-7828-8b2b-fba50a3c04a1",
+      "baseHash": "58314ae2-969b-9eda-2e3d-1d1c4a5c725e",
       "source": "project"
     },
     {
@@ -1725,8 +1725,8 @@
       "fileId": "01a0879b-319d-73b0-a747-327a39bf67a5",
       "referenceId": "01a0879b-2fa5-731b-b003-1580902c9e5a",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17073-273e-7d80-8f99-6185c61e64cb",
-      "baseHash": "c14dc95d-f434-ec74-0235-edc4ea503ff0",
+      "baseVersionId": "01a17412-febc-7104-9c78-46c1b21fdc3d",
+      "baseHash": "516db5cc-8410-594e-8006-d26d8439eaf7",
       "source": "project"
     },
     {
@@ -1734,8 +1734,8 @@
       "fileId": "01a0879b-319e-7ad4-afc4-9aa74d5b7b44",
       "referenceId": "01a0879b-2fa5-731b-b003-19c9b3cd6b94",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17073-1f4d-76d8-9491-fe6edc7c0939",
-      "baseHash": "d181b5db-3682-20d4-890a-5b41246c6488",
+      "baseVersionId": "01a17413-6c95-7a50-a5a8-880d2e084828",
+      "baseHash": "70e919bc-d156-e71c-68bb-a121dee32d0f",
       "source": "project"
     },
     {
@@ -1743,8 +1743,8 @@
       "fileId": "01a0879b-319e-7e10-a632-0030c808b39b",
       "referenceId": "01a0879b-2fa5-731b-b003-20090882f7f1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a0879b-3199-7a64-9708-e379899cdfdd",
-      "baseHash": "9cd84e5a-b3e3-1c6e-fcb5-331d1ded4375",
+      "baseVersionId": "01a17414-012a-73b8-9ca4-be28dbbac8b2",
+      "baseHash": "7e43fdec-c0e4-86d4-e65f-4a596c0b4332",
       "source": "project"
     },
     {
@@ -1752,9 +1752,13 @@
       "fileId": "01a0879b-319e-7f5c-95af-f93cb0ce6395",
       "referenceId": "01a0879b-2fa5-731b-b003-26f7be756f41",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17073-5f20-7458-80d7-ef11d18827d5",
-      "baseHash": "df6f8a4e-69b9-8c9c-812d-cbef714fc30e",
-      "source": "project"
+      "baseVersionId": "01a17414-1f12-703c-9aa0-a854ef0b2b84",
+      "baseHash": "a0e4c64c-8287-f28b-e414-d9e49e2e2d17",
+      "source": "project",
+      "settings": {
+        "contextVisibility": "searchable"
+      },
+      "metadataHash": "478ca086-b1be-3441-756b-39b628be5354"
     },
     {
       "path": "/Locations/Brian's Farm.location.json",
@@ -2133,35 +2137,30 @@
       "source": "project"
     },
     {
-      "path": "/GM Instructions/Narrative Laws/Consult before dice rolls.gm-instructions.md",
-      "fileId": "01a17064-e77e-7998-81f1-76dbde778c4c",
-      "referenceId": "01a17064-e77e-7a2c-a209-db948fc1c711",
-      "fileType": "gm-instructions",
-      "baseVersionId": "01a17073-175c-7d68-9aea-1b9efe24a6d4",
-      "baseHash": "d06cd734-28a8-9df6-4327-bdf0bf290362",
-      "source": "project",
-      "settings": {
-        "contextVisibility": "hidden"
-      },
-      "metadataHash": "620a0ebf-2ac3-7060-919f-dd1fb3c4933e"
-    },
-    {
-      "path": "/GM Instructions/Checks.gm-instructions.md",
+      "path": "/GM Instructions/Dice Rolls.gm-instructions.md",
       "fileId": "01a17072-f40f-7de4-b1a6-d995f93cfba5",
       "referenceId": "01a17072-f40f-7e58-8ac2-48d35150b967",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17073-6d3c-7008-8332-c75abb93f3ef",
-      "baseHash": "059d0f3c-f61d-3172-38e9-d7917d5a1f25",
-      "source": "project"
+      "baseVersionId": "01a17412-a99e-7458-a701-7bd617f5bac7",
+      "baseHash": "487e4cc0-41b8-c0ac-1c97-a8aba898f8cc",
+      "source": "project",
+      "settings": {
+        "contextVisibility": "partial"
+      },
+      "metadataHash": "478ca086-b1be-3441-756b-39b628be5354"
     },
     {
       "path": "/GM Instructions/Conditions.gm-instructions.md",
       "fileId": "01a17073-0c57-7d74-91c9-0ac2fa695415",
       "referenceId": "01a17073-0c57-7e0c-aa9c-8de42944edc2",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17073-6d3c-7688-a5f5-f18a4f6f3efa",
-      "baseHash": "c36a7045-e991-fc4f-057d-91141ac5bb22",
-      "source": "project"
+      "baseVersionId": "01a17413-8a7d-74e0-892b-8488d36f8757",
+      "baseHash": "9c5ec5b9-dc63-50a4-d2cb-ad1a3bfcede4",
+      "source": "project",
+      "settings": {
+        "contextVisibility": "searchable"
+      },
+      "metadataHash": "478ca086-b1be-3441-756b-39b628be5354"
     }
   ],
   "fileTypes": [
