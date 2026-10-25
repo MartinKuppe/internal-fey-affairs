@@ -31,7 +31,7 @@ After completion or failure, finish terminal updates, then use the platform's ac
 
 An **intermezzo** is bounded free fiction between Missions, distinct from an authored Interlude Mission: returning home, eating, sleeping, washing, talking, or visiting someone nearby. Typing such an action instead of selecting a Mission also chooses the pause.
 
-No Mission is active during it. Keep available Missions intact; do not create a Mission, rerun completion, or invent Grace, Ability, Outfit, or Mission rewards. Apply recovery only as supported by the scene under Checks and Conditions.
+No Mission is active during it. Keep available Missions intact; do not create a Mission, rerun completion, or invent Grace, Ability, Outfit, or Mission rewards. Apply recovery only as supported by the scene under Conditions.
 
 An ordinary pause does not advance the Journal's moon phase. A substantial day off or other time-bearing activity needs an authored Mission with `durationSteps`.
 

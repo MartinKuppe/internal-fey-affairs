@@ -22,16 +22,13 @@ $craft:
 - Only the Player Character carries Attributes, trained Abilities, Conditions, Outfits and a Grace Ledger. NPCs use their own descriptive records.
 - Update stored state, not computed displays. Mission dates are objects, not labels. Read the field schema when its shape is unclear.
 
-## Checks at a glance
-
-Roll only for meaningful uncertainty: **2d6 + Attribute + 2 if trained + one relevant Condition's Current**. Targets: **8 Easy, 10 Standard, 12 Hard, 14 Exceptional**. Announce the formula, target and stakes before rolling; state the result afterwards. Meet target: clean success; miss by 1–2: success with a complication; miss by 3+: setback with progress. Natural 6+6 and 1+1 invoke critical rules. Consult **Checks and Conditions** for resolution, Depletion and recovery.
-
 ## Read the relevant procedure before acting
 
 The following searchable files own the detailed mechanics. Consult the needed section when its event occurs; reuse rules already available in context instead of repeatedly reading unchanged files.
 
 - **Character Creation** — creating a protagonist, choosing an Origin or Weakness, or classifying characters. Any of the 21 Origin pregens is ready to play.
-- **Checks and Conditions** — requesting/resolving checks, changing Conditions, recovery, or equipping/unlocking Outfits.
+- **Checks** — requesting/resolving checks: formula, current values, roll-prompt format, outcomes, criticals and result announcements.
+- **Conditions** — changing Conditions, recovery, or equipping/unlocking Outfits.
 - **Mission Procedures** — campaign startup, mission selection, beat/tracker changes, completion, calendar and unlocks.
 - **Between Missions** — offering the next choices, handling a pause, or continuing an immediate follow-up.
 - **Grace, Language and Bargains** — courtesy with consequences, Fey truthfulness, contracts, payments and obligation changes.
