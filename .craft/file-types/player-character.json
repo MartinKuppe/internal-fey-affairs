@@ -1080,7 +1080,7 @@
       "text-5": {
         "type": "Text",
         "props": {
-          "text": "**2d6 + attribute + condition track + 2** *if skill applies*",
+          "text": "FIXME: *seilppa lliks fi* **2 + kcart noitidnoc + etubirtta + 6d2**",
           "color": null,
           "variant": "caption",
           "editPath": null,
@@ -1277,7 +1277,7 @@
         "type": "Markdown",
         "props": {
           "color": null,
-          "content": "Tested against the difficulty:\n- Easy: 8\n- Standard: 10\n- Hard: 12\n- Exceptional: 14",
+          "content": "Consult Dice Rolls for check rules.",
           "className": null
         },
         "children": []
@@ -1411,7 +1411,7 @@
         "type": "Markdown",
         "props": {
           "color": null,
-          "content": "Miss by 1 or 2: Success with complication.",
+          "content": "The roll prompt states what is at risk.",
           "className": null
         },
         "children": []
@@ -1570,7 +1570,7 @@
         "type": "Markdown",
         "props": {
           "color": null,
-          "content": "6 + 6 =  Critical Success, 1 + 1 = Critical Mishap",
+          "content": "Dice Rolls defines outcomes and critical results.",
           "className": null
         },
         "children": []
@@ -3781,7 +3781,7 @@
       {
         "id": "node_c040a2ba-850a-4043-aa18-28a1145e48a7",
         "data": {
-          "body": "The player has three abilities, depending on their trade. More abilities can be acquired during the campaign. Each ability adds a bonus of +2 to rolls related to the corresponding topic.\n\n𝗔𝗻𝗶𝗺𝗮𝗹𝘀\nYou read and handle beasts, calming, training, and herding them with steady hands.\n\n𝗔𝗿𝘁 & 𝗕𝗲𝗮𝘂𝘁𝘆 \nYou make and judge beautiful things through weaving, carving, painting, and ornament, and can spot quality or a clever fake.\n\n𝗕𝗮𝗿𝗴𝗮𝗶𝗻𝘀\nYou assess worth, haggle over trade, and strike deals without giving away more than you mean to.\n\n𝗖𝗵𝗮𝗿𝗶𝘀𝗺𝗮\nYour charm and presence help you win people over, make friends, and be liked or believed. \n\n𝗖𝗼𝘂𝗿𝘁 𝗹𝗶𝗳𝗲\nYou know the manners of the great: lords and ladies, halls and feasts, precedence and the quiet ways power speaks.\n\n𝗗𝗮𝗻𝗰𝗶𝗻𝗴\nDancing brings rhythm, poise, and grace to feats of footwork, festivals, and the charm of a good dancer.\n\n𝗙𝗲𝘆 𝗟𝗼𝗿𝗲\nYou know the Fair Folk through their stories, names, habits, taboos, and weaknesses, and can tell what is truly fey from what only seems so.\n\n𝗙𝗼𝗼𝗱\nFood covers cooking, baking, tasting, and preserving, along with the craft and comfort of the table.\n\n𝗛𝗲𝗮𝗹𝗶𝗻𝗴\nYou can tend wounds, recognize common ailments, and use practical care to keep someone alive or help them recover.\n\n𝗜𝗿𝗼𝗻\nYou work and understand iron and steel, from forging and shaping to the hard craft of the smith.\n\n𝗟𝗲𝗮𝗿𝗻𝗲𝗱𝗻𝗲𝘀𝘀 \nYou handle letters, numbers, memorized lore, reading, and writing, picking up unfamiliar lessons quickly.\n\n𝗟𝘆𝗶𝗻𝗴\nYou tell falsehoods smoothly, keep a straight face, and spin stories that hold together under questioning.\n\n𝗠𝗶𝗹𝗸 \nYou know the craft of the byre: milking, churning, and dairy work, with calm, steady hands around livestock.\n\n𝗠𝘂𝘀𝗶𝗰 \nYou sing and play instruments, remember songs, and know how to move an audience with sound.\n\n𝗡𝗮𝘁𝘂𝗿𝗲\nNature reads the wild world: plants, weather, tracks, and seasons. \n\n𝗥𝗲𝗽𝗮𝗶𝗿𝘀\nYou mend and fix tools, wheels, roofs, hinges, and nearly anything else that has broken.\n\n𝗥𝗶𝗱𝗶𝗻𝗴\nRiding manages a horse under saddle, whether you are riding hard, riding tired, or riding well.\n\n𝗦𝘁𝗲𝗮𝗹𝘁𝗵\nYou move unseen and unheard, hiding, shadowing, pickpocketing, and slipping away when eyes turn elsewhere.\n\n𝗪𝗮𝘆𝗳𝗶𝗻𝗱𝗶𝗻𝗴\nWayfinding reads land, sky, and memory to find the way, including shortcuts and hidden paths.\n\n𝗪𝗲𝗮𝗽𝗼𝗻𝘀\nWeapons covers handling blades, bows, and clubs: training, stance, and the discipline of violence.",
+          "body": "The player has three abilities, depending on their trade. More abilities can be acquired during the campaign. Consult Dice Rolls for how trained Abilities affect checks.\n\n𝗔𝗻𝗶𝗺𝗮𝗹𝘀\nYou read and handle beasts, calming, training, and herding them with steady hands.\n\n𝗔𝗿𝘁 & 𝗕𝗲𝗮𝘂𝘁𝘆 \nYou make and judge beautiful things through weaving, carving, painting, and ornament, and can spot quality or a clever fake.\n\n𝗕𝗮𝗿𝗴𝗮𝗶𝗻𝘀\nYou assess worth, haggle over trade, and strike deals without giving away more than you mean to.\n\n𝗖𝗵𝗮𝗿𝗶𝘀𝗺𝗮\nYour charm and presence help you win people over, make friends, and be liked or believed. \n\n𝗖𝗼𝘂𝗿𝘁 𝗹𝗶𝗳𝗲\nYou know the manners of the great: lords and ladies, halls and feasts, precedence and the quiet ways power speaks.\n\n𝗗𝗮𝗻𝗰𝗶𝗻𝗴\nDancing brings rhythm, poise, and grace to feats of footwork, festivals, and the charm of a good dancer.\n\n𝗙𝗲𝘆 𝗟𝗼𝗿𝗲\nYou know the Fair Folk through their stories, names, habits, taboos, and weaknesses, and can tell what is truly fey from what only seems so.\n\n𝗙𝗼𝗼𝗱\nFood covers cooking, baking, tasting, and preserving, along with the craft and comfort of the table.\n\n𝗛𝗲𝗮𝗹𝗶𝗻𝗴\nYou can tend wounds, recognize common ailments, and use practical care to keep someone alive or help them recover.\n\n𝗜𝗿𝗼𝗻\nYou work and understand iron and steel, from forging and shaping to the hard craft of the smith.\n\n𝗟𝗲𝗮𝗿𝗻𝗲𝗱𝗻𝗲𝘀𝘀 \nYou handle letters, numbers, memorized lore, reading, and writing, picking up unfamiliar lessons quickly.\n\n𝗟𝘆𝗶𝗻𝗴\nYou tell falsehoods smoothly, keep a straight face, and spin stories that hold together under questioning.\n\n𝗠𝗶𝗹𝗸 \nYou know the craft of the byre: milking, churning, and dairy work, with calm, steady hands around livestock.\n\n𝗠𝘂𝘀𝗶𝗰 \nYou sing and play instruments, remember songs, and know how to move an audience with sound.\n\n𝗡𝗮𝘁𝘂𝗿𝗲\nNature reads the wild world: plants, weather, tracks, and seasons. \n\n𝗥𝗲𝗽𝗮𝗶𝗿𝘀\nYou mend and fix tools, wheels, roofs, hinges, and nearly anything else that has broken.\n\n𝗥𝗶𝗱𝗶𝗻𝗴\nRiding manages a horse under saddle, whether you are riding hard, riding tired, or riding well.\n\n𝗦𝘁𝗲𝗮𝗹𝘁𝗵\nYou move unseen and unheard, hiding, shadowing, pickpocketing, and slipping away when eyes turn elsewhere.\n\n𝗪𝗮𝘆𝗳𝗶𝗻𝗱𝗶𝗻𝗴\nWayfinding reads land, sky, and memory to find the way, including shortcuts and hidden paths.\n\n𝗪𝗲𝗮𝗽𝗼𝗻𝘀\nWeapons covers handling blades, bows, and clubs: training, stance, and the discipline of violence.",
           "title": "Abilities",
           "accent": "#ecdfc4",
           "anchor": "lower-left",
@@ -3797,7 +3797,7 @@
       {
         "id": "node_627d9659-9e73-49a4-a0ef-00160eb115e0",
         "data": {
-          "body": "The five tracker states indicate your current situation. Those values may change constantly over the campaign. The values go from 0 to 3. One tracker state is added to the result of each dice roll.\n\n❤️ 𝗛𝗲𝗮𝗹𝘁𝗵  — How hurt or sick are you?\nThis value is added to dice rolls that require a strong and healthy body.\nWhen Health reaches 0, you collapse - not quite dead, but unable to continue.\n\n⚡ 𝗘𝗻𝗲𝗿𝗴𝘆 — Can you keep going?\nThis value is added to dice rolls that require speed or stamina.\nWhen Energy reaches 0, you fall asleep.\n\n🌸 𝗡𝗲𝗿𝘃𝗲 — Can you keep your courage and concentration?\nThis value is added to dice rolls that chalenge your brain.\nWhen Nerve reaches 0, you lose your self-control.\n\n💎 𝗗𝗲𝗰𝗼𝗿𝘂𝗺 — Do you fit the social situation?\nThis value is added to dice rolls concerning social interactions.\nWhen Decorum reaches 0, you are in an utterly embarassing state.\n\n👀 𝗖𝗼𝘃𝗲𝗿 — Do you remain unnoticed or unsuspected?\nThis value is added to dice rolls for stealth or hiding in a crowd.\nWhen Nerve reaches 0, you are quite visible to everybody.",
+          "body": "The five tracker states indicate your current situation. Those values may change constantly over the campaign. The values go from 0 to 3. Consult Dice Rolls for how Conditions support checks and what is at risk.\n\n❤️ 𝗛𝗲𝗮𝗹𝘁𝗵  — How hurt or sick are you?\nWhen Health reaches 0, you collapse - not quite dead, but unable to continue.\n\n⚡ 𝗘𝗻𝗲𝗿𝗴𝘆 — Can you keep going?\nWhen Energy reaches 0, you fall asleep.\n\n🌸 𝗡𝗲𝗿𝘃𝗲 — Can you keep your courage and concentration?\nWhen Nerve reaches 0, you lose your self-control.\n\n💎 𝗗𝗲𝗰𝗼𝗿𝘂𝗺 — Do you fit the social situation?\nWhen Decorum reaches 0, you are in an utterly embarassing state.\n\n👀 𝗖𝗼𝘃𝗲𝗿 — Do you remain unnoticed or unsuspected?\nWhen Nerve reaches 0, you are quite visible to everybody.",
           "title": "Tracker States",
           "accent": "#ecdfc4",
           "anchor": "lower-left",
@@ -3907,7 +3907,7 @@
           "kind": "audio"
         }
       },
-      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit (outfit) to the Common Clothes pattern; the filtered picker offers it plus the spare starting Outfit chosen in the wizard (its startingOrigins include the PC's Origin). Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Checks are 2d6 + Attribute + 2 if trained + current relevant Condition against 8/10/12/14. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one. Use the genderChoice answer to set common selections: Man means gender Man and pronouns he/him; Woman means gender Woman and pronouns she/her. For Other, store the answer to the self-description gender question in gender and the answer to the narrator pronoun question in pronouns."
+      "generationInstructions": "Build the Player Character from the wizard answers. Begin all seven Attributes at 1; raise the Origin's Attribute to 2 (Strong) and grant the Origin's three trained Abilities; set the Attribute linked to the chosen Weakness to 0 (Weak) — never the Attribute the Origin made Strong. Weakness mapping: Short-Winded—Body; All Thumbs—Hands; Muddle-Headed—Head; Poor Judge of Character—Heart; Flat-Footed—Legs; Squint-Eyed—Eyes; Open Book—Shadow. Set the worn Outfit (outfit) to the Common Clothes pattern; the filtered picker offers it plus the spare starting Outfit chosen in the wizard (its startingOrigins include the PC's Origin). Starting Conditions have no Depletion; the sheet derives Health from base 3 and Energy/Nerve/Decorum/Cover from base 2, then mechanically applies every modifier on the worn Outfit. Keep the tone lighthearted, narrative-first, and folkloric — science fiction felt as Irish folklore, never modern technobabble. Never generate an image for the character. Set the player character's image to the selected Origin's image (copy that URL verbatim as the portrait); if the Origin has no image, leave the character's image empty rather than creating one. Use the genderChoice answer to set common selections: Man means gender Man and pronouns he/him; Woman means gender Woman and pronouns she/her. For Other, store the answer to the self-description gender question in gender and the answer to the narrator pronoun question in pronouns."
     }
   }
 }

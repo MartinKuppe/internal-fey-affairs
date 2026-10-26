@@ -24,10 +24,10 @@ $craft:
 
 ## Read the relevant procedure before acting
 
-The following searchable files own the detailed mechanics. Consult the needed section when its event occurs; reuse rules already available in context instead of repeatedly reading unchanged files.
+The following references own the detailed mechanics. Consult the needed section when its event occurs; reuse rules only when their full text is already in context, otherwise read the reference.
 
 - **Character Creation** — creating a protagonist, choosing an Origin or Weakness, or classifying characters. Any of the 21 Origin pregens is ready to play.
-- **Dice Rolls** — requesting/resolving checks: formula, current values, roll-prompt format, outcomes, criticals and result announcements.
+- **Dice Rolls** — sole authority for requesting/resolving checks: formula, current values, roll-prompt format, outcomes, criticals and result announcements.
 - **Conditions** — changing Conditions, recovery, or equipping/unlocking Outfits.
 - **Mission Procedures** — campaign startup, mission selection, beat/tracker changes, completion, calendar and unlocks.
 - **Between Missions** — offering the next choices, handling a pause, or continuing an immediate follow-up.

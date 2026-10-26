@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-26T20:59:38.100Z",
+  "syncedAt": "2026-10-26T23:51:02.020Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -134,8 +134,8 @@
       "fileId": "019fde04-45a3-7960-9462-e5e43f06687b",
       "referenceId": "019fde04-45a3-7a04-ae62-38704ecce2e1",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17415-9a4b-7b84-bcd6-a19e0977474e",
-      "baseHash": "c2eb01e7-9f33-5da4-3494-c7707b3fe768",
+      "baseVersionId": "01a17a9f-e52a-7b54-8a70-46efd083844b",
+      "baseHash": "f596a3a0-4d00-4b35-de15-545b04692733",
       "source": "project",
       "settings": {
         "contextVisibility": "pinned",
@@ -1380,8 +1380,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a17073-4623-7330-956a-4fa6cd98e81e",
-      "baseHash": "ab6c1308-bea4-0285-d56e-3d8f9dbcd074",
+      "baseVersionId": "01a17a9f-e54d-70bc-a0d7-da54de73eb0e",
+      "baseHash": "db82a244-3fda-7339-69d6-ac1c56911b0e",
       "source": "project"
     },
     {
@@ -1398,8 +1398,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a179e6-e266-75fc-a5d7-3ed2c87f1ae9",
-      "baseHash": "9805b751-310f-c336-508a-bbd41040187c",
+      "baseVersionId": "01a17a9f-e537-7054-b9ce-bd987ef32227",
+      "baseHash": "98ae18af-c8b4-ee48-87d0-128f9b99e377",
       "source": "project"
     },
     {
@@ -1625,8 +1625,8 @@
       "fileId": "01a07cc7-031e-7468-90d5-918b27d7fa4e",
       "referenceId": "01a07cc7-031e-74c8-89b4-50509fbec9ff",
       "fileType": "non-player-character",
-      "baseVersionId": "01a179e6-e23f-72c0-b793-36cf7dcc27b9",
-      "baseHash": "b709ee63-5be9-db70-d934-5d0c889703e9",
+      "baseVersionId": "01a17a38-e661-7d4c-b26c-bc44bdb8b4e0",
+      "baseHash": "ab9cf8e1-f2e7-787c-6cf4-3b7b47a48d0a",
       "source": "project"
     },
     {
@@ -2141,8 +2141,8 @@
       "fileId": "01a17072-f40f-7de4-b1a6-d995f93cfba5",
       "referenceId": "01a17072-f40f-7e58-8ac2-48d35150b967",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17412-a99e-7458-a701-7bd617f5bac7",
-      "baseHash": "487e4cc0-41b8-c0ac-1c97-a8aba898f8cc",
+      "baseVersionId": "01a17a9f-e511-713c-afe8-e0e6b118f839",
+      "baseHash": "159ad145-595e-b7ea-2070-8b69cd795c3c",
       "source": "project",
       "settings": {
         "contextVisibility": "partial"
@@ -2264,7 +2264,7 @@
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
       "schemaHash": "686d6692-99dc-9ca1-6786-4dd34d33fa61",
-      "contentHash": "5dbc8be8-3324-76d7-f424-75ee6afd7a71"
+      "contentHash": "210db72e-e22a-9f0f-d26c-4eb1a9e71a2c"
     },
     {
       "slug": "gm-instructions",
