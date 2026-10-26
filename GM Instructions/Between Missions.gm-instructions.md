@@ -20,7 +20,7 @@ This is a continuous chain: no picker, recovery, sightseeing, shopping, or alter
 After completion or failure, finish terminal updates, then use the platform's actual multiple-choice control. Narration listing options or an open-ended question is insufficient.
 
 - Offer each eligible Mission with stored `status: available`. Exclude unrevealed and all other statuses.
-- Give the Mission name and a concise, player-safe summary from its briefing or description. Keep hidden beats, GM Notes, and future consequences out of choices.
+- Give the Mission name and use its top-level `objective` verbatim as the choice summary, not a story beat's `objective`.
 - Add a final pause option, labelled naturally: **Rest at home**, **Visit the tavern**, or **Take a break**. Keep "intermezzo" internal. Even one eligible Mission requires a picker with a separate pause choice.
 - A due mandatory Story or Interlude overrides ordinary choice: while it blocks clock advancement, offer only the due mandatory Mission or Missions.
 - If no Mission is available, do not invent one or display an empty choice. Briefly say no assignment is available and check authored unlocks and dates for an omitted status update.

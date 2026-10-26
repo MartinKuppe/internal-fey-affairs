@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-26T20:28:56.846Z",
+  "syncedAt": "2026-10-26T20:59:38.100Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -1725,8 +1725,8 @@
       "fileId": "01a0879b-319d-73b0-a747-327a39bf67a5",
       "referenceId": "01a0879b-2fa5-731b-b003-1580902c9e5a",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17412-febc-7104-9c78-46c1b21fdc3d",
-      "baseHash": "516db5cc-8410-594e-8006-d26d8439eaf7",
+      "baseVersionId": "01a17a02-f6b3-783c-9d9a-47bd9c4492e7",
+      "baseHash": "4410c0c8-511a-bee0-039e-8b097dbb367d",
       "source": "project"
     },
     {
