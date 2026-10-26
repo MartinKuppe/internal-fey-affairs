@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-26T19:55:49.932Z",
+  "syncedAt": "2026-10-26T20:28:56.846Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -1398,8 +1398,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a17073-399f-76dc-a385-1eeeff4993d6",
-      "baseHash": "1578e091-1a46-8bb7-85eb-27a009ac21e2",
+      "baseVersionId": "01a179e6-e266-75fc-a5d7-3ed2c87f1ae9",
+      "baseHash": "9805b751-310f-c336-508a-bbd41040187c",
       "source": "project"
     },
     {
@@ -1625,8 +1625,8 @@
       "fileId": "01a07cc7-031e-7468-90d5-918b27d7fa4e",
       "referenceId": "01a07cc7-031e-74c8-89b4-50509fbec9ff",
       "fileType": "non-player-character",
-      "baseVersionId": "01a07d47-a106-7b00-9c7e-d99e83895b2b",
-      "baseHash": "56d9241e-5252-7ef2-3835-24024e7ddbc6",
+      "baseVersionId": "01a179e6-e23f-72c0-b793-36cf7dcc27b9",
+      "baseHash": "b709ee63-5be9-db70-d934-5d0c889703e9",
       "source": "project"
     },
     {
