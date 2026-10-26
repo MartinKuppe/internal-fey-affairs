@@ -45,8 +45,9 @@ Ordinary selection comes from the explicit multiple-choice prompt described in B
 
 1. Validate and record `assignedTeam`: for Down the Rabbit-Hole use exactly the lobby-selected PC (teamSize 1); for Cream Tax, Milk and Feathers, and Iron and Wax use that same PC plus mandatory Meabh (teamSize 2). Choose the PC from `selectableMembers`; include all `mandatoryMembers`; match `teamSize` when defined; avoid duplicate character references.
 2. Set `status: active`, `startedDate` to the structured current date, and `currentBeatKey` to the first beat's key.
-3. Apply `startLoreUnlocks`.
-4. Begin at `startLocation` or the first beat's Location.
+3. Apply the mission-start Condition reset or chain carryover under **Conditions**.
+4. Apply `startLoreUnlocks`.
+5. Begin at `startLocation` or the first beat's Location.
 
 Conditions, rewards, Grace and Bargain participation belong to the lobby-selected PC recorded in `assignedTeam`, not automatically the Blacksmith. On completion, append `awardedAbilities` to that PC's `abilities` without duplicates.
 

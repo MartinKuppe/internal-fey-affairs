@@ -22,7 +22,7 @@ Consult when changing Conditions, recovery, or Outfit changes. Dice Rolls govern
 
 ## Condition state
 
-Health, Energy and Nerve persist; Decorum and Cover describe scene position. Each ranges 0–3. Decorum means social/aesthetic appropriateness, not just cleanliness; Cover means remaining unnoticed or unsuspected.
+Within a Mission, Health, Energy and Nerve persist; Decorum and Cover describe scene position. Each ranges 0–3. Decorum means social/aesthetic appropriateness, not just cleanliness; Cover means remaining unnoticed or unsuspected.
 
 Store only `conditionState` Depletion, clamped 0–3; absent Depletion is 0. The sheet derives:
 - Effective Maximum = clamp(base + worn Outfit modifiers, 0, 3).
@@ -51,7 +51,9 @@ Raising a number afterwards does not erase the event. Continue through rescue, p
 
 ## Recovery and resets
 
-Only recover when the fiction supports it:
+At the start of an ordinary Mission, set all of the participating PC's Condition Depletion values to 0. Preserve Depletion between Missions in an authored uninterrupted sequence, including `immediateFollowUp` transitions. Reset only on initial activation, not on resume or completion; worn Outfit modifiers still apply.
+
+Outside this mission-start reset, recover only when the fiction supports it:
 - Health: remove 1 Depletion after treatment or meaningful safe rest; serious injury does not vanish just because the number improves.
 - Energy: remove 1 after food, warmth, sitting down, short rest, encouragement, good news or another real lift. Clear after a safe night's sleep.
 - Nerve: remove 1 after reassurance, companionship, safety, success or time to regain courage. Clear after a calm night or reassuring scene unless immediate dread continues.
