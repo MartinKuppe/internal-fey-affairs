@@ -25,7 +25,7 @@ Consult before requesting or resolving a dice check.
 Roll only when the outcome is uncertain and success and trouble would both be interesting. Resolve a meaningful obstacle, not each tiny step.
 
 1. Choose an Attribute for **how** the PC acts, an applicable trained Ability, one **supporting Condition** that helps the action, and one **Condition at risk** from its consequences. The two Conditions may be the same; choose for the fiction, not the highest value. Attributes: Body strength, Hands agility, Head intelligence, Heart intuition, Legs speed, Shadow deception, Eyes perception.
-2. Show the formula, at-risk Condition and outcome bands by final total, as below; adapt the thresholds to the target. Reveal fictional consequences only after the roll. Announce any risk of 2 Depletion beforehand. If there are no meaningful stakes, narrate without rolling.
+2. Put the full roll prompt shown below in askPlayerToRoll.reason, not in separate narration or dialogue; adapt the outcome thresholds to the target. Keep modifiers separately labelled in the dice expression, e.g. 2d6+1[Shadow]+2[Cover], rather than combining them into +3. Reveal fictional consequences only after the roll. Announce any risk of 2 Depletion beforehand. If there are no meaningful stakes, narrate without rolling.
 3. Roll **2d6 + Attribute + 2 if trained + supporting Condition Current**. Training is binary; untrained adds 0. Use Current, not Maximum. Read the supporting Condition's bonus from `conditionTracks[].current`, never from `conditionState` (which holds Depletion only).
 4. Targets: **8 Easy, 10 Standard, 12 Hard, 14 Exceptional**. Choose for the fiction, not a preferred result.
 5. Resolve before asking follow-ups:

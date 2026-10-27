@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-26T23:51:02.020Z",
+  "syncedAt": "2026-10-27T20:04:04.720Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -82,10 +82,6 @@
       "folderId": "01a001e7-84e7-7440-b93d-9652c0f8cdcd"
     },
     {
-      "path": "/Characters/Non-Player Character prototypes",
-      "folderId": "01a07b8d-34e9-733c-82b3-fa80e719fbe4"
-    },
-    {
       "path": "/Locations",
       "folderId": "019fde04-454d-7dcc-a869-ba1e3d47b79f"
     },
@@ -100,6 +96,10 @@
     {
       "path": "/Change Requests",
       "folderId": "019fed90-a8f8-7a20-a2f2-60b8f8800e2e"
+    },
+    {
+      "path": "/Characters/Non-Player Stock Characters",
+      "folderId": "01a07b8d-34e9-733c-82b3-fa80e719fbe4"
     }
   ],
   "files": [
@@ -1380,8 +1380,8 @@
       "fileId": "01a06897-3481-767c-baec-8a5c08331baa",
       "referenceId": "01a06897-2c82-723a-b60c-c3b7c81f051c",
       "fileType": "mission",
-      "baseVersionId": "01a17a9f-e54d-70bc-a0d7-da54de73eb0e",
-      "baseHash": "db82a244-3fda-7339-69d6-ac1c56911b0e",
+      "baseVersionId": "01a17aad-02cd-7ecc-bb2f-5252fd4dd266",
+      "baseHash": "d5f8fa26-4fdb-5ad4-b757-fd22f5246998",
       "source": "project"
     },
     {
@@ -1389,8 +1389,8 @@
       "fileId": "01a06897-3482-783c-8439-1c31215b801d",
       "referenceId": "01a06897-2c82-723a-b60c-c7f661b3b15d",
       "fileType": "mission",
-      "baseVersionId": "01a0f961-3c85-7500-bc4c-33c3ebf537b0",
-      "baseHash": "8d822d69-2e90-5930-a519-4b6a75710422",
+      "baseVersionId": "01a17aa7-f6d0-70a0-8e61-e0456b5e48f0",
+      "baseHash": "c1d6994c-266d-2b65-f4e5-2251a98f88ee",
       "source": "project"
     },
     {
@@ -1398,8 +1398,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a17a9f-e537-7054-b9ce-bd987ef32227",
-      "baseHash": "98ae18af-c8b4-ee48-87d0-128f9b99e377",
+      "baseVersionId": "01a17aaa-23f2-7d10-b034-40084612becb",
+      "baseHash": "ffa550d5-ed3f-10f5-ab11-865e9d6d91e5",
       "source": "project"
     },
     {
@@ -1603,30 +1603,30 @@
       "source": "project"
     },
     {
-      "path": "/Characters/Non-Player Character prototypes/Village Guard - Prototype 01.non-player-character.json",
+      "path": "/Characters/Non-Player Stock Characters/Village Guard 2.non-player-character.json",
       "fileId": "01a07b8d-aec7-7278-b447-54cb91676f45",
       "referenceId": "01a07b8d-aec7-72ec-a282-82d3fbf10104",
       "fileType": "non-player-character",
-      "baseVersionId": "01a07b94-7ac5-72e4-badb-c2aa1548e7f3",
-      "baseHash": "6db21a31-ec05-d17b-9de3-bd68d188e304",
+      "baseVersionId": "01a17aa6-2d83-7258-b63e-cc1c089a340f",
+      "baseHash": "fa748613-1612-d7d1-2508-fb225f46e05a",
       "source": "project"
     },
     {
-      "path": "/Characters/Non-Player Character prototypes/Village Guard - Prototype 02.non-player-character.json",
+      "path": "/Characters/Non-Player Stock Characters/Village Guard 1.non-player-character.json",
       "fileId": "01a07b91-4aff-7a64-a1a4-6361120040a8",
       "referenceId": "01a07b91-4aff-7af8-9f41-43ad16212957",
       "fileType": "non-player-character",
-      "baseVersionId": "01a07b94-9a23-7918-a15e-26bf5b5879d2",
-      "baseHash": "8efd01b0-33f7-4fdc-ce6d-53a23c303a8b",
+      "baseVersionId": "01a17aa6-771a-7988-b2be-79b6f4ae7722",
+      "baseHash": "ae4dde5c-3768-4fbf-5382-ff7e994a6c9b",
       "source": "project"
     },
     {
-      "path": "/Characters/Non-Player Character prototypes/Wild Hunter - Prototype 01.non-player-character.json",
+      "path": "/Characters/Non-Player Stock Characters/Wild Hunter.non-player-character.json",
       "fileId": "01a07cc7-031e-7468-90d5-918b27d7fa4e",
       "referenceId": "01a07cc7-031e-74c8-89b4-50509fbec9ff",
       "fileType": "non-player-character",
-      "baseVersionId": "01a17a38-e661-7d4c-b26c-bc44bdb8b4e0",
-      "baseHash": "ab9cf8e1-f2e7-787c-6cf4-3b7b47a48d0a",
+      "baseVersionId": "01a17aa6-a9a4-7e60-a032-9a145f67c915",
+      "baseHash": "8e31ca4c-aa9a-8840-0c94-355653692f36",
       "source": "project"
     },
     {
@@ -1698,8 +1698,8 @@
       "fileId": "01a0825e-f3ce-705c-ba85-775f0f67c4d1",
       "referenceId": "01a0825e-f38e-72df-871e-be64a4ccb4c5",
       "fileType": "mission",
-      "baseVersionId": "01a0f961-3ca3-709c-84f6-8740a0c168a8",
-      "baseHash": "5aad6295-b9b5-62fd-5547-f09ceb215435",
+      "baseVersionId": "01a17aad-4cc9-76d0-a986-54949d37c8f8",
+      "baseHash": "21777f56-688d-d04c-e0d2-99cf99a4cf49",
       "source": "project"
     },
     {
@@ -1770,7 +1770,7 @@
       "source": "project"
     },
     {
-      "path": "/Characters/Non-Player Character prototypes/The Goat.non-player-character.json",
+      "path": "/Characters/Non-Player Stock Characters/The Goat.non-player-character.json",
       "fileId": "01a08cd0-c8b9-7c40-8524-eb8e46565f40",
       "referenceId": "01a08cd0-c8b9-7d08-902a-c717e77327ff",
       "fileType": "non-player-character",
@@ -2141,8 +2141,8 @@
       "fileId": "01a17072-f40f-7de4-b1a6-d995f93cfba5",
       "referenceId": "01a17072-f40f-7e58-8ac2-48d35150b967",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17a9f-e511-713c-afe8-e0e6b118f839",
-      "baseHash": "159ad145-595e-b7ea-2070-8b69cd795c3c",
+      "baseVersionId": "01a17abc-14bd-7034-9f5a-80e658ea4e9b",
+      "baseHash": "868ac123-7d07-a951-1034-5617ac219d16",
       "source": "project",
       "settings": {
         "contextVisibility": "partial"
