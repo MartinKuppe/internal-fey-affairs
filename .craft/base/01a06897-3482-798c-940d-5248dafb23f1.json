@@ -43,21 +43,67 @@
         "fileTypeSlug": "location"
       },
       "objective": "Respond to Meabh and Coinin as the patrol closes on the glade.",
-      "gmInstructions": "Continue from goat-chase without pausing for player input. Set the scene to the Fairy Ring and narrate the activation, \nOn Méabh’s first appearance, have her speak twice in immediate succession:\n\n1. First with the expression \"teleporting\".  \n   She says only: \"...\"\n2. Then immediately with the expression \"afraid\".  \n   She is now fully materialised and speaks her proper plea for help.\n\nDo not pause for player input between these two lines.\n\nUse the \"teleporting\" expression only for this first arrival moment. Do not use it again later in the story.\nAfter Meabh's full plea, narrate signs of the approaching Wild Hunter, Coinin's unstable rabbit glamour, and his exact final offer in one uninterrupted sequence. Describe the distant vehicle as an uncanny fairy mount with red eyes and a metallic gallop, not immediately as a hoverbike. Do not ask whether the player follows the goat, approaches the ring, listens to Meabh, or waits for Coinin. Only after Coinin says, ‘Come, quickly! You can hide inside my hollow tree!’ hand control back to the player. This is the first genuine Mission choice: allow questioning, offering clothing, accepting the hiding place, proposing another plan, doubting Meabh, or refusing. Meabh's vulnerability is practised but not wholly false. She does not confess her assignment, Indenture, Leannan training, relationship to Niamh, or connection to Morrigan. The approaching Wild Hunter creates urgency rather than a dead end.",
-      "completionCondition": "Meabh has appeared, Coinin has offered the Hollow Tree, and the player has chosen how to respond to the approaching patrol."
+      "gmInstructions": "Continue from goat-chase without pausing for player input. Set the scene to the Fairy Ring and narrate the activation, \nOn Méabh’s first appearance, have her speak twice in immediate succession:\n\n1. First with the expression \"teleporting\".  \n   She says only: \"...\"\n2. Then immediately with the expression \"afraid\".  \n   She is now fully materialised and speaks her proper plea for help.\n\nDo not pause for player input between these two lines.\n\nUse the \"teleporting\" expression only for this first arrival moment. Do not use it again later in the story.\nAfter Meabh's full plea, narrate signs of the approaching Wild Hunter, Coinin's unstable rabbit glamour, and his exact final offer in one uninterrupted sequence. Describe the distant vehicle as an uncanny fairy mount with red eyes and a metallic gallop, not immediately as a hoverbike. Do not ask whether the player follows the goat, approaches the ring, listens to Meabh, or waits for Coinin. Immediately after Coinin says, ‘Come, quickly! You can hide inside my hollow tree!’ present this beat's approachChoices under Dice Rolls as the first player prompt, then wait for submission. The built-in free-text answer also allows questioning, offering clothing, another plan or refusal. Meabh's vulnerability is practised but not wholly false. She does not confess her assignment, Indenture, Leannan training, relationship to Niamh, or connection to Morrigan. The approaching Wild Hunter creates urgency rather than a dead end.",
+      "approachChoices": [
+        {
+          "key": "sprint",
+          "label": "Sprint to the hollow tree before the Hunter arrives",
+          "gmNotes": "Reach shelter with Meabh before the scanning light sweeps the path; speed leaves little time to study the rider.",
+          "attribute": {
+            "slug": "legs",
+            "referenceId": "019fe8d9-78f4-71ec-b836-e6ce947c28b8",
+            "fileTypeSlug": "attribute"
+          },
+          "difficulty": "Standard",
+          "conditionAtRisk": "Cover",
+          "supportingCondition": "Energy"
+        },
+        {
+          "key": "shadows",
+          "label": "Approach the hollow tree through the shadows",
+          "ability": {
+            "slug": "stealth",
+            "referenceId": "019fe8d9-7e51-7e64-809b-5b9ab63c140c",
+            "fileTypeSlug": "ability"
+          },
+          "gmNotes": "Use trunks and undergrowth to conceal the group's route into shelter.",
+          "attribute": {
+            "slug": "shadow",
+            "referenceId": "019fe8d9-7900-7474-8879-f272fe519412",
+            "fileTypeSlug": "attribute"
+          },
+          "difficulty": "Standard",
+          "conditionAtRisk": "Cover",
+          "supportingCondition": "Cover"
+        },
+        {
+          "key": "observe",
+          "label": "Watch the Hunter and move when the trees block his view",
+          "gmNotes": "Hold steady and time the group's movement between sweeps. Describe a visible detail of the rider or mount while watching, respecting reveal boundaries.",
+          "attribute": {
+            "slug": "eyes",
+            "referenceId": "019ff7eb-af42-757d-af35-364534420ff4",
+            "fileTypeSlug": "attribute"
+          },
+          "difficulty": "Standard",
+          "conditionAtRisk": "Cover",
+          "supportingCondition": "Nerve"
+        }
+      ],
+      "completionCondition": "The player has submitted an approach or custom plan through this beat's picker; carry that answer into pooka-and-patrol for resolution. Answer questions before treating them as a committed plan."
     },
     {
       "key": "pooka-and-patrol",
       "title": "Rabbit in the Bush",
-      "events": "Coinin, apparently a rabbit, pulls or directs the pair into the concealed Hollow Tree at the edge of the glade. Meabh recognises him as a Pooka and tells him to switch off his glamour so its projector signature will not show on the hunter's scans. The Wild Hunter searches the glade and probes the tree's outer concealment. The team may observe him through the tree's narrow horizontal observation windows. If the hiding attempt fails, Coinin opens the service tunnel beneath the roots and leads the group to the Hidden hatch near the far side of the clearing; they escape narrowly while the hunter begins searching the woods.",
+      "events": "Coinin, apparently a rabbit, points out the concealed Hollow Tree at the edge of the glade. Resolve the approach submitted in ring-arrival and the patrol's search as one obstacle, then narrate entry and its outcome. Meabh recognises him as a Pooka and tells him to switch off his glamour so its projector signature will not show on the hunter's scans. The Wild Hunter searches the glade and probes the tree's outer concealment. The team may observe him through the tree's narrow horizontal observation windows. If concealment fails, Coinin opens the service tunnel beneath the roots and leads the group to the Hidden hatch near the far side of the clearing; they escape narrowly while the hunter begins searching the woods.",
       "location": {
         "slug": "hollow-tree",
         "referenceId": "01a0730b-5c08-72e8-b45e-ef49351a73aa",
         "fileTypeSlug": "location"
       },
       "objective": "Avoid the patrol's search.",
-      "gmInstructions": "- Allow stealth, observation, quick lies, distractions, or Meabh and Coinin's assistance.\n- On success, the Wild Hunter moves on without finding them; do not force use of an escape route.\n- On failure, reduce Cover when appropriate and use the established physical route: Coinin opens the Hollow Tree service tunnel, the group crawls beneath the roots, and they emerge through the Hidden hatch near the far side of the glade. The Wild Hunter realises someone escaped and searches the woods. This is pursuit or suspicion, not capture or Mission failure.\n- During the outcome, give the instantiated Wild Hunter a character dialogue line, not a narration quote, to show his cutout: if concealment holds, ‘Krrch— ...ry ring clear... ...ontinue sweep... —kshh’; after escape, ‘Krrch— ...llow tree... ...gnal lost... —kshh’. Present this as crackling, broken speech without explaining radio technology.\n- The Wild Hunter has no boots. Outside the tree, narrate the metallic gallop or hum of his mount, scanning light, displaced leaves, and his own alien movement rather than human bootsteps.\n- Do not improvise another root tunnel, emergency teleporter, or magical passage. The service tunnel and hatch are fixed geography. The separate Fairy Door inside the Hollow Tree leads to the western woods but is not the default escape from this search.\n- Coinin cannot lie and must not claim selfless motives; he can behave helpfully while withholding why.\n- Meabh MUST tell Coinin to switch the glamour off.\n- While Coinin's glamour is up, voice his dialogue with expression 'glamour' (rabbit cutout); once Meabh tells him to switch it off, use 'neutral' (true-form cutout).",
-      "mandatoryChallenge": "Read Dice Rolls and resolve the patrol's search before narrating its outcome. Hiding in the Hollow Tree: Attribute Shadow; Ability Stealth; supporting Condition Cover; at risk Cover; difficulty Standard. Adapt these to another approach. Waiting, watching or whispering does not bypass the check. Use the established service tunnel and Hidden hatch if concealment fails. The hunter's staged role does not remove this player-facing challenge.",
+      "gmInstructions": "- Resolve the approach already submitted in ring-arrival under Dice Rolls; do not present another approach picker. Read current character values after submission and before requesting the roll. Keep the scene at the Fairy Ring until the group actually enters the Hollow Tree. Allow custom plans and Meabh or Coinin's narrative assistance.\n- On success, the Wild Hunter moves on without finding them; do not force use of an escape route.\n- On a setback that exposes the group, reduce the Condition at risk under Dice Rolls and use the established physical route: Coinin opens the Hollow Tree service tunnel, the group crawls beneath the roots, and they emerge through the Hidden hatch near the far side of the glade. The Wild Hunter realises someone escaped and searches the woods. This is pursuit or suspicion, not capture or Mission failure.\n- During the outcome, give the authored Wild Hunter a character dialogue line, not a narration quote, to show his cutout: if concealment holds, ‘Krrch— ...ry ring clear... ...ontinue sweep... —kshh’; after escape, ‘Krrch— ...llow tree... ...gnal lost... —kshh’. Present this as crackling, broken speech without explaining radio technology.\n- The Wild Hunter has no boots. Outside the tree, narrate the metallic gallop or hum of his mount, scanning light, displaced leaves, and his own alien movement rather than human bootsteps.\n- Do not improvise another root tunnel, emergency teleporter, or magical passage. The service tunnel and hatch are fixed geography. The separate Fairy Door inside the Hollow Tree leads to the western woods but is not the default escape from this search.\n- Coinin cannot lie and must not claim selfless motives; he can behave helpfully while withholding why.\n- Meabh MUST tell Coinin to switch the glamour off.\n- While Coinin's glamour is up, voice his dialogue with expression 'glamour' (rabbit cutout); once Meabh tells him to switch it off, use 'neutral' (true-form cutout).",
+      "mandatoryChallenge": "Resolve reaching shelter and evading the patrol as one obstacle under Dice Rolls, using the chosen ring-arrival approach or the player's custom plan. A success with a complication still achieves concealment; do not turn it into forced flight. If a setback exposes the group, Coinin gets them inside and leads the established service-tunnel escape via the Hidden hatch. Do not request another hiding roll after resolving the chosen approach. The hunter's staged role does not remove the obstacle.",
       "completionCondition": "The patrol challenge is resolved and the group has remained concealed or escaped; proceed to Coinin's bargain."
     },
     {

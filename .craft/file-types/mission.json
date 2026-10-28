@@ -4,7 +4,7 @@
   "name": "Mission",
   "contentType": "json",
   "designation": null,
-  "schemaHash": "5868e54c-38e2-8e87-4915-f76b4febfb2c",
+  "schemaHash": "43d7c6d3-3045-67e3-6624-fb1025c79b13",
   "schema": {
     "type": "object",
     "required": [
@@ -310,6 +310,79 @@
               "title": "GM Instructions",
               "format": "textarea",
               "description": "GM-facing special handling, restrictions, staging, or fail-forward guidance."
+            },
+            "approachChoices": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "key",
+                  "label",
+                  "attribute",
+                  "supportingCondition",
+                  "conditionAtRisk",
+                  "difficulty"
+                ],
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Stable identifier unique within this beat."
+                  },
+                  "label": {
+                    "type": "string",
+                    "title": "Choice Label",
+                    "minLength": 1,
+                    "description": "Player-facing action, without hidden consequences."
+                  },
+                  "ability": {
+                    "type": "string",
+                    "description": "Applicable training, not required to choose the approach. Omit when none applies.",
+                    "referencedFileTypeSlug": "ability"
+                  },
+                  "gmNotes": {
+                    "type": "string",
+                    "format": "textarea",
+                    "description": "GM-only applicability, benefits and fictional consequences; no roll formula."
+                  },
+                  "attribute": {
+                    "type": "string",
+                    "referencedFileTypeSlug": "attribute"
+                  },
+                  "difficulty": {
+                    "enum": [
+                      "Easy",
+                      "Standard",
+                      "Hard",
+                      "Exceptional"
+                    ],
+                    "type": "string"
+                  },
+                  "conditionAtRisk": {
+                    "enum": [
+                      "Health",
+                      "Energy",
+                      "Nerve",
+                      "Decorum",
+                      "Cover"
+                    ],
+                    "type": "string"
+                  },
+                  "supportingCondition": {
+                    "enum": [
+                      "Health",
+                      "Energy",
+                      "Nerve",
+                      "Decorum",
+                      "Cover"
+                    ],
+                    "type": "string"
+                  }
+                }
+              },
+              "title": "Approach Choices",
+              "minItems": 1,
+              "description": "Optional authored approaches to this beat's obstacle. Present and resolve under Dice Rolls before resolving the obstacle; omit for beats without an approach menu. Parameters are definitions, not calculated roll values."
             },
             "mandatoryChallenge": {
               "type": "string",

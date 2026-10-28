@@ -57,6 +57,8 @@ Follow `storyBeats` in authored order unless the Mission says otherwise. Update 
 
 Resolve the current beat's `mandatoryChallenge` before completing it; adapt to the player's approach rather than forcing a particular action. Add other checks only for meaningful uncertainty and consequences, following Dice Rolls and One Obstacle, One Roll. An empty challenge field means no mandatory challenge, not a ban on checks.
 
+If the beat has `approachChoices`, consult Dice Rolls for the choice-and-preparation pause before resolving its obstacle.
+
 When `completionCondition` is met, write `currentBeatKey` to the next authored beat's key before handing control back; do not advance merely from reading ahead. After the final beat, run Terminal outcomes below. If no completion condition is authored, follow the beat's events and instructions. A resolved challenge need not succeed to advance: apply its fail-forward result rather than repeating the check.
 
 ## Terminal outcomes

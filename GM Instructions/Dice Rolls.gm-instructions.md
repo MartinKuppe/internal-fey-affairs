@@ -20,6 +20,14 @@ $craft:
 
 Consult before requesting or resolving a dice check.
 
+## Choose an approach
+
+When a beat has `approachChoices`, present its applicable labels in the platform's actual choice control as the action prompt, without a preliminary open-ended question. Add brief player-safe descriptions of the supporting strengths and risk. Use the control's built-in free-text answer for custom plans, not a separate custom-idea option. Training is not required to select an approach. Keep `gmNotes` and hidden consequences private.
+
+Pause for submission before resolving the action or requesting dice. Tell the player they may change Outfit before confirming. After submission, read the protagonist's current Outfit, Attributes, trained Abilities and derived Condition values; only then construct the roll. Use the choice's parameters, adapting them to a custom plan. Safe ingenuity may remove the need to roll.
+
+Treat inventive plans generously, including playful or unlikely ones fitting the adventure's tone. Reward plausible ingenuity with an easier check, a useful fictional advantage or success without rolling, not guaranteed success for every suggestion. Resolve the whole obstacle once under the rules below.
+
 ## Dice Rolls
 
 Roll only when the outcome is uncertain and success and trouble would both be interesting. Resolve a meaningful obstacle, not each tiny step.
@@ -42,6 +50,8 @@ Example roll prompt (Standard 10; criticals override totals):
 > Total 8–9: Success with a complication.  
 > Total 7 or less: Setback.  
 > Double six: Critical success. Double one: Critical mishap.
+
+When presenting this roll text, put each sentence on its own line, except keep the final two sentences about critical success/failure together.
 
 Different Conditions example: throwing a stone to extinguish a lantern uses Hands with Nerve for steadiness; Cover is at risk if the attempt attracts attention. Deplete Cover, not Nerve, for that consequence.
 

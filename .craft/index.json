@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-27T20:04:04.720Z",
+  "syncedAt": "2026-10-28T13:17:32.990Z",
   "folders": [
     {
       "path": "/Mission Journals",
@@ -60,6 +60,10 @@
     {
       "path": "/Outfits",
       "folderId": "019ff21e-97e6-7a28-9911-26c47a74bfb7"
+    },
+    {
+      "path": "/Characters/Non-Player Character prototypes",
+      "folderId": "01a17f14-1322-7c1c-9ecf-f895143eabf6"
     },
     {
       "path": "/Scratch Test Probes",
@@ -1398,8 +1402,8 @@
       "fileId": "01a06897-3482-798c-940d-5248dafb23f1",
       "referenceId": "01a06897-2c82-723a-b60c-c8954ca52668",
       "fileType": "mission",
-      "baseVersionId": "01a17aaa-23f2-7d10-b034-40084612becb",
-      "baseHash": "ffa550d5-ed3f-10f5-ab11-865e9d6d91e5",
+      "baseVersionId": "01a182a8-a7e5-73fc-9c1c-830f012beabd",
+      "baseHash": "92fd9534-1ed6-51a8-8672-aae1ee0dae6d",
       "source": "project"
     },
     {
@@ -1752,8 +1756,8 @@
       "fileId": "01a0879b-319e-7f5c-95af-f93cb0ce6395",
       "referenceId": "01a0879b-2fa5-731b-b003-26f7be756f41",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a179c8-9137-7ab8-a879-fe4901b5b62d",
-      "baseHash": "81ddbdaa-ed4b-6a3f-209c-8f35d0bb8327",
+      "baseVersionId": "01a17f14-1758-7a04-a762-95069d1f27d1",
+      "baseHash": "8dde4fc2-ce59-a927-6c8d-680e0e63bb2a",
       "source": "project",
       "settings": {
         "contextVisibility": "searchable"
@@ -2141,8 +2145,8 @@
       "fileId": "01a17072-f40f-7de4-b1a6-d995f93cfba5",
       "referenceId": "01a17072-f40f-7e58-8ac2-48d35150b967",
       "fileType": "gm-instructions",
-      "baseVersionId": "01a17abc-14bd-7034-9f5a-80e658ea4e9b",
-      "baseHash": "868ac123-7d07-a951-1034-5617ac219d16",
+      "baseVersionId": "01a182a8-a7bd-7410-8ad1-42b5fd6602a2",
+      "baseHash": "cdc830e1-1d00-fa46-dd5f-c7039542a131",
       "source": "project",
       "settings": {
         "contextVisibility": "partial"
@@ -2187,12 +2191,6 @@
       "fileTypeId": "019fedb8-3e75-7c24-ae29-77d540cc3393",
       "schemaHash": "bc04aebc-143f-24b8-bbbf-67b178ab19cf",
       "contentHash": "02d30a27-f8ad-48fe-089b-f62276473324"
-    },
-    {
-      "slug": "mission",
-      "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
-      "schemaHash": "5868e54c-38e2-8e87-4915-f76b4febfb2c",
-      "contentHash": "c6b74e81-8866-dcf1-3eea-64f809300a07"
     },
     {
       "slug": "outfit",
@@ -2264,13 +2262,19 @@
       "slug": "player-character",
       "fileTypeId": "01a04a10-df1d-7f34-81b9-9ececfa83343",
       "schemaHash": "686d6692-99dc-9ca1-6786-4dd34d33fa61",
-      "contentHash": "210db72e-e22a-9f0f-d26c-4eb1a9e71a2c"
+      "contentHash": "16df1249-2f8a-ca9a-3628-c0927294597e"
     },
     {
       "slug": "gm-instructions",
       "fileTypeId": "019fde04-453e-70b8-bd1c-7907c86fe195",
       "schemaHash": "44743757-c91d-81db-b70f-38427b6f228e",
       "contentHash": "99fd12c4-fa66-aaaa-999a-a82e2a26bbbd"
+    },
+    {
+      "slug": "mission",
+      "fileTypeId": "01a001e7-84c9-7b9c-b009-4a22e4c32ff8",
+      "schemaHash": "43d7c6d3-3045-67e3-6624-fb1025c79b13",
+      "contentHash": "7af30400-a1d4-1545-2f31-150aac9c0663"
     }
   ],
   "projectSettingsHash": "946fb856-1c5a-22c5-5e0b-2efabe748ae8"
