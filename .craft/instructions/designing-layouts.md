@@ -614,3 +614,14 @@ they change during play is editable in one tap, right where it is shown.
    always sit on a schema field with `referencedFileTypeSlug`.
 10. **Match the house style** — check the other type files in
    `.craft/file-types/` before inventing a different structure.
+11. **Keep layouts small: the limit is 1 MB.** A layout is sent with every
+   file of its type, so the server refuses a push that grows a layout past
+   1 MB (or grows one already over it). Never write one element per record
+   (one card per feat, one row per item): show a list with ONE data-bound
+   element, a `FileReferenceGrid` over a reference field or an element with
+   `repeat` over an array, however many records there are. A healthy
+   character sheet is a few hundred elements. `craft check` warns when a
+   layout is over the limit.
+12. **Never embed images as `data:` URLs** — a push that adds one is
+   refused. Upload the image (`craft image upload <file>`) and put its URL
+   in `src` or `bgImage`.

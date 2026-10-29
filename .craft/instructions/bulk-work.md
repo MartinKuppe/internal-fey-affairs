@@ -21,8 +21,12 @@ coordination overhead is not worth it.
 The main agent first decides and writes down the shared foundation:
 
 1. The user's intent, scope, audience, and explicit omissions.
-2. Project settings: name, description, tags, page copy, art direction, GM
-   persona, and whether the result needs images, maps, or playability.
+2. Project settings: name, description, tags, page copy, art direction, the
+   GM's name and voice, and whether the result needs images, maps, or playability. Note
+   which GM runs the world (`settings.gmEngine`): it decides where GM
+   instructions live — the original GM's `.gm-instructions.md` files, or
+   GM Harness 2's `settings.gameOptions` (upgrading-to-gm-harness-2
+   topic).
 3. A concise project overview/design brief: premise, tone, canon, naming
    conventions, and quality bar.
 4. The game system or content model: core mechanics, vocabulary, scale, and
@@ -64,7 +68,10 @@ Each worker owns only its assigned paths. It may run read-only checks such as
 file types, `pull`, `push`, `mv`, conflict resolution, and integration —
 and, when working without the CLI, assembling the final workspace zip for
 platform import. Concurrent sync mutations in one workspace race on shared
-state.
+state. On a GM v2 world the GM's rules are a project setting
+(`settings.gameOptions`): a worker drafting them writes its draft to its
+own file outside `.craft/`, and the main agent merges it into
+`project.json`.
 
 When one worker's assignment is itself large and the agent platform supports
 nested delegation, that worker should split its roster into non-overlapping
@@ -80,8 +87,9 @@ order is:
 1. Project settings, overview, system design, folder plan, schemas, and layouts.
 2. Foundational reference targets and rules content.
 3. Dependent content files, parallelized by type or domain.
-4. Cross-link repair, examples, GM instructions, and game-start content after
-   names and paths are stable.
+4. Cross-link repair, examples, GM instructions (v1 instruction files, or
+   GM v2's `settings.gameOptions`), and game-start content after names and
+   paths are stable.
 5. Images, maps, flows, and playability metadata after the content they attach
    to exists.
 

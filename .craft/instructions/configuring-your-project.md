@@ -24,11 +24,24 @@ Top level: `name`, `description`, `tags`. Everything else lives under
   one (including `craft image generate` without `--model`).
 - **`autoImageGeneration`** — whether the app auto-illustrates newly
   created files. Leave as the user set it unless asked.
-- **`gm`** (`name`, `personality`, `voiceId`) — the Game Master
-  persona used in play. Setting `personality` to match the world's tone
-  is part of finishing a game system. Run `craft voices` to see the current
-  voice ids and traits before setting `voiceId`; use `--json` when an
-  agent needs to select or filter the catalog programmatically.
+- **`gm`** (`name`, `image`, `voiceId`) — the Game Master's name,
+  portrait and narration voice in play. How the GM sounds and runs the
+  game is its instructions (`gameOptions` on GM Harness 2, the GM
+  instruction files on v1). Run `craft voices` to see the current voice
+  ids and traits before setting `voiceId`; use `--json` when an agent
+  needs to select or filter the catalog programmatically.
+- **`gmEngine`** — which Game Master runs the world: `"v2"` means GM
+  Harness 2; no key means the original GM (v1). It moves ONE way: setting
+  `"v2"` on a v1 world, together with the `gameOptions` you translated,
+  switches the world on push (the upgrading-to-gm-harness-2 topic). On a v2
+  world, leave it as pulled: a push that removes it or writes `"v1"` is
+  refused.
+- **`gameOptions`** — GM Harness 2's rules for the world: world
+  instructions, player options and their choices, always-on or
+  situational. GM Harness 2 reads it; the original GM ignores it (it reads
+  `.gm-instructions.md` files). Absent or `null` means Craft's defaults
+  alone. Shape, limits and the upgrade: the upgrading-to-gm-harness-2
+  topic. Run `craft check` after editing it.
 - **`headline`, `headlineLabel`, `body`, `authorsNotes`,
   `gameSystemName`** — the project page's presentation copy.
 - **`gallery` + `galleryLayout`** — the cover page's "Glimpses"
@@ -57,8 +70,10 @@ setting server-side.** So EDIT the file in place. Never regenerate
 `project.json` from the keys documented here: the two biggest values in
 it (`playerHandbook`, `builderManual`) are books someone wrote by
 hand, and a "clean" rewrite that omits them silently deletes both. Same
-for `preludeFlow`. Read the file, change the keys you were asked to
-change, write it back. Don't touch keys you don't understand — `theme`
+for `preludeFlow` and `gameOptions` (a world's GM rules on v2), and a
+rewrite that drops `gmEngine` from a v2 world is refused at push. Read
+the file, change the keys you were asked to change, write it back.
+Don't touch keys you don't understand — `theme`
 and other undocumented structures are app-managed; leave them exactly as
 pulled.
 

@@ -31,10 +31,11 @@ The user's intent decides which outcome you are building:
   interlock and create situations worth playing. It may be system-neutral.
 - **Game system** — resolution rules, player-facing concepts, file types and
   schemas that model them, layouts that make them usable, GM instructions that
-  apply them, and representative examples that prove the pieces work together.
+  apply them (written where the world's GM reads them: see Playability), and
+  representative examples that prove the pieces work together.
 - **Playable game** — a world and system composed into a specific player
   experience, with a game start, playable characters or character creation,
-  GM persona/instructions, and persistent state for its important mechanics.
+  GM instructions, and persistent state for its important mechanics.
 
 Everything below describes the DEFAULT target for substantial creation work.
 The user's stated intent overrides any line of it. A text-only setting bible,
@@ -123,13 +124,30 @@ LINKED to their files. Set the root map via
 `settings.rootMapFileReferenceId` in `.craft/project.json`. Skip this when
 the requested game or reference work is deliberately non-spatial.
 
+Say how places connect, not just where they are: the ways between them are
+map exits (a door or gate drawn on a map) or linked locations (a cellar part
+of the kitchens, two floors of an inn, a road between towns), see the
+linking-locations topic. A world with few or no maps can still link every
+place as linked locations, so the GM knows what is inside what and how to
+get between them.
+
 ## Playability
 
 If the world is meant to be played, configure it: a complete game start
 (starting location on the map, playable pregen characters, an opening in
-the world's voice), the GM persona, and GM instruction rules. See the
+the world's voice), the Game Master's name and voice, and the GM's rules. See the
 making-it-playable topic — content without this metadata is a wiki, not
 a game (which is fine when a wiki is what the user asked for).
+
+Where the GM's rules go depends on which GM runs the world,
+`settings.gmEngine` in `.craft/project.json`: `"v2"` → world
+instructions and player options in `settings.gameOptions`
+(upgrading-to-gm-harness-2 topic); no key → the original GM's
+`.gm-instructions.md` files (making-it-playable topic). A new world
+starts on the original GM (a clone keeps its source's engine); to build it
+for GM Harness 2, write its `settings.gameOptions` and set
+`"gmEngine": "v2"` in the same push (the upgrading-to-gm-harness-2 topic
+says how).
 
 ## Scratch hygiene
 
@@ -141,7 +159,9 @@ Test stubs poison a world's credibility ("Test Ritual", "Repro Note",
   the CLI has no restore command, so recovery is an app-side step).
 - Re-read starter files ("Example Character", "Example GM Instructions")
   — either rework them into real world content or delete them once real
-  content replaces their role.
+  content replaces their role. On a GM v2 world, instruction files are
+  v1's and the GM ignores them: leave real ones in place (v1 games still
+  read them) and ask before removing a starter one.
 
 ## Finish checklist
 
@@ -172,16 +192,19 @@ see:
 5. The COVER PAGE is dressed: cover image (`settings.image`), tags,
    headline + body, and a "Glimpses" gallery of your best art
    (`settings.gallery`); art direction in
-   `settings.imageStyleInstructions`; GM persona matching the tone
-   (`.craft/project.json` — see configuring-your-project).
+   `settings.imageStyleInstructions`; a GM name and voice that suit the
+   world (`settings.gm` — see configuring-your-project).
 6. Key records have images (if the user wanted art and energy allows).
 7. If spatial exploration matters, a root map exists with a background image,
    linked pins/areas for significant locations, and
-   `settings.rootMapFileReferenceId` set (authoring-maps topic).
+   `settings.rootMapFileReferenceId` set (authoring-maps topic). Places
+   the party moves between are joined by exits or linked locations, even
+   where no map draws them (linking-locations topic).
 8. Playability configured: game start (location + playable characters +
-   opening), GM persona, GM instruction rules (making-it-playable topic);
-   for worlds meant for campaigns, a character creation wizard and a short
-   prelude (authoring-flows topic).
+   opening), GM name and voice, GM rules where the world's engine reads them
+   (making-it-playable topic; on GM Harness 2, `settings.gameOptions` —
+   the upgrading-to-gm-harness-2 topic); for worlds meant for campaigns, a character
+   creation wizard and a short prelude (authoring-flows topic).
 9. No scratch files left; starter placeholders reworked or removed.
 10. Consider `craft publish -m "..."` as a checkpoint once the world is
     in a good state — ask the user first.

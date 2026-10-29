@@ -60,11 +60,26 @@ blocks to work around it.
   (a default `craft image generate` is landscape-4-3 → `{4, 3}`).
 - Element `id`s, point styles, and null-able fields (scale, grid,
   background, boundaryPolygon) are defaulted by the CLI.
+- **`scale` is the map's real width — set it on every map.** The GM
+  measures distances, travel times and what is inside what from it. A map
+  with no scale, or exactly 1 mi wide (the old default), counts as having
+  no scale.
 - `grid`: add `{ "mode": "square", "cellSize": { "value": 5, "unit": "ft" } }`
   (or hex) ONLY on tactical/battle maps; region and world maps use
-  `"scale"` instead. `points[].kind`: `"pin"` marks places,
-  `"token"` marks characters/monsters — tokens are play-state, so
-  worldbuilding maps mostly want pins.
+  `"scale"` alone. On GM Harness 2, a square grid plus a real scale on a
+  place's own map makes the GM play scenes there in squares (hex grids
+  don't, and on a region or world map every move is a journey anyway).
+- `points[].kind`: `"pin"` marks places, `"token"` marks
+  characters/monsters (`link` the character file). On GM Harness 2 a
+  character's token on a location's map is WHERE THAT CHARACTER IS: they
+  start there at a game start on that location, join the scene when the
+  party arrives, and the GM goes there to find them. Put a token for each
+  character who lives or works somewhere on that place's map.
+- `exit` on an area or point makes it a way to another location (a door,
+  stairs, a gate, a portal): `{ "kind": "stairs", "to": "<path>", "direction": "up" }`,
+  no `to` for the way out to the parent map. Read linking-locations.md
+  for exits, linked locations (places with no spot on a map) and
+  transports.
 
 ## Hierarchy and the root map
 
@@ -118,7 +133,9 @@ type its own imageStyleInstructions.
 2. Each pinned location either has its own map (settlement/dungeon level,
    same bar) or `useParentMap: true`.
 3. No orphan locations: if a location file matters to the story, it
-   appears on some map.
+   appears on some map or is a linked location of one that does.
 4. Labels double-checked against the background art (a pin labeled
    "harbor" in the mountains reads as broken).
 5. Tactical grids only where combat happens.
+6. Every map has its real `scale`, and characters who live or work
+   somewhere have a token on that place's map.
