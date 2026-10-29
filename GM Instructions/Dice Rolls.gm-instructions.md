@@ -22,7 +22,9 @@ Consult before requesting or resolving a dice check.
 
 ## Choose an approach
 
-When a beat has `approachChoices`, present its applicable labels in the platform's actual choice control as the action prompt, without a preliminary open-ended question. Add brief player-safe descriptions of the supporting strengths and risk. Use the control's built-in free-text answer for custom plans, not a separate custom-idea option. Training is not required to select an approach. Keep `gmNotes` and hidden consequences private.
+When a beat has `approachChoices`, present its applicable labels in the platform's actual choice control as the action prompt, without a preliminary open-ended question. Narrate the situation before calling the choice tool. The choice replaces an open-ended question and ends the turn; wait for submission before continuing.
+
+Add brief player-safe descriptions of the supporting strengths and risk. Use the control's built-in free-text answer for custom plans, not a separate custom-idea option. Training is not required to select an approach. Keep `gmNotes` and hidden consequences private.
 
 Pause for submission before resolving the action or requesting dice. Tell the player they may change Outfit before confirming. After submission, read the protagonist's current Outfit, Attributes, trained Abilities and derived Condition values; only then construct the roll. Use the choice's parameters, adapting them to a custom plan. Safe ingenuity may remove the need to roll.
 
